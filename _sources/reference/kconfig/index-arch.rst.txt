@@ -1,0 +1,770 @@
+:orphan:
+
+.. _configuration_options_arch:
+
+
+Architecture Configuration Options
+==================================
+
+:file:`Kconfig` files describe build-time configuration options (called symbols
+in Kconfig-speak), how they're grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.
+
+:file:`Kconfig` files appear throughout the directory tree. For example,
+:file:`subsys/power/Kconfig` defines power-related options.
+
+This documentation is generated automatically from the :file:`Kconfig` files by
+the :file:`gen_kconfig_rest.py` script. Click on symbols for more
+information.
+
+.. raw:: html
+
+    <!--
+    FIXME: do not limit page width until content uses another representation
+    format other than tables
+    -->
+    <style>.wy-nav-content { max-width: none; !important }</style>
+
+
+
+Configuration Options
+*********************
+
+.. list-table::
+   :header-rows: 1
+   :widths: auto
+
+   * - Symbol name
+     - Prompt
+   * - :kconfig:`CONFIG_64BIT`
+     - 
+   * - :kconfig:`CONFIG_AARCH64_IMAGE_HEADER`
+     - Add image header
+   * - :kconfig:`CONFIG_ACPI`
+     - ACPI (Advanced Configuration and Power Interface) support
+   * - :kconfig:`CONFIG_ARC`
+     - 
+   * - :kconfig:`CONFIG_ARCH`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_COHERENCE`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_DEMAND_PAGING`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_EXECUTABLE_PAGE_BIT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_EXTRA_EXCEPTION_INFO`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_GDBSTUB`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_NESTED_EXCEPTION_DETECTION`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_NOCACHE_MEMORY_SUPPORT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_RAMFUNC_SUPPORT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_RESERVED_PAGE_FRAMES`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_STACK_PROTECTION`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_THREAD_ABORT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_TIMING_FUNCTIONS`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_TRUSTED_EXECUTION`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_USERSPACE`
+     - 
+   * - :kconfig:`CONFIG_ARCH_IS_SET`
+     - 
+   * - :kconfig:`CONFIG_ARCH_MAPS_ALL_RAM`
+     - 
+   * - :kconfig:`CONFIG_ARCH_POSIX`
+     - 
+   * - :kconfig:`CONFIG_ARCH_POSIX_RECOMMENDED_STACK_SIZE`
+     - 
+   * - :kconfig:`CONFIG_ARCH_SUPPORTS_ARCH_HW_INIT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_SUPPORTS_COREDUMP`
+     - 
+   * - :kconfig:`CONFIG_ARCH_SW_ISR_TABLE_ALIGN`
+     - Alignment size of a software ISR table
+   * - :kconfig:`CONFIG_ARC_CONNECT`
+     - ARC has ARC connect
+   * - :kconfig:`CONFIG_ARC_CORE_MPU`
+     - ARC Core MPU functionalities
+   * - :kconfig:`CONFIG_ARC_EXCEPTION_DEBUG`
+     - Unhandled exception debugging information
+   * - :kconfig:`CONFIG_ARC_EXCEPTION_STACK_SIZE`
+     - ARC exception handling stack size
+   * - :kconfig:`CONFIG_ARC_FIRQ`
+     - FIRQ enable
+   * - :kconfig:`CONFIG_ARC_FIRQ_STACK`
+     - Enable separate firq stack
+   * - :kconfig:`CONFIG_ARC_FIRQ_STACK_SIZE`
+     - FIRQ stack size
+   * - :kconfig:`CONFIG_ARC_HAS_ACCL_REGS`
+     - Reg Pair ACCL:ACCH (FPU and/or MPY > 6)
+   * - :kconfig:`CONFIG_ARC_HAS_SECURE`
+     - ARC has SecureShield
+   * - :kconfig:`CONFIG_ARC_HAS_STACK_CHECKING`
+     - ARC has STACK\_CHECKING
+   * - :kconfig:`CONFIG_ARC_HAS_ZOL`
+     - 
+   * - :kconfig:`CONFIG_ARC_MPU`
+     - ARC MPU Support
+   * - :kconfig:`CONFIG_ARC_MPU_ENABLE`
+     - Enable MPU
+   * - :kconfig:`CONFIG_ARC_MPU_VER`
+     - ARC MPU version
+   * - :kconfig:`CONFIG_ARC_NORMAL_FIRMWARE`
+     - Generate Normal Firmware
+   * - :kconfig:`CONFIG_ARC_SECURE_FIRMWARE`
+     - Generate Secure Firmware
+   * - :kconfig:`CONFIG_ARC_STACK_CHECKING`
+     - 
+   * - :kconfig:`CONFIG_ARC_STACK_PROTECTION`
+     - 
+   * - :kconfig:`CONFIG_ARC_USE_UNALIGNED_MEM_ACCESS`
+     - Enable unaligned access in HW
+   * - :kconfig:`CONFIG_ARM`
+     - 
+   * - :kconfig:`CONFIG_ARM64`
+     - 
+   * - :kconfig:`CONFIG_ARM64_PA_BITS`
+     - 
+   * - :kconfig:`CONFIG_ARM64_PA_BITS_32`
+     - 32-bit
+   * - :kconfig:`CONFIG_ARM64_PA_BITS_36`
+     - 36-bit
+   * - :kconfig:`CONFIG_ARM64_PA_BITS_40`
+     - 40-bit
+   * - :kconfig:`CONFIG_ARM64_PA_BITS_42`
+     - 42-bit
+   * - :kconfig:`CONFIG_ARM64_PA_BITS_48`
+     - 48-bit
+   * - :kconfig:`CONFIG_ARM64_VA_BITS`
+     - 
+   * - :kconfig:`CONFIG_ARM64_VA_BITS_32`
+     - 32-bit
+   * - :kconfig:`CONFIG_ARM64_VA_BITS_36`
+     - 36-bit
+   * - :kconfig:`CONFIG_ARM64_VA_BITS_40`
+     - 40-bit
+   * - :kconfig:`CONFIG_ARM64_VA_BITS_42`
+     - 42-bit
+   * - :kconfig:`CONFIG_ARM64_VA_BITS_48`
+     - 48-bit
+   * - :kconfig:`CONFIG_ARMV6_M_ARMV8_M_BASELINE`
+     - 
+   * - :kconfig:`CONFIG_ARMV7_A`
+     - 
+   * - :kconfig:`CONFIG_ARMV7_EXCEPTION_STACK_SIZE`
+     - Undefined Instruction and Abort stack size (in bytes)
+   * - :kconfig:`CONFIG_ARMV7_FIQ_STACK_SIZE`
+     - FIQ stack size (in bytes)
+   * - :kconfig:`CONFIG_ARMV7_M_ARMV8_M_FP`
+     - 
+   * - :kconfig:`CONFIG_ARMV7_M_ARMV8_M_MAINLINE`
+     - 
+   * - :kconfig:`CONFIG_ARMV7_R`
+     - 
+   * - :kconfig:`CONFIG_ARMV7_R_FP`
+     - 
+   * - :kconfig:`CONFIG_ARMV7_SVC_STACK_SIZE`
+     - SVC stack size (in bytes)
+   * - :kconfig:`CONFIG_ARMV7_SYS_STACK_SIZE`
+     - SYS stack size (in bytes)
+   * - :kconfig:`CONFIG_ARMV8_1_M_MAINLINE`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_1_M_MVEF`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_1_M_MVEI`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_A`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_A_NS`
+     - ARMv8-A Normal World (Non-Secure world of Trustzone)
+   * - :kconfig:`CONFIG_ARMV8_M_BASELINE`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_M_DSP`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_M_MAINLINE`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_M_SE`
+     - 
+   * - :kconfig:`CONFIG_ARMV8_R`
+     - 
+   * - :kconfig:`CONFIG_ARM_AARCH32_MMU`
+     - ARMv7 Cortex-A MMU Support
+   * - :kconfig:`CONFIG_ARM_CUSTOM_INTERRUPT_CONTROLLER`
+     - 
+   * - :kconfig:`CONFIG_ARM_ENTRY_VENEERS_LIB_NAME`
+     - Entry Veneers symbol file
+   * - :kconfig:`CONFIG_ARM_FIRMWARE_HAS_SECURE_ENTRY_FUNCS`
+     - Secure Firmware has Secure Entry functions
+   * - :kconfig:`CONFIG_ARM_FIRMWARE_USES_SECURE_ENTRY_FUNCS`
+     - Non-Secure Firmware uses Secure Entry functions
+   * - :kconfig:`CONFIG_ARM_MMU`
+     - ARM MMU Support
+   * - :kconfig:`CONFIG_ARM_MMU_NUM_L2_TABLES`
+     - Number of L2 translation tables available to the MMU
+   * - :kconfig:`CONFIG_ARM_MMU_REGION_MIN_ALIGN_AND_SIZE`
+     - 
+   * - :kconfig:`CONFIG_ARM_MPU`
+     - ARM MPU Support
+   * - :kconfig:`CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE`
+     - 
+   * - :kconfig:`CONFIG_ARM_NONSECURE_FIRMWARE`
+     - 
+   * - :kconfig:`CONFIG_ARM_NONSECURE_PREEMPTIBLE_SECURE_CALLS`
+     - Allow secure function calls to be preempted
+   * - :kconfig:`CONFIG_ARM_NSC_REGION_BASE_ADDRESS`
+     - ARM Non-Secure Callable Region base address
+   * - :kconfig:`CONFIG_ARM_SECURE_BUSFAULT_HARDFAULT_NMI`
+     - BusFault, HardFault, and NMI target Secure state
+   * - :kconfig:`CONFIG_ARM_SECURE_FIRMWARE`
+     - 
+   * - :kconfig:`CONFIG_ARM_STACK_PROTECTION`
+     - 
+   * - :kconfig:`CONFIG_ARM_STORE_EXC_RETURN`
+     - 
+   * - :kconfig:`CONFIG_ARM_TRUSTZONE_M`
+     - ARM TrustZone-M support
+   * - :kconfig:`CONFIG_ASSEMBLER_ISA_THUMB2`
+     - 
+   * - :kconfig:`CONFIG_BIG_ENDIAN`
+     - 
+   * - :kconfig:`CONFIG_BOARD`
+     - 
+   * - :kconfig:`CONFIG_BUILTIN_STACK_GUARD`
+     - Thread Stack Guards based on built-in ARM stack limit checking
+   * - :kconfig:`CONFIG_CACHE_MANAGEMENT`
+     - Enable cache management features
+   * - :kconfig:`CONFIG_CMSIS_THREAD_MAX_STACK_SIZE`
+     - Max stack size threads can be allocated in CMSIS RTOS application
+   * - :kconfig:`CONFIG_CMSIS_V2_THREAD_DYNAMIC_STACK_SIZE`
+     - Dynamic stack size threads are allocated in CMSIS RTOS V2 application
+   * - :kconfig:`CONFIG_CMSIS_V2_THREAD_MAX_STACK_SIZE`
+     - Max stack size threads can be allocated in CMSIS RTOS V2 application
+   * - :kconfig:`CONFIG_CODE_DATA_RELOCATION`
+     - Relocate code/data sections
+   * - :kconfig:`CONFIG_CODE_DATA_RELOCATION_SRAM`
+     - Relocate code/data sections to SRAM
+   * - :kconfig:`CONFIG_CODE_DENSITY`
+     - Code Density Option
+   * - :kconfig:`CONFIG_COMPILER_ISA_THUMB2`
+     - Compile C/C++ functions using Thumb-2 instruction set
+   * - :kconfig:`CONFIG_COMPRESSED_ISA`
+     - 
+   * - :kconfig:`CONFIG_CORE_E31`
+     - Use E31 core
+   * - :kconfig:`CONFIG_CORTEX_M_DWT`
+     - Enable and use the DWT
+   * - :kconfig:`CONFIG_CORTEX_M_NULL_POINTER_EXCEPTION`
+     - 
+   * - :kconfig:`CONFIG_CORTEX_M_NULL_POINTER_EXCEPTION_PAGE_SIZE`
+     - Size of paged unmapped to implement null pointer detection
+   * - :kconfig:`CONFIG_CPU_AARCH32_CORTEX_A`
+     - 
+   * - :kconfig:`CONFIG_CPU_AARCH64_CORTEX_R`
+     - 
+   * - :kconfig:`CONFIG_CPU_APOLLO_LAKE`
+     - 
+   * - :kconfig:`CONFIG_CPU_ARCEM`
+     - 
+   * - :kconfig:`CONFIG_CPU_ARCHS`
+     - 
+   * - :kconfig:`CONFIG_CPU_ATOM`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_A`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_A53`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_A72`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_A9`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M0`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M0PLUS`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M0_HAS_VECTOR_TABLE_REMAP`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M1`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M23`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M3`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M33`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M4`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M55`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M7`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_BASEPRI`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_CMSE`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_DWT`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_SPLIM`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_SYSTICK`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_M_HAS_VTOR`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_R`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_R4`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_R5`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_R7`
+     - 
+   * - :kconfig:`CONFIG_CPU_CORTEX_R82`
+     - 
+   * - :kconfig:`CONFIG_CPU_EM4`
+     - 
+   * - :kconfig:`CONFIG_CPU_EM4_DMIPS`
+     - 
+   * - :kconfig:`CONFIG_CPU_EM4_FPUDA`
+     - 
+   * - :kconfig:`CONFIG_CPU_EM4_FPUS`
+     - 
+   * - :kconfig:`CONFIG_CPU_EM6`
+     - 
+   * - :kconfig:`CONFIG_CPU_HAS_DCLS`
+     - 
+   * - :kconfig:`CONFIG_CPU_HAS_FPU`
+     - 
+   * - :kconfig:`CONFIG_CPU_HAS_FPU_DOUBLE_PRECISION`
+     - 
+   * - :kconfig:`CONFIG_CPU_HAS_MMU`
+     - 
+   * - :kconfig:`CONFIG_CPU_HAS_MPU`
+     - 
+   * - :kconfig:`CONFIG_CPU_HAS_TEE`
+     - 
+   * - :kconfig:`CONFIG_CPU_HS3X`
+     - 
+   * - :kconfig:`CONFIG_CPU_HS6X`
+     - 
+   * - :kconfig:`CONFIG_CPU_LAKEMONT`
+     - 
+   * - :kconfig:`CONFIG_CPU_NIOS2_GEN2`
+     - 
+   * - :kconfig:`CONFIG_CUSTOM_SECTION_ALIGN`
+     - Custom Section Align
+   * - :kconfig:`CONFIG_CUSTOM_SECTION_MIN_ALIGN_SIZE`
+     - Custom Section Align Size
+   * - :kconfig:`CONFIG_DCACHE_LINE_SIZE`
+     - d-cache line size
+   * - :kconfig:`CONFIG_DCACHE_LINE_SIZE_DETECT`
+     - Detect d-cache line size at runtime
+   * - :kconfig:`CONFIG_DISABLE_SSBD`
+     - Disable Speculative Store Bypass
+   * - :kconfig:`CONFIG_DISABLE_TCM_ECC`
+     - Disable ECC on TCM
+   * - :kconfig:`CONFIG_DYNAMIC_DIRECT_INTERRUPTS`
+     - Enable support for dynamic direct interrupts
+   * - :kconfig:`CONFIG_DYNAMIC_INTERRUPTS`
+     - Enable installation of IRQs at runtime
+   * - :kconfig:`CONFIG_DYNAMIC_OBJECTS`
+     - Allow kernel objects to be allocated at runtime
+   * - :kconfig:`CONFIG_EAGER_FPU_SHARING`
+     - 
+   * - :kconfig:`CONFIG_ENABLE_EXTENDED_IBRS`
+     - Enable Extended IBRS
+   * - :kconfig:`CONFIG_EXCEPTION_DEBUG`
+     - Unhandled exception debugging information
+   * - :kconfig:`CONFIG_EXTRA_EXCEPTION_INFO`
+     - Extra exception debug information
+   * - :kconfig:`CONFIG_FAULT_DUMP`
+     - Fault dump level
+   * - :kconfig:`CONFIG_FLASH_BASE_ADDRESS`
+     - Flash Base Address
+   * - :kconfig:`CONFIG_FLASH_SIZE`
+     - Flash Size in kB
+   * - :kconfig:`CONFIG_FLOAT_HARD`
+     - Enable hard-float calling convention
+   * - :kconfig:`CONFIG_FP16`
+     - Half-precision floating point support
+   * - :kconfig:`CONFIG_FP16_ALT`
+     - FP16 ARM alternative format
+   * - :kconfig:`CONFIG_FP16_IEEE`
+     - FP16 IEEE format
+   * - :kconfig:`CONFIG_FPU`
+     - Enable floating point unit (FPU)
+   * - :kconfig:`CONFIG_FPU_SHARING`
+     - FPU register sharing
+   * - :kconfig:`CONFIG_FP_FPU_DA`
+     - 
+   * - :kconfig:`CONFIG_FP_HARDABI`
+     - Floating point Hard ABI
+   * - :kconfig:`CONFIG_FP_SOFTABI`
+     - Floating point Soft ABI
+   * - :kconfig:`CONFIG_GDT_DYNAMIC`
+     - Store GDT in RAM so that it can be modified
+   * - :kconfig:`CONFIG_GEN_IRQ_START_VECTOR`
+     - 
+   * - :kconfig:`CONFIG_GEN_IRQ_VECTOR_TABLE`
+     - Generate an interrupt vector table
+   * - :kconfig:`CONFIG_GEN_ISR_TABLES`
+     - Use generated IRQ tables
+   * - :kconfig:`CONFIG_GEN_PRIV_STACKS`
+     - 
+   * - :kconfig:`CONFIG_GEN_SW_ISR_TABLE`
+     - Generate a software ISR table
+   * - :kconfig:`CONFIG_GP_ALL_DATA`
+     - All data global pointer references
+   * - :kconfig:`CONFIG_GP_GLOBAL`
+     - Global data global pointer references
+   * - :kconfig:`CONFIG_GP_LOCAL`
+     - Local data global pointer references
+   * - :kconfig:`CONFIG_GP_NONE`
+     - No global pointer
+   * - :kconfig:`CONFIG_HARVARD`
+     - Harvard Architecture
+   * - :kconfig:`CONFIG_HAS_ARCH_CACHE`
+     - Integrated cache controller
+   * - :kconfig:`CONFIG_HAS_ARM_SMCCC`
+     - 
+   * - :kconfig:`CONFIG_HAS_DIV_INSTRUCTION`
+     - 
+   * - :kconfig:`CONFIG_HAS_EXTERNAL_CACHE`
+     - External cache controller
+   * - :kconfig:`CONFIG_HAS_MULX_INSTRUCTION`
+     - 
+   * - :kconfig:`CONFIG_HAS_MUL_INSTRUCTION`
+     - 
+   * - :kconfig:`CONFIG_HW_STACK_PROTECTION`
+     - Hardware Stack Protection
+   * - :kconfig:`CONFIG_ICACHE_LINE_SIZE`
+     - i-cache line size
+   * - :kconfig:`CONFIG_ICACHE_LINE_SIZE_DETECT`
+     - Detect i-cache line size at runtime
+   * - :kconfig:`CONFIG_IDLE_STACK_SIZE`
+     - Size of stack for idle thread
+   * - :kconfig:`CONFIG_IDT_NUM_VECTORS`
+     - Number of IDT vectors
+   * - :kconfig:`CONFIG_INCLUDE_RESET_VECTOR`
+     - Include Reset vector
+   * - :kconfig:`CONFIG_INIT_ARCH_HW_AT_BOOT`
+     - Initialize internal architecture state at boot
+   * - :kconfig:`CONFIG_IPM_CONSOLE_STACK_SIZE`
+     - Stack size for IPM console receiver thread
+   * - :kconfig:`CONFIG_IRQ_OFFLOAD`
+     - Enable IRQ offload
+   * - :kconfig:`CONFIG_IRQ_OFFLOAD_INTNUM`
+     - IRQ offload SW interrupt index
+   * - :kconfig:`CONFIG_IRQ_OFFLOAD_VECTOR`
+     - IDT vector to use for IRQ offload
+   * - :kconfig:`CONFIG_ISA_ARCV2`
+     - ARC ISA v2
+   * - :kconfig:`CONFIG_ISA_ARCV3`
+     - ARC ISA v3
+   * - :kconfig:`CONFIG_ISA_ARM`
+     - 
+   * - :kconfig:`CONFIG_ISA_THUMB2`
+     - 
+   * - :kconfig:`CONFIG_ISR_DEPTH`
+     - Maximum IRQ nesting depth
+   * - :kconfig:`CONFIG_ISR_STACK_SIZE`
+     - ISR and initialization stack size (in bytes)
+   * - :kconfig:`CONFIG_ISR_SUBSTACK_SIZE`
+     - Size of ISR substacks
+   * - :kconfig:`CONFIG_KERNEL_VM_OFFSET`
+     - Kernel offset within address space
+   * - :kconfig:`CONFIG_KERNEL_VM_SIZE`
+     - Size of kernel address space in bytes
+   * - :kconfig:`CONFIG_KOBJECT_DATA_AREA_RESERVE_EXTRA_PERCENT`
+     - Reserve extra kobject data area (in percentage)
+   * - :kconfig:`CONFIG_KOBJECT_RODATA_AREA_EXTRA_BYTES`
+     - Reserve extra bytes for kobject rodata area
+   * - :kconfig:`CONFIG_KOBJECT_TEXT_AREA`
+     - Size of kobject text area
+   * - :kconfig:`CONFIG_LAZY_FPU_SHARING`
+     - 
+   * - :kconfig:`CONFIG_MAIN_STACK_SIZE`
+     - Size of stack for initialization and main thread
+   * - :kconfig:`CONFIG_MAX_IRQ_LINES`
+     - Number of IRQ lines
+   * - :kconfig:`CONFIG_MAX_THREAD_BYTES`
+     - Bytes to use when tracking object thread permissions
+   * - :kconfig:`CONFIG_MAX_XLAT_TABLES`
+     - Maximum numbers of translation tables
+   * - :kconfig:`CONFIG_MIPS`
+     - 
+   * - :kconfig:`CONFIG_MMU_PAGE_SIZE`
+     - Size of smallest granularity MMU page
+   * - :kconfig:`CONFIG_MPU`
+     - Enable MPU features
+   * - :kconfig:`CONFIG_MPU_ALLOW_FLASH_WRITE`
+     - Add MPU access to write to flash
+   * - :kconfig:`CONFIG_MPU_GAP_FILLING`
+     - Force MPU to be filling in background memory regions
+   * - :kconfig:`CONFIG_MPU_REQUIRES_NON_OVERLAPPING_REGIONS`
+     - 
+   * - :kconfig:`CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT`
+     - 
+   * - :kconfig:`CONFIG_MPU_STACK_GUARD`
+     - Thread Stack Guards
+   * - :kconfig:`CONFIG_MPU_STACK_GUARD_MIN_SIZE_FLOAT`
+     - 
+   * - :kconfig:`CONFIG_MULTIBOOT`
+     - Generate multiboot header
+   * - :kconfig:`CONFIG_MULTIBOOT_FRAMEBUF`
+     - Multiboot framebuffer support
+   * - :kconfig:`CONFIG_MULTIBOOT_FRAMEBUF_X`
+     - Multiboot framebuffer X pixels
+   * - :kconfig:`CONFIG_MULTIBOOT_FRAMEBUF_Y`
+     - Multiboot framebuffer Y pixels
+   * - :kconfig:`CONFIG_MULTIBOOT_INFO`
+     - Preserve multiboot information structure
+   * - :kconfig:`CONFIG_MULTIBOOT_MEMMAP`
+     - Use multiboot memory map if provided
+   * - :kconfig:`CONFIG_NESTED_INTERRUPTS`
+     - Enable nested interrupts
+   * - :kconfig:`CONFIG_NET_RX_STACK_SIZE`
+     - RX thread stack size
+   * - :kconfig:`CONFIG_NET_TX_STACK_SIZE`
+     - TX thread stack size
+   * - :kconfig:`CONFIG_NIOS2`
+     - 
+   * - :kconfig:`CONFIG_NOCACHE_MEMORY`
+     - Support for uncached memory
+   * - :kconfig:`CONFIG_NO_UNUSED_STACK_INSPECTION`
+     - 
+   * - :kconfig:`CONFIG_NULL_POINTER_EXCEPTION_DETECTION_DWT`
+     - Use DWT for null pointer exception detection
+   * - :kconfig:`CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU`
+     - Use MPU for null pointer exception detection
+   * - :kconfig:`CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE`
+     - Do not enable null pointer exception detection
+   * - :kconfig:`CONFIG_NUM_IRQS`
+     - Upper limit of interrupt numbers/IDs used
+   * - :kconfig:`CONFIG_NUM_IRQ_PRIO_LEVELS`
+     - Number of supported interrupt priority levels
+   * - :kconfig:`CONFIG_PCIE_MMIO_CFG`
+     - Use MMIO PCI configuration space access
+   * - :kconfig:`CONFIG_PIC_DISABLE`
+     - Disable PIC
+   * - :kconfig:`CONFIG_PLATFORM_SPECIFIC_INIT`
+     - Enable platform (SOC) specific startup hook
+   * - :kconfig:`CONFIG_PMP_POWER_OF_TWO_ALIGNMENT`
+     - Enable power of two alignment
+   * - :kconfig:`CONFIG_PMP_SLOT`
+     - Number of PMP slot
+   * - :kconfig:`CONFIG_PMP_STACK_GUARD`
+     - Thread Stack Guard
+   * - :kconfig:`CONFIG_PMP_STACK_GUARD_MIN_SIZE`
+     - Guard size
+   * - :kconfig:`CONFIG_PRIVILEGED_STACK_SIZE`
+     - Size of privileged stack
+   * - :kconfig:`CONFIG_REBOOT_RST_CNT`
+     - Reboot via RST\_CNT register
+   * - :kconfig:`CONFIG_RGF_NUM_BANKS`
+     - Number of General Purpose Register Banks
+   * - :kconfig:`CONFIG_RISCV`
+     - 
+   * - :kconfig:`CONFIG_RISCV_GENERIC_TOOLCHAIN`
+     - Compile using generic riscv32 toolchain
+   * - :kconfig:`CONFIG_RISCV_GP`
+     - Enable RISC-V global pointer relative addressing
+   * - :kconfig:`CONFIG_RISCV_HAS_CPU_IDLE`
+     - Does SOC has CPU IDLE instruction
+   * - :kconfig:`CONFIG_RISCV_PMP`
+     - RISC-V PMP Support
+   * - :kconfig:`CONFIG_RISCV_SOC_CONTEXT_SAVE`
+     - Enable SOC-based context saving in IRQ handlers
+   * - :kconfig:`CONFIG_RISCV_SOC_INTERRUPT_INIT`
+     - Enable SOC-based interrupt initialization
+   * - :kconfig:`CONFIG_RISCV_SOC_MCAUSE_EXCEPTION_MASK`
+     - 
+   * - :kconfig:`CONFIG_RISCV_SOC_OFFSETS`
+     - Enable SOC-based offsets
+   * - :kconfig:`CONFIG_RUNTIME_NMI`
+     - Attach an NMI handler at runtime
+   * - :kconfig:`CONFIG_SCHED_IPI_VECTOR`
+     - IDT vector to use for scheduler IPI
+   * - :kconfig:`CONFIG_SET_GDT`
+     - Setup GDT as part of boot process
+   * - :kconfig:`CONFIG_SIMULATOR_XTENSA`
+     - Simulator Configuration
+   * - :kconfig:`CONFIG_SJLI_TABLE_SIZE`
+     - SJLI table size
+   * - :kconfig:`CONFIG_SOC`
+     - 
+   * - :kconfig:`CONFIG_SOC_FAMILY`
+     - 
+   * - :kconfig:`CONFIG_SOC_SERIES`
+     - 
+   * - :kconfig:`CONFIG_SPARC`
+     - 
+   * - :kconfig:`CONFIG_SPARC_CASA`
+     - CASA instructions
+   * - :kconfig:`CONFIG_SPARC_NWIN`
+     - Number of register windows
+   * - :kconfig:`CONFIG_SRAM_BASE_ADDRESS`
+     - SRAM Base Address
+   * - :kconfig:`CONFIG_SRAM_OFFSET`
+     - Kernel SRAM offset
+   * - :kconfig:`CONFIG_SRAM_REGION_PERMISSIONS`
+     - Assign appropriate permissions to kernel areas in SRAM
+   * - :kconfig:`CONFIG_SRAM_SIZE`
+     - SRAM Size in kB
+   * - :kconfig:`CONFIG_SSE`
+     - SSE registers
+   * - :kconfig:`CONFIG_SSE_FP_MATH`
+     - Compiler-generated SSEx instructions
+   * - :kconfig:`CONFIG_STACK_ALIGN_DOUBLE_WORD`
+     - Align stacks on double-words (8 octets)
+   * - :kconfig:`CONFIG_STACK_GROWS_UP`
+     - Stack grows towards higher memory addresses
+   * - :kconfig:`CONFIG_SW_VECTOR_RELAY`
+     - Enable Software Vector Relay
+   * - :kconfig:`CONFIG_SW_VECTOR_RELAY_CLIENT`
+     - Enable Software Vector Relay (client)
+   * - :kconfig:`CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE`
+     - System workqueue stack size
+   * - :kconfig:`CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC`
+     - Hardware clock cycles per second, 2000000 for ISS
+   * - :kconfig:`CONFIG_TEST_EXTRA_STACKSIZE`
+     - Test function extra thread stack size
+   * - :kconfig:`CONFIG_TLB_IPI_VECTOR`
+     - IDT vector to use for TLB shootdown IPI
+   * - :kconfig:`CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS`
+     - 
+   * - :kconfig:`CONFIG_TRUSTED_EXECUTION_NONSECURE`
+     - Trusted Execution: Non-Secure firmware image
+   * - :kconfig:`CONFIG_TRUSTED_EXECUTION_SECURE`
+     - Trusted Execution: Secure firmware image
+   * - :kconfig:`CONFIG_USERSPACE`
+     - User mode threads
+   * - :kconfig:`CONFIG_X86`
+     - 
+   * - :kconfig:`CONFIG_X86_64`
+     - Run in 64-bit mode
+   * - :kconfig:`CONFIG_X86_BOUNDS_CHECK_BYPASS_MITIGATION`
+     - 
+   * - :kconfig:`CONFIG_X86_COMMON_PAGE_TABLE`
+     - Use a single page table for all threads
+   * - :kconfig:`CONFIG_X86_CPU_HAS_MMX`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSE`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSE2`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSE3`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSE41`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSE42`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSE4A`
+     - 
+   * - :kconfig:`CONFIG_X86_CPU_HAS_SSSE3`
+     - 
+   * - :kconfig:`CONFIG_X86_DYNAMIC_IRQ_STUBS`
+     - Number of dynamic interrupt stubs
+   * - :kconfig:`CONFIG_X86_ENABLE_TSS`
+     - 
+   * - :kconfig:`CONFIG_X86_EXCEPTION_STACK_SIZE`
+     - Size of the exception stack(s)
+   * - :kconfig:`CONFIG_X86_EXCEPTION_STACK_TRACE`
+     - 
+   * - :kconfig:`CONFIG_X86_EXTRA_PAGE_TABLE_PAGES`
+     - Reserve extra pages in page table
+   * - :kconfig:`CONFIG_X86_FP_USE_SOFT_FLOAT`
+     - Use Software Floating Point Operations
+   * - :kconfig:`CONFIG_X86_KPTI`
+     - Enable kernel page table isolation
+   * - :kconfig:`CONFIG_X86_MAX_ADDITIONAL_MEM_DOMAINS`
+     - Maximum number of memory domains
+   * - :kconfig:`CONFIG_X86_MEMMAP`
+     - Use memory map
+   * - :kconfig:`CONFIG_X86_MEMMAP_ENTRIES`
+     - Number of memory map entries
+   * - :kconfig:`CONFIG_X86_MFENCE_INSTRUCTION_SUPPORTED`
+     - X86 MFENCE instruction supported
+   * - :kconfig:`CONFIG_X86_MMU`
+     - Enable Memory Management Unit
+   * - :kconfig:`CONFIG_X86_MMX`
+     - Enable MMX Support
+   * - :kconfig:`CONFIG_X86_NO_LAZY_FP`
+     - 
+   * - :kconfig:`CONFIG_X86_NO_MELTDOWN`
+     - 
+   * - :kconfig:`CONFIG_X86_NO_SPECTRE_V1`
+     - 
+   * - :kconfig:`CONFIG_X86_NO_SPECTRE_V2`
+     - 
+   * - :kconfig:`CONFIG_X86_NO_SPECTRE_V4`
+     - 
+   * - :kconfig:`CONFIG_X86_NO_SPECULATIVE_VULNERABILITIES`
+     - 
+   * - :kconfig:`CONFIG_X86_PAE`
+     - Use PAE page tables
+   * - :kconfig:`CONFIG_X86_PC_COMPATIBLE`
+     - 
+   * - :kconfig:`CONFIG_X86_SSE`
+     - Enable SSE Support
+   * - :kconfig:`CONFIG_X86_SSE2`
+     - Enable SSE2 Support
+   * - :kconfig:`CONFIG_X86_SSE3`
+     - Enable SSE3 Support
+   * - :kconfig:`CONFIG_X86_SSE41`
+     - Enable SSE4.1 Support
+   * - :kconfig:`CONFIG_X86_SSE42`
+     - Enable SSE4.2 Support
+   * - :kconfig:`CONFIG_X86_SSE4A`
+     - Enable SSE4A Support
+   * - :kconfig:`CONFIG_X86_SSE_FP_MATH`
+     - Compiler-generated SSEx instructions for floating point math
+   * - :kconfig:`CONFIG_X86_SSSE3`
+     - Enable SSSE3 (Supplemental SSE3) Support
+   * - :kconfig:`CONFIG_X86_STACK_PROTECTION`
+     - 
+   * - :kconfig:`CONFIG_X86_USERSPACE`
+     - 
+   * - :kconfig:`CONFIG_X86_USE_THREAD_LOCAL_STORAGE`
+     - 
+   * - :kconfig:`CONFIG_X86_VERY_EARLY_CONSOLE`
+     - Support very early boot printk
+   * - :kconfig:`CONFIG_XIP`
+     - Execute in place
+   * - :kconfig:`CONFIG_XTENSA`
+     - 
+   * - :kconfig:`CONFIG_XTENSA_CACHED_REGION`
+     - Cached RPO mapping
+   * - :kconfig:`CONFIG_XTENSA_CPU_IDLE_SPIN`
+     - Use busy loop for k\_cpu\_idle
+   * - :kconfig:`CONFIG_XTENSA_ENABLE_BACKTRACE`
+     - Enable backtrace on panic exception
+   * - :kconfig:`CONFIG_XTENSA_NO_IPC`
+     - Core has no IPC support
+   * - :kconfig:`CONFIG_XTENSA_RESET_VECTOR`
+     - Build reset vector code
+   * - :kconfig:`CONFIG_XTENSA_SMALL_VECTOR_TABLE_ENTRY`
+     - Enable workaround for small vector table entries
+   * - :kconfig:`CONFIG_XTENSA_UNCACHED_REGION`
+     - Uncached RPO mapping
+   * - :kconfig:`CONFIG_XTENSA_USE_CORE_CRT1`
+     - Use crt1.S from core
+   * - :kconfig:`CONFIG_XTENSA_WAITI_BUG`
+     - Enable workaround sequence for WAITI bug on LX6
+   * - :kconfig:`CONFIG_ZERO_LATENCY_IRQS`
+     - Enable zero-latency interrupts

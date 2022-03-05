@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Library Configuration Options &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+  <li>Library Configuration Options</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="library-configuration-options">
+<span id="configuration-options-lib"></span><h1>Library Configuration Options<a class="headerlink" href="#library-configuration-options" title="Permalink to this headline">¶</a></h1>
+<p><code class="file docutils literal notranslate"><span class="pre">Kconfig</span></code> files describe build-time configuration options (called symbols
+in Kconfig-speak), how they’re grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.</p>
+<p><code class="file docutils literal notranslate"><span class="pre">Kconfig</span></code> files appear throughout the directory tree. For example,
+<code class="file docutils literal notranslate"><span class="pre">subsys/power/Kconfig</span></code> defines power-related options.</p>
+<p>This documentation is generated automatically from the <code class="file docutils literal notranslate"><span class="pre">Kconfig</span></code> files by
+the <code class="file docutils literal notranslate"><span class="pre">gen_kconfig_rest.py</span></code> script. Click on symbols for more
+information.</p>
+<!--
+FIXME: do not limit page width until content uses another representation
+format other than tables
+-->
+<style>.wy-nav-content { max-width: none; !important }</style><div class="section" id="configuration-options">
+<h2>Configuration Options<a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol name</p></th>
+<th class="head"><p>Prompt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_APP_LINK_WITH_LVGL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_APP_LINK_WITH_LVGL</span></code></a></p></td>
+<td><p>Link ‘app’ with LVGL</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_APP_LINK_WITH_POSIX_SUBSYS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_APP_LINK_WITH_POSIX_SUBSYS</span></code></a></p></td>
+<td><p>Make POSIX headers available to application</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCMWDT_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCMWDT_LIBC</span></code></a></p></td>
+<td><p>ARC MWDT C library</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_BASE64"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BASE64</span></code></a></p></td>
+<td><p>Enable base64 encoding and decoding</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_COMPLETE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_COMPLETE</span></code></a></p></td>
+<td><p>All selected features</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_FP_ALWAYS_A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_FP_ALWAYS_A</span></code></a></p></td>
+<td><p>Select %a format for all floating point specifications</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_FP_A_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_FP_A_SUPPORT</span></code></a></p></td>
+<td><p>Enable floating point %a conversions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_FP_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_FP_SUPPORT</span></code></a></p></td>
+<td><p>Enable floating point formatting in cbprintf</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_FULL_INTEGRAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_FULL_INTEGRAL</span></code></a></p></td>
+<td><p>Convert the full range of integer values</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_LIBC_SUBSTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_LIBC_SUBSTS</span></code></a></p></td>
+<td><p>Generate C-library compatible functions using cbprintf</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_NANO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_NANO</span></code></a></p></td>
+<td><p>Space-optimized but feature-limited</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_N_SPECIFIER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_N_SPECIFIER</span></code></a></p></td>
+<td><p>Support %n specifications</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_PACKAGE_LONGDOUBLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_PACKAGE_LONGDOUBLE</span></code></a></p></td>
+<td><p>Support packaging of long doubles</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_REDUCED_INTEGRAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_REDUCED_INTEGRAL</span></code></a></p></td>
+<td><p>Convert only integer values that fit in 32 bits</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CBPRINTF_STATIC_PACKAGE_CHECK_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CBPRINTF_STATIC_PACKAGE_CHECK_ALIGNMENT</span></code></a></p></td>
+<td><p>Validate alignment of a static package buffer</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_EVENTFD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_EVENTFD</span></code></a></p></td>
+<td><p>Enable support for eventfd</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_EVENTFD_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_EVENTFD_MAX</span></code></a></p></td>
+<td><p>Maximum number of eventfd’s</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_EXTERNAL_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_EXTERNAL_LIBC</span></code></a></p></td>
+<td><p>External C library</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FNMATCH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FNMATCH</span></code></a></p></td>
+<td><p>Fnmatch Support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GETOPT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GETOPT</span></code></a></p></td>
+<td><p>Geopt library support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GETOPT_LONG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GETOPT_LONG</span></code></a></p></td>
+<td><p>Getopt long library support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_NEWLIB_LIBC_NANO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_NEWLIB_LIBC_NANO</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HEAP_LISTENER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HEAP_LISTENER</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_JSON_LIBRARY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_JSON_LIBRARY</span></code></a></p></td>
+<td><p>Build JSON library</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL</span></code></a></p></td>
+<td><p>LittlevGL GUI library</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_ANTIALIAS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_ANTIALIAS</span></code></a></p></td>
+<td><p>Enable anti-aliasing</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_BIDI_DIR_AUTO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_BIDI_DIR_AUTO</span></code></a></p></td>
+<td><p>Automatically detect direction</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_BIDI_DIR_LTR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_BIDI_DIR_LTR</span></code></a></p></td>
+<td><p>Left-to-right</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_BIDI_DIR_RTL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_BIDI_DIR_RTL</span></code></a></p></td>
+<td><p>Right-to-left</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_BITS_PER_PIXEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_BITS_PER_PIXEL</span></code></a></p></td>
+<td><p>Number of bits per pixel</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_BUFFER_ALLOC_DYNAMIC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_BUFFER_ALLOC_DYNAMIC</span></code></a></p></td>
+<td><p>Dynamic</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_BUFFER_ALLOC_STATIC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_BUFFER_ALLOC_STATIC</span></code></a></p></td>
+<td><p>Static</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_CALENDAR_WEEK_STARTS_MONDAY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_CALENDAR_WEEK_STARTS_MONDAY</span></code></a></p></td>
+<td><p>Calendar week starts on Monday</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_CHART_AXIS_TICK_LABEL_MAX_LEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_CHART_AXIS_TICK_LABEL_MAX_LEN</span></code></a></p></td>
+<td><p>Maximum length of axis label</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_16_SWAP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_16_SWAP</span></code></a></p></td>
+<td><p>RGB565 byte swap</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_DEPTH_1"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_DEPTH_1</span></code></a></p></td>
+<td><p>1-bit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_DEPTH_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_DEPTH_16</span></code></a></p></td>
+<td><p>16-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_DEPTH_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_DEPTH_32</span></code></a></p></td>
+<td><p>32-bit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_DEPTH_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_DEPTH_8</span></code></a></p></td>
+<td><p>8-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_SCREEN_TRANSP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_SCREEN_TRANSP</span></code></a></p></td>
+<td><p>Transparency support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_TRANSP_BLUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_TRANSP_BLUE</span></code></a></p></td>
+<td><p>Blue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_TRANSP_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_TRANSP_CUSTOM</span></code></a></p></td>
+<td><p>Custom</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_TRANSP_GREEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_TRANSP_GREEN</span></code></a></p></td>
+<td><p>Green</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_COLOR_TRANSP_RED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_COLOR_TRANSP_RED</span></code></a></p></td>
+<td><p>Red</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_CUSTOM_COLOR_TRANSP_BLUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_CUSTOM_COLOR_TRANSP_BLUE</span></code></a></p></td>
+<td><p>Chroma Key Blue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_CUSTOM_COLOR_TRANSP_GREEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_CUSTOM_COLOR_TRANSP_GREEN</span></code></a></p></td>
+<td><p>Chroma Key Green</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_CUSTOM_COLOR_TRANSP_RED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_CUSTOM_COLOR_TRANSP_RED</span></code></a></p></td>
+<td><p>Chroma Key Red</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DISPLAY_DEV_NAME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISPLAY_DEV_NAME</span></code></a></p></td>
+<td><p>Display device name</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DISP_DEF_REFR_PERIOD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISP_DEF_REFR_PERIOD</span></code></a></p></td>
+<td><p>Screen refresh period</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DISP_LARGE_LIMIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISP_LARGE_LIMIT</span></code></a></p></td>
+<td><p>Large display limit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DISP_MEDIUM_LIMIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISP_MEDIUM_LIMIT</span></code></a></p></td>
+<td><p>Medium display limit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DISP_SMALL_LIMIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISP_SMALL_LIMIT</span></code></a></p></td>
+<td><p>Small display limit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DOUBLE_VDB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DOUBLE_VDB</span></code></a></p></td>
+<td><p>Use two rendering buffers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DPI</span></code></a></p></td>
+<td><p>Dots per inch</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_DROPDOWN_DEF_ANIM_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DROPDOWN_DEF_ANIM_TIME</span></code></a></p></td>
+<td><p>Drop Down list animation time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_EXT_CLICK_AREA_FULL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_EXT_CLICK_AREA_FULL</span></code></a></p></td>
+<td><p>Full flexibility</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_EXT_CLICK_AREA_OFF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_EXT_CLICK_AREA_OFF</span></code></a></p></td>
+<td><p>Disabled</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_EXT_CLICK_AREA_TINY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_EXT_CLICK_AREA_TINY</span></code></a></p></td>
+<td><p>Only horizontally and vertical</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_DEJAVU_16_PERSIAN_HEBREW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_DEJAVU_16_PERSIAN_HEBREW</span></code></a></p></td>
+<td><p>Enable Dejavu 16px font with Hebrew, Arabic and Persian letters</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_10"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_10</span></code></a></p></td>
+<td><p>Enable Montserrat 10px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_12"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_12</span></code></a></p></td>
+<td><p>Enable Montserrat 12px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_12_SUBPX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_12_SUBPX</span></code></a></p></td>
+<td><p>Enable Montserrat 12px font with sub-pixel rendering</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_14"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_14</span></code></a></p></td>
+<td><p>Enable Montserrat 14px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_16</span></code></a></p></td>
+<td><p>Enable Montserrat 16px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_18"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_18</span></code></a></p></td>
+<td><p>Enable Montserrat 18px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_20"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_20</span></code></a></p></td>
+<td><p>Enable Montserrat 20px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_22"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_22</span></code></a></p></td>
+<td><p>Enable Montserrat 22px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_24"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_24</span></code></a></p></td>
+<td><p>Enable Montserrat 24px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_26"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_26</span></code></a></p></td>
+<td><p>Enable Montserrat 26px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_28"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_28</span></code></a></p></td>
+<td><p>Enable Montserrat 28px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_28_COMPRESSED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_28_COMPRESSED</span></code></a></p></td>
+<td><p>Enable Montserrat 28px compressed font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_30"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_30</span></code></a></p></td>
+<td><p>Enable Montserrat 30px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_32</span></code></a></p></td>
+<td><p>Enable Montserrat 32px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_34"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_34</span></code></a></p></td>
+<td><p>Enable Montserrat 34px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_36</span></code></a></p></td>
+<td><p>Enable Montserrat 36px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_38"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_38</span></code></a></p></td>
+<td><p>Enable Montserrat 38px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_40</span></code></a></p></td>
+<td><p>Enable Montserrat 40px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_42</span></code></a></p></td>
+<td><p>Enable Montserrat 42px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_44"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_44</span></code></a></p></td>
+<td><p>Enable Montserrat 44px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_46"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_46</span></code></a></p></td>
+<td><p>Enable Montserrat 46px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_48</span></code></a></p></td>
+<td><p>Enable Montserrat 48px font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_MONTSERRAT_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_MONTSERRAT_8</span></code></a></p></td>
+<td><p>Enable Montserrat 8px font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_SIMSUN_16_CJK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_SIMSUN_16_CJK</span></code></a></p></td>
+<td><p>Enable Simsun 16px font with CJK radicals</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_SUBPX_BGR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_SUBPX_BGR</span></code></a></p></td>
+<td><p>Use BGR instead RGB for sub-pixel rendering</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_FONT_UNSCII_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_FONT_UNSCII_8</span></code></a></p></td>
+<td><p>Enable Unscii 8px monospace fonts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_HOR_RES_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_HOR_RES_MAX</span></code></a></p></td>
+<td><p>Horizontal Screen Resolution</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_IMGBTN_TILED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_IMGBTN_TILED</span></code></a></p></td>
+<td><p>Image button tile support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_IMG_CACHE_DEF_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_IMG_CACHE_DEF_SIZE</span></code></a></p></td>
+<td><p>Default image cache size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_IMG_CF_ALPHA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_IMG_CF_ALPHA</span></code></a></p></td>
+<td><p>Enable alpha indexed image support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_IMG_CF_INDEXED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_IMG_CF_INDEXED</span></code></a></p></td>
+<td><p>Enable indexed image support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_DRAG_LIMIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_DRAG_LIMIT</span></code></a></p></td>
+<td><p>Drag Threshold</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_DRAG_THROW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_DRAG_THROW</span></code></a></p></td>
+<td><p>Drag throw slow-down</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_GESTURE_LIMIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_GESTURE_LIMIT</span></code></a></p></td>
+<td><p>Gesture threshold</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_GESTURE_MIN_VELOCITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_GESTURE_MIN_VELOCITY</span></code></a></p></td>
+<td><p>Gesture minimum velocity</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_LONG_PRESS_REP_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_LONG_PRESS_REP_TIME</span></code></a></p></td>
+<td><p>Long press repeat time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_LONG_PRESS_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_LONG_PRESS_TIME</span></code></a></p></td>
+<td><p>Long press time</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_READ_PERIOD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_READ_PERIOD</span></code></a></p></td>
+<td><p>Input device refresh period</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LABEL_DEF_SCROLL_SPEED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LABEL_DEF_SCROLL_SPEED</span></code></a></p></td>
+<td><p>Label scroll speed</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LABEL_LONG_TXT_HINT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LABEL_LONG_TXT_HINT</span></code></a></p></td>
+<td><p>Enable long text hint for labels</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LABEL_TEXT_SEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LABEL_TEXT_SEL</span></code></a></p></td>
+<td><p>Enable label text selection</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LABEL_WAIT_CHAR_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LABEL_WAIT_CHAR_COUNT</span></code></a></p></td>
+<td><p>Waiting period for label animation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LED_BRIGHT_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LED_BRIGHT_MAX</span></code></a></p></td>
+<td><p>LED maximum brightness</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LED_BRIGHT_MIN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LED_BRIGHT_MIN</span></code></a></p></td>
+<td><p>LED minimum brightness</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LINEMETER_PRECISE_BEST"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LINEMETER_PRECISE_BEST</span></code></a></p></td>
+<td><p>Best precision</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LINEMETER_PRECISE_NO_EXTRA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LINEMETER_PRECISE_NO_EXTRA</span></code></a></p></td>
+<td><p>No extra precision</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LINEMETER_PRECISE_SOME_EXTRA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LINEMETER_PRECISE_SOME_EXTRA</span></code></a></p></td>
+<td><p>Some extra precision</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_LIST_DEF_ANIM_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_LIST_DEF_ANIM_TIME</span></code></a></p></td>
+<td><p>List focus default animation time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_HEAP_KERNEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_HEAP_KERNEL</span></code></a></p></td>
+<td><p>Kernel Heap</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_HEAP_LIB_C"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_HEAP_LIB_C</span></code></a></p></td>
+<td><p>C library Heap</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_KERNEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_KERNEL</span></code></a></p></td>
+<td><p>Kernel space lvgl pool</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_MAX_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_MAX_SIZE</span></code></a></p></td>
+<td><p>Maximum memory pool block size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_MIN_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_MIN_SIZE</span></code></a></p></td>
+<td><p>Minimum memory pool block size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_NUMBER_BLOCKS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_NUMBER_BLOCKS</span></code></a></p></td>
+<td><p>Number of max size blocks in memory pool</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_MEM_POOL_USER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_MEM_POOL_USER</span></code></a></p></td>
+<td><p>User space lvgl pool</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_PAGE_DEF_ANIM_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_PAGE_DEF_ANIM_TIME</span></code></a></p></td>
+<td><p>Default page focus animation time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_POINTER_KSCAN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_POINTER_KSCAN</span></code></a></p></td>
+<td><p>Keyboard scan pointer input</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_POINTER_KSCAN_DEV_NAME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_POINTER_KSCAN_DEV_NAME</span></code></a></p></td>
+<td><p>Keyboard scan device name for pointer input</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_POINTER_KSCAN_INVERT_X"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_POINTER_KSCAN_INVERT_X</span></code></a></p></td>
+<td><p>Invert keyboard scan X axis</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_POINTER_KSCAN_INVERT_Y"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_POINTER_KSCAN_INVERT_Y</span></code></a></p></td>
+<td><p>Invert keyboard scan Y axis</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_POINTER_KSCAN_MSGQ_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_POINTER_KSCAN_MSGQ_COUNT</span></code></a></p></td>
+<td><p>Keyboard scan message queue count maximum</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_POINTER_KSCAN_SWAP_XY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_POINTER_KSCAN_SWAP_XY</span></code></a></p></td>
+<td><p>Swap keyboard scan X,Y axes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_ROLLER_DEF_ANIM_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_ROLLER_DEF_ANIM_TIME</span></code></a></p></td>
+<td><p>Roller animation time</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_ROLLER_INF_PAGES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_ROLLER_INF_PAGES</span></code></a></p></td>
+<td><p>Number of pages for infinite roller</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_SHADOW_CACHE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_SHADOW_CACHE_SIZE</span></code></a></p></td>
+<td><p>Shadow cache size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_SPINNER_DEF_ANIM_CONSTANT_ARC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_SPINNER_DEF_ANIM_CONSTANT_ARC</span></code></a></p></td>
+<td><p>Constant arc</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_SPINNER_DEF_ANIM_FILLSPIN_ARC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_SPINNER_DEF_ANIM_FILLSPIN_ARC</span></code></a></p></td>
+<td><p>Fill spin arc</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_SPINNER_DEF_ANIM_SPINNING_ARC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_SPINNER_DEF_ANIM_SPINNING_ARC</span></code></a></p></td>
+<td><p>Spinning arc</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_SPINNER_DEF_ARC_LENGTH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_SPINNER_DEF_ARC_LENGTH</span></code></a></p></td>
+<td><p>Default arc length</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_SPINNER_DEF_SPIN_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_SPINNER_DEF_SPIN_TIME</span></code></a></p></td>
+<td><p>Default spin time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TABLE_COL_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TABLE_COL_MAX</span></code></a></p></td>
+<td><p>Maximum number of table columns</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TABVIEW_DEF_ANIM_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TABVIEW_DEF_ANIM_TIME</span></code></a></p></td>
+<td><p>Tab view animation time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TA_DEF_CURSOR_BLINK_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TA_DEF_CURSOR_BLINK_TIME</span></code></a></p></td>
+<td><p>Cursor Blink Time</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TA_DEF_PWD_SHOW_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TA_DEF_PWD_SHOW_TIME</span></code></a></p></td>
+<td><p>Label scroll speed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_CUSTOM_INIT_FUNCTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_CUSTOM_INIT_FUNCTION</span></code></a></p></td>
+<td><p>Custom theme initialization function</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_AQUA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_AQUA</span></code></a></p></td>
+<td><p>Aqua</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_BLACK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_BLACK</span></code></a></p></td>
+<td><p>Black</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_BLUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_BLUE</span></code></a></p></td>
+<td><p>Blue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM</span></code></a></p></td>
+<td><p>Custom</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_BLUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_BLUE</span></code></a></p></td>
+<td><p>Custom primary color (blue)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_GREEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_GREEN</span></code></a></p></td>
+<td><p>Custom primary color (green)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_RED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_RED</span></code></a></p></td>
+<td><p>Custom primary color (red)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CYAN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CYAN</span></code></a></p></td>
+<td><p>Cyan</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_GRAY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_GRAY</span></code></a></p></td>
+<td><p>Gray</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_GREEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_GREEN</span></code></a></p></td>
+<td><p>Green</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_LIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_LIME</span></code></a></p></td>
+<td><p>Lime</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_MAGENTA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_MAGENTA</span></code></a></p></td>
+<td><p>Magenta</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_MAROON"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_MAROON</span></code></a></p></td>
+<td><p>Maroon</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_NAVY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_NAVY</span></code></a></p></td>
+<td><p>Navy</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_OLIVE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_OLIVE</span></code></a></p></td>
+<td><p>Olive</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_ORANGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_ORANGE</span></code></a></p></td>
+<td><p>Orange</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_PURPLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_PURPLE</span></code></a></p></td>
+<td><p>Purple</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_RED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_RED</span></code></a></p></td>
+<td><p>Red</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_SILVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_SILVER</span></code></a></p></td>
+<td><p>Silver</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_TEAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_TEAL</span></code></a></p></td>
+<td><p>Teal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_WHITE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_WHITE</span></code></a></p></td>
+<td><p>White</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_YELLOW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_YELLOW</span></code></a></p></td>
+<td><p>Yellow</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_AQUA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_AQUA</span></code></a></p></td>
+<td><p>Aqua</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_BLACK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_BLACK</span></code></a></p></td>
+<td><p>Black</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_BLUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_BLUE</span></code></a></p></td>
+<td><p>Blue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM</span></code></a></p></td>
+<td><p>Custom</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_BLUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_BLUE</span></code></a></p></td>
+<td><p>Custom secondary color (blue)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_GREEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_GREEN</span></code></a></p></td>
+<td><p>Custom secondary color (green)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_RED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_RED</span></code></a></p></td>
+<td><p>Custom secondary color (red)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CYAN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CYAN</span></code></a></p></td>
+<td><p>Cyan</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_GRAY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_GRAY</span></code></a></p></td>
+<td><p>Gray</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_GREEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_GREEN</span></code></a></p></td>
+<td><p>Green</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_LIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_LIME</span></code></a></p></td>
+<td><p>Lime</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_MAGENTA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_MAGENTA</span></code></a></p></td>
+<td><p>Magenta</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_MAROON"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_MAROON</span></code></a></p></td>
+<td><p>Maroon</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_NAVY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_NAVY</span></code></a></p></td>
+<td><p>Navy</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_OLIVE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_OLIVE</span></code></a></p></td>
+<td><p>Olive</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_ORANGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_ORANGE</span></code></a></p></td>
+<td><p>Orange</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_PURPLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_PURPLE</span></code></a></p></td>
+<td><p>Purple</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_RED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_RED</span></code></a></p></td>
+<td><p>Red</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_SILVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_SILVER</span></code></a></p></td>
+<td><p>Silver</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_TEAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_TEAL</span></code></a></p></td>
+<td><p>Teal</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_WHITE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_WHITE</span></code></a></p></td>
+<td><p>White</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_YELLOW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_YELLOW</span></code></a></p></td>
+<td><p>Yellow</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_CUSTOM</span></code></a></p></td>
+<td><p>Custom font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_DEJAVU_16_PERSIAN_HEBREW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_DEJAVU_16_PERSIAN_HEBREW</span></code></a></p></td>
+<td><p>Build-in font size 16 with Hebrew, Arabic and Persian</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_10"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_10</span></code></a></p></td>
+<td><p>Build-in font size 10</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_12"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_12</span></code></a></p></td>
+<td><p>Build-in font size 12</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_12_SUBPX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_12_SUBPX</span></code></a></p></td>
+<td><p>Build-in font size 12 with sub-pixel rendering</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_14"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_14</span></code></a></p></td>
+<td><p>Build-in font size 14</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_16</span></code></a></p></td>
+<td><p>Build-in font size 16</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_18"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_18</span></code></a></p></td>
+<td><p>Build-in font size 18</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_20"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_20</span></code></a></p></td>
+<td><p>Build-in font size 20</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_22"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_22</span></code></a></p></td>
+<td><p>Build-in font size 22</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_24"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_24</span></code></a></p></td>
+<td><p>Build-in font size 24</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26</span></code></a></p></td>
+<td><p>Build-in font size 26</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_28"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_28</span></code></a></p></td>
+<td><p>Build-in font size 28</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_28_COMPRESSED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_28_COMPRESSED</span></code></a></p></td>
+<td><p>Build-in compressed font size 28</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_30"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_30</span></code></a></p></td>
+<td><p>Build-in font size 30</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_32</span></code></a></p></td>
+<td><p>Build-in font size 32</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_34"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_34</span></code></a></p></td>
+<td><p>Build-in font size 34</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_36</span></code></a></p></td>
+<td><p>Build-in font size 36</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_38"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_38</span></code></a></p></td>
+<td><p>Build-in font size 38</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_40</span></code></a></p></td>
+<td><p>Build-in font size 40</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_42</span></code></a></p></td>
+<td><p>Build-in font size 42</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_44"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_44</span></code></a></p></td>
+<td><p>Build-in font size 44</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_46"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_46</span></code></a></p></td>
+<td><p>Build-in font size 46</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_48</span></code></a></p></td>
+<td><p>Build-in font size 48</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_8</span></code></a></p></td>
+<td><p>Build-in font size 8</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_SIMSUN_16_CJK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_SIMSUN_16_CJK</span></code></a></p></td>
+<td><p>Build-in font size 16 with CJK radicals</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_UNSCII_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_UNSCII_8</span></code></a></p></td>
+<td><p>Build-in monospace font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_CUSTOM</span></code></a></p></td>
+<td><p>Custom font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_DEJAVU_16_PERSIAN_HEBREW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_DEJAVU_16_PERSIAN_HEBREW</span></code></a></p></td>
+<td><p>Build-in font size 16 with Hebrew, Arabic and Persian</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_10"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_10</span></code></a></p></td>
+<td><p>Build-in font size 10</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_12"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_12</span></code></a></p></td>
+<td><p>Build-in font size 12</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_12_SUBPX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_12_SUBPX</span></code></a></p></td>
+<td><p>Build-in font size 12 with sub-pixel rendering</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_14"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_14</span></code></a></p></td>
+<td><p>Build-in font size 14</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_16</span></code></a></p></td>
+<td><p>Build-in font size 16</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_18"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_18</span></code></a></p></td>
+<td><p>Build-in font size 18</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_20"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_20</span></code></a></p></td>
+<td><p>Build-in font size 20</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_22"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_22</span></code></a></p></td>
+<td><p>Build-in font size 22</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_24"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_24</span></code></a></p></td>
+<td><p>Build-in font size 24</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26</span></code></a></p></td>
+<td><p>Build-in font size 26</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_28"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_28</span></code></a></p></td>
+<td><p>Build-in font size 28</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_28_COMPRESSED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_28_COMPRESSED</span></code></a></p></td>
+<td><p>Build-in compressed font size 28</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_30"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_30</span></code></a></p></td>
+<td><p>Build-in font size 30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_32</span></code></a></p></td>
+<td><p>Build-in font size 32</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_34"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_34</span></code></a></p></td>
+<td><p>Build-in font size 34</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_36</span></code></a></p></td>
+<td><p>Build-in font size 36</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_38"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_38</span></code></a></p></td>
+<td><p>Build-in font size 38</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_40</span></code></a></p></td>
+<td><p>Build-in font size 40</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_42</span></code></a></p></td>
+<td><p>Build-in font size 42</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_44"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_44</span></code></a></p></td>
+<td><p>Build-in font size 44</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_46"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_46</span></code></a></p></td>
+<td><p>Build-in font size 46</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_48</span></code></a></p></td>
+<td><p>Build-in font size 48</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_8</span></code></a></p></td>
+<td><p>Build-in font size 8</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_SIMSUN_16_CJK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_SIMSUN_16_CJK</span></code></a></p></td>
+<td><p>Build-in font size 16 with CJK radicals</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_UNSCII_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_UNSCII_8</span></code></a></p></td>
+<td><p>Build-in monospace font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_CUSTOM</span></code></a></p></td>
+<td><p>Custom font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_DEJAVU_16_PERSIAN_HEBREW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_DEJAVU_16_PERSIAN_HEBREW</span></code></a></p></td>
+<td><p>Build-in font size 16 with Hebrew, Arabic and Persian</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_10"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_10</span></code></a></p></td>
+<td><p>Build-in font size 10</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_12"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_12</span></code></a></p></td>
+<td><p>Build-in font size 12</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_12_SUBPX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_12_SUBPX</span></code></a></p></td>
+<td><p>Build-in font size 12 with sub-pixel rendering</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_14"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_14</span></code></a></p></td>
+<td><p>Build-in font size 14</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_16</span></code></a></p></td>
+<td><p>Build-in font size 16</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_18"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_18</span></code></a></p></td>
+<td><p>Build-in font size 18</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_20"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_20</span></code></a></p></td>
+<td><p>Build-in font size 20</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_22"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_22</span></code></a></p></td>
+<td><p>Build-in font size 22</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_24"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_24</span></code></a></p></td>
+<td><p>Build-in font size 24</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_26"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_26</span></code></a></p></td>
+<td><p>Build-in font size 26</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_28"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_28</span></code></a></p></td>
+<td><p>Build-in font size 28</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_28_COMPRESSED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_28_COMPRESSED</span></code></a></p></td>
+<td><p>Build-in compressed font size 28</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_30"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_30</span></code></a></p></td>
+<td><p>Build-in font size 30</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_32</span></code></a></p></td>
+<td><p>Build-in font size 32</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_34"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_34</span></code></a></p></td>
+<td><p>Build-in font size 34</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_36</span></code></a></p></td>
+<td><p>Build-in font size 36</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_38"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_38</span></code></a></p></td>
+<td><p>Build-in font size 38</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_40</span></code></a></p></td>
+<td><p>Build-in font size 40</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_42</span></code></a></p></td>
+<td><p>Build-in font size 42</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_44"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_44</span></code></a></p></td>
+<td><p>Build-in font size 44</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_46"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_46</span></code></a></p></td>
+<td><p>Build-in font size 46</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_48</span></code></a></p></td>
+<td><p>Build-in font size 48</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_8</span></code></a></p></td>
+<td><p>Build-in font size 8</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_SIMSUN_16_CJK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_SIMSUN_16_CJK</span></code></a></p></td>
+<td><p>Build-in font size 16 with CJK radicals</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_UNSCII_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_UNSCII_8</span></code></a></p></td>
+<td><p>Build-in monospace font</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_CUSTOM</span></code></a></p></td>
+<td><p>Custom font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_DEJAVU_16_PERSIAN_HEBREW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_DEJAVU_16_PERSIAN_HEBREW</span></code></a></p></td>
+<td><p>Build-in font size 16 with Hebrew, Arabic and Persian</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_10"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_10</span></code></a></p></td>
+<td><p>Build-in font size 10</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_12"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_12</span></code></a></p></td>
+<td><p>Build-in font size 12</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_12_SUBPX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_12_SUBPX</span></code></a></p></td>
+<td><p>Build-in font size 12 with sub-pixel rendering</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_14"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_14</span></code></a></p></td>
+<td><p>Build-in font size 14</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_16</span></code></a></p></td>
+<td><p>Build-in font size 16</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_18"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_18</span></code></a></p></td>
+<td><p>Build-in font size 18</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_20"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_20</span></code></a></p></td>
+<td><p>Build-in font size 20</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_22"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_22</span></code></a></p></td>
+<td><p>Build-in font size 22</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_24"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_24</span></code></a></p></td>
+<td><p>Build-in font size 24</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_26"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_26</span></code></a></p></td>
+<td><p>Build-in font size 26</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_28"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_28</span></code></a></p></td>
+<td><p>Build-in font size 28</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_28_COMPRESSED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_28_COMPRESSED</span></code></a></p></td>
+<td><p>Build-in compressed font size 28</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_30"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_30</span></code></a></p></td>
+<td><p>Build-in font size 30</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_32</span></code></a></p></td>
+<td><p>Build-in font size 32</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_34"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_34</span></code></a></p></td>
+<td><p>Build-in font size 34</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_36</span></code></a></p></td>
+<td><p>Build-in font size 36</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_38"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_38</span></code></a></p></td>
+<td><p>Build-in font size 38</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_40</span></code></a></p></td>
+<td><p>Build-in font size 40</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_42</span></code></a></p></td>
+<td><p>Build-in font size 42</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_44"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_44</span></code></a></p></td>
+<td><p>Build-in font size 44</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_46"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_46</span></code></a></p></td>
+<td><p>Build-in font size 46</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_48</span></code></a></p></td>
+<td><p>Build-in font size 48</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_8</span></code></a></p></td>
+<td><p>Build-in font size 8</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_SIMSUN_16_CJK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_SIMSUN_16_CJK</span></code></a></p></td>
+<td><p>Build-in font size 16 with CJK radicals</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_UNSCII_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_UNSCII_8</span></code></a></p></td>
+<td><p>Build-in monospace font</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_MATERIAL_DARK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_MATERIAL_DARK</span></code></a></p></td>
+<td><p>Dark</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_MATERIAL_FLAG_NO_FOCUS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_MATERIAL_FLAG_NO_FOCUS</span></code></a></p></td>
+<td><p>Disable focus</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_MATERIAL_FLAG_NO_TRANSITION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_MATERIAL_FLAG_NO_TRANSITION</span></code></a></p></td>
+<td><p>Disable transitions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_THEME_MATERIAL_LIGHT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_THEME_MATERIAL_LIGHT</span></code></a></p></td>
+<td><p>Light</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TILEVIEW_DEF_ANIM_TIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TILEVIEW_DEF_ANIM_TIME</span></code></a></p></td>
+<td><p>Tile view animation time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_BREAK_CHARS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_BREAK_CHARS</span></code></a></p></td>
+<td><p>Text break characters</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_COLOR_CMD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_COLOR_CMD</span></code></a></p></td>
+<td><p>Text recoloring control character</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_ENC_ASCII"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_ENC_ASCII</span></code></a></p></td>
+<td><p>ASCII string encoding</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_ENC_UTF8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_ENC_UTF8</span></code></a></p></td>
+<td><p>UTF-8 string encoding</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_LINE_BREAK_LONG_LEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_LINE_BREAK_LONG_LEN</span></code></a></p></td>
+<td><p>Minimal word length for line break</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_LINE_BREAK_LONG_POST_MIN_LEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_LINE_BREAK_LONG_POST_MIN_LEN</span></code></a></p></td>
+<td><p>Minimal number of characters on line after line break</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_LINE_BREAK_LONG_PRE_MIN_LEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_LINE_BREAK_LONG_PRE_MIN_LEN</span></code></a></p></td>
+<td><p>Minimal number of characters on line before line break</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ANIMATION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ANIMATION</span></code></a></p></td>
+<td><p>Enable animations</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_API_EXTENSION_V6"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_API_EXTENSION_V6</span></code></a></p></td>
+<td><p>Enable V6 API extensions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_API_EXTENSION_V7"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_API_EXTENSION_V7</span></code></a></p></td>
+<td><p>Enable V7 API extensions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ARABIC_PERSIAN_CHARS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ARABIC_PERSIAN_CHARS</span></code></a></p></td>
+<td><p>Enable Arabic/Persian processing</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ARC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ARC</span></code></a></p></td>
+<td><p>Arc Object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ASSERT_MEM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ASSERT_MEM</span></code></a></p></td>
+<td><p>Enable memory allocation assertion</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ASSERT_MEM_INTEGRITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ASSERT_MEM_INTEGRITY</span></code></a></p></td>
+<td><p>Enable memory integrity check</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ASSERT_NULL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ASSERT_NULL</span></code></a></p></td>
+<td><p>Enable null pointer assertion</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ASSERT_OBJ"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ASSERT_OBJ</span></code></a></p></td>
+<td><p>Enable object assertion</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ASSERT_STR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ASSERT_STR</span></code></a></p></td>
+<td><p>Enable string assertion</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ASSERT_STYLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ASSERT_STYLE</span></code></a></p></td>
+<td><p>Enable style assertion</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_BAR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_BAR</span></code></a></p></td>
+<td><p>Bar object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_BIDI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_BIDI</span></code></a></p></td>
+<td><p>Enable bidirectional text support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_BLEND_MODES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_BLEND_MODES</span></code></a></p></td>
+<td><p>Enable other blend modes</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_BTN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_BTN</span></code></a></p></td>
+<td><p>Button object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_BTNMATRIX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_BTNMATRIX</span></code></a></p></td>
+<td><p>Button Matrix object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_CALENDAR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_CALENDAR</span></code></a></p></td>
+<td><p>Calendar object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_CANVAS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_CANVAS</span></code></a></p></td>
+<td><p>Canvas object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_CHART"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_CHART</span></code></a></p></td>
+<td><p>Chart object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_CHECKBOX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_CHECKBOX</span></code></a></p></td>
+<td><p>Check box object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_CONT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_CONT</span></code></a></p></td>
+<td><p>Container Object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_CPICKER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_CPICKER</span></code></a></p></td>
+<td><p>Color picker object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_DEBUG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_DEBUG</span></code></a></p></td>
+<td><p>Enable debug support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_DROPDOWN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_DROPDOWN</span></code></a></p></td>
+<td><p>Drop Down List object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_FILESYSTEM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_FILESYSTEM</span></code></a></p></td>
+<td><p>Enable file system</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_FONT_COMPRESSED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_FONT_COMPRESSED</span></code></a></p></td>
+<td><p>Enable compressed font support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_FONT_SUBPX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_FONT_SUBPX</span></code></a></p></td>
+<td><p>Enable sub-pixel rendering</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_GAUGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_GAUGE</span></code></a></p></td>
+<td><p>Gauge object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_GPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_GPU</span></code></a></p></td>
+<td><p>Enable GPU support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_GROUP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_GROUP</span></code></a></p></td>
+<td><p>Enable group support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_IMG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_IMG</span></code></a></p></td>
+<td><p>Image Object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_IMGBTN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_IMGBTN</span></code></a></p></td>
+<td><p>Image Button</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_IMG_TRANSFORM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_IMG_TRANSFORM</span></code></a></p></td>
+<td><p>Enable image transformations</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_KEYBOARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_KEYBOARD</span></code></a></p></td>
+<td><p>Keyboard object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_LABEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_LABEL</span></code></a></p></td>
+<td><p>Label Object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_LED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_LED</span></code></a></p></td>
+<td><p>LED object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_LINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_LINE</span></code></a></p></td>
+<td><p>Line Object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_LINEMETER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_LINEMETER</span></code></a></p></td>
+<td><p>Line meter object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_LIST"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_LIST</span></code></a></p></td>
+<td><p>List object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_MSGBOX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_MSGBOX</span></code></a></p></td>
+<td><p>Message box object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_OBJMASK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_OBJMASK</span></code></a></p></td>
+<td><p>Mask object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_OBJ_REALIGN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_OBJ_REALIGN</span></code></a></p></td>
+<td><p>Object realign support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_OPA_SCALE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_OPA_SCALE</span></code></a></p></td>
+<td><p>Enable opa_scale style property</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_OUTLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_OUTLINE</span></code></a></p></td>
+<td><p>Enable outline drawing on rectangles</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_PAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_PAGE</span></code></a></p></td>
+<td><p>Page object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_PATTERN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_PATTERN</span></code></a></p></td>
+<td><p>Enable pattern drawing on rectangles</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_PERF_MONITOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_PERF_MONITOR</span></code></a></p></td>
+<td><p>Enable performance monitor</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_ROLLER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_ROLLER</span></code></a></p></td>
+<td><p>Roller object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_SHADOW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_SHADOW</span></code></a></p></td>
+<td><p>Enable shadows</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_SLIDER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_SLIDER</span></code></a></p></td>
+<td><p>Slider object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_SPINBOX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_SPINBOX</span></code></a></p></td>
+<td><p>Spinbox object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_SPINNER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_SPINNER</span></code></a></p></td>
+<td><p>Spinner object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_SWITCH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_SWITCH</span></code></a></p></td>
+<td><p>Switch object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_TABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_TABLE</span></code></a></p></td>
+<td><p>Table object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_TABVIEW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_TABVIEW</span></code></a></p></td>
+<td><p>Tab view object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_TEXTAREA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_TEXTAREA</span></code></a></p></td>
+<td><p>Text area object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_THEME_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_THEME_CUSTOM</span></code></a></p></td>
+<td><p>Custom theme</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_THEME_EMPTY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_THEME_EMPTY</span></code></a></p></td>
+<td><p>Empty theme</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_THEME_MATERIAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_THEME_MATERIAL</span></code></a></p></td>
+<td><p>Material theme</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_THEME_MONO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_THEME_MONO</span></code></a></p></td>
+<td><p>Mono theme</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_TILEVIEW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_TILEVIEW</span></code></a></p></td>
+<td><p>Tile view object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_VALUE_STR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_VALUE_STR</span></code></a></p></td>
+<td><p>Enable value string drawing on rectangles</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_USE_WIN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_USE_WIN</span></code></a></p></td>
+<td><p>Window object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_VDB_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_VDB_SIZE</span></code></a></p></td>
+<td><p>Display buffer percentage</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LVGL_VER_RES_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_VER_RES_MAX</span></code></a></p></td>
+<td><p>Vertical Screen Resolution</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MAX_PTHREAD_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_PTHREAD_COUNT</span></code></a></p></td>
+<td><p>Maximum simultaneously active pthread count in POSIX application</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MAX_TIMER_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_TIMER_COUNT</span></code></a></p></td>
+<td><p>Maximum timer count in POSIX application</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC</span></code></a></p></td>
+<td><p>Minimal C library</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_CALLOC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_CALLOC</span></code></a></p></td>
+<td><p>Enable minimal libc trivial calloc implementation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_LL_PRINTF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_LL_PRINTF</span></code></a></p></td>
+<td><p>Build with minimal libc long long printf</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_MALLOC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_MALLOC</span></code></a></p></td>
+<td><p>Enable minimal libc malloc implementation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_MALLOC_ARENA_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_MALLOC_ARENA_SIZE</span></code></a></p></td>
+<td><p>Size of the minimal libc malloc arena</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_OPTIMIZE_STRING_FOR_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_OPTIMIZE_STRING_FOR_SIZE</span></code></a></p></td>
+<td><p>Use size optimized string functions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_RAND"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_RAND</span></code></a></p></td>
+<td><p>Enables rand and srand functions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MINIMAL_LIBC_REALLOCARRAY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MINIMAL_LIBC_REALLOCARRAY</span></code></a></p></td>
+<td><p>Enable minimal libc trivial reallocarray implementation</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPSC_CLEAR_ALLOCATED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPSC_CLEAR_ALLOCATED</span></code></a></p></td>
+<td><p>Clear allocated packet</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPSC_PBUF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPSC_PBUF</span></code></a></p></td>
+<td><p>Multi producer, single consumer packet buffer</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MQUEUE_NAMELEN_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MQUEUE_NAMELEN_MAX</span></code></a></p></td>
+<td><p>Maximum size of a name length</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MSG_COUNT_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MSG_COUNT_MAX</span></code></a></p></td>
+<td><p>Maximum number of messages in message queue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MSG_SIZE_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MSG_SIZE_MAX</span></code></a></p></td>
+<td><p>Maximum size of a message</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEED_LIBC_MEM_PARTITION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEED_LIBC_MEM_PARTITION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC</span></code></a></p></td>
+<td><p>Newlib C library</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_ALIGNED_HEAP_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_ALIGNED_HEAP_SIZE</span></code></a></p></td>
+<td><p>Newlib aligned heap size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_FLOAT_PRINTF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_FLOAT_PRINTF</span></code></a></p></td>
+<td><p>Build with newlib float printf</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_FLOAT_SCANF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_FLOAT_SCANF</span></code></a></p></td>
+<td><p>Build with newlib float scanf</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_HEAP_LISTENER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_HEAP_LISTENER</span></code></a></p></td>
+<td><p>Notify heap listeners of newlib libc heap events</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_MAX_MAPPED_REGION_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_MAX_MAPPED_REGION_SIZE</span></code></a></p></td>
+<td><p>Maximum memory mapped for newlib heap</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_MIN_REQUIRED_HEAP_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_MIN_REQUIRED_HEAP_SIZE</span></code></a></p></td>
+<td><p>Newlib minimum required heap size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC_NANO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC_NANO</span></code></a></p></td>
+<td><p>Build with newlib-nano C library</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_OPENAMP_RSC_TABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_OPENAMP_RSC_TABLE</span></code></a></p></td>
+<td><p>coprocessor resource table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_OPENAMP_RSC_TABLE_NUM_RPMSG_BUFF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_OPENAMP_RSC_TABLE_NUM_RPMSG_BUFF</span></code></a></p></td>
+<td><p>Resource table number of rpmsg buffers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_POSIX_API"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_POSIX_API</span></code></a></p></td>
+<td><p>POSIX APIs</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_POSIX_CLOCK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_POSIX_CLOCK</span></code></a></p></td>
+<td><p>POSIX clock, timer, and sleep APIs</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_POSIX_FS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_POSIX_FS</span></code></a></p></td>
+<td><p>Enable POSIX file system API support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_POSIX_MAX_FDS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_POSIX_MAX_FDS</span></code></a></p></td>
+<td><p>Maximum number of open file descriptors</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_POSIX_MAX_OPEN_FILES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_POSIX_MAX_OPEN_FILES</span></code></a></p></td>
+<td><p>Maximum number of open file descriptors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_POSIX_MQUEUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_POSIX_MQUEUE</span></code></a></p></td>
+<td><p>Enable POSIX message queue</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PRINTK_SYNC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PRINTK_SYNC</span></code></a></p></td>
+<td><p>Serialize printk() calls</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PTHREAD_IPC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PTHREAD_IPC</span></code></a></p></td>
+<td><p>POSIX pthread IPC API</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_REBOOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_REBOOT</span></code></a></p></td>
+<td><p>Reboot functionality</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_REQUIRES_FULL_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_REQUIRES_FULL_LIBC</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RING_BUFFER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RING_BUFFER</span></code></a></p></td>
+<td><p>Enable ring buffers</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SEM_VALUE_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SEM_VALUE_MAX</span></code></a></p></td>
+<td><p>Maximum semaphore limit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SHARED_MULTI_HEAP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHARED_MULTI_HEAP</span></code></a></p></td>
+<td><p>Shared multi-heap manager</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SMF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMF</span></code></a></p></td>
+<td><p>Enable Hierarchical State Machine</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SMF_ANCESTOR_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMF_ANCESTOR_SUPPORT</span></code></a></p></td>
+<td><p>Enable states to have 1 or more ancestors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_STDOUT_CONSOLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STDOUT_CONSOLE</span></code></a></p></td>
+<td><p>Send stdout to console</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SUPPORT_MINIMAL_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SUPPORT_MINIMAL_LIBC</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_ALLOC_LOOPS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_ALLOC_LOOPS</span></code></a></p></td>
+<td><p>Number of tries in the inner heap allocation loop</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_AUTO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_AUTO</span></code></a></p></td>
+<td><p>Support for both small and big heaps at run time</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_BIG_ONLY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_BIG_ONLY</span></code></a></p></td>
+<td><p>Support for big heaps only</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_LISTENER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_LISTENER</span></code></a></p></td>
+<td><p>Enable sys_heap event notifications</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_RUNTIME_STATS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_RUNTIME_STATS</span></code></a></p></td>
+<td><p>System heap runtime statistics</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_SMALL_ONLY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_SMALL_ONLY</span></code></a></p></td>
+<td><p>Support for small heaps only</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_HEAP_VALIDATE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_HEAP_VALIDATE</span></code></a></p></td>
+<td><p>Enable internal heap validity checking</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_MEM_BLOCKS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_MEM_BLOCKS</span></code></a></p></td>
+<td><p>(Yet Another) Memory Blocks Allocator</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_MEM_BLOCKS_LISTENER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_MEM_BLOCKS_LISTENER</span></code></a></p></td>
+<td><p>Enable Memory Blocks Allocator event notifications</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_UTF8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UTF8</span></code></a></p></td>
+<td><p>UTF-8 string operation supported</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_WINSTREAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WINSTREAM</span></code></a></p></td>
+<td><p>Lockless shared memory window byte stream</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_WINSTREAM_STDLIB_MEMCOPY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WINSTREAM_STDLIB_MEMCOPY</span></code></a></p></td>
+<td><p>Use standard memcpy() in winstream</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_56c24784c693889f80295b66f28b932b" kind="dir">
+    <compoundname>include/dt-bindings/gpio</compoundname>
+    <innerfile refid="dt-bindings_2gpio_2gpio_8h">gpio.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/dt-bindings/gpio/"/>
+  </compounddef>
+</doxygen>

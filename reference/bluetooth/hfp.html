@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hands Free Profile (HFP) &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Logical Link Control and Adaptation Protocol (L2CAP)" href="l2cap.html" />
+    <link rel="prev" title="HCI RAW channel" href="hci_raw.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html">API Status and Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../audio/index.html">Audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/notify.html">Asynchronous Notifications</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Bluetooth</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="connection_mgmt.html">Connection Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="controller.html">Bluetooth Controller</a></li>
+<li class="toctree-l3"><a class="reference internal" href="crypto.html">Cryptography</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_buffer.html">Data Buffers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gap.html">Generic Access Profile (GAP)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gatt.html">Generic Attribute Profile (GATT)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hci_drivers.html">HCI Drivers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="hci_raw.html">HCI RAW channel</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Hands Free Profile (HFP)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#api-reference">API Reference</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="l2cap.html">Logical Link Control and Adaptation Protocol (L2CAP)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mesh.html">Bluetooth Mesh Profile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rfcomm.html">Serial Port Emulation (RFCOMM)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="sdp.html">Service Discovery Protocol (SDP)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="uuid.html">Universal Unique Identifiers (UUIDs)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="shell/audio.html">Bluetooth: Basic Audio Profile</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../canbus/index.html">Controller Area Network (CAN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../devicetree/index.html">Devicetree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drivers/index.html">Device Driver Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/index.html">Display Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../edac/index.html">Error Detection And Correction (EDAC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_system/index.html">File Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iterable_sections/index.html">Iterable Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/formatted_output.html">Formatted Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Kernel Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libc/index.html">C standard library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logging/index.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../memory_management/index.html">Memory Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/index.html">Miscellaneous</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modbus/index.html">Modbus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networking/index.html">Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../peripherals/index.html">Peripherals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pinctrl/index.html">Pin Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pm/index.html">Power Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../random/index.html">Random Number Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resource_management/index.html">Resource Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shell/index.html">Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storage/index.html">Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../task_wdt/index.html">Task Watchdog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/timeutil.html">Time Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usb/index.html">USB device support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usermode/index.html">User Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../settings/index.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timing_functions/index.html">Executing Time Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../virtualization/index.html">Virtualization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">API Reference</a> &raquo;</li>
+  
+     <li><a href="index.html">Bluetooth</a> &raquo;</li>
+  
+  <li>Hands Free Profile (HFP)</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/reference/bluetooth/hfp.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="hands-free-profile-hfp">
+<span id="bt-hfp"></span><h1>Hands Free Profile (HFP)<a class="headerlink" href="#hands-free-profile-hfp" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="api-reference">
+<h2>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group__bt__hfp"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">bt_hfp</span></span></dt>
+<dd><p>Hands Free Profile (HFP) </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.HFP_HF_CMD_OK">
+<span class="target" id="group__bt__hfp_1ga7c90e2ab7ed6c5b25252f88408235598"></span><span class="sig-name descname"><span class="n"><span class="pre">HFP_HF_CMD_OK</span></span></span><a class="headerlink" href="#c.HFP_HF_CMD_OK" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.HFP_HF_CMD_ERROR">
+<span class="target" id="group__bt__hfp_1ga463b8eb680e7cbedfbf9c5e5628558af"></span><span class="sig-name descname"><span class="n"><span class="pre">HFP_HF_CMD_ERROR</span></span></span><a class="headerlink" href="#c.HFP_HF_CMD_ERROR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.HFP_HF_CMD_CME_ERROR">
+<span class="target" id="group__bt__hfp_1ga80133496d4868f11381d14fe46cfdb51"></span><span class="sig-name descname"><span class="n"><span class="pre">HFP_HF_CMD_CME_ERROR</span></span></span><a class="headerlink" href="#c.HFP_HF_CMD_CME_ERROR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.HFP_HF_CMD_UNKNOWN_ERROR">
+<span class="target" id="group__bt__hfp_1ga613fa4c3e102c7ab20e587f34c14d5c6"></span><span class="sig-name descname"><span class="n"><span class="pre">HFP_HF_CMD_UNKNOWN_ERROR</span></span></span><a class="headerlink" href="#c.HFP_HF_CMD_UNKNOWN_ERROR" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-enums">Enums</p>
+<dl class="c enum">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_at_cmd">
+<span class="target" id="group__bt__hfp_1gae88edd233a1f00e6d12be7fe3ac8c9fd"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_hfp_hf_at_cmd</span></span></span><a class="headerlink" href="#c.bt_hfp_hf_at_cmd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><em>Values:</em></p>
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_at_cmd.BT_HFP_HF_ATA">
+<span class="target" id="group__bt__hfp_1ggae88edd233a1f00e6d12be7fe3ac8c9fdae80220d66b99e9f0954fa9491565f641"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_HFP_HF_ATA</span></span></span><a class="headerlink" href="#c.bt_hfp_hf_at_cmd.BT_HFP_HF_ATA" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="c enumerator">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_at_cmd.BT_HFP_HF_AT_CHUP">
+<span class="target" id="group__bt__hfp_1ggae88edd233a1f00e6d12be7fe3ac8c9fdaa777f4b5e3b8310e528e535ca0667a18"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_HFP_HF_AT_CHUP</span></span></span><a class="headerlink" href="#c.bt_hfp_hf_at_cmd.BT_HFP_HF_AT_CHUP" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_register">
+<span class="target" id="group__bt__hfp_1ga2e4a7c05a3ba9a32eab50b9904f7f161"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_hfp_hf_register</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_hfp_hf_cb" title="bt_hfp_hf_cb"><span class="n"><span class="pre">bt_hfp_hf_cb</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">cb</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_hfp_hf_register" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Register HFP HF profile. </p>
+<p>Register Handsfree profile callbacks to monitor the state and get the required HFP details to display.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cb</strong> – callback structure.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>0 in case of success or negative value in case of error. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_send_cmd">
+<span class="target" id="group__bt__hfp_1ga88f700df453cfca14926afb1db9c70d0"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_hfp_hf_send_cmd</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span>, <span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_hfp_hf_at_cmd" title="bt_hfp_hf_at_cmd"><span class="n"><span class="pre">bt_hfp_hf_at_cmd</span></span></a><span class="w"> </span><span class="n"><span class="pre">cmd</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_hfp_hf_send_cmd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Handsfree client Send AT. </p>
+<p>Send specific AT commands to handsfree client profile.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conn</strong> – Connection object. </p></li>
+<li><p><strong>cmd</strong> – AT command to be sent.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>0 in case of success or negative value in case of error. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cmd_complete">
+<span class="target" id="structbt__hfp__hf__cmd__complete"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_hfp_hf_cmd_complete</span></span></span><a class="headerlink" href="#c.bt_hfp_hf_cmd_complete" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;hfp_hf.h&gt;</em></div>
+<p>HFP HF Command completion field. </p>
+</dd></dl>
+
+<dl class="c struct">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb">
+<span class="target" id="structbt__hfp__hf__cb"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_hfp_hf_cb</span></span></span><a class="headerlink" href="#c.bt_hfp_hf_cb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;hfp_hf.h&gt;</em></div>
+<p>HFP profile application callback. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.connected">
+<span class="target" id="structbt__hfp__hf__cb_1a989373632ab9c5e9f5ee6a8b15d2818d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">connected</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.connected" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF connected callback to application</p>
+<p>If this callback is provided it will be called whenever the connection completes.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.disconnected">
+<span class="target" id="structbt__hfp__hf__cb_1a064e7e6471d537aebc36f3273443cf45"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">disconnected</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.disconnected" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF disconnected callback to application</p>
+<p>If this callback is provided it will be called whenever the connection gets disconnected, including when a connection gets rejected or cancelled or any error in SLC establisment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.service">
+<span class="target" id="structbt__hfp__hf__cb_1a8e9062e76d30dc9db0b4be9f6ec3e26f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">service</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.service" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback provides service indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>service indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.call">
+<span class="target" id="structbt__hfp__hf__cb_1a216dcba1621369bc8c8ace22a8b707e8"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">call</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.call" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback provides call indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>call indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.call_setup">
+<span class="target" id="structbt__hfp__hf__cb_1a0b120f6fd8e20432bab8d9f4f695482f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">call_setup</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.call_setup" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback provides call setup indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>call setup indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.call_held">
+<span class="target" id="structbt__hfp__hf__cb_1aa9e2671fee627a0767c3f6cb269a39d0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">call_held</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.call_held" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback provides call held indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>call held indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.signal">
+<span class="target" id="structbt__hfp__hf__cb_1a485cdbf03ef3bce0a156c13c33eed3e1"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">signal</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.signal" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback provides signal indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>signal indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.roam">
+<span class="target" id="structbt__hfp__hf__cb_1addc8b3aef445ba67df5d340a5a3e9989"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">roam</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.roam" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback provides roaming indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>roaming indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.battery">
+<span class="target" id="structbt__hfp__hf__cb_1a8deff765f7aa622d495e768b3137871f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">battery</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.battery" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF indicator Callback</p>
+<p>This callback battery service indicator value to the application</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param value</dt>
+<dd class="field-even"><p>battery indicator value received from the AG. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.ring_indication">
+<span class="target" id="structbt__hfp__hf__cb_1a580dd17c688c0e6375ef7c84a3751213"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ring_indication</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.ring_indication" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF incoming call Ring indication callback to application</p>
+<p>If this callback is provided it will be called whenever there is an incoming call.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c var">
+<dt class="sig sig-object c" id="c.bt_hfp_hf_cb.cmd_complete_cb">
+<span class="target" id="structbt__hfp__hf__cb_1aa86799138890884ef18e7e0fe4774945"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">cmd_complete_cb</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_hfp_hf_cmd_complete" title="bt_hfp_hf_cmd_complete"><span class="n"><span class="pre">bt_hfp_hf_cmd_complete</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">cmd</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_hfp_hf_cb.cmd_complete_cb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>HF notify command completed callback to application</p>
+<p>The command sent from the application is notified about its status</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param conn</dt>
+<dd class="field-odd"><p>Connection object. </p>
+</dd>
+<dt class="field-even">Param cmd</dt>
+<dd class="field-even"><p>structure contains status of the command including cme. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

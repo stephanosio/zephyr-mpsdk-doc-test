@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structring__buf" kind="struct" language="C++" prot="public">
+    <compoundname>ring_buf</compoundname>
+    <includes refid="ring__buffer_8h" local="no">ring_buffer.h</includes>
+    <innerclass refid="unionring__buf_1_1ring__buf__buffer" prot="public">ring_buf::ring_buf_buffer</innerclass>
+    <innerclass refid="unionring__buf_1_1ring__buf__misc" prot="public">ring_buf::ring_buf_misc</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structring__buf_1acb7c02391643a33236de986049355b3e" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index in buf for the head element </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="35" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1a11cfc27636622cdb5d90c4f0ce501556" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Index in buf for the tail element </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="36" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1ac34603f840482dfde814b21affb31bb3" prot="public" static="no" mutable="no">
+        <type>union <ref refid="unionring__buf_1_1ring__buf__misc" kindref="compound">ring_buf::ring_buf_misc</ref></type>
+        <definition>union ring_buf::ring_buf_misc ring_buf::misc</definition>
+        <argsstring></argsstring>
+        <name>misc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="48" column="6"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1ac91888f5755afb00e99a9a1076e9d380" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of buf in 32-bit chunks </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="49" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1a54b5b67251a8067db1a2b44f2c6202a1" prot="public" static="no" mutable="no">
+        <type>union <ref refid="unionring__buf_1_1ring__buf__buffer" kindref="compound">ring_buf::ring_buf_buffer</ref></type>
+        <definition>union ring_buf::ring_buf_buffer ring_buf::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="54" column="5"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1a1a6a5e1cb368aafb1010f11e9ac602c0" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Modulo mask if size is a power of 2 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="55" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1a4271f139ce4b142d665789a8e57b1433" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structk__spinlock" kindref="compound">k_spinlock</ref></type>
+        <definition>struct k_spinlock ring_buf::lock</definition>
+        <argsstring></argsstring>
+        <name>lock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="57" column="17" bodyfile="include/sys/ring_buffer.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A structure to represent a ring buffer. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>k_spinlock</label>
+        <link refid="structk__spinlock"/>
+      </node>
+      <node id="1">
+        <label>ring_buf</label>
+        <link refid="structring__buf"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>misc</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>buf</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>lock</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>ring_buf::ring_buf_buffer</label>
+        <link refid="unionring__buf_1_1ring__buf__buffer"/>
+      </node>
+      <node id="2">
+        <label>ring_buf::ring_buf_misc</label>
+        <link refid="unionring__buf_1_1ring__buf__misc"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>item_mode</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>byte_mode</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</label>
+        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode"/>
+      </node>
+      <node id="3">
+        <label>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</label>
+        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/sys/ring_buffer.h" line="34" column="1" bodyfile="include/sys/ring_buffer.h" bodystart="34" bodyend="58"/>
+    <listofallmembers>
+      <member refid="structring__buf_1a54b5b67251a8067db1a2b44f2c6202a1" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>buf</name></member>
+      <member refid="structring__buf_1acb7c02391643a33236de986049355b3e" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>head</name></member>
+      <member refid="structring__buf_1a4271f139ce4b142d665789a8e57b1433" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>lock</name></member>
+      <member refid="structring__buf_1a1a6a5e1cb368aafb1010f11e9ac602c0" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>mask</name></member>
+      <member refid="structring__buf_1ac34603f840482dfde814b21affb31bb3" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>misc</name></member>
+      <member refid="structring__buf_1ac91888f5755afb00e99a9a1076e9d380" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>size</name></member>
+      <member refid="structring__buf_1a11cfc27636622cdb5d90c4f0ce501556" prot="public" virt="non-virtual"><scope>ring_buf</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

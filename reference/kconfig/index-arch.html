@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architecture Configuration Options &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+  <li>Architecture Configuration Options</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="architecture-configuration-options">
+<span id="configuration-options-arch"></span><h1>Architecture Configuration Options<a class="headerlink" href="#architecture-configuration-options" title="Permalink to this headline">¶</a></h1>
+<p><code class="file docutils literal notranslate"><span class="pre">Kconfig</span></code> files describe build-time configuration options (called symbols
+in Kconfig-speak), how they’re grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.</p>
+<p><code class="file docutils literal notranslate"><span class="pre">Kconfig</span></code> files appear throughout the directory tree. For example,
+<code class="file docutils literal notranslate"><span class="pre">subsys/power/Kconfig</span></code> defines power-related options.</p>
+<p>This documentation is generated automatically from the <code class="file docutils literal notranslate"><span class="pre">Kconfig</span></code> files by
+the <code class="file docutils literal notranslate"><span class="pre">gen_kconfig_rest.py</span></code> script. Click on symbols for more
+information.</p>
+<!--
+FIXME: do not limit page width until content uses another representation
+format other than tables
+-->
+<style>.wy-nav-content { max-width: none; !important }</style><div class="section" id="configuration-options">
+<h2>Configuration Options<a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Symbol name</p></th>
+<th class="head"><p>Prompt</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_64BIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_64BIT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_AARCH64_IMAGE_HEADER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_AARCH64_IMAGE_HEADER</span></code></a></p></td>
+<td><p>Add image header</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ACPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ACPI</span></code></a></p></td>
+<td><p>ACPI (Advanced Configuration and Power Interface) support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_COHERENCE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_COHERENCE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_DEMAND_PAGING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_DEMAND_PAGING</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_EXECUTABLE_PAGE_BIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_EXECUTABLE_PAGE_BIT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_EXTRA_EXCEPTION_INFO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_EXTRA_EXCEPTION_INFO</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_GDBSTUB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_GDBSTUB</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_NESTED_EXCEPTION_DETECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_NESTED_EXCEPTION_DETECTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_NOCACHE_MEMORY_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_NOCACHE_MEMORY_SUPPORT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_RAMFUNC_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_RAMFUNC_SUPPORT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_RESERVED_PAGE_FRAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_RESERVED_PAGE_FRAMES</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_SINGLE_THREAD_SUPPORT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_STACK_PROTECTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_THREAD_ABORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_THREAD_ABORT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_TIMING_FUNCTIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_TIMING_FUNCTIONS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_TRUSTED_EXECUTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_TRUSTED_EXECUTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_USERSPACE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_IS_SET"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_IS_SET</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_MAPS_ALL_RAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_MAPS_ALL_RAM</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_POSIX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_POSIX</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_POSIX_RECOMMENDED_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_POSIX_RECOMMENDED_STACK_SIZE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_SUPPORTS_ARCH_HW_INIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_SUPPORTS_ARCH_HW_INIT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_SUPPORTS_COREDUMP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_SUPPORTS_COREDUMP</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARCH_SW_ISR_TABLE_ALIGN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_SW_ISR_TABLE_ALIGN</span></code></a></p></td>
+<td><p>Alignment size of a software ISR table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_CONNECT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_CONNECT</span></code></a></p></td>
+<td><p>ARC has ARC connect</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_CORE_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_CORE_MPU</span></code></a></p></td>
+<td><p>ARC Core MPU functionalities</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_EXCEPTION_DEBUG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_EXCEPTION_DEBUG</span></code></a></p></td>
+<td><p>Unhandled exception debugging information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_EXCEPTION_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_EXCEPTION_STACK_SIZE</span></code></a></p></td>
+<td><p>ARC exception handling stack size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_FIRQ"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_FIRQ</span></code></a></p></td>
+<td><p>FIRQ enable</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_FIRQ_STACK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_FIRQ_STACK</span></code></a></p></td>
+<td><p>Enable separate firq stack</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_FIRQ_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_FIRQ_STACK_SIZE</span></code></a></p></td>
+<td><p>FIRQ stack size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_HAS_ACCL_REGS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_HAS_ACCL_REGS</span></code></a></p></td>
+<td><p>Reg Pair ACCL:ACCH (FPU and/or MPY &gt; 6)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_HAS_SECURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_HAS_SECURE</span></code></a></p></td>
+<td><p>ARC has SecureShield</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_HAS_STACK_CHECKING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_HAS_STACK_CHECKING</span></code></a></p></td>
+<td><p>ARC has STACK_CHECKING</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_HAS_ZOL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_HAS_ZOL</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_MPU</span></code></a></p></td>
+<td><p>ARC MPU Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_MPU_ENABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_MPU_ENABLE</span></code></a></p></td>
+<td><p>Enable MPU</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_MPU_VER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_MPU_VER</span></code></a></p></td>
+<td><p>ARC MPU version</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_NORMAL_FIRMWARE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_NORMAL_FIRMWARE</span></code></a></p></td>
+<td><p>Generate Normal Firmware</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_SECURE_FIRMWARE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_SECURE_FIRMWARE</span></code></a></p></td>
+<td><p>Generate Secure Firmware</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_STACK_CHECKING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_STACK_CHECKING</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_STACK_PROTECTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARC_USE_UNALIGNED_MEM_ACCESS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARC_USE_UNALIGNED_MEM_ACCESS</span></code></a></p></td>
+<td><p>Enable unaligned access in HW</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_PA_BITS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_PA_BITS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_PA_BITS_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_PA_BITS_32</span></code></a></p></td>
+<td><p>32-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_PA_BITS_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_PA_BITS_36</span></code></a></p></td>
+<td><p>36-bit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_PA_BITS_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_PA_BITS_40</span></code></a></p></td>
+<td><p>40-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_PA_BITS_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_PA_BITS_42</span></code></a></p></td>
+<td><p>42-bit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_PA_BITS_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_PA_BITS_48</span></code></a></p></td>
+<td><p>48-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_VA_BITS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_VA_BITS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_VA_BITS_32"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_VA_BITS_32</span></code></a></p></td>
+<td><p>32-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_VA_BITS_36"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_VA_BITS_36</span></code></a></p></td>
+<td><p>36-bit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_VA_BITS_40"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_VA_BITS_40</span></code></a></p></td>
+<td><p>40-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_VA_BITS_42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_VA_BITS_42</span></code></a></p></td>
+<td><p>42-bit</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM64_VA_BITS_48"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM64_VA_BITS_48</span></code></a></p></td>
+<td><p>48-bit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV6_M_ARMV8_M_BASELINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV6_M_ARMV8_M_BASELINE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_A</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_EXCEPTION_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_EXCEPTION_STACK_SIZE</span></code></a></p></td>
+<td><p>Undefined Instruction and Abort stack size (in bytes)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_FIQ_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_FIQ_STACK_SIZE</span></code></a></p></td>
+<td><p>FIQ stack size (in bytes)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_M_ARMV8_M_FP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_M_ARMV8_M_FP</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_M_ARMV8_M_MAINLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_M_ARMV8_M_MAINLINE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_R"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_R</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_R_FP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_R_FP</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_SVC_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_SVC_STACK_SIZE</span></code></a></p></td>
+<td><p>SVC stack size (in bytes)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV7_SYS_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV7_SYS_STACK_SIZE</span></code></a></p></td>
+<td><p>SYS stack size (in bytes)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_1_M_MAINLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_1_M_MAINLINE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_1_M_MVEF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_1_M_MVEF</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_1_M_MVEI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_1_M_MVEI</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_A</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_A_NS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_A_NS</span></code></a></p></td>
+<td><p>ARMv8-A Normal World (Non-Secure world of Trustzone)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_M_BASELINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_M_BASELINE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_M_DSP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_M_DSP</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_M_MAINLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_M_MAINLINE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_M_SE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_M_SE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARMV8_R"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARMV8_R</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_AARCH32_MMU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_AARCH32_MMU</span></code></a></p></td>
+<td><p>ARMv7 Cortex-A MMU Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_CUSTOM_INTERRUPT_CONTROLLER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_CUSTOM_INTERRUPT_CONTROLLER</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_ENTRY_VENEERS_LIB_NAME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_ENTRY_VENEERS_LIB_NAME</span></code></a></p></td>
+<td><p>Entry Veneers symbol file</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_FIRMWARE_HAS_SECURE_ENTRY_FUNCS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_FIRMWARE_HAS_SECURE_ENTRY_FUNCS</span></code></a></p></td>
+<td><p>Secure Firmware has Secure Entry functions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_FIRMWARE_USES_SECURE_ENTRY_FUNCS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_FIRMWARE_USES_SECURE_ENTRY_FUNCS</span></code></a></p></td>
+<td><p>Non-Secure Firmware uses Secure Entry functions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_MMU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MMU</span></code></a></p></td>
+<td><p>ARM MMU Support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_MMU_NUM_L2_TABLES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MMU_NUM_L2_TABLES</span></code></a></p></td>
+<td><p>Number of L2 translation tables available to the MMU</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_MMU_REGION_MIN_ALIGN_AND_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MMU_REGION_MIN_ALIGN_AND_SIZE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU</span></code></a></p></td>
+<td><p>ARM MPU Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_NONSECURE_FIRMWARE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_NONSECURE_FIRMWARE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_NONSECURE_PREEMPTIBLE_SECURE_CALLS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_NONSECURE_PREEMPTIBLE_SECURE_CALLS</span></code></a></p></td>
+<td><p>Allow secure function calls to be preempted</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_NSC_REGION_BASE_ADDRESS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_NSC_REGION_BASE_ADDRESS</span></code></a></p></td>
+<td><p>ARM Non-Secure Callable Region base address</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_SECURE_BUSFAULT_HARDFAULT_NMI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_SECURE_BUSFAULT_HARDFAULT_NMI</span></code></a></p></td>
+<td><p>BusFault, HardFault, and NMI target Secure state</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_SECURE_FIRMWARE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_SECURE_FIRMWARE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_STACK_PROTECTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_STORE_EXC_RETURN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_STORE_EXC_RETURN</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ARM_TRUSTZONE_M"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_TRUSTZONE_M</span></code></a></p></td>
+<td><p>ARM TrustZone-M support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ASSEMBLER_ISA_THUMB2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ASSEMBLER_ISA_THUMB2</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_BIG_ENDIAN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BIG_ENDIAN</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_BOARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOARD</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_BUILTIN_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a></p></td>
+<td><p>Thread Stack Guards based on built-in ARM stack limit checking</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CACHE_MANAGEMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CACHE_MANAGEMENT</span></code></a></p></td>
+<td><p>Enable cache management features</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CMSIS_THREAD_MAX_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CMSIS_THREAD_MAX_STACK_SIZE</span></code></a></p></td>
+<td><p>Max stack size threads can be allocated in CMSIS RTOS application</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CMSIS_V2_THREAD_DYNAMIC_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CMSIS_V2_THREAD_DYNAMIC_STACK_SIZE</span></code></a></p></td>
+<td><p>Dynamic stack size threads are allocated in CMSIS RTOS V2 application</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CMSIS_V2_THREAD_MAX_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CMSIS_V2_THREAD_MAX_STACK_SIZE</span></code></a></p></td>
+<td><p>Max stack size threads can be allocated in CMSIS RTOS V2 application</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CODE_DATA_RELOCATION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION</span></code></a></p></td>
+<td><p>Relocate code/data sections</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CODE_DATA_RELOCATION_SRAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION_SRAM</span></code></a></p></td>
+<td><p>Relocate code/data sections to SRAM</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CODE_DENSITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DENSITY</span></code></a></p></td>
+<td><p>Code Density Option</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_COMPILER_ISA_THUMB2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_COMPILER_ISA_THUMB2</span></code></a></p></td>
+<td><p>Compile C/C++ functions using Thumb-2 instruction set</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_COMPRESSED_ISA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_COMPRESSED_ISA</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CORE_E31"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CORE_E31</span></code></a></p></td>
+<td><p>Use E31 core</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CORTEX_M_DWT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CORTEX_M_DWT</span></code></a></p></td>
+<td><p>Enable and use the DWT</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CORTEX_M_NULL_POINTER_EXCEPTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CORTEX_M_NULL_POINTER_EXCEPTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CORTEX_M_NULL_POINTER_EXCEPTION_PAGE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CORTEX_M_NULL_POINTER_EXCEPTION_PAGE_SIZE</span></code></a></p></td>
+<td><p>Size of paged unmapped to implement null pointer detection</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_AARCH32_CORTEX_A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_AARCH32_CORTEX_A</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_AARCH64_CORTEX_R"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_AARCH64_CORTEX_R</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_APOLLO_LAKE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_APOLLO_LAKE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_ARCEM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_ARCEM</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_ARCHS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_ARCHS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_ATOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_ATOM</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_A</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_A53"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_A53</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_A72"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_A72</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_A9"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_A9</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M0"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M0</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M0PLUS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M0PLUS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M0_HAS_VECTOR_TABLE_REMAP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M0_HAS_VECTOR_TABLE_REMAP</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M1"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M1</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M23"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M23</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M3"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M3</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M33"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M33</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M4"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M4</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M55"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M55</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M7"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M7</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_BASEPRI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_BASEPRI</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_CMSE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_CMSE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_DWT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_DWT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_SPLIM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_SPLIM</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_SYSTICK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_SYSTICK</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_VTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_VTOR</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_R"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_R</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_R4"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_R4</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_R5"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_R5</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_R7"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_R7</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_R82"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_R82</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_EM4"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_EM4</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_EM4_DMIPS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_EM4_DMIPS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_EM4_FPUDA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_EM4_FPUDA</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_EM4_FPUS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_EM4_FPUS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_EM6"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_EM6</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_DCLS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_DCLS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_FPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_FPU</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_FPU_DOUBLE_PRECISION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_FPU_DOUBLE_PRECISION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_MMU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_MMU</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_MPU</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_TEE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_TEE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HS3X"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HS3X</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_HS6X"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HS6X</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_LAKEMONT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_LAKEMONT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CPU_NIOS2_GEN2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_NIOS2_GEN2</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CUSTOM_SECTION_ALIGN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CUSTOM_SECTION_ALIGN</span></code></a></p></td>
+<td><p>Custom Section Align</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_CUSTOM_SECTION_MIN_ALIGN_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CUSTOM_SECTION_MIN_ALIGN_SIZE</span></code></a></p></td>
+<td><p>Custom Section Align Size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DCACHE_LINE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DCACHE_LINE_SIZE</span></code></a></p></td>
+<td><p>d-cache line size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DCACHE_LINE_SIZE_DETECT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DCACHE_LINE_SIZE_DETECT</span></code></a></p></td>
+<td><p>Detect d-cache line size at runtime</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DISABLE_SSBD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DISABLE_SSBD</span></code></a></p></td>
+<td><p>Disable Speculative Store Bypass</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DISABLE_TCM_ECC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DISABLE_TCM_ECC</span></code></a></p></td>
+<td><p>Disable ECC on TCM</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DYNAMIC_DIRECT_INTERRUPTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_DIRECT_INTERRUPTS</span></code></a></p></td>
+<td><p>Enable support for dynamic direct interrupts</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DYNAMIC_INTERRUPTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_INTERRUPTS</span></code></a></p></td>
+<td><p>Enable installation of IRQs at runtime</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_DYNAMIC_OBJECTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_OBJECTS</span></code></a></p></td>
+<td><p>Allow kernel objects to be allocated at runtime</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_EAGER_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_EAGER_FPU_SHARING</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ENABLE_EXTENDED_IBRS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ENABLE_EXTENDED_IBRS</span></code></a></p></td>
+<td><p>Enable Extended IBRS</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_EXCEPTION_DEBUG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_EXCEPTION_DEBUG</span></code></a></p></td>
+<td><p>Unhandled exception debugging information</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_EXTRA_EXCEPTION_INFO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_EXTRA_EXCEPTION_INFO</span></code></a></p></td>
+<td><p>Extra exception debug information</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FAULT_DUMP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FAULT_DUMP</span></code></a></p></td>
+<td><p>Fault dump level</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FLASH_BASE_ADDRESS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FLASH_BASE_ADDRESS</span></code></a></p></td>
+<td><p>Flash Base Address</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FLASH_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FLASH_SIZE</span></code></a></p></td>
+<td><p>Flash Size in kB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FLOAT_HARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FLOAT_HARD</span></code></a></p></td>
+<td><p>Enable hard-float calling convention</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FP16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FP16</span></code></a></p></td>
+<td><p>Half-precision floating point support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FP16_ALT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FP16_ALT</span></code></a></p></td>
+<td><p>FP16 ARM alternative format</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FP16_IEEE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FP16_IEEE</span></code></a></p></td>
+<td><p>FP16 IEEE format</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a></p></td>
+<td><p>Enable floating point unit (FPU)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a></p></td>
+<td><p>FPU register sharing</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FP_FPU_DA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FP_FPU_DA</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FP_HARDABI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FP_HARDABI</span></code></a></p></td>
+<td><p>Floating point Hard ABI</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_FP_SOFTABI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FP_SOFTABI</span></code></a></p></td>
+<td><p>Floating point Soft ABI</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GDT_DYNAMIC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GDT_DYNAMIC</span></code></a></p></td>
+<td><p>Store GDT in RAM so that it can be modified</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GEN_IRQ_START_VECTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_IRQ_START_VECTOR</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GEN_IRQ_VECTOR_TABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_IRQ_VECTOR_TABLE</span></code></a></p></td>
+<td><p>Generate an interrupt vector table</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GEN_ISR_TABLES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a></p></td>
+<td><p>Use generated IRQ tables</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GEN_PRIV_STACKS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_PRIV_STACKS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GEN_SW_ISR_TABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_SW_ISR_TABLE</span></code></a></p></td>
+<td><p>Generate a software ISR table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GP_ALL_DATA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GP_ALL_DATA</span></code></a></p></td>
+<td><p>All data global pointer references</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GP_GLOBAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GP_GLOBAL</span></code></a></p></td>
+<td><p>Global data global pointer references</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GP_LOCAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GP_LOCAL</span></code></a></p></td>
+<td><p>Local data global pointer references</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_GP_NONE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GP_NONE</span></code></a></p></td>
+<td><p>No global pointer</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HARVARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HARVARD</span></code></a></p></td>
+<td><p>Harvard Architecture</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_ARCH_CACHE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_ARCH_CACHE</span></code></a></p></td>
+<td><p>Integrated cache controller</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_ARM_SMCCC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_ARM_SMCCC</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_DIV_INSTRUCTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_DIV_INSTRUCTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_EXTERNAL_CACHE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_EXTERNAL_CACHE</span></code></a></p></td>
+<td><p>External cache controller</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_MULX_INSTRUCTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_MULX_INSTRUCTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HAS_MUL_INSTRUCTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_MUL_INSTRUCTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_HW_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a></p></td>
+<td><p>Hardware Stack Protection</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ICACHE_LINE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ICACHE_LINE_SIZE</span></code></a></p></td>
+<td><p>i-cache line size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ICACHE_LINE_SIZE_DETECT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ICACHE_LINE_SIZE_DETECT</span></code></a></p></td>
+<td><p>Detect i-cache line size at runtime</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_IDLE_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IDLE_STACK_SIZE</span></code></a></p></td>
+<td><p>Size of stack for idle thread</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_IDT_NUM_VECTORS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IDT_NUM_VECTORS</span></code></a></p></td>
+<td><p>Number of IDT vectors</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_INCLUDE_RESET_VECTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_INCLUDE_RESET_VECTOR</span></code></a></p></td>
+<td><p>Include Reset vector</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_INIT_ARCH_HW_AT_BOOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_INIT_ARCH_HW_AT_BOOT</span></code></a></p></td>
+<td><p>Initialize internal architecture state at boot</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_IPM_CONSOLE_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IPM_CONSOLE_STACK_SIZE</span></code></a></p></td>
+<td><p>Stack size for IPM console receiver thread</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_IRQ_OFFLOAD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IRQ_OFFLOAD</span></code></a></p></td>
+<td><p>Enable IRQ offload</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_IRQ_OFFLOAD_INTNUM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IRQ_OFFLOAD_INTNUM</span></code></a></p></td>
+<td><p>IRQ offload SW interrupt index</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_IRQ_OFFLOAD_VECTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IRQ_OFFLOAD_VECTOR</span></code></a></p></td>
+<td><p>IDT vector to use for IRQ offload</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISA_ARCV2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISA_ARCV2</span></code></a></p></td>
+<td><p>ARC ISA v2</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISA_ARCV3"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISA_ARCV3</span></code></a></p></td>
+<td><p>ARC ISA v3</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISA_ARM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISA_ARM</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISA_THUMB2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISA_THUMB2</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISR_DEPTH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISR_DEPTH</span></code></a></p></td>
+<td><p>Maximum IRQ nesting depth</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISR_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISR_STACK_SIZE</span></code></a></p></td>
+<td><p>ISR and initialization stack size (in bytes)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ISR_SUBSTACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISR_SUBSTACK_SIZE</span></code></a></p></td>
+<td><p>Size of ISR substacks</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_KERNEL_VM_OFFSET"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_OFFSET</span></code></a></p></td>
+<td><p>Kernel offset within address space</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_KERNEL_VM_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_SIZE</span></code></a></p></td>
+<td><p>Size of kernel address space in bytes</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_KOBJECT_DATA_AREA_RESERVE_EXTRA_PERCENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KOBJECT_DATA_AREA_RESERVE_EXTRA_PERCENT</span></code></a></p></td>
+<td><p>Reserve extra kobject data area (in percentage)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_KOBJECT_RODATA_AREA_EXTRA_BYTES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KOBJECT_RODATA_AREA_EXTRA_BYTES</span></code></a></p></td>
+<td><p>Reserve extra bytes for kobject rodata area</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_KOBJECT_TEXT_AREA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KOBJECT_TEXT_AREA</span></code></a></p></td>
+<td><p>Size of kobject text area</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_LAZY_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LAZY_FPU_SHARING</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MAIN_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAIN_STACK_SIZE</span></code></a></p></td>
+<td><p>Size of stack for initialization and main thread</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MAX_IRQ_LINES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_IRQ_LINES</span></code></a></p></td>
+<td><p>Number of IRQ lines</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MAX_THREAD_BYTES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_THREAD_BYTES</span></code></a></p></td>
+<td><p>Bytes to use when tracking object thread permissions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MAX_XLAT_TABLES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_XLAT_TABLES</span></code></a></p></td>
+<td><p>Maximum numbers of translation tables</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MIPS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MIPS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MMU_PAGE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MMU_PAGE_SIZE</span></code></a></p></td>
+<td><p>Size of smallest granularity MMU page</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU</span></code></a></p></td>
+<td><p>Enable MPU features</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU_ALLOW_FLASH_WRITE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_ALLOW_FLASH_WRITE</span></code></a></p></td>
+<td><p>Add MPU access to write to flash</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU_GAP_FILLING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a></p></td>
+<td><p>Force MPU to be filling in background memory regions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU_REQUIRES_NON_OVERLAPPING_REGIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_NON_OVERLAPPING_REGIONS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a></p></td>
+<td><p>Thread Stack Guards</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD_MIN_SIZE_FLOAT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD_MIN_SIZE_FLOAT</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MULTIBOOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTIBOOT</span></code></a></p></td>
+<td><p>Generate multiboot header</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MULTIBOOT_FRAMEBUF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTIBOOT_FRAMEBUF</span></code></a></p></td>
+<td><p>Multiboot framebuffer support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MULTIBOOT_FRAMEBUF_X"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTIBOOT_FRAMEBUF_X</span></code></a></p></td>
+<td><p>Multiboot framebuffer X pixels</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MULTIBOOT_FRAMEBUF_Y"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTIBOOT_FRAMEBUF_Y</span></code></a></p></td>
+<td><p>Multiboot framebuffer Y pixels</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MULTIBOOT_INFO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTIBOOT_INFO</span></code></a></p></td>
+<td><p>Preserve multiboot information structure</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_MULTIBOOT_MEMMAP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTIBOOT_MEMMAP</span></code></a></p></td>
+<td><p>Use multiboot memory map if provided</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NESTED_INTERRUPTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NESTED_INTERRUPTS</span></code></a></p></td>
+<td><p>Enable nested interrupts</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NET_RX_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_RX_STACK_SIZE</span></code></a></p></td>
+<td><p>RX thread stack size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NET_TX_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_TX_STACK_SIZE</span></code></a></p></td>
+<td><p>TX thread stack size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NIOS2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NIOS2</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NOCACHE_MEMORY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NOCACHE_MEMORY</span></code></a></p></td>
+<td><p>Support for uncached memory</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NO_UNUSED_STACK_INSPECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NO_UNUSED_STACK_INSPECTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NULL_POINTER_EXCEPTION_DETECTION_DWT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NULL_POINTER_EXCEPTION_DETECTION_DWT</span></code></a></p></td>
+<td><p>Use DWT for null pointer exception detection</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU</span></code></a></p></td>
+<td><p>Use MPU for null pointer exception detection</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NULL_POINTER_EXCEPTION_DETECTION_NONE</span></code></a></p></td>
+<td><p>Do not enable null pointer exception detection</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NUM_IRQS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_IRQS</span></code></a></p></td>
+<td><p>Upper limit of interrupt numbers/IDs used</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_NUM_IRQ_PRIO_LEVELS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_IRQ_PRIO_LEVELS</span></code></a></p></td>
+<td><p>Number of supported interrupt priority levels</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PCIE_MMIO_CFG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PCIE_MMIO_CFG</span></code></a></p></td>
+<td><p>Use MMIO PCI configuration space access</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PIC_DISABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PIC_DISABLE</span></code></a></p></td>
+<td><p>Disable PIC</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PLATFORM_SPECIFIC_INIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PLATFORM_SPECIFIC_INIT</span></code></a></p></td>
+<td><p>Enable platform (SOC) specific startup hook</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PMP_POWER_OF_TWO_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PMP_POWER_OF_TWO_ALIGNMENT</span></code></a></p></td>
+<td><p>Enable power of two alignment</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PMP_SLOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PMP_SLOT</span></code></a></p></td>
+<td><p>Number of PMP slot</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PMP_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PMP_STACK_GUARD</span></code></a></p></td>
+<td><p>Thread Stack Guard</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PMP_STACK_GUARD_MIN_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PMP_STACK_GUARD_MIN_SIZE</span></code></a></p></td>
+<td><p>Guard size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_PRIVILEGED_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PRIVILEGED_STACK_SIZE</span></code></a></p></td>
+<td><p>Size of privileged stack</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_REBOOT_RST_CNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_REBOOT_RST_CNT</span></code></a></p></td>
+<td><p>Reboot via RST_CNT register</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RGF_NUM_BANKS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RGF_NUM_BANKS</span></code></a></p></td>
+<td><p>Number of General Purpose Register Banks</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_GENERIC_TOOLCHAIN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_GENERIC_TOOLCHAIN</span></code></a></p></td>
+<td><p>Compile using generic riscv32 toolchain</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_GP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_GP</span></code></a></p></td>
+<td><p>Enable RISC-V global pointer relative addressing</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_HAS_CPU_IDLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_HAS_CPU_IDLE</span></code></a></p></td>
+<td><p>Does SOC has CPU IDLE instruction</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_PMP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_PMP</span></code></a></p></td>
+<td><p>RISC-V PMP Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_SOC_CONTEXT_SAVE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_SOC_CONTEXT_SAVE</span></code></a></p></td>
+<td><p>Enable SOC-based context saving in IRQ handlers</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_SOC_INTERRUPT_INIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_SOC_INTERRUPT_INIT</span></code></a></p></td>
+<td><p>Enable SOC-based interrupt initialization</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_SOC_MCAUSE_EXCEPTION_MASK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_SOC_MCAUSE_EXCEPTION_MASK</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RISCV_SOC_OFFSETS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RISCV_SOC_OFFSETS</span></code></a></p></td>
+<td><p>Enable SOC-based offsets</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_RUNTIME_NMI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RUNTIME_NMI</span></code></a></p></td>
+<td><p>Attach an NMI handler at runtime</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SCHED_IPI_VECTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_IPI_VECTOR</span></code></a></p></td>
+<td><p>IDT vector to use for scheduler IPI</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SET_GDT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SET_GDT</span></code></a></p></td>
+<td><p>Setup GDT as part of boot process</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SIMULATOR_XTENSA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SIMULATOR_XTENSA</span></code></a></p></td>
+<td><p>Simulator Configuration</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SJLI_TABLE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SJLI_TABLE_SIZE</span></code></a></p></td>
+<td><p>SJLI table size</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SOC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SOC</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SOC_FAMILY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SOC_FAMILY</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SOC_SERIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SOC_SERIES</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SPARC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPARC</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SPARC_CASA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPARC_CASA</span></code></a></p></td>
+<td><p>CASA instructions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SPARC_NWIN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPARC_NWIN</span></code></a></p></td>
+<td><p>Number of register windows</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SRAM_BASE_ADDRESS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_BASE_ADDRESS</span></code></a></p></td>
+<td><p>SRAM Base Address</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SRAM_OFFSET"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_OFFSET</span></code></a></p></td>
+<td><p>Kernel SRAM offset</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SRAM_REGION_PERMISSIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_REGION_PERMISSIONS</span></code></a></p></td>
+<td><p>Assign appropriate permissions to kernel areas in SRAM</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SRAM_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_SIZE</span></code></a></p></td>
+<td><p>SRAM Size in kB</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SSE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SSE</span></code></a></p></td>
+<td><p>SSE registers</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SSE_FP_MATH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SSE_FP_MATH</span></code></a></p></td>
+<td><p>Compiler-generated SSEx instructions</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_STACK_ALIGN_DOUBLE_WORD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STACK_ALIGN_DOUBLE_WORD</span></code></a></p></td>
+<td><p>Align stacks on double-words (8 octets)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_STACK_GROWS_UP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STACK_GROWS_UP</span></code></a></p></td>
+<td><p>Stack grows towards higher memory addresses</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SW_VECTOR_RELAY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SW_VECTOR_RELAY</span></code></a></p></td>
+<td><p>Enable Software Vector Relay</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SW_VECTOR_RELAY_CLIENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SW_VECTOR_RELAY_CLIENT</span></code></a></p></td>
+<td><p>Enable Software Vector Relay (client)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE</span></code></a></p></td>
+<td><p>System workqueue stack size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC</span></code></a></p></td>
+<td><p>Hardware clock cycles per second, 2000000 for ISS</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_TEST_EXTRA_STACKSIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TEST_EXTRA_STACKSIZE</span></code></a></p></td>
+<td><p>Test function extra thread stack size</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_TLB_IPI_VECTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TLB_IPI_VECTOR</span></code></a></p></td>
+<td><p>IDT vector to use for TLB shootdown IPI</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TOOLCHAIN_HAS_BUILTIN_FFS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_TRUSTED_EXECUTION_NONSECURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRUSTED_EXECUTION_NONSECURE</span></code></a></p></td>
+<td><p>Trusted Execution: Non-Secure firmware image</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_TRUSTED_EXECUTION_SECURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRUSTED_EXECUTION_SECURE</span></code></a></p></td>
+<td><p>Trusted Execution: Secure firmware image</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></td>
+<td><p>User mode threads</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_64"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_64</span></code></a></p></td>
+<td><p>Run in 64-bit mode</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_BOUNDS_CHECK_BYPASS_MITIGATION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_BOUNDS_CHECK_BYPASS_MITIGATION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_COMMON_PAGE_TABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_COMMON_PAGE_TABLE</span></code></a></p></td>
+<td><p>Use a single page table for all threads</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_MMX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_MMX</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSE2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSE2</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSE3"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSE3</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSE41"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSE41</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSE42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSE42</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSE4A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSE4A</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_CPU_HAS_SSSE3"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_CPU_HAS_SSSE3</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_DYNAMIC_IRQ_STUBS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_DYNAMIC_IRQ_STUBS</span></code></a></p></td>
+<td><p>Number of dynamic interrupt stubs</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_ENABLE_TSS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_ENABLE_TSS</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_EXCEPTION_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_EXCEPTION_STACK_SIZE</span></code></a></p></td>
+<td><p>Size of the exception stack(s)</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_EXCEPTION_STACK_TRACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_EXCEPTION_STACK_TRACE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_EXTRA_PAGE_TABLE_PAGES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_EXTRA_PAGE_TABLE_PAGES</span></code></a></p></td>
+<td><p>Reserve extra pages in page table</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_FP_USE_SOFT_FLOAT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_FP_USE_SOFT_FLOAT</span></code></a></p></td>
+<td><p>Use Software Floating Point Operations</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_KPTI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_KPTI</span></code></a></p></td>
+<td><p>Enable kernel page table isolation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_MAX_ADDITIONAL_MEM_DOMAINS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_MAX_ADDITIONAL_MEM_DOMAINS</span></code></a></p></td>
+<td><p>Maximum number of memory domains</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_MEMMAP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_MEMMAP</span></code></a></p></td>
+<td><p>Use memory map</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_MEMMAP_ENTRIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_MEMMAP_ENTRIES</span></code></a></p></td>
+<td><p>Number of memory map entries</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_MFENCE_INSTRUCTION_SUPPORTED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_MFENCE_INSTRUCTION_SUPPORTED</span></code></a></p></td>
+<td><p>X86 MFENCE instruction supported</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_MMU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_MMU</span></code></a></p></td>
+<td><p>Enable Memory Management Unit</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_MMX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_MMX</span></code></a></p></td>
+<td><p>Enable MMX Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_NO_LAZY_FP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_NO_LAZY_FP</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_NO_MELTDOWN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_NO_MELTDOWN</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_NO_SPECTRE_V1"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_NO_SPECTRE_V1</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_NO_SPECTRE_V2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_NO_SPECTRE_V2</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_NO_SPECTRE_V4"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_NO_SPECTRE_V4</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_NO_SPECULATIVE_VULNERABILITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_NO_SPECULATIVE_VULNERABILITIES</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_PAE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_PAE</span></code></a></p></td>
+<td><p>Use PAE page tables</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_PC_COMPATIBLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_PC_COMPATIBLE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE</span></code></a></p></td>
+<td><p>Enable SSE Support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE2</span></code></a></p></td>
+<td><p>Enable SSE2 Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE3"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE3</span></code></a></p></td>
+<td><p>Enable SSE3 Support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE41"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE41</span></code></a></p></td>
+<td><p>Enable SSE4.1 Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE42"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE42</span></code></a></p></td>
+<td><p>Enable SSE4.2 Support</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE4A"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE4A</span></code></a></p></td>
+<td><p>Enable SSE4A Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSE_FP_MATH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE_FP_MATH</span></code></a></p></td>
+<td><p>Compiler-generated SSEx instructions for floating point math</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_SSSE3"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSSE3</span></code></a></p></td>
+<td><p>Enable SSSE3 (Supplemental SSE3) Support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_STACK_PROTECTION</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_USERSPACE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_USE_THREAD_LOCAL_STORAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_USE_THREAD_LOCAL_STORAGE</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_X86_VERY_EARLY_CONSOLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_VERY_EARLY_CONSOLE</span></code></a></p></td>
+<td><p>Support very early boot printk</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XIP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XIP</span></code></a></p></td>
+<td><p>Execute in place</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA</span></code></a></p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_CACHED_REGION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_CACHED_REGION</span></code></a></p></td>
+<td><p>Cached RPO mapping</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_CPU_IDLE_SPIN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_CPU_IDLE_SPIN</span></code></a></p></td>
+<td><p>Use busy loop for k_cpu_idle</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_ENABLE_BACKTRACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_ENABLE_BACKTRACE</span></code></a></p></td>
+<td><p>Enable backtrace on panic exception</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_NO_IPC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_NO_IPC</span></code></a></p></td>
+<td><p>Core has no IPC support</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_RESET_VECTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_RESET_VECTOR</span></code></a></p></td>
+<td><p>Build reset vector code</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_SMALL_VECTOR_TABLE_ENTRY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_SMALL_VECTOR_TABLE_ENTRY</span></code></a></p></td>
+<td><p>Enable workaround for small vector table entries</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_UNCACHED_REGION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_UNCACHED_REGION</span></code></a></p></td>
+<td><p>Uncached RPO mapping</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_USE_CORE_CRT1"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_USE_CORE_CRT1</span></code></a></p></td>
+<td><p>Use crt1.S from core</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_XTENSA_WAITI_BUG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XTENSA_WAITI_BUG</span></code></a></p></td>
+<td><p>Enable workaround sequence for WAITI bug on LX6</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="dummy-syms.html#std-kconfig-CONFIG_ZERO_LATENCY_IRQS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ZERO_LATENCY_IRQS</span></code></a></p></td>
+<td><p>Enable zero-latency interrupts</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

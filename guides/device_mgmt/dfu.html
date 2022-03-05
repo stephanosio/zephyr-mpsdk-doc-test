@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Device Firmware Upgrade &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Devicetree Guide" href="../dts/index.html" />
+    <link rel="prev" title="Fixing and backporting fixes to Zephyr v2.7 MCUmgr" href="mcumgr_backporting.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User and Developer Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../beyond-GSG.html">Beyond the Getting Started Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../arch/index.html">Architecture-related Guides</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bluetooth/index.html">Bluetooth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../docs/index.html">Documentation Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coccinelle.html">Coccinelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code-relocation.html">Code And Data Relocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crypto/index.html">Cryptography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flash_debug/index.html">Flashing and Hardware Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debug_tools/index.html">Debugging and Tracing</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Device Management</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="mcumgr.html">MCUmgr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mcumgr_backporting.html">Fixing and backporting fixes to Zephyr v2.7 MCUmgr</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Device Firmware Upgrade</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bootloaders">Bootloaders</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dts/index.html">Devicetree Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../env_vars.html">Environment Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pinctrl/index.html">Pin Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pm/index.html">Power Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../emulator/index.html">Peripheral and Hardware Emulators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html">Modules (External projects)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networking/index.html">Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platformio/index.html">Using with PlatformIO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../portability/index.html">OS Abstraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../porting/index.html">Porting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../smf/index.html">State Machine Framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test/index.html">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tfm/index.html">Trusted Firmware-M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../west/index.html">West (Zephyr’s meta-tool)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../optimizations/index.html">Optimizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../zephyr_cmake_package.html">Zephyr CMake Package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">User and Developer Guides</a> &raquo;</li>
+  
+     <li><a href="index.html">Device Management</a> &raquo;</li>
+  
+  <li>Device Firmware Upgrade</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/guides/device_mgmt/dfu.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="device-firmware-upgrade">
+<span id="dfu"></span><h1>Device Firmware Upgrade<a class="headerlink" href="#device-firmware-upgrade" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The Device Firmware Upgrade subsystem provides the necessary frameworks to
+upgrade the image of a Zephyr-based application at run time. It currently
+consists of two different modules:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/subsys/dfu/boot/">subsys/dfu/boot/</a>: Interface code to bootloaders</p></li>
+<li><p><a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/subsys/dfu/img_util/">subsys/dfu/img_util/</a>: Image management code</p></li>
+</ul>
+<p>The DFU subsystem deals with image management, but not with the transport
+or management protocols themselves required to send the image to the target
+device. For information on these protocols and frameworks please refer to the
+<a class="reference internal" href="index.html#device-mgmt"><span class="std std-ref">Device Management</span></a> section.</p>
+</div>
+<div class="section" id="bootloaders">
+<h2>Bootloaders<a class="headerlink" href="#bootloaders" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="mcuboot">
+<span id="id1"></span><h3>MCUboot<a class="headerlink" href="#mcuboot" title="Permalink to this headline">¶</a></h3>
+<p>Zephyr is directly compatible with the open source, cross-RTOS
+<a class="reference external" href="https://mcuboot.com/">MCUboot boot loader</a>. It interfaces with MCUboot and is aware of the image
+format required by it, so that Device Firmware Upgrade is available when MCUboot
+is the boot loader used with Zephyr. The source code itself is hosted in the
+<a class="reference external" href="https://github.com/runtimeco/mcuboot">MCUboot GitHub Project</a> page.</p>
+<p>In order to use MCUboot with Zephyr you need to take the following into account:</p>
+<ol class="arabic simple">
+<li><p>You will need to define the flash partitions required by MCUboot; see
+<a class="reference internal" href="../../reference/storage/flash_map/flash_map.html#flash-map-api"><span class="std std-ref">Flash map</span></a> for details.</p></li>
+<li><p>You will have to specify your flash parition as the chosen code partition</p></li>
+</ol>
+<div class="highlight-devicetree notranslate"><div class="highlight"><pre><span></span><span class="nf">/</span><span class="cm"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nf">chosen</span><span class="cm"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="n">zephyr</span><span class="p">,</span><span class="n">code-partition</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">slot0_partition</span><span class="p">;</span><span class="w"></span>
+<span class="w">   </span><span class="p">};</span><span class="w"></span>
+<span class="p">};</span><span class="w"></span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Your application’s <code class="file docutils literal notranslate"><span class="pre">.conf</span></code> file needs to enable the
+<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_MCUBOOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_MCUBOOT</span></code></a> Kconfig option in order for Zephyr to
+be built in an MCUboot-compatible manner</p></li>
+<li><p>You need to build and flash MCUboot itself on your device</p></li>
+<li><p>You might need to take precautions to avoid mass erasing the flash and also
+to flash the Zephyr application image at the correct offset (right after the
+bootloader)</p></li>
+</ol>
+<p>More detailed information regarding the use of MCUboot with Zephyr  can be found
+in the <a class="reference external" href="https://mcuboot.com/documentation/readme-zephyr/">MCUboot with Zephyr</a> documentation page on the MCUboot website.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="unionring__buf_1_1ring__buf__buffer" kind="union" language="C++" prot="public">
+    <compoundname>ring_buf::ring_buf_buffer</compoundname>
+    <includes refid="ring__buffer_8h" local="no">ring_buffer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionring__buf_1_1ring__buf__buffer_1aa5666d76390ce6bc71af5bff4889ad65" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+        <definition>uint32_t* ring_buf::ring_buf_buffer::buf32</definition>
+        <argsstring></argsstring>
+        <name>buf32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Memory region for stored entries </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="52" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionring__buf_1_1ring__buf__buffer_1a3d698450d2be9449fa24e1a6233ec40f" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
+        <definition>uint8_t* ring_buf::ring_buf_buffer::buf8</definition>
+        <argsstring></argsstring>
+        <name>buf8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="53" column="9" bodyfile="include/sys/ring_buffer.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sys/ring_buffer.h" line="51" column="1" bodyfile="include/sys/ring_buffer.h" bodystart="51" bodyend="54"/>
+    <listofallmembers>
+      <member refid="unionring__buf_1_1ring__buf__buffer_1aa5666d76390ce6bc71af5bff4889ad65" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_buffer</scope><name>buf32</name></member>
+      <member refid="unionring__buf_1_1ring__buf__buffer_1a3d698450d2be9449fa24e1a6233ec40f" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_buffer</scope><name>buf8</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,232 @@
+:orphan:
+
+.. _configuration_options_kernel:
+
+
+Kernel Configuration Options
+============================
+
+:file:`Kconfig` files describe build-time configuration options (called symbols
+in Kconfig-speak), how they're grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.
+
+:file:`Kconfig` files appear throughout the directory tree. For example,
+:file:`subsys/power/Kconfig` defines power-related options.
+
+This documentation is generated automatically from the :file:`Kconfig` files by
+the :file:`gen_kconfig_rest.py` script. Click on symbols for more
+information.
+
+.. raw:: html
+
+    <!--
+    FIXME: do not limit page width until content uses another representation
+    format other than tables
+    -->
+    <style>.wy-nav-content { max-width: none; !important }</style>
+
+
+
+Configuration Options
+*********************
+
+.. list-table::
+   :header-rows: 1
+   :widths: auto
+
+   * - Symbol name
+     - Prompt
+   * - :kconfig:`CONFIG_APPLICATION_INIT_PRIORITY`
+     - Default init priority for application level drivers
+   * - :kconfig:`CONFIG_ARCH_HAS_CUSTOM_BUSY_WAIT`
+     - 
+   * - :kconfig:`CONFIG_ARCH_HAS_CUSTOM_SWAP_TO_MAIN`
+     - 
+   * - :kconfig:`CONFIG_ARCH_MEM_DOMAIN_DATA`
+     - 
+   * - :kconfig:`CONFIG_ARCH_MEM_DOMAIN_SYNCHRONOUS_API`
+     - 
+   * - :kconfig:`CONFIG_ATOMIC_OPERATIONS_ARCH`
+     - 
+   * - :kconfig:`CONFIG_ATOMIC_OPERATIONS_BUILTIN`
+     - 
+   * - :kconfig:`CONFIG_ATOMIC_OPERATIONS_C`
+     - 
+   * - :kconfig:`CONFIG_BOOT_BANNER`
+     - Boot banner
+   * - :kconfig:`CONFIG_BOOT_DELAY`
+     - Boot delay in milliseconds
+   * - :kconfig:`CONFIG_BOUNDS_CHECK_BYPASS_MITIGATION`
+     - Enable bounds check bypass mitigations for speculative execution
+   * - :kconfig:`CONFIG_COOP_ENABLED`
+     - 
+   * - :kconfig:`CONFIG_DEMAND_PAGING`
+     - Enable demand paging [EXPERIMENTAL]
+   * - :kconfig:`CONFIG_DEMAND_PAGING_ALLOW_IRQ`
+     - Allow interrupts during page-ins/outs
+   * - :kconfig:`CONFIG_DEMAND_PAGING_PAGE_FRAMES_RESERVE`
+     - Number of page frames reserved for paging
+   * - :kconfig:`CONFIG_DEMAND_PAGING_STATS`
+     - Gather Demand Paging Statistics
+   * - :kconfig:`CONFIG_DEMAND_PAGING_STATS_USING_TIMING_FUNCTIONS`
+     - Use Timing Functions to Gather Demand Paging Statistics
+   * - :kconfig:`CONFIG_DEMAND_PAGING_THREAD_STATS`
+     - Gather per Thread Demand Paging Statistics
+   * - :kconfig:`CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM`
+     - Gather Demand Paging Execution Timing Histogram
+   * - :kconfig:`CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS`
+     - Number of bins (buckets) in Demand Paging Timing Histogrm
+   * - :kconfig:`CONFIG_ERRNO`
+     - Enable errno support
+   * - :kconfig:`CONFIG_ERRNO_IN_TLS`
+     - Store errno in thread local storage (TLS)
+   * - :kconfig:`CONFIG_EVENTS`
+     - Enable event objects
+   * - :kconfig:`CONFIG_EXECUTE_XOR_WRITE`
+     - Enable W^X for memory partitions
+   * - :kconfig:`CONFIG_HEAP_MEM_POOL_SIZE`
+     - Heap memory pool size (in bytes)
+   * - :kconfig:`CONFIG_IDLE_STACK_SIZE`
+     - Size of stack for idle thread
+   * - :kconfig:`CONFIG_INIT_STACKS`
+     - Initialize stack areas
+   * - :kconfig:`CONFIG_INSTRUMENT_THREAD_SWITCHING`
+     - 
+   * - :kconfig:`CONFIG_ISR_STACK_SIZE`
+     - ISR and initialization stack size (in bytes)
+   * - :kconfig:`CONFIG_KERNEL_COHERENCE`
+     - Place all shared data into coherent memory
+   * - :kconfig:`CONFIG_KERNEL_INIT_PRIORITY_DEFAULT`
+     - Default init priority
+   * - :kconfig:`CONFIG_KERNEL_INIT_PRIORITY_DEVICE`
+     - Default init priority for device drivers
+   * - :kconfig:`CONFIG_KERNEL_INIT_PRIORITY_OBJECTS`
+     - Kernel objects initialization priority
+   * - :kconfig:`CONFIG_KERNEL_MEM_POOL`
+     - Use Kernel Memory Pool
+   * - :kconfig:`CONFIG_KERNEL_VM_BASE`
+     - Virtual address space base address
+   * - :kconfig:`CONFIG_KERNEL_VM_OFFSET`
+     - Kernel offset within address space
+   * - :kconfig:`CONFIG_KERNEL_VM_SIZE`
+     - Size of kernel address space in bytes
+   * - :kconfig:`CONFIG_KERNEL_VM_SUPPORT`
+     - 
+   * - :kconfig:`CONFIG_MAIN_STACK_SIZE`
+     - Size of stack for initialization and main thread
+   * - :kconfig:`CONFIG_MAIN_THREAD_PRIORITY`
+     - Priority of initialization/main thread
+   * - :kconfig:`CONFIG_MAX_DOMAIN_PARTITIONS`
+     - Maximum number of partitions per memory domain
+   * - :kconfig:`CONFIG_MEM_SLAB_TRACE_MAX_UTILIZATION`
+     - Enable getting maximum slab utilization
+   * - :kconfig:`CONFIG_MMU`
+     - Enable MMU features
+   * - :kconfig:`CONFIG_MMU_PAGE_SIZE`
+     - Size of smallest granularity MMU page
+   * - :kconfig:`CONFIG_MP_NUM_CPUS`
+     - Number of CPUs/cores
+   * - :kconfig:`CONFIG_MULTITHREADING`
+     - Multi-threading
+   * - :kconfig:`CONFIG_NUM_COOP_PRIORITIES`
+     - Number of coop priorities
+   * - :kconfig:`CONFIG_NUM_MBOX_ASYNC_MSGS`
+     - Maximum number of in-flight asynchronous mailbox messages
+   * - :kconfig:`CONFIG_NUM_METAIRQ_PRIORITIES`
+     - Number of very-high priority 'preemptor' threads
+   * - :kconfig:`CONFIG_NUM_PREEMPT_PRIORITIES`
+     - Number of preemptible priorities
+   * - :kconfig:`CONFIG_POLL`
+     - Async I/O Framework
+   * - :kconfig:`CONFIG_PREEMPT_ENABLED`
+     - 
+   * - :kconfig:`CONFIG_PRIORITY_CEILING`
+     - Priority inheritance ceiling
+   * - :kconfig:`CONFIG_SCHED_CPU_MASK`
+     - Enable CPU mask affinity/pinning API
+   * - :kconfig:`CONFIG_SCHED_CPU_MASK_PIN_ONLY`
+     - CPU mask variant with single-CPU pinning only
+   * - :kconfig:`CONFIG_SCHED_DEADLINE`
+     - Enable earliest-deadline-first scheduling
+   * - :kconfig:`CONFIG_SCHED_DUMB`
+     - Simple linked-list ready queue
+   * - :kconfig:`CONFIG_SCHED_IPI_SUPPORTED`
+     - 
+   * - :kconfig:`CONFIG_SCHED_MULTIQ`
+     - Traditional multi-queue ready queue
+   * - :kconfig:`CONFIG_SCHED_SCALABLE`
+     - Red/black tree ready queue
+   * - :kconfig:`CONFIG_SCHED_THREAD_USAGE`
+     - Collect thread runtime usage
+   * - :kconfig:`CONFIG_SCHED_THREAD_USAGE_ALL`
+     - Collect total system runtime usage
+   * - :kconfig:`CONFIG_SCHED_THREAD_USAGE_ANALYSIS`
+     - Analyze the collected thread runtime usage statistics
+   * - :kconfig:`CONFIG_SCHED_THREAD_USAGE_AUTO_ENABLE`
+     - Automatically enable runtime usage statistics
+   * - :kconfig:`CONFIG_SMP`
+     - Enable symmetric multithreading support
+   * - :kconfig:`CONFIG_SMP_BOOT_DELAY`
+     - Delay booting secondary cores
+   * - :kconfig:`CONFIG_STACK_CANARIES`
+     - Compiler stack canaries
+   * - :kconfig:`CONFIG_STACK_POINTER_RANDOM`
+     - Initial stack pointer randomization bounds
+   * - :kconfig:`CONFIG_SWAP_NONATOMIC`
+     - 
+   * - :kconfig:`CONFIG_SYSTEM_WORKQUEUE_NO_YIELD`
+     - Select whether system work queue yields
+   * - :kconfig:`CONFIG_SYSTEM_WORKQUEUE_PRIORITY`
+     - System workqueue priority
+   * - :kconfig:`CONFIG_SYSTEM_WORKQUEUE_STACK_SIZE`
+     - System workqueue stack size
+   * - :kconfig:`CONFIG_SYS_CLOCK_EXISTS`
+     - System clock exists and is enabled
+   * - :kconfig:`CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC`
+     - Hardware clock cycles per second, 2000000 for ISS
+   * - :kconfig:`CONFIG_SYS_CLOCK_MAX_TIMEOUT_DAYS`
+     - Max timeout (in days) used in conversions
+   * - :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC`
+     - System tick frequency (in ticks/second)
+   * - :kconfig:`CONFIG_THREAD_CUSTOM_DATA`
+     - Thread custom data
+   * - :kconfig:`CONFIG_THREAD_LOCAL_STORAGE`
+     - Thread Local Storage (TLS)
+   * - :kconfig:`CONFIG_THREAD_MAX_NAME_LEN`
+     - Max length of a thread name
+   * - :kconfig:`CONFIG_THREAD_MONITOR`
+     - Thread monitoring
+   * - :kconfig:`CONFIG_THREAD_NAME`
+     - Thread name
+   * - :kconfig:`CONFIG_THREAD_RUNTIME_STATS`
+     - Thread runtime statistics
+   * - :kconfig:`CONFIG_THREAD_RUNTIME_STATS_USE_TIMING_FUNCTIONS`
+     - Use timing functions to gather statistics
+   * - :kconfig:`CONFIG_THREAD_STACK_INFO`
+     - Thread stack info
+   * - :kconfig:`CONFIG_THREAD_USERSPACE_LOCAL_DATA`
+     - 
+   * - :kconfig:`CONFIG_TICKLESS_KERNEL`
+     - Tickless kernel
+   * - :kconfig:`CONFIG_TIMEOUT_64BIT`
+     - Store kernel timeouts in 64 bit precision
+   * - :kconfig:`CONFIG_TIMESLICE_PRIORITY`
+     - Time slicing thread priority ceiling
+   * - :kconfig:`CONFIG_TIMESLICE_SIZE`
+     - Time slice size (in ms)
+   * - :kconfig:`CONFIG_TIMESLICING`
+     - Thread time slicing
+   * - :kconfig:`CONFIG_TOOLCHAIN_SUPPORTS_THREAD_LOCAL_STORAGE`
+     - 
+   * - :kconfig:`CONFIG_TRACE_SCHED_IPI`
+     - Enable Test IPI
+   * - :kconfig:`CONFIG_USE_SWITCH`
+     - Use new-style \_arch\_switch instead of arch\_swap
+   * - :kconfig:`CONFIG_USE_SWITCH_SUPPORTED`
+     - 
+   * - :kconfig:`CONFIG_WAITQ_DUMB`
+     - Simple linked-list wait\_q
+   * - :kconfig:`CONFIG_WAITQ_SCALABLE`
+     - Use scalable wait\_q implementation
+   * - :kconfig:`CONFIG_XIP`
+     - Execute in place

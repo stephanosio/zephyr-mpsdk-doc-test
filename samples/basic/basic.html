@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Samples &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Blinky" href="blinky/README.html" />
+    <link rel="prev" title="Dining Philosophers" href="../philosophers/README.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Samples and Demos</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../classic.html">Classic Samples</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basic Samples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="blinky/README.html">Blinky</a></li>
+<li class="toctree-l3"><a class="reference internal" href="blinky_pwm/README.html">PWM Blinky</a></li>
+<li class="toctree-l3"><a class="reference internal" href="button/README.html">Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="fade_led/README.html">Fade LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="minimal/README.html">Minimal footprint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rgb_led/README.html">PWM: RGB LED</a></li>
+<li class="toctree-l3"><a class="reference internal" href="servo_motor/README.html">Servomotor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="threads/README.html">Basic Thread Example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../userspace/index.html">Userspace Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../subsys/subsys.html">Various Subsystems Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../net/net.html">Networking Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bluetooth/bluetooth.html">Bluetooth samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sensor/sensor.html">Sensor Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../arch/index.html">Architecture Dependent Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../boards/boards.html">Board-specific samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drivers/drivers.html">Driver Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../application_development/application_development.html">Application development samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shields/shields.html">Shields Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../posix/posix.html">POSIX Subsystem Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Various Kernel and Scheduler Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tfm_integration/tfm_integration.html">TF-M Integration Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tfm_integration/tfm_integration.html#trusted-firmware-m-tf-m">Trusted Firmware-M (TF-M)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/index.html">External Module Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../compression/compression.html">Compression Samples</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">Samples and Demos</a> &raquo;</li>
+  
+  <li>Basic Samples</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main//samples/basic/basic.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="basic-samples">
+<span id="basic-sample"></span><h1>Basic Samples<a class="headerlink" href="#basic-samples" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="blinky/README.html">Blinky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="blinky_pwm/README.html">PWM Blinky</a></li>
+<li class="toctree-l1"><a class="reference internal" href="button/README.html">Button</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fade_led/README.html">Fade LED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="minimal/README.html">Minimal footprint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rgb_led/README.html">PWM: RGB LED</a></li>
+<li class="toctree-l1"><a class="reference internal" href="servo_motor/README.html">Servomotor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="threads/README.html">Basic Thread Example</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

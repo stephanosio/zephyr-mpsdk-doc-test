@@ -1,0 +1,654 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="net_2can_8h" kind="file" language="C++">
+    <compoundname>can.h</compoundname>
+    <includes refid="include_2zephyr_2types_8h" local="no">zephyr/types.h</includes>
+    <includes refid="net__ip_8h" local="no">net/net_ip.h</includes>
+    <includes refid="net__if_8h" local="no">net/net_if.h</includes>
+    <includes refid="drivers_2can_8h" local="no">drivers/can.h</includes>
+    <incdepgraph>
+      <node id="56">
+        <label>drivers/can.h</label>
+        <link refid="drivers_2can_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>logging/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>logging/log_core.h</label>
+        <link refid="include_2logging_2log__core_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>logging/log_instance.h</label>
+        <link refid="log__instance_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>logging/log_msg.h</label>
+        <link refid="log__msg_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>logging/log_msg2.h</label>
+        <link refid="include_2logging_2log__msg2_8h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>net/buf.h</label>
+        <link refid="net_2buf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>include/net/can.h</label>
+        <link refid="net_2can_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>net/capture.h</label>
+        <link refid="capture_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>net/hostname.h</label>
+        <link refid="hostname_8h"/>
+      </node>
+      <node id="27">
+        <label>net/net_core.h</label>
+        <link refid="net__core_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>net/net_event.h</label>
+        <link refid="net__event_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>net/net_if.h</label>
+        <link refid="net__if_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>net/net_ip.h</label>
+        <link refid="net__ip_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>net/net_l2.h</label>
+        <link refid="net__l2_8h"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>net/net_linkaddr.h</label>
+        <link refid="net__linkaddr_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>net/net_mgmt.h</label>
+        <link refid="net__mgmt_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>net/net_stats.h</label>
+        <link refid="net__stats_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>net/net_timeout.h</label>
+        <link refid="net__timeout_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>sys/__assert.h</label>
+        <link refid="____assert_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>sys/atomic.h</label>
+        <link refid="atomic_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>sys/atomic_builtin.h</label>
+        <link refid="atomic__builtin_8h"/>
+      </node>
+      <node id="13">
+        <label>sys/byteorder.h</label>
+        <link refid="byteorder_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>sys/cbprintf.h</label>
+        <link refid="cbprintf_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>sys/cbprintf_cxx.h</label>
+        <link refid="cbprintf__cxx_8h"/>
+      </node>
+      <node id="38">
+        <label>sys/cbprintf_internal.h</label>
+        <link refid="cbprintf__internal_8h"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sys/errno_private.h</label>
+        <link refid="errno__private_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>list_gen.h</label>
+        <link refid="list__gen_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>sys/mpsc_packet.h</label>
+        <link refid="mpsc__packet_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>sys/printk.h</label>
+        <link refid="printk_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>sys/slist.h</label>
+        <link refid="slist_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>sys/util.h</label>
+        <link refid="util_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>sys/util_internal.h</label>
+        <link refid="util__internal_8h"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>util_loops.h</label>
+        <link refid="util__loops_8h"/>
+      </node>
+      <node id="10">
+        <label>sys/util_macro.h</label>
+        <link refid="util__macro_8h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>toolchain.h</label>
+        <link refid="toolchain_8h"/>
+      </node>
+      <node id="2">
+        <label>zephyr/types.h</label>
+        <link refid="include_2zephyr_2types_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>errno.h</label>
+        <link refid="errno_8h"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>inttypes.h</label>
+        <link refid="inttypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>limits.h</label>
+        <link refid="limits_8h"/>
+      </node>
+      <node id="8">
+        <label>stdbool.h</label>
+        <link refid="stdbool_8h"/>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+        <link refid="stdint_8h"/>
+      </node>
+      <node id="37">
+        <label>stdio.h</label>
+        <link refid="stdio_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>syscalls/log_core.h</label>
+        <link refid="subsys_2testsuite_2ztest_2include_2syscalls_2log__core_8h"/>
+      </node>
+      <node id="41">
+        <label>syscalls/log_msg2.h</label>
+        <link refid="subsys_2testsuite_2ztest_2include_2syscalls_2log__msg2_8h"/>
+      </node>
+      <node id="40">
+        <label>alloca.h</label>
+      </node>
+      <node id="24">
+        <label>device.h</label>
+      </node>
+      <node id="44">
+        <label>kernel.h</label>
+      </node>
+      <node id="16">
+        <label>stdarg.h</label>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+      <node id="42">
+        <label>syscall.h</label>
+      </node>
+      <node id="57">
+        <label>syscalls/can.h</label>
+      </node>
+      <node id="21">
+        <label>syscalls/errno_private.h</label>
+      </node>
+      <node id="55">
+        <label>syscalls/net_if.h</label>
+      </node>
+      <node id="22">
+        <label>syscalls/net_ip.h</label>
+      </node>
+      <node id="50">
+        <label>zephyr.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structnet__can__api" prot="public">net_can_api</innerclass>
+    <briefdescription>
+<para>IPv6 Networking over CAN definitions. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Definitions for IPv6 Networking over CAN support. </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2019<sp/>Alexander<sp/>Wachter</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ZEPHYR_INCLUDE_NET_CAN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZEPHYR_INCLUDE_NET_CAN_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2zephyr_2types_8h" kindref="compound">zephyr/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="net__ip_8h" kindref="compound">net/net_ip.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="net__if_8h" kindref="compound">net/net_if.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="drivers_2can_8h" kindref="compound">drivers/can.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/>*<sp/>Abbreviations</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/>*<sp/>BS<sp/><sp/><sp/><sp/><sp/><sp/>Block<sp/>Size</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/>*<sp/>CAN_DL<sp/><sp/>CAN<sp/>LL<sp/>data<sp/>size</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/>*<sp/>CF<sp/><sp/><sp/><sp/><sp/><sp/>Consecutive<sp/>Frame</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/>CTS<sp/><sp/><sp/><sp/><sp/>Continue<sp/>to<sp/>send</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/>DLC<sp/><sp/><sp/><sp/><sp/>Data<sp/>length<sp/>code</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/>FC<sp/><sp/><sp/><sp/><sp/><sp/>Flow<sp/>Control</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/>FF<sp/><sp/><sp/><sp/><sp/><sp/>First<sp/>Frame</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>FS<sp/><sp/><sp/><sp/><sp/><sp/>Flow<sp/>Status</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_DL<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_MTU<sp/>0x0FFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>0x3DFF<sp/>-<sp/>bit<sp/>4<sp/>to<sp/>10<sp/>must<sp/>not<sp/>be<sp/>zero.<sp/>Also<sp/>prevent<sp/>stuffing<sp/>bit*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_MULTICAST_ADDR<sp/><sp/><sp/><sp/><sp/><sp/>0x3DFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_DAD_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3DFE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_ETH_TRANSLATOR_ADDR<sp/>0x3DF0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_MAX_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3DEF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_CAN_MIN_ADDR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3FFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_BYTE_LEN<sp/><sp/><sp/>2U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_DEST_POS<sp/><sp/><sp/>14U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_DEST_MASK<sp/><sp/>(CAN_NET_IF_ADDR_MASK<sp/>&lt;&lt;<sp/>CAN_NET_IF_ADDR_DEST_POS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_SRC_POS<sp/><sp/><sp/><sp/>0U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_SRC_MASK<sp/><sp/><sp/>(CAN_NET_IF_ADDR_MASK<sp/>&lt;&lt;<sp/>CAN_NET_IF_ADDR_SRC_POS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_MCAST_POS<sp/><sp/>28U</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_ADDR_MCAST_MASK<sp/>(1UL<sp/>&lt;&lt;<sp/>CAN_NET_IF_ADDR_MCAST_POS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_IF_IS_MCAST_BIT<sp/><sp/><sp/><sp/>(1U<sp/>&lt;&lt;<sp/>14)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CAN_NET_FILTER_NOT_SET<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+-----------+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+-----------+</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>IPv6<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>IPv6<sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>6LoCAN<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/>6LoCAN<sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+----+-+----+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+----+-+----+</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+---+</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/>*<sp/><sp/>+----+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/><sp/><sp/><sp/><sp/>\<sp/><sp/><sp/>+-+</highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/>*<sp/><sp/>|<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+--+<sp/><sp/><sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\_/<sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/>*<sp/>+++<sp/><sp/><sp/>+---+<sp/><sp/><sp/>+--+----+<sp/><sp/><sp/>+-------+<sp/><sp/><sp/>+--+----+<sp/><sp/><sp/>+--/<sp/><sp/><sp/><sp/>\_/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/>*<sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\<sp/>/<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>\<sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\<sp/>/<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>\<sp/>/<sp/><sp/>/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/>*<sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/>CAN<sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/>X<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Internet<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/>*<sp/>|<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>\<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>/<sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>\<sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/>/<sp/>\<sp/><sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/>*<sp/>+++<sp/><sp/><sp/>+---+<sp/><sp/><sp/>+----+--+<sp/><sp/><sp/>+-------+<sp/><sp/><sp/>+----+--+<sp/><sp/><sp/>+--+<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/><sp/>|<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+-------------------+</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*<sp/><sp/>+----+</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="structnet__can__api" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnet__can__api" kindref="compound">net_can_api</ref><sp/>{</highlight></codeline>
+<codeline lineno="99" refid="structnet__can__api_1a881bec8ec5080246e513ff422b9c7a59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">net_if_api<sp/><ref refid="structnet__can__api_1a881bec8ec5080246e513ff422b9c7a59" kindref="member">iface_api</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="structnet__can__api_1a0361837574f1d78da9722aa1279575f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structnet__can__api_1a0361837574f1d78da9722aa1279575f5" kindref="member">send</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structzcan__frame" kindref="compound">zcan_frame</ref><sp/>*frame,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__can__interface_1ga3973b4d5f1c8078eba566c8f0e2c01f1" kindref="member">can_tx_callback_t</ref><sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cb_arg,<sp/><ref refid="structk__timeout__t" kindref="compound">k_timeout_t</ref><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a4c6a88cdddeff1bdde597c2658c9e7d2" kindref="member">timeout</ref>);</highlight></codeline>
+<codeline lineno="105" refid="structnet__can__api_1a0dca144dd187d7289d4e0cfab0824988" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structnet__can__api_1a0dca144dd187d7289d4e0cfab0824988" kindref="member">add_rx_filter</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/><ref refid="group__can__interface_1gaaa6db2ee486884116a801a797af844ba" kindref="member">can_rx_callback_t</ref><sp/>cb,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cb_arg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structzcan__filter" kindref="compound">zcan_filter</ref><sp/>*filter);</highlight></codeline>
+<codeline lineno="108" refid="structnet__can__api_1ab1d833ac9a5a419a72c3f1b1dc5652c6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structnet__can__api_1ab1d833ac9a5a419a72c3f1b1dc5652c6" kindref="member">remove_rx_filter</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>filter_id);</highlight></codeline>
+<codeline lineno="110" refid="structnet__can__api_1a5118423481ab239a57684dbd0408f88a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structnet__can__api_1a5118423481ab239a57684dbd0408f88a" kindref="member">enable</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structnet__can__api_1a5118423481ab239a57684dbd0408f88a" kindref="member">enable</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Make<sp/>sure<sp/>that<sp/>the<sp/>network<sp/>interface<sp/>API<sp/>is<sp/>properly<sp/>setup<sp/>inside</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/>*<sp/>net_can_api<sp/>struct<sp/>(it<sp/>is<sp/>the<sp/>first<sp/>one).</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">BUILD_ASSERT(offsetof(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnet__can__api" kindref="compound">net_can_api</ref>,<sp/>iface_api)<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CANBUS_L2_CTX_TYPE<sp/><sp/><sp/><sp/><sp/><sp/>struct<sp/>net_canbus_context<sp/>*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">canbus_net_ctx<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dad_filter_id;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__work" kindref="compound">k_work</ref><sp/>dad_work;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnet__if" kindref="compound">net_if</ref><sp/>*iface;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/>ll_addr;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__fifo" kindref="compound">k_fifo</ref><sp/>tx_queue;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__fifo" kindref="compound">k_fifo</ref><sp/>rx_err_queue;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/>queue_handler;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__thread__stack__api_1ga600162959def399e70310b944834711f" kindref="member">K_KERNEL_STACK_MEMBER</ref>(queue_stack,<sp/>512);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">net_canbus_lladdr<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/>addr<sp/>:<sp/>14;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">canbus_fc_opts<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>bs;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>stmin;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">canbus_isotp_tx_ctx<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnet__pkt" kindref="compound">net_pkt</ref><sp/>*pkt;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_timeout<sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a4c6a88cdddeff1bdde597c2658c9e7d2" kindref="member">timeout</ref>;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">canbus_fc_opts<sp/>opts;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">net_canbus_lladdr<sp/>dest_addr;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/>rem_len;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1accbd6432732c88ad6adc5365800433b6" kindref="member">int8_t</ref><sp/>tx_backlog;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><ref refid="http__parser__state_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>act_block_nr;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>wft;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>sn<sp/>:<sp/>4;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>is_mcast<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">canbus_isotp_rx_ctx<sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnet__pkt" kindref="compound">net_pkt</ref><sp/>*pkt;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">_timeout<sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a4c6a88cdddeff1bdde597c2658c9e7d2" kindref="member">timeout</ref>;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/>rem_len;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><ref refid="http__parser__state_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>act_block_nr;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>wft;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>sn<sp/>:<sp/>4;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>net_6locan_init(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnet__if" kindref="compound">net_if</ref><sp/>*iface);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__net__core_1ga8e5393f3bdd85491f221324e637c3896" kindref="member">net_verdict</ref><sp/>net_canbus_translate_eth_frame(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnet__if" kindref="compound">net_if</ref><sp/>*iface,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnet__pkt" kindref="compound">net_pkt</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_NET_CAN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/net/can.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="group__crypto" kind="group">
+    <compoundname>crypto</compoundname>
+    <title>Crypto</title>
+    <innergroup refid="group__crypto__cipher">Cipher</innergroup>
+    <innergroup refid="group__random__api">Random Function APIs</innergroup>
+    <briefdescription>
+<para>Crypto APIs. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structcrypto__driver__api" kind="struct" language="C++" prot="public">
+    <compoundname>crypto_driver_api</compoundname>
+    <includes refid="cipher_8h" local="no">cipher.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcrypto__driver__api_1a19859cdd9185f5d333fe6893efc27967" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* crypto_driver_api::query_hw_caps) (const struct device *dev)</definition>
+        <argsstring>)(const struct device *dev)</argsstring>
+        <name>query_hw_caps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/crypto/cipher.h" line="43" column="1" bodyfile="include/crypto/cipher.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrypto__driver__api_1a97d1349cbce7a6736054c2f53f8e1833" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* crypto_driver_api::begin_session) (const struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)</definition>
+        <argsstring>)(const struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op op_type)</argsstring>
+        <name>begin_session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/crypto/cipher.h" line="46" column="1" bodyfile="include/crypto/cipher.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrypto__driver__api_1a178e5232a0b20a67c028ac41c3d8655f" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* crypto_driver_api::free_session) (const struct device *dev, struct cipher_ctx *ctx)</definition>
+        <argsstring>)(const struct device *dev, struct cipher_ctx *ctx)</argsstring>
+        <name>free_session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/crypto/cipher.h" line="51" column="1" bodyfile="include/crypto/cipher.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcrypto__driver__api_1abe59aca855659c2881ce54bb8ad4696d" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* crypto_driver_api::crypto_async_callback_set) (const struct device *dev, crypto_completion_cb cb)</definition>
+        <argsstring>)(const struct device *dev, crypto_completion_cb cb)</argsstring>
+        <name>crypto_async_callback_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/crypto/cipher.h" line="54" column="1" bodyfile="include/crypto/cipher.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/crypto/cipher.h" line="42" column="12" bodyfile="include/crypto/cipher.h" bodystart="42" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structcrypto__driver__api_1a97d1349cbce7a6736054c2f53f8e1833" prot="public" virt="non-virtual"><scope>crypto_driver_api</scope><name>begin_session</name></member>
+      <member refid="structcrypto__driver__api_1abe59aca855659c2881ce54bb8ad4696d" prot="public" virt="non-virtual"><scope>crypto_driver_api</scope><name>crypto_async_callback_set</name></member>
+      <member refid="structcrypto__driver__api_1a178e5232a0b20a67c028ac41c3d8655f" prot="public" virt="non-virtual"><scope>crypto_driver_api</scope><name>free_session</name></member>
+      <member refid="structcrypto__driver__api_1a19859cdd9185f5d333fe6893efc27967" prot="public" virt="non-virtual"><scope>crypto_driver_api</scope><name>query_hw_caps</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

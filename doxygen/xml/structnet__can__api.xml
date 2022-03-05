@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structnet__can__api" kind="struct" language="C++" prot="public">
+    <compoundname>net_can_api</compoundname>
+    <includes refid="net_2can_8h" local="no">can.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structnet__can__api_1a881bec8ec5080246e513ff422b9c7a59" prot="public" static="no" mutable="no">
+        <type>struct net_if_api</type>
+        <definition>struct net_if_api net_can_api::iface_api</definition>
+        <argsstring></argsstring>
+        <name>iface_api</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The net_if_api must be placed in first position in this struct so that we are compatible with network interface API. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/can.h" line="99" column="17" bodyfile="include/net/can.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__can__api_1a0361837574f1d78da9722aa1279575f5" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* net_can_api::send) (const struct device *dev, const struct zcan_frame *frame, can_tx_callback_t cb, void *cb_arg, k_timeout_t timeout)</definition>
+        <argsstring>)(const struct device *dev, const struct zcan_frame *frame, can_tx_callback_t cb, void *cb_arg, k_timeout_t timeout)</argsstring>
+        <name>send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a single CAN frame </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/can.h" line="102" column="1" bodyfile="include/net/can.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__can__api_1a0dca144dd187d7289d4e0cfab0824988" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* net_can_api::add_rx_filter) (const struct device *dev, can_rx_callback_t cb, void *cb_arg, const struct zcan_filter *filter)</definition>
+        <argsstring>)(const struct device *dev, can_rx_callback_t cb, void *cb_arg, const struct zcan_filter *filter)</argsstring>
+        <name>add_rx_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a filter with its callback </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/can.h" line="105" column="1" bodyfile="include/net/can.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__can__api_1ab1d833ac9a5a419a72c3f1b1dc5652c6" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* net_can_api::remove_rx_filter) (const struct device *dev, int filter_id)</definition>
+        <argsstring>)(const struct device *dev, int filter_id)</argsstring>
+        <name>remove_rx_filter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a filter </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/can.h" line="108" column="1" bodyfile="include/net/can.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structnet__can__api_1a5118423481ab239a57684dbd0408f88a" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* net_can_api::enable) (const struct device *dev, bool enable)</definition>
+        <argsstring>)(const struct device *dev, bool enable)</argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the reception of frames for net CAN </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/can.h" line="110" column="1" bodyfile="include/net/can.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>CAN L2 driver API. Used by 6loCAN. </para>
+    </detaileddescription>
+    <location file="include/net/can.h" line="94" column="1" bodyfile="include/net/can.h" bodystart="94" bodyend="111"/>
+    <listofallmembers>
+      <member refid="structnet__can__api_1a0dca144dd187d7289d4e0cfab0824988" prot="public" virt="non-virtual"><scope>net_can_api</scope><name>add_rx_filter</name></member>
+      <member refid="structnet__can__api_1a5118423481ab239a57684dbd0408f88a" prot="public" virt="non-virtual"><scope>net_can_api</scope><name>enable</name></member>
+      <member refid="structnet__can__api_1a881bec8ec5080246e513ff422b9c7a59" prot="public" virt="non-virtual"><scope>net_can_api</scope><name>iface_api</name></member>
+      <member refid="structnet__can__api_1ab1d833ac9a5a419a72c3f1b1dc5652c6" prot="public" virt="non-virtual"><scope>net_can_api</scope><name>remove_rx_filter</name></member>
+      <member refid="structnet__can__api_1a0361837574f1d78da9722aa1279575f5" prot="public" virt="non-virtual"><scope>net_can_api</scope><name>send</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

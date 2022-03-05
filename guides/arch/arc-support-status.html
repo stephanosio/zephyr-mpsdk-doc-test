@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zephyr support status on ARC processors &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Arm Cortex-M Developer Guide" href="arm_cortex_m.html" />
+    <link rel="prev" title="Architecture-related Guides" href="index.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">API Reference</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">User and Developer Guides</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../beyond-GSG.html">Beyond the Getting Started Guide</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">Architecture-related Guides</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Zephyr support status on ARC processors</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#support-status">Support status</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="arm_cortex_m.html">Arm Cortex-M Developer Guide</a></li>
+<li class="toctree-l3"><a class="reference internal" href="x86.html">x86 Developer Guide</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../bluetooth/index.html">Bluetooth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../docs/index.html">Documentation Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../coccinelle.html">Coccinelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../code-relocation.html">Code And Data Relocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crypto/index.html">Cryptography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../flash_debug/index.html">Flashing and Hardware Debugging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../debug_tools/index.html">Debugging and Tracing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../device_mgmt/index.html">Device Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dts/index.html">Devicetree Guide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../env_vars.html">Environment Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pinctrl/index.html">Pin Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pm/index.html">Power Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../emulator/index.html">Peripheral and Hardware Emulators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules.html">Modules (External projects)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networking/index.html">Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platformio/index.html">Using with PlatformIO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../portability/index.html">OS Abstraction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../porting/index.html">Porting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../smf/index.html">State Machine Framework</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../test/index.html">Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tfm/index.html">Trusted Firmware-M</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../west/index.html">West (Zephyr’s meta-tool)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../optimizations/index.html">Optimizations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../zephyr_cmake_package.html">Zephyr CMake Package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">User and Developer Guides</a> &raquo;</li>
+  
+     <li><a href="index.html">Architecture-related Guides</a> &raquo;</li>
+  
+  <li>Zephyr support status on ARC processors</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/guides/arch/arc-support-status.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="zephyr-support-status-on-arc-processors">
+<h1>Zephyr support status on ARC processors<a class="headerlink" href="#zephyr-support-status-on-arc-processors" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This page describes current state of Zephyr for ARC processors and some future
+plans. Please note that</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>plans are given without exact deadlines</p></li>
+<li><p>software features require corresponding hardware to be present and
+configured the proper way</p></li>
+<li><p>not all the features can be enabled at the same time</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="support-status">
+<h2>Support status<a class="headerlink" href="#support-status" title="Permalink to this headline">¶</a></h2>
+<p>Legend:
+<strong>Y</strong> - yes, supported; <strong>N</strong> - no, not supported; <strong>WIP</strong> - Work In Progress;
+<strong>TBD</strong> - to be decided</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 61%" />
+<col style="width: 11%" />
+<col style="width: 11%" />
+<col style="width: 7%" />
+<col style="width: 11%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td></td>
+<td colspan="4"><p><strong>Processor families</strong></p></td>
+</tr>
+<tr class="row-even"><td></td>
+<td><p><strong>EM</strong></p></td>
+<td><p><strong>HS3x/4x</strong></p></td>
+<td><p><strong>EV</strong></p></td>
+<td><p><strong>HS6x</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Port status</p></td>
+<td><p>upstreamed</p></td>
+<td><p>upstreamed</p></td>
+<td><p>WIP</p></td>
+<td><p>upstreamed</p></td>
+</tr>
+<tr class="row-even"><td colspan="5"><p><strong>Features</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Closely coupled memories (ICCM, DCCM) <a class="footnote-reference brackets" href="#f1" id="id1">1</a></p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-even"><td><p>Execution with caches - Instruction/Data, L1/L2 caches</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hardware-assisted unaligned memory access</p></td>
+<td><p>Y <a class="footnote-reference brackets" href="#f2" id="id2">2</a></p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>Regular interrupts with multiple priority levels, direct interrupts</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>Fast interrupts, separate register banks for fast interrupts</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>Hardware floating point unit (FPU)</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-odd"><td><p>Symmetric multiprocessing (SMP) support, switch-based</p></td>
+<td><p>N/A</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>Hardware-assisted stack checking</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>Hardware-assisted atomic operations</p></td>
+<td><p>N/A</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>DSP ISA</p></td>
+<td><p>Y</p></td>
+<td><p>N <a class="footnote-reference brackets" href="#f3" id="id3">3</a></p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-odd"><td><p>DSP AGU/XY extensions</p></td>
+<td><p>N <a class="footnote-reference brackets" href="#f3" id="id4">3</a></p></td>
+<td><p>N <a class="footnote-reference brackets" href="#f3" id="id5">3</a></p></td>
+<td><p>TBD</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-even"><td><p>Userspace</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>TBD</p></td>
+</tr>
+<tr class="row-odd"><td><p>Memory protection unit (MPU)</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>TBD</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-even"><td><p>Memory management unit (MMU)</p></td>
+<td><p>N/A</p></td>
+<td><p>N</p></td>
+<td><p>N/A</p></td>
+<td><p>N</p></td>
+</tr>
+<tr class="row-odd"><td><p>SecureShield</p></td>
+<td><p>Y</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+<td><p>N/A</p></td>
+</tr>
+<tr class="row-even"><td colspan="5"><p><strong>Toolchains</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>GNU (open source GCC-based)</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-even"><td><p>MetaWare (proprietary Clang-based)</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>WIP <a class="footnote-reference brackets" href="#f4" id="id6">4</a></p></td>
+</tr>
+<tr class="row-odd"><td colspan="5"><p><strong>Simulators</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>QEMU (open source) <a class="footnote-reference brackets" href="#f5" id="id7">5</a></p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>N</p></td>
+<td><p>Y</p></td>
+</tr>
+<tr class="row-odd"><td><p>nSIM (proprietary, provided by MetaWare Development Tools)</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+<td><p>Y</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="notes">
+<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>usage of CCMs is limited on SMP systems</p>
+</dd>
+<dt class="label" id="f2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>except the systems with secure features (SecureShield) due to HW
+limitation</p>
+</dd>
+<dt class="label" id="f3"><span class="brackets">3</span><span class="fn-backref">(<a href="#id3">1</a>,<a href="#id4">2</a>,<a href="#id5">3</a>)</span></dt>
+<dd><p>We only support save/restore ACCL/ACCH registers in task’s context.
+Rest of DSP/AGU registers save/restore isn’t implemented but kernel
+itself does not use these registers. This allows single task per
+core to use DSP/AGU safely.</p>
+</dd>
+<dt class="label" id="f4"><span class="brackets"><a class="fn-backref" href="#id6">4</a></span></dt>
+<dd><p>MetaWare toolchain supports building for ARCv3 HS6x, however, it’s
+not integrated to Zephyr itself</p>
+</dd>
+<dt class="label" id="f5"><span class="brackets"><a class="fn-backref" href="#id7">5</a></span></dt>
+<dd><p>QEMU doesn’t support all the ARC processor’s HW features. For the
+detailed info please check the ARC QEMU documentation</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

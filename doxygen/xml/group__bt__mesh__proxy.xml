@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="group__bt__mesh__proxy" kind="group">
+    <compoundname>bt_mesh_proxy</compoundname>
+    <title>Proxy</title>
+    <innerclass refid="structbt__mesh__proxy__cb" prot="public">bt_mesh_proxy_cb</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__bt__mesh__proxy_1ga7fb3c76f1be6943dd4a18f26e8dd18e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bt_mesh_proxy_identity_enable</definition>
+        <argsstring>(void)</argsstring>
+        <name>bt_mesh_proxy_identity_enable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Enable advertising with Node Identity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This API requires that GATT Proxy support has been enabled. Once called each subnet will start advertising using Node Identity for the next 60 seconds.</para>
+<para><simplesect kind="return"><para>0 on success, or (negative) error code on failure. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/proxy.h" line="64" column="5" declfile="include/bluetooth/mesh/proxy.h" declline="64" declcolumn="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__bt__mesh__proxy_1ga325b71c3d7ed69952bf760c0288b28ef" prot="public" static="no">
+        <name>BT_MESH_PROXY_CB_DEFINE</name>
+        <param><defname>_name</defname></param>
+        <initializer>	static const <ref refid="group__iterable__section__apis_1gabed6642b8cc06863ce97dd536698004d" kindref="member">STRUCT_SECTION_ITERABLE</ref>(                                  \
+		<ref refid="structbt__mesh__proxy__cb" kindref="compound">bt_mesh_proxy_cb</ref>, _CONCAT(bt_mesh_proxy_cb_, _name))</initializer>
+        <briefdescription>
+<para>Register a callback structure for Proxy events. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Registers a structure with callback functions that gets called on various Proxy events.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of callback structure. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/proxy.h" line="52" column="9" bodyfile="include/bluetooth/mesh/proxy.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Proxy. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

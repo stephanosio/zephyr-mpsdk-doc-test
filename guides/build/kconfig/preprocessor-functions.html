@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Custom Kconfig Preprocessor Functions &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script type="module" src="../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../copyright.html" />
+    <link rel="next" title="Kconfig extensions" href="extensions.html" />
+    <link rel="prev" title="Kconfig - Tips and Best Practices" href="tips.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html">
+            <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Build and Configuration Systems</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#build-system-cmake">Build System (CMake)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#configuration-system-kconfig">Configuration System (Kconfig)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="menuconfig.html">Interactive Kconfig interfaces</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setting.html">Setting Kconfig configuration values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tips.html">Kconfig - Tips and Best Practices</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Custom Kconfig Preprocessor Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#devicetree-related-functions">Devicetree-related Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="extensions.html">Kconfig extensions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../reference/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">Build and Configuration Systems</a> &raquo;</li>
+  
+  <li>Custom Kconfig Preprocessor Functions</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/guides/build/kconfig/preprocessor-functions.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="custom-kconfig-preprocessor-functions">
+<span id="kconfig-functions"></span><h1>Custom Kconfig Preprocessor Functions<a class="headerlink" href="#custom-kconfig-preprocessor-functions" title="Permalink to this headline">¶</a></h1>
+<p>Kconfiglib supports custom Kconfig preprocessor functions written in Python.
+These functions are defined in
+<a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/scripts/kconfig/kconfigfunctions.py">scripts/kconfig/kconfigfunctions.py</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The official Kconfig preprocessor documentation can be found <a class="reference external" href="https://www.kernel.org/doc/html/latest/kbuild/kconfig-macro-language.html">here</a>.</p>
+</div>
+<p>Most of the custom preprocessor functions are used to get devicetree
+information into Kconfig. For example, the default value of a Kconfig symbol
+can be fetched from a devicetree <code class="docutils literal notranslate"><span class="pre">reg</span></code> property.</p>
+<div class="section" id="devicetree-related-functions">
+<h2>Devicetree-related Functions<a class="headerlink" href="#devicetree-related-functions" title="Permalink to this headline">¶</a></h2>
+<p>The functions listed below are used to get devicetree information into Kconfig.
+See the Python docstrings in <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/scripts/kconfig/kconfigfunctions.py">scripts/kconfig/kconfigfunctions.py</a>
+for detailed documentation.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">*_int</span></code> version of each function returns the value as a decimal integer,
+while the <code class="docutils literal notranslate"><span class="pre">*_hex</span></code> version returns a hexadecimal value starting with <code class="docutils literal notranslate"><span class="pre">0x</span></code>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$(dt_chosen_reg_addr_int,&lt;property in /chosen&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_chosen_reg_addr_hex,&lt;property in /chosen&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_chosen_reg_size_int,&lt;property in /chosen&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_chosen_reg_size_hex,&lt;property in /chosen&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_node_reg_addr_int,&lt;node path&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_node_reg_addr_hex,&lt;node path&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_node_reg_size_int,&lt;node path&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_node_reg_size_hex,&lt;node path&gt;[,&lt;index&gt;,&lt;unit&gt;])
+$(dt_compat_enabled,&lt;compatible string&gt;)
+$(dt_chosen_enabled,&lt;property in /chosen&gt;)
+$(dt_node_has_bool_prop,&lt;node path&gt;,&lt;prop&gt;)
+$(dt_node_has_prop,&lt;node path&gt;,&lt;prop&gt;)
+</pre></div>
+</div>
+<div class="section" id="example-usage">
+<h3>Example Usage<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h3>
+<p>Assume that the devicetree for some board looks like this:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+     soc {
+             #address-cells = &lt;1&gt;;
+             #size-cells = &lt;1&gt;;
+
+             spi0: spi@10014000 {
+                     compatible = &quot;sifive,spi0&quot;;
+                     reg = &lt;0x10014000 0x1000 0x20010000 0x3c0900&gt;;
+                     reg-names = &quot;control&quot;, &quot;mem&quot;;
+                     ...
+             };
+};
+</pre></div>
+</div>
+<p>The second entry in <code class="docutils literal notranslate"><span class="pre">reg</span></code> in <code class="docutils literal notranslate"><span class="pre">spi&#64;1001400</span></code> (<code class="docutils literal notranslate"><span class="pre">&lt;0x20010000</span> <span class="pre">0x3c0900&gt;</span></code>)
+corresponds to <code class="docutils literal notranslate"><span class="pre">mem</span></code>, and has the address <code class="docutils literal notranslate"><span class="pre">0x20010000</span></code>. This address can be
+inserted into Kconfig as follows:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>config FLASH_BASE_ADDRESS
+     default $(dt_node_reg_addr_hex,/soc/spi@1001400,1)
+</pre></div>
+</div>
+<p>After preprocessor expansion, this turns into the definition below:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>config FLASH_BASE_ADDRESS
+     default 0x20010000
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

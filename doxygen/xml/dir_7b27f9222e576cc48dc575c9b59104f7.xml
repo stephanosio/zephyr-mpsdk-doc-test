@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="dir_7b27f9222e576cc48dc575c9b59104f7" kind="dir">
+    <compoundname>include/drivers/misc</compoundname>
+    <innerdir refid="dir_a097221c8b1982cf842ab48da9ce4b8f">include/drivers/misc/ft8xx</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/drivers/misc/"/>
+  </compounddef>
+</doxygen>

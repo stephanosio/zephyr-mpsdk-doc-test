@@ -1,0 +1,874 @@
+:orphan:
+
+.. _configuration_options_lib:
+
+
+Library Configuration Options
+=============================
+
+:file:`Kconfig` files describe build-time configuration options (called symbols
+in Kconfig-speak), how they're grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.
+
+:file:`Kconfig` files appear throughout the directory tree. For example,
+:file:`subsys/power/Kconfig` defines power-related options.
+
+This documentation is generated automatically from the :file:`Kconfig` files by
+the :file:`gen_kconfig_rest.py` script. Click on symbols for more
+information.
+
+.. raw:: html
+
+    <!--
+    FIXME: do not limit page width until content uses another representation
+    format other than tables
+    -->
+    <style>.wy-nav-content { max-width: none; !important }</style>
+
+
+
+Configuration Options
+*********************
+
+.. list-table::
+   :header-rows: 1
+   :widths: auto
+
+   * - Symbol name
+     - Prompt
+   * - :kconfig:`CONFIG_APP_LINK_WITH_LVGL`
+     - Link 'app' with LVGL
+   * - :kconfig:`CONFIG_APP_LINK_WITH_POSIX_SUBSYS`
+     - Make POSIX headers available to application
+   * - :kconfig:`CONFIG_ARCMWDT_LIBC`
+     - ARC MWDT C library
+   * - :kconfig:`CONFIG_BASE64`
+     - Enable base64 encoding and decoding
+   * - :kconfig:`CONFIG_CBPRINTF_COMPLETE`
+     - All selected features
+   * - :kconfig:`CONFIG_CBPRINTF_FP_ALWAYS_A`
+     - Select %a format for all floating point specifications
+   * - :kconfig:`CONFIG_CBPRINTF_FP_A_SUPPORT`
+     - Enable floating point %a conversions
+   * - :kconfig:`CONFIG_CBPRINTF_FP_SUPPORT`
+     - Enable floating point formatting in cbprintf
+   * - :kconfig:`CONFIG_CBPRINTF_FULL_INTEGRAL`
+     - Convert the full range of integer values
+   * - :kconfig:`CONFIG_CBPRINTF_LIBC_SUBSTS`
+     - Generate C-library compatible functions using cbprintf
+   * - :kconfig:`CONFIG_CBPRINTF_NANO`
+     - Space-optimized but feature-limited
+   * - :kconfig:`CONFIG_CBPRINTF_N_SPECIFIER`
+     - Support %n specifications
+   * - :kconfig:`CONFIG_CBPRINTF_PACKAGE_LONGDOUBLE`
+     - Support packaging of long doubles
+   * - :kconfig:`CONFIG_CBPRINTF_REDUCED_INTEGRAL`
+     - Convert only integer values that fit in 32 bits
+   * - :kconfig:`CONFIG_CBPRINTF_STATIC_PACKAGE_CHECK_ALIGNMENT`
+     - Validate alignment of a static package buffer
+   * - :kconfig:`CONFIG_EVENTFD`
+     - Enable support for eventfd
+   * - :kconfig:`CONFIG_EVENTFD_MAX`
+     - Maximum number of eventfd's
+   * - :kconfig:`CONFIG_EXTERNAL_LIBC`
+     - External C library
+   * - :kconfig:`CONFIG_FNMATCH`
+     - Fnmatch Support
+   * - :kconfig:`CONFIG_GETOPT`
+     - Geopt library support
+   * - :kconfig:`CONFIG_GETOPT_LONG`
+     - Getopt long library support
+   * - :kconfig:`CONFIG_HAS_NEWLIB_LIBC_NANO`
+     - 
+   * - :kconfig:`CONFIG_HEAP_LISTENER`
+     - 
+   * - :kconfig:`CONFIG_JSON_LIBRARY`
+     - Build JSON library
+   * - :kconfig:`CONFIG_LVGL`
+     - LittlevGL GUI library
+   * - :kconfig:`CONFIG_LVGL_ANTIALIAS`
+     - Enable anti-aliasing
+   * - :kconfig:`CONFIG_LVGL_BIDI_DIR_AUTO`
+     - Automatically detect direction
+   * - :kconfig:`CONFIG_LVGL_BIDI_DIR_LTR`
+     - Left-to-right
+   * - :kconfig:`CONFIG_LVGL_BIDI_DIR_RTL`
+     - Right-to-left
+   * - :kconfig:`CONFIG_LVGL_BITS_PER_PIXEL`
+     - Number of bits per pixel
+   * - :kconfig:`CONFIG_LVGL_BUFFER_ALLOC_DYNAMIC`
+     - Dynamic
+   * - :kconfig:`CONFIG_LVGL_BUFFER_ALLOC_STATIC`
+     - Static
+   * - :kconfig:`CONFIG_LVGL_CALENDAR_WEEK_STARTS_MONDAY`
+     - Calendar week starts on Monday
+   * - :kconfig:`CONFIG_LVGL_CHART_AXIS_TICK_LABEL_MAX_LEN`
+     - Maximum length of axis label
+   * - :kconfig:`CONFIG_LVGL_COLOR_16_SWAP`
+     - RGB565 byte swap
+   * - :kconfig:`CONFIG_LVGL_COLOR_DEPTH_1`
+     - 1-bit
+   * - :kconfig:`CONFIG_LVGL_COLOR_DEPTH_16`
+     - 16-bit
+   * - :kconfig:`CONFIG_LVGL_COLOR_DEPTH_32`
+     - 32-bit
+   * - :kconfig:`CONFIG_LVGL_COLOR_DEPTH_8`
+     - 8-bit
+   * - :kconfig:`CONFIG_LVGL_COLOR_SCREEN_TRANSP`
+     - Transparency support
+   * - :kconfig:`CONFIG_LVGL_COLOR_TRANSP_BLUE`
+     - Blue
+   * - :kconfig:`CONFIG_LVGL_COLOR_TRANSP_CUSTOM`
+     - Custom
+   * - :kconfig:`CONFIG_LVGL_COLOR_TRANSP_GREEN`
+     - Green
+   * - :kconfig:`CONFIG_LVGL_COLOR_TRANSP_RED`
+     - Red
+   * - :kconfig:`CONFIG_LVGL_CUSTOM_COLOR_TRANSP_BLUE`
+     - Chroma Key Blue
+   * - :kconfig:`CONFIG_LVGL_CUSTOM_COLOR_TRANSP_GREEN`
+     - Chroma Key Green
+   * - :kconfig:`CONFIG_LVGL_CUSTOM_COLOR_TRANSP_RED`
+     - Chroma Key Red
+   * - :kconfig:`CONFIG_LVGL_DISPLAY_DEV_NAME`
+     - Display device name
+   * - :kconfig:`CONFIG_LVGL_DISP_DEF_REFR_PERIOD`
+     - Screen refresh period
+   * - :kconfig:`CONFIG_LVGL_DISP_LARGE_LIMIT`
+     - Large display limit
+   * - :kconfig:`CONFIG_LVGL_DISP_MEDIUM_LIMIT`
+     - Medium display limit
+   * - :kconfig:`CONFIG_LVGL_DISP_SMALL_LIMIT`
+     - Small display limit
+   * - :kconfig:`CONFIG_LVGL_DOUBLE_VDB`
+     - Use two rendering buffers
+   * - :kconfig:`CONFIG_LVGL_DPI`
+     - Dots per inch
+   * - :kconfig:`CONFIG_LVGL_DROPDOWN_DEF_ANIM_TIME`
+     - Drop Down list animation time
+   * - :kconfig:`CONFIG_LVGL_EXT_CLICK_AREA_FULL`
+     - Full flexibility
+   * - :kconfig:`CONFIG_LVGL_EXT_CLICK_AREA_OFF`
+     - Disabled
+   * - :kconfig:`CONFIG_LVGL_EXT_CLICK_AREA_TINY`
+     - Only horizontally and vertical
+   * - :kconfig:`CONFIG_LVGL_FONT_DEJAVU_16_PERSIAN_HEBREW`
+     - Enable Dejavu 16px font with Hebrew, Arabic and Persian letters
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_10`
+     - Enable Montserrat 10px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_12`
+     - Enable Montserrat 12px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_12_SUBPX`
+     - Enable Montserrat 12px font with sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_14`
+     - Enable Montserrat 14px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_16`
+     - Enable Montserrat 16px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_18`
+     - Enable Montserrat 18px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_20`
+     - Enable Montserrat 20px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_22`
+     - Enable Montserrat 22px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_24`
+     - Enable Montserrat 24px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_26`
+     - Enable Montserrat 26px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_28`
+     - Enable Montserrat 28px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_28_COMPRESSED`
+     - Enable Montserrat 28px compressed font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_30`
+     - Enable Montserrat 30px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_32`
+     - Enable Montserrat 32px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_34`
+     - Enable Montserrat 34px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_36`
+     - Enable Montserrat 36px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_38`
+     - Enable Montserrat 38px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_40`
+     - Enable Montserrat 40px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_42`
+     - Enable Montserrat 42px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_44`
+     - Enable Montserrat 44px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_46`
+     - Enable Montserrat 46px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_48`
+     - Enable Montserrat 48px font
+   * - :kconfig:`CONFIG_LVGL_FONT_MONTSERRAT_8`
+     - Enable Montserrat 8px font
+   * - :kconfig:`CONFIG_LVGL_FONT_SIMSUN_16_CJK`
+     - Enable Simsun 16px font with CJK radicals
+   * - :kconfig:`CONFIG_LVGL_FONT_SUBPX_BGR`
+     - Use BGR instead RGB for sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_FONT_UNSCII_8`
+     - Enable Unscii 8px monospace fonts
+   * - :kconfig:`CONFIG_LVGL_HOR_RES_MAX`
+     - Horizontal Screen Resolution
+   * - :kconfig:`CONFIG_LVGL_IMGBTN_TILED`
+     - Image button tile support
+   * - :kconfig:`CONFIG_LVGL_IMG_CACHE_DEF_SIZE`
+     - Default image cache size
+   * - :kconfig:`CONFIG_LVGL_IMG_CF_ALPHA`
+     - Enable alpha indexed image support
+   * - :kconfig:`CONFIG_LVGL_IMG_CF_INDEXED`
+     - Enable indexed image support
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_DRAG_LIMIT`
+     - Drag Threshold
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_DRAG_THROW`
+     - Drag throw slow-down
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_GESTURE_LIMIT`
+     - Gesture threshold
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_GESTURE_MIN_VELOCITY`
+     - Gesture minimum velocity
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_LONG_PRESS_REP_TIME`
+     - Long press repeat time
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_LONG_PRESS_TIME`
+     - Long press time
+   * - :kconfig:`CONFIG_LVGL_INDEV_DEF_READ_PERIOD`
+     - Input device refresh period
+   * - :kconfig:`CONFIG_LVGL_LABEL_DEF_SCROLL_SPEED`
+     - Label scroll speed
+   * - :kconfig:`CONFIG_LVGL_LABEL_LONG_TXT_HINT`
+     - Enable long text hint for labels
+   * - :kconfig:`CONFIG_LVGL_LABEL_TEXT_SEL`
+     - Enable label text selection
+   * - :kconfig:`CONFIG_LVGL_LABEL_WAIT_CHAR_COUNT`
+     - Waiting period for label animation
+   * - :kconfig:`CONFIG_LVGL_LED_BRIGHT_MAX`
+     - LED maximum brightness
+   * - :kconfig:`CONFIG_LVGL_LED_BRIGHT_MIN`
+     - LED minimum brightness
+   * - :kconfig:`CONFIG_LVGL_LINEMETER_PRECISE_BEST`
+     - Best precision
+   * - :kconfig:`CONFIG_LVGL_LINEMETER_PRECISE_NO_EXTRA`
+     - No extra precision
+   * - :kconfig:`CONFIG_LVGL_LINEMETER_PRECISE_SOME_EXTRA`
+     - Some extra precision
+   * - :kconfig:`CONFIG_LVGL_LIST_DEF_ANIM_TIME`
+     - List focus default animation time
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_HEAP_KERNEL`
+     - Kernel Heap
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_HEAP_LIB_C`
+     - C library Heap
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_KERNEL`
+     - Kernel space lvgl pool
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_MAX_SIZE`
+     - Maximum memory pool block size
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_MIN_SIZE`
+     - Minimum memory pool block size
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_NUMBER_BLOCKS`
+     - Number of max size blocks in memory pool
+   * - :kconfig:`CONFIG_LVGL_MEM_POOL_USER`
+     - User space lvgl pool
+   * - :kconfig:`CONFIG_LVGL_PAGE_DEF_ANIM_TIME`
+     - Default page focus animation time
+   * - :kconfig:`CONFIG_LVGL_POINTER_KSCAN`
+     - Keyboard scan pointer input
+   * - :kconfig:`CONFIG_LVGL_POINTER_KSCAN_DEV_NAME`
+     - Keyboard scan device name for pointer input
+   * - :kconfig:`CONFIG_LVGL_POINTER_KSCAN_INVERT_X`
+     - Invert keyboard scan X axis
+   * - :kconfig:`CONFIG_LVGL_POINTER_KSCAN_INVERT_Y`
+     - Invert keyboard scan Y axis
+   * - :kconfig:`CONFIG_LVGL_POINTER_KSCAN_MSGQ_COUNT`
+     - Keyboard scan message queue count maximum
+   * - :kconfig:`CONFIG_LVGL_POINTER_KSCAN_SWAP_XY`
+     - Swap keyboard scan X,Y axes
+   * - :kconfig:`CONFIG_LVGL_ROLLER_DEF_ANIM_TIME`
+     - Roller animation time
+   * - :kconfig:`CONFIG_LVGL_ROLLER_INF_PAGES`
+     - Number of pages for infinite roller
+   * - :kconfig:`CONFIG_LVGL_SHADOW_CACHE_SIZE`
+     - Shadow cache size
+   * - :kconfig:`CONFIG_LVGL_SPINNER_DEF_ANIM_CONSTANT_ARC`
+     - Constant arc
+   * - :kconfig:`CONFIG_LVGL_SPINNER_DEF_ANIM_FILLSPIN_ARC`
+     - Fill spin arc
+   * - :kconfig:`CONFIG_LVGL_SPINNER_DEF_ANIM_SPINNING_ARC`
+     - Spinning arc
+   * - :kconfig:`CONFIG_LVGL_SPINNER_DEF_ARC_LENGTH`
+     - Default arc length
+   * - :kconfig:`CONFIG_LVGL_SPINNER_DEF_SPIN_TIME`
+     - Default spin time
+   * - :kconfig:`CONFIG_LVGL_TABLE_COL_MAX`
+     - Maximum number of table columns
+   * - :kconfig:`CONFIG_LVGL_TABVIEW_DEF_ANIM_TIME`
+     - Tab view animation time
+   * - :kconfig:`CONFIG_LVGL_TA_DEF_CURSOR_BLINK_TIME`
+     - Cursor Blink Time
+   * - :kconfig:`CONFIG_LVGL_TA_DEF_PWD_SHOW_TIME`
+     - Label scroll speed
+   * - :kconfig:`CONFIG_LVGL_THEME_CUSTOM_INIT_FUNCTION`
+     - Custom theme initialization function
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_AQUA`
+     - Aqua
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_BLACK`
+     - Black
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_BLUE`
+     - Blue
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM`
+     - Custom
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_BLUE`
+     - Custom primary color (blue)
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_GREEN`
+     - Custom primary color (green)
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CUSTOM_RED`
+     - Custom primary color (red)
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_CYAN`
+     - Cyan
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_GRAY`
+     - Gray
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_GREEN`
+     - Green
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_LIME`
+     - Lime
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_MAGENTA`
+     - Magenta
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_MAROON`
+     - Maroon
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_NAVY`
+     - Navy
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_OLIVE`
+     - Olive
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_ORANGE`
+     - Orange
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_PURPLE`
+     - Purple
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_RED`
+     - Red
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_SILVER`
+     - Silver
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_TEAL`
+     - Teal
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_WHITE`
+     - White
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_PRIMARY_YELLOW`
+     - Yellow
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_AQUA`
+     - Aqua
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_BLACK`
+     - Black
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_BLUE`
+     - Blue
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM`
+     - Custom
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_BLUE`
+     - Custom secondary color (blue)
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_GREEN`
+     - Custom secondary color (green)
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CUSTOM_RED`
+     - Custom secondary color (red)
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_CYAN`
+     - Cyan
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_GRAY`
+     - Gray
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_GREEN`
+     - Green
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_LIME`
+     - Lime
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_MAGENTA`
+     - Magenta
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_MAROON`
+     - Maroon
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_NAVY`
+     - Navy
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_OLIVE`
+     - Olive
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_ORANGE`
+     - Orange
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_PURPLE`
+     - Purple
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_RED`
+     - Red
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_SILVER`
+     - Silver
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_TEAL`
+     - Teal
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_WHITE`
+     - White
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_COLOR_SECONDARY_YELLOW`
+     - Yellow
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_CUSTOM`
+     - Custom font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_DEJAVU_16_PERSIAN_HEBREW`
+     - Build-in font size 16 with Hebrew, Arabic and Persian
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_10`
+     - Build-in font size 10
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_12`
+     - Build-in font size 12
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_12_SUBPX`
+     - Build-in font size 12 with sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_14`
+     - Build-in font size 14
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_16`
+     - Build-in font size 16
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_18`
+     - Build-in font size 18
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_20`
+     - Build-in font size 20
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_22`
+     - Build-in font size 22
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_24`
+     - Build-in font size 24
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26`
+     - Build-in font size 26
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_28`
+     - Build-in font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_28_COMPRESSED`
+     - Build-in compressed font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_30`
+     - Build-in font size 30
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_32`
+     - Build-in font size 32
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_34`
+     - Build-in font size 34
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_36`
+     - Build-in font size 36
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_38`
+     - Build-in font size 38
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_40`
+     - Build-in font size 40
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_42`
+     - Build-in font size 42
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_44`
+     - Build-in font size 44
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_46`
+     - Build-in font size 46
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_48`
+     - Build-in font size 48
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_8`
+     - Build-in font size 8
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_SIMSUN_16_CJK`
+     - Build-in font size 16 with CJK radicals
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_NORMAL_UNSCII_8`
+     - Build-in monospace font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_CUSTOM`
+     - Custom font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_DEJAVU_16_PERSIAN_HEBREW`
+     - Build-in font size 16 with Hebrew, Arabic and Persian
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_10`
+     - Build-in font size 10
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_12`
+     - Build-in font size 12
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_12_SUBPX`
+     - Build-in font size 12 with sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_14`
+     - Build-in font size 14
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_16`
+     - Build-in font size 16
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_18`
+     - Build-in font size 18
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_20`
+     - Build-in font size 20
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_22`
+     - Build-in font size 22
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_24`
+     - Build-in font size 24
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26`
+     - Build-in font size 26
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_28`
+     - Build-in font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_28_COMPRESSED`
+     - Build-in compressed font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_30`
+     - Build-in font size 30
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_32`
+     - Build-in font size 32
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_34`
+     - Build-in font size 34
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_36`
+     - Build-in font size 36
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_38`
+     - Build-in font size 38
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_40`
+     - Build-in font size 40
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_42`
+     - Build-in font size 42
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_44`
+     - Build-in font size 44
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_46`
+     - Build-in font size 46
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_48`
+     - Build-in font size 48
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_8`
+     - Build-in font size 8
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_SIMSUN_16_CJK`
+     - Build-in font size 16 with CJK radicals
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SMALL_UNSCII_8`
+     - Build-in monospace font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_CUSTOM`
+     - Custom font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_DEJAVU_16_PERSIAN_HEBREW`
+     - Build-in font size 16 with Hebrew, Arabic and Persian
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_10`
+     - Build-in font size 10
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_12`
+     - Build-in font size 12
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_12_SUBPX`
+     - Build-in font size 12 with sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_14`
+     - Build-in font size 14
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_16`
+     - Build-in font size 16
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_18`
+     - Build-in font size 18
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_20`
+     - Build-in font size 20
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_22`
+     - Build-in font size 22
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_24`
+     - Build-in font size 24
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_26`
+     - Build-in font size 26
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_28`
+     - Build-in font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_28_COMPRESSED`
+     - Build-in compressed font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_30`
+     - Build-in font size 30
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_32`
+     - Build-in font size 32
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_34`
+     - Build-in font size 34
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_36`
+     - Build-in font size 36
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_38`
+     - Build-in font size 38
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_40`
+     - Build-in font size 40
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_42`
+     - Build-in font size 42
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_44`
+     - Build-in font size 44
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_46`
+     - Build-in font size 46
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_48`
+     - Build-in font size 48
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_MONTSERRAT_8`
+     - Build-in font size 8
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_SIMSUN_16_CJK`
+     - Build-in font size 16 with CJK radicals
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_SUBTITLE_UNSCII_8`
+     - Build-in monospace font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_CUSTOM`
+     - Custom font
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_DEJAVU_16_PERSIAN_HEBREW`
+     - Build-in font size 16 with Hebrew, Arabic and Persian
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_10`
+     - Build-in font size 10
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_12`
+     - Build-in font size 12
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_12_SUBPX`
+     - Build-in font size 12 with sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_14`
+     - Build-in font size 14
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_16`
+     - Build-in font size 16
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_18`
+     - Build-in font size 18
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_20`
+     - Build-in font size 20
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_22`
+     - Build-in font size 22
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_24`
+     - Build-in font size 24
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_26`
+     - Build-in font size 26
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_28`
+     - Build-in font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_28_COMPRESSED`
+     - Build-in compressed font size 28
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_30`
+     - Build-in font size 30
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_32`
+     - Build-in font size 32
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_34`
+     - Build-in font size 34
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_36`
+     - Build-in font size 36
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_38`
+     - Build-in font size 38
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_40`
+     - Build-in font size 40
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_42`
+     - Build-in font size 42
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_44`
+     - Build-in font size 44
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_46`
+     - Build-in font size 46
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_48`
+     - Build-in font size 48
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_MONTSERRAT_8`
+     - Build-in font size 8
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_SIMSUN_16_CJK`
+     - Build-in font size 16 with CJK radicals
+   * - :kconfig:`CONFIG_LVGL_THEME_DEFAULT_FONT_TITLE_UNSCII_8`
+     - Build-in monospace font
+   * - :kconfig:`CONFIG_LVGL_THEME_MATERIAL_DARK`
+     - Dark
+   * - :kconfig:`CONFIG_LVGL_THEME_MATERIAL_FLAG_NO_FOCUS`
+     - Disable focus
+   * - :kconfig:`CONFIG_LVGL_THEME_MATERIAL_FLAG_NO_TRANSITION`
+     - Disable transitions
+   * - :kconfig:`CONFIG_LVGL_THEME_MATERIAL_LIGHT`
+     - Light
+   * - :kconfig:`CONFIG_LVGL_TILEVIEW_DEF_ANIM_TIME`
+     - Tile view animation time
+   * - :kconfig:`CONFIG_LVGL_TXT_BREAK_CHARS`
+     - Text break characters
+   * - :kconfig:`CONFIG_LVGL_TXT_COLOR_CMD`
+     - Text recoloring control character
+   * - :kconfig:`CONFIG_LVGL_TXT_ENC_ASCII`
+     - ASCII string encoding
+   * - :kconfig:`CONFIG_LVGL_TXT_ENC_UTF8`
+     - UTF-8 string encoding
+   * - :kconfig:`CONFIG_LVGL_TXT_LINE_BREAK_LONG_LEN`
+     - Minimal word length for line break
+   * - :kconfig:`CONFIG_LVGL_TXT_LINE_BREAK_LONG_POST_MIN_LEN`
+     - Minimal number of characters on line after line break
+   * - :kconfig:`CONFIG_LVGL_TXT_LINE_BREAK_LONG_PRE_MIN_LEN`
+     - Minimal number of characters on line before line break
+   * - :kconfig:`CONFIG_LVGL_USE_ANIMATION`
+     - Enable animations
+   * - :kconfig:`CONFIG_LVGL_USE_API_EXTENSION_V6`
+     - Enable V6 API extensions
+   * - :kconfig:`CONFIG_LVGL_USE_API_EXTENSION_V7`
+     - Enable V7 API extensions
+   * - :kconfig:`CONFIG_LVGL_USE_ARABIC_PERSIAN_CHARS`
+     - Enable Arabic/Persian processing
+   * - :kconfig:`CONFIG_LVGL_USE_ARC`
+     - Arc Object
+   * - :kconfig:`CONFIG_LVGL_USE_ASSERT_MEM`
+     - Enable memory allocation assertion
+   * - :kconfig:`CONFIG_LVGL_USE_ASSERT_MEM_INTEGRITY`
+     - Enable memory integrity check
+   * - :kconfig:`CONFIG_LVGL_USE_ASSERT_NULL`
+     - Enable null pointer assertion
+   * - :kconfig:`CONFIG_LVGL_USE_ASSERT_OBJ`
+     - Enable object assertion
+   * - :kconfig:`CONFIG_LVGL_USE_ASSERT_STR`
+     - Enable string assertion
+   * - :kconfig:`CONFIG_LVGL_USE_ASSERT_STYLE`
+     - Enable style assertion
+   * - :kconfig:`CONFIG_LVGL_USE_BAR`
+     - Bar object
+   * - :kconfig:`CONFIG_LVGL_USE_BIDI`
+     - Enable bidirectional text support
+   * - :kconfig:`CONFIG_LVGL_USE_BLEND_MODES`
+     - Enable other blend modes
+   * - :kconfig:`CONFIG_LVGL_USE_BTN`
+     - Button object
+   * - :kconfig:`CONFIG_LVGL_USE_BTNMATRIX`
+     - Button Matrix object
+   * - :kconfig:`CONFIG_LVGL_USE_CALENDAR`
+     - Calendar object
+   * - :kconfig:`CONFIG_LVGL_USE_CANVAS`
+     - Canvas object
+   * - :kconfig:`CONFIG_LVGL_USE_CHART`
+     - Chart object
+   * - :kconfig:`CONFIG_LVGL_USE_CHECKBOX`
+     - Check box object
+   * - :kconfig:`CONFIG_LVGL_USE_CONT`
+     - Container Object
+   * - :kconfig:`CONFIG_LVGL_USE_CPICKER`
+     - Color picker object
+   * - :kconfig:`CONFIG_LVGL_USE_DEBUG`
+     - Enable debug support
+   * - :kconfig:`CONFIG_LVGL_USE_DROPDOWN`
+     - Drop Down List object
+   * - :kconfig:`CONFIG_LVGL_USE_FILESYSTEM`
+     - Enable file system
+   * - :kconfig:`CONFIG_LVGL_USE_FONT_COMPRESSED`
+     - Enable compressed font support
+   * - :kconfig:`CONFIG_LVGL_USE_FONT_SUBPX`
+     - Enable sub-pixel rendering
+   * - :kconfig:`CONFIG_LVGL_USE_GAUGE`
+     - Gauge object
+   * - :kconfig:`CONFIG_LVGL_USE_GPU`
+     - Enable GPU support
+   * - :kconfig:`CONFIG_LVGL_USE_GROUP`
+     - Enable group support
+   * - :kconfig:`CONFIG_LVGL_USE_IMG`
+     - Image Object
+   * - :kconfig:`CONFIG_LVGL_USE_IMGBTN`
+     - Image Button
+   * - :kconfig:`CONFIG_LVGL_USE_IMG_TRANSFORM`
+     - Enable image transformations
+   * - :kconfig:`CONFIG_LVGL_USE_KEYBOARD`
+     - Keyboard object
+   * - :kconfig:`CONFIG_LVGL_USE_LABEL`
+     - Label Object
+   * - :kconfig:`CONFIG_LVGL_USE_LED`
+     - LED object
+   * - :kconfig:`CONFIG_LVGL_USE_LINE`
+     - Line Object
+   * - :kconfig:`CONFIG_LVGL_USE_LINEMETER`
+     - Line meter object
+   * - :kconfig:`CONFIG_LVGL_USE_LIST`
+     - List object
+   * - :kconfig:`CONFIG_LVGL_USE_MSGBOX`
+     - Message box object
+   * - :kconfig:`CONFIG_LVGL_USE_OBJMASK`
+     - Mask object
+   * - :kconfig:`CONFIG_LVGL_USE_OBJ_REALIGN`
+     - Object realign support
+   * - :kconfig:`CONFIG_LVGL_USE_OPA_SCALE`
+     - Enable opa\_scale style property
+   * - :kconfig:`CONFIG_LVGL_USE_OUTLINE`
+     - Enable outline drawing on rectangles
+   * - :kconfig:`CONFIG_LVGL_USE_PAGE`
+     - Page object
+   * - :kconfig:`CONFIG_LVGL_USE_PATTERN`
+     - Enable pattern drawing on rectangles
+   * - :kconfig:`CONFIG_LVGL_USE_PERF_MONITOR`
+     - Enable performance monitor
+   * - :kconfig:`CONFIG_LVGL_USE_ROLLER`
+     - Roller object
+   * - :kconfig:`CONFIG_LVGL_USE_SHADOW`
+     - Enable shadows
+   * - :kconfig:`CONFIG_LVGL_USE_SLIDER`
+     - Slider object
+   * - :kconfig:`CONFIG_LVGL_USE_SPINBOX`
+     - Spinbox object
+   * - :kconfig:`CONFIG_LVGL_USE_SPINNER`
+     - Spinner object
+   * - :kconfig:`CONFIG_LVGL_USE_SWITCH`
+     - Switch object
+   * - :kconfig:`CONFIG_LVGL_USE_TABLE`
+     - Table object
+   * - :kconfig:`CONFIG_LVGL_USE_TABVIEW`
+     - Tab view object
+   * - :kconfig:`CONFIG_LVGL_USE_TEXTAREA`
+     - Text area object
+   * - :kconfig:`CONFIG_LVGL_USE_THEME_CUSTOM`
+     - Custom theme
+   * - :kconfig:`CONFIG_LVGL_USE_THEME_EMPTY`
+     - Empty theme
+   * - :kconfig:`CONFIG_LVGL_USE_THEME_MATERIAL`
+     - Material theme
+   * - :kconfig:`CONFIG_LVGL_USE_THEME_MONO`
+     - Mono theme
+   * - :kconfig:`CONFIG_LVGL_USE_TILEVIEW`
+     - Tile view object
+   * - :kconfig:`CONFIG_LVGL_USE_VALUE_STR`
+     - Enable value string drawing on rectangles
+   * - :kconfig:`CONFIG_LVGL_USE_WIN`
+     - Window object
+   * - :kconfig:`CONFIG_LVGL_VDB_SIZE`
+     - Display buffer percentage
+   * - :kconfig:`CONFIG_LVGL_VER_RES_MAX`
+     - Vertical Screen Resolution
+   * - :kconfig:`CONFIG_MAX_PTHREAD_COUNT`
+     - Maximum simultaneously active pthread count in POSIX application
+   * - :kconfig:`CONFIG_MAX_TIMER_COUNT`
+     - Maximum timer count in POSIX application
+   * - :kconfig:`CONFIG_MINIMAL_LIBC`
+     - Minimal C library
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_CALLOC`
+     - Enable minimal libc trivial calloc implementation
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_LL_PRINTF`
+     - Build with minimal libc long long printf
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_MALLOC`
+     - Enable minimal libc malloc implementation
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_MALLOC_ARENA_SIZE`
+     - Size of the minimal libc malloc arena
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_OPTIMIZE_STRING_FOR_SIZE`
+     - Use size optimized string functions
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_RAND`
+     - Enables rand and srand functions
+   * - :kconfig:`CONFIG_MINIMAL_LIBC_REALLOCARRAY`
+     - Enable minimal libc trivial reallocarray implementation
+   * - :kconfig:`CONFIG_MPSC_CLEAR_ALLOCATED`
+     - Clear allocated packet
+   * - :kconfig:`CONFIG_MPSC_PBUF`
+     - Multi producer, single consumer packet buffer
+   * - :kconfig:`CONFIG_MQUEUE_NAMELEN_MAX`
+     - Maximum size of a name length
+   * - :kconfig:`CONFIG_MSG_COUNT_MAX`
+     - Maximum number of messages in message queue
+   * - :kconfig:`CONFIG_MSG_SIZE_MAX`
+     - Maximum size of a message
+   * - :kconfig:`CONFIG_NEED_LIBC_MEM_PARTITION`
+     - 
+   * - :kconfig:`CONFIG_NEWLIB_LIBC`
+     - Newlib C library
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_ALIGNED_HEAP_SIZE`
+     - Newlib aligned heap size
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_FLOAT_PRINTF`
+     - Build with newlib float printf
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_FLOAT_SCANF`
+     - Build with newlib float scanf
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_HEAP_LISTENER`
+     - Notify heap listeners of newlib libc heap events
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_MAX_MAPPED_REGION_SIZE`
+     - Maximum memory mapped for newlib heap
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_MIN_REQUIRED_HEAP_SIZE`
+     - Newlib minimum required heap size
+   * - :kconfig:`CONFIG_NEWLIB_LIBC_NANO`
+     - Build with newlib-nano C library
+   * - :kconfig:`CONFIG_OPENAMP_RSC_TABLE`
+     - coprocessor resource table
+   * - :kconfig:`CONFIG_OPENAMP_RSC_TABLE_NUM_RPMSG_BUFF`
+     - Resource table number of rpmsg buffers
+   * - :kconfig:`CONFIG_POSIX_API`
+     - POSIX APIs
+   * - :kconfig:`CONFIG_POSIX_CLOCK`
+     - POSIX clock, timer, and sleep APIs
+   * - :kconfig:`CONFIG_POSIX_FS`
+     - Enable POSIX file system API support
+   * - :kconfig:`CONFIG_POSIX_MAX_FDS`
+     - Maximum number of open file descriptors
+   * - :kconfig:`CONFIG_POSIX_MAX_OPEN_FILES`
+     - Maximum number of open file descriptors
+   * - :kconfig:`CONFIG_POSIX_MQUEUE`
+     - Enable POSIX message queue
+   * - :kconfig:`CONFIG_PRINTK_SYNC`
+     - Serialize printk() calls
+   * - :kconfig:`CONFIG_PTHREAD_IPC`
+     - POSIX pthread IPC API
+   * - :kconfig:`CONFIG_REBOOT`
+     - Reboot functionality
+   * - :kconfig:`CONFIG_REQUIRES_FULL_LIBC`
+     - 
+   * - :kconfig:`CONFIG_RING_BUFFER`
+     - Enable ring buffers
+   * - :kconfig:`CONFIG_SEM_VALUE_MAX`
+     - Maximum semaphore limit
+   * - :kconfig:`CONFIG_SHARED_MULTI_HEAP`
+     - Shared multi-heap manager
+   * - :kconfig:`CONFIG_SMF`
+     - Enable Hierarchical State Machine
+   * - :kconfig:`CONFIG_SMF_ANCESTOR_SUPPORT`
+     - Enable states to have 1 or more ancestors
+   * - :kconfig:`CONFIG_STDOUT_CONSOLE`
+     - Send stdout to console
+   * - :kconfig:`CONFIG_SUPPORT_MINIMAL_LIBC`
+     - 
+   * - :kconfig:`CONFIG_SYS_HEAP_ALLOC_LOOPS`
+     - Number of tries in the inner heap allocation loop
+   * - :kconfig:`CONFIG_SYS_HEAP_AUTO`
+     - Support for both small and big heaps at run time
+   * - :kconfig:`CONFIG_SYS_HEAP_BIG_ONLY`
+     - Support for big heaps only
+   * - :kconfig:`CONFIG_SYS_HEAP_LISTENER`
+     - Enable sys\_heap event notifications
+   * - :kconfig:`CONFIG_SYS_HEAP_RUNTIME_STATS`
+     - System heap runtime statistics
+   * - :kconfig:`CONFIG_SYS_HEAP_SMALL_ONLY`
+     - Support for small heaps only
+   * - :kconfig:`CONFIG_SYS_HEAP_VALIDATE`
+     - Enable internal heap validity checking
+   * - :kconfig:`CONFIG_SYS_MEM_BLOCKS`
+     - (Yet Another) Memory Blocks Allocator
+   * - :kconfig:`CONFIG_SYS_MEM_BLOCKS_LISTENER`
+     - Enable Memory Blocks Allocator event notifications
+   * - :kconfig:`CONFIG_UTF8`
+     - UTF-8 string operation supported
+   * - :kconfig:`CONFIG_WINSTREAM`
+     - Lockless shared memory window byte stream
+   * - :kconfig:`CONFIG_WINSTREAM_STDLIB_MEMCOPY`
+     - Use standard memcpy() in winstream

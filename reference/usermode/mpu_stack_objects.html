@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MPU Stack Objects &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="MPU Backed Userspace" href="mpu_userspace.html" />
+    <link rel="prev" title="System Calls" href="syscalls.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html">API Status and Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../audio/index.html">Audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/notify.html">Asynchronous Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bluetooth/index.html">Bluetooth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../canbus/index.html">Controller Area Network (CAN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../devicetree/index.html">Devicetree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drivers/index.html">Device Driver Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/index.html">Display Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../edac/index.html">Error Detection And Correction (EDAC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_system/index.html">File Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iterable_sections/index.html">Iterable Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/formatted_output.html">Formatted Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Kernel Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libc/index.html">C standard library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logging/index.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../memory_management/index.html">Memory Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/index.html">Miscellaneous</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modbus/index.html">Modbus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networking/index.html">Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../peripherals/index.html">Peripherals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pinctrl/index.html">Pin Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pm/index.html">Power Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../random/index.html">Random Number Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resource_management/index.html">Resource Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shell/index.html">Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storage/index.html">Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../task_wdt/index.html">Task Watchdog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/timeutil.html">Time Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usb/index.html">USB device support</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="index.html">User Mode</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l3"><a class="reference internal" href="memory_domain.html">Memory Protection Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kernelobjects.html">Kernel Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="syscalls.html">System Calls</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">MPU Stack Objects</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#thread-stack-creation">Thread Stack Creation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stack-guards">Stack Guards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#memory-placement">Memory Placement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="mpu_userspace.html">MPU Backed Userspace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../settings/index.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../timing_functions/index.html">Executing Time Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../virtualization/index.html">Virtualization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">API Reference</a> &raquo;</li>
+  
+     <li><a href="index.html">User Mode</a> &raquo;</li>
+  
+  <li>MPU Stack Objects</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/reference/usermode/mpu_stack_objects.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="mpu-stack-objects">
+<span id="id1"></span><h1>MPU Stack Objects<a class="headerlink" href="#mpu-stack-objects" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="thread-stack-creation">
+<h2>Thread Stack Creation<a class="headerlink" href="#thread-stack-creation" title="Permalink to this headline">¶</a></h2>
+<p>Thread stacks are declared statically with <a class="reference internal" href="../kernel/threads/index.html#c.K_THREAD_STACK_DEFINE" title="K_THREAD_STACK_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">K_THREAD_STACK_DEFINE()</span></code></a>
+or embedded within structures using <a class="reference internal" href="../kernel/threads/index.html#c.K_THREAD_STACK_MEMBER" title="K_THREAD_STACK_MEMBER"><code class="xref c c-macro docutils literal notranslate"><span class="pre">K_THREAD_STACK_MEMBER()</span></code></a></p>
+<p>For architectures which utilize memory protection unit (MPU) hardware,
+stacks are physically contiguous allocations.  This contiguous allocation
+has implications for the placement of stacks in memory, as well as the
+implementation of other features such as stack protection and userspace.  The
+implications for placement are directly attributed to the alignment
+requirements for MPU regions.  This is discussed in the memory placement
+section below.</p>
+</div>
+<div class="section" id="stack-guards">
+<h2>Stack Guards<a class="headerlink" href="#stack-guards" title="Permalink to this headline">¶</a></h2>
+<p>Stack protection mechanisms require hardware support that can restrict access
+to memory.  Memory protection units can provide this kind of support.
+The MPU provides a fixed number of regions.  Each region contains information
+about the start, end, size, and access attributes to be enforced on that
+particular region.</p>
+<p>Stack guards are implemented by using a single MPU region and setting the
+attributes for that region to not allow write access.  If invalid accesses
+occur, a fault ensues.  The stack guard is defined at the bottom (the lowest
+address) of the stack.</p>
+</div>
+<div class="section" id="memory-placement">
+<h2>Memory Placement<a class="headerlink" href="#memory-placement" title="Permalink to this headline">¶</a></h2>
+<p>During stack creation, a set of constraints are enforced on the allocation of
+memory.  These constraints include determining the alignment of the stack and
+the correct sizing of the stack.  During linking of the binary, these
+constraints are used to place the stacks properly.</p>
+<p>The main source of the memory constraints is the MPU design for the SoC.  The
+MPU design may require specific constraints on the region definition.  These
+can include alignment of beginning and end addresses, sizes of allocations,
+or even interactions between overlapping regions.</p>
+<p>Some MPUs require that each region be aligned to a power of two.  These SoCs
+will have <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a> defined.
+This means that a 1500 byte stack should be aligned to a 2kB boundary and the
+stack size should also be adjusted to 2kB to ensure that nothing else is
+placed in the remainder of the region.  SoCs which include the unmodified ARM
+v7m MPU will have these constraints.</p>
+<p>Some ARM MPUs use start and end addresses to define MPU regions and both the
+start and end addresses require 32 byte alignment.  An example of this kind of
+MPU is found in the NXP FRDM K64F.</p>
+<p>MPUs may have a region priority mechanisms that use the highest priority region
+that covers the memory access to determine the enforcement policy.  Others may
+logically OR regions to determine enforcement policy.</p>
+<p>Size and alignment constraints may result in stack allocations being larger
+than the requested size.  Region priority mechanisms may result in
+some added complexity when implementing stack guards.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

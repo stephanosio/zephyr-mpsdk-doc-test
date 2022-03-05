@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Executing Time Functions &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script type="module" src="../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../_static/js/ga-tracker.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../copyright.html" />
+    <link rel="next" title="Virtualization" href="../virtualization/index.html" />
+    <link rel="prev" title="Settings" href="../settings/index.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html">
+            <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../application/index.html">Application Development</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">API Reference</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../api/index.html">API Status and Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../audio/index.html">Audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/notify.html">Asynchronous Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../bluetooth/index.html">Bluetooth</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../canbus/index.html">Controller Area Network (CAN)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crypto/index.html">Crypto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../devicetree/index.html">Devicetree</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../drivers/index.html">Device Driver Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../display/index.html">Display Interface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../edac/index.html">Error Detection And Correction (EDAC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../file_system/index.html">File Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../iterable_sections/index.html">Iterable Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/formatted_output.html">Formatted Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../kernel/index.html">Kernel Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../libc/index.html">C standard library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../logging/index.html">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../memory_management/index.html">Memory Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/index.html">Miscellaneous</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../data_structures/index.html">Data Structures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modbus/index.html">Modbus</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../networking/index.html">Networking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../peripherals/index.html">Peripherals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pinctrl/index.html">Pin Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pm/index.html">Power Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../random/index.html">Random Number Generation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../resource_management/index.html">Resource Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../shell/index.html">Shell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../storage/index.html">Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../task_wdt/index.html">Task Watchdog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../misc/timeutil.html">Time Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usb/index.html">USB device support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../usermode/index.html">User Mode</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../util/index.html">Utilities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../settings/index.html">Settings</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Executing Time Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usage">Usage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#api-documentation">API documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../virtualization/index.html">Virtualization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../index.html">API Reference</a> &raquo;</li>
+  
+  <li>Executing Time Functions</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/reference/timing_functions/index.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="executing-time-functions">
+<span id="timing-functions"></span><h1>Executing Time Functions<a class="headerlink" href="#executing-time-functions" title="Permalink to this headline">¶</a></h1>
+<p>The timing functions can be used to obtain execution time of
+a section of code to aid in analysis and optimization.</p>
+<p>Please note that the timing functions may use a different timer
+than the default kernel timer, where the timer being used is
+specified by architecture, SoC or board configuration.</p>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>To allow using the timing functions, <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_TIMING_FUNCTIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TIMING_FUNCTIONS</span></code></a>
+needs to be enabled.</p>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>To gather timing information:</p>
+<ol class="arabic simple">
+<li><p>Call <a class="reference internal" href="#c.timing_init" title="timing_init"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_init()</span></code></a> to initialize the timer.</p></li>
+<li><p>Call <a class="reference internal" href="#c.timing_start" title="timing_start"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_start()</span></code></a> to signal the start of gathering of
+timing information. This usually starts the timer.</p></li>
+<li><p>Call <a class="reference internal" href="#c.timing_counter_get" title="timing_counter_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_counter_get()</span></code></a> to mark the start of code
+execution.</p></li>
+<li><p>Call <a class="reference internal" href="#c.timing_counter_get" title="timing_counter_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_counter_get()</span></code></a> to mark the end of code
+execution.</p></li>
+<li><p>Call <a class="reference internal" href="#c.timing_cycles_get" title="timing_cycles_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_cycles_get()</span></code></a> to get the number of timer cycles
+between start and end of code execution.</p></li>
+<li><p>Call <a class="reference internal" href="#c.timing_cycles_to_ns" title="timing_cycles_to_ns"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_cycles_to_ns()</span></code></a> with total number of cycles
+to convert number of cycles to nanoseconds.</p></li>
+<li><p>Repeat from step 3 to gather timing information for other
+blocks of code.</p></li>
+<li><p>Call <a class="reference internal" href="#c.timing_stop" title="timing_stop"><code class="xref c c-func docutils literal notranslate"><span class="pre">timing_stop()</span></code></a> to signal the end of gathering of
+timing information. This usually stops the timer.</p></li>
+</ol>
+<div class="section" id="example">
+<h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
+<p>This shows an example on how to use the timing functions:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;timing/timing.h&gt;</span><span class="cp"></span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">gather_timing</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">timing_t</span><span class="w"> </span><span class="n">start_time</span><span class="p">,</span><span class="w"> </span><span class="n">end_time</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">total_cycles</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">total_ns</span><span class="p">;</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">timing_init</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="n">timing_start</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">start_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">timing_counter_get</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">code_execution_to_be_measured</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">end_time</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">timing_counter_get</span><span class="p">();</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">total_cycles</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">timing_cycles_get</span><span class="p">(</span><span class="o">&amp;</span><span class="n">start_time</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">end_time</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="n">total_ns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">timing_cycles_to_ns</span><span class="p">(</span><span class="n">total_cycles</span><span class="p">);</span><span class="w"></span>
+
+<span class="w">    </span><span class="n">timing_stop</span><span class="p">();</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="api-documentation">
+<h2>API documentation<a class="headerlink" href="#api-documentation" title="Permalink to this headline">¶</a></h2>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="group__timing__api"></span><em><span class="pre">group</span></em> <span class="sig-name descname"><span class="pre">timing_api</span></span></dt>
+<dd><p>Timing Measurement APIs. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_init">
+<span class="target" id="group__timing__api_1ga50ff9040b99d95c56f494014831e4b47"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_init</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_init" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialize the timing subsystem. </p>
+<p>Perform the necessary steps to initialize the timing subsystem. </p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_start">
+<span class="target" id="group__timing__api_1ga3c28bb4ced0467c284d33c800e070bde"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_start</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_start" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Signal the start of the timing information gathering. </p>
+<p>Signal to the timing subsystem that timing information will be gathered from this point forward. </p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_stop">
+<span class="target" id="group__timing__api_1gade1584bf683c9c61905513efa4d99cf2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_stop</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_stop" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Signal the end of the timing information gathering. </p>
+<p>Signal to the timing subsystem that timing information is no longer being gathered from this point forward. </p>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_counter_get">
+<span class="target" id="group__timing__api_1gaa5736c87362de09749af1d8ff30b8208"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">timing_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_counter_get</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_counter_get" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Return timing counter. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Timing counter. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_cycles_get">
+<span class="target" id="group__timing__api_1gaa12074c7645b19578e7ca573c6aa2955"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_cycles_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">timing_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">start</span></span>, <span class="k"><span class="pre">volatile</span></span><span class="w"> </span><span class="n"><span class="pre">timing_t</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">end</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_cycles_get" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get number of cycles between <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">end</span></code>. </p>
+<p>For some architectures or SoCs, the raw numbers from counter need to be scaled to obtain actual number of cycles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> – Pointer to counter at start of a measured execution. </p></li>
+<li><p><strong>end</strong> – Pointer to counter at stop of a measured execution. </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Number of cycles between start and end. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_freq_get">
+<span class="target" id="group__timing__api_1gab72ed08d19630cb4cbea4977f2e6723b"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_freq_get</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_freq_get" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get frequency of counter used (in Hz). </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Frequency of counter used for timing in Hz. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_cycles_to_ns">
+<span class="target" id="group__timing__api_1ga14a85981068350f33c63c93c4b71afe2"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_cycles_to_ns</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">cycles</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_cycles_to_ns" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convert number of <code class="docutils literal notranslate"><span class="pre">cycles</span></code> into nanoseconds. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cycles</strong> – Number of cycles </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Converted time value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_cycles_to_ns_avg">
+<span class="target" id="group__timing__api_1ga28b0252f3395b6e6b549cb03ea4dbef4"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_cycles_to_ns_avg</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint64_t</span></span><span class="w"> </span><span class="n"><span class="pre">cycles</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">count</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_cycles_to_ns_avg" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Convert number of <code class="docutils literal notranslate"><span class="pre">cycles</span></code> into nanoseconds with averaging. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cycles</strong> – Number of cycles </p></li>
+<li><p><strong>count</strong> – Times of accumulated cycles to average over </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Converted time value </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.timing_freq_get_mhz">
+<span class="target" id="group__timing__api_1ga65370ad32eadf61c84b90dc04ecd1d56"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timing_freq_get_mhz</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.timing_freq_get_mhz" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get frequency of counter used (in MHz). </p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Frequency of counter used for timing in MHz. </p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

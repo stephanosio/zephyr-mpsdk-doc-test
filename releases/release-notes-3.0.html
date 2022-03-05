@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zephyr 3.0.0 (Working draft) &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script type="module" src="../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../_static/js/ga-tracker.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="copyright" title="Copyright" href="../copyright.html" />
+    <link rel="next" title="Zephyr 2.7.0" href="release-notes-2.7.html" />
+    <link rel="prev" title="Release Notes" href="index.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html">
+            <img src="../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.0-rc3
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Supported Boards</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Release Notes</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Zephyr 3.0.0 (Working draft)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#security-vulnerability-related">Security Vulnerability Related</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-issues">Known issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-changes">API Changes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#changes-in-this-release">Changes in this release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#removed-apis-in-this-release">Removed APIs in this release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#deprecated-in-this-release">Deprecated in this release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stable-api-changes-in-this-release">Stable API changes in this release</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#new-apis-in-this-release">New APIs in this release</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#kernel">Kernel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#architectures">Architectures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bluetooth">Bluetooth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#boards-soc-support">Boards &amp; SoC Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drivers-and-sensors">Drivers and Sensors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#networking">Networking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#usb">USB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#build-and-infrastructure">Build and Infrastructure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#libraries-subsystems">Libraries / Subsystems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hals">HALs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mcuboot">MCUboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trusted-firmware-m">Trusted Firmware-m</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation">Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tests-and-samples">Tests and Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#issue-related-items">Issue Related Items</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.7.html">Zephyr 2.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.6.html">Zephyr 2.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.5.html">Zephyr 2.5.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.4.html">Zephyr 2.4.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.3.html">Zephyr 2.3.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.2.html">Zephyr 2.2.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.2.html#zephyr-2-2-0">Zephyr 2.2.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.1.html">Zephyr 2.1.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-2.0.html">Zephyr 2.0.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.14.html">Zephyr 1.14.3</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.14.html#zephyr-1-14-2">Zephyr 1.14.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.14.html#id3">Zephyr 1.14.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.14.html#zephyr-kernel-1-14-0">Zephyr Kernel 1.14.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.13.html">Zephyr Kernel 1.13.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.12.html">Zephyr Kernel 1.12.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.11.html">Zephyr Kernel 1.11.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.10.html">Zephyr Kernel 1.10.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.9.html">Zephyr Kernel 1.9.2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.9.html#zephyr-kernel-1-9-1">Zephyr Kernel 1.9.1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.9.html#zephyr-kernel-1-9-0">Zephyr Kernel 1.9.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.8.html">Zephyr Kernel 1.8.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.7.html">Zephyr Kernel 1.7.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.6.html">Zephyr Kernel 1.6.0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-1.5.html">Zephyr Kernel 1.5.0</a></li>
+</ul>
+</li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="index.html">Release Notes</a> &raquo;</li>
+  
+  <li>Zephyr 3.0.0 (Working draft)</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main/doc/releases/release-notes-3.0.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="zephyr-3-0-0-working-draft">
+<span id="zephyr-3-0"></span><h1>Zephyr 3.0.0 (Working draft)<a class="headerlink" href="#zephyr-3-0-0-working-draft" title="Permalink to this headline">¶</a></h1>
+<p>We are pleased to announce the release of Zephyr RTOS version 3.0.0.</p>
+<p>The following sections provide detailed lists of changes by component.</p>
+<div class="section" id="security-vulnerability-related">
+<h2>Security Vulnerability Related<a class="headerlink" href="#security-vulnerability-related" title="Permalink to this headline">¶</a></h2>
+<p>The following CVEs are addressed by this release:</p>
+<p>More detailed information can be found in:
+<a class="reference external" href="https://docs.zephyrproject.org/latest/security/vulnerabilities.html">https://docs.zephyrproject.org/latest/security/vulnerabilities.html</a></p>
+<ul class="simple">
+<li><p>CVE-2021-3835: <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-fm6v-8625-99jf">Zephyr project bug tracker GHSA-fm6v-8625-99jf</a></p></li>
+<li><p>CVE-2021-3861: <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hvfp-w4h8-gxvj">Zephyr project bug tracker GHSA-hvfp-w4h8-gxvj</a></p></li>
+<li><p>CVE-2021-3966: <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hfxq-3w6x-fv2m">Zephyr project bug tracker GHSA-hfxq-3w6x-fv2m</a></p></li>
+</ul>
+</div>
+<div class="section" id="known-issues">
+<h2>Known issues<a class="headerlink" href="#known-issues" title="Permalink to this headline">¶</a></h2>
+<p>You can check all currently known issues by listing them using the GitHub
+interface and listing all issues with the <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/issues?q=is%3Aissue+is%3Aopen+label%3Abug">bug label</a>.</p>
+</div>
+<div class="section" id="api-changes">
+<h2>API Changes<a class="headerlink" href="#api-changes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="changes-in-this-release">
+<h3>Changes in this release<a class="headerlink" href="#changes-in-this-release" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Following functions in UART Asynchronous API are using microseconds to represent
+timeout instead of milliseconds:
+* <a class="reference internal" href="../reference/peripherals/uart.html#c.uart_tx" title="uart_tx"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_tx()</span></code></a>
+* <a class="reference internal" href="../reference/peripherals/uart.html#c.uart_rx_enable" title="uart_rx_enable"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_rx_enable()</span></code></a></p></li>
+<li><p>Replaced custom LwM2M <code class="xref c c-struct docutils literal notranslate"><span class="pre">float32_value</span></code> type with a native double type.</p></li>
+<li><p>Added function for getting status of USB device remote wakeup feature.</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">ranges</span></code> and <code class="docutils literal notranslate"><span class="pre">dma-ranges</span></code> as invalid property to be used with DT_PROP_LEN()
+along <code class="docutils literal notranslate"><span class="pre">reg</span></code> and <code class="docutils literal notranslate"><span class="pre">interrupts</span></code>.</p></li>
+<li><p>The existing <a class="reference internal" href="../reference/misc/index.html#c.crc16" title="crc16"><code class="xref c c-func docutils literal notranslate"><span class="pre">crc16()</span></code></a> and <a class="reference internal" href="../reference/misc/index.html#c.crc16_ansi" title="crc16_ansi"><code class="xref c c-func docutils literal notranslate"><span class="pre">crc16_ansi()</span></code></a> functions have been
+modified. The former has a new signature. The latter now properly calculates the
+CRC-16-ANSI checksum. A new function, <a class="reference internal" href="../reference/misc/index.html#c.crc16_reflect" title="crc16_reflect"><code class="xref c c-func docutils literal notranslate"><span class="pre">crc16_reflect()</span></code></a>, has been
+introduced to calculated reflected CRCs.</p></li>
+<li><p>GATT callbacks <code class="docutils literal notranslate"><span class="pre">bt_gatt_..._func_t</span></code> would previously be called with argument
+<code class="docutils literal notranslate"><span class="pre">conn</span> <span class="pre">=</span> <span class="pre">NULL</span></code> in the event of a disconnect. This was not documented as part
+of the API. This behavior is changed so the <code class="docutils literal notranslate"><span class="pre">conn</span></code> argument is provided as
+normal when a disconnect occurs.</p></li>
+</ul>
+</div>
+<div class="section" id="removed-apis-in-this-release">
+<h3>Removed APIs in this release<a class="headerlink" href="#removed-apis-in-this-release" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>The following Kconfig options related to radio front-end modules (FEMs) were
+removed:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PA</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PA_PIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PA_POL_INV</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PA_OFFSET</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_LNA</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_LNA_PIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_LNA_POL_INV</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_LNA_OFFSET</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_FEM_NRF21540</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PDN_PIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PDN_POL_INV</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_CSN_PIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_CSN_POL_INV</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_GPIO_PDN_CSN_OFFSET</span></code></p></li>
+</ul>
+<p>This FEM configuration is hardware description, and was therefore moved to
+<a class="reference internal" href="../guides/dts/index.html#dt-guide"><span class="std std-ref">devicetree</span></a>. See the <a class="reference internal" href="../reference/devicetree/bindings/net/wireless/nordic%2Cnrf-radio.html#std-dtcompatible-nordic-nrf-radio"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">nordic,nrf-radio</span></code></a>
+devicetree binding’s <code class="docutils literal notranslate"><span class="pre">fem</span></code> property for information on what to do instead
+on the Nordic open source controller.</p>
+</li>
+<li><p>Removed Kconfig option <code class="docutils literal notranslate"><span class="pre">CONFIG_USB_UART_CONSOLE</span></code>.
+Option <code class="docutils literal notranslate"><span class="pre">CONFIG_USB_UART_CONSOLE</span></code> was only relevant for console driver
+when CDC ACM UART is used as backend. Since the behavior of the CDC ACM UART
+is changed so that it more closely mimics the real UART controller,
+option is no longer necessary.</p></li>
+<li><p>Removed Kconfig option <code class="docutils literal notranslate"><span class="pre">CONFIG_OPENOCD_SUPPORT</span></code> in favor of
+<code class="docutils literal notranslate"><span class="pre">CONFIG_DEBUG_THREAD_INFO</span></code>.</p></li>
+<li><p>Removed <code class="docutils literal notranslate"><span class="pre">flash_write_protection_set()</span></code> along with the flash write protection
+implementation handler.</p></li>
+<li><p>Removed <code class="docutils literal notranslate"><span class="pre">CAN_BUS_UNKNOWN</span></code> and changed the signature of
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_get_state" title="can_get_state"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_get_state()</span></code></a> to return an error code instead.</p></li>
+<li><p>Removed <code class="docutils literal notranslate"><span class="pre">DT_CHOSEN_ZEPHYR_CANBUS_LABEL</span></code> in favor of utilizing
+<a class="reference internal" href="../reference/drivers/index.html#c.DEVICE_DT_GET" title="DEVICE_DT_GET"><code class="xref c c-macro docutils literal notranslate"><span class="pre">DEVICE_DT_GET</span></code></a>.</p></li>
+<li><p>Removed <code class="docutils literal notranslate"><span class="pre">CONFIG_LOG_MINIMAL</span></code>. Use <code class="docutils literal notranslate"><span class="pre">CONFIG_LOG_MODE_MINIMAL</span></code> instead.</p></li>
+</ul>
+</div>
+<div class="section" id="deprecated-in-this-release">
+<h3>Deprecated in this release<a class="headerlink" href="#deprecated-in-this-release" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Removed <code class="docutils literal notranslate"><span class="pre">&lt;power/reboot.h&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;power/power.h&gt;</span></code> deprecated headers.
+<code class="docutils literal notranslate"><span class="pre">&lt;sys/reboot.h&gt;</span></code> and <code class="docutils literal notranslate"><span class="pre">&lt;pm/pm.h&gt;</span></code> should be used instead.</p></li>
+<li><p><code class="xref c c-macro docutils literal notranslate"><span class="pre">USBD_CFG_DATA_DEFINE</span></code> is deprecated in favor of utilizing
+<code class="xref c c-macro docutils literal notranslate"><span class="pre">USBD_DEFINE_CFG_DATA</span></code></p></li>
+<li><p><a class="reference internal" href="../reference/drivers/index.html#c.SYS_DEVICE_DEFINE" title="SYS_DEVICE_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">SYS_DEVICE_DEFINE</span></code></a> is deprecated in favor of utilizing
+<a class="reference internal" href="../reference/drivers/index.html#c.SYS_INIT" title="SYS_INIT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">SYS_INIT</span></code></a>.</p></li>
+<li><p><a class="reference internal" href="../reference/drivers/index.html#c.device_usable_check" title="device_usable_check"><code class="xref c c-func docutils literal notranslate"><span class="pre">device_usable_check()</span></code></a> is deprecated in favor of utilizing
+<a class="reference internal" href="../reference/drivers/index.html#c.device_is_ready" title="device_is_ready"><code class="xref c c-func docutils literal notranslate"><span class="pre">device_is_ready()</span></code></a>.</p></li>
+<li><p>Custom CAN return codes (<code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TX_OK</span></code>, <code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TX_ERR</span></code>,
+<code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TX_ARB_LOST</span></code>, <code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TX_BUS_OFF</span></code>,
+<code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TX_UNKNOWN</span></code>, <code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TX_EINVAL</span></code>,
+<code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_NO_FREE_FILTER</span></code>, and <code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_TIMEOUT</span></code>) are deprecated in
+favor of utilizing standard errno error codes.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_configure()</span></code> is deprecated in favor of utilizing
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_set_bitrate" title="can_set_bitrate"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_set_bitrate()</span></code></a> and <a class="reference internal" href="../reference/canbus/controller.html#c.can_set_mode" title="can_set_mode"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_set_mode()</span></code></a>.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_attach_workq()</span></code> is deprecated in favor of utilizing
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_add_rx_filter_msgq" title="can_add_rx_filter_msgq"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_add_rx_filter_msgq()</span></code></a> and <a class="reference internal" href="../reference/kernel/threads/workqueue.html#c.k_work_poll_submit" title="k_work_poll_submit"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_work_poll_submit()</span></code></a>.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_attach_isr()</span></code> is is deprecated and replaced by
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_add_rx_filter" title="can_add_rx_filter"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_add_rx_filter()</span></code></a>.</p></li>
+<li><p><code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_DEFINE_MSGQ</span></code> is deprecated and replaced by
+<a class="reference internal" href="../reference/canbus/controller.html#c.CAN_MSGQ_DEFINE" title="CAN_MSGQ_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_MSGQ_DEFINE</span></code></a>.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_attach_msgq()</span></code> is deprecated and replaced by
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_add_rx_filter_msgq" title="can_add_rx_filter_msgq"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_add_rx_filter_msgq()</span></code></a>.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_detach()</span></code> is deprecated and replaced by
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_remove_rx_filter" title="can_remove_rx_filter"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_remove_rx_filter()</span></code></a>.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_register_state_change_isr()</span></code> is deprecated and replaced by
+<a class="reference internal" href="../reference/canbus/controller.html#c.can_set_state_change_callback" title="can_set_state_change_callback"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_set_state_change_callback()</span></code></a>.</p></li>
+<li><p><code class="xref c c-func docutils literal notranslate"><span class="pre">can_write()</span></code> is deprecated in favor of utilizing <a class="reference internal" href="../reference/canbus/controller.html#c.can_send" title="can_send"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_send()</span></code></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="stable-api-changes-in-this-release">
+<h3>Stable API changes in this release<a class="headerlink" href="#stable-api-changes-in-this-release" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="new-apis-in-this-release">
+<h3>New APIs in this release<a class="headerlink" href="#new-apis-in-this-release" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Serial</p>
+<ul>
+<li><p>Added new APIs to support datum wider than 8-bit.</p>
+<ul>
+<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_WIDE_DATA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_WIDE_DATA</span></code></a> is added to enable this new APIs.</p></li>
+<li><p>Following functions, mirroring similar functions for 8-bit datum,
+are added:</p>
+<ul>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_tx_u16" title="uart_tx_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_tx_u16()</span></code></a> to send a given number of datum from buffer.</p></li>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_rx_enable_u16" title="uart_rx_enable_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_rx_enable_u16()</span></code></a> to start receiving data.</p></li>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_rx_buf_rsp_u16" title="uart_rx_buf_rsp_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_rx_buf_rsp_u16()</span></code></a> to set buffer for receiving data
+in response to <code class="docutils literal notranslate"><span class="pre">UART_RX_BUF_REQUEST</span></code> event.</p></li>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_poll_in_u16" title="uart_poll_in_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_poll_in_u16()</span></code></a> to poll for input.</p></li>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_poll_out_u16" title="uart_poll_out_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_poll_out_u16()</span></code></a> to output datum in polling mode.</p></li>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_fifo_fill_u16" title="uart_fifo_fill_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_fifo_fill_u16()</span></code></a> to fill FIFO with data.</p></li>
+<li><p><a class="reference internal" href="../reference/peripherals/uart.html#c.uart_fifo_read_u16" title="uart_fifo_read_u16"><code class="xref c c-func docutils literal notranslate"><span class="pre">uart_fifo_read_u16()</span></code></a> to read data from FIFO.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Devicetree</p>
+<ul>
+<li><p>Added new Devicetree helpers:</p>
+<ul>
+<li><p><a class="reference internal" href="../reference/devicetree/api.html#c.DT_INST_ENUM_IDX" title="DT_INST_ENUM_IDX"><code class="xref c c-macro docutils literal notranslate"><span class="pre">DT_INST_ENUM_IDX</span></code></a></p></li>
+<li><p><a class="reference internal" href="../reference/devicetree/api.html#c.DT_INST_ENUM_IDX_OR" title="DT_INST_ENUM_IDX_OR"><code class="xref c c-macro docutils literal notranslate"><span class="pre">DT_INST_ENUM_IDX_OR</span></code></a></p></li>
+<li><p><a class="reference internal" href="../reference/devicetree/api.html#c.DT_INST_PARENT" title="DT_INST_PARENT"><code class="xref c c-macro docutils literal notranslate"><span class="pre">DT_INST_PARENT</span></code></a></p></li>
+</ul>
+</li>
+<li><p>New <a class="reference internal" href="../reference/devicetree/api.html#devicetree-ranges-property"><span class="std std-ref">ranges property</span></a> APIs</p></li>
+<li><p>Removed: <code class="docutils literal notranslate"><span class="pre">DT_CHOSEN_ZEPHYR_CANBUS_LABEL</span></code>; use
+<code class="docutils literal notranslate"><span class="pre">DEVICE_DT_GET(DT_CHOSEN(zephyr_canbus))</span></code> to get the device instead, and
+read the name from the device structure if needed.</p></li>
+<li><p>Removed deprecated macros:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_CLOCKS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_CLOCKS_LABEL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_CLOCKS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_CLOCKS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_CLOCKS_LABEL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_PWMS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_PWMS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_PWMS_LABEL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_PWMS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_PWMS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_PWMS_LABEL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_IO_CHANNELS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_IO_CHANNELS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_IO_CHANNELS_LABEL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_IO_CHANNELS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_IO_CHANNELS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_IO_CHANNELS_LABEL</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_DMAS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_DMAS_LABEL_BY_IDX</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_DMAS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_INST_DMAS_LABEL_BY_NAME</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_ENUM_TOKEN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DT_ENUM_UPPER_TOKEN</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CAN</p>
+<ul>
+<li><p>Added <a class="reference internal" href="../reference/canbus/controller.html#c.can_get_max_filters" title="can_get_max_filters"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_get_max_filters()</span></code></a> for retrieving the maximum number of RX
+filters support by a CAN controller device.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="kernel">
+<h2>Kernel<a class="headerlink" href="#kernel" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li><p>Fixed timeout issues when SYSTEM_CLOCK_SLOPPY_IDLE is configured.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="architectures">
+<h2>Architectures<a class="headerlink" href="#architectures" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>ARC</p></li>
+<li><p>ARM</p>
+<ul>
+<li><p>AARCH32</p>
+<ul>
+<li><p>Converted inline assembler calls to using CMSIS provided functions for
+<code class="xref c c-func docutils literal notranslate"><span class="pre">arm_core_mpu_enable()</span></code> and <code class="xref c c-func docutils literal notranslate"><span class="pre">arm_core_mpu_disable()</span></code>.</p></li>
+<li><p>Replaced Kconfig <cite>CONFIG_CPU_CORTEX_R</cite> with <cite>CONFIG_ARMV7_R</cite> to enable
+differentiation between v7 and v8 Cortex-R.</p></li>
+<li><p>Updated the Cortex-R syscall behavior to match that of the Cortex-M.</p></li>
+</ul>
+</li>
+<li><p>AARCH64</p></li>
+</ul>
+</li>
+<li><p>x86</p></li>
+<li><p>Xtensa</p>
+<ul>
+<li><p>Introduced a mechanism to automatically figure out which scratch registers
+are used for internal code, instead of hard-coding. This is to accommodate
+the configurability of the architecture where some registers may exist in
+one SoC but not on another one.</p></li>
+<li><p>Added coredump support for Xtensa.</p></li>
+<li><p>Added GDB stub support for Xtensa.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="bluetooth">
+<h2>Bluetooth<a class="headerlink" href="#bluetooth" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Updated all experimental features in Bluetooth to use the new <code class="docutils literal notranslate"><span class="pre">EXPERIMENTAL</span></code>
+selectable Kconfig option</p></li>
+<li><p>Bluetooth now uses logging v2 as with the rest of the tree</p></li>
+<li><p>Audio</p>
+<ul>
+<li><p>Implemented the Content Control ID module (CCID)</p></li>
+<li><p>Added support for the Coordinated Set Identification Service (CSIS)</p></li>
+<li><p>Added a Temporary Object Transfer client implementation</p></li>
+<li><p>Added a Media Control client implementation</p></li>
+<li><p>Added a Media Control Server implementation</p></li>
+<li><p>Implemented the Media Proxy API</p></li>
+<li><p>Implemented CIG reconfiguration and state handling</p></li>
+<li><p>Updated the CSIS API for both server and client</p></li>
+<li><p>Added Basic Audio Profile (BAP) unicast and broadcast server support</p></li>
+</ul>
+</li>
+<li><p>Direction Finding</p>
+<ul>
+<li><p>Added support for filtering of Periodic Advertising Sync by CTE type</p></li>
+<li><p>Added additional handling logic for Periodic Advertising Sync Establishemnt</p></li>
+<li><p>Added CTE RX, sampling and IQ report handling in DF connected mode</p></li>
+<li><p>Added support for CTE configuration in connected mode</p></li>
+<li><p>Direction Finding connection mode now uses the newly refactored LLCP
+implementation</p></li>
+</ul>
+</li>
+<li><p>Host</p>
+<ul>
+<li><p>The <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SETTINGS_CCC_STORE_ON_WRITE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS_CCC_STORE_ON_WRITE</span></code></a> is now enabled by default.
+Storing CCC right after it’s written reduces risk of inconsistency of CCC values between bonded peers</p></li>
+<li><p>Added support for L2CAP channel reconfiguration.</p></li>
+<li><p>Added support for SMP error code 0xF, where the peer rejects a distributed
+key</p></li>
+<li><p>Added <code class="docutils literal notranslate"><span class="pre">bt_gatt_service_is_registered()</span></code> to verify sevice registration</p></li>
+<li><p>Added create an delete procedures to the Object Transfer Service
+implementation</p></li>
+<li><p>Added support for reassembling extended advertising reports</p></li>
+<li><p>Added support for reassembling periodic advertising reports</p></li>
+<li><p>Added support for setting long periodic advertising data</p></li>
+<li><p>Implemented GATT Long Writes reassembly before forwarding them up to the
+application</p></li>
+<li><p>The GATT Server DB hash calculation logic has been corrected</p></li>
+<li><p>Added storing of the CCC data upon paring complete</p></li>
+</ul>
+</li>
+<li><p>Mesh</p>
+<ul>
+<li><p>Split out the Proxy services, which can now be compiled out</p></li>
+<li><p>Added an option to call back on every retransmission</p></li>
+<li><p>Added support for multiple Advertising Sets</p></li>
+<li><p>Refactored he Config Client and Health Client API to allow async use</p></li>
+</ul>
+</li>
+<li><p>Controller</p>
+<ul>
+<li><p>Added support for a brand new implementation of LL Control Procedures
+(LLCP), currently disabled by default, can be enabled using the
+<code class="docutils literal notranslate"><span class="pre">CONFIG_BT_LL_SW_LLCP_IMPL</span></code> Kconfig choice</p></li>
+<li><p>Added initial support for Broadcast Isochronous Groups (BIG)</p></li>
+<li><p>Integrated ISO Sync RX datapath</p></li>
+<li><p>Transitioned FEM configurations (PA/LNA) from Kconfig to Devicetree</p></li>
+<li><p>Updated the supported Bluetooth HCI version to 5.3</p></li>
+<li><p>Added support for Periodic Advertiser List</p></li>
+<li><p>Added support for Periodic Advertising Synchronization Receive Enable</p></li>
+<li><p>Added support for filter access list filtering for exended scanning</p></li>
+<li><p>Added support for Advertising Extensions dynamic TX power control</p></li>
+<li><p>Added handling of direct address type in extended adv reports</p></li>
+<li><p>Implemented auxiliary PDU device address matching</p></li>
+<li><p>Implemented fragmentation of extended advertising reports over HCI</p></li>
+<li><p>Implemented Extended Advertising and Scan report back-to-back chaining</p></li>
+<li><p>Implemented Periodic Advertising ADI support,including duplicate filtering</p></li>
+<li><p>Introduced a new preferred central connection spacing feature</p></li>
+</ul>
+</li>
+<li><p>HCI Driver</p>
+<ul>
+<li><p>Added support for a new optional <code class="docutils literal notranslate"><span class="pre">setup()</span></code> function for vendor-specific
+setup code required to bring up the controller</p></li>
+<li><p>Fixed DTM mode not being reset correctly with the HCI Reset command</p></li>
+<li><p>Limited the maximum ACL TX buffer size to 251 bytes</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="boards-soc-support">
+<h2>Boards &amp; SoC Support<a class="headerlink" href="#boards-soc-support" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Added support for these SoC series:</p>
+<ul>
+<li><p>GigaDevice GD32VF103, GD32F3X0, GD32F403 and GD32F450.</p></li>
+<li><p>Raspberry Pi RP2040</p></li>
+<li><p>NXP i.MXRT595, i.MX8MQ, i.MX8MP</p></li>
+</ul>
+</li>
+<li><p>Removed support for these SoC series:</p></li>
+<li><p>Made these changes in other SoC series:</p>
+<ul>
+<li><p>stm32h7: Added SMPS support</p></li>
+<li><p>stm32u5: Enabled TF-M</p></li>
+</ul>
+</li>
+<li><p>Changes for ARC boards:</p></li>
+<li><p>Added support for these ARM boards:</p>
+<ul>
+<li><p>GigaDevice GD32F350R-EVAL</p></li>
+<li><p>GigaDevice GD32F403Z-EVAL</p></li>
+<li><p>GigaDevice GD32F450I-EVAL</p></li>
+<li><p>OLIMEX-STM32-H405</p></li>
+<li><p>NXP MIMXRT595-EVK</p></li>
+<li><p>NXP MIMX8MQ-EVK</p></li>
+<li><p>NXP MIMX8MP-EVK</p></li>
+<li><p>Raspberry Pi Pico</p></li>
+<li><p>ST Nucleo G031K8</p></li>
+<li><p>ST Nucleo H7A3ZI Q</p></li>
+<li><p>ST STM32G081B Evaluation</p></li>
+</ul>
+</li>
+<li><p>Added support for these ARM64 boards:</p></li>
+<li><p>Removed support for these ARM boards:</p></li>
+<li><p>Removed support for these X86 boards:</p></li>
+<li><p>Added support for these RISC-V boards:</p>
+<ul>
+<li><p>GigaDevice GD32VF103V-EVAL</p></li>
+<li><p>Sipeed Longan Nano and Nano Lite</p></li>
+</ul>
+</li>
+<li><p>Made these changes in other boards:</p>
+<ul>
+<li><p>sam_e70_xplained: Added support for CAN-FD driver</p></li>
+<li><p>mimxrt11xx: Added SOC level power management</p></li>
+<li><p>mimxrt11xx: Added support for GPT timer as OS timer</p></li>
+</ul>
+</li>
+<li><p>Added support for these following shields:</p></li>
+</ul>
+</div>
+<div class="section" id="drivers-and-sensors">
+<h2>Drivers and Sensors<a class="headerlink" href="#drivers-and-sensors" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>ADC</p>
+<ul>
+<li><p>Added support for stm32u5 series</p></li>
+<li><p>stm32: Added shared IRQ support</p></li>
+</ul>
+</li>
+<li><p>Bluetooth</p></li>
+<li><p>CAN</p>
+<ul>
+<li><p>Renamed <code class="docutils literal notranslate"><span class="pre">zephyr,can-primary</span></code> chosen property to <code class="docutils literal notranslate"><span class="pre">zephyr,canbus</span></code>.</p></li>
+<li><p>Added <a class="reference internal" href="../reference/canbus/controller.html#c.can_state.CAN_ERROR_WARNING" title="CAN_ERROR_WARNING"><code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_ERROR_WARNING</span></code></a> CAN controller state.</p></li>
+<li><p>Added Atmel SAM Bosch M_CAN CAN-FD driver.</p></li>
+<li><p>Added NXP LPCXpresso Bosch M_CAN CAN-FD driver.</p></li>
+<li><p>Added ST STM32H7 Bosch M_CAN CAN-FD driver.</p></li>
+<li><p>Rework transmission error handling the NXP FlexCAN driver to automatically
+retry transmission in case or arbitration lost or missing acknowledge and
+to fail early in <a class="reference internal" href="../reference/canbus/controller.html#c.can_send" title="can_send"><code class="xref c c-func docutils literal notranslate"><span class="pre">can_send()</span></code></a> if in <a class="reference internal" href="../reference/canbus/controller.html#c.can_state.CAN_BUS_OFF" title="CAN_BUS_OFF"><code class="xref c c-macro docutils literal notranslate"><span class="pre">CAN_BUS_OFF</span></code></a> state.</p></li>
+<li><p>Added support for disabling automatic retransmissions (“one-shot” mode”) to
+the ST STM32 bxCAN driver.</p></li>
+<li><p>Converted the emulated CAN loopback driver to be configured through
+devicetree instead of Kconfig.</p></li>
+</ul>
+</li>
+<li><p>Clock Control</p></li>
+<li><p>Console</p></li>
+<li><p>Counter</p>
+<ul>
+<li><p>stm32: Added timer based counter driver (stm32f4 only for now).</p></li>
+</ul>
+</li>
+<li><p>DAC</p>
+<ul>
+<li><p>Added support for GigaDevice GD32 SoCs</p></li>
+<li><p>Added support for stm32u5 series</p></li>
+</ul>
+</li>
+<li><p>Disk</p>
+<ul>
+<li><p>stm32 sdmmc: Converted from polling to IT driven mode and added Hardware
+Flow Control option</p></li>
+</ul>
+</li>
+<li><p>Display</p></li>
+<li><p>Disk</p></li>
+<li><p>DMA</p>
+<ul>
+<li><p>Added support for suspending and resuming transfers</p></li>
+<li><p>Added support for SoCs with DMA between application and embedded
+processors, allows for transfer directions to be identified as such.</p></li>
+<li><p>mimxrt11xx: Added support for DMA</p></li>
+</ul>
+</li>
+<li><p>EEPROM</p>
+<ul>
+<li><p>Added support for the EEPROM present in the TMP116 digital temperature
+sensor.</p></li>
+</ul>
+</li>
+<li><p>Entropy</p>
+<ul>
+<li><p>Added support for stm32u5 series</p></li>
+</ul>
+</li>
+<li><p>ESPI</p></li>
+<li><p>Ethernet</p>
+<ul>
+<li><p>Added support for Synopsys DesignWare MAC driver with implementation
+on stm32h7 series.</p></li>
+<li><p>stm32 (hal based): Added promiscuous mode support</p></li>
+<li><p>stm32 (hal based): Added PTP L2 timestamping support</p></li>
+<li><p>mimxrt11xx: Added support for 10/100M ENET</p></li>
+</ul>
+</li>
+<li><p>Flash</p>
+<ul>
+<li><p>stm32g0: Added Dual Bank support</p></li>
+<li><p>stm32_qspi: General enhancement (Generation of the reset pulse for SPI-NOR memory,
+Usage of 4IO for read / write (4READ/4PP), Support for different QSPI banks,
+Support for 4B addressing on spi-nor)</p></li>
+<li><p>ite_i8xxx2: The driver has been reworked so the write/erase protection
+management has been moved to implementations of the flash_write()
+and the flash_erase() calls. The driver was keeping the write protection API
+which was designed to be removed since 2.6 release.</p></li>
+</ul>
+</li>
+<li><p>GPIO</p>
+<ul>
+<li><p>Added driver for GigaDevice GD32 SoCs</p></li>
+</ul>
+</li>
+<li><p>Hardware Info</p></li>
+<li><p>I2C</p>
+<ul>
+<li><p>Added driver for GigaDevice GD32 SoCs</p></li>
+<li><p>Added stats functionality to all drivers</p></li>
+<li><p>Added I2C driver for Renesas R-Car platform</p></li>
+<li><p>Added support for TCA9548A I2C switch</p></li>
+</ul>
+</li>
+<li><p>I2S</p>
+<ul>
+<li><p>mimxrt10xx: Added support for I2S</p></li>
+<li><p>mimxrt11xx: Added support for I2S</p></li>
+</ul>
+</li>
+<li><p>IEEE 802.15.4</p></li>
+<li><p>Interrupt Controller</p>
+<ul>
+<li><p>Added ECLIC driver for GigaDevice RISC-V GD32 SoCs</p></li>
+<li><p>Added EXTI driver for GigaDevice GD32 SoCs</p></li>
+</ul>
+</li>
+<li><p>LED</p></li>
+<li><p>LoRa</p></li>
+<li><p>MEMC</p>
+<ul>
+<li><p>Added support for stm32f7 series</p></li>
+</ul>
+</li>
+<li><p>Modem</p></li>
+<li><p>Pin control</p>
+<ul>
+<li><p>Introduced a new state-based pin control (<code class="docutils literal notranslate"><span class="pre">pinctrl</span></code>) API inspired by the
+Linux design principles. The <code class="docutils literal notranslate"><span class="pre">pinctrl</span></code> API will replace the existing
+pinmux API, so all platforms using pinmux are encouraged to migrate. A
+detailed guide with design principles and implementation guidelines can be
+found in <a class="reference internal" href="../guides/pinctrl/index.html#pinctrl-guide"><span class="std std-ref">Pin Control</span></a>.</p></li>
+<li><p>Platforms already supporting the <code class="docutils literal notranslate"><span class="pre">pinctrl</span></code> API:</p>
+<ul>
+<li><p>GigaDevice GD32</p></li>
+<li><p>Nordic (preliminary support)</p></li>
+<li><p>Renesas R-Car</p></li>
+<li><p>STM32</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>PWM</p>
+<ul>
+<li><p>stm32: DT bindings: <cite>st,prescaler</cite> property was moved from pwm
+to parent timer node.</p></li>
+<li><p>stm32: Implemented PWM capture API</p></li>
+<li><p>Added driver for GigaDevice GD32 SoCs. Only PWM output is supported.</p></li>
+<li><p>mimxrt1021: Added support for PWM</p></li>
+</ul>
+</li>
+<li><p>Sensor</p>
+<ul>
+<li><p>Added Invensense MPU9250 9-axis IMU driver.</p></li>
+<li><p>Added ITE IT8XX2 tachometer driver.</p></li>
+<li><p>Added STM L5 die temperature driver.</p></li>
+<li><p>Added STM I3G4250D gyroscope driver.</p></li>
+<li><p>Added TI TMP108 driver.</p></li>
+<li><p>Added Winsen MH-Z19B CO2 driver.</p></li>
+<li><p>Constified device config access in sbs_gauge and LM75 drivers.</p></li>
+<li><p>Dropped DEV_DATA/DEV_CFG usage from various drivers.</p></li>
+<li><p>Moved ODR and range properties from Kconfig to devicetree in various STM
+drivers.</p></li>
+<li><p>Refactored INA230 driver to add support for INA237 variant.</p></li>
+<li><p>Refactored various drivers to use I2C/SPI/GPIO DT APIs.</p></li>
+<li><p>Enabled level triggered interrupts in LIS2DH driver.</p></li>
+<li><p>Fixed TMP112 driver to avoid I2C burst write portability issues.</p></li>
+<li><p>Fixed SENSOR_DEG2RAD_DOUBLE macro in LSM6DS0 driver.</p></li>
+<li><p>Fixed gain factor in LSM303DLHC magnetometer driver.</p></li>
+</ul>
+</li>
+<li><p>Serial</p>
+<ul>
+<li><p>stm32: Implemented half-duplex option.</p></li>
+<li><p>Added driver for GigaDevice GD32 SoCs. Polling and interrupt driven modes
+are supported.</p></li>
+</ul>
+</li>
+<li><p>SPI</p>
+<ul>
+<li><p>stm32: Implemented Frame format option (TI vs Motorola).</p></li>
+<li><p>mimxrt11xx: Added support for Flexspi</p></li>
+</ul>
+</li>
+<li><p>Timer</p>
+<ul>
+<li><p>stm32 lptim: Added support for stm32h7</p></li>
+</ul>
+</li>
+<li><p>USB</p>
+<ul>
+<li><p>Added support for stm32u5 series (OTG full speed)</p></li>
+</ul>
+</li>
+<li><p>Watchdog</p>
+<ul>
+<li><p>Added support for stm32u5 series (Independent and Window)</p></li>
+<li><p>mimxrt1170: Added support for watchdog on CM7</p></li>
+</ul>
+</li>
+<li><p>WiFi</p></li>
+</ul>
+</div>
+<div class="section" id="networking">
+<h2>Networking<a class="headerlink" href="#networking" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>CoAP:</p></li>
+<li><p>DHCPv4:</p></li>
+<li><p>DNS:</p></li>
+<li><p>HTTP:</p></li>
+<li><p>IPv4:</p></li>
+<li><p>LwM2M:</p></li>
+<li><p>Misc:</p>
+<ul>
+<li><p>gptp: clock sync ratio as double, not float</p></li>
+</ul>
+</li>
+<li><p>OpenThread:</p></li>
+<li><p>Socket:</p></li>
+<li><p>TCP:</p></li>
+<li><p>TLS:</p></li>
+</ul>
+</div>
+<div class="section" id="usb">
+<h2>USB<a class="headerlink" href="#usb" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="build-and-infrastructure">
+<h2>Build and Infrastructure<a class="headerlink" href="#build-and-infrastructure" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Build system</p>
+<ul>
+<li><p>New CMake extension functions:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_alias()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">target_sources_if_dt_node()</span></code></p></li>
+</ul>
+</li>
+<li><p>The following CMake extension functions now handle devicetree aliases:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_node_exists()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_node_has_status()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_prop()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_num_regs()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_reg_addr()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dt_reg_size()</span></code></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Devicetree</p>
+<ul>
+<li><p>Support for the devicetree compatible <code class="docutils literal notranslate"><span class="pre">ti,ina23x</span></code> has been removed.
+Instead, use <a class="reference internal" href="../reference/devicetree/bindings/sensor/ti%2Cina230.html#std-dtcompatible-ti-ina230"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">ti,ina230</span></code></a> or <a class="reference internal" href="../reference/devicetree/bindings/sensor/ti%2Cina237.html#std-dtcompatible-ti-ina237"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">ti,ina237</span></code></a>.</p></li>
+</ul>
+</li>
+<li><p>West (extensions)</p>
+<ul>
+<li><p>Added support for gd32isp runner</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="libraries-subsystems">
+<h2>Libraries / Subsystems<a class="headerlink" href="#libraries-subsystems" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Disk</p></li>
+<li><p>Management</p>
+<ul>
+<li><p>Fixed the mcumgr SMP protocol over serial not adding the length of the CRC16 to packet length.</p></li>
+<li><p>Kconfig option OS_MGMT_TASKSTAT is now disabled by default.</p></li>
+</ul>
+</li>
+<li><p>CMSIS subsystem</p></li>
+<li><p>Power management</p>
+<ul>
+<li><p>Power management resources are now manually allocated by devices using
+<a class="reference internal" href="../reference/pm/index.html#c.PM_DEVICE_DEFINE" title="PM_DEVICE_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PM_DEVICE_DEFINE</span></code></a>, <a class="reference internal" href="../reference/pm/index.html#c.PM_DEVICE_DT_DEFINE" title="PM_DEVICE_DT_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PM_DEVICE_DT_DEFINE</span></code></a> or
+<a class="reference internal" href="../reference/pm/index.html#c.PM_DEVICE_DT_INST_DEFINE" title="PM_DEVICE_DT_INST_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PM_DEVICE_DT_INST_DEFINE</span></code></a>. Device instantiation macros take now
+a reference to the allocated resources. The reference can be obtained using
+<a class="reference internal" href="../reference/pm/index.html#c.PM_DEVICE_GET" title="PM_DEVICE_GET"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PM_DEVICE_GET</span></code></a>, <a class="reference internal" href="../reference/pm/index.html#c.PM_DEVICE_DT_GET" title="PM_DEVICE_DT_GET"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PM_DEVICE_DT_GET</span></code></a> or
+<a class="reference internal" href="../reference/pm/index.html#c.PM_DEVICE_DT_INST_GET" title="PM_DEVICE_DT_INST_GET"><code class="xref c c-macro docutils literal notranslate"><span class="pre">PM_DEVICE_DT_INST_GET</span></code></a>. Thanks to this change, devices not
+implementing support for device power management will not use unnecessary
+memory.</p></li>
+<li><p>Device runtime power management API error handling has been simplified.</p></li>
+<li><p><a class="reference internal" href="../reference/pm/index.html#c.pm_device_runtime_enable" title="pm_device_runtime_enable"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_device_runtime_enable()</span></code></a> suspends the target device if not already
+suspended. This change makes sure device state is always kept in a
+consistent state.</p></li>
+<li><p>Improved PM states Devicetree macros naming</p></li>
+<li><p>Added a new API call <a class="reference internal" href="../reference/pm/index.html#c.pm_state_cpu_get_all" title="pm_state_cpu_get_all"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_state_cpu_get_all()</span></code></a> to obtain information
+about CPU power states.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pm/device.h</span></code> is no longer included by <code class="docutils literal notranslate"><span class="pre">device.h</span></code>, since the device API
+no longer depends on the PM API.</p></li>
+<li><p>Added support for power domains. Power domains are implemented as
+simple devices and use the existent PM API for resume and suspend, devices
+under a power domain are notified when it becomes active or suspended.</p></li>
+<li><p>Added a new action <a class="reference internal" href="../reference/pm/index.html#c.pm_device_action.PM_DEVICE_ACTION_TURN_ON" title="PM_DEVICE_ACTION_TURN_ON"><code class="xref c c-enum docutils literal notranslate"><span class="pre">PM_DEVICE_ACTION_TURN_ON</span></code></a>. This action
+is used by power domains to notify devices when it becomes active.</p></li>
+<li><p>Added new API (<a class="reference internal" href="../reference/pm/index.html#c.pm_device_state_lock" title="pm_device_state_lock"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_device_state_lock()</span></code></a>,
+<a class="reference internal" href="../reference/pm/index.html#c.pm_device_state_unlock" title="pm_device_state_unlock"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_device_state_unlock()</span></code></a> and
+<a class="reference internal" href="../reference/pm/index.html#c.pm_device_state_is_locked" title="pm_device_state_is_locked"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_device_state_is_locked()</span></code></a>) to lock a device pm
+state. When the device has its state locked, the kernel will no
+longer suspend and resume devices when the system goes to sleep
+and device runtime power management operations will fail.</p></li>
+<li><p><a class="reference internal" href="../reference/pm/index.html#c.pm_device_state_set" title="pm_device_state_set"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_device_state_set()</span></code></a> is deprecated in favor of utilizing
+<a class="reference internal" href="../reference/pm/index.html#c.pm_device_action_run" title="pm_device_action_run"><code class="xref c c-func docutils literal notranslate"><span class="pre">pm_device_action_run()</span></code></a>.</p></li>
+<li><p>Proper multicore support. Devices are suspended only when the last
+active CPU. A cpu parameter was added to Policy and SoC interfaces.</p></li>
+</ul>
+</li>
+<li><p>Logging</p></li>
+<li><p>Shell</p></li>
+<li><p>Storage</p></li>
+<li><p>Task Watchdog</p></li>
+<li><p>Tracing</p>
+<ul>
+<li><p>Support all syscalls being traced using the python syscall generator to
+introduce a tracing hook call.</p></li>
+</ul>
+</li>
+<li><p>Debug</p></li>
+<li><p>OS</p></li>
+</ul>
+</div>
+<div class="section" id="hals">
+<h2>HALs<a class="headerlink" href="#hals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>STM32</p>
+<ul>
+<li><p>stm32cube/stm32wb and its lib: Upgraded to version V1.12.1</p></li>
+<li><p>stm32cube/stm32mp1: Upgraded to version V1.5.0</p></li>
+<li><p>stm32cube/stm32u5: Upgraded to version V1.0.2</p></li>
+</ul>
+</li>
+<li><p>Added <a class="reference external" href="https://github.com/zephyrproject-rtos/hal_gigadevice">GigaDevice HAL module</a></p></li>
+</ul>
+</div>
+<div class="section" id="mcuboot">
+<h2>MCUboot<a class="headerlink" href="#mcuboot" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Fixed serial recovery skipping on nrf5340.</p></li>
+<li><p>Fixed issue which caused that progressive’s erase feature was off although was selected by Kconfig (introduced by #42c985cead).</p></li>
+<li><p>Added check of reset address in incoming image validation phase, see <code class="docutils literal notranslate"><span class="pre">CONFIG_MCUBOOT_VERIFY_IMG_ADDRESS</span></code>.</p></li>
+<li><p>Allow image header bigger than 1 KB for encrypted images.</p></li>
+<li><p>Support Mbed TLS 3.0.</p></li>
+<li><p>stm32: watchdog support.</p></li>
+<li><p>many documentation improvements.</p></li>
+<li><p>Fixed deadlock on cryptolib selectors in Kconfig.</p></li>
+<li><p>Fixed support for single application slot with serial recovery.</p></li>
+<li><p>Added various hooks to be able to change how image data is accessed, see <code class="docutils literal notranslate"><span class="pre">CONFIG_BOOT_IMAGE_ACCESS_HOOKS</span></code>.</p></li>
+<li><p>Added custom commands support in serila recovery (PERUSER_MGMT_GROUP): storage erase <code class="docutils literal notranslate"><span class="pre">CONFIG_BOOT_MGMT_CUSTOM_STORAGE_ERASE</span></code>, custo image status <code class="docutils literal notranslate"><span class="pre">CONFIG_BOOT_MGMT_CUSTOM_IMG_LIST</span></code>.</p></li>
+<li><p>Added support for direct image upload, see <code class="docutils literal notranslate"><span class="pre">CONFIG_MCUBOOT_SERIAL_DIRECT_IMAGE_UPLOAD</span></code> in serial recovery.</p></li>
+</ul>
+</div>
+<div class="section" id="trusted-firmware-m">
+<h2>Trusted Firmware-m<a class="headerlink" href="#trusted-firmware-m" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Updated TF-M to 1.5.0 release, with a handful of additional cherry-picked
+commits.</p></li>
+</ul>
+</div>
+<div class="section" id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>A new theme is used by the Doxygen HTML pages. It is based on
+<a class="reference external" href="https://github.com/jothepro/doxygen-awesome-css">doxygen-awesome-css</a>
+theme.</p></li>
+</ul>
+</div>
+<div class="section" id="tests-and-samples">
+<h2>Tests and Samples<a class="headerlink" href="#tests-and-samples" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Drivers: clock_control: Added test suite for stm32 (u5, h7).</p></li>
+</ul>
+</div>
+<div class="section" id="issue-related-items">
+<h2>Issue Related Items<a class="headerlink" href="#issue-related-items" title="Permalink to this headline">¶</a></h2>
+<p>These GitHub issues were addressed since the previous 2.7.0 tagged
+release:</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Feb 21, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

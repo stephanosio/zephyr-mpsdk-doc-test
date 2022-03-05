@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode" kind="struct" language="C++" prot="public">
+    <compoundname>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</compoundname>
+    <includes refid="ring__buffer_8h" local="no">ring_buffer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode_1a26e71cdd76ade55920b4f1548609e83d" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::ring_buf_misc::ring_buf_misc_item_mode::dropped_put_count</definition>
+        <argsstring></argsstring>
+        <name>dropped_put_count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Running tally of the number of failed put attempts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="39" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sys/ring_buffer.h" line="38" column="1" bodyfile="include/sys/ring_buffer.h" bodystart="38" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode_1a26e71cdd76ade55920b4f1548609e83d" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</scope><name>dropped_put_count</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

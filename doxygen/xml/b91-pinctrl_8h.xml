@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="b91-pinctrl_8h" kind="file" language="C++">
+    <compoundname>b91-pinctrl.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="b91-pinctrl_8h_1af74802aac35370a78d734c183d065927" prot="public" static="no">
+        <name>B91_FUNC_A</name>
+        <initializer>0x000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="12" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a80e3477cd2f866955e3e61712e88fe15" prot="public" static="no">
+        <name>B91_FUNC_B</name>
+        <initializer>0x010000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="13" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1ae00f63d1146dc5aa3e3fb586672be187" prot="public" static="no">
+        <name>B91_FUNC_C</name>
+        <initializer>0x020000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="14" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1aafb690574da4bba9bd1394013a3b8c5f" prot="public" static="no">
+        <name>B91_PORT_A</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="18" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a7a07ae7763882f9dde2372bfd2e7ed5f" prot="public" static="no">
+        <name>B91_PORT_B</name>
+        <initializer>0x0100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="19" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a31164e5af693e763aee5a65f2566e71b" prot="public" static="no">
+        <name>B91_PORT_C</name>
+        <initializer>0x0200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="20" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a85a32b0056d25e1b65495e94aefb0b0d" prot="public" static="no">
+        <name>B91_PORT_D</name>
+        <initializer>0x0300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="21" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a4eb94b2b81a87fc1868752a1f23e19b9" prot="public" static="no">
+        <name>B91_PORT_E</name>
+        <initializer>0x0400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="22" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a26acab82d9dfd476f8ad2234463de25e" prot="public" static="no">
+        <name>B91_PIN_0</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="26" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1af5abb58004aebaddfd3536e3e7431032" prot="public" static="no">
+        <name>B91_PIN_1</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="27" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a3bebe3d7a004486830f25887ba6784e4" prot="public" static="no">
+        <name>B91_PIN_2</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="28" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a564cda0e7550d1ac7eade1a6478e6c5f" prot="public" static="no">
+        <name>B91_PIN_3</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="29" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a4d4c50821490a48bf5c180d38e6562f7" prot="public" static="no">
+        <name>B91_PIN_4</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="30" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1aab839f7de5cd44c6501aa87918377e63" prot="public" static="no">
+        <name>B91_PIN_5</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="31" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1ad560e7cd90341acb45bcf7f971f50344" prot="public" static="no">
+        <name>B91_PIN_6</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="32" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a1daded0f866fbeecc396ce8b460dfaf4" prot="public" static="no">
+        <name>B91_PIN_7</name>
+        <initializer>0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="33" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1af38060cb4c9f42735145dd02edf7077b" prot="public" static="no">
+        <name>B91_PINMUX_SET</name>
+        <param><defname>func</defname></param>
+        <param><defname>port</defname></param>
+        <param><defname>pin</defname></param>
+        <initializer>(func | port | pin)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="37" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1abde379851baa2cf7678a2c12a66f7056" prot="public" static="no">
+        <name>B91_PINMUX_GET_FUNC</name>
+        <param><defname>pinmux</defname></param>
+        <initializer>((pinmux &gt;&gt; 16) &amp; 0xFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="38" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a3deef9c25fa8d14801cd406f0d56b153" prot="public" static="no">
+        <name>B91_PINMUX_GET_PIN</name>
+        <param><defname>pinmux</defname></param>
+        <initializer>(pinmux &amp; 0xFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="39" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1ac37e37bec2a279e1be30d5521ade42cb" prot="public" static="no">
+        <name>B91_PINMUX_DT_INST_GET_ELEM</name>
+        <param><defname>idx</defname></param>
+        <param><defname>x</defname></param>
+        <param><defname>inst</defname></param>
+        <initializer>	<ref refid="group__devicetree-generic-prop_1ga8e1fd9ebacd85d2013df027d041d506b" kindref="member">DT_PROP</ref>(<ref refid="group__devicetree-pinctrl_1ga3388742fe3fb1f32a03566730890eaf0" kindref="member">DT_INST_PINCTRL_BY_IDX</ref>(inst, x, idx), pinmux),</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="41" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="b91-pinctrl_8h_1a58656893eaa7b57c8ef597926f47dcf8" prot="public" static="no">
+        <name>B91_PINMUX_DT_INST_GET_ARRAY</name>
+        <param><defname>inst</defname></param>
+        <param><defname>x</defname></param>
+        <initializer>	{ <ref refid="group__sys-util_1ga358bc3e7669c860a98839a51cd526b20" kindref="member">COND_CODE_1</ref>(<ref refid="group__devicetree-pinctrl_1ga53f17d0a6061cad7270544068f1cb003" kindref="member">DT_INST_PINCTRL_HAS_IDX</ref>(inst, x),			\
+		(<ref refid="group__sys-util_1ga31079a877f7990c552cbfaf10225e37a" kindref="member">UTIL_LISTIFY</ref>(<ref refid="group__devicetree-pinctrl_1ga1de8198573428ec717733204d91f0391" kindref="member">DT_INST_NUM_PINCTRLS_BY_IDX</ref>(inst, x),	\
+			      <ref refid="b91-pinctrl_8h_1ac37e37bec2a279e1be30d5521ade42cb" kindref="member">B91_PINMUX_DT_INST_GET_ELEM</ref>,		\
+			      x,					\
+			      inst)),					\
+		())							\
+	}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/dt-bindings/pinctrl/b91-pinctrl.h" line="44" column="9" bodyfile="include/dt-bindings/pinctrl/b91-pinctrl.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(c)<sp/>2021<sp/>Telink<sp/>Semiconductor</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ZEPHYR_B91_PINCTRL_COMMON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZEPHYR_B91_PINCTRL_COMMON_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IDs<sp/>for<sp/>GPIO<sp/>functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="b91-pinctrl_8h_1af74802aac35370a78d734c183d065927" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_FUNC_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="b91-pinctrl_8h_1a80e3477cd2f866955e3e61712e88fe15" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_FUNC_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x010000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="b91-pinctrl_8h_1ae00f63d1146dc5aa3e3fb586672be187" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_FUNC_C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x020000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IDs<sp/>for<sp/>GPIO<sp/>Ports<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="b91-pinctrl_8h_1aafb690574da4bba9bd1394013a3b8c5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PORT_A<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="b91-pinctrl_8h_1a7a07ae7763882f9dde2372bfd2e7ed5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PORT_B<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="b91-pinctrl_8h_1a31164e5af693e763aee5a65f2566e71b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PORT_C<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="b91-pinctrl_8h_1a85a32b0056d25e1b65495e94aefb0b0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PORT_D<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0300</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="b91-pinctrl_8h_1a4eb94b2b81a87fc1868752a1f23e19b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PORT_E<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>IDs<sp/>for<sp/>GPIO<sp/>Pins<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="b91-pinctrl_8h_1a26acab82d9dfd476f8ad2234463de25e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="b91-pinctrl_8h_1af5abb58004aebaddfd3536e3e7431032" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="b91-pinctrl_8h_1a3bebe3d7a004486830f25887ba6784e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="b91-pinctrl_8h_1a564cda0e7550d1ac7eade1a6478e6c5f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="b91-pinctrl_8h_1a4d4c50821490a48bf5c180d38e6562f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="b91-pinctrl_8h_1aab839f7de5cd44c6501aa87918377e63" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_5<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="b91-pinctrl_8h_1ad560e7cd90341acb45bcf7f971f50344" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_6<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="b91-pinctrl_8h_1a1daded0f866fbeecc396ce8b460dfaf4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PIN_7<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Setters<sp/>and<sp/>getters<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="b91-pinctrl_8h_1af38060cb4c9f42735145dd02edf7077b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PINMUX_SET(func,<sp/>port,<sp/>pin)<sp/><sp/><sp/>(func<sp/>|<sp/>port<sp/>|<sp/>pin)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="b91-pinctrl_8h_1abde379851baa2cf7678a2c12a66f7056" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PINMUX_GET_FUNC(pinmux)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>((pinmux<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="b91-pinctrl_8h_1a3deef9c25fa8d14801cd406f0d56b153" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PINMUX_GET_PIN(pinmux)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pinmux<sp/>&amp;<sp/>0xFFFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="b91-pinctrl_8h_1ac37e37bec2a279e1be30d5521ade42cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PINMUX_DT_INST_GET_ELEM(idx,<sp/>x,<sp/>inst)<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DT_PROP(DT_INST_PINCTRL_BY_IDX(inst,<sp/>x,<sp/>idx),<sp/>pinmux),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="b91-pinctrl_8h_1a58656893eaa7b57c8ef597926f47dcf8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B91_PINMUX_DT_INST_GET_ARRAY(inst,<sp/>x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>COND_CODE_1(DT_INST_PINCTRL_HAS_IDX(inst,<sp/>x),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="46"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(UTIL_LISTIFY(DT_INST_NUM_PINCTRLS_BY_IDX(inst,<sp/>x),<sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="47"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B91_PINMUX_DT_INST_GET_ELEM,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="48"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inst)),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="50"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>())<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_B91_PINCTRL_COMMON_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="include/dt-bindings/pinctrl/b91-pinctrl.h"/>
+  </compounddef>
+</doxygen>

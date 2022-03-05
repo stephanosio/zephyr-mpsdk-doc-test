@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="unionring__buf_1_1ring__buf__misc" kind="union" language="C++" prot="public">
+    <compoundname>ring_buf::ring_buf_misc</compoundname>
+    <includes refid="ring__buffer_8h" local="no">ring_buffer.h</includes>
+    <innerclass refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode" prot="public">ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</innerclass>
+    <innerclass refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode" prot="public">ring_buf::ring_buf_misc::ring_buf_misc_item_mode</innerclass>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionring__buf_1_1ring__buf__misc_1ab92d7eadbf04164e61d7e53e42f65b64" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode" kindref="compound">ring_buf::ring_buf_misc::ring_buf_misc_item_mode</ref></type>
+        <definition>struct ring_buf::ring_buf_misc::ring_buf_misc_item_mode ring_buf::ring_buf_misc::item_mode</definition>
+        <argsstring></argsstring>
+        <name>item_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="43" column="11"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionring__buf_1_1ring__buf__misc_1abe37c76a9a0dce12301e96fe7a6d4870" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode" kindref="compound">ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</ref></type>
+        <definition>struct ring_buf::ring_buf_misc::ring_buf_misc_byte_mode ring_buf::ring_buf_misc::byte_mode</definition>
+        <argsstring></argsstring>
+        <name>byte_mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="47" column="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>ring_buf::ring_buf_misc</label>
+        <link refid="unionring__buf_1_1ring__buf__misc"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>item_mode</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>byte_mode</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</label>
+        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode"/>
+      </node>
+      <node id="2">
+        <label>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</label>
+        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode"/>
+      </node>
+    </collaborationgraph>
+    <location file="include/sys/ring_buffer.h" line="37" column="1" bodyfile="include/sys/ring_buffer.h" bodystart="37" bodyend="48"/>
+    <listofallmembers>
+      <member refid="unionring__buf_1_1ring__buf__misc_1abe37c76a9a0dce12301e96fe7a6d4870" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_misc</scope><name>byte_mode</name></member>
+      <member refid="unionring__buf_1_1ring__buf__misc_1ab92d7eadbf04164e61d7e53e42f65b64" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_misc</scope><name>item_mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

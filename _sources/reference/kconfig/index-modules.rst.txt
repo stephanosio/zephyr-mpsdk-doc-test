@@ -1,0 +1,1660 @@
+:orphan:
+
+.. _configuration_options_modules:
+
+
+External Module Configuration Options
+=====================================
+
+:file:`Kconfig` files describe build-time configuration options (called symbols
+in Kconfig-speak), how they're grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.
+
+:file:`Kconfig` files appear throughout the directory tree. For example,
+:file:`subsys/power/Kconfig` defines power-related options.
+
+This documentation is generated automatically from the :file:`Kconfig` files by
+the :file:`gen_kconfig_rest.py` script. Click on symbols for more
+information.
+
+.. raw:: html
+
+    <!--
+    FIXME: do not limit page width until content uses another representation
+    format other than tables
+    -->
+    <style>.wy-nav-content { max-width: none; !important }</style>
+
+
+
+Configuration Options
+*********************
+
+.. list-table::
+   :header-rows: 1
+   :widths: auto
+
+   * - Symbol name
+     - Prompt
+   * - :kconfig:`CONFIG_APP_LINK_WITH_MBEDTLS`
+     - Link 'app' with MBEDTLS
+   * - :kconfig:`CONFIG_ASF`
+     - 
+   * - :kconfig:`CONFIG_ATMEL_WINC1500`
+     - 
+   * - :kconfig:`CONFIG_BOOT_IMAGE_ACCESS_HOOKS`
+     - Enable hooks for overriding MCUboot's bootutil native routines
+   * - :kconfig:`CONFIG_BUILD_WITH_TFM`
+     - Build with TF-M as the Secure Execution Environment
+   * - :kconfig:`CONFIG_CANOPENNODE`
+     - CANopenNode support
+   * - :kconfig:`CONFIG_CANOPENNODE_LEDS`
+     - CANopen LED indicators
+   * - :kconfig:`CONFIG_CANOPENNODE_LEDS_BICOLOR`
+     - CANopen bicolor LED indicator
+   * - :kconfig:`CONFIG_CANOPENNODE_PROGRAM_DOWNLOAD`
+     - CANopen program download
+   * - :kconfig:`CONFIG_CANOPENNODE_SDO_BUFFER_SIZE`
+     - CANopen SDO buffer size
+   * - :kconfig:`CONFIG_CANOPENNODE_STORAGE`
+     - CANopen object dictionary storage
+   * - :kconfig:`CONFIG_CANOPENNODE_STORAGE_HANDLER_ERASES_EEPROM`
+     - Erase CANopen object dictionary EEPROM entries in storage handler
+   * - :kconfig:`CONFIG_CANOPENNODE_SYNC_THREAD`
+     - CANopen SYNC thread
+   * - :kconfig:`CONFIG_CANOPENNODE_SYNC_THREAD_PRIORITY`
+     - Priority for CANopen SYNC thread
+   * - :kconfig:`CONFIG_CANOPENNODE_SYNC_THREAD_STACK_SIZE`
+     - Stack size for the CANopen SYNC thread
+   * - :kconfig:`CONFIG_CANOPENNODE_TRACE_BUFFER_SIZE`
+     - CANopen trace buffer size
+   * - :kconfig:`CONFIG_CANOPENNODE_TX_WORKQUEUE_PRIORITY`
+     - Priority for CANopen transmit workqueue
+   * - :kconfig:`CONFIG_CANOPENNODE_TX_WORKQUEUE_STACK_SIZE`
+     - Stack size for the CANopen transmit workqueue
+   * - :kconfig:`CONFIG_CBOR_ENCODER_NO_CHECK_USER`
+     - No encoder checks for user args for validity
+   * - :kconfig:`CONFIG_CBOR_FLOATING_POINT`
+     - Floating point support
+   * - :kconfig:`CONFIG_CBOR_HALF_FLOAT_TYPE`
+     - Half float type support
+   * - :kconfig:`CONFIG_CBOR_PARSER_MAX_RECURSIONS`
+     - Parser max recursions
+   * - :kconfig:`CONFIG_CBOR_PARSER_NO_STRICT_CHECKS`
+     - No strict parser checks
+   * - :kconfig:`CONFIG_CBOR_PRETTY_PRINTING`
+     - Implement pretty printing functionality
+   * - :kconfig:`CONFIG_CBOR_WITHOUT_OPEN_MEMSTREAM`
+     - Without open memstream
+   * - :kconfig:`CONFIG_CIVETWEB`
+     - Civetweb Support
+   * - :kconfig:`CONFIG_CMSIS_DSP`
+     - CMSIS-DSP Library Support
+   * - :kconfig:`CONFIG_CMSIS_DSP_AUTOVECTORIZE`
+     - Auto Vectorize
+   * - :kconfig:`CONFIG_CMSIS_DSP_BASICMATH`
+     - Basic Math Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_BAYES`
+     - Bayesian Estimators
+   * - :kconfig:`CONFIG_CMSIS_DSP_COMPLEXMATH`
+     - Complex Math Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_CONTROLLER`
+     - Controller Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_DISTANCE`
+     - Distance Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_FASTMATH`
+     - Fast Math Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_FILTERING`
+     - Filtering Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_FLOAT16`
+     - Half-Precision (16-bit Float) Support
+   * - :kconfig:`CONFIG_CMSIS_DSP_INTERPOLATION`
+     - Interpolation Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_LOOPUNROLL`
+     - Loop Unrolling
+   * - :kconfig:`CONFIG_CMSIS_DSP_MATRIX`
+     - Matrix Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_MATRIXCHECK`
+     - Matrix Check
+   * - :kconfig:`CONFIG_CMSIS_DSP_NEON`
+     - Neon Instruction Set
+   * - :kconfig:`CONFIG_CMSIS_DSP_QUATERNIONMATH`
+     - Quaternion Math Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_ROUNDING`
+     - Rounding
+   * - :kconfig:`CONFIG_CMSIS_DSP_STATISTICS`
+     - Statistics Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_SUPPORT`
+     - Support Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_SVM`
+     - Support Vector Machine Functions
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES`
+     - Look-up Tables
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ALL_FAST`
+     - Include all fast interpolation tables
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ALL_FFT`
+     - Include all FFT tables
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_CMPLX_MAG_Q15`
+     - cmplx mag q15
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_CMPLX_MAG_Q31`
+     - cmplx mag q31
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_COS_F32`
+     - cos f32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_COS_Q15`
+     - cos q15
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_COS_Q31`
+     - cos q31
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_LMS_NORM_Q15`
+     - lms norm q15
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_LMS_NORM_Q31`
+     - lms norm q31
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_SIN_COS_F32`
+     - sin cos f32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_SIN_COS_Q31`
+     - sin cos q31
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_SIN_F32`
+     - sin f32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_SIN_Q15`
+     - sin q15
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_ARM_SIN_Q31`
+     - sin q31
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_1024`
+     - cfft f16 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_128`
+     - cfft f16 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_16`
+     - cfft f16 16
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_2048`
+     - cfft f16 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_256`
+     - cfft f16 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_32`
+     - cfft f16 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_4096`
+     - cfft f16 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_512`
+     - cfft f16 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F16_64`
+     - cfft f16 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_1024`
+     - cfft f32 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_128`
+     - cfft f32 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_16`
+     - cfft f32 16
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_2048`
+     - cfft f32 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_256`
+     - cfft f32 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_32`
+     - cfft f32 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_4096`
+     - cfft f32 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_512`
+     - cfft f32 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F32_64`
+     - cfft f32 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_1024`
+     - cfft f64 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_128`
+     - cfft f64 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_16`
+     - cfft f64 16
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_2048`
+     - cfft f64 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_256`
+     - cfft f64 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_32`
+     - cfft f64 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_4096`
+     - cfft f64 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_512`
+     - cfft f64 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_F64_64`
+     - cfft f64 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_1024`
+     - cfft q15 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_128`
+     - cfft q15 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_16`
+     - cfft q15 16
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_2048`
+     - cfft q15 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_256`
+     - cfft q15 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_32`
+     - cfft q15 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_4096`
+     - cfft q15 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_512`
+     - cfft q15 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q15_64`
+     - cfft q15 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_1024`
+     - cfft q31 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_128`
+     - cfft q31 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_16`
+     - cfft q31 16
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_2048`
+     - cfft q31 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_256`
+     - cfft q31 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_32`
+     - cfft q31 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_4096`
+     - cfft q31 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_512`
+     - cfft q31 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_Q31_64`
+     - cfft q31 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_RADIX2_Q15`
+     - cfft radix2 q15 (deprecated)
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_RADIX2_Q31`
+     - cfft radix2 q31 (deprecated)
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_RADIX4_Q15`
+     - cfft radix4 q15 (deprecated)
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_CFFT_RADIX4_Q31`
+     - cfft radix4 q31 (deprecated)
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_F32_128`
+     - dct4 f32 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_F32_2048`
+     - dct4 f32 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_F32_512`
+     - dct4 f32 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_F32_8192`
+     - dct4 f32 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q15_128`
+     - dct4 q15 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q15_2048`
+     - dct4 q15 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q15_512`
+     - dct4 q15 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q15_8192`
+     - dct4 q15 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q31_128`
+     - dct4 q31 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q31_2048`
+     - dct4 q31 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q31_512`
+     - dct4 q31 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_DCT4_Q31_8192`
+     - dct4 q31 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F16_128`
+     - rfft f16 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F16_2048`
+     - rfft f16 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F16_512`
+     - rfft f16 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F16_8192`
+     - rfft f16 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F32_128`
+     - rfft f32 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F32_2048`
+     - rfft f32 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F32_512`
+     - rfft f32 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_F32_8192`
+     - rfft f32 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_1024`
+     - rfft fast f16 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_128`
+     - rfft fast f16 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_2048`
+     - rfft fast f16 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_256`
+     - rfft fast f16 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_32`
+     - rfft fast f16 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_4096`
+     - rfft fast f16 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_512`
+     - rfft fast f16 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F16_64`
+     - rfft fast f16 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_1024`
+     - rfft fast f32 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_128`
+     - rfft fast f32 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_2048`
+     - rfft fast f32 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_256`
+     - rfft fast f32 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_32`
+     - rfft fast f32 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_4096`
+     - rfft fast f32 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_512`
+     - rfft fast f32 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F32_64`
+     - rfft fast f32 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_1024`
+     - rfft fast f64 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_128`
+     - rfft fast f64 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_2048`
+     - rfft fast f64 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_256`
+     - rfft fast f64 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_32`
+     - rfft fast f64 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_4096`
+     - rfft fast f64 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_512`
+     - rfft fast f64 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_FAST_F64_64`
+     - rfft fast f64 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_1024`
+     - rfft q15 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_128`
+     - rfft q15 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_2048`
+     - rfft q15 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_256`
+     - rfft q15 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_32`
+     - rfft q15 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_4096`
+     - rfft q15 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_512`
+     - rfft q15 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_64`
+     - rfft q15 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q15_8192`
+     - rfft q15 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_1024`
+     - rfft q31 1024
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_128`
+     - rfft q31 128
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_2048`
+     - rfft q31 2048
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_256`
+     - rfft q31 256
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_32`
+     - rfft q31 32
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_4096`
+     - rfft q31 4096
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_512`
+     - rfft q31 512
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_64`
+     - rfft q31 64
+   * - :kconfig:`CONFIG_CMSIS_DSP_TABLES_RFFT_Q31_8192`
+     - rfft q31 8192
+   * - :kconfig:`CONFIG_CMSIS_DSP_TRANSFORM`
+     - Transform Functions
+   * - :kconfig:`CONFIG_CUSTOM_MBEDTLS_CFG_FILE`
+     - Custom mbed TLS configuration file
+   * - :kconfig:`CONFIG_EOS_S3_HAL`
+     - 
+   * - :kconfig:`CONFIG_FFF_TEST`
+     - FFF Test suite
+   * - :kconfig:`CONFIG_FFF_TEST_C`
+     - Compile the FFF default C test suite as a zephyr library
+   * - :kconfig:`CONFIG_FFF_TEST_GLOBAL_C`
+     - Compile the FFF global C test suite as a zephyr library
+   * - :kconfig:`CONFIG_GD32_HAS_AFIO_PINMUX`
+     - 
+   * - :kconfig:`CONFIG_GD32_HAS_AF_PINMUX`
+     - 
+   * - :kconfig:`CONFIG_GD32_HXTAL_25MHZ`
+     - 25MHz
+   * - :kconfig:`CONFIG_GD32_HXTAL_8MHZ`
+     - 8MHz
+   * - :kconfig:`CONFIG_GD32_HXTAL_FIRMWARE_DEFINED`
+     - Firmware defined
+   * - :kconfig:`CONFIG_HAS_ALTERA_HAL`
+     - Altera HAL drivers support
+   * - :kconfig:`CONFIG_HAS_CC13X2_CC26X2_SDK`
+     - 
+   * - :kconfig:`CONFIG_HAS_CC3220SDK`
+     - 
+   * - :kconfig:`CONFIG_HAS_CMSIS_CORE`
+     - 
+   * - :kconfig:`CONFIG_HAS_CMSIS_CORE_A`
+     - 
+   * - :kconfig:`CONFIG_HAS_CMSIS_CORE_M`
+     - 
+   * - :kconfig:`CONFIG_HAS_CMSIS_CORE_R`
+     - 
+   * - :kconfig:`CONFIG_HAS_CYPRESS_DRIVERS`
+     - 
+   * - :kconfig:`CONFIG_HAS_GD32_HAL`
+     - 
+   * - :kconfig:`CONFIG_HAS_IMX_EPIT`
+     - 
+   * - :kconfig:`CONFIG_HAS_IMX_GPIO`
+     - 
+   * - :kconfig:`CONFIG_HAS_IMX_HAL`
+     - 
+   * - :kconfig:`CONFIG_HAS_IMX_I2C`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_12B1MSPS_SAR`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_ACMP`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_ADC12`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_ADC16`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_CACHE`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_CCM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_CCM_REV2`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_CSI`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_CTIMER`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_DAC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_DAC32`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_EDMA`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_ELCDIF`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_ENET`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_FLEXCAN`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_FLEXCOMM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_FLEXSPI`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_FTFX`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_FTM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_GPC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_GPT`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_I2S`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_IAP`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_IAP_LEGACY`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_IGPIO`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPADC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPC_DMA`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPC_RTC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPI2C`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPSCI`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPSPI`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPTMR`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_LPUART`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_MCAN`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_OS_TIMER`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_PCC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_PIT`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_PWM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_PWT`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_RCM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_RDC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_RNG`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_RNGA`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_RTC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SCG`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SCTIMER`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SEMC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SIM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SMC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SNVS`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SRC`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_SYSCON`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_TPM`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_TRNG`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_USB_EHCI`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_USB_LPCIP3511`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_USDHC1`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_USDHC2`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_WDOG32`
+     - 
+   * - :kconfig:`CONFIG_HAS_MCUX_WWDT`
+     - 
+   * - :kconfig:`CONFIG_HAS_MEC_HAL`
+     - Microchip MEC HAL drivers support
+   * - :kconfig:`CONFIG_HAS_MSP432P4XXSDK`
+     - 
+   * - :kconfig:`CONFIG_HAS_NORDIC_DRIVERS`
+     - 
+   * - :kconfig:`CONFIG_HAS_NRFX`
+     - 
+   * - :kconfig:`CONFIG_HAS_NUMICRO_HAL`
+     - 
+   * - :kconfig:`CONFIG_HAS_NUMICRO_UART`
+     - 
+   * - :kconfig:`CONFIG_HAS_RPI_PICO`
+     - 
+   * - :kconfig:`CONFIG_HAS_RV32M1_FTFX`
+     - 
+   * - :kconfig:`CONFIG_HAS_RV32M1_LPI2C`
+     - 
+   * - :kconfig:`CONFIG_HAS_RV32M1_LPSPI`
+     - 
+   * - :kconfig:`CONFIG_HAS_RV32M1_LPUART`
+     - 
+   * - :kconfig:`CONFIG_HAS_RV32M1_TPM`
+     - 
+   * - :kconfig:`CONFIG_HAS_SEMTECH_LORAMAC`
+     - Semtech LoRaMac Stack
+   * - :kconfig:`CONFIG_HAS_SEMTECH_RADIO_DRIVERS`
+     - Semtech LoRa Radio Drivers
+   * - :kconfig:`CONFIG_HAS_SEMTECH_SOFT_SE`
+     - Semtech Secure Element software implementation
+   * - :kconfig:`CONFIG_HAS_SEMTECH_SX126X`
+     - 
+   * - :kconfig:`CONFIG_HAS_SEMTECH_SX1272`
+     - 
+   * - :kconfig:`CONFIG_HAS_SEMTECH_SX1276`
+     - 
+   * - :kconfig:`CONFIG_HAS_SILABS_GECKO`
+     - 
+   * - :kconfig:`CONFIG_HAS_STLIB`
+     - 
+   * - :kconfig:`CONFIG_HAS_STM32CUBE`
+     - 
+   * - :kconfig:`CONFIG_HAS_STM32LIB`
+     - 
+   * - :kconfig:`CONFIG_HAS_STMEMSC`
+     - 
+   * - :kconfig:`CONFIG_HAS_TELINK_DRIVERS`
+     - Telink Drivers
+   * - :kconfig:`CONFIG_HAS_XMCLIB`
+     - 
+   * - :kconfig:`CONFIG_HAS_XMCLIB_UART`
+     - 
+   * - :kconfig:`CONFIG_LIBMETAL`
+     - libmetal Support
+   * - :kconfig:`CONFIG_LIBMETAL_SRC_PATH`
+     - libmetal library source path
+   * - :kconfig:`CONFIG_LZ4`
+     - Enable lz4 data compression and decompression
+   * - :kconfig:`CONFIG_MBEDTLS`
+     - mbed TLS Support
+   * - :kconfig:`CONFIG_MBEDTLS_AES_ROM_TABLES`
+     - Use precomputed AES tables stored in ROM.
+   * - :kconfig:`CONFIG_MBEDTLS_BUILTIN`
+     - Use Zephyr in-tree mbedTLS version
+   * - :kconfig:`CONFIG_MBEDTLS_CFG_FILE`
+     - mbed TLS configuration file
+   * - :kconfig:`CONFIG_MBEDTLS_CHACHAPOLY_AEAD_ENABLED`
+     - Enable the ChaCha20-Poly1305 AEAD algorithm
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER`
+     - Enable the generic cipher layer.
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_AES_ENABLED`
+     - Enable the AES block cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_ALL_ENABLED`
+     - Enable all available ciphers
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_ARC4_ENABLED`
+     - Enable the ARC4 stream cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_BLOWFISH_ENABLED`
+     - Enable the Blowfish block cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_CAMELLIA_ENABLED`
+     - Enable the Camellia block cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_CCM_ENABLED`
+     - Enable the Counter with CBC-MAC (CCM) mode for 128-bit block cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_CHACHA20_ENABLED`
+     - Enable the ChaCha20 stream cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_DES_ENABLED`
+     - Enable the DES block cipher
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_GCM_ENABLED`
+     - Enable the Galois/Counter Mode (GCM) for AES
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_MODE_CBC_ENABLED`
+     - Enable Cipher Block Chaining mode (CBC) for symmetric ciphers
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_MODE_CTR_ENABLED`
+     - Enable Counter Block Cipher mode (CTR) for symmetric ciphers.
+   * - :kconfig:`CONFIG_MBEDTLS_CIPHER_MODE_XTS_ENABLED`
+     - Enable Xor-encrypt-xor with ciphertext stealing mode (XTS) for AES
+   * - :kconfig:`CONFIG_MBEDTLS_CTR_DRBG_ENABLED`
+     - Enable the CTR\_DRBG AES-256-based random generator
+   * - :kconfig:`CONFIG_MBEDTLS_DEBUG`
+     - mbed TLS debug activation
+   * - :kconfig:`CONFIG_MBEDTLS_DEBUG_LEVEL`
+     - mbed TLS default debug level
+   * - :kconfig:`CONFIG_MBEDTLS_DTLS`
+     - Enable support for DTLS
+   * - :kconfig:`CONFIG_MBEDTLS_ECDSA_DETERMINISTIC`
+     - Enable deterministic ECDSA (RFC 6979)
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_ALL_ENABLED`
+     - Enable all available elliptic curves
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_BP256R1_ENABLED`
+     - Enable BP256R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_BP384R1_ENABLED`
+     - Enable BP384R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_BP512R1_ENABLED`
+     - Enable BP512R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_CURVE25519_ENABLED`
+     - Enable CURVE25519 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_CURVE448_ENABLED`
+     - Enable CURVE448 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP192K1_ENABLED`
+     - Enable SECP192K1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP192R1_ENABLED`
+     - Enable SECP192R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP224K1_ENABLED`
+     - Enable SECP224K1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP224R1_ENABLED`
+     - Enable SECP224R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP256K1_ENABLED`
+     - Enable SECP256K1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP256R1_ENABLED`
+     - Enable SECP256R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP384R1_ENABLED`
+     - Enable SECP384R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_DP_SECP521R1_ENABLED`
+     - Enable SECP521R1 elliptic curve
+   * - :kconfig:`CONFIG_MBEDTLS_ECP_NIST_OPTIM`
+     - Enable NSIT curves optimization
+   * - :kconfig:`CONFIG_MBEDTLS_ENABLE_HEAP`
+     - Enable global heap for mbed TLS
+   * - :kconfig:`CONFIG_MBEDTLS_ENTROPY_ENABLED`
+     - Enable mbedTLS generic entropy pool
+   * - :kconfig:`CONFIG_MBEDTLS_GENPRIME_ENABLED`
+     - Enable the prime-number generation code.
+   * - :kconfig:`CONFIG_MBEDTLS_HAVE_ASM`
+     - Enable use of assembly code
+   * - :kconfig:`CONFIG_MBEDTLS_HAVE_TIME_DATE`
+     - Enable date/time validation in mbed TLS
+   * - :kconfig:`CONFIG_MBEDTLS_HEAP_SIZE`
+     - Heap size for mbed TLS
+   * - :kconfig:`CONFIG_MBEDTLS_HMAC_DRBG_ENABLED`
+     - Enable the HMAC\_DRBG random generator
+   * - :kconfig:`CONFIG_MBEDTLS_INSTALL_PATH`
+     - mbedTLS install path
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ALL_ENABLED`
+     - Enable all available ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_PSK_ENABLED`
+     - Enable the DHE-PSK based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_DHE_RSA_ENABLED`
+     - Enable the DHE-RSA based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_ECDSA_ENABLED`
+     - Enable the ECDHE-ECDSA based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_PSK_ENABLED`
+     - Enable the ECDHE-PSK based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ECDHE_RSA_ENABLED`
+     - Enable the ECDHE-RSA based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA_ENABLED`
+     - Enable the ECDH-ECDSA based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ECDH_RSA_ENABLED`
+     - Enable the ECDH-RSA based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_ECJPAKE_ENABLED`
+     - Enable the ECJPAKE based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_PSK_ENABLED`
+     - Enable the PSK based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_ENABLED`
+     - Enable the RSA-only based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_RSA_PSK_ENABLED`
+     - Enable the RSA-PSK based ciphersuite modes
+   * - :kconfig:`CONFIG_MBEDTLS_KEY_EXCHANGE_SOME_PSK_ENABLED`
+     - 
+   * - :kconfig:`CONFIG_MBEDTLS_LIBRARY`
+     - Use external mbedTLS library
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_ALL_ENABLED`
+     - Enable all available MAC methods
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_CMAC_ENABLED`
+     - Enable the CMAC (Cipher-based Message Authentication Code) mode for block ciphers.
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_MD4_ENABLED`
+     - Enable the MD4 hash algorithm
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_MD5_ENABLED`
+     - Enable the MD5 hash algorithm
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_POLY1305_ENABLED`
+     - Enable the Poly1305 MAC algorithm
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_SHA1_ENABLED`
+     - Enable the SHA1 hash algorithm
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_SHA256_ENABLED`
+     - Enable the SHA-224 and SHA-256 hash algorithms
+   * - :kconfig:`CONFIG_MBEDTLS_MAC_SHA512_ENABLED`
+     - Enable the SHA-384 and SHA-512 hash algorithms
+   * - :kconfig:`CONFIG_MBEDTLS_MD`
+     - Enable the generic message digest layer.
+   * - :kconfig:`CONFIG_MBEDTLS_MEMORY_DEBUG`
+     - mbed TLS memory debug activation
+   * - :kconfig:`CONFIG_MBEDTLS_OPENTHREAD_OPTIMIZATIONS_ENABLED`
+     - Enable mbedTLS optimizations for OpenThread
+   * - :kconfig:`CONFIG_MBEDTLS_PEM_CERTIFICATE_FORMAT`
+     - Enable support for PEM certificate format
+   * - :kconfig:`CONFIG_MBEDTLS_PKCS5_C`
+     - Enable password-based encryption functions
+   * - :kconfig:`CONFIG_MBEDTLS_PK_WRITE_C`
+     - Enable the generic public (asymetric) key writer
+   * - :kconfig:`CONFIG_MBEDTLS_PROMPTLESS`
+     - 
+   * - :kconfig:`CONFIG_MBEDTLS_PSK_MAX_LEN`
+     - Max size of TLS pre-shared keys
+   * - :kconfig:`CONFIG_MBEDTLS_SERVER_NAME_INDICATION`
+     - Enable support for RFC 6066 server name indication (SNI) in SSL
+   * - :kconfig:`CONFIG_MBEDTLS_SHA256_SMALLER`
+     - Enable smaller SHA-256 implementation
+   * - :kconfig:`CONFIG_MBEDTLS_SHELL`
+     - mbed TLS shell
+   * - :kconfig:`CONFIG_MBEDTLS_SSL_ALPN`
+     - Enable support for setting the supported Application Layer Protocols
+   * - :kconfig:`CONFIG_MBEDTLS_SSL_EXPORT_KEYS`
+     - Enable support for exporting SSL key block and master secret
+   * - :kconfig:`CONFIG_MBEDTLS_SSL_MAX_CONTENT_LEN`
+     - Max payload size for TLS protocol message
+   * - :kconfig:`CONFIG_MBEDTLS_TEST`
+     - Compile internal self test functions
+   * - :kconfig:`CONFIG_MBEDTLS_TLS_VERSION_1_0`
+     - Enable support for TLS 1.0
+   * - :kconfig:`CONFIG_MBEDTLS_TLS_VERSION_1_1`
+     - Enable support for TLS 1.1 (DTLS 1.0)
+   * - :kconfig:`CONFIG_MBEDTLS_TLS_VERSION_1_2`
+     - Enable support for TLS 1.2 (DTLS 1.2)
+   * - :kconfig:`CONFIG_MBEDTLS_USER_CONFIG_ENABLE`
+     - Enable user mbedTLS config file
+   * - :kconfig:`CONFIG_MBEDTLS_USER_CONFIG_FILE`
+     - User configuration file for mbed TLS
+   * - :kconfig:`CONFIG_MCUBOOT_BOOTUTIL_LIB`
+     - MCUboot utility library
+   * - :kconfig:`CONFIG_MCUBOOT_BOOTUTIL_LIB_OWN_LOG`
+     - 
+   * - :kconfig:`CONFIG_MIPI_SYST_LIB`
+     - MIPI SyS-T Library Support
+   * - :kconfig:`CONFIG_MIPI_SYST_RAW_DATA`
+     - output MIPI SyS-T raw data packet
+   * - :kconfig:`CONFIG_MIPI_SYST_STP`
+     - STP Transport Layer for MIPI SyS-T
+   * - :kconfig:`CONFIG_NANOPB`
+     - Nanopb Support
+   * - :kconfig:`CONFIG_NANOPB_BUFFER_ONLY`
+     - Buffers only
+   * - :kconfig:`CONFIG_NANOPB_ENABLE_MALLOC`
+     - Enable malloc usage
+   * - :kconfig:`CONFIG_NANOPB_ENCODE_ARRAYS_UNPACKED`
+     - Encode arrays unpacked
+   * - :kconfig:`CONFIG_NANOPB_MAX_REQUIRED_FIELDS`
+     - Max number of required fields
+   * - :kconfig:`CONFIG_NANOPB_NO_ERRMSG`
+     - Disable error messages
+   * - :kconfig:`CONFIG_NANOPB_VALIDATE_UTF8`
+     - Validate UTF-8
+   * - :kconfig:`CONFIG_NANOPB_WITHOUT_64BIT`
+     - Disable 64-bit integer fields
+   * - :kconfig:`CONFIG_NRFX_ADC`
+     - Enable ADC driver
+   * - :kconfig:`CONFIG_NRFX_CLOCK`
+     - Enable CLOCK driver
+   * - :kconfig:`CONFIG_NRFX_CLOCK_LFXO_TWO_STAGE_ENABLED`
+     - Enable two stage start sequence of the low frequency clock
+   * - :kconfig:`CONFIG_NRFX_COMP`
+     - Enable COMP driver
+   * - :kconfig:`CONFIG_NRFX_DPPI`
+     - Enable DPPI allocator
+   * - :kconfig:`CONFIG_NRFX_EGU`
+     - Enable EGU driver
+   * - :kconfig:`CONFIG_NRFX_EGU0`
+     - Enable EGU0 instance
+   * - :kconfig:`CONFIG_NRFX_EGU1`
+     - Enable EGU1 instance
+   * - :kconfig:`CONFIG_NRFX_EGU2`
+     - Enable EGU2 instance
+   * - :kconfig:`CONFIG_NRFX_EGU3`
+     - Enable EGU3 instance
+   * - :kconfig:`CONFIG_NRFX_EGU4`
+     - Enable EGU4 instance
+   * - :kconfig:`CONFIG_NRFX_EGU5`
+     - Enable EGU5 instance
+   * - :kconfig:`CONFIG_NRFX_GPIOTE`
+     - Enable GPIOTE driver
+   * - :kconfig:`CONFIG_NRFX_GPIOTE_NUM_OF_EVT_HANDLERS`
+     - Number of event handlers
+   * - :kconfig:`CONFIG_NRFX_I2S`
+     - Enable I2S driver
+   * - :kconfig:`CONFIG_NRFX_IPC`
+     - Enable IPC driver
+   * - :kconfig:`CONFIG_NRFX_LPCOMP`
+     - Enable LPCOMP driver
+   * - :kconfig:`CONFIG_NRFX_NFCT`
+     - Enable NFCT driver
+   * - :kconfig:`CONFIG_NRFX_NVMC`
+     - Enable NVMC driver
+   * - :kconfig:`CONFIG_NRFX_PDM`
+     - Enable PDM driver
+   * - :kconfig:`CONFIG_NRFX_POWER`
+     - Enable POWER driver
+   * - :kconfig:`CONFIG_NRFX_PPI`
+     - Enable PPI allocator
+   * - :kconfig:`CONFIG_NRFX_PRS`
+     - Enable Peripheral Resource Sharing module
+   * - :kconfig:`CONFIG_NRFX_PRS_BOX_0`
+     - Enable PRS box 0
+   * - :kconfig:`CONFIG_NRFX_PRS_BOX_1`
+     - Enable PRS box 1
+   * - :kconfig:`CONFIG_NRFX_PRS_BOX_2`
+     - Enable PRS box 2
+   * - :kconfig:`CONFIG_NRFX_PRS_BOX_3`
+     - Enable PRS box 3
+   * - :kconfig:`CONFIG_NRFX_PRS_BOX_4`
+     - Enable PRS box 4
+   * - :kconfig:`CONFIG_NRFX_PWM`
+     - Enable PWM driver
+   * - :kconfig:`CONFIG_NRFX_PWM0`
+     - Enable PWM0 instance
+   * - :kconfig:`CONFIG_NRFX_PWM1`
+     - Enable PWM1 instance
+   * - :kconfig:`CONFIG_NRFX_PWM2`
+     - Enable PWM2 instance
+   * - :kconfig:`CONFIG_NRFX_PWM3`
+     - Enable PWM3 instance
+   * - :kconfig:`CONFIG_NRFX_QDEC`
+     - Enable QDEC driver
+   * - :kconfig:`CONFIG_NRFX_QSPI`
+     - Enable QSPI driver
+   * - :kconfig:`CONFIG_NRFX_RNG`
+     - Enable RNG driver
+   * - :kconfig:`CONFIG_NRFX_RTC`
+     - Enable RTC driver
+   * - :kconfig:`CONFIG_NRFX_RTC0`
+     - Enable RTC0 instance
+   * - :kconfig:`CONFIG_NRFX_RTC1`
+     - Enable RTC1 instance
+   * - :kconfig:`CONFIG_NRFX_RTC2`
+     - Enable RTC2 instance
+   * - :kconfig:`CONFIG_NRFX_SAADC`
+     - Enable SAADC driver
+   * - :kconfig:`CONFIG_NRFX_SPI`
+     - Enable SPI driver
+   * - :kconfig:`CONFIG_NRFX_SPI0`
+     - Enable SPI0 instance
+   * - :kconfig:`CONFIG_NRFX_SPI1`
+     - Enable SPI1 instance
+   * - :kconfig:`CONFIG_NRFX_SPI2`
+     - Enable SPI2 instance
+   * - :kconfig:`CONFIG_NRFX_SPIM`
+     - Enable SPIM driver
+   * - :kconfig:`CONFIG_NRFX_SPIM0`
+     - Enable SPIM0 instance
+   * - :kconfig:`CONFIG_NRFX_SPIM1`
+     - Enable SPIM1 instance
+   * - :kconfig:`CONFIG_NRFX_SPIM2`
+     - Enable SPIM2 instance
+   * - :kconfig:`CONFIG_NRFX_SPIM3`
+     - Enable SPIM3 instance
+   * - :kconfig:`CONFIG_NRFX_SPIM4`
+     - Enable SPIM4 instance
+   * - :kconfig:`CONFIG_NRFX_SPIS`
+     - Enable SPIS driver
+   * - :kconfig:`CONFIG_NRFX_SPIS0`
+     - Enable SPIS0 instance
+   * - :kconfig:`CONFIG_NRFX_SPIS1`
+     - Enable SPIS1 instance
+   * - :kconfig:`CONFIG_NRFX_SPIS2`
+     - Enable SPIS2 instance
+   * - :kconfig:`CONFIG_NRFX_SPIS3`
+     - Enable SPIS3 instance
+   * - :kconfig:`CONFIG_NRFX_SYSTICK`
+     - Enable SYSTICK driver
+   * - :kconfig:`CONFIG_NRFX_TEMP`
+     - Enable TEMP driver
+   * - :kconfig:`CONFIG_NRFX_TIMER`
+     - Enable TIMER driver
+   * - :kconfig:`CONFIG_NRFX_TIMER0`
+     - Enable TIMER0 instance
+   * - :kconfig:`CONFIG_NRFX_TIMER1`
+     - Enable TIMER1 instance
+   * - :kconfig:`CONFIG_NRFX_TIMER2`
+     - Enable TIMER2 instance
+   * - :kconfig:`CONFIG_NRFX_TIMER3`
+     - Enable TIMER3 instance
+   * - :kconfig:`CONFIG_NRFX_TIMER4`
+     - Enable TIMER4 instance
+   * - :kconfig:`CONFIG_NRFX_TWI`
+     - Enable TWI driver
+   * - :kconfig:`CONFIG_NRFX_TWI0`
+     - Enable TWI0 instance
+   * - :kconfig:`CONFIG_NRFX_TWI1`
+     - Enable TWI1 instance
+   * - :kconfig:`CONFIG_NRFX_TWIM`
+     - Enable TWIM driver
+   * - :kconfig:`CONFIG_NRFX_TWIM0`
+     - Enable TWIM0 instance
+   * - :kconfig:`CONFIG_NRFX_TWIM1`
+     - Enable TWIM1 instance
+   * - :kconfig:`CONFIG_NRFX_TWIM2`
+     - Enable TWIM2 instance
+   * - :kconfig:`CONFIG_NRFX_TWIM3`
+     - Enable TWIM3 instance
+   * - :kconfig:`CONFIG_NRFX_TWIS`
+     - Enable TWIS driver
+   * - :kconfig:`CONFIG_NRFX_TWIS0`
+     - Enable TWIS0 instance
+   * - :kconfig:`CONFIG_NRFX_TWIS1`
+     - Enable TWIS1 instance
+   * - :kconfig:`CONFIG_NRFX_TWIS2`
+     - Enable TWIS2 instance
+   * - :kconfig:`CONFIG_NRFX_TWIS3`
+     - Enable TWIS3 instance
+   * - :kconfig:`CONFIG_NRFX_UART`
+     - Enable UART driver
+   * - :kconfig:`CONFIG_NRFX_UART0`
+     - Enable UART0 instance
+   * - :kconfig:`CONFIG_NRFX_UARTE`
+     - Enable UARTE driver
+   * - :kconfig:`CONFIG_NRFX_UARTE0`
+     - Enable UARTE0 instance
+   * - :kconfig:`CONFIG_NRFX_UARTE1`
+     - Enable UARTE1 instance
+   * - :kconfig:`CONFIG_NRFX_UARTE2`
+     - Enable UARTE2 instance
+   * - :kconfig:`CONFIG_NRFX_UARTE3`
+     - Enable UARTE3 instance
+   * - :kconfig:`CONFIG_NRFX_USBD`
+     - Enable USBD driver
+   * - :kconfig:`CONFIG_NRFX_USBREG`
+     - Enable USBREG driver
+   * - :kconfig:`CONFIG_NRFX_WDT`
+     - Enable WDT driver
+   * - :kconfig:`CONFIG_NRFX_WDT0`
+     - Enable WDT0 instance
+   * - :kconfig:`CONFIG_NRFX_WDT1`
+     - Enable WDT1 instance
+   * - :kconfig:`CONFIG_NRF_802154_CCA_CORR_LIMIT`
+     - nRF IEEE 802.15.4 CCA Correlator limit
+   * - :kconfig:`CONFIG_NRF_802154_CCA_CORR_THRESHOLD`
+     - nRF IEEE 802.15.4 CCA Correlator threshold
+   * - :kconfig:`CONFIG_NRF_802154_CCA_ED_THRESHOLD`
+     - nRF IEEE 802.15.4 CCA Energy Detection threshold
+   * - :kconfig:`CONFIG_NRF_802154_CCA_MODE_CARRIER`
+     - Carrier Seen
+   * - :kconfig:`CONFIG_NRF_802154_CCA_MODE_CARRIER_AND_ED`
+     - Energy Above Threshold AND Carrier Seen
+   * - :kconfig:`CONFIG_NRF_802154_CCA_MODE_CARRIER_OR_ED`
+     - Energy Above Threshold OR Carrier Seen
+   * - :kconfig:`CONFIG_NRF_802154_CCA_MODE_ED`
+     - Energy Above Threshold
+   * - :kconfig:`CONFIG_NRF_802154_ENCRYPTION`
+     - nRF 802.15.4 AES-CCM\* authentication & encryption
+   * - :kconfig:`CONFIG_NRF_802154_MULTIPROTOCOL_SUPPORT`
+     - 
+   * - :kconfig:`CONFIG_NRF_802154_PENDING_EXTENDED_ADDRESSES`
+     - nRF 802.15.4 pending extended addresses
+   * - :kconfig:`CONFIG_NRF_802154_PENDING_SHORT_ADDRESSES`
+     - nRF 802.15.4 pending short addresses
+   * - :kconfig:`CONFIG_NRF_802154_RADIO_DRIVER`
+     - Enable nRF IEEE 802.15.4 radio driver
+   * - :kconfig:`CONFIG_NRF_802154_RX_BUFFERS`
+     - nRF 802.15.4 receive buffers
+   * - :kconfig:`CONFIG_NRF_802154_SERIALIZATION`
+     - 
+   * - :kconfig:`CONFIG_NRF_802154_SER_DEFAULT_RESPONSE_TIMEOUT`
+     - Default Spinel serialization response timeout in milliseconds
+   * - :kconfig:`CONFIG_NRF_802154_SER_HOST`
+     - nRF IEEE 802.15.4 Driver serialization host
+   * - :kconfig:`CONFIG_NRF_802154_SER_LOG`
+     - 802.15.4 serialization logs
+   * - :kconfig:`CONFIG_NRF_802154_SER_RADIO`
+     - nRF IEEE 802.15.4 Driver serialization radio
+   * - :kconfig:`CONFIG_NRF_802154_SER_RADIO_INIT_PRIO`
+     - nRF52 IEEE 802.15.4 serialization initialization priority
+   * - :kconfig:`CONFIG_NRF_802154_SL_OPENSOURCE`
+     - Open source
+   * - :kconfig:`CONFIG_NRF_802154_SOURCE_HAL_NORDIC`
+     - Open source
+   * - :kconfig:`CONFIG_NRF_802154_TEMPERATURE_UPDATE`
+     - nRF 802.15.4 temperature update
+   * - :kconfig:`CONFIG_NRF_802154_TEMPERATURE_UPDATE_INIT_PRIO`
+     - nRF52 IEEE 802.15.4 temperature update initialization priority
+   * - :kconfig:`CONFIG_NRF_802154_TEMPERATURE_UPDATE_PERIOD`
+     - nRF 802.15.4 temperature update period in milliseconds
+   * - :kconfig:`CONFIG_OPENAMP`
+     - OpenAMP Support
+   * - :kconfig:`CONFIG_OPENAMP_MASTER`
+     - OpenAMP Master Support
+   * - :kconfig:`CONFIG_OPENAMP_SLAVE`
+     - OpenAMP Slave Support
+   * - :kconfig:`CONFIG_OPENAMP_SRC_PATH`
+     - OpenAMP library source path
+   * - :kconfig:`CONFIG_PICOSDK_USE_GPIO`
+     - 
+   * - :kconfig:`CONFIG_PICOSDK_USE_UART`
+     - 
+   * - :kconfig:`CONFIG_ROM_START_OFFSET`
+     - ROM Start Offset accounting for BL2 Header in the NS image
+   * - :kconfig:`CONFIG_SIMPLELINK_HOST_DRIVER`
+     - Build the SimpleLink WiFi Host Driver
+   * - :kconfig:`CONFIG_SOF`
+     - Sound Open Firmware (SOF)
+   * - :kconfig:`CONFIG_TENSORFLOW_LITE_MICRO`
+     - TensorFlow Lite Micro Support
+   * - :kconfig:`CONFIG_TFM_BL2`
+     - Add MCUboot to TFM
+   * - :kconfig:`CONFIG_TFM_BOARD`
+     - 
+   * - :kconfig:`CONFIG_TFM_CMAKE_BUILD_TYPE_DEBUG`
+     - Debug build
+   * - :kconfig:`CONFIG_TFM_CMAKE_BUILD_TYPE_MINSIZEREL`
+     - Release build, optimized for size
+   * - :kconfig:`CONFIG_TFM_CMAKE_BUILD_TYPE_RELEASE`
+     - Release build
+   * - :kconfig:`CONFIG_TFM_CMAKE_BUILD_TYPE_RELWITHDEBINFO`
+     - Release build with Debug info
+   * - :kconfig:`CONFIG_TFM_CRYPTO_AEAD_MODULE_ENABLED`
+     - AEAD crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_ASYM_ENCRYPT_MODULE_ENABLED`
+     - ASYM ENCRYPT crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_ASYM_SIGN_MODULE_ENABLED`
+     - ASYM SIGN crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_CIPHER_MODULE_ENABLED`
+     - CIPHER crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_HASH_MODULE_ENABLED`
+     - HASH crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_KEY_DERIVATION_MODULE_ENABLED`
+     - KEY DERIVATION crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_KEY_MODULE_ENABLED`
+     - KEY crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_MAC_MODULE_ENABLED`
+     - MAC crypto module
+   * - :kconfig:`CONFIG_TFM_CRYPTO_RNG_MODULE_ENABLED`
+     - Random number generator crypto module
+   * - :kconfig:`CONFIG_TFM_EXCEPTION_INFO_DUMP`
+     - TF-M exception info dump
+   * - :kconfig:`CONFIG_TFM_FLASH_MERGED_BINARY`
+     - 
+   * - :kconfig:`CONFIG_TFM_IPC`
+     - IPC
+   * - :kconfig:`CONFIG_TFM_ISOLATION_LEVEL`
+     - Isolation level setting.
+   * - :kconfig:`CONFIG_TFM_ITS_MAX_ASSET_SIZE`
+     - Maximum Internal Trusted Storage asset size
+   * - :kconfig:`CONFIG_TFM_ITS_MAX_ASSET_SIZE_OVERRIDE`
+     - Override maximum Internal Trusted Storage asset size
+   * - :kconfig:`CONFIG_TFM_ITS_NUM_ASSETS`
+     - Maximum number of Internal Trusted Storage assets
+   * - :kconfig:`CONFIG_TFM_ITS_NUM_ASSETS_OVERRIDE`
+     - Override maximum number of Internal Trusted Storage assets
+   * - :kconfig:`CONFIG_TFM_KEY_FILE_NS`
+     - Path to private key used to sign non-secure firmware images.
+   * - :kconfig:`CONFIG_TFM_KEY_FILE_S`
+     - Path to private key used to sign secure firmware images.
+   * - :kconfig:`CONFIG_TFM_MCUBOOT_IMAGE_NUMBER`
+     - Granularity of FW updates of TFM and app
+   * - :kconfig:`CONFIG_TFM_MCUBOOT_PATH_DOWNLOAD`
+     - TF-M to automatically download MCUboot during build
+   * - :kconfig:`CONFIG_TFM_MCUBOOT_PATH_LOCAL`
+     - TF-M to use Zephyr's MCUboot
+   * - :kconfig:`CONFIG_TFM_PARTITION_AUDIT_LOG`
+     - Enable secure partition 'Audit Log'
+   * - :kconfig:`CONFIG_TFM_PARTITION_CRYPTO`
+     - Enable secure partition 'Crypto'
+   * - :kconfig:`CONFIG_TFM_PARTITION_INITIAL_ATTESTATION`
+     - Enable secure partition 'Initial Attestation'
+   * - :kconfig:`CONFIG_TFM_PARTITION_INTERNAL_TRUSTED_STORAGE`
+     - Enable secure partition 'Internal Trusted Storage'
+   * - :kconfig:`CONFIG_TFM_PARTITION_LOG_LEVEL_DEBUG`
+     - Debug
+   * - :kconfig:`CONFIG_TFM_PARTITION_LOG_LEVEL_ERROR`
+     - Error
+   * - :kconfig:`CONFIG_TFM_PARTITION_LOG_LEVEL_INFO`
+     - Info
+   * - :kconfig:`CONFIG_TFM_PARTITION_LOG_LEVEL_SILENCE`
+     - Off
+   * - :kconfig:`CONFIG_TFM_PARTITION_PLATFORM`
+     - Enable secure partition 'Platform'
+   * - :kconfig:`CONFIG_TFM_PARTITION_PROTECTED_STORAGE`
+     - Enable secure partition 'Protected Storage'
+   * - :kconfig:`CONFIG_TFM_PROFILE`
+     - 
+   * - :kconfig:`CONFIG_TFM_PROFILE_TYPE_LARGE`
+     - TF-M build profile: large
+   * - :kconfig:`CONFIG_TFM_PROFILE_TYPE_MEDIUM`
+     - TF-M build profile: medium
+   * - :kconfig:`CONFIG_TFM_PROFILE_TYPE_NOT_SET`
+     - TF-M build profile is not set
+   * - :kconfig:`CONFIG_TFM_PROFILE_TYPE_SMALL`
+     - TF-M build profile: small
+   * - :kconfig:`CONFIG_TFM_PSA_TEST_CRYPTO`
+     - Crypto tests
+   * - :kconfig:`CONFIG_TFM_PSA_TEST_INITIAL_ATTESTATION`
+     - Initial attestation tests
+   * - :kconfig:`CONFIG_TFM_PSA_TEST_INTERNAL_TRUSTED_STORAGE`
+     - Internal Trusted Storage tests
+   * - :kconfig:`CONFIG_TFM_PSA_TEST_NONE`
+     - No PSA test suite
+   * - :kconfig:`CONFIG_TFM_PSA_TEST_PROTECTED_STORAGE`
+     - Storage tests
+   * - :kconfig:`CONFIG_TFM_PSA_TEST_STORAGE`
+     - Storage tests
+   * - :kconfig:`CONFIG_TFM_REGRESSION_NS`
+     - Use the TF-M Non-Secure Regression test application
+   * - :kconfig:`CONFIG_TFM_REGRESSION_S`
+     - TF-M Secure Regression tests
+   * - :kconfig:`CONFIG_TFM_SPM_LOG_LEVEL_DEBUG`
+     - Debug
+   * - :kconfig:`CONFIG_TFM_SPM_LOG_LEVEL_ERROR`
+     - Error
+   * - :kconfig:`CONFIG_TFM_SPM_LOG_LEVEL_INFO`
+     - Info
+   * - :kconfig:`CONFIG_TFM_SPM_LOG_LEVEL_SILENCE`
+     - Off
+   * - :kconfig:`CONFIG_TINYCBOR`
+     - tinyCBOR Support
+   * - :kconfig:`CONFIG_TINYCRYPT`
+     - TinyCrypt Support
+   * - :kconfig:`CONFIG_TINYCRYPT_AES`
+     - AES-128 decrypt/encrypt
+   * - :kconfig:`CONFIG_TINYCRYPT_AES_CBC`
+     - AES-128 block cipher
+   * - :kconfig:`CONFIG_TINYCRYPT_AES_CCM`
+     - AES-128 CCM mode
+   * - :kconfig:`CONFIG_TINYCRYPT_AES_CMAC`
+     - AES-128 CMAC mode
+   * - :kconfig:`CONFIG_TINYCRYPT_AES_CTR`
+     - AES-128 counter mode
+   * - :kconfig:`CONFIG_TINYCRYPT_CTR_PRNG`
+     - PRNG in counter mode
+   * - :kconfig:`CONFIG_TINYCRYPT_ECC_DH`
+     - ECC\_DH anonymous key agreement protocol
+   * - :kconfig:`CONFIG_TINYCRYPT_ECC_DSA`
+     - ECC\_DSA digital signature algorithm
+   * - :kconfig:`CONFIG_TINYCRYPT_SHA256`
+     - SHA-256 Hash function support
+   * - :kconfig:`CONFIG_TINYCRYPT_SHA256_HMAC`
+     - HMAC (via SHA256) message auth support
+   * - :kconfig:`CONFIG_TINYCRYPT_SHA256_HMAC_PRNG`
+     - PRNG (via HMAC-SHA256) support
+   * - :kconfig:`CONFIG_USE_GD32_ADC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_BKP`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_CAN`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_CEC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_CMP`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_CRC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_CTC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_DAC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_DBG`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_DCI`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_DMA`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_ENET`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_EXMC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_EXTI`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_FMC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_FWDGT`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_GPIO`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_I2C`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_IPA`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_IREF`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_MISC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_PMU`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_RCU`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_RTC`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_SDIO`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_SHRTIMER`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_SPI`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_SQPI`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_SYSCFG`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_TIMER`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_TLI`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_TMU`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_TRNG`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_TSI`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_USART`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_USBD`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_USBFS`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_USBHS`
+     - 
+   * - :kconfig:`CONFIG_USE_GD32_WWDGT`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_A3G4250D`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_AIS2DW12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_AIS328DQ`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_AIS3624DQ`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_H3LIS100DL`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_H3LIS331DL`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_HTS221`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_I3G4250D`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS2DH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS2DLPC`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS2ICLX`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS2MDC`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS328DQ`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS3DHHC`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_IIS3DWB`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_ISM303DAC`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_ISM330DHCX`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_ISM330DLC`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_L20G20IS`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_L3GD20H`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS25BA`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2DE12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2DH12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2DS12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2DTW12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2DW12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2HH12`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS2MDL`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS331DLH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS3DE`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS3DH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS3DHH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS3DSH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LIS3MDL`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS22HB`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS22HH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS25HB`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS27HHW`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS33HW`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS33K`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LPS33W`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM303AGR`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM303AH`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DS3`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DS3TR`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSL`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSM`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSO`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSO32`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSOX`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSR`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM6DSRX`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_LSM9DS1`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_STTS22H`
+     - 
+   * - :kconfig:`CONFIG_USE_STDC_STTS751`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_ADC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_ADC_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CAN`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CEC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_COMP`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CORTEX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CRC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CRC_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CRYP`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_CRYP_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DAC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DAC_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DCMI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DCMI_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DFSDM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DFSDM_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DMA`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DMA2D`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DMA_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_DSI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_ETH`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_ETH_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_EXTI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FDCAN`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FIREWALL`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FLASH`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FLASH_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FLASH_RAMFUNC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FMAC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FMPI2C`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_FMPI2C_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_GFXMMU`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_GPIO`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_GPIO_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_HASH`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_HASH_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_HCD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_HRTIM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_HSEM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_I2C`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_I2C_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_I2S`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_I2S_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_IPCC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_IRDA`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_IWDG`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_JPEG`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_LCD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_LPTIM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_LTDC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_LTDC_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_MDIOS`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_MDMA`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_MMC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_MMC_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_NAND`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_NOR`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_OPAMP`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_OPAMP_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_OSPI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_PCCARD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_PCD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_PCD_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_PSSI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_PWR`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_PWR_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_QSPI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_RAMECC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_RNG`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_RTC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_RTC_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SAI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SAI_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SDADC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SDRAM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SD_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SMARTCARD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SMARTCARD_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SMBUS`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SPDIFRX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SPI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SPI_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SRAM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_SWPMI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_TIM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_TIM_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_TSC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_UART`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_UART_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_USART`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_USART_EX`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_HAL_WWDG`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_ADC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_BDMA`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_COMP`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_CRC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_CRS`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_DAC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_DELAYBLOCK`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_DMA`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_DMA2D`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_EXTI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_FMAC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_FMC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_FSMC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_GPIO`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_HRTIM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_I2C`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_IPCC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_LPTIM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_LPUART`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_MDMA`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_OPAMP`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_PWR`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_RCC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_RNG`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_RTC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_SDMMC`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_SPI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_SWPMI`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_TIM`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_UCPD`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_USART`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_USB`
+     - 
+   * - :kconfig:`CONFIG_USE_STM32_LL_UTILS`
+     - 
+   * - :kconfig:`CONFIG_VEGA_SDK_HAL`
+     - RV32M1 VEGA SDK support
+   * - :kconfig:`CONFIG_XTENSA_HAL`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_CANOPENNODE_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_FFF_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_HAL_GIGADEVICE_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_HAL_NORDIC_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_LORAMAC_NODE_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_LZ4_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_MBEDTLS_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_NANOPB_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_TFLITE-MICRO_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_TRACERECORDER_MODULE`
+     - 
+   * - :kconfig:`CONFIG_ZEPHYR_TRUSTED_FIRMWARE_M_MODULE`
+     - 

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
+  <compounddef id="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode" kind="struct" language="C++" prot="public">
+    <compoundname>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</compoundname>
+    <includes refid="ring__buffer_8h" local="no">ring_buffer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode_1a9087da40fb638bfe8ce89af0105b63cb" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::ring_buf_misc::ring_buf_misc_byte_mode::tmp_tail</definition>
+        <argsstring></argsstring>
+        <name>tmp_tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="45" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode_1a1233d0d6f793b8103ae5cc2b218c857a" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t ring_buf::ring_buf_misc::ring_buf_misc_byte_mode::tmp_head</definition>
+        <argsstring></argsstring>
+        <name>tmp_head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/ring_buffer.h" line="46" column="10" bodyfile="include/sys/ring_buffer.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/sys/ring_buffer.h" line="44" column="1" bodyfile="include/sys/ring_buffer.h" bodystart="44" bodyend="47"/>
+    <listofallmembers>
+      <member refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode_1a1233d0d6f793b8103ae5cc2b218c857a" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</scope><name>tmp_head</name></member>
+      <member refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode_1a9087da40fb638bfe8ce89af0105b63cb" prot="public" virt="non-virtual"><scope>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</scope><name>tmp_tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

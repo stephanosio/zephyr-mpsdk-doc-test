@@ -1,0 +1,37 @@
+:orphan:
+
+.. _configuration_options:
+
+
+Configuration Options
+=====================
+
+:file:`Kconfig` files describe build-time configuration options (called symbols
+in Kconfig-speak), how they're grouped into menus and sub-menus, and
+dependencies between them that determine what configurations are valid.
+
+:file:`Kconfig` files appear throughout the directory tree. For example,
+:file:`subsys/power/Kconfig` defines power-related options.
+
+This documentation is generated automatically from the :file:`Kconfig` files by
+the :file:`gen_kconfig_rest.py` script. Click on symbols for more
+information.
+
+This index page lists all symbols, regardless of where they are defined:
+
+.. toctree::
+   :maxdepth: 1
+
+   index-all.rst
+
+These index pages only list symbols defined within a particular subsystem:
+
+.. toctree::
+   :maxdepth: 1
+
+   index-arch
+   index-drivers
+   index-kernel
+   index-lib
+   index-subsys
+   index-modules
