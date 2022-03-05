@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="51" column="2" bodyfile="include/logging/log_msg2.h" bodystart="51" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="52" column="2" bodyfile="include/logging/log_msg2.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__desc_1abcb692a97e754396d0ea8eaf717497bf" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="51" column="26" bodyfile="include/logging/log_msg2.h" bodystart="51" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="52" column="26" bodyfile="include/logging/log_msg2.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__desc_1aa187e814be1d98d8eced5f589db404c1" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="52" column="10" bodyfile="include/logging/log_msg2.h" bodystart="52" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="53" column="10" bodyfile="include/logging/log_msg2.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__desc_1aa2ebb4c0b803c901af91ebc9346591f6" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="53" column="10" bodyfile="include/logging/log_msg2.h" bodystart="53" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="54" column="10" bodyfile="include/logging/log_msg2.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__desc_1af884e429b33d4c992a7b958dfe73f51c" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="54" column="10" bodyfile="include/logging/log_msg2.h" bodystart="54" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="55" column="10" bodyfile="include/logging/log_msg2.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__desc_1ae1ce937b07701077e12e381348128351" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="55" column="10" bodyfile="include/logging/log_msg2.h" bodystart="55" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="56" column="10" bodyfile="include/logging/log_msg2.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__desc_1a16aec0f78343b927b2a7448be9794b36" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -99,14 +99,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="56" column="10" bodyfile="include/logging/log_msg2.h" bodystart="56" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="57" column="10" bodyfile="include/logging/log_msg2.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/logging/log_msg2.h" line="50" column="1" bodyfile="include/logging/log_msg2.h" bodystart="50" bodyend="57"/>
+    <location file="include/logging/log_msg2.h" line="51" column="1" bodyfile="include/logging/log_msg2.h" bodystart="51" bodyend="58"/>
     <listofallmembers>
       <member refid="structlog__msg2__desc_1ae1ce937b07701077e12e381348128351" prot="public" virt="non-virtual"><scope>log_msg2_desc</scope><name>data_len</name></member>
       <member refid="structlog__msg2__desc_1aa187e814be1d98d8eced5f589db404c1" prot="public" virt="non-virtual"><scope>log_msg2_desc</scope><name>domain</name></member>

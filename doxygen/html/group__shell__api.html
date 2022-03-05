@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -1040,7 +1040,7 @@ Variables</h2></td></tr>
 <div class="line">                             <span class="keyword">true</span>, z_shell_print_stream);                     \</div>
 <div class="line">        LOG_INSTANCE_REGISTER(<a class="code hl_struct" href="structshell.html">shell</a>, _name, CONFIG_SHELL_LOG_LEVEL);          \</div>
 <div class="line">        Z_SHELL_STATS_DEFINE(_name);                                          \</div>
-<div class="line">        static <a class="code hl_function" href="threads_2thread__stack_2src_2main_8c.html#abf20d8da7b5829da0eb6ccb4dae81b37">K_KERNEL_STACK_DEFINE</a>(_name##_stack, CONFIG_SHELL_STACK_SIZE); \</div>
+<div class="line">        static <a class="code hl_function" href="threads_2thread__stack_2src_2main_8c.html#a72c0793eec55b1d100382b62b7d3c06d">K_KERNEL_STACK_DEFINE</a>(_name##_stack, CONFIG_SHELL_STACK_SIZE); \</div>
 <div class="line">        static <span class="keyword">struct </span><a class="code hl_struct" href="structk__thread.html">k_thread</a> _name##_thread;                                \</div>
 <div class="line">        static <span class="keyword">const</span> <a class="code hl_define" href="group__iterable__section__apis.html#gabed6642b8cc06863ce97dd536698004d">STRUCT_SECTION_ITERABLE</a>(<a class="code hl_struct" href="structshell.html">shell</a>, _name) = {                \</div>
 <div class="line">                .default_prompt = _prompt,                                    \</div>
@@ -1064,7 +1064,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astructk__thread_html"><div class="ttname"><a href="structk__thread.html">k_thread</a></div><div class="ttdef"><b>Definition:</b> thread.h:216</div></div>
 <div class="ttc" id="astructshell__ctx_html"><div class="ttname"><a href="structshell__ctx.html">shell_ctx</a></div><div class="ttdoc">Shell instance context.</div><div class="ttdef"><b>Definition:</b> shell.h:686</div></div>
 <div class="ttc" id="astructshell_html"><div class="ttname"><a href="structshell.html">shell</a></div><div class="ttdoc">Shell instance internals.</div><div class="ttdef"><b>Definition:</b> shell.h:755</div></div>
-<div class="ttc" id="athreads_2thread__stack_2src_2main_8c_html_abf20d8da7b5829da0eb6ccb4dae81b37"><div class="ttname"><a href="threads_2thread__stack_2src_2main_8c.html#abf20d8da7b5829da0eb6ccb4dae81b37">K_KERNEL_STACK_DEFINE</a></div><div class="ttdeci">K_KERNEL_STACK_DEFINE(kern_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</div></div>
+<div class="ttc" id="athreads_2thread__stack_2src_2main_8c_html_a72c0793eec55b1d100382b62b7d3c06d"><div class="ttname"><a href="threads_2thread__stack_2src_2main_8c.html#a72c0793eec55b1d100382b62b7d3c06d">K_KERNEL_STACK_DEFINE</a></div><div class="ttdeci">K_KERNEL_STACK_DEFINE(kern_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</div></div>
 </div><!-- fragment -->
 <p>Macro for defining a shell instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2063,7 +2063,7 @@ Variables</h2></td></tr>
 <p >This function must not be called from shell command context!</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">shell</td><td>Pointer to the shell instance. It can be NULL when the <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SHELL_BACKEND_DUMMY` </pre> option is enabled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">shell</td><td>Pointer to the shell instance. It can be NULL when the <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SHELL_BACKEND_DUMMY` </pre> option is enabled. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cmd</td><td>Command to be executed.</td></tr>
   </table>
   </dd>
@@ -2830,7 +2830,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

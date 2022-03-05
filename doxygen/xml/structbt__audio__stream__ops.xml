@@ -4,89 +4,6 @@
     <compoundname>bt_audio_stream_ops</compoundname>
     <includes refid="audio_8h" local="no">audio.h</includes>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a34f9b7a2a2c69b920cec3027699fb866" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::configured) (struct bt_audio_stream *stream, const struct bt_codec_qos_pref *pref)</definition>
-        <argsstring>)(struct bt_audio_stream *stream, const struct bt_codec_qos_pref *pref)</argsstring>
-        <name>configured</name>
-        <briefdescription>
-<para>Stream configured callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Configured callback is called whenever an Audio Stream has been configured.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object that has been configured. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pref</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Remote QoS preferences. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1169" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1169" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1ae9b3bc783b26882e68e327c6b9101550" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::qos_set) (struct bt_audio_stream *stream)</definition>
-        <argsstring>)(struct bt_audio_stream *stream)</argsstring>
-        <name>qos_set</name>
-        <briefdescription>
-<para>Stream QoS set callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>QoS set callback is called whenever an Audio Stream Quality of Service has been set or updated.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object that had its QoS updated. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1179" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1179" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a6e87b31f475ee57b23059b2732d1997a" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::enabled) (struct bt_audio_stream *stream)</definition>
-        <argsstring>)(struct bt_audio_stream *stream)</argsstring>
-        <name>enabled</name>
-        <briefdescription>
-<para>Stream enabled callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Enabled callback is called whenever an Audio Stream has been enabled.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object that has been enabled. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1188" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1188" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structbt__audio__stream__ops_1a6ec265ed94fa914404eec7f326ed97df" prot="public" static="no" mutable="no">
         <type>void(*</type>
         <definition>void(* bt_audio_stream_ops::started) (struct bt_audio_stream *stream)</definition>
@@ -110,57 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1197" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1197" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a3715c73209af2fd6799f5648c72aa90e" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::metadata_updated) (struct bt_audio_stream *stream)</definition>
-        <argsstring>)(struct bt_audio_stream *stream)</argsstring>
-        <name>metadata_updated</name>
-        <briefdescription>
-<para>Stream metadata updated callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Metadata Updated callback is called whenever an Audio Stream&apos;s metadata has been updated.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object that had its metadata updated. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1206" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1206" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a1e22d3d9898230e62d293cc88ab9b4b8" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::disabled) (struct bt_audio_stream *stream)</definition>
-        <argsstring>)(struct bt_audio_stream *stream)</argsstring>
-        <name>disabled</name>
-        <briefdescription>
-<para>Stream disabled callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Disabled callback is called whenever an Audio Stream has been disabled.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object that has been disabled. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1215" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1215" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1226" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1226" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__stream__ops_1a37ef1b5e8688c37f5f7dcb4cc845e911" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -185,123 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1224" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1224" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a57f542057d195cdfd6ea5b12da807f6b" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::released) (struct bt_audio_stream *stream)</definition>
-        <argsstring>)(struct bt_audio_stream *stream)</argsstring>
-        <name>released</name>
-        <briefdescription>
-<para>Stream released callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Released callback is called whenever a Audio Stream has been released and can be deallocated.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object that has been released. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1233" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1233" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a930f643ecef717e88c6c7a80901925f7" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::connected) (struct bt_audio_stream *stream)</definition>
-        <argsstring>)(struct bt_audio_stream *stream)</argsstring>
-        <name>connected</name>
-        <briefdescription>
-<para>Stream connected callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>If this callback is provided it will be called when the isochronous stream is connected.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The stream that has been connected </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1242" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1242" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1aad9d92620e6671b6744c273222150284" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::disconnected) (struct bt_audio_stream *stream, uint8_t reason)</definition>
-        <argsstring>)(struct bt_audio_stream *stream, uint8_t reason)</argsstring>
-        <name>disconnected</name>
-        <briefdescription>
-<para>Stream disconnected callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>If this callback is provided it will be called when the isochronous stream is disconnected, including when a connection gets rejected.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The stream that has been Disconnected </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>reason</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>HCI reason for the disconnection. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1253" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1253" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="structbt__audio__stream__ops_1a3aafc6932c1ebb1fa7567fe4a332d57e" prot="public" static="no" mutable="no">
-        <type>void(*</type>
-        <definition>void(* bt_audio_stream_ops::recv) (struct bt_audio_stream *stream, struct net_buf *buf)</definition>
-        <argsstring>)(struct bt_audio_stream *stream, struct net_buf *buf)</argsstring>
-        <name>recv</name>
-        <briefdescription>
-<para>Stream audio HCI receive callback. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This callback is only used if the ISO data path is HCI.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>stream</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Stream object. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>buf</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Buffer containing incoming audio data. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1262" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1262" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1235" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1235" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -309,17 +60,8 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/bluetooth/audio/audio.h" line="1160" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1160" bodyend="1263"/>
+    <location file="include/bluetooth/audio/audio.h" line="1160" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1160" bodyend="1247"/>
     <listofallmembers>
-      <member refid="structbt__audio__stream__ops_1a34f9b7a2a2c69b920cec3027699fb866" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>configured</name></member>
-      <member refid="structbt__audio__stream__ops_1a930f643ecef717e88c6c7a80901925f7" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>connected</name></member>
-      <member refid="structbt__audio__stream__ops_1a1e22d3d9898230e62d293cc88ab9b4b8" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>disabled</name></member>
-      <member refid="structbt__audio__stream__ops_1aad9d92620e6671b6744c273222150284" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>disconnected</name></member>
-      <member refid="structbt__audio__stream__ops_1a6e87b31f475ee57b23059b2732d1997a" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>enabled</name></member>
-      <member refid="structbt__audio__stream__ops_1a3715c73209af2fd6799f5648c72aa90e" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>metadata_updated</name></member>
-      <member refid="structbt__audio__stream__ops_1ae9b3bc783b26882e68e327c6b9101550" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>qos_set</name></member>
-      <member refid="structbt__audio__stream__ops_1a3aafc6932c1ebb1fa7567fe4a332d57e" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>recv</name></member>
-      <member refid="structbt__audio__stream__ops_1a57f542057d195cdfd6ea5b12da807f6b" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>released</name></member>
       <member refid="structbt__audio__stream__ops_1a6ec265ed94fa914404eec7f326ed97df" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>started</name></member>
       <member refid="structbt__audio__stream__ops_1a37ef1b5e8688c37f5f7dcb4cc845e911" prot="public" virt="non-virtual"><scope>bt_audio_stream_ops</scope><name>stopped</name></member>
     </listofallmembers>

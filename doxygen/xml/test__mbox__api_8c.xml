@@ -736,7 +736,7 @@
       </memberdef>
       <memberdef kind="define" id="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1044,16 +1044,16 @@
         </inbodydescription>
         <location file="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" line="26" column="1" declfile="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" declline="26" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__mbox__api_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mbox__api_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1063,16 +1063,16 @@
         </inbodydescription>
         <location file="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" line="32" column="8" declfile="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" declline="32" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="test__mbox__api_8c_1a5cd86cd9fdb58458a361df42b117d0f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mbox__api_8c_1aaf5bcc2978e2cb55bc77d33d7578ebc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(rtstack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(rtstack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>rtstack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1082,16 +1082,16 @@
         </inbodydescription>
         <location file="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" line="33" column="8" declfile="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" declline="33" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="test__mbox__api_8c_1a8df831f604b3ac814803eb14c99a293b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mbox__api_8c_1a95d61aa43fa546ae2f05dc7494524143" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack_1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack_1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>tstack_1</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1101,10 +1101,10 @@
         </inbodydescription>
         <location file="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" line="34" column="8" declfile="tests/kernel/mbox/mbox_api/src/test_mbox_api.c" declline="34" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="test__mbox__api_8c_1a15e092355d85aea8bba999668eadb0c9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mbox__api_8c_1a25a8e9c3f9247562ea2cce8ad8b44efb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(waiting_get_stack, 5,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(waiting_get_stack, 5,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>waiting_get_stack</type>
@@ -1113,7 +1113,7 @@
           <type>5</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1703,9 +1703,9 @@
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/>K_MSEC(100)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(CONFIG_BOARD_QEMU_X86)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(640<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(640<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAIL_LEN<sp/>64</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
@@ -1715,10 +1715,10 @@
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="test__mbox__api_8c_1adaadaa9be54c3883875313d5acf1a6a8" kindref="member">sender_tid</ref>,<sp/><ref refid="test__mbox__api_8c_1a57ccc96121f2910dccc20c5a85866c24" kindref="member">receiver_tid</ref>,<sp/><ref refid="test__mbox__api_8c_1ae25461ef84f4035b78fac81d2937b9b5" kindref="member">random_tid</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(rtstack,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack_1,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1a15e092355d85aea8bba999668eadb0c9" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(waiting_get_stack,<sp/>5,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE</ref>(rtstack,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack_1,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mbox__api_8c_1a25a8e9c3f9247562ea2cce8ad8b44efb" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(waiting_get_stack,<sp/>5,<sp/><ref refid="test__mbox__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="clock_8c_1ab3181a6cac47dfc801fd7e5b69b9bdd2" kindref="member">tdata</ref>,<sp/>rtdata,<sp/>async_tid,<sp/><ref refid="test__mbox__api_8c_1a70e78a5eb45960cb05967c03ff2dfdec" kindref="member">waiting_get_tid</ref>[5];</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__fifo__contexts_8c_1a37d12066b90b5226eb1895e59f5908e8" kindref="member">end_sema</ref>,<sp/><ref refid="test__mbox__api_8c_1a026800474c146ee642c3dc99b1675543" kindref="member">sync_sema</ref>;</highlight></codeline>

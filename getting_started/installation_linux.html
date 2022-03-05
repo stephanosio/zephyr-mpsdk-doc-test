@@ -44,7 +44,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -66,6 +66,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -168,7 +170,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -403,8 +405,8 @@ as custom QEMU and OpenOCD.</p>
 <p>Follow these steps to install the Zephyr SDK:</p>
 <ol class="arabic">
 <li><p>Download and verify the <a class="reference external" href="https://github.com/zephyrproject-rtos/sdk-ng/releases">latest Zephyr SDK bundle</a>:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_linux-x86_64.tar.gz
-wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/sha256.sum <span class="p">|</span> shasum --check --ignore-missing
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
+wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/sha256.sum <span class="p">|</span> shasum --check --ignore-missing
 </pre></div>
 </div>
 <p>You can change <code class="docutils literal notranslate"><span class="pre">0.99.22</span></code> to another version if needed; the <a class="reference external" href="https://github.com/zephyrproject-rtos/sdk-ng/releases">Zephyr SDK
@@ -414,12 +416,12 @@ Releases</a> page contains all available SDK releases.</p>
 </li>
 <li><p>Extract the Zephyr SDK bundle archive:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;sdk download directory&gt;
-tar xvf zephyr-sdk-0.90.22_linux-x86_64.tar.gz
+tar xvf zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
 </pre></div>
 </div>
 </li>
 <li><p>Run the Zephyr SDK bundle setup script:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.90.22
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.14.0-beta1
 ./setup.sh
 </pre></div>
 </div>
@@ -439,9 +441,9 @@ script.</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">/opt</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/usr/local</span></code></p></li>
 </ul>
-<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.90.22</span></code> directory and, when
+<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.14.0-beta1</span></code> directory and, when
 extracted under <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>, the resulting installation path will be
-<code class="docutils literal notranslate"><span class="pre">$HOME/zephyr-sdk-0.90.22</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">$HOME/zephyr-sdk-0.14.0-beta1</span></code>.</p>
 <p>If you install the Zephyr SDK outside any of these locations, then it is
 required to register the Zephyr SDK in the CMake package registry by running
 the setup script, or set <span class="target" id="index-0"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ZEPHYR_SDK_INSTALL_DIR</span></code> to point to the
@@ -488,8 +490,8 @@ the <span class="target" id="index-3"></span><code class="xref std std-envvar do
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

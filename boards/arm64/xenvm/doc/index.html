@@ -43,7 +43,7 @@
             <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -154,7 +156,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -224,12 +226,12 @@ ARM Virtualization Extensions. This is example configuration, as almost any VM
 configuration is unique in many aspects.</p>
 <div class="figure align-center" id="id1">
 <img alt="XenVM" src="../../../../_images/xen_project_logo.png" />
-<p class="caption"><span class="caption-number">Fig. 183 </span><span class="caption-text">Xen virtual Guest (Credit: Xen Project)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 184 </span><span class="caption-text">Xen virtual Guest (Credit: Xen Project)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
 <p>It provides minimal set of devices:</p>
 <ul class="simple">
 <li><p>ARM Generic timer</p></li>
-<li><p>GICv2</p></li>
+<li><p>GICv2/GICv3</p></li>
 </ul>
 </div>
 <div class="section" id="hardware">
@@ -261,6 +263,12 @@ configuration is unique in many aspects.</p>
 </tbody>
 </table>
 <p>The kernel currently does not support other hardware features on this platform.</p>
+<dl class="simple">
+<dt>The default configuration using GICv2 can be found in the defconfig file:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">boards/arm64/xenvm/xenvm_defconfig</span></code></p>
+</dd>
+<dt>The default configuration using GICv3 can be found in the defconfig file:</dt><dd><p><code class="docutils literal notranslate"><span class="pre">boards/arm64/xenvm/xenvm_gicv3_defconfig</span></code></p>
+</dd>
+</dl>
 </div>
 <div class="section" id="devices">
 <h3>Devices<a class="headerlink" href="#devices" title="Permalink to this headline">¶</a></h3>
@@ -276,9 +284,12 @@ boot log:</p>
 </div>
 <div class="section" id="interrupt-controller">
 <h4>Interrupt Controller<a class="headerlink" href="#interrupt-controller" title="Permalink to this headline">¶</a></h4>
-<p>By default, GICv2 is selected. If your hardware is based on GICv3, you can
-configure Zephyr to use it, by amending device tree and Kconfig
-option in “xenvm” SoC as well as guest configuration file.</p>
+<p>Depending on the version of the GIC on your hardware, you may choose one of the
+following board configurations:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">xenvm_defconfig</span></code> selects GICv2</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">xenvm_gicv3_defconfig</span></code> selects GICv3</p></li>
+</ul>
 </div>
 <div class="section" id="cpu-core-type">
 <h4>CPU Core type<a class="headerlink" href="#cpu-core-type" title="Permalink to this headline">¶</a></h4>
@@ -310,7 +321,16 @@ in detail in next section.</p>
 <h2>Building and Running<a class="headerlink" href="#building-and-running" title="Permalink to this headline">¶</a></h2>
 <p>Use this configuration to run basic Zephyr applications and kernel tests as Xen
 guest, for example, with the <a class="reference internal" href="../../../../samples/synchronization/README.html#synchronization-sample"><span class="std std-ref">Synchronization Sample</span></a>:</p>
+<ul class="simple">
+<li><p>if your hardware is based on GICv2:</p></li>
+</ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ west build -b xenvm samples/synchronization
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>if your hardware is based on GICv3:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ west build -b xenvm_gicv3 samples/synchronization
 </pre></div>
 </div>
 <p>This will build an image with the synchronization sample app. Next, you need to
@@ -323,6 +343,8 @@ create guest configuration file <code class="code docutils literal notranslate">
 <span class="n">on_crash</span><span class="o">=</span><span class="s2">&quot;preserve&quot;</span>
 </pre></div>
 </div>
+<p>When using <code class="docutils literal notranslate"><span class="pre">xenvm_gicv3</span></code> configuration, you need to remove the <code class="docutils literal notranslate"><span class="pre">gic_version</span></code>
+parameter or set it to <code class="docutils literal notranslate"><span class="pre">&quot;v3&quot;</span></code>.</p>
 <p>You need to upload both <code class="code docutils literal notranslate"><span class="pre">zephyr.bin</span></code> and <code class="code docutils literal notranslate"><span class="pre">zephyr.conf</span></code> to your Dom0
 and then you can run Zephyr by issuing</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ xl create zephyr.conf
@@ -382,8 +404,8 @@ update <code class="code docutils literal notranslate"><span class="pre">CONFIG_
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

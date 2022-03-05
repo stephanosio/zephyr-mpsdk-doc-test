@@ -3,7 +3,7 @@ var test__lifo__loop_8c =
     [ "LIST_LEN", "test__lifo__loop_8c.html#aa0db7e0f64676a51b9d71faafae093cd", null ],
     [ "LOOPS", "test__lifo__loop_8c.html#ae19e6a1d58535ea21627dc23272ed3cf", null ],
     [ "STACK_SIZE", "test__lifo__loop_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__lifo__loop_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__lifo__loop_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "test_lifo_loop", "group__kernel__lifo__tests.html#ga1825c12f477dd96f5befa78939129575", null ],
     [ "tIsr_entry", "test__lifo__loop_8c.html#a4446fcf30336d35b3c851b60a908c3c6", null ],
     [ "tlifo_get", "test__lifo__loop_8c.html#ae5e9ae9fe2ac761f2f8e9b11a1483d0f", null ],

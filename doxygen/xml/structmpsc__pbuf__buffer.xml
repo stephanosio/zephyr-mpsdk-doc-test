@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="86" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="86" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="89" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1a3f292f281f08b97d10183f9248ee7c4d" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="89" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="89" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="92" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1aeea63b40d7b24e4396fa228bcf2a171f" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="92" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="92" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="95" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="95" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1af9340dd31ea8e37b4d609898b126497a" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="95" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="95" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="98" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1a10e9152b8c85be62eac0a3828e3b1e2a" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="98" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="98" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="101" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1a1a986b86547aa644747b9a79a982b780" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structk__spinlock" kindref="compound">k_spinlock</ref></type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="101" column="17" bodyfile="include/sys/mpsc_pbuf.h" bodystart="101" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="104" column="17" bodyfile="include/sys/mpsc_pbuf.h" bodystart="104" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1acdebdb6e7175ea3f39f484885ff6bec2" prot="public" static="no" mutable="no">
         <type><ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref></type>
@@ -100,7 +100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="104" column="23" bodyfile="include/sys/mpsc_pbuf.h" bodystart="104" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="107" column="23" bodyfile="include/sys/mpsc_pbuf.h" bodystart="107" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1ad87f240d978605258cb03d7d1e5e006f" prot="public" static="no" mutable="no">
         <type><ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref></type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="107" column="20" bodyfile="include/sys/mpsc_pbuf.h" bodystart="107" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="110" column="20" bodyfile="include/sys/mpsc_pbuf.h" bodystart="110" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1a2b5cb8a3c7f4d41cf587318ccf6b0a76" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="110" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="110" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="113" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="113" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1a917ecd5a37f6c1560091a7a63c50fd2c" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -140,7 +140,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="113" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="113" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="116" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmpsc__pbuf__buffer_1adad43580b7a632877cf7b577585a495a" prot="public" static="no" mutable="no">
+        <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+        <definition>uint32_t mpsc_pbuf_buffer::max_usage</definition>
+        <argsstring></argsstring>
+        <name>max_usage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="119" column="10" bodyfile="include/sys/mpsc_pbuf.h" bodystart="119" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmpsc__pbuf__buffer_1ae860724c0784ae560e7d03b1b6389fa0" prot="public" static="no" mutable="no">
         <type>struct k_sem</type>
@@ -153,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="115" column="12" bodyfile="include/sys/mpsc_pbuf.h" bodystart="115" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="121" column="12" bodyfile="include/sys/mpsc_pbuf.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -198,12 +211,13 @@
         <link refid="structmpsc__pbuf__skip"/>
       </node>
     </collaborationgraph>
-    <location file="include/sys/mpsc_pbuf.h" line="84" column="1" bodyfile="include/sys/mpsc_pbuf.h" bodystart="84" bodyend="116"/>
+    <location file="include/sys/mpsc_pbuf.h" line="87" column="1" bodyfile="include/sys/mpsc_pbuf.h" bodystart="87" bodyend="122"/>
     <listofallmembers>
       <member refid="structmpsc__pbuf__buffer_1a2b5cb8a3c7f4d41cf587318ccf6b0a76" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>buf</name></member>
       <member refid="structmpsc__pbuf__buffer_1a10e9152b8c85be62eac0a3828e3b1e2a" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>flags</name></member>
       <member refid="structmpsc__pbuf__buffer_1ad87f240d978605258cb03d7d1e5e006f" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>get_wlen</name></member>
       <member refid="structmpsc__pbuf__buffer_1a1a986b86547aa644747b9a79a982b780" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>lock</name></member>
+      <member refid="structmpsc__pbuf__buffer_1adad43580b7a632877cf7b577585a495a" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>max_usage</name></member>
       <member refid="structmpsc__pbuf__buffer_1acdebdb6e7175ea3f39f484885ff6bec2" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>notify_drop</name></member>
       <member refid="structmpsc__pbuf__buffer_1af9340dd31ea8e37b4d609898b126497a" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>rd_idx</name></member>
       <member refid="structmpsc__pbuf__buffer_1ae860724c0784ae560e7d03b1b6389fa0" prot="public" virt="non-virtual"><scope>mpsc_pbuf_buffer</scope><name>sem</name></member>

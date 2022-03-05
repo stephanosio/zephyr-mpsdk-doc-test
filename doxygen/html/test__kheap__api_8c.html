@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('test__kheap__api_8c.html',''); initRes
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACKSIZE)</td></tr>
+<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</td></tr>
 <tr class="separator:a6423a880df59733d2d9b509c7718d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c98e26fa0723b46d386ebc35e5d67c1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a4c98e26fa0723b46d386ebc35e5d67c1">ALLOC_SIZE_1</a>&#160;&#160;&#160;1024</td></tr>
 <tr class="separator:a4c98e26fa0723b46d386ebc35e5d67c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,8 +116,8 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a92d3d873c3cf4cd0327c5aa5bf8a0fc7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a92d3d873c3cf4cd0327c5aa5bf8a0fc7">K_THREAD_STACK_DEFINE</a> (<a class="el" href="pipe_2pipe__api_2src_2main_8c.html#a8b6a52348bfbfba409bf38688d31b8a8">tstack</a>,(512+CONFIG_TEST_EXTRA_STACKSIZE))</td></tr>
-<tr class="separator:a92d3d873c3cf4cd0327c5aa5bf8a0fc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e6b65a6d59086025e05164fc2c45504"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a3e6b65a6d59086025e05164fc2c45504">K_THREAD_STACK_DEFINE</a> (<a class="el" href="pipe_2pipe__api_2src_2main_8c.html#a8b6a52348bfbfba409bf38688d31b8a8">tstack</a>,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</td></tr>
+<tr class="separator:a3e6b65a6d59086025e05164fc2c45504"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c122ad7506d0d751fd2236ceef875e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a4c122ad7506d0d751fd2236ceef875e4">K_HEAP_DEFINE</a> (k_heap_test, 2048)</td></tr>
 <tr class="separator:a4c122ad7506d0d751fd2236ceef875e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1438304270a03699f9b6498a8384db9b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__kheap__api_8c.html#a1438304270a03699f9b6498a8384db9b">tIsr_kheap_alloc_nowait</a> (void *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>)</td></tr>
@@ -209,7 +209,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACKSIZE)</td>
+          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -273,8 +273,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a92d3d873c3cf4cd0327c5aa5bf8a0fc7" name="a92d3d873c3cf4cd0327c5aa5bf8a0fc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92d3d873c3cf4cd0327c5aa5bf8a0fc7">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
+<a id="a3e6b65a6d59086025e05164fc2c45504" name="a3e6b65a6d59086025e05164fc2c45504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e6b65a6d59086025e05164fc2c45504">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +288,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(512+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(512+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -552,7 +552,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_4fdfb77a744880490b1477a49d12c733.html">mem_heap</a></li><li class="navelem"><a class="el" href="dir_846b1ddd6d8648d609f3a39f1d2a0263.html">k_heap_api</a></li><li class="navelem"><a class="el" href="dir_7f0bca0f133cf7efc1532ed601fde7ad.html">src</a></li><li class="navelem"><a class="el" href="test__kheap__api_8c.html">test_kheap_api.c</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

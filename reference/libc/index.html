@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -169,7 +171,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -254,7 +256,7 @@ source code form with Zephyr. Instead, the <a class="reference internal" href=".
 precompiled library for each supported architecture (<code class="file docutils literal notranslate"><span class="pre">libc.a</span></code> and
 <code class="file docutils literal notranslate"><span class="pre">libm.a</span></code>). Other 3rd-party toolchains, such as <a class="reference internal" href="../../getting_started/toolchain_3rd_party_x_compilers.html#toolchain-gnuarmemb"><span class="std std-ref">GNU Arm Embedded</span></a>,
 also bundle newlib as a precompiled library.
-Newlib can be enabled by selecting the <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NEWLIB_LIBC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC</span></code></a> in the
+Newlib can be enabled by selecting the <a class="reference internal" href="../../kconfig.html#CONFIG_NEWLIB_LIBC" title="CONFIG_NEWLIB_LIBC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NEWLIB_LIBC</span></code></a> in the
 application configuration file. Part of the support for <code class="docutils literal notranslate"><span class="pre">newlib</span></code> is a set of
 hooks available under <code class="file docutils literal notranslate"><span class="pre">lib/libc/newlib/libc-hooks.c</span></code> which integrates
 the C standard library with basic kernel services.</p>
@@ -782,8 +784,8 @@ please refer to <a class="reference external" href="https://github.com/zephyrpro
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

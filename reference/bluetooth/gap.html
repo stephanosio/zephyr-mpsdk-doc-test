@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -183,7 +185,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -613,7 +615,7 @@
 <dt class="sig sig-object c" id="c.&#64;40.BT_LE_ADV_OPT_CONNECTABLE">
 <span class="target" id="group__bt__gap_1gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_LE_ADV_OPT_CONNECTABLE</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><a class="reference internal" href="../util/index.html#c.BIT" title="BIT"><span class="n"><span class="pre">BIT</span></span></a><span class="p"><span class="pre">(</span></span><span class="m"><span class="pre">0</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.@40.BT_LE_ADV_OPT_CONNECTABLE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Advertise as connectable. </p>
-<p>Advertise as connectable. If not connectable then the type of advertising is determined by providing scan response data. The advertiser address is determined by the type of advertising and/or enabling privacy <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span>. </p>
+<p>Advertise as connectable. If not connectable then the type of advertising is determined by providing scan response data. The advertiser address is determined by the type of advertising and/or enabling privacy <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span>. </p>
 </dd></dl>
 
 <dl class="c enumerator">
@@ -977,7 +979,7 @@
 <span class="target" id="group__bt__gap_1gac45d16bfe21c3c38e834c293e5ebc42b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_enable</span></span></span><span class="sig-paren">(</span><a class="reference internal" href="#c.bt_ready_cb_t" title="bt_ready_cb_t"><span class="n"><span class="pre">bt_ready_cb_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">cb</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_enable" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Enable Bluetooth. </p>
 <p>Enable Bluetooth. Must be the called before any calls that require communication with the local Bluetooth hardware.</p>
-<p>When <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SETTINGS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS</span></code></a> </span> has been enabled and the application is not managing identities of the stack itself then the application must call <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load()</span></a> before the stack is fully enabled. See <a class="reference internal" href="#group__bt__gap_1gae11eb8ad254418c38a0e8689df25a159"><span class="std std-ref">bt_id_create()</span></a> for more information.</p>
+<p>When <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_SETTINGS" title="CONFIG_BT_SETTINGS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS</span></code></a> </span> is enabled, the application must load the Bluetooth settings after this API call successfully completes before Bluetooth APIs can be used. Loading the settings before calling this function is insufficient. Bluetooth settings can be loaded with <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load()</span></a> or <a class="reference internal" href="../settings/index.html#group__settings_1gab80e8a21c80243359b652386f7ce2424"><span class="std std-ref">settings_load_subtree()</span></a> with argument “bt”. The latter selectively loads only Bluetooth settings and is recommended if <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load()</span></a> has been called earlier.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1051,7 +1053,7 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>addr</strong> – Address to use for the new identity. If NULL or initialized to BT_ADDR_LE_ANY the stack will generate a new random static address for the identity and copy it to the given parameter upon return from this function (in case the parameter was non-NULL). </p></li>
-<li><p><strong>irk</strong> – Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is not enabled this parameter must be NULL.</p></li>
+<li><p><strong>irk</strong> – Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is not enabled this parameter must be NULL.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1074,7 +1076,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>id</strong> – Existing identity identifier. </p></li>
 <li><p><strong>addr</strong> – Address to use for the new identity. If NULL or initialized to BT_ADDR_LE_ANY the stack will generate a new static random address for the identity and copy it to the given parameter upon return from this function (in case the parameter was non-NULL). </p></li>
-<li><p><strong>irk</strong> – Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is not enabled this parameter must be NULL.</p></li>
+<li><p><strong>irk</strong> – Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is not enabled this parameter must be NULL.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -1650,7 +1652,7 @@
 <p>Start LE scanning with given parameters and provide results through the specified callback.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The LE scanner by default does not use the Identity Address of the local device when <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is disabled. This is to prevent the active scanner from disclosing the identity information when requesting additional information from advertisers. In order to enable directed advertiser reports then <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SCAN_WITH_IDENTITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SCAN_WITH_IDENTITY</span></code></a> </span> must be enabled.</p>
+<p>The LE scanner by default does not use the Identity Address of the local device when <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is disabled. This is to prevent the active scanner from disclosing the identity information when requesting additional information from advertisers. In order to enable directed advertiser reports then <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_SCAN_WITH_IDENTITY" title="CONFIG_BT_SCAN_WITH_IDENTITY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SCAN_WITH_IDENTITY</span></code></a> </span> must be enabled.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1816,11 +1818,11 @@
 <span class="target" id="group__bt__gap_1ga296d1adf3c9ed2f2c65bb75b887d59ee"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_le_oob_get_local</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">id</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_le_oob" title="bt_le_oob"><span class="n"><span class="pre">bt_le_oob</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">oob</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_le_oob_get_local" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get local LE Out of Band (OOB) information. </p>
 <p>This function allows to get local information that are useful for Out of Band pairing or connection creation.</p>
-<p>If privacy <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_RPA_TIMEOUT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_RPA_TIMEOUT</span></code></a> </span> seconds. This address will be used for advertising started by <a class="reference internal" href="#group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02"><span class="std std-ref">bt_le_adv_start</span></a>, active scanning and connection creation.</p>
+<p>If privacy <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_RPA_TIMEOUT" title="CONFIG_BT_RPA_TIMEOUT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_RPA_TIMEOUT</span></code></a> </span> seconds. This address will be used for advertising started by <a class="reference internal" href="#group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02"><span class="std std-ref">bt_le_adv_start</span></a>, active scanning and connection creation.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If privacy is enabled the RPA cannot be refreshed in the following cases:<ul class="simple">
-<li><p>Creating a connection in progress, wait for the connected callback. In addition when extended advertising <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_EXT_ADV"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_EXT_ADV</span></code></a> </span> is not enabled or not supported by the controller:</p></li>
+<li><p>Creating a connection in progress, wait for the connected callback. In addition when extended advertising <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_EXT_ADV" title="CONFIG_BT_EXT_ADV"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_EXT_ADV</span></code></a> </span> is not enabled or not supported by the controller:</p></li>
 <li><p>Advertiser is enabled using a Random Static Identity Address for a different local identity.</p></li>
 <li><p>The local identity conflicts with the local identity used by other roles.</p></li>
 </ul>
@@ -1844,7 +1846,7 @@
 <span class="target" id="group__bt__gap_1ga7486aab863ca497a50dacf81657f48d4"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_le_ext_adv_oob_get_local</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_le_ext_adv</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">adv</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_le_oob" title="bt_le_oob"><span class="n"><span class="pre">bt_le_oob</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">oob</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_le_ext_adv_oob_get_local" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get local LE Out of Band (OOB) information. </p>
 <p>This function allows to get local information that are useful for Out of Band pairing or connection creation.</p>
-<p>If privacy <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_RPA_TIMEOUT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_RPA_TIMEOUT</span></code></a> </span> seconds. This address will be used by the advertising set.</p>
+<p>If privacy <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_RPA_TIMEOUT" title="CONFIG_BT_RPA_TIMEOUT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_RPA_TIMEOUT</span></code></a> </span> seconds. This address will be used by the advertising set.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When generating OOB information for multiple advertising set all OOB information needs to be generated at the same time.</p>
@@ -2128,7 +2130,7 @@
 <dd><p>Local identity. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When extended advertising <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_EXT_ADV"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_EXT_ADV</span></code></a> </span> is not enabled or not supported by the controller it is not possible to scan and advertise simultaneously using two different random addresses. </p>
+<p>When extended advertising <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_EXT_ADV" title="CONFIG_BT_EXT_ADV"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_EXT_ADV</span></code></a> </span> is not enabled or not supported by the controller it is not possible to scan and advertise simultaneously using two different random addresses. </p>
 </div>
 </dd></dl>
 
@@ -2226,7 +2228,7 @@
 <dd><p>Advertiser timeout (N * 10 ms). </p>
 <p>Application will be notified by the advertiser sent callback. Set to zero for no timeout.</p>
 <p>When using high duty cycle directed connectable advertising then this parameters must be set to a non-zero value less than or equal to the maximum of <a class="reference internal" href="#group__bt__gap__defines_1gabe483d4dd601b11ac3eea570c962b1ec"><span class="std std-ref">BT_GAP_ADV_HIGH_DUTY_CYCLE_MAX_TIMEOUT</span></a>.</p>
-<p>If privacy <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PRIVACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is enabled then the timeout must be less than <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_RPA_TIMEOUT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_RPA_TIMEOUT</span></code></a> </span>. </p>
+<p>If privacy <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_PRIVACY" title="CONFIG_BT_PRIVACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PRIVACY</span></code></a> </span> is enabled then the timeout must be less than <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_RPA_TIMEOUT" title="CONFIG_BT_RPA_TIMEOUT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_RPA_TIMEOUT</span></code></a> </span>. </p>
 </dd></dl>
 
 <dl class="c var">
@@ -2504,14 +2506,14 @@
 <dt class="sig sig-object c" id="c.bt_le_per_adv_sync_param.addr">
 <span class="target" id="structbt__le__per__adv__sync__param_1ac93adedad747f61a771ac5445e486b74"></span><a class="reference internal" href="#c.bt_addr_le_t" title="bt_addr_le_t"><span class="n"><span class="pre">bt_addr_le_t</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">addr</span></span></span><a class="headerlink" href="#c.bt_le_per_adv_sync_param.addr" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Periodic Advertiser Address. </p>
-<p>Only valid if not using the periodic advertising list </p>
+<p>Only valid if not using the periodic advertising list (BT_LE_PER_ADV_SYNC_OPT_USE_PER_ADV_LIST) </p>
 </dd></dl>
 
 <dl class="c var">
 <dt class="sig sig-object c" id="c.bt_le_per_adv_sync_param.sid">
 <span class="target" id="structbt__le__per__adv__sync__param_1a70795642ee94dd9e87f0cf251c095e7f"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sid</span></span></span><a class="headerlink" href="#c.bt_le_per_adv_sync_param.sid" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Advertiser SID. </p>
-<p>Only valid if not using the periodic advertising list </p>
+<p>Only valid if not using the periodic advertising list (BT_LE_PER_ADV_SYNC_OPT_USE_PER_ADV_LIST) </p>
 </dd></dl>
 
 <dl class="c var">
@@ -3939,8 +3941,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

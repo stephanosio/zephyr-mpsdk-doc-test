@@ -737,7 +737,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="test__essential__thread_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -763,16 +763,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="test__essential__thread_8c_1ad34bf474f429813746a2d2e009a8543b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__essential__thread_8c_1a30f6c79c9f7175bb953ebeb09587682e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(kthread_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(kthread_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>kthread_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -963,8 +963,8 @@
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__essential__thread_8c_1a3c633b04967ed70485dba88ffd7c3be0" kindref="member">kthread_thread</ref>;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><ref refid="test__essential__thread_8c_1ad34bf474f429813746a2d2e009a8543b" kindref="member">K_THREAD_STACK_DEFINE</ref>(kthread_stack,<sp/><ref refid="test__essential__thread_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="test__essential__thread_8c_1a30f6c79c9f7175bb953ebeb09587682e" kindref="member">K_THREAD_STACK_DEFINE</ref>(kthread_stack,<sp/><ref refid="test__essential__thread_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><ref refid="test__essential__thread_8c_1afdb50708f021daf1a0657bcfe0c1ffc6" kindref="member">K_SEM_DEFINE</ref>(<ref refid="interrupt__offload_8c_1aedfbc833487b0689ac260f666283f629" kindref="member">sync_sem</ref>,<sp/>0,<sp/>1);</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__essential__thread_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3)</highlight></codeline>

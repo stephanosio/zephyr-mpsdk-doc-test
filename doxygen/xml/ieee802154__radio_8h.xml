@@ -8,8 +8,8 @@
     <includes refid="ieee802154_8h" local="no">net/ieee802154.h</includes>
     <incdepgraph>
       <node id="61">
-        <label>crypto/cipher_structs.h</label>
-        <link refid="cipher__structs_8h"/>
+        <label>crypto/cipher.h</label>
+        <link refid="cipher_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
@@ -77,6 +77,8 @@
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="33" relation="include">
         </childnode>

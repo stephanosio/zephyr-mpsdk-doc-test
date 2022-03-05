@@ -66,7 +66,7 @@
       </node>
       <node id="26">
         <label>bluetooth/crypto.h</label>
-        <link refid="crypto_8h"/>
+        <link refid="bluetooth_2crypto_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -446,8 +446,8 @@
 <para>Channel disconnected </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bafbfbf546092319d30e49e959a3d35b41" prot="public">
-          <name>BT_L2CAP_CONNECT</name>
+        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bac2a46c646c8739e8b129b89698eae7cd" prot="public">
+          <name>BT_L2CAP_CONNECTING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -470,8 +470,8 @@
 <para>Channel ready for upper layer traffic on it </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba322bc7ce76a5f0d9a3330283612f2b24" prot="public">
-          <name>BT_L2CAP_DISCONNECT</name>
+        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba7a24502cfb06df715f58ad2e088cb7e8" prot="public">
+          <name>BT_L2CAP_DISCONNECTING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -958,10 +958,10 @@
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="97" refid="group__bt__l2cap_1ga642436bdf29f79495763b10231c6b25b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__bt__l2cap_1ga642436bdf29f79495763b10231c6b25b" kindref="member">bt_l2cap_chan_state</ref><sp/>{</highlight></codeline>
 <codeline lineno="99" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba1dc4c69537acf13a8c00dfca5acfb83c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba1dc4c69537acf13a8c00dfca5acfb83c" kindref="member">BT_L2CAP_DISCONNECTED</ref>,</highlight></codeline>
-<codeline lineno="101" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bafbfbf546092319d30e49e959a3d35b41" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bafbfbf546092319d30e49e959a3d35b41" kindref="member">BT_L2CAP_CONNECT</ref>,</highlight></codeline>
+<codeline lineno="101" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bac2a46c646c8739e8b129b89698eae7cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bac2a46c646c8739e8b129b89698eae7cd" kindref="member">BT_L2CAP_CONNECTING</ref>,</highlight></codeline>
 <codeline lineno="103" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba3167a1b491cb9b97ebe51f66c209f064" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba3167a1b491cb9b97ebe51f66c209f064" kindref="member">BT_L2CAP_CONFIG</ref>,</highlight></codeline>
 <codeline lineno="105" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba3adc86576ca2db5a7f74030d11699b68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba3adc86576ca2db5a7f74030d11699b68" kindref="member">BT_L2CAP_CONNECTED</ref>,</highlight></codeline>
-<codeline lineno="107" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba322bc7ce76a5f0d9a3330283612f2b24" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba322bc7ce76a5f0d9a3330283612f2b24" kindref="member">BT_L2CAP_DISCONNECT</ref>,</highlight></codeline>
+<codeline lineno="107" refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba7a24502cfb06df715f58ad2e088cb7e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba7a24502cfb06df715f58ad2e088cb7e8" kindref="member">BT_L2CAP_DISCONNECTING</ref>,</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
 <codeline lineno="109" refid="group__bt__l2cap_1ga5a80330e52ea0fa4ee3266094570bb16" refkind="member"><highlight class="normal">}<sp/>__packed<sp/><ref refid="group__bt__l2cap_1ga5a80330e52ea0fa4ee3266094570bb16" kindref="member">bt_l2cap_chan_state_t</ref>;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>

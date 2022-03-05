@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -198,6 +198,8 @@ Macros</h2></td></tr>
 <tr class="separator:a03e37d7769647008655338fe8359d946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6017a9ca9983921e946771ea57dc4201"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arm__mpu__v8m_8h.html#a6017a9ca9983921e946771ea57dc4201">REGION_RAM_ATTR</a>(base,  size)</td></tr>
 <tr class="separator:a6017a9ca9983921e946771ea57dc4201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4189f8ce0221dc34b199f3961aaf66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arm__mpu__v8m_8h.html#a8b4189f8ce0221dc34b199f3961aaf66">REGION_RAM_NOCACHE_ATTR</a>(base,  size)</td></tr>
+<tr class="separator:a8b4189f8ce0221dc34b199f3961aaf66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0293a2955ef2b9772d2ef4e1aaf9b24c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arm__mpu__v8m_8h.html#a0293a2955ef2b9772d2ef4e1aaf9b24c">REGION_FLASH_ATTR</a>(base,  size)</td></tr>
 <tr class="separator:a0293a2955ef2b9772d2ef4e1aaf9b24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b7cc3c51f518517031d76807470aa10"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arm__mpu__v8m_8h.html#a9b7cc3c51f518517031d76807470aa10">K_MEM_PARTITION_P_RW_U_RW</a></td></tr>
@@ -1154,6 +1156,41 @@ Typedefs</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a8b4189f8ce0221dc34b199f3961aaf66" name="a8b4189f8ce0221dc34b199f3961aaf66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4189f8ce0221dc34b199f3961aaf66">&#9670;&nbsp;</a></span>REGION_RAM_NOCACHE_ATTR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define REGION_RAM_NOCACHE_ATTR</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">base, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">        {\</div>
+<div class="line">                .rbar = <a class="code hl_define" href="arm__mpu__v8m_8h.html#a74c8c1c16d8d613d7b32d5fe9bd5d08d">NOT_EXEC</a> | \</div>
+<div class="line">                        P_RW_U_NA_Msk | <a class="code hl_define" href="arm__mpu__v8m_8h.html#a5c302dfed348f344a036701d4b9c7ec8">NON_SHAREABLE_Msk</a>, <span class="comment">/* AP, XN, SH */</span> \</div>
+<div class="line">                <span class="comment">/* Cache-ability */</span> \</div>
+<div class="line">                .mair_idx = <a class="code hl_define" href="arm__mpu__v8m_8h.html#a03e37d7769647008655338fe8359d946">MPU_MAIR_INDEX_SRAM_NOCACHE</a>, \</div>
+<div class="line">                .r_limit = <a class="code hl_define" href="arm__mpu__v8m_8h.html#adc21e54d67b5ad7688c15784e8b0459c">REGION_LIMIT_ADDR</a>(base, size),  <span class="comment">/* Region Limit */</span> \</div>
+<div class="line">        }</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a628642b04c07236ae1e986c248a79ae5" name="a628642b04c07236ae1e986c248a79ae5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a628642b04c07236ae1e986c248a79ae5">&#9670;&nbsp;</a></span>RO</h2>
 
@@ -1204,7 +1241,7 @@ Typedefs</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_7c40e03ac1dfef8b430578d46da2b8fd.html">arch</a></li><li class="navelem"><a class="el" href="dir_9781f966b74666fe2a685038130e4557.html">arm</a></li><li class="navelem"><a class="el" href="dir_b193b5ea49ea3ac1f9e27dd09717d0f0.html">aarch32</a></li><li class="navelem"><a class="el" href="dir_95a803cff4b1e33ba82ee614a54a5b61.html">mpu</a></li><li class="navelem"><a class="el" href="arm__mpu__v8m_8h.html">arm_mpu_v8m.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:39 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

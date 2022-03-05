@@ -17,7 +17,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Static define and Dynamic define queues, Then initialize them. Create a new thread to wait for reading data. Current thread will append item into queue. Verify if rx_data is equal insert-data address. Verify queue can be define at compile time.</para>
-<para><simplesect kind="see"><para><ref refid="group__queue__apis_1ga0236222d42768c2bf00942f328146c21" kindref="member">k_queue_init()</ref>, <ref refid="group__queue__apis_1gad47336f27e433a52600a3b67ab89556a" kindref="member">k_queue_insert()</ref>, <ref refid="group__queue__apis_1gaa84522a5ace6e7f8ba61033baca6972f" kindref="member">k_queue_append()</ref> <ref refid="test__queue__contexts_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE()</ref> </para>
+<para><simplesect kind="see"><para><ref refid="group__queue__apis_1ga0236222d42768c2bf00942f328146c21" kindref="member">k_queue_init()</ref>, <ref refid="group__queue__apis_1gad47336f27e433a52600a3b67ab89556a" kindref="member">k_queue_insert()</ref>, <ref refid="group__queue__apis_1gaa84522a5ace6e7f8ba61033baca6972f" kindref="member">k_queue_append()</ref> <ref refid="test__queue__contexts_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE()</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>

@@ -7,6 +7,7 @@
     <innerfile refid="acpi_8h">acpi.h</innerfile>
     <innerfile refid="x86_2arch_8h">arch.h</innerfile>
     <innerfile refid="x86_2arch__inlines_8h">arch_inlines.h</innerfile>
+    <innerfile refid="cpuid_8h">cpuid.h</innerfile>
     <innerfile refid="arch_2x86_2intel__vtd_8h">intel_vtd.h</innerfile>
     <innerfile refid="memmap_8h">memmap.h</innerfile>
     <innerfile refid="mmustructs_8h">mmustructs.h</innerfile>

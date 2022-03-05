@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -119,6 +119,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7fb3c76f1be6943dd4a18f26e8dd18e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__proxy.html#ga7fb3c76f1be6943dd4a18f26e8dd18e7">bt_mesh_proxy_identity_enable</a> (void)</td></tr>
 <tr class="memdesc:ga7fb3c76f1be6943dd4a18f26e8dd18e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable advertising with Node Identity.  <a href="group__bt__mesh__proxy.html#ga7fb3c76f1be6943dd4a18f26e8dd18e7">More...</a><br /></td></tr>
 <tr class="separator:ga7fb3c76f1be6943dd4a18f26e8dd18e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07d4edf80bdbc39f626f66720035c98b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__proxy.html#ga07d4edf80bdbc39f626f66720035c98b">bt_mesh_proxy_connect</a> (<a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a> net_idx)</td></tr>
+<tr class="memdesc:ga07d4edf80bdbc39f626f66720035c98b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allow Proxy Client to auto connect to a network.  <a href="group__bt__mesh__proxy.html#ga07d4edf80bdbc39f626f66720035c98b">More...</a><br /></td></tr>
+<tr class="separator:ga07d4edf80bdbc39f626f66720035c98b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa9978d460b31412c96c6c1685729ec4f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__proxy.html#gaa9978d460b31412c96c6c1685729ec4f">bt_mesh_proxy_disconnect</a> (<a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a> net_idx)</td></tr>
+<tr class="memdesc:gaa9978d460b31412c96c6c1685729ec4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disallow Proxy Client to auto connect to a network.  <a href="group__bt__mesh__proxy.html#gaa9978d460b31412c96c6c1685729ec4f">More...</a><br /></td></tr>
+<tr class="separator:gaa9978d460b31412c96c6c1685729ec4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Proxy. </p>
@@ -157,6 +163,66 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga07d4edf80bdbc39f626f66720035c98b" name="ga07d4edf80bdbc39f626f66720035c98b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga07d4edf80bdbc39f626f66720035c98b">&#9670;&nbsp;</a></span>bt_mesh_proxy_connect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bt_mesh_proxy_connect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>net_idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="proxy_8h.html">include/bluetooth/mesh/proxy.h</a>&gt;</code></p>
+
+<p>Allow Proxy Client to auto connect to a network. </p>
+<p >This API allows a proxy client to auto-connect a given network.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">net_idx</td><td>Network Key Index</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or (negative) error code on failure. </dd></dl>
+
+</div>
+</div>
+<a id="gaa9978d460b31412c96c6c1685729ec4f" name="gaa9978d460b31412c96c6c1685729ec4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa9978d460b31412c96c6c1685729ec4f">&#9670;&nbsp;</a></span>bt_mesh_proxy_disconnect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int bt_mesh_proxy_disconnect </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a>&#160;</td>
+          <td class="paramname"><em>net_idx</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="proxy_8h.html">include/bluetooth/mesh/proxy.h</a>&gt;</code></p>
+
+<p>Disallow Proxy Client to auto connect to a network. </p>
+<p >This API disallows a proxy client to connect a given network.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">net_idx</td><td>Network Key Index</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>0 on success, or (negative) error code on failure. </dd></dl>
+
+</div>
+</div>
 <a id="ga7fb3c76f1be6943dd4a18f26e8dd18e7" name="ga7fb3c76f1be6943dd4a18f26e8dd18e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga7fb3c76f1be6943dd4a18f26e8dd18e7">&#9670;&nbsp;</a></span>bt_mesh_proxy_identity_enable()</h2>
 
@@ -187,7 +253,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

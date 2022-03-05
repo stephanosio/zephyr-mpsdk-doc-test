@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -162,6 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga54dd06d48edf92ef191dab946aead216"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__backend.html#ga54dd06d48edf92ef191dab946aead216">log_backend_is_active</a> (const struct <a class="el" href="structlog__backend.html">log_backend</a> *const backend)</td></tr>
 <tr class="memdesc:ga54dd06d48edf92ef191dab946aead216"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check state of the backend.  <a href="group__log__backend.html#ga54dd06d48edf92ef191dab946aead216">More...</a><br /></td></tr>
 <tr class="separator:ga54dd06d48edf92ef191dab946aead216"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0a4dc476c3b641ab570ca2dd4f2096f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__backend.html#gac0a4dc476c3b641ab570ca2dd4f2096f">log_backend_format_set</a> (const struct <a class="el" href="structlog__backend.html">log_backend</a> *backend, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> log_type)</td></tr>
+<tr class="memdesc:gac0a4dc476c3b641ab570ca2dd4f2096f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set logging format.  <a href="group__log__backend.html#gac0a4dc476c3b641ab570ca2dd4f2096f">More...</a><br /></td></tr>
+<tr class="separator:gac0a4dc476c3b641ab570ca2dd4f2096f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Logger backend interface. </p>
@@ -222,9 +225,9 @@ Functions</h2></td></tr>
 <div class="ttc" id="acommon_8h_html_a4689212d5a549893cabb9d7782eecfb6"><div class="ttname"><a href="common_8h.html#a4689212d5a549893cabb9d7782eecfb6">STRINGIFY</a></div><div class="ttdeci">#define STRINGIFY(s)</div><div class="ttdef"><b>Definition:</b> common.h:129</div></div>
 <div class="ttc" id="agroup__iterable__section__apis_html_gabed6642b8cc06863ce97dd536698004d"><div class="ttname"><a href="group__iterable__section__apis.html#gabed6642b8cc06863ce97dd536698004d">STRUCT_SECTION_ITERABLE</a></div><div class="ttdeci">#define STRUCT_SECTION_ITERABLE(struct_type, name)</div><div class="ttdoc">Defines a new iterable section.</div><div class="ttdef"><b>Definition:</b> common.h:210</div></div>
 <div class="ttc" id="agroup__sys-util_html_ga8a0e9835e0a8f864ffc2359b9c419cc2"><div class="ttname"><a href="group__sys-util.html#ga8a0e9835e0a8f864ffc2359b9c419cc2">NUM_VA_ARGS_LESS_1</a></div><div class="ttdeci">#define NUM_VA_ARGS_LESS_1(...)</div><div class="ttdoc">Number of arguments in the variable arguments list minus one.</div><div class="ttdef"><b>Definition:</b> util_macro.h:547</div></div>
-<div class="ttc" id="astructlog__backend__control__block_html"><div class="ttname"><a href="structlog__backend__control__block.html">log_backend_control_block</a></div><div class="ttdoc">Logger backend control block.</div><div class="ttdef"><b>Definition:</b> log_backend.h:56</div></div>
-<div class="ttc" id="astructlog__backend__control__block_html_afe83e2bdd97c544905b913eb81676eb4"><div class="ttname"><a href="structlog__backend__control__block.html#afe83e2bdd97c544905b913eb81676eb4">log_backend_control_block::ctx</a></div><div class="ttdeci">void * ctx</div><div class="ttdef"><b>Definition:</b> log_backend.h:57</div></div>
-<div class="ttc" id="astructlog__backend_html"><div class="ttname"><a href="structlog__backend.html">log_backend</a></div><div class="ttdoc">Logger backend structure.</div><div class="ttdef"><b>Definition:</b> log_backend.h:65</div></div>
+<div class="ttc" id="astructlog__backend__control__block_html"><div class="ttname"><a href="structlog__backend__control__block.html">log_backend_control_block</a></div><div class="ttdoc">Logger backend control block.</div><div class="ttdef"><b>Definition:</b> log_backend.h:59</div></div>
+<div class="ttc" id="astructlog__backend__control__block_html_afe83e2bdd97c544905b913eb81676eb4"><div class="ttname"><a href="structlog__backend__control__block.html#afe83e2bdd97c544905b913eb81676eb4">log_backend_control_block::ctx</a></div><div class="ttdeci">void * ctx</div><div class="ttdef"><b>Definition:</b> log_backend.h:60</div></div>
+<div class="ttc" id="astructlog__backend_html"><div class="ttname"><a href="structlog__backend.html">log_backend</a></div><div class="ttdoc">Logger backend structure.</div><div class="ttdef"><b>Definition:</b> log_backend.h:68</div></div>
 <div class="ttc" id="autil__internal_8h_html_a7e7766e792d1638bfbbc9d0f328d3d0d"><div class="ttname"><a href="util__internal_8h.html#a7e7766e792d1638bfbbc9d0f328d3d0d">UTIL_CAT</a></div><div class="ttdeci">#define UTIL_CAT(a,...)</div><div class="ttdef"><b>Definition:</b> util_internal.h:98</div></div>
 </div><!-- fragment -->
 <p>Macro for creating a logger backend instance. </p>
@@ -397,6 +400,61 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">backend</td><td>Pointer to the backend instance. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">cnt</td><td>Number of dropped logs since last notification. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac0a4dc476c3b641ab570ca2dd4f2096f" name="gac0a4dc476c3b641ab570ca2dd4f2096f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac0a4dc476c3b641ab570ca2dd4f2096f">&#9670;&nbsp;</a></span>log_backend_format_set()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int log_backend_format_set </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structlog__backend.html">log_backend</a> *&#160;</td>
+          <td class="paramname"><em>backend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>log_type</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__backend_8h.html">include/logging/log_backend.h</a>&gt;</code></p>
+
+<p>Set logging format. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">backend</td><td>Pointer to the backend instance. </td></tr>
+    <tr><td class="paramname">log_type</td><td>Log format.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-ENOTSUP</td><td>If the backend does not support changing format types. </td></tr>
+    <tr><td class="paramname">-EINVAL</td><td>If the input is invalid. </td></tr>
+    <tr><td class="paramname">0</td><td>for success. </td></tr>
   </table>
   </dd>
 </dl>
@@ -846,7 +904,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="72" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="72" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="75" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" prot="public" static="no">
         <type>void(*</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="80" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="80" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="83" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="140" column="6" declfile="include/sys/mpsc_pbuf.h" declline="140" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="146" column="6" declfile="include/sys/mpsc_pbuf.h" declline="146" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga398dd24464a5da03e80a3fc7d728dddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>union <ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref> *</type>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="159" column="24" declfile="include/sys/mpsc_pbuf.h" declline="159" declcolumn="24"/>
+        <location file="include/sys/mpsc_pbuf.h" line="165" column="24" declfile="include/sys/mpsc_pbuf.h" declline="165" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1gaa537b9e73ca4fda26a92dc56b960270e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -201,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="168" column="6" declfile="include/sys/mpsc_pbuf.h" declline="168" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="174" column="6" declfile="include/sys/mpsc_pbuf.h" declline="174" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1gabc366638ec262c7ec41b320f0dcc6a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -242,7 +242,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="181" column="6" declfile="include/sys/mpsc_pbuf.h" declline="181" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="187" column="6" declfile="include/sys/mpsc_pbuf.h" declline="187" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga7f4df1864fad89ec9557b6f0e18c9589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="196" column="6" declfile="include/sys/mpsc_pbuf.h" declline="196" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="202" column="6" declfile="include/sys/mpsc_pbuf.h" declline="202" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga7b52261bac98a7a0c6bae2a838f23316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -350,7 +350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="211" column="6" declfile="include/sys/mpsc_pbuf.h" declline="211" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="217" column="6" declfile="include/sys/mpsc_pbuf.h" declline="217" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga9642d07deca00bc25cea2ae253ec7d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const union <ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref> *</type>
@@ -380,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="220" column="30" declfile="include/sys/mpsc_pbuf.h" declline="220" declcolumn="30"/>
+        <location file="include/sys/mpsc_pbuf.h" line="226" column="30" declfile="include/sys/mpsc_pbuf.h" declline="226" declcolumn="30"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga54f8705fa262a6cda75f1feecde5e57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -420,7 +420,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="228" column="6" declfile="include/sys/mpsc_pbuf.h" declline="228" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="234" column="6" declfile="include/sys/mpsc_pbuf.h" declline="234" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga2c8ac7f489fba611a2bca25bb2bbb5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -465,7 +465,99 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="238" column="6" declfile="include/sys/mpsc_pbuf.h" declline="238" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="244" column="6" declfile="include/sys/mpsc_pbuf.h" declline="244" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__mpsc__buf_1ga73be0efc020500865cfa07c45494f4a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mpsc_pbuf_get_utilization</definition>
+        <argsstring>(struct mpsc_pbuf_buffer *buffer, uint32_t *size, uint32_t *now)</argsstring>
+        <name>mpsc_pbuf_get_utilization</name>
+        <param>
+          <type>struct <ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>now</declname>
+        </param>
+        <briefdescription>
+<para>Get current memory utilization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer size in bytes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">now</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current buffer usage in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="252" column="6" declfile="include/sys/mpsc_pbuf.h" declline="252" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__mpsc__buf_1ga8ee7fd071effaca18797862d423279d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mpsc_pbuf_get_max_utilization</definition>
+        <argsstring>(struct mpsc_pbuf_buffer *buffer, uint32_t *max)</argsstring>
+        <name>mpsc_pbuf_get_max_utilization</name>
+        <param>
+          <type>struct <ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Get maximum memory utilization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum buffer usage in bytes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+retval 0 if utilization data collected successfully. retval -ENOTSUP if Collecting utilization data is not supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="263" column="5" declfile="include/sys/mpsc_pbuf.h" declline="263" declcolumn="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

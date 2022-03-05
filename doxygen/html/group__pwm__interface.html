@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -293,7 +293,7 @@ Functions</h2></td></tr>
 <p>PWM capture callback handler function signature. </p>
 <dl class="section note"><dt>Note</dt><dd>The callback handler will be called in interrupt context.</dd>
 <dd>
-<pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected to enable PWM capture support.</dd></dl>
+<pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected to enable PWM capture support.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -524,7 +524,7 @@ Functions</h2></td></tr>
 
 <p>Capture a single PWM period/pulse width in clock cycles for a single PWM input. </p>
 <p >This API function wraps calls to <em><a class="el" href="group__pwm__interface.html#ga720cffa0a0e985d0dd78c3df6ff1d32a" title="Configure PWM period/pulse width capture for a single PWM input.">pwm_pin_configure_capture()</a></em>, <em><a class="el" href="group__pwm__interface.html#gab4e0e3555692d1c8d9b3389685b398da" title="Enable PWM period/pulse width capture for a single PWM input.">pwm_pin_enable_capture()</a></em>, and <em><a class="el" href="group__pwm__interface.html#gad9f1705c343a6c915ceffa79aef7c809" title="Disable PWM period/pulse width capture for a single PWM input.">pwm_pin_disable_capture()</a></em> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -611,7 +611,7 @@ Functions</h2></td></tr>
 
 <p>Capture a single PWM period/pulse width in nanoseconds for a single PWM input. </p>
 <p >This API function wraps calls to <em><a class="el" href="group__pwm__interface.html#ga1c87879e7cc0cdce1158ffb6f08f73a8" title="Capture a single PWM period/pulse width in clock cycles for a single PWM input.">pwm_pin_capture_cycles()</a></em> and <em><a class="el" href="group__pwm__interface.html#ga309dc05dcda01648052eabcb3b550a0b" title="Convert from PWM cycles to nanoseconds.">pwm_pin_cycles_to_nsec()</a></em> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -698,7 +698,7 @@ Functions</h2></td></tr>
 
 <p>Capture a single PWM period/pulse width in microseconds for a single PWM input. </p>
 <p >This API function wraps calls to <em><a class="el" href="group__pwm__interface.html#ga1c87879e7cc0cdce1158ffb6f08f73a8" title="Capture a single PWM period/pulse width in clock cycles for a single PWM input.">pwm_pin_capture_cycles()</a></em> and <em><a class="el" href="group__pwm__interface.html#gace629ef3f488b247c1223c00f024f606" title="Convert from PWM cycles to microseconds.">pwm_pin_cycles_to_usec()</a></em> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -781,7 +781,7 @@ Functions</h2></td></tr>
 <p >After configuring PWM capture using this function, the capture can be enabled/disabled using <em><a class="el" href="group__pwm__interface.html#gab4e0e3555692d1c8d9b3389685b398da" title="Enable PWM period/pulse width capture for a single PWM input.">pwm_pin_enable_capture()</a></em> and <em><a class="el" href="group__pwm__interface.html#gad9f1705c343a6c915ceffa79aef7c809" title="Disable PWM period/pulse width capture for a single PWM input.">pwm_pin_disable_capture()</a></em>.</p>
 <dl class="section note"><dt>Note</dt><dd>This API function cannot be invoked from user space due to the use of a function callback. In user space, one of the simpler API functions (<em><a class="el" href="group__pwm__interface.html#ga1c87879e7cc0cdce1158ffb6f08f73a8" title="Capture a single PWM period/pulse width in clock cycles for a single PWM input.">pwm_pin_capture_cycles()</a></em>, <em><a class="el" href="group__pwm__interface.html#gabe808fdbb4e315194eb08f9bf35f121b" title="Capture a single PWM period/pulse width in microseconds for a single PWM input.">pwm_pin_capture_usec()</a></em>, or <em><a class="el" href="group__pwm__interface.html#ga2a3699e1841d977621519d502aba73ae" title="Capture a single PWM period/pulse width in nanoseconds for a single PWM input.">pwm_pin_capture_nsec()</a></em>) can be used instead.</dd>
 <dd>
-<pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
+<pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -971,7 +971,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="drivers_2pwm_8h.html">include/drivers/pwm.h</a>&gt;</code></p>
 
 <p>Disable PWM period/pulse width capture for a single PWM input. </p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1021,7 +1021,7 @@ Functions</h2></td></tr>
 
 <p>Enable PWM period/pulse width capture for a single PWM input. </p>
 <p >The PWM pin must be configured using <em><a class="el" href="group__pwm__interface.html#ga720cffa0a0e985d0dd78c3df6ff1d32a" title="Configure PWM period/pulse width capture for a single PWM input.">pwm_pin_configure_capture()</a></em> prior to calling this function.</p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1270,7 +1270,7 @@ Some multi-channel PWM controllers share the PWM period across all channels. Dep
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

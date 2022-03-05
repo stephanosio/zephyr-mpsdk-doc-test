@@ -8,7 +8,7 @@ var test__mheap__api_8c =
     [ "SIZE", "test__mheap__api_8c.html#a70ed59adcb4159ac551058053e649640", null ],
     [ "STACK_SIZE", "test__mheap__api_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "K_SEM_DEFINE", "test__mheap__api_8c.html#abd593c4a226f06ed3dc0583a565f37dc", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__mheap__api_8c.html#a92d3d873c3cf4cd0327c5aa5bf8a0fc7", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__mheap__api_8c.html#a3e6b65a6d59086025e05164fc2c45504", null ],
     [ "multi_heap_choice", "test__mheap__api_8c.html#a23a50d8e137d5b6c8471335bdae329a7", null ],
     [ "test_k_aligned_alloc", "test__mheap__api_8c.html#ac5ce6f4f45628dfdb759682a2fb83daa", null ],
     [ "test_malloc_in_isr", "group__kernel__heap__tests.html#ga3064c284d543a8a788271139d58e7e91", null ],

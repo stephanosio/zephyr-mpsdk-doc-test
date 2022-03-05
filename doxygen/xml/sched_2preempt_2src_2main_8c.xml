@@ -745,7 +745,7 @@
       </memberdef>
       <memberdef kind="define" id="sched_2preempt_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(640 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(640 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -939,16 +939,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="sched_2preempt_2src_2main_8c_1aaa492bd2839221618029320803b43b9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sched_2preempt_2src_2main_8c_1aedfe8dc620b9a777d70422389103e643" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(manager_stack,(640+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(manager_stack,(640+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>manager_stack</type>
         </param>
         <param>
-          <type>(640+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(640+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -958,10 +958,10 @@
         </inbodydescription>
         <location file="tests/kernel/sched/preempt/src/main.c" line="57" column="1" declfile="tests/kernel/sched/preempt/src/main.c" declline="57" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="sched_2preempt_2src_2main_8c_1a08a7f90a2e76d5146ef4978471e1fe7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sched_2preempt_2src_2main_8c_1acbb4459f5d19329e3543a71c97b57e1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(worker_stacks, ARRAY_SIZE(worker_priorities),(640+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(worker_stacks, ARRAY_SIZE(worker_priorities),(640+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>worker_stacks</type>
@@ -970,7 +970,7 @@
           <type><ref refid="group__sys-util_1ga70c57aae3eb654e205459b4362c8089a" kindref="member">ARRAY_SIZE</ref>(<ref refid="sched_2preempt_2src_2main_8c_1a9ba72f8fd747a6d71d953ed2c8b2b0f9" kindref="member">worker_priorities</ref>)</type>
         </param>
         <param>
-          <type>(640+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(640+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1201,17 +1201,17 @@
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_THREADS<sp/>ARRAY_SIZE(worker_priorities)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(640<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(640<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="sched_2preempt_2src_2main_8c_1a9d21484a671a51ab3d87069cf62308ce" kindref="member">last_thread</ref>;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="sched_2preempt_2src_2main_8c_1a557384dea4daf26ade6f9b73c7fee49a" kindref="member">manager_thread</ref>;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(manager_stack,<sp/><ref refid="sched_2preempt_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(manager_stack,<sp/><ref refid="sched_2preempt_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="sched_2deadline_2src_2main_8c_1ac6fa6086094cd956168b6e961c6d45be" kindref="member">worker_threads</ref>[<ref refid="sched_2preempt_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(worker_stacks,<sp/><ref refid="sched_2preempt_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>,<sp/><ref refid="sched_2preempt_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(worker_stacks,<sp/><ref refid="sched_2preempt_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>,<sp/><ref refid="sched_2preempt_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="sched_2preempt_2src_2main_8c_1a557384dea4daf26ade6f9b73c7fee49a" kindref="member">manager_thread</ref>;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>

@@ -908,16 +908,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_slab/mslab_api/src/test_mslab_api.c" line="135" column="1" declfile="tests/kernel/mem_slab/mslab_api/src/test_mslab_api.c" declline="135" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__mslab__api_8c_1ae99a6a49392cc26a2005fd25cfd82841" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mslab__api_8c_1afeb96637c76f6fdb0ff6c90a22adcce7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="test__stack__fail_8c_1a6856ea318b5a9498715e4444b13a1de1" kindref="member">stack</ref></type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1226,7 +1226,7 @@
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><ref refid="test__mslab__api_8c_1ac8b7a808c92db02e566c1bbb3c30ee81" kindref="member">K_SEM_DEFINE</ref>(SEM_HELPERDONE,<sp/>0,<sp/>1);</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><ref refid="test__mslab__api_8c_1ac8b7a808c92db02e566c1bbb3c30ee81" kindref="member">K_SEM_DEFINE</ref>(SEM_REGRESSDONE,<sp/>0,<sp/>1);</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mslab__api_8c_1ae99a6a49392cc26a2005fd25cfd82841" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="smp__boot__delay_2src_2main_8c_1a96786824adbf96016a9dbf6eded02b94" kindref="member">stack</ref>,<sp/><ref refid="timeout__order_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mslab__api_8c_1afeb96637c76f6fdb0ff6c90a22adcce7" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="smp__boot__delay_2src_2main_8c_1a96786824adbf96016a9dbf6eded02b94" kindref="member">stack</ref>,<sp/><ref refid="timeout__order_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__mslab__api_8c_1a6abbe1011826df667b2e6ca9e09447bf" kindref="member">HELPER</ref>;</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>
 <codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__mslab__api_8c_1a96accbd0946ad1ee76b9ab99feaf141c" kindref="member">helper_thread</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p0,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2)</highlight></codeline>

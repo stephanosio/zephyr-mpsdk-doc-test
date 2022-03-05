@@ -802,7 +802,7 @@
       </memberdef>
       <memberdef kind="define" id="test__sched_8h_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(640 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(640 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -857,10 +857,10 @@
         </inbodydescription>
         <location file="tests/kernel/sched/schedule_api/src/test_sched.h" line="16" column="1" declfile="tests/kernel/sched/schedule_api/src/test_sched.h" declline="16" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__sched_8h_1a6ead519f314b9fb3b12ef7e3bff44ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__sched_8h_1aef14882aedeeea6b2e51ede0c0876e39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_EXTERN</definition>
-        <argsstring>(tstacks, 10,(640+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstacks, 10,(640+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_EXTERN</name>
         <param>
           <type>tstacks</type>
@@ -869,7 +869,7 @@
           <type>10</type>
         </param>
         <param>
-          <type>(640+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(640+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1451,10 +1451,10 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13" refid="test__sched_8h_1a009eccc38d82ae14211b7cbe51a879a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_NUM_THREAD<sp/>10</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="test__sched_8h_1a6423a880df59733d2d9b509c7718d3a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(640<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="test__sched_8h_1a6423a880df59733d2d9b509c7718d3a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(640<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="test__sched_8h_1a054df7538d0e837a101abf426065940a" refkind="member"><highlight class="normal"><ref refid="test__sched_8h_1a054df7538d0e837a101abf426065940a" kindref="member">K_THREAD_STACK_EXTERN</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>);</highlight></codeline>
-<codeline lineno="17" refid="test__sched_8h_1a6ead519f314b9fb3b12ef7e3bff44ec6" refkind="member"><highlight class="normal"><ref refid="test__sched_8h_1a6ead519f314b9fb3b12ef7e3bff44ec6" kindref="member">K_THREAD_STACK_ARRAY_EXTERN</ref>(tstacks,<sp/><ref refid="test__sched_8h_1a009eccc38d82ae14211b7cbe51a879a5" kindref="member">MAX_NUM_THREAD</ref>,<sp/><ref refid="test__sched_8h_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="17" refid="test__sched_8h_1aef14882aedeeea6b2e51ede0c0876e39" refkind="member"><highlight class="normal"><ref refid="test__sched_8h_1aef14882aedeeea6b2e51ede0c0876e39" kindref="member">K_THREAD_STACK_ARRAY_EXTERN</ref>(tstacks,<sp/><ref refid="test__sched_8h_1a009eccc38d82ae14211b7cbe51a879a5" kindref="member">MAX_NUM_THREAD</ref>,<sp/><ref refid="test__sched_8h_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__sched_8h_1ad930fce335daadb13978925297e53bbf" kindref="member">user_thread</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__sched_8h_1a7cac2b600bbcd5d0c27deae1199d16ba" kindref="member">user_sem</ref>;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>

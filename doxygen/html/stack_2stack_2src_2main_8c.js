@@ -5,7 +5,7 @@ var stack_2stack_2src_2main_8c =
     [ "K_HEAP_DEFINE", "stack_2stack_2src_2main_8c.html#a584037d797b4d8bda265a55c6f49ff41", null ],
     [ "K_STACK_DEFINE", "stack_2stack_2src_2main_8c.html#a3e5082a695fa1629b46f67ac150ba1e2", null ],
     [ "K_STACK_DEFINE", "stack_2stack_2src_2main_8c.html#a5ce3379632135a4e0b3832f918e62ba8", null ],
-    [ "K_THREAD_STACK_DEFINE", "stack_2stack_2src_2main_8c.html#a4efa22d6d3b0190fc9433d2ea369dc93", null ],
+    [ "K_THREAD_STACK_DEFINE", "stack_2stack_2src_2main_8c.html#af73c8fc120f73cb7caedb4a06e76869e", null ],
     [ "test_dual_stack_play", "group__kernel__stack__tests.html#ga6f50b38507a133bca918502af4610a42", null ],
     [ "test_isr_stack_play", "group__kernel__stack__tests.html#gabae0e2066040a8f20bd69395bfdedd09", null ],
     [ "test_main", "stack_2stack_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -168,7 +170,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -457,7 +459,6 @@ libraries.</p></li>
 <ul>
 <li><p>GCC-based compiler: <code class="docutils literal notranslate"><span class="pre">xt-xcc</span></code> and its friends.</p></li>
 <li><p>Clang-based compiler: <code class="docutils literal notranslate"><span class="pre">xt-clang</span></code> and its friends.</p></li>
-<li><p>By default, Zephyr would use GCC-based <code class="docutils literal notranslate"><span class="pre">xt-xcc</span></code>.</p></li>
 </ul>
 </li>
 </ul>
@@ -466,7 +467,7 @@ libraries.</p></li>
 a remote licensing server.</p></li>
 <li><p><a class="reference internal" href="../guides/env_vars.html#env-vars"><span class="std std-ref">Set these environment variables</span></a>:</p>
 <ul class="simple">
-<li><p>Set <span class="target" id="index-19"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ZEPHYR_TOOLCHAIN_VARIANT</span></code> to <code class="docutils literal notranslate"><span class="pre">xcc</span></code>.</p></li>
+<li><p>Set <span class="target" id="index-19"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ZEPHYR_TOOLCHAIN_VARIANT</span></code> to <code class="docutils literal notranslate"><span class="pre">xcc</span></code> or <code class="docutils literal notranslate"><span class="pre">xcc-clang</span></code>.</p></li>
 <li><p>Set <span class="target" id="index-20"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XTENSA_TOOLCHAIN_PATH</span></code> to the toolchain installation
 directory.</p></li>
 <li><p>Set <span class="target" id="index-21"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XTENSA_CORE</span></code> to the SoC ID where application is being
@@ -487,16 +488,7 @@ setup the environment using:</p>
 </li>
 <li><p>To use Clang-based compiler:</p>
 <ul>
-<li><p>Set <span class="target" id="index-23"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XCC_USE_CLANG</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code>.</p>
-<ul>
-<li><p>For example:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>Linux
-<span class="go">export XCC_USE_CLANG=1</span>
-</pre></div>
-</div>
-</li>
-</ul>
-</li>
+<li><p>Set <span class="target" id="index-23"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ZEPHYR_TOOLCHAIN_VARIANT</span></code> to <code class="docutils literal notranslate"><span class="pre">xcc-clang</span></code>.</p></li>
 <li><p>Note that the Clang-based compiler may contain an old LLVM bug which
 results in the following error:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">/tmp/file.s: Assembler messages:</span>
@@ -514,6 +506,9 @@ results in the following error:</p>
 </li>
 </ul>
 </li>
+<li><p>Also note that setting <span class="target" id="index-25"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">XCC_USE_CLANG</span></code> to <code class="docutils literal notranslate"><span class="pre">1</span></code> and
+<span class="target" id="index-26"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ZEPHYR_TOOLCHAIN_VARIANT</span></code> to <code class="docutils literal notranslate"><span class="pre">xcc</span></code> is deprecated.
+Set <span class="target" id="index-27"></span><code class="xref std std-envvar docutils literal notranslate"><span class="pre">ZEPHYR_TOOLCHAIN_VARIANT</span></code> to <code class="docutils literal notranslate"><span class="pre">xcc-clang</span></code> instead.</p></li>
 </ul>
 </li>
 </ol>
@@ -529,8 +524,8 @@ results in the following error:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

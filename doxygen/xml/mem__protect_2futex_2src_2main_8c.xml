@@ -1039,7 +1039,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1219,16 +1219,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack_1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack_1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe_2src_2main_8c_1ab821b9daa1751ea809f22254c23956f7" kindref="member">stack_1</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1238,16 +1238,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/futex/src/main.c" line="29" column="1" declfile="tests/kernel/mem_protect/futex/src/main.c" declline="29" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1aa49c3f024522c1748b986e5005f72221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1ad25b3c8e8a025342723bbf1adab7c8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(futex_wake_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(futex_wake_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>futex_wake_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1257,10 +1257,10 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/futex/src/main.c" line="30" column="1" declfile="tests/kernel/mem_protect/futex/src/main.c" declline="30" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(multiple_stack,(3),(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(multiple_stack,(3),(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>multiple_stack</type>
@@ -1269,7 +1269,7 @@
           <type>(3)</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1279,10 +1279,10 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/futex/src/main.c" line="31" column="1" declfile="tests/kernel/mem_protect/futex/src/main.c" declline="31" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1aa1577ebb770c969565b7e529d7aac3a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2futex_2src_2main_8c_1a50a7a818f33a9a71916ef9736a28cfe0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(multiple_wake_stack,(3),(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(multiple_wake_stack,(3),(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>multiple_wake_stack</type>
@@ -1291,7 +1291,7 @@
           <type>(3)</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1481,16 +1481,16 @@
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOTAL_THREADS_WAITING<sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIO_WAIT<sp/>(CONFIG_ZTEST_THREAD_PRIORITY<sp/>-<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIO_WAKE<sp/>(CONFIG_ZTEST_THREAD_PRIORITY<sp/>-<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIORITY<sp/>5</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>declaration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe_2src_2main_8c_1ab821b9daa1751ea809f22254c23956f7" kindref="member">stack_1</ref>,<sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(futex_wake_stack,<sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multiple_stack,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe_2src_2main_8c_1ab821b9daa1751ea809f22254c23956f7" kindref="member">stack_1</ref>,<sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(futex_wake_stack,<sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multiple_stack,</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a31eec2f427136bb85cbe7a93e81c6fca" kindref="member">TOTAL_THREADS_WAITING</ref>,<sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multiple_wake_stack,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multiple_wake_stack,</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a31eec2f427136bb85cbe7a93e81c6fca" kindref="member">TOTAL_THREADS_WAITING</ref>,<sp/><ref refid="mem__protect_2futex_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1ac4fc55c499949fc13c04f186dad040db" kindref="member">woken</ref>;</highlight></codeline>

@@ -766,7 +766,7 @@
       </memberdef>
       <memberdef kind="define" id="threads_2tls_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -942,10 +942,10 @@
         </inbodydescription>
         <location file="tests/kernel/threads/tls/src/main.c" line="26" column="1" declfile="tests/kernel/threads/tls/src/main.c" declline="26" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2tls_2src_2main_8c_1a435bb6cb7228189bc7068a4c37bf804e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2tls_2src_2main_8c_1a4c4be6326cf3e112fe915adc33f60d1f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(tls_stack, 3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tls_stack, 3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>tls_stack</type>
@@ -954,7 +954,7 @@
           <type>3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1066,7 +1066,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="util_8h" kindref="compound">sys/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_THREADS<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATIC_DATA8<sp/><sp/><sp/><sp/>0x7FU</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATIC_DATA32<sp/><sp/><sp/>0xABCDEF00U</highlight><highlight class="normal"></highlight></codeline>
@@ -1097,7 +1097,7 @@
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="threads_2tls_2src_2main_8c_1aa191f9e1301fe9e569eb04b6173c9ec7acdff2251825a137f431b3cb6bb9ee721" kindref="member">TEST_NOT_STARTED</ref>,</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(tls_stack,<sp/><ref refid="threads_2tls_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>,<sp/><ref refid="threads_2tls_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(tls_stack,<sp/><ref refid="threads_2tls_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>,<sp/><ref refid="threads_2tls_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="threads_2tls_2src_2main_8c_1a727b717c369a932be2b92adf714b106b" kindref="member">tls_thread</ref>[<ref refid="threads_2tls_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>

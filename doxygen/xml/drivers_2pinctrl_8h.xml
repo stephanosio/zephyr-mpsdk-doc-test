@@ -218,7 +218,7 @@
         </briefdescription>
         <detaileddescription>
 <para>This macro should be used by tests or applications using runtime pin control to declare the pin control configuration for a device. <ref refid="group__pinctrl__interface_1ga502c3b6faec140188dd5d614f4777918" kindref="member">PINCTRL_DT_DEV_CONFIG_GET</ref> can later be used to obtain a reference to such configuration.</para>
-<para>Only available if <verbatim>embed:rst:inline :kconfig:`CONFIG_PINCTRL_NON_STATIC` </verbatim> is selected.</para>
+<para>Only available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PINCTRL_NON_STATIC` </verbatim> is selected.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>node_id</parametername>

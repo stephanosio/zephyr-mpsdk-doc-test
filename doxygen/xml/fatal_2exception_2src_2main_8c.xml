@@ -393,6 +393,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="107" relation="include">
@@ -963,7 +965,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="fatal_2exception_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(2048 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(2048 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1049,16 +1051,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="fatal_2exception_2src_2main_8c_1af7ec9f5d010452974fac92c7fc50b583" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="fatal_2exception_2src_2main_8c_1a8eb092c2b70094af1394d3fc0f806168" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(alt_stack,(2048+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(alt_stack,(2048+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>alt_stack</type>
         </param>
         <param>
-          <type>(2048+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(2048+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1512,12 +1514,12 @@
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_X86)<sp/>&amp;&amp;<sp/>defined(CONFIG_X86_MMU)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(8192)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>STACKSIZE<sp/>(2048<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>STACKSIZE<sp/>(2048<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAIN_PRIORITY<sp/>7</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIORITY<sp/>5</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(alt_stack,<sp/><ref refid="fatal_2exception_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(alt_stack,<sp/><ref refid="fatal_2exception_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_STACK_SENTINEL)<sp/>&amp;&amp;<sp/>!defined(CONFIG_ARCH_POSIX)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OVERFLOW_STACKSIZE<sp/>(STACKSIZE<sp/>/<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
@@ -1588,7 +1590,7 @@
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_ARM64)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__asm__<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;svc<sp/>0&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(CONFIG_CPU_CORTEX_R)<sp/>||<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_A)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_R)<sp/>||<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_A)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__asm__<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;BKPT&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(CONFIG_CPU_CORTEX_M)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__asm__<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>(</highlight><highlight class="stringliteral">&quot;swi<sp/>0&quot;</highlight><highlight class="normal">);</highlight></codeline>

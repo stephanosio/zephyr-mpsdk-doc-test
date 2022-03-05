@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -675,7 +675,7 @@ Functions</h2></td></tr>
 
 <p>Get system uptime. </p>
 <p >This routine returns the elapsed time since the system booted, in milliseconds.</p>
-<dl class="section note"><dt>Note</dt><dd>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre> config option.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre> config option.</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>Current uptime in milliseconds. </dd></dl>
 
 </div>
@@ -709,7 +709,7 @@ Functions</h2></td></tr>
 <p>Get system uptime (32-bit version). </p>
 <p >This routine returns the lower 32 bits of the system uptime in milliseconds.</p>
 <p >Because correct conversion requires full precision of the system clock there is no benefit to using this over <a class="el" href="group__clock__apis.html#gae3e992cd3257c23d5b26d765fcbb2b69" title="Get system uptime.">k_uptime_get()</a> unless you know the application will never run long enough for the system clock to approach 2^32 ticks. Calls to this function may involve interrupt blocking and 64-bit math.</p>
-<dl class="section note"><dt>Note</dt><dd>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre> config option</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre> config option</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The low 32 bits of the current uptime, in milliseconds. </dd></dl>
 
 </div>
@@ -733,7 +733,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="include_2kernel_8h.html">include/kernel.h</a>&gt;</code></p>
 
 <p>Get system uptime, in system ticks. </p>
-<p >This routine returns the elapsed time since the system booted, in ticks (c.f. </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre><p>), which is the fundamental unit of resolution of kernel timekeeping.</p>
+<p >This routine returns the elapsed time since the system booted, in ticks (c.f. </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre><p>), which is the fundamental unit of resolution of kernel timekeeping.</p>
 <dl class="section return"><dt>Returns</dt><dd>Current uptime in ticks. </dd></dl>
 
 </div>
@@ -887,7 +887,7 @@ the next tick", this convention was chosen to match legacy usage). Similarly a t
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

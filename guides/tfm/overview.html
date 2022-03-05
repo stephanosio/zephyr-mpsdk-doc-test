@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -165,7 +167,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -351,7 +353,7 @@ isolation, but also comes at the cost of additional overhead and code
 duplication between services.</p></li>
 </ul>
 <p>The current isolation level can be checked via
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_ISOLATION_LEVEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_ISOLATION_LEVEL</span></code></a>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_TFM_ISOLATION_LEVEL" title="CONFIG_TFM_ISOLATION_LEVEL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_ISOLATION_LEVEL</span></code></a>.</p>
 </div>
 </div>
 <div class="section" id="secure-boot">
@@ -388,9 +390,9 @@ by MCUBoot during the firmware update process.</p>
 </ul>
 <p>Key config properties to control secure boot in Zephyr are:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_BL2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_BL2</span></code></a> toggles the bootloader (default = <code class="docutils literal notranslate"><span class="pre">y</span></code>).</p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_KEY_FILE_S"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_S</span></code></a> overrides the secure signing key.</p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_KEY_FILE_NS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_NS</span></code></a> overrides the non-secure signing key.</p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_TFM_BL2" title="CONFIG_TFM_BL2"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_BL2</span></code></a> toggles the bootloader (default = <code class="docutils literal notranslate"><span class="pre">y</span></code>).</p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_TFM_KEY_FILE_S" title="CONFIG_TFM_KEY_FILE_S"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_S</span></code></a> overrides the secure signing key.</p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_TFM_KEY_FILE_NS" title="CONFIG_TFM_KEY_FILE_NS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_NS</span></code></a> overrides the non-secure signing key.</p></li>
 </ul>
 </div>
 <div class="section" id="secure-processing-environment">
@@ -466,7 +468,7 @@ implementations may be available on some platforms.</p>
 <div class="section" id="non-secure-processing-environment">
 <h3>Non-Secure Processing Environment<a class="headerlink" href="#non-secure-processing-environment" title="Permalink to this headline">¶</a></h3>
 <p>Zephyr is used for the NSPE, using a board that is supported by TF-M where the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BUILD_WITH_TFM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BUILD_WITH_TFM</span></code></a> flag has been enabled.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_BUILD_WITH_TFM" title="CONFIG_BUILD_WITH_TFM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BUILD_WITH_TFM</span></code></a> flag has been enabled.</p>
 <p>Generally, you simply need to select the <code class="docutils literal notranslate"><span class="pre">*_ns</span></code> variant of a valid target
 (for example <code class="docutils literal notranslate"><span class="pre">mps2_an521_ns</span></code>), which will configure your Zephyr application
 to run in the NSPE, correctly build and link it with the TF-M secure images,
@@ -488,8 +490,8 @@ environment.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

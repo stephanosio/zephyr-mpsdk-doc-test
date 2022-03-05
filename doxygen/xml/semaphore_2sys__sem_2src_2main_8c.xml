@@ -734,7 +734,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="semaphore_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -889,10 +889,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="semaphore_2sys__sem_2src_2main_8c_1ad835f67474b0404f9f5a49b4119b1f59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="semaphore_2sys__sem_2src_2main_8c_1a658f40d03fdb4b0e7a8f231b6a5c74c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(multi_stack_give, 5,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(multi_stack_give, 5,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>multi_stack_give</type>
@@ -901,7 +901,7 @@
           <type>5</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -911,10 +911,10 @@
         </inbodydescription>
         <location file="tests/kernel/semaphore/sys_sem/src/main.c" line="20" column="8" declfile="tests/kernel/semaphore/sys_sem/src/main.c" declline="20" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="semaphore_2sys__sem_2src_2main_8c_1a0cd02ab9a9a26b816d96f6da62f64e7f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="semaphore_2sys__sem_2src_2main_8c_1ab65592c10862ac7be67b70b1b582e342" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(multi_stack_take, 5,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(multi_stack_take, 5,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>multi_stack_take</type>
@@ -923,7 +923,7 @@
           <type>5</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1163,7 +1163,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest__error__hook_8h" kindref="compound">ztest_error_hook.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Macro<sp/>declarations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEM_INIT_VAL<sp/>(0U)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEM_MAX_VAL<sp/><sp/>(3U)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOTAL_MAX<sp/>(4U)</highlight><highlight class="normal"></highlight></codeline>
@@ -1172,8 +1172,8 @@
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOW_PRIO<sp/>8</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH_PRIO<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multi_stack_give,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a24969235571380b7abee2737b1b18060" kindref="member">STACK_NUMS</ref>,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multi_stack_take,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a24969235571380b7abee2737b1b18060" kindref="member">STACK_NUMS</ref>,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multi_stack_give,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a24969235571380b7abee2737b1b18060" kindref="member">STACK_NUMS</ref>,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multi_stack_take,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a24969235571380b7abee2737b1b18060" kindref="member">STACK_NUMS</ref>,<sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a939c906e68be3d5da53d490eee0b28aa" kindref="member">multi_tid_give</ref>[<ref refid="semaphore_2sys__sem_2src_2main_8c_1a24969235571380b7abee2737b1b18060" kindref="member">STACK_NUMS</ref>];</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="semaphore_2sys__sem_2src_2main_8c_1a8bbb671f462d9b2f87762a840f3e8c87" kindref="member">multi_tid_take</ref>[<ref refid="semaphore_2sys__sem_2src_2main_8c_1a24969235571380b7abee2737b1b18060" kindref="member">STACK_NUMS</ref>];</highlight></codeline>

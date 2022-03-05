@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="611" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="611" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="614" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="614" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__per__adv__param_1a61308cfe72ad23372dfd2a3bd2550726" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -32,7 +32,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="619" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="619" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="622" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="622" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__per__adv__param_1a9b80c2427171920f466601e7e8468814" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -46,14 +46,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="622" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="622" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="625" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="625" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/bluetooth/bluetooth.h" line="604" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="604" bodyend="623"/>
+    <location file="include/bluetooth/bluetooth.h" line="607" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="607" bodyend="626"/>
     <listofallmembers>
       <member refid="structbt__le__per__adv__param_1a61308cfe72ad23372dfd2a3bd2550726" prot="public" virt="non-virtual"><scope>bt_le_per_adv_param</scope><name>interval_max</name></member>
       <member refid="structbt__le__per__adv__param_1a49da44a3c0e4e866ffccffae5a9a22f7" prot="public" virt="non-virtual"><scope>bt_le_per_adv_param</scope><name>interval_min</name></member>

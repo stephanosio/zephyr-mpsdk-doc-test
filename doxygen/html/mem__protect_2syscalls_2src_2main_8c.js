@@ -6,7 +6,7 @@ var mem__protect_2syscalls_2src_2main_8c =
     [ "SLEEP_MS_LONG", "mem__protect_2syscalls_2src_2main_8c.html#ae0777ae4bbbd765657bf190bf02f8618", null ],
     [ "STACK_SZ", "mem__protect_2syscalls_2src_2main_8c.html#abd673b136ce2917bd0ae3b06d266e09c", null ],
     [ "K_HEAP_DEFINE", "mem__protect_2syscalls_2src_2main_8c.html#a80d40786fb316f5e2fde94cbd40c2da9", null ],
-    [ "K_THREAD_STACK_ARRAY_DEFINE", "mem__protect_2syscalls_2src_2main_8c.html#a20326b406f6fd8b2e5821d2c4c5298a9", null ],
+    [ "K_THREAD_STACK_ARRAY_DEFINE", "mem__protect_2syscalls_2src_2main_8c.html#abb54ccce813cce63884e3d756a36cb1e", null ],
     [ "syscall_torture", "mem__protect_2syscalls_2src_2main_8c.html#accef3520d7d935e3a1ba2be27c34bb1b", null ],
     [ "test_arg64", "mem__protect_2syscalls_2src_2main_8c.html#a5794831c6b4276a3c3d5b1afee50b4e2", null ],
     [ "test_main", "mem__protect_2syscalls_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

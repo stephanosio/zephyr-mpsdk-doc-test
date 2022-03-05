@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -136,8 +136,15 @@ Macros</h2></td></tr>
 <tr class="memdesc:gabdce594ece53e72121af70c8b2edb091"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag forcing syslog format specified in RFC 5424.  <a href="group__log__output.html#gabdce594ece53e72121af70c8b2edb091">More...</a><br /></td></tr>
 <tr class="separator:gabdce594ece53e72121af70c8b2edb091"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga181df20a3a85d190c71dbb3cb51374a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#ga181df20a3a85d190c71dbb3cb51374a6">LOG_OUTPUT_FLAG_FORMAT_SYST</a>&#160;&#160;&#160;<a class="el" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(7)</td></tr>
-<tr class="memdesc:ga181df20a3a85d190c71dbb3cb51374a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag forcing syslog format specified in mipi sys-t.  <a href="group__log__output.html#ga181df20a3a85d190c71dbb3cb51374a6">More...</a><br /></td></tr>
+<tr class="memdesc:ga181df20a3a85d190c71dbb3cb51374a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag forcing syslog format specified in mipi sys-t. This flag is deprecated and can only be used when CONFIG_LOG1 is enabled.  <a href="group__log__output.html#ga181df20a3a85d190c71dbb3cb51374a6">More...</a><br /></td></tr>
 <tr class="separator:ga181df20a3a85d190c71dbb3cb51374a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaed92da28749831e61c5a53994cfff392"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#gaed92da28749831e61c5a53994cfff392">LOG_OUTPUT_TEXT</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:gaed92da28749831e61c5a53994cfff392"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supported backend logging format types for use with log_format_set() API to switch log format at runtime.  <a href="group__log__output.html#gaed92da28749831e61c5a53994cfff392">More...</a><br /></td></tr>
+<tr class="separator:gaed92da28749831e61c5a53994cfff392"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9b8fdedad3b409df90ffc5ff59d9fab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#gac9b8fdedad3b409df90ffc5ff59d9fab">LOG_OUTPUT_SYST</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac9b8fdedad3b409df90ffc5ff59d9fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8b4a8a9810118c5ceba43b65e552ff53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#ga8b4a8a9810118c5ceba43b65e552ff53">LOG_OUTPUT_DICT</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga8b4a8a9810118c5ceba43b65e552ff53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac45fa5e07fb8503ffd754128714e3ebc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#gac45fa5e07fb8503ffd754128714e3ebc">LOG_OUTPUT_DEFINE</a>(_name,  _func,  _buf,  _size)</td></tr>
 <tr class="memdesc:gac45fa5e07fb8503ffd754128714e3ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create <a class="el" href="structlog__output.html" title="Log_output instance structure.">log_output</a> instance.  <a href="group__log__output.html#gac45fa5e07fb8503ffd754128714e3ebc">More...</a><br /></td></tr>
 <tr class="separator:gac45fa5e07fb8503ffd754128714e3ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,15 +154,24 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gafad1ddde7ecd56132a05df92adf7166d"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#gafad1ddde7ecd56132a05df92adf7166d">log_output_func_t</a>) (<a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *buf, size_t size, void *ctx)</td></tr>
 <tr class="memdesc:gafad1ddde7ecd56132a05df92adf7166d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prototype of the function processing output data.  <a href="group__log__output.html#gafad1ddde7ecd56132a05df92adf7166d">More...</a><br /></td></tr>
 <tr class="separator:gafad1ddde7ecd56132a05df92adf7166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9826c4745647fb340160b61a43e09599"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#ga9826c4745647fb340160b61a43e09599">log_format_func_t</a>) (const struct <a class="el" href="structlog__output.html">log_output</a> *output, struct <a class="el" href="structlog__msg2.html">log_msg2</a> *msg2, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> <a class="el" href="http__parser_8h.html#ab6b306ef981f5e21bb41ea2c2dbe8cd9">flags</a>)</td></tr>
+<tr class="memdesc:ga9826c4745647fb340160b61a43e09599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typedef of the function pointer table "format_table".  <a href="group__log__output.html#ga9826c4745647fb340160b61a43e09599">More...</a><br /></td></tr>
+<tr class="separator:ga9826c4745647fb340160b61a43e09599"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:gad4a212bb513f85aecb55b2ffcc3920eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__log__output.html#ga9826c4745647fb340160b61a43e09599">log_format_func_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#gad4a212bb513f85aecb55b2ffcc3920eb">log_format_func_t_get</a> (<a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> log_type)</td></tr>
+<tr class="memdesc:gad4a212bb513f85aecb55b2ffcc3920eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declaration of the get routine for function pointer table format_table.  <a href="group__log__output.html#gad4a212bb513f85aecb55b2ffcc3920eb">More...</a><br /></td></tr>
+<tr class="separator:gad4a212bb513f85aecb55b2ffcc3920eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga95a599f06b043151edff015bd4c67fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#ga95a599f06b043151edff015bd4c67fbe">log_output_msg_process</a> (const struct <a class="el" href="structlog__output.html">log_output</a> *output, struct <a class="el" href="structlog__msg.html">log_msg</a> *<a class="el" href="timer_2cycle64_2src_2main_8c.html#aa39a15fe6277f55e2fda62d3a6bf49da">msg</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> <a class="el" href="http__parser_8h.html#ab6b306ef981f5e21bb41ea2c2dbe8cd9">flags</a>)</td></tr>
 <tr class="memdesc:ga95a599f06b043151edff015bd4c67fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process log messages to readable strings.  <a href="group__log__output.html#ga95a599f06b043151edff015bd4c67fbe">More...</a><br /></td></tr>
 <tr class="separator:ga95a599f06b043151edff015bd4c67fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga98b72dbff9cec32704ba2f223def14ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#ga98b72dbff9cec32704ba2f223def14ef">log_output_msg2_process</a> (const struct <a class="el" href="structlog__output.html">log_output</a> *<a class="el" href="structlog__output.html">log_output</a>, struct <a class="el" href="structlog__msg2.html">log_msg2</a> *<a class="el" href="timer_2cycle64_2src_2main_8c.html#aa39a15fe6277f55e2fda62d3a6bf49da">msg</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> <a class="el" href="http__parser_8h.html#ab6b306ef981f5e21bb41ea2c2dbe8cd9">flags</a>)</td></tr>
 <tr class="memdesc:ga98b72dbff9cec32704ba2f223def14ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process log messages v2 to readable strings.  <a href="group__log__output.html#ga98b72dbff9cec32704ba2f223def14ef">More...</a><br /></td></tr>
 <tr class="separator:ga98b72dbff9cec32704ba2f223def14ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga99fdc938f7222cdcb2a3dcff7958e7b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#ga99fdc938f7222cdcb2a3dcff7958e7b5">log_output_msg2_syst_process</a> (const struct <a class="el" href="structlog__output.html">log_output</a> *<a class="el" href="structlog__output.html">log_output</a>, struct <a class="el" href="structlog__msg2.html">log_msg2</a> *<a class="el" href="timer_2cycle64_2src_2main_8c.html#aa39a15fe6277f55e2fda62d3a6bf49da">msg</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> <a class="el" href="semaphore_2sys__sem_2src_2main_8c.html#a194186a621980a6095d787bf06099591">flag</a>)</td></tr>
+<tr class="memdesc:ga99fdc938f7222cdcb2a3dcff7958e7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process log messages v2 to SYS-T format.  <a href="group__log__output.html#ga99fdc938f7222cdcb2a3dcff7958e7b5">More...</a><br /></td></tr>
+<tr class="separator:ga99fdc938f7222cdcb2a3dcff7958e7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad00a7a33c0e94870db5737cdb4ba6439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__output.html#gad00a7a33c0e94870db5737cdb4ba6439">log_output_string</a> (const struct <a class="el" href="structlog__output.html">log_output</a> *output, struct <a class="el" href="structlog__msg__ids.html">log_msg_ids</a> src_level, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> timestamp, const char *fmt, va_list ap, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> <a class="el" href="http__parser_8h.html#ab6b306ef981f5e21bb41ea2c2dbe8cd9">flags</a>)</td></tr>
 <tr class="memdesc:gad00a7a33c0e94870db5737cdb4ba6439"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process log string.  <a href="group__log__output.html#gad00a7a33c0e94870db5737cdb4ba6439">More...</a><br /></td></tr>
 <tr class="separator:gad00a7a33c0e94870db5737cdb4ba6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,10 +246,10 @@ Functions</h2></td></tr>
 <div class="line">                .<a class="code hl_variable" href="structlog__output.html#af43d26be4e52647c2b281362a01d1a10">buf</a> = _buf,                                            \</div>
 <div class="line">                .size = _size,                                          \</div>
 <div class="line">        }</div>
-<div class="ttc" id="astructlog__output__control__block_html"><div class="ttname"><a href="structlog__output__control__block.html">log_output_control_block</a></div><div class="ttdef"><b>Definition:</b> log_output.h:69</div></div>
-<div class="ttc" id="astructlog__output_html"><div class="ttname"><a href="structlog__output.html">log_output</a></div><div class="ttdoc">Log_output instance structure.</div><div class="ttdef"><b>Definition:</b> log_output.h:76</div></div>
-<div class="ttc" id="astructlog__output_html_aea6a7a7dee29f474d55b726ca3787f95"><div class="ttname"><a href="structlog__output.html#aea6a7a7dee29f474d55b726ca3787f95">log_output::func</a></div><div class="ttdeci">log_output_func_t func</div><div class="ttdef"><b>Definition:</b> log_output.h:77</div></div>
-<div class="ttc" id="astructlog__output_html_af43d26be4e52647c2b281362a01d1a10"><div class="ttname"><a href="structlog__output.html#af43d26be4e52647c2b281362a01d1a10">log_output::buf</a></div><div class="ttdeci">uint8_t * buf</div><div class="ttdef"><b>Definition:</b> log_output.h:79</div></div>
+<div class="ttc" id="astructlog__output__control__block_html"><div class="ttname"><a href="structlog__output__control__block.html">log_output_control_block</a></div><div class="ttdef"><b>Definition:</b> log_output.h:79</div></div>
+<div class="ttc" id="astructlog__output_html"><div class="ttname"><a href="structlog__output.html">log_output</a></div><div class="ttdoc">Log_output instance structure.</div><div class="ttdef"><b>Definition:</b> log_output.h:86</div></div>
+<div class="ttc" id="astructlog__output_html_aea6a7a7dee29f474d55b726ca3787f95"><div class="ttname"><a href="structlog__output.html#aea6a7a7dee29f474d55b726ca3787f95">log_output::func</a></div><div class="ttdeci">log_output_func_t func</div><div class="ttdef"><b>Definition:</b> log_output.h:87</div></div>
+<div class="ttc" id="astructlog__output_html_af43d26be4e52647c2b281362a01d1a10"><div class="ttname"><a href="structlog__output.html#af43d26be4e52647c2b281362a01d1a10">log_output::buf</a></div><div class="ttdeci">uint8_t * buf</div><div class="ttdef"><b>Definition:</b> log_output.h:89</div></div>
 </div><!-- fragment -->
 <p>Create <a class="el" href="structlog__output.html" title="Log_output instance structure.">log_output</a> instance. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -245,6 +261,22 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ga8b4a8a9810118c5ceba43b65e552ff53" name="ga8b4a8a9810118c5ceba43b65e552ff53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b4a8a9810118c5ceba43b65e552ff53">&#9670;&nbsp;</a></span>LOG_OUTPUT_DICT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_OUTPUT_DICT&#160;&#160;&#160;2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
 
 </div>
 </div>
@@ -334,7 +366,7 @@ Functions</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
 
-<p>Flag forcing syslog format specified in mipi sys-t. </p>
+<p>Flag forcing syslog format specified in mipi sys-t. This flag is deprecated and can only be used when CONFIG_LOG1 is enabled. </p>
 
 </div>
 </div>
@@ -392,7 +424,68 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gac9b8fdedad3b409df90ffc5ff59d9fab" name="gac9b8fdedad3b409df90ffc5ff59d9fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac9b8fdedad3b409df90ffc5ff59d9fab">&#9670;&nbsp;</a></span>LOG_OUTPUT_SYST</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_OUTPUT_SYST&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
+
+</div>
+</div>
+<a id="gaed92da28749831e61c5a53994cfff392" name="gaed92da28749831e61c5a53994cfff392"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaed92da28749831e61c5a53994cfff392">&#9670;&nbsp;</a></span>LOG_OUTPUT_TEXT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LOG_OUTPUT_TEXT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
+
+<p>Supported backend logging format types for use with log_format_set() API to switch log format at runtime. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="ga9826c4745647fb340160b61a43e09599" name="ga9826c4745647fb340160b61a43e09599"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9826c4745647fb340160b61a43e09599">&#9670;&nbsp;</a></span>log_format_func_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(* log_format_func_t) (const struct <a class="el" href="structlog__output.html">log_output</a> *output, struct <a class="el" href="structlog__msg2.html">log_msg2</a> *msg2, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> <a class="el" href="http__parser_8h.html#ab6b306ef981f5e21bb41ea2c2dbe8cd9">flags</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
+
+<p>Typedef of the function pointer table "format_table". </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">output</td><td>Pointer to <a class="el" href="structlog__output.html" title="Log_output instance structure.">log_output</a> struct. </td></tr>
+    <tr><td class="paramname">msg2</td><td>Pointer to <a class="el" href="structlog__msg2.html">log_msg2</a> struct. </td></tr>
+    <tr><td class="paramname">flags</td><td>Flags used for text formatting options.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Function pointer based on Kconfigs defined for backends. </dd></dl>
+
+</div>
+</div>
 <a id="gafad1ddde7ecd56132a05df92adf7166d" name="gafad1ddde7ecd56132a05df92adf7166d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gafad1ddde7ecd56132a05df92adf7166d">&#9670;&nbsp;</a></span>log_output_func_t</h2>
 
@@ -422,6 +515,28 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gad4a212bb513f85aecb55b2ffcc3920eb" name="gad4a212bb513f85aecb55b2ffcc3920eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad4a212bb513f85aecb55b2ffcc3920eb">&#9670;&nbsp;</a></span>log_format_func_t_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__log__output.html#ga9826c4745647fb340160b61a43e09599">log_format_func_t</a> log_format_func_t_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>log_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
+
+<p>Declaration of the get routine for function pointer table format_table. </p>
+
+</div>
+</div>
 <a id="gaca0280abfe17eea27f62c770d91aabcb" name="gaca0280abfe17eea27f62c770d91aabcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaca0280abfe17eea27f62c770d91aabcb">&#9670;&nbsp;</a></span>log_output_ctx_set()</h2>
 
@@ -706,6 +821,53 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ga99fdc938f7222cdcb2a3dcff7958e7b5" name="ga99fdc938f7222cdcb2a3dcff7958e7b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga99fdc938f7222cdcb2a3dcff7958e7b5">&#9670;&nbsp;</a></span>log_output_msg2_syst_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void log_output_msg2_syst_process </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structlog__output.html">log_output</a> *&#160;</td>
+          <td class="paramname"><em>log_output</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structlog__msg2.html">log_msg2</a> *&#160;</td>
+          <td class="paramname"><em>msg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>flag</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="log__output_8h.html">include/logging/log_output.h</a>&gt;</code></p>
+
+<p>Process log messages v2 to SYS-T format. </p>
+<p >Function is using provided context with the buffer and output function to process formatted string and output the data in sys-t log output format.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname"><a class="el" href="structlog__output.html" title="Log_output instance structure.">log_output</a></td><td>Pointer to the log output instance. </td></tr>
+    <tr><td class="paramname">msg</td><td>Log message. </td></tr>
+    <tr><td class="paramname">flag</td><td>Optional flags. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga95a599f06b043151edff015bd4c67fbe" name="ga95a599f06b043151edff015bd4c67fbe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga95a599f06b043151edff015bd4c67fbe">&#9670;&nbsp;</a></span>log_output_msg_process()</h2>
 
@@ -884,7 +1046,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

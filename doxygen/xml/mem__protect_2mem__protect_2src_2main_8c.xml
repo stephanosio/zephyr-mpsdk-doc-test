@@ -785,16 +785,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/mem_protect/src/main.c" line="17" column="1" declfile="tests/kernel/mem_protect/mem_protect/src/main.c" declline="17" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2mem__protect_2src_2main_8c_1a004c000ed929c8afa680390caec52980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2mem__protect_2src_2main_8c_1a388ead94ffc07e0641b3e1a47cd81b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(test_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(test_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>test_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -845,7 +845,7 @@
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><ref refid="mem__protect_2mem__protect_2src_2main_8c_1ab742abc145c11f7f6f211687f12c881a" kindref="member">K_HEAP_DEFINE</ref>(test_mem_heap,<sp/><ref refid="mem__protect_8h_1a0a7ca37d14b7525d6ae43b12ee16bfda" kindref="member">TEST_HEAP_SIZE</ref>);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_stack,<sp/><ref refid="mem__protect_8h_1aa7f7c04898e26208c8e5a091e99e699e" kindref="member">KOBJECT_STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_stack,<sp/><ref refid="mem__protect_8h_1aa7f7c04898e26208c8e5a091e99e699e" kindref="member">KOBJECT_STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="common_2src_2main_8c_1a8a4533f287d99bb2d7c24c0e29c9a449" kindref="member">test_main</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="22"><highlight class="normal">{</highlight></codeline>

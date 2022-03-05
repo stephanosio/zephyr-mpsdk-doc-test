@@ -3,10 +3,9 @@
   <compounddef id="cipher_8h" kind="file" language="C++">
     <compoundname>cipher.h</compoundname>
     <includes local="no">device.h</includes>
-    <includes refid="errno_8h" local="no">errno.h</includes>
     <includes refid="util_8h" local="no">sys/util.h</includes>
-    <includes refid="____assert_8h" local="no">sys/__assert.h</includes>
-    <includes refid="cipher__structs_8h" local="yes">cipher_structs.h</includes>
+    <includedby refid="crypto_2crypto_8h" local="yes">include/crypto/crypto.h</includedby>
+    <includedby refid="ieee802154_8h" local="no">include/net/ieee802154.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>include/crypto/cipher.h</label>
@@ -15,585 +14,284 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
       </node>
-      <node id="19">
-        <label>cipher_structs.h</label>
-        <link refid="cipher__structs_8h"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>sys/__assert.h</label>
-        <link refid="____assert_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>sys/errno_private.h</label>
-        <link refid="errno__private_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>sys/printk.h</label>
-        <link refid="printk_8h"/>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
+      <node id="3">
         <label>sys/util.h</label>
         <link refid="util_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>sys/util_internal.h</label>
-        <link refid="util__internal_8h"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>util_loops.h</label>
-        <link refid="util__loops_8h"/>
-      </node>
-      <node id="8">
-        <label>sys/util_macro.h</label>
-        <link refid="util__macro_8h"/>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="5">
-        <label>toolchain.h</label>
-        <link refid="toolchain_8h"/>
+        <label>sys/util_internal.h</label>
+        <link refid="util__internal_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
-      <node id="12">
+      <node id="6">
+        <label>util_loops.h</label>
+        <link refid="util__loops_8h"/>
+      </node>
+      <node id="4">
+        <label>sys/util_macro.h</label>
+        <link refid="util__macro_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
         <label>zephyr/types.h</label>
         <link refid="include_2zephyr_2types_8h"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>errno.h</label>
-        <link refid="errno_8h"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="18">
-        <label>inttypes.h</label>
-        <link refid="inttypes_8h"/>
-        <childnode refid="14" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
+      <node id="7">
         <label>stdbool.h</label>
         <link refid="stdbool_8h"/>
       </node>
-      <node id="14">
+      <node id="10">
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
       </node>
       <node id="2">
         <label>device.h</label>
       </node>
-      <node id="17">
-        <label>stdarg.h</label>
-      </node>
-      <node id="13">
+      <node id="9">
         <label>stddef.h</label>
       </node>
-      <node id="6">
-        <label>syscalls/errno_private.h</label>
-      </node>
     </incdepgraph>
-    <innerclass refid="structcrypto__driver__api" prot="public">crypto_driver_api</innerclass>
-      <sectiondef kind="func">
-      <memberdef kind="function" id="group__crypto__cipher_1ga76fed4c6f39182b5d8b77775b1c7f4e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_query_hwcaps</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>cipher_query_hwcaps</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
+    <invincdepgraph>
+      <node id="1">
+        <label>include/crypto/cipher.h</label>
+        <link refid="cipher_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>include/crypto/crypto.h</label>
+        <link refid="crypto_2crypto_8h"/>
+      </node>
+      <node id="3">
+        <label>include/net/ieee802154.h</label>
+        <link refid="ieee802154_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>include/net/ieee802154_mgmt.h</label>
+        <link refid="ieee802154__mgmt_8h"/>
+      </node>
+      <node id="5">
+        <label>include/net/ieee802154_radio.h</label>
+        <link refid="ieee802154__radio_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structcipher__ops" prot="public">cipher_ops</innerclass>
+    <innerclass refid="structccm__params" prot="public">ccm_params</innerclass>
+    <innerclass refid="structctr__params" prot="public">ctr_params</innerclass>
+    <innerclass refid="structgcm__params" prot="public">gcm_params</innerclass>
+    <innerclass refid="structcipher__ctx" prot="public">cipher_ctx</innerclass>
+    <innerclass refid="structcipher__pkt" prot="public">cipher_pkt</innerclass>
+    <innerclass refid="structcipher__aead__pkt" prot="public">cipher_aead_pkt</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__crypto__cipher_1gaa43d9907b508cb28c649aaa524d84424" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cipher_algo</name>
+        <enumvalue id="group__crypto__cipher_1ggaa43d9907b508cb28c649aaa524d84424aed0c05202ecbb1496f84ec6c383ddcf0" prot="public">
+          <name>CRYPTO_CIPHER_ALGO_AES</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
-<para>Query the crypto hardware capabilities. </para>
         </briefdescription>
         <detaileddescription>
-<para>This API is used by the app to query the capabilities supported by the crypto device. Based on this the app can specify a subset of the supported options to be honored for a session during <ref refid="group__crypto__cipher_1ga0720700438ba5819aa826aa37f0c4227" kindref="member">cipher_begin_session()</ref>.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the device structure for the driver instance.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>bitmask of supported options. </para>
-</simplesect>
-</para>
+<para>Cipher Algorithm </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="76" column="19" bodyfile="include/crypto/cipher.h" bodystart="76" bodyend="95"/>
+        <location file="include/crypto/cipher.h" line="29" column="1" bodyfile="include/crypto/cipher.h" bodystart="29" bodyend="31"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga0720700438ba5819aa826aa37f0c4227" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_begin_session</definition>
-        <argsstring>(const struct device *dev, struct cipher_ctx *ctx, enum cipher_algo algo, enum cipher_mode mode, enum cipher_op optype)</argsstring>
-        <name>cipher_begin_session</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
-        <param>
-          <type>enum <ref refid="group__crypto__cipher_1gaa43d9907b508cb28c649aaa524d84424" kindref="member">cipher_algo</ref></type>
-          <declname>algo</declname>
-        </param>
-        <param>
-          <type>enum <ref refid="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" kindref="member">cipher_mode</ref></type>
-          <declname>mode</declname>
-        </param>
-        <param>
-          <type>enum <ref refid="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" kindref="member">cipher_op</ref></type>
-          <declname>optype</declname>
-        </param>
+      <memberdef kind="enum" id="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cipher_op</name>
+        <enumvalue id="group__crypto__cipher_1gga1db3a5604bff0669672af4457aaaee21a1e1205f695285034b4889ac19a191617" prot="public">
+          <name>CRYPTO_CIPHER_OP_DECRYPT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__crypto__cipher_1gga1db3a5604bff0669672af4457aaaee21a71bf6ee186bab1729e24e37c119d0019" prot="public">
+          <name>CRYPTO_CIPHER_OP_ENCRYPT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
-<para>Setup a crypto session. </para>
         </briefdescription>
         <detaileddescription>
-<para>Initializes one time parameters, like the session key, algorithm and cipher mode which may remain constant for all operations in the session. The state may be cached in hardware and/or driver data state variables.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the device structure for the driver instance. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the context structure. Various one time parameters like key, keylength, etc. are supplied via this structure. The structure documentation specifies which fields are to be populated by the app before making this call. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>algo</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The crypto algorithm to be used in this session. e.g AES </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>mode</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The cipher mode to be used in this session. e.g CBC, CTR </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>optype</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether we should encrypt or decrypt in this session</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
+<para>Cipher Operation </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="116" column="19" bodyfile="include/crypto/cipher.h" bodystart="116" bodyend="145"/>
+        <location file="include/crypto/cipher.h" line="34" column="1" bodyfile="include/crypto/cipher.h" bodystart="34" bodyend="37"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1gaa818a3de1f2d6319cd21bf6b7caf7cbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_free_session</definition>
-        <argsstring>(const struct device *dev, struct cipher_ctx *ctx)</argsstring>
-        <name>cipher_free_session</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
+      <memberdef kind="enum" id="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" prot="public" static="no" strong="no">
+        <type></type>
+        <name>cipher_mode</name>
+        <enumvalue id="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a30ffc1c7c1489f938ed8c567a4fb885e" prot="public">
+          <name>CRYPTO_CIPHER_MODE_ECB</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a98034da3b89ae5c47749c59a3b15bbfd" prot="public">
+          <name>CRYPTO_CIPHER_MODE_CBC</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a58823b401487d57d62a067d71bd2e9d2" prot="public">
+          <name>CRYPTO_CIPHER_MODE_CTR</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a5116e1683b8c9c26582863a65128ce3b" prot="public">
+          <name>CRYPTO_CIPHER_MODE_CCM</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a2f0de7c8f0b9c1a8ac7343ca3ca72c12" prot="public">
+          <name>CRYPTO_CIPHER_MODE_GCM</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
-<para>Cleanup a crypto session. </para>
         </briefdescription>
         <detaileddescription>
-<para>Clears the hardware and/or driver state of a previous session.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the device structure for the driver instance. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the crypto context structure of the session to be freed.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
+<para>Possible cipher mode options.</para>
+<para>More to be added as required. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="158" column="19" bodyfile="include/crypto/cipher.h" bodystart="158" bodyend="166"/>
+        <location file="include/crypto/cipher.h" line="44" column="1" bodyfile="include/crypto/cipher.h" bodystart="44" bodyend="50"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga27804359f0457d98ea506d5088464622" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_callback_set</definition>
-        <argsstring>(const struct device *dev, crypto_completion_cb cb)</argsstring>
-        <name>cipher_callback_set</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <param>
-          <type><ref refid="group__crypto__cipher_1ga5bca6057c7fe56b3c6de4399e78e5389" kindref="member">crypto_completion_cb</ref></type>
-          <declname>cb</declname>
-        </param>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__crypto__cipher_1ga584073236a507f736442dedab87b1e17" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* block_op_t) (struct cipher_ctx *ctx, struct cipher_pkt *pkt)</definition>
+        <argsstring>)(struct cipher_ctx *ctx, struct cipher_pkt *pkt)</argsstring>
+        <name>block_op_t</name>
         <briefdescription>
-<para>Registers an async crypto op completion callback with the driver. </para>
         </briefdescription>
         <detaileddescription>
-<para>The application can register an async crypto op completion callback handler to be invoked by the driver, on completion of a prior request submitted via crypto_do_op(). Based on crypto device hardware semantics, this is likely to be invoked from an ISR context.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the device structure for the driver instance. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>cb</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to application callback to be called by the driver.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, -ENOTSUP if the driver does not support async op, negative errno code on other error. </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="182" column="19" bodyfile="include/crypto/cipher.h" bodystart="182" bodyend="195"/>
+        <location file="include/crypto/cipher.h" line="57" column="9" bodyfile="include/crypto/cipher.h" bodystart="57" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga05a2569f8d404593e053ce69817a457e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_block_op</definition>
-        <argsstring>(struct cipher_ctx *ctx, struct cipher_pkt *pkt)</argsstring>
-        <name>cipher_block_op</name>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref> *</type>
-          <declname>pkt</declname>
-        </param>
+      <memberdef kind="typedef" id="group__crypto__cipher_1gaa74d09d409b42b29c4c7045dc77552d2" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* cbc_op_t) (struct cipher_ctx *ctx, struct cipher_pkt *pkt, uint8_t *iv)</definition>
+        <argsstring>)(struct cipher_ctx *ctx, struct cipher_pkt *pkt, uint8_t *iv)</argsstring>
+        <name>cbc_op_t</name>
         <briefdescription>
-<para>Perform single-block crypto operation (ECB cipher mode). This should not be overloaded to operate on multiple blocks for security reasons. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the crypto context of this op. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pkt</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Structure holding the input/output buffer pointers.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="206" column="19" bodyfile="include/crypto/cipher.h" bodystart="206" bodyend="214"/>
+        <location file="include/crypto/cipher.h" line="62" column="9" bodyfile="include/crypto/cipher.h" bodystart="62" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga2c4ac483eb4e11110be939e669040700" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_cbc_op</definition>
-        <argsstring>(struct cipher_ctx *ctx, struct cipher_pkt *pkt, uint8_t *iv)</argsstring>
-        <name>cipher_cbc_op</name>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref> *</type>
-          <declname>pkt</declname>
-        </param>
-        <param>
-          <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
-          <declname>iv</declname>
-        </param>
+      <memberdef kind="typedef" id="group__crypto__cipher_1gad1ed48328ca31f8ce2dd7e0a166cacba" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* ctr_op_t) (struct cipher_ctx *ctx, struct cipher_pkt *pkt, uint8_t *ctr)</definition>
+        <argsstring>)(struct cipher_ctx *ctx, struct cipher_pkt *pkt, uint8_t *ctr)</argsstring>
+        <name>ctr_op_t</name>
         <briefdescription>
-<para>Perform Cipher Block Chaining (CBC) crypto operation. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the crypto context of this op. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pkt</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Structure holding the input/output buffer pointers. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>iv</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Initialization Vector (IV) for the operation. Same IV value should not be reused across multiple operations (within a session context) for security.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="227" column="19" bodyfile="include/crypto/cipher.h" bodystart="227" bodyend="235"/>
+        <location file="include/crypto/cipher.h" line="65" column="9" bodyfile="include/crypto/cipher.h" bodystart="65" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1gaeffb9d5dd85bf135eb2cca6d47cb373c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_ctr_op</definition>
-        <argsstring>(struct cipher_ctx *ctx, struct cipher_pkt *pkt, uint8_t *iv)</argsstring>
-        <name>cipher_ctr_op</name>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref> *</type>
-          <declname>pkt</declname>
-        </param>
-        <param>
-          <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
-          <declname>iv</declname>
-        </param>
+      <memberdef kind="typedef" id="group__crypto__cipher_1ga55e4d15dde1a5134c695ce0c31dabaf7" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* ccm_op_t) (struct cipher_ctx *ctx, struct cipher_aead_pkt *pkt, uint8_t *nonce)</definition>
+        <argsstring>)(struct cipher_ctx *ctx, struct cipher_aead_pkt *pkt, uint8_t *nonce)</argsstring>
+        <name>ccm_op_t</name>
         <briefdescription>
-<para>Perform Counter (CTR) mode crypto operation. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the crypto context of this op. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pkt</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Structure holding the input/output buffer pointers. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>iv</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Initialization Vector (IV) for the operation. We use a split counter formed by appending IV and ctr. Consequently ivlen = keylen - ctrlen. &apos;ctrlen&apos; is specified during session setup through the &apos;ctx.mode_params.ctr_params.ctr_len&apos; parameter. IV should not be reused across multiple operations (within a session context) for security. The non-IV part of the split counter is transparent to the caller and is fully managed by the crypto provider.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="254" column="19" bodyfile="include/crypto/cipher.h" bodystart="254" bodyend="262"/>
+        <location file="include/crypto/cipher.h" line="68" column="9" bodyfile="include/crypto/cipher.h" bodystart="68" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga4886e7e1cc2fcff411066875b35b8b45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_ccm_op</definition>
-        <argsstring>(struct cipher_ctx *ctx, struct cipher_aead_pkt *pkt, uint8_t *nonce)</argsstring>
-        <name>cipher_ccm_op</name>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref> *</type>
-          <declname>pkt</declname>
-        </param>
-        <param>
-          <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
-          <declname>nonce</declname>
-        </param>
+      <memberdef kind="typedef" id="group__crypto__cipher_1gad27577142dd49308b2470253a41bd09d" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* gcm_op_t) (struct cipher_ctx *ctx, struct cipher_aead_pkt *pkt, uint8_t *nonce)</definition>
+        <argsstring>)(struct cipher_ctx *ctx, struct cipher_aead_pkt *pkt, uint8_t *nonce)</argsstring>
+        <name>gcm_op_t</name>
         <briefdescription>
-<para>Perform Counter with CBC-MAC (CCM) mode crypto operation. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the crypto context of this op. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pkt</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Structure holding the input/output, Assosciated Data (AD) and auth tag buffer pointers. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>nonce</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Nonce for the operation. Same nonce value should not be reused across multiple operations (within a session context) for security.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="276" column="19" bodyfile="include/crypto/cipher.h" bodystart="276" bodyend="284"/>
+        <location file="include/crypto/cipher.h" line="71" column="9" bodyfile="include/crypto/cipher.h" bodystart="71" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga3706b034252e40b818a782c28ba5e485" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_gcm_op</definition>
-        <argsstring>(struct cipher_ctx *ctx, struct cipher_aead_pkt *pkt, uint8_t *nonce)</argsstring>
-        <name>cipher_gcm_op</name>
-        <param>
-          <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
-          <declname>ctx</declname>
-        </param>
-        <param>
-          <type>struct <ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref> *</type>
-          <declname>pkt</declname>
-        </param>
-        <param>
-          <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
-          <declname>nonce</declname>
-        </param>
+      <memberdef kind="typedef" id="group__crypto__cipher_1ga062b07459bcc2990535465a7b9044ecd" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* cipher_completion_cb) (struct cipher_pkt *completed, int status)</definition>
+        <argsstring>)(struct cipher_pkt *completed, int status)</argsstring>
+        <name>cipher_completion_cb</name>
         <briefdescription>
-<para>Perform Galois/Counter Mode (GCM) crypto operation. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>ctx</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the crypto context of this op. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>pkt</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Structure holding the input/output, Associated Data (AD) and auth tag buffer pointers. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>nonce</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Nonce for the operation. Same nonce value should not be reused across multiple operations (within a session context) for security.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>0 on success, negative errno code on fail. </para>
-</simplesect>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="298" column="19" bodyfile="include/crypto/cipher.h" bodystart="298" bodyend="306"/>
+        <location file="include/crypto/cipher.h" line="242" column="9" bodyfile="include/crypto/cipher.h" bodystart="242" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
-<para>Crypto Cipher APIs. </para>
+<para>Crypto Cipher structure definitions. </para>
     </briefdescription>
     <detaileddescription>
-<para>This file contains the Crypto Abstraction layer APIs.</para>
-<para>[Experimental] Users should note that the APIs can change as a part of ongoing development. </para>
+<para>This file contains the Crypto Abstraction layer structures.</para>
+<para>[Experimental] Users should note that the Structures can change as a part of ongoing development. </para>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
@@ -602,167 +300,145 @@
 <codeline lineno="4"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>Apache-2.0</highlight></codeline>
 <codeline lineno="5"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;device.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="errno_8h" kindref="compound">errno.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="util_8h" kindref="compound">sys/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="____assert_8h" kindref="compound">sys/__assert.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cipher__structs_8h" kindref="compound">cipher_structs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>The<sp/>API<sp/>a<sp/>crypto<sp/>driver<sp/>should<sp/>implement<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42" refid="structcrypto__driver__api" refkind="compound"><highlight class="normal">__subsystem<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>{</highlight></codeline>
-<codeline lineno="43" refid="structcrypto__driver__api_1a19859cdd9185f5d333fe6893efc27967" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structcrypto__driver__api_1a19859cdd9185f5d333fe6893efc27967" kindref="member">query_hw_caps</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Setup<sp/>a<sp/>crypto<sp/>session<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46" refid="structcrypto__driver__api_1a97d1349cbce7a6736054c2f53f8e1833" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structcrypto__driver__api_1a97d1349cbce7a6736054c2f53f8e1833" kindref="member">begin_session</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaa43d9907b508cb28c649aaa524d84424" kindref="member">cipher_algo</ref><sp/>algo,<sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" kindref="member">cipher_mode</ref><sp/>mode,</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" kindref="member">cipher_op</ref><sp/>op_type);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Tear<sp/>down<sp/>an<sp/>established<sp/>session<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51" refid="structcrypto__driver__api_1a178e5232a0b20a67c028ac41c3d8655f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structcrypto__driver__api_1a178e5232a0b20a67c028ac41c3d8655f" kindref="member">free_session</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Register<sp/>async<sp/>crypto<sp/>op<sp/>completion<sp/>callback<sp/>with<sp/>the<sp/>driver<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54" refid="structcrypto__driver__api_1abe59aca855659c2881ce54bb8ad4696d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structcrypto__driver__api_1abe59aca855659c2881ce54bb8ad4696d" kindref="member">crypto_async_callback_set</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ga5bca6057c7fe56b3c6de4399e78e5389" kindref="member">crypto_completion_cb</ref><sp/>cb);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Following<sp/>are<sp/>the<sp/>public<sp/>API<sp/>a<sp/>user<sp/>app<sp/>may<sp/>call.</highlight></codeline>
-<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>The<sp/>first<sp/>two<sp/>relate<sp/>to<sp/>crypto<sp/>&quot;session&quot;<sp/>setup<sp/>/<sp/>teardown.<sp/>Further<sp/>we</highlight></codeline>
-<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>have<sp/>four<sp/>cipher<sp/>mode<sp/>specific<sp/>(CTR,<sp/>CCM,<sp/>CBC<sp/>...)<sp/>calls<sp/>to<sp/>perform<sp/>the</highlight></codeline>
-<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>actual<sp/>crypto<sp/>operation<sp/>in<sp/>the<sp/>context<sp/>of<sp/>a<sp/>session.<sp/>Also<sp/>we<sp/>have<sp/>an</highlight></codeline>
-<codeline lineno="62"><highlight class="comment"><sp/>*<sp/>API<sp/>to<sp/>provide<sp/>the<sp/>callback<sp/>for<sp/>async<sp/>operations.</highlight></codeline>
-<codeline lineno="63"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;device.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="util_8h" kindref="compound">sys/util.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="group__crypto__cipher_1gaa43d9907b508cb28c649aaa524d84424" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaa43d9907b508cb28c649aaa524d84424" kindref="member">cipher_algo</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="group__crypto__cipher_1ggaa43d9907b508cb28c649aaa524d84424aed0c05202ecbb1496f84ec6c383ddcf0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ggaa43d9907b508cb28c649aaa524d84424aed0c05202ecbb1496f84ec6c383ddcf0" kindref="member">CRYPTO_CIPHER_ALGO_AES</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" kindref="member">cipher_op</ref><sp/>{</highlight></codeline>
+<codeline lineno="35" refid="group__crypto__cipher_1gga1db3a5604bff0669672af4457aaaee21a1e1205f695285034b4889ac19a191617" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1gga1db3a5604bff0669672af4457aaaee21a1e1205f695285034b4889ac19a191617" kindref="member">CRYPTO_CIPHER_OP_DECRYPT</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="36" refid="group__crypto__cipher_1gga1db3a5604bff0669672af4457aaaee21a71bf6ee186bab1729e24e37c119d0019" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1gga1db3a5604bff0669672af4457aaaee21a71bf6ee186bab1729e24e37c119d0019" kindref="member">CRYPTO_CIPHER_OP_ENCRYPT</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" kindref="member">cipher_mode</ref><sp/>{</highlight></codeline>
+<codeline lineno="45" refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a30ffc1c7c1489f938ed8c567a4fb885e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a30ffc1c7c1489f938ed8c567a4fb885e" kindref="member">CRYPTO_CIPHER_MODE_ECB</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="46" refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a98034da3b89ae5c47749c59a3b15bbfd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a98034da3b89ae5c47749c59a3b15bbfd" kindref="member">CRYPTO_CIPHER_MODE_CBC</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="47" refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a58823b401487d57d62a067d71bd2e9d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a58823b401487d57d62a067d71bd2e9d2" kindref="member">CRYPTO_CIPHER_MODE_CTR</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="48" refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a5116e1683b8c9c26582863a65128ce3b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a5116e1683b8c9c26582863a65128ce3b" kindref="member">CRYPTO_CIPHER_MODE_CCM</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="49" refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a2f0de7c8f0b9c1a8ac7343ca3ca72c12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a2f0de7c8f0b9c1a8ac7343ca3ca72c12" kindref="member">CRYPTO_CIPHER_MODE_GCM</ref><sp/>=<sp/>5,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declarations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="group__crypto__cipher_1ga584073236a507f736442dedab87b1e17" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__crypto__cipher_1ga584073236a507f736442dedab87b1e17" kindref="member">block_op_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*pkt);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Function<sp/>signatures<sp/>for<sp/>encryption/<sp/>decryption<sp/>using<sp/>standard<sp/>cipher<sp/>modes</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*<sp/>like<sp/><sp/>CBC,<sp/>CTR,<sp/>CCM.</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="group__crypto__cipher_1gaa74d09d409b42b29c4c7045dc77552d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__crypto__cipher_1gaa74d09d409b42b29c4c7045dc77552d2" kindref="member">cbc_op_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*pkt,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*iv);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76" refid="group__crypto__cipher_1ga76fed4c6f39182b5d8b77775b1c7f4e0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga76fed4c6f39182b5d8b77775b1c7f4e0" kindref="member">cipher_query_hwcaps</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*api;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*)<sp/>dev-&gt;<ref refid="structdevice_1a4a2e6a2cfeb6efed7d5383c33458f46d" kindref="member">api</ref>;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>api-&gt;<ref refid="structcrypto__driver__api_1a19859cdd9185f5d333fe6893efc27967" kindref="member">query_hw_caps</ref>(dev);</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT((tmp<sp/>&amp;<sp/>(<ref refid="group__crypto__cipher_1ga821c2629510aad5d591a565767d8abbd" kindref="member">CAP_OPAQUE_KEY_HNDL</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga95fd2a144207a575b2e0d24d5d6bf85a" kindref="member">CAP_RAW_KEY</ref>))<sp/>!=<sp/>0,</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Driver<sp/>should<sp/>support<sp/>at<sp/>least<sp/>one<sp/>key<sp/>type:<sp/>RAW/Opaque&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT((tmp<sp/>&amp;<sp/>(<ref refid="group__crypto__cipher_1ga4c00d0513306fbc511fb4828108d37c8" kindref="member">CAP_INPLACE_OPS</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga858150378de8f024e96614a6c2f138a2" kindref="member">CAP_SEPARATE_IO_BUFS</ref>))<sp/>!=<sp/>0,</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Driver<sp/>should<sp/>support<sp/>at<sp/>least<sp/>one<sp/>IO<sp/>buf<sp/>type:<sp/>Inplace/separate&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT((tmp<sp/>&amp;<sp/>(<ref refid="group__crypto__cipher_1ga469bae7c354d17ba9b22c7ce4d8e076a" kindref="member">CAP_SYNC_OPS</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga62492a4ce9c9274c78f3a7a915a66983" kindref="member">CAP_ASYNC_OPS</ref>))<sp/>!=<sp/>0,</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;Driver<sp/>should<sp/>support<sp/>at<sp/>least<sp/>one<sp/>op-type:<sp/>sync/async&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tmp;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116" refid="group__crypto__cipher_1ga0720700438ba5819aa826aa37f0c4227" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga0720700438ba5819aa826aa37f0c4227" kindref="member">cipher_begin_session</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaa43d9907b508cb28c649aaa524d84424" kindref="member">cipher_algo</ref><sp/>algo,</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" kindref="member">cipher_mode</ref><sp/><sp/>mode,</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" kindref="member">cipher_op</ref><sp/>optype)</highlight></codeline>
-<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*api;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref>;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*)<sp/>dev-&gt;<ref refid="structdevice_1a4a2e6a2cfeb6efed7d5383c33458f46d" kindref="member">api</ref>;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structcipher__ctx_1a44842ea8ece2aaea4d757137cdb67b52" kindref="member">device</ref><sp/>=<sp/>dev;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref><sp/>=<sp/>mode;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>=<sp/>(ctx-&gt;<ref refid="structcipher__ctx_1a5745811b9b08e6df51f9b8f8b14ceae7" kindref="member">flags</ref><sp/>&amp;<sp/>(<ref refid="group__crypto__cipher_1ga821c2629510aad5d591a565767d8abbd" kindref="member">CAP_OPAQUE_KEY_HNDL</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga95fd2a144207a575b2e0d24d5d6bf85a" kindref="member">CAP_RAW_KEY</ref>));</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(<ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>!=<sp/>0U,<sp/></highlight><highlight class="stringliteral">&quot;Keytype<sp/>missing:<sp/>RAW<sp/>Key<sp/>or<sp/>OPAQUE<sp/>handle&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(<ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>!=<sp/>(<ref refid="group__crypto__cipher_1ga821c2629510aad5d591a565767d8abbd" kindref="member">CAP_OPAQUE_KEY_HNDL</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga95fd2a144207a575b2e0d24d5d6bf85a" kindref="member">CAP_RAW_KEY</ref>),</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;conflicting<sp/>options<sp/>for<sp/>keytype&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>=<sp/>(ctx-&gt;<ref refid="structcipher__ctx_1a5745811b9b08e6df51f9b8f8b14ceae7" kindref="member">flags</ref><sp/>&amp;<sp/>(<ref refid="group__crypto__cipher_1ga4c00d0513306fbc511fb4828108d37c8" kindref="member">CAP_INPLACE_OPS</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga858150378de8f024e96614a6c2f138a2" kindref="member">CAP_SEPARATE_IO_BUFS</ref>));</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(<ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>!=<sp/>0U,<sp/></highlight><highlight class="stringliteral">&quot;IO<sp/>buffer<sp/>type<sp/>missing&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(<ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>!=<sp/>(<ref refid="group__crypto__cipher_1ga4c00d0513306fbc511fb4828108d37c8" kindref="member">CAP_INPLACE_OPS</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga858150378de8f024e96614a6c2f138a2" kindref="member">CAP_SEPARATE_IO_BUFS</ref>),</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;conflicting<sp/>options<sp/>for<sp/>IO<sp/>buffer<sp/>type&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>=<sp/>(ctx-&gt;<ref refid="structcipher__ctx_1a5745811b9b08e6df51f9b8f8b14ceae7" kindref="member">flags</ref><sp/>&amp;<sp/>(<ref refid="group__crypto__cipher_1ga469bae7c354d17ba9b22c7ce4d8e076a" kindref="member">CAP_SYNC_OPS</ref><sp/>|<sp/><ref refid="group__crypto__cipher_1ga62492a4ce9c9274c78f3a7a915a66983" kindref="member">CAP_ASYNC_OPS</ref>));</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(<ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>!=<sp/>0U,<sp/></highlight><highlight class="stringliteral">&quot;sync/async<sp/>type<sp/>missing&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(<ref refid="http__parser_8h_1ab6b306ef981f5e21bb41ea2c2dbe8cd9" kindref="member">flags</ref><sp/>!=<sp/>(<ref refid="group__crypto__cipher_1ga469bae7c354d17ba9b22c7ce4d8e076a" kindref="member">CAP_SYNC_OPS</ref><sp/>|<sp/><sp/><ref refid="group__crypto__cipher_1ga62492a4ce9c9274c78f3a7a915a66983" kindref="member">CAP_ASYNC_OPS</ref>),</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;conflicting<sp/>options<sp/>for<sp/>sync/async&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>api-&gt;<ref refid="structcrypto__driver__api_1a97d1349cbce7a6736054c2f53f8e1833" kindref="member">begin_session</ref>(dev,<sp/>ctx,<sp/>algo,<sp/>mode,<sp/>optype);</highlight></codeline>
-<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158" refid="group__crypto__cipher_1gaa818a3de1f2d6319cd21bf6b7caf7cbb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaa818a3de1f2d6319cd21bf6b7caf7cbb" kindref="member">cipher_free_session</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx)</highlight></codeline>
-<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*api;</highlight></codeline>
+<codeline lineno="65" refid="group__crypto__cipher_1gad1ed48328ca31f8ce2dd7e0a166cacba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__crypto__cipher_1gad1ed48328ca31f8ce2dd7e0a166cacba" kindref="member">ctr_op_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*pkt,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*ctr);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="group__crypto__cipher_1ga55e4d15dde1a5134c695ce0c31dabaf7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__crypto__cipher_1ga55e4d15dde1a5134c695ce0c31dabaf7" kindref="member">ccm_op_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref><sp/>*<ref refid="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" kindref="member">pkt</ref>,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*nonce);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="group__crypto__cipher_1gad27577142dd49308b2470253a41bd09d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int<sp/>(*<ref refid="group__crypto__cipher_1gad27577142dd49308b2470253a41bd09d" kindref="member">gcm_op_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref><sp/>*<ref refid="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" kindref="member">pkt</ref>,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*nonce);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="structcipher__ops" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ops" kindref="compound">cipher_ops</ref><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" kindref="member">cipher_mode</ref><sp/><ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79" refid="structcipher__ops_1a2675dd312be240c24d7d2c0e81bcde2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ga584073236a507f736442dedab87b1e17" kindref="member">block_op_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcipher__ops_1a2675dd312be240c24d7d2c0e81bcde2b" kindref="member">block_crypt_hndlr</ref>;</highlight></codeline>
+<codeline lineno="80" refid="structcipher__ops_1abc7cf6306467c5aff24ae3faa37902e6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1gaa74d09d409b42b29c4c7045dc77552d2" kindref="member">cbc_op_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcipher__ops_1abc7cf6306467c5aff24ae3faa37902e6" kindref="member">cbc_crypt_hndlr</ref>;</highlight></codeline>
+<codeline lineno="81" refid="structcipher__ops_1ac792113d841e3a6b7dc107d7123162db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1gad1ed48328ca31f8ce2dd7e0a166cacba" kindref="member">ctr_op_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcipher__ops_1ac792113d841e3a6b7dc107d7123162db" kindref="member">ctr_crypt_hndlr</ref>;</highlight></codeline>
+<codeline lineno="82" refid="structcipher__ops_1af53f5f04fb5e1a7ca148f786d8cfe41f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ga55e4d15dde1a5134c695ce0c31dabaf7" kindref="member">ccm_op_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcipher__ops_1af53f5f04fb5e1a7ca148f786d8cfe41f" kindref="member">ccm_crypt_hndlr</ref>;</highlight></codeline>
+<codeline lineno="83" refid="structcipher__ops_1a570d1ed37d6cce61caa1c6e257f9cdc8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1gad27577142dd49308b2470253a41bd09d" kindref="member">gcm_op_t</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structcipher__ops_1a570d1ed37d6cce61caa1c6e257f9cdc8" kindref="member">gcm_crypt_hndlr</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structccm__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structccm__params" kindref="compound">ccm_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="88" refid="structccm__params_1a6a0d01056dcc05e2f7dccef25d4c5747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structccm__params_1a6a0d01056dcc05e2f7dccef25d4c5747" kindref="member">tag_len</ref>;</highlight></codeline>
+<codeline lineno="89" refid="structccm__params_1adbc306823d339083ec439277a7e35e8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structccm__params_1adbc306823d339083ec439277a7e35e8a" kindref="member">nonce_len</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structctr__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structctr__params" kindref="compound">ctr_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>CTR<sp/>mode<sp/>counter<sp/>is<sp/>a<sp/>split<sp/>counter<sp/>composed<sp/>of<sp/>iv<sp/>and<sp/>counter</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>such<sp/>that<sp/>ivlen<sp/>+<sp/>ctr_len<sp/>=<sp/>keylen</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structctr__params_1a8187ad9553ff8b223f39c14919c48b70" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structctr__params_1a8187ad9553ff8b223f39c14919c48b70" kindref="member">ctr_len</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="structgcm__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgcm__params" kindref="compound">gcm_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="100" refid="structgcm__params_1a4fd478dee1eedfd75ab77e8e63bcbf40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structgcm__params_1a4fd478dee1eedfd75ab77e8e63bcbf40" kindref="member">tag_len</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structgcm__params_1ae4458a261310577778fca927e7fdc829" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structgcm__params_1ae4458a261310577778fca927e7fdc829" kindref="member">nonce_len</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="structcipher__ctx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ops" kindref="compound">cipher_ops</ref><sp/><ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Cryptographic<sp/>key<sp/>to<sp/>be<sp/>used<sp/>in<sp/>this<sp/>session<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structcipher__ctx_1a99c2676f8cdc9cef7222a01511f9dc3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*<ref refid="structcipher__ctx_1a99c2676f8cdc9cef7222a01511f9dc3f" kindref="member">bit_stream</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>For<sp/>cases<sp/>where<sp/><sp/>key<sp/>is<sp/>protected<sp/>and<sp/>is<sp/>not</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>available<sp/>to<sp/>caller</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="structcipher__ctx_1a81dfa0793e62065a247bd3d5b5bdc903" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcipher__ctx_1a81dfa0793e62065a247bd3d5b5bdc903" kindref="member">handle</ref>;</highlight></codeline>
+<codeline lineno="126" refid="structcipher__ctx_1a94aaf97ca644ede6b3f1aca165dd1ec0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="structcipher__ctx_1a94aaf97ca644ede6b3f1aca165dd1ec0" kindref="member">key</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="structcipher__ctx_1a44842ea8ece2aaea4d757137cdb67b52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*<ref refid="structcipher__ctx_1a44842ea8ece2aaea4d757137cdb67b52" kindref="member">device</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="structcipher__ctx_1a624cf985cf35b3aa8681c3892fd67429" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcipher__ctx_1a624cf985cf35b3aa8681c3892fd67429" kindref="member">drv_sessn_state</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="structcipher__ctx_1a0439c7f7c300a59296d353e76132c028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="structcipher__ctx_1a0439c7f7c300a59296d353e76132c028" kindref="member">app_sessn_state</ref>;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153" refid="structcipher__ctx_1a3b6f3cdda6344880f3dcc3e2c8246b15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structccm__params" kindref="compound">ccm_params</ref><sp/><ref refid="structcipher__ctx_1a3b6f3cdda6344880f3dcc3e2c8246b15" kindref="member">ccm_info</ref>;</highlight></codeline>
+<codeline lineno="154" refid="structcipher__ctx_1a8a7b59087bd474eaad8d996e1600e757" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structctr__params" kindref="compound">ctr_params</ref><sp/><ref refid="structcipher__ctx_1a8a7b59087bd474eaad8d996e1600e757" kindref="member">ctr_info</ref>;</highlight></codeline>
+<codeline lineno="155" refid="structcipher__ctx_1a995276020bd2ef77451d941fa3b238d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgcm__params" kindref="compound">gcm_params</ref><sp/><ref refid="structcipher__ctx_1a995276020bd2ef77451d941fa3b238d2" kindref="member">gcm_info</ref>;</highlight></codeline>
+<codeline lineno="156" refid="structcipher__ctx_1ae39bf087a95913630046f99b5db54e63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><ref refid="structcipher__ctx_1ae39bf087a95913630046f99b5db54e63" kindref="member">mode_params</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="structcipher__ctx_1a10dbfc431a748118c186099c249ed5e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><sp/><ref refid="structcipher__ctx_1a10dbfc431a748118c186099c249ed5e4" kindref="member">keylen</ref>;</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*)<sp/>dev-&gt;<ref refid="structdevice_1a4a2e6a2cfeb6efed7d5383c33458f46d" kindref="member">api</ref>;</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>api-&gt;<ref refid="structcrypto__driver__api_1a178e5232a0b20a67c028ac41c3d8655f" kindref="member">free_session</ref>(dev,<sp/>ctx);</highlight></codeline>
-<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="182" refid="group__crypto__cipher_1ga27804359f0457d98ea506d5088464622" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga27804359f0457d98ea506d5088464622" kindref="member">cipher_callback_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__crypto__cipher_1ga5bca6057c7fe56b3c6de4399e78e5389" kindref="member">crypto_completion_cb</ref><sp/>cb)</highlight></codeline>
-<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*api;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>api<sp/>=<sp/>(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcrypto__driver__api" kindref="compound">crypto_driver_api</ref><sp/>*)<sp/>dev-&gt;<ref refid="structdevice_1a4a2e6a2cfeb6efed7d5383c33458f46d" kindref="member">api</ref>;</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(api-&gt;<ref refid="structcrypto__driver__api_1abe59aca855659c2881ce54bb8ad4696d" kindref="member">crypto_async_callback_set</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>api-&gt;<ref refid="structcrypto__driver__api_1abe59aca855659c2881ce54bb8ad4696d" kindref="member">crypto_async_callback_set</ref>(dev,<sp/>cb);</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="group__system__errno_1ga91457bbf35f0f1085619a99423bb1f33" kindref="member">ENOTSUP</ref>;</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight></codeline>
-<codeline lineno="206" refid="group__crypto__cipher_1ga05a2569f8d404593e053ce69817a457e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga05a2569f8d404593e053ce69817a457e" kindref="member">cipher_block_op</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*pkt)</highlight></codeline>
-<codeline lineno="208"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref><sp/>==<sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a30ffc1c7c1489f938ed8c567a4fb885e" kindref="member">CRYPTO_CIPHER_MODE_ECB</ref>,<sp/></highlight><highlight class="stringliteral">&quot;ECB<sp/>mode<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;session<sp/>invoking<sp/>a<sp/>different<sp/>mode<sp/>handler&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkt-&gt;<ref refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" kindref="member">ctx</ref><sp/>=<sp/>ctx;</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a2675dd312be240c24d7d2c0e81bcde2b" kindref="member">block_crypt_hndlr</ref>(ctx,<sp/>pkt);</highlight></codeline>
-<codeline lineno="214"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight></codeline>
-<codeline lineno="227" refid="group__crypto__cipher_1ga2c4ac483eb4e11110be939e669040700" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga2c4ac483eb4e11110be939e669040700" kindref="member">cipher_cbc_op</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*pkt,<sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*iv)</highlight></codeline>
-<codeline lineno="229"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref><sp/>==<sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a98034da3b89ae5c47749c59a3b15bbfd" kindref="member">CRYPTO_CIPHER_MODE_CBC</ref>,<sp/></highlight><highlight class="stringliteral">&quot;CBC<sp/>mode<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;session<sp/>invoking<sp/>a<sp/>different<sp/>mode<sp/>handler&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkt-&gt;<ref refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" kindref="member">ctx</ref><sp/>=<sp/>ctx;</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1abc7cf6306467c5aff24ae3faa37902e6" kindref="member">cbc_crypt_hndlr</ref>(ctx,<sp/>pkt,<sp/>iv);</highlight></codeline>
-<codeline lineno="235"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"></highlight></codeline>
-<codeline lineno="254" refid="group__crypto__cipher_1gaeffb9d5dd85bf135eb2cca6d47cb373c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1gaeffb9d5dd85bf135eb2cca6d47cb373c" kindref="member">cipher_ctr_op</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*pkt,<sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*iv)</highlight></codeline>
-<codeline lineno="256"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref><sp/>==<sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a58823b401487d57d62a067d71bd2e9d2" kindref="member">CRYPTO_CIPHER_MODE_CTR</ref>,<sp/></highlight><highlight class="stringliteral">&quot;CTR<sp/>mode<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;session<sp/>invoking<sp/>a<sp/>different<sp/>mode<sp/>handler&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkt-&gt;<ref refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" kindref="member">ctx</ref><sp/>=<sp/>ctx;</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1ac792113d841e3a6b7dc107d7123162db" kindref="member">ctr_crypt_hndlr</ref>(ctx,<sp/>pkt,<sp/>iv);</highlight></codeline>
-<codeline lineno="262"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight></codeline>
-<codeline lineno="276" refid="group__crypto__cipher_1ga4886e7e1cc2fcff411066875b35b8b45" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga4886e7e1cc2fcff411066875b35b8b45" kindref="member">cipher_ccm_op</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref><sp/>*pkt,<sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*nonce)</highlight></codeline>
-<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref><sp/>==<sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a5116e1683b8c9c26582863a65128ce3b" kindref="member">CRYPTO_CIPHER_MODE_CCM</ref>,<sp/></highlight><highlight class="stringliteral">&quot;CCM<sp/>mode<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;session<sp/>invoking<sp/>a<sp/>different<sp/>mode<sp/>handler&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="281"><highlight class="normal"></highlight></codeline>
-<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkt-&gt;<ref refid="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" kindref="member">pkt</ref>-&gt;<ref refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" kindref="member">ctx</ref><sp/>=<sp/>ctx;</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1af53f5f04fb5e1a7ca148f786d8cfe41f" kindref="member">ccm_crypt_hndlr</ref>(ctx,<sp/>pkt,<sp/>nonce);</highlight></codeline>
-<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="285"><highlight class="normal"></highlight></codeline>
-<codeline lineno="298" refid="group__crypto__cipher_1ga3706b034252e40b818a782c28ba5e485" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__crypto__cipher_1ga3706b034252e40b818a782c28ba5e485" kindref="member">cipher_gcm_op</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*ctx,</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref><sp/>*pkt,<sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*nonce)</highlight></codeline>
-<codeline lineno="300"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__ASSERT(ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a93c8c2c77d44ea013fbb6e7fd788d4d4" kindref="member">cipher_mode</ref><sp/>==<sp/><ref refid="group__crypto__cipher_1ggaeedaf8017f8d6518f7dedef365bbae43a2f0de7c8f0b9c1a8ac7343ca3ca72c12" kindref="member">CRYPTO_CIPHER_MODE_GCM</ref>,<sp/></highlight><highlight class="stringliteral">&quot;GCM<sp/>mode<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;session<sp/>invoking<sp/>a<sp/>different<sp/>mode<sp/>handler&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="303"><highlight class="normal"></highlight></codeline>
-<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pkt-&gt;<ref refid="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" kindref="member">pkt</ref>-&gt;<ref refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" kindref="member">ctx</ref><sp/>=<sp/>ctx;</highlight></codeline>
-<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctx-&gt;<ref refid="structcipher__ctx_1ae3eb86d5be42450b761f89114723b682" kindref="member">ops</ref>.<ref refid="structcipher__ops_1a570d1ed37d6cce61caa1c6e257f9cdc8" kindref="member">gcm_crypt_hndlr</ref>(ctx,<sp/>pkt,<sp/>nonce);</highlight></codeline>
-<codeline lineno="306"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="307"><highlight class="normal"></highlight></codeline>
-<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="169" refid="structcipher__ctx_1a5745811b9b08e6df51f9b8f8b14ceae7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structcipher__ctx_1a5745811b9b08e6df51f9b8f8b14ceae7" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="structcipher__pkt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="structcipher__pkt_1a56d2de56d9efc153032eb7f6503748ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*<ref refid="structcipher__pkt_1a56d2de56d9efc153032eb7f6503748ba" kindref="member">in_buf</ref>;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186" refid="structcipher__pkt_1ac5c98e7edafb4b61e01f707c785afbea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="structcipher__pkt_1ac5c98e7edafb4b61e01f707c785afbea" kindref="member">in_len</ref>;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="structcipher__pkt_1ab95bae428d3d3c80b1b8ee6ea03a05d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*<ref refid="structcipher__pkt_1ab95bae428d3d3c80b1b8ee6ea03a05d0" kindref="member">out_buf</ref>;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="structcipher__pkt_1a6e51f941334e87cc966f5a37e783d1fc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcipher__pkt_1a6e51f941334e87cc966f5a37e783d1fc" kindref="member">out_buf_max</ref>;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="structcipher__pkt_1abc9588a5f84f9daa13ce4aec965f0a91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcipher__pkt_1abc9588a5f84f9daa13ce4aec965f0a91" kindref="member">out_len</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref><sp/>*<ref refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" kindref="member">ctx</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="structcipher__aead__pkt" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__aead__pkt" kindref="compound">cipher_aead_pkt</ref><sp/>{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>IO<sp/>buffers<sp/>for<sp/>encryption.<sp/>This<sp/>has<sp/>to<sp/>be<sp/>supplied<sp/>by<sp/>the<sp/>app.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*<ref refid="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" kindref="member">pkt</ref>;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224" refid="structcipher__aead__pkt_1a1b00939c8409041b8202ae90ee01a41c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*<ref refid="structcipher__aead__pkt_1a1b00939c8409041b8202ae90ee01a41c" kindref="member">ad</ref>;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="structcipher__aead__pkt_1a2964d6ffbe02b7088be9a2d5c21a2f9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structcipher__aead__pkt_1a2964d6ffbe02b7088be9a2d5c21a2f9c" kindref="member">ad_len</ref>;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233" refid="structcipher__aead__pkt_1a3c7a3e72c7d21ec574dd777ac0bdf3c4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>*<ref refid="structcipher__aead__pkt_1a3c7a3e72c7d21ec574dd777ac0bdf3c4" kindref="member">tag</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Prototype<sp/>for<sp/>the<sp/>application<sp/>function<sp/>to<sp/>be<sp/>invoked<sp/>by<sp/>the<sp/>crypto<sp/>driver</highlight></codeline>
+<codeline lineno="237"><highlight class="comment"><sp/>*<sp/>on<sp/>completion<sp/>of<sp/>an<sp/>async<sp/>request.<sp/>The<sp/>app<sp/>may<sp/>get<sp/>the<sp/>session<sp/>context</highlight></codeline>
+<codeline lineno="238"><highlight class="comment"><sp/>*<sp/>via<sp/>the<sp/>pkt-&gt;ctx<sp/>field.<sp/>For<sp/>CCM<sp/>ops<sp/>the<sp/>encompassing<sp/>AEAD<sp/>packet<sp/>may<sp/>be</highlight></codeline>
+<codeline lineno="239"><highlight class="comment"><sp/>*<sp/>accessed<sp/>via<sp/>container_of().<sp/>The<sp/>type<sp/>of<sp/>a<sp/>packet<sp/>can<sp/>be<sp/>determined<sp/>via</highlight></codeline>
+<codeline lineno="240"><highlight class="comment"><sp/>*<sp/>pkt-&gt;ctx.ops.mode<sp/>.</highlight></codeline>
+<codeline lineno="241"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="group__crypto__cipher_1ga062b07459bcc2990535465a7b9044ecd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__crypto__cipher_1ga062b07459bcc2990535465a7b9044ecd" kindref="member">cipher_completion_cb</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref><sp/>*completed,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_CRYPTO_CIPHER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/crypto/cipher.h"/>
   </compounddef>

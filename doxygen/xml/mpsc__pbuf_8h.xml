@@ -131,6 +131,18 @@
         </inbodydescription>
         <location file="include/sys/mpsc_pbuf.h" line="59" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="59" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="group__MPSC__PBUF__FLAGS_1gad0f57dbcecbb51a6b5b916c31a8eaab2" prot="public" static="no">
+        <name>MPSC_PBUF_MAX_UTILIZATION</name>
+        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(2)</initializer>
+        <briefdescription>
+<para>Flag indicating that maximum buffer usage is tracked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="62" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
       <memberdef kind="typedef" id="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" prot="public" static="no">
@@ -157,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="72" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="72" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="75" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" prot="public" static="no">
         <type>void(*</type>
@@ -189,7 +201,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="80" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="80" bodyend="-1"/>
+        <location file="include/sys/mpsc_pbuf.h" line="83" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="83" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -231,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="140" column="6" declfile="include/sys/mpsc_pbuf.h" declline="140" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="146" column="6" declfile="include/sys/mpsc_pbuf.h" declline="146" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga398dd24464a5da03e80a3fc7d728dddd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>union <ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref> *</type>
@@ -286,7 +298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="159" column="24" declfile="include/sys/mpsc_pbuf.h" declline="159" declcolumn="24"/>
+        <location file="include/sys/mpsc_pbuf.h" line="165" column="24" declfile="include/sys/mpsc_pbuf.h" declline="165" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1gaa537b9e73ca4fda26a92dc56b960270e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -326,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="168" column="6" declfile="include/sys/mpsc_pbuf.h" declline="168" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="174" column="6" declfile="include/sys/mpsc_pbuf.h" declline="174" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1gabc366638ec262c7ec41b320f0dcc6a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -367,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="181" column="6" declfile="include/sys/mpsc_pbuf.h" declline="181" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="187" column="6" declfile="include/sys/mpsc_pbuf.h" declline="187" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga7f4df1864fad89ec9557b6f0e18c9589" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -422,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="196" column="6" declfile="include/sys/mpsc_pbuf.h" declline="196" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="202" column="6" declfile="include/sys/mpsc_pbuf.h" declline="202" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga7b52261bac98a7a0c6bae2a838f23316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -475,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="211" column="6" declfile="include/sys/mpsc_pbuf.h" declline="211" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="217" column="6" declfile="include/sys/mpsc_pbuf.h" declline="217" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga9642d07deca00bc25cea2ae253ec7d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const union <ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref> *</type>
@@ -505,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="220" column="30" declfile="include/sys/mpsc_pbuf.h" declline="220" declcolumn="30"/>
+        <location file="include/sys/mpsc_pbuf.h" line="226" column="30" declfile="include/sys/mpsc_pbuf.h" declline="226" declcolumn="30"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga54f8705fa262a6cda75f1feecde5e57e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -545,7 +557,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="228" column="6" declfile="include/sys/mpsc_pbuf.h" declline="228" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="234" column="6" declfile="include/sys/mpsc_pbuf.h" declline="234" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__mpsc__buf_1ga2c8ac7f489fba611a2bca25bb2bbb5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -590,7 +602,99 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/sys/mpsc_pbuf.h" line="238" column="6" declfile="include/sys/mpsc_pbuf.h" declline="238" declcolumn="6"/>
+        <location file="include/sys/mpsc_pbuf.h" line="244" column="6" declfile="include/sys/mpsc_pbuf.h" declline="244" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__mpsc__buf_1ga73be0efc020500865cfa07c45494f4a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void mpsc_pbuf_get_utilization</definition>
+        <argsstring>(struct mpsc_pbuf_buffer *buffer, uint32_t *size, uint32_t *now)</argsstring>
+        <name>mpsc_pbuf_get_utilization</name>
+        <param>
+          <type>struct <ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>now</declname>
+        </param>
+        <briefdescription>
+<para>Get current memory utilization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer size in bytes. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">now</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Current buffer usage in bytes. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="252" column="6" declfile="include/sys/mpsc_pbuf.h" declline="252" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__mpsc__buf_1ga8ee7fd071effaca18797862d423279d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int mpsc_pbuf_get_max_utilization</definition>
+        <argsstring>(struct mpsc_pbuf_buffer *buffer, uint32_t *max)</argsstring>
+        <name>mpsc_pbuf_get_max_utilization</name>
+        <param>
+          <type>struct <ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Get maximum memory utilization. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum buffer usage in bytes.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+retval 0 if utilization data collected successfully. retval -ENOTSUP if Collecting utilization data is not supported. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="263" column="5" declfile="include/sys/mpsc_pbuf.h" declline="263" declcolumn="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -638,86 +742,95 @@
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59" refid="group__MPSC__PBUF__FLAGS_1ga983332f7aff31ed7b7e62cacf7960497" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MPSC_PBUF_MODE_OVERWRITE<sp/>BIT(1)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declaration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref>;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72" refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>(*<ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84" refid="structmpsc__pbuf__buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>{</highlight></codeline>
-<codeline lineno="86" refid="structmpsc__pbuf__buffer_1a55df06357be70a3b633213199d987e71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a55df06357be70a3b633213199d987e71" kindref="member">tmp_wr_idx</ref>;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89" refid="structmpsc__pbuf__buffer_1a3f292f281f08b97d10183f9248ee7c4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a3f292f281f08b97d10183f9248ee7c4d" kindref="member">wr_idx</ref>;</highlight></codeline>
+<codeline lineno="62" refid="group__MPSC__PBUF__FLAGS_1gad0f57dbcecbb51a6b5b916c31a8eaab2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MPSC_PBUF_MAX_UTILIZATION<sp/>BIT(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Forward<sp/>declaration<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>(*<ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="structmpsc__pbuf__buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="89" refid="structmpsc__pbuf__buffer_1a55df06357be70a3b633213199d987e71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a55df06357be70a3b633213199d987e71" kindref="member">tmp_wr_idx</ref>;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92" refid="structmpsc__pbuf__buffer_1aeea63b40d7b24e4396fa228bcf2a171f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1aeea63b40d7b24e4396fa228bcf2a171f" kindref="member">tmp_rd_idx</ref>;</highlight></codeline>
+<codeline lineno="92" refid="structmpsc__pbuf__buffer_1a3f292f281f08b97d10183f9248ee7c4d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a3f292f281f08b97d10183f9248ee7c4d" kindref="member">wr_idx</ref>;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95" refid="structmpsc__pbuf__buffer_1af9340dd31ea8e37b4d609898b126497a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1af9340dd31ea8e37b4d609898b126497a" kindref="member">rd_idx</ref>;</highlight></codeline>
+<codeline lineno="95" refid="structmpsc__pbuf__buffer_1aeea63b40d7b24e4396fa228bcf2a171f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1aeea63b40d7b24e4396fa228bcf2a171f" kindref="member">tmp_rd_idx</ref>;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98" refid="structmpsc__pbuf__buffer_1a10e9152b8c85be62eac0a3828e3b1e2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a10e9152b8c85be62eac0a3828e3b1e2a" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="98" refid="structmpsc__pbuf__buffer_1af9340dd31ea8e37b4d609898b126497a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1af9340dd31ea8e37b4d609898b126497a" kindref="member">rd_idx</ref>;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101" refid="structmpsc__pbuf__buffer_1a1a986b86547aa644747b9a79a982b780" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__spinlock" kindref="compound">k_spinlock</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a1a986b86547aa644747b9a79a982b780" kindref="member">lock</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structmpsc__pbuf__buffer_1a10e9152b8c85be62eac0a3828e3b1e2a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a10e9152b8c85be62eac0a3828e3b1e2a" kindref="member">flags</ref>;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104" refid="structmpsc__pbuf__buffer_1acdebdb6e7175ea3f39f484885ff6bec2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref><sp/><ref refid="structmpsc__pbuf__buffer_1acdebdb6e7175ea3f39f484885ff6bec2" kindref="member">notify_drop</ref>;</highlight></codeline>
+<codeline lineno="104" refid="structmpsc__pbuf__buffer_1a1a986b86547aa644747b9a79a982b780" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__spinlock" kindref="compound">k_spinlock</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a1a986b86547aa644747b9a79a982b780" kindref="member">lock</ref>;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107" refid="structmpsc__pbuf__buffer_1ad87f240d978605258cb03d7d1e5e006f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref><sp/><ref refid="structmpsc__pbuf__buffer_1ad87f240d978605258cb03d7d1e5e006f" kindref="member">get_wlen</ref>;</highlight></codeline>
+<codeline lineno="107" refid="structmpsc__pbuf__buffer_1acdebdb6e7175ea3f39f484885ff6bec2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref><sp/><ref refid="structmpsc__pbuf__buffer_1acdebdb6e7175ea3f39f484885ff6bec2" kindref="member">notify_drop</ref>;</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110" refid="structmpsc__pbuf__buffer_1a2b5cb8a3c7f4d41cf587318ccf6b0a76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="structmpsc__pbuf__buffer_1a2b5cb8a3c7f4d41cf587318ccf6b0a76" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="110" refid="structmpsc__pbuf__buffer_1ad87f240d978605258cb03d7d1e5e006f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref><sp/><ref refid="structmpsc__pbuf__buffer_1ad87f240d978605258cb03d7d1e5e006f" kindref="member">get_wlen</ref>;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer<sp/>size<sp/>in<sp/>32<sp/>bit<sp/>words.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113" refid="structmpsc__pbuf__buffer_1a917ecd5a37f6c1560091a7a63c50fd2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a917ecd5a37f6c1560091a7a63c50fd2c" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="structmpsc__pbuf__buffer_1a2b5cb8a3c7f4d41cf587318ccf6b0a76" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="structmpsc__pbuf__buffer_1a2b5cb8a3c7f4d41cf587318ccf6b0a76" kindref="member">buf</ref>;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115" refid="structmpsc__pbuf__buffer_1ae860724c0784ae560e7d03b1b6389fa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="structmpsc__pbuf__buffer_1ae860724c0784ae560e7d03b1b6389fa0" kindref="member">sem</ref>;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer<sp/>size<sp/>in<sp/>32<sp/>bit<sp/>words.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="structmpsc__pbuf__buffer_1a917ecd5a37f6c1560091a7a63c50fd2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1a917ecd5a37f6c1560091a7a63c50fd2c" kindref="member">size</ref>;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119" refid="structmpsc__pbuf__buffer__config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer__config" kindref="compound">mpsc_pbuf_buffer_config</ref><sp/>{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>a<sp/>memory<sp/>used<sp/>for<sp/>storing<sp/>packets.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121" refid="structmpsc__pbuf__buffer__config_1a2090b3da5dc85c68601fd7bdb54f6174" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="structmpsc__pbuf__buffer__config_1a2090b3da5dc85c68601fd7bdb54f6174" kindref="member">buf</ref>;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer<sp/>size<sp/>in<sp/>32<sp/>bit<sp/>words.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124" refid="structmpsc__pbuf__buffer__config_1aa321ccd5bcec6359ed329418c24e5260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1aa321ccd5bcec6359ed329418c24e5260" kindref="member">size</ref>;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Callbacks.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127" refid="structmpsc__pbuf__buffer__config_1a2c0ed75bc95a03bb3a9ebfa55ca54227" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1a2c0ed75bc95a03bb3a9ebfa55ca54227" kindref="member">notify_drop</ref>;</highlight></codeline>
-<codeline lineno="128" refid="structmpsc__pbuf__buffer__config_1a43ea61f310a062f4460ab1b085276265" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1a43ea61f310a062f4460ab1b085276265" kindref="member">get_wlen</ref>;</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configuration<sp/>flags.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131" refid="structmpsc__pbuf__buffer__config_1a88c3049ff8d7942e834fed28ede234b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1a88c3049ff8d7942e834fed28ede234b1" kindref="member">flags</ref>;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140" refid="group__mpsc__buf_1ga5152b9ae9c0da98fde3f8b73afac52b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga5152b9ae9c0da98fde3f8b73afac52b8" kindref="member">mpsc_pbuf_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer__config" kindref="compound">mpsc_pbuf_buffer_config</ref><sp/>*config);</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159" refid="group__mpsc__buf_1ga398dd24464a5da03e80a3fc7d728dddd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*<ref refid="group__mpsc__buf_1ga398dd24464a5da03e80a3fc7d728dddd" kindref="member">mpsc_pbuf_alloc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>wlen,<sp/><ref refid="structk__timeout__t" kindref="compound">k_timeout_t</ref><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a4c6a88cdddeff1bdde597c2658c9e7d2" kindref="member">timeout</ref>);</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"></highlight></codeline>
-<codeline lineno="168" refid="group__mpsc__buf_1gaa537b9e73ca4fda26a92dc56b960270e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1gaa537b9e73ca4fda26a92dc56b960270e" kindref="member">mpsc_pbuf_commit</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181" refid="group__mpsc__buf_1gabc366638ec262c7ec41b320f0dcc6a87" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1gabc366638ec262c7ec41b320f0dcc6a87" kindref="member">mpsc_pbuf_put_word</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>word);</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight></codeline>
-<codeline lineno="196" refid="group__mpsc__buf_1ga7f4df1864fad89ec9557b6f0e18c9589" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga7f4df1864fad89ec9557b6f0e18c9589" kindref="member">mpsc_pbuf_put_word_ext</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>word,</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="test__fifo__contexts_8c_1a8b1feab52ee372b1ee1297129329eaad" kindref="member">data</ref>);</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="211" refid="group__mpsc__buf_1ga7b52261bac98a7a0c6bae2a838f23316" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga7b52261bac98a7a0c6bae2a838f23316" kindref="member">mpsc_pbuf_put_data</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="test__fifo__contexts_8c_1a8b1feab52ee372b1ee1297129329eaad" kindref="member">data</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>wlen);</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="220" refid="group__mpsc__buf_1ga9642d07deca00bc25cea2ae253ec7d76" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*<ref refid="group__mpsc__buf_1ga9642d07deca00bc25cea2ae253ec7d76" kindref="member">mpsc_pbuf_claim</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>);</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="228" refid="group__mpsc__buf_1ga54f8705fa262a6cda75f1feecde5e57e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga54f8705fa262a6cda75f1feecde5e57e" kindref="member">mpsc_pbuf_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"></highlight></codeline>
-<codeline lineno="238" refid="group__mpsc__buf_1ga2c8ac7f489fba611a2bca25bb2bbb5fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga2c8ac7f489fba611a2bca25bb2bbb5fb" kindref="member">mpsc_pbuf_is_pending</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>);</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"></highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="247"><highlight class="normal"></highlight></codeline>
-<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_SYS_MPSC_PBUF_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Store<sp/>max<sp/>buffer<sp/>usage.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="structmpsc__pbuf__buffer_1adad43580b7a632877cf7b577585a495a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer_1adad43580b7a632877cf7b577585a495a" kindref="member">max_usage</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="structmpsc__pbuf__buffer_1ae860724c0784ae560e7d03b1b6389fa0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="structmpsc__pbuf__buffer_1ae860724c0784ae560e7d03b1b6389fa0" kindref="member">sem</ref>;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="structmpsc__pbuf__buffer__config" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmpsc__pbuf__buffer__config" kindref="compound">mpsc_pbuf_buffer_config</ref><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Pointer<sp/>to<sp/>a<sp/>memory<sp/>used<sp/>for<sp/>storing<sp/>packets.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="structmpsc__pbuf__buffer__config_1a2090b3da5dc85c68601fd7bdb54f6174" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="structmpsc__pbuf__buffer__config_1a2090b3da5dc85c68601fd7bdb54f6174" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Buffer<sp/>size<sp/>in<sp/>32<sp/>bit<sp/>words.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="structmpsc__pbuf__buffer__config_1aa321ccd5bcec6359ed329418c24e5260" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1aa321ccd5bcec6359ed329418c24e5260" kindref="member">size</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Callbacks.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="structmpsc__pbuf__buffer__config_1a2c0ed75bc95a03bb3a9ebfa55ca54227" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga87f3795770880fb552316a8cac7b85ae" kindref="member">mpsc_pbuf_notify_drop</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1a2c0ed75bc95a03bb3a9ebfa55ca54227" kindref="member">notify_drop</ref>;</highlight></codeline>
+<codeline lineno="134" refid="structmpsc__pbuf__buffer__config_1a43ea61f310a062f4460ab1b085276265" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__mpsc__buf_1ga00b0a1839bc466c623928a29921d76b8" kindref="member">mpsc_pbuf_get_wlen</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1a43ea61f310a062f4460ab1b085276265" kindref="member">get_wlen</ref>;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Configuration<sp/>flags.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="structmpsc__pbuf__buffer__config_1a88c3049ff8d7942e834fed28ede234b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structmpsc__pbuf__buffer__config_1a88c3049ff8d7942e834fed28ede234b1" kindref="member">flags</ref>;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="group__mpsc__buf_1ga5152b9ae9c0da98fde3f8b73afac52b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga5152b9ae9c0da98fde3f8b73afac52b8" kindref="member">mpsc_pbuf_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer__config" kindref="compound">mpsc_pbuf_buffer_config</ref><sp/>*config);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="group__mpsc__buf_1ga398dd24464a5da03e80a3fc7d728dddd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*<ref refid="group__mpsc__buf_1ga398dd24464a5da03e80a3fc7d728dddd" kindref="member">mpsc_pbuf_alloc</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>wlen,<sp/><ref refid="structk__timeout__t" kindref="compound">k_timeout_t</ref><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a4c6a88cdddeff1bdde597c2658c9e7d2" kindref="member">timeout</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="group__mpsc__buf_1gaa537b9e73ca4fda26a92dc56b960270e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1gaa537b9e73ca4fda26a92dc56b960270e" kindref="member">mpsc_pbuf_commit</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="group__mpsc__buf_1gabc366638ec262c7ec41b320f0dcc6a87" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1gabc366638ec262c7ec41b320f0dcc6a87" kindref="member">mpsc_pbuf_put_word</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>word);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="group__mpsc__buf_1ga7f4df1864fad89ec9557b6f0e18c9589" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga7f4df1864fad89ec9557b6f0e18c9589" kindref="member">mpsc_pbuf_put_word_ext</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>word,</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="test__fifo__contexts_8c_1a8b1feab52ee372b1ee1297129329eaad" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217" refid="group__mpsc__buf_1ga7b52261bac98a7a0c6bae2a838f23316" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga7b52261bac98a7a0c6bae2a838f23316" kindref="member">mpsc_pbuf_put_data</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="test__fifo__contexts_8c_1a8b1feab52ee372b1ee1297129329eaad" kindref="member">data</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>wlen);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226" refid="group__mpsc__buf_1ga9642d07deca00bc25cea2ae253ec7d76" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union<sp/></highlight><highlight class="normal"><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*<ref refid="group__mpsc__buf_1ga9642d07deca00bc25cea2ae253ec7d76" kindref="member">mpsc_pbuf_claim</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="group__mpsc__buf_1ga54f8705fa262a6cda75f1feecde5e57e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga54f8705fa262a6cda75f1feecde5e57e" kindref="member">mpsc_pbuf_free</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"><sp/><ref refid="unionmpsc__pbuf__generic" kindref="compound">mpsc_pbuf_generic</ref><sp/>*packet);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244" refid="group__mpsc__buf_1ga2c8ac7f489fba611a2bca25bb2bbb5fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga2c8ac7f489fba611a2bca25bb2bbb5fb" kindref="member">mpsc_pbuf_is_pending</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="group__mpsc__buf_1ga73be0efc020500865cfa07c45494f4a5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga73be0efc020500865cfa07c45494f4a5" kindref="member">mpsc_pbuf_get_utilization</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*size,<sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*<ref refid="timer_2starve_2src_2main_8c_1ad2a5acb9b13b943cac9ef0b8c8370100" kindref="member">now</ref>);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263" refid="group__mpsc__buf_1ga8ee7fd071effaca18797862d423279d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__mpsc__buf_1ga8ee7fd071effaca18797862d423279d7" kindref="member">mpsc_pbuf_get_max_utilization</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structmpsc__pbuf__buffer" kindref="compound">mpsc_pbuf_buffer</ref><sp/>*<ref refid="group__kernel__mbox__api_1gab659fc0dee01e6639b8b6108addbd046" kindref="member">buffer</ref>,<sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>*max);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_SYS_MPSC_PBUF_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/sys/mpsc_pbuf.h"/>
   </compounddef>

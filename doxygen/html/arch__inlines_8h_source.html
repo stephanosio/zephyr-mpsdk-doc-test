@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -117,11 +117,14 @@ $(document).ready(function(){initNavTree('arch__inlines_8h_source.html',''); ini
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &lt;<a class="code" href="arc_2arch__inlines_8h.html">arch/arc/arch_inlines.h</a>&gt;</span></div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#elif defined(CONFIG_XTENSA)</span></div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &lt;<a class="code" href="xtensa_2arch__inlines_8h.html">arch/xtensa/arch_inlines.h</a>&gt;</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif </span><span class="comment">/* ZEPHYR_INCLUDE_ARCH_INLINES_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#elif defined(CONFIG_RISCV)</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &lt;<a class="code" href="riscv_2arch__inlines_8h.html">arch/riscv/arch_inlines.h</a>&gt;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#endif </span><span class="comment">/* ZEPHYR_INCLUDE_ARCH_INLINES_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="aarc_2arch__inlines_8h_html"><div class="ttname"><a href="arc_2arch__inlines_8h.html">arch_inlines.h</a></div></div>
 <div class="ttc" id="aarm64_2arch__inlines_8h_html"><div class="ttname"><a href="arm64_2arch__inlines_8h.html">arch_inlines.h</a></div></div>
+<div class="ttc" id="ariscv_2arch__inlines_8h_html"><div class="ttname"><a href="riscv_2arch__inlines_8h.html">arch_inlines.h</a></div></div>
 <div class="ttc" id="ax86_2arch__inlines_8h_html"><div class="ttname"><a href="x86_2arch__inlines_8h.html">arch_inlines.h</a></div></div>
 <div class="ttc" id="axtensa_2arch__inlines_8h_html"><div class="ttname"><a href="xtensa_2arch__inlines_8h.html">arch_inlines.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -131,7 +134,7 @@ $(document).ready(function(){initNavTree('arch__inlines_8h_source.html',''); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_7c40e03ac1dfef8b430578d46da2b8fd.html">arch</a></li><li class="navelem"><a class="el" href="arch__inlines_8h.html">arch_inlines.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:38 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:44 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

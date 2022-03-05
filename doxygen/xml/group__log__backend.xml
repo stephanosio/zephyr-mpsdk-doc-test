@@ -47,7 +47,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="109" column="20" bodyfile="include/logging/log_backend.h" bodystart="109" bodyend="115"/>
+        <location file="include/logging/log_backend.h" line="112" column="20" bodyfile="include/logging/log_backend.h" bodystart="112" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga65350888a1895bff0d82e1f72ca92467" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="126" column="20" bodyfile="include/logging/log_backend.h" bodystart="126" bodyend="133"/>
+        <location file="include/logging/log_backend.h" line="129" column="20" bodyfile="include/logging/log_backend.h" bodystart="129" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga66e46c1d9d728acef0610d76e26cc433" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -166,7 +166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="147" column="20" bodyfile="include/logging/log_backend.h" bodystart="147" bodyend="159"/>
+        <location file="include/logging/log_backend.h" line="150" column="20" bodyfile="include/logging/log_backend.h" bodystart="150" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga688fcdb37979327fe8ef1f7a5d2d54e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -256,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="173" column="20" bodyfile="include/logging/log_backend.h" bodystart="173" bodyend="185"/>
+        <location file="include/logging/log_backend.h" line="176" column="20" bodyfile="include/logging/log_backend.h" bodystart="176" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1gab300348c43168de1e7eaae8c770b6950" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -297,7 +297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="195" column="20" bodyfile="include/logging/log_backend.h" bodystart="195" bodyend="203"/>
+        <location file="include/logging/log_backend.h" line="198" column="20" bodyfile="include/logging/log_backend.h" bodystart="198" bodyend="206"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1gad12906ffa810514c1d43cb26bba5ea4b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -325,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="210" column="20" bodyfile="include/logging/log_backend.h" bodystart="210" bodyend="214"/>
+        <location file="include/logging/log_backend.h" line="213" column="20" bodyfile="include/logging/log_backend.h" bodystart="213" bodyend="217"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga8f263b24140229e5cf8e98b322501bca" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -367,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="224" column="20" bodyfile="include/logging/log_backend.h" bodystart="224" bodyend="229"/>
+        <location file="include/logging/log_backend.h" line="227" column="20" bodyfile="include/logging/log_backend.h" bodystart="227" bodyend="232"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1gae3e1d6eaf21dcc1d0961e85271d5e5f3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -399,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="239" column="23" bodyfile="include/logging/log_backend.h" bodystart="239" bodyend="243"/>
+        <location file="include/logging/log_backend.h" line="242" column="23" bodyfile="include/logging/log_backend.h" bodystart="242" bodyend="246"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1gaf419f3590f42893b7091beed57763c7c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const struct <ref refid="structlog__backend" kindref="compound">log_backend</ref> *</type>
@@ -429,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="252" column="38" bodyfile="include/logging/log_backend.h" bodystart="252" bodyend="255"/>
+        <location file="include/logging/log_backend.h" line="255" column="38" bodyfile="include/logging/log_backend.h" bodystart="255" bodyend="258"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1gad055c1dc8e0236b604cb553df3e16a52" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -449,7 +449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="262" column="19" bodyfile="include/logging/log_backend.h" bodystart="262" bodyend="265"/>
+        <location file="include/logging/log_backend.h" line="265" column="19" bodyfile="include/logging/log_backend.h" bodystart="265" bodyend="268"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga3ef0b88b4118f7ee04749ace2646c99b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -489,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="273" column="20" bodyfile="include/logging/log_backend.h" bodystart="273" bodyend="279"/>
+        <location file="include/logging/log_backend.h" line="276" column="20" bodyfile="include/logging/log_backend.h" bodystart="276" bodyend="282"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga1534fdfabce1e97c829aa79d57739589" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -517,7 +517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="286" column="20" bodyfile="include/logging/log_backend.h" bodystart="286" bodyend="291"/>
+        <location file="include/logging/log_backend.h" line="289" column="20" bodyfile="include/logging/log_backend.h" bodystart="289" bodyend="294"/>
       </memberdef>
       <memberdef kind="function" id="group__log__backend_1ga54dd06d48edf92ef191dab946aead216" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -547,7 +547,72 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="300" column="20" bodyfile="include/logging/log_backend.h" bodystart="300" bodyend="305"/>
+        <location file="include/logging/log_backend.h" line="303" column="20" bodyfile="include/logging/log_backend.h" bodystart="303" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="group__log__backend_1gac0a4dc476c3b641ab570ca2dd4f2096f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int log_backend_format_set</definition>
+        <argsstring>(const struct log_backend *backend, uint32_t log_type)</argsstring>
+        <name>log_backend_format_set</name>
+        <param>
+          <type>const struct <ref refid="structlog__backend" kindref="compound">log_backend</ref> *</type>
+          <declname>backend</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
+          <declname>log_type</declname>
+        </param>
+        <briefdescription>
+<para>Set logging format. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>backend</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the backend instance. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>log_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log format.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-ENOTSUP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the backend does not support changing format types. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If the input is invalid. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>for success. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_backend.h" line="320" column="19" bodyfile="include/logging/log_backend.h" bodystart="320" bodyend="341"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -612,7 +677,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="84" column="9" bodyfile="include/logging/log_backend.h" bodystart="84" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="87" column="9" bodyfile="include/logging/log_backend.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="337" column="15" bodyfile="include/bluetooth/conn.h" bodystart="337" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="340" column="15" bodyfile="include/bluetooth/conn.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -24,7 +24,7 @@
     <detaileddescription>
 <para>LE Connection Remote Info Structure </para>
     </detaileddescription>
-    <location file="include/bluetooth/conn.h" line="334" column="1" bodyfile="include/bluetooth/conn.h" bodystart="334" bodyend="338"/>
+    <location file="include/bluetooth/conn.h" line="337" column="1" bodyfile="include/bluetooth/conn.h" bodystart="337" bodyend="341"/>
     <listofallmembers>
       <member refid="structbt__conn__le__remote__info_1a4ff434f6c501dc60db5c4b776be46b3b" prot="public" virt="non-virtual"><scope>bt_conn_le_remote_info</scope><name>features</name></member>
     </listofallmembers>

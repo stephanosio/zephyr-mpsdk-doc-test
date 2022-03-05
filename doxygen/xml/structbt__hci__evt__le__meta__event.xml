@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2251" column="10" bodyfile="include/bluetooth/hci.h" bodystart="2251" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2252" column="10" bodyfile="include/bluetooth/hci.h" bodystart="2252" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/bluetooth/hci.h" line="2250" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2250" bodyend="2252"/>
+    <location file="include/bluetooth/hci.h" line="2251" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2251" bodyend="2253"/>
     <listofallmembers>
       <member refid="structbt__hci__evt__le__meta__event_1a536464a525f8d0f9df915be5ee3d33da" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_meta_event</scope><name>subevent</name></member>
     </listofallmembers>

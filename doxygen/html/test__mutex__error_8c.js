@@ -3,7 +3,7 @@ var test__mutex__error_8c =
     [ "STACK_SIZE", "test__mutex__error_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "THREAD_TEST_PRIORITY", "test__mutex__error_8c.html#a122fcce70e98e17966bab36f75ced5da", null ],
     [ "create_negative_test_thread", "test__mutex__error_8c.html#a8c8dabf428ea9c04835a710deebfd8fb", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__mutex__error_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__mutex__error_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "test_main", "test__mutex__error_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],
     [ "test_mutex_init_invalid_obj", "test__mutex__error_8c.html#a5cb1baf44fcf95c79035c72fada3ac7c", null ],
     [ "test_mutex_init_null", "test__mutex__error_8c.html#ac9e2b8f2d969a40da1224df9d55a4d23", null ],

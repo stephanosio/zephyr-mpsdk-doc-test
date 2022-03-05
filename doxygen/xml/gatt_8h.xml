@@ -26,6 +26,8 @@
         <link refid="att_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
       </node>
       <node id="15">
         <label>bluetooth/bluetooth.h</label>
@@ -63,7 +65,7 @@
       </node>
       <node id="25">
         <label>bluetooth/crypto.h</label>
-        <link refid="crypto_8h"/>
+        <link refid="bluetooth_2crypto_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
@@ -1793,8 +1795,8 @@ If discovery procedure has completed this callback will be called with attr set 
         </briefdescription>
         <detaileddescription>
 <para>Register GATT service. Applications can make use of macros such as BT_GATT_PRIMARY_SERVICE, BT_GATT_CHARACTERISTIC, BT_GATT_DESCRIPTOR, etc.</para>
-<para>When using <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_SETTINGS` </verbatim> then all services that should have bond configuration loaded, i.e. CCC values, must be registered before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>.</para>
-<para>When using <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_GATT_CACHING` </verbatim> and <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_SETTINGS` </verbatim> then all services that should be included in the GATT Database Hash calculation should be added before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>. All services registered after settings_load will trigger a new database hash calculation and a new hash stored.</para>
+<para>When using <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_SETTINGS` </verbatim> then all services that should have bond configuration loaded, i.e. CCC values, must be registered before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>.</para>
+<para>When using <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_GATT_CACHING` </verbatim> and <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_SETTINGS` </verbatim> then all services that should be included in the GATT Database Hash calculation should be added before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>. All services registered after settings_load will trigger a new database hash calculation and a new hash stored.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>svc</parametername>
@@ -2962,7 +2964,7 @@ If discovery procedure has completed this callback will be called with attr set 
         </briefdescription>
         <detaileddescription>
 <para>This function works in the same way as <ref refid="group__bt__gatt__server_1ga74ee552864c563aa5bc939f37395c14a" kindref="member">bt_gatt_notify</ref>. With the addition that after sending the notification the callback function will be called.</para>
-<para>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_CONN_TX_MAX` </verbatim> option.</para>
+<para>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_CONN_TX_MAX` </verbatim> option.</para>
 <para>Alternatively it is possible to notify by UUID by setting it on the parameters, when using this method the attribute if provided is used as the start range when looking up for possible matches.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -3378,7 +3380,7 @@ The Response comes in callback <computeroutput>params-&gt;func</computeroutput>.
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3440,7 +3442,7 @@ The Response comes in callback <computeroutput>params-&gt;func</computeroutput>.
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3502,7 +3504,7 @@ The Response comes in callback <computeroutput>params-&gt;func</computeroutput>.
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3561,7 +3563,7 @@ The Response comes in callback <computeroutput>params-&gt;func</computeroutput>.
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside Bluetooth event context to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside Bluetooth event context to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3609,7 +3611,7 @@ The Response comes in callback <computeroutput>params-&gt;func</computeroutput>.
         </briefdescription>
         <detaileddescription>
 <para>This function works in the same way as <ref refid="group__bt__gatt__client_1ga9fc78e32230637a6f092da2400c50fe7" kindref="member">bt_gatt_write_without_response</ref>. With the addition that after sending the write the callback function will be called.</para>
-<para>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_CONN_TX_MAX` </verbatim> option.</para>
+<para>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_CONN_TX_MAX` </verbatim> option.</para>
 <para><simplesect kind="note"><para>By using a callback it also disable the internal flow control which would prevent sending multiple commands without waiting for their transmissions to complete, so if that is required the caller shall not submit more data until the callback is called.</para>
 </simplesect>
 This function will block while the ATT request queue is full, except when called from the BT RX thread, as this would cause a deadlock.</para>
@@ -3683,7 +3685,7 @@ This function will block while the ATT request queue is full, except when called
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3778,7 +3780,7 @@ This function will block while the ATT request queue is full, except when called
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3840,7 +3842,7 @@ This function will block while the ATT request queue is full, except when called
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -3957,7 +3959,7 @@ This function will block while the ATT request queue is full, except when called
 <parametername>-ENOMEM</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
+<para>ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_L2CAP_TX_BUF_COUNT` </verbatim>. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

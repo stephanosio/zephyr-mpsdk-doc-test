@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -185,7 +187,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -302,7 +304,7 @@ and color printing.</p></li>
 <p>Some of these features have a significant impact on RAM and flash usage,
 but many can be disabled when not needed.  To default to options which
 favor reduced RAM and flash requirements instead of features, you should
-enable <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_MINIMAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_MINIMAL</span></code></a> and selectively enable just the
+enable <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_MINIMAL" title="CONFIG_SHELL_MINIMAL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_MINIMAL</span></code></a> and selectively enable just the
 features you want.</p>
 </div>
 <p>The module can be connected to any transport for command input and output.
@@ -516,7 +518,7 @@ and a function <a class="reference internal" href="#c.shell_execute_cmd" title="
 </pre></div>
 </div>
 <p>Enable the DUMMY backend by setting the Kconfig
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_BACKEND_DUMMY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_BACKEND_DUMMY</span></code></a> option.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_BACKEND_DUMMY" title="CONFIG_SHELL_BACKEND_DUMMY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_BACKEND_DUMMY</span></code></a> option.</p>
 <div class="section" id="command-handler">
 <h4>Command handler<a class="headerlink" href="#command-handler" title="Permalink to this headline">¶</a></h4>
 <p>Simple command handler implementation:</p>
@@ -588,7 +590,7 @@ commands.</p></li>
 </div>
 <div class="section" id="built-in-commands">
 <h3><a class="toc-backref" href="#id8">Built-in commands</a><a class="headerlink" href="#built-in-commands" title="Permalink to this headline">¶</a></h3>
-<p>These commands are activated by <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_CMDS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>These commands are activated by <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_CMDS" title="CONFIG_SHELL_CMDS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <ul>
 <li><p><strong class="command">clear</strong> - Clears the screen.</p></li>
 <li><p><strong class="command">history</strong> - Shows the recently entered commands.</p></li>
@@ -604,11 +606,11 @@ terminal and assume successful delivery.</p></li>
 </ul>
 </div></blockquote>
 <p>These command needs extra activation:
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_CMDS_RESIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS_RESIZE</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_CMDS_RESIZE" title="CONFIG_SHELL_CMDS_RESIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS_RESIZE</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 </li>
 <li><p><strong class="command">select</strong> - It can be used to set new root command. Exit to main
 command tree is with alt+r. This command needs extra activation:
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_CMDS_SELECT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS_SELECT</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p></li>
+<a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_CMDS_SELECT" title="CONFIG_SHELL_CMDS_SELECT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS_SELECT</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p></li>
 <li><p><strong class="command">shell</strong> - Root command with useful shell-related subcommands like:</p>
 <blockquote>
 <div><ul class="simple">
@@ -625,10 +627,10 @@ case of Bluetooth shell to limit the amount of transferred bytes.</p></li>
 <div class="section" id="tab-feature">
 <h2><a class="toc-backref" href="#id9">Tab Feature</a><a class="headerlink" href="#tab-feature" title="Permalink to this headline">¶</a></h2>
 <p>The Tab button can be used to suggest commands or subcommands. This feature
-is enabled by <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_TAB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_TAB</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.
+is enabled by <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_TAB" title="CONFIG_SHELL_TAB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_TAB</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.
 It can also be used for partial or complete auto-completion of commands.
 This feature is activated by
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_TAB_AUTOCOMPLETION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_TAB_AUTOCOMPLETION</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.
+<a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_TAB_AUTOCOMPLETION" title="CONFIG_SHELL_TAB_AUTOCOMPLETION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_TAB_AUTOCOMPLETION</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.
 When user starts writing a command and presses the <kbd class="kbd docutils literal notranslate">Tab</kbd> button then
 the shell will do one of 3 possible things:</p>
 <ul class="simple">
@@ -641,11 +643,11 @@ the shell will do one of 3 possible things:</p>
 <div class="section" id="history-feature">
 <h2><a class="toc-backref" href="#id10">History Feature</a><a class="headerlink" href="#history-feature" title="Permalink to this headline">¶</a></h2>
 <p>This feature enables commands history in the shell. It is activated by:
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_HISTORY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_HISTORY</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>. History can be accessed
+<a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_HISTORY" title="CONFIG_SHELL_HISTORY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_HISTORY</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>. History can be accessed
 using keys: <kbd class="kbd docutils literal notranslate">↑</kbd> <kbd class="kbd docutils literal notranslate">↓</kbd> or <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">n</kbd></kbd> and <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">p</kbd></kbd>
 if meta keys are active.
 Number of commands that can be stored depends on size
-of <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_HISTORY_BUFFER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_HISTORY_BUFFER</span></code></a> parameter.</p>
+of <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_HISTORY_BUFFER" title="CONFIG_SHELL_HISTORY_BUFFER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_HISTORY_BUFFER</span></code></a> parameter.</p>
 </div>
 <div class="section" id="wildcards-feature">
 <h2><a class="toc-backref" href="#id11">Wildcards Feature</a><a class="headerlink" href="#wildcards-feature" title="Permalink to this headline">¶</a></h2>
@@ -657,7 +659,7 @@ modules you can execute the following command:</p>
 </pre></div>
 </div>
 <img alt="Wildcard usage example" class="align-center" src="../../_images/wildcard.png" />
-<p>This feature is activated by <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_WILDCARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_WILDCARD</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>This feature is activated by <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_WILDCARD" title="CONFIG_SHELL_WILDCARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_WILDCARD</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 </div>
 <div class="section" id="meta-keys-feature">
 <h2><a class="toc-backref" href="#id12">Meta Keys Feature</a><a class="headerlink" href="#meta-keys-feature" title="Permalink to this headline">¶</a></h2>
@@ -721,7 +723,7 @@ separated by period instead of space are treated as one word.</p></td>
 </tr>
 </tbody>
 </table>
-<p>This feature is activated by <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_METAKEYS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_METAKEYS</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>This feature is activated by <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_METAKEYS" title="CONFIG_SHELL_METAKEYS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_METAKEYS</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 </div>
 <div class="section" id="getopt-feature">
 <h2><a class="toc-backref" href="#id13">Getopt Feature</a><a class="headerlink" href="#getopt-feature" title="Permalink to this headline">¶</a></h2>
@@ -730,7 +732,7 @@ the arguments string, looking for supported options. Typically, this task
 is accomplished by the <code class="docutils literal notranslate"><span class="pre">getopt</span></code> familly functions.</p>
 <p>For this purpose shell supports the getopt and getopt_long libraries available
 in the FreeBSD project. This feature is activated by:
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_GETOPT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GETOPT</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code> and <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_GETOPT_LONG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GETOPT_LONG</span></code></a>
+<a class="reference internal" href="../../kconfig.html#CONFIG_GETOPT" title="CONFIG_GETOPT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_GETOPT</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code> and <a class="reference internal" href="../../kconfig.html#CONFIG_GETOPT_LONG" title="CONFIG_GETOPT_LONG"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_GETOPT_LONG</span></code></a>
 set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <p>This feature can be used in thread safe as well as non thread safe manner.
 The former is full compatible with regular getopt usage while the latter
@@ -764,7 +766,7 @@ a bit differs.</p>
 </pre></div>
 </div>
 <p>Thread safe getopt functionality is activated by
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_GETOPT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_GETOPT</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_GETOPT" title="CONFIG_SHELL_GETOPT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_GETOPT</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 </div>
 <div class="section" id="obscured-input-feature">
 <h2><a class="toc-backref" href="#id14">Obscured Input Feature</a><a class="headerlink" href="#obscured-input-feature" title="Permalink to this headline">¶</a></h2>
@@ -777,11 +779,11 @@ shell to normal operation.  Such runtime control is possible with the
 <p>An example of login and logout commands using this feature is located in
 <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/subsys/shell/shell_module/src/main.c">samples/subsys/shell/shell_module/src/main.c</a> and the config file
 <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/subsys/shell/shell_module/prj_login.conf">samples/subsys/shell/shell_module/prj_login.conf</a>.</p>
-<p>This feature is activated upon startup by <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_START_OBSCURED"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_START_OBSCURED</span></code></a>
+<p>This feature is activated upon startup by <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_START_OBSCURED" title="CONFIG_SHELL_START_OBSCURED"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_START_OBSCURED</span></code></a>
 set to <code class="docutils literal notranslate"><span class="pre">y</span></code>. With this set either way, the option can still be controlled later
-at runtime. <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_CMDS_SELECT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS_SELECT</span></code></a> is useful to prevent entry
+at runtime. <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_CMDS_SELECT" title="CONFIG_SHELL_CMDS_SELECT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_CMDS_SELECT</span></code></a> is useful to prevent entry
 of any other command besides a login command, by means of the
-<code class="docutils literal notranslate"><span class="pre">shell_set_root_cmd</span></code> function. Likewise, <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_PROMPT_UART"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_PROMPT_UART</span></code></a>
+<code class="docutils literal notranslate"><span class="pre">shell_set_root_cmd</span></code> function. Likewise, <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_PROMPT_UART" title="CONFIG_SHELL_PROMPT_UART"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_PROMPT_UART</span></code></a>
 allows you to set the prompt upon startup, but it can be changed later with the
 <code class="docutils literal notranslate"><span class="pre">shell_prompt_change</span></code> function.</p>
 </div>
@@ -795,7 +797,7 @@ for that time. Oldest log message is removed from the queue after timeout and
 new message is enqueued. Use the <code class="docutils literal notranslate"><span class="pre">shell</span> <span class="pre">stats</span> <span class="pre">show</span></code> command to retrieve
 number of log messages dropped by the shell instance. Log queue size and timeout
 are <a class="reference internal" href="#c.SHELL_DEFINE" title="SHELL_DEFINE"><code class="xref c c-macro docutils literal notranslate"><span class="pre">SHELL_DEFINE</span></code></a> arguments.</p>
-<p>This feature is activated by: <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_LOG_BACKEND"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_LOG_BACKEND</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<p>This feature is activated by: <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_LOG_BACKEND" title="CONFIG_SHELL_LOG_BACKEND"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_LOG_BACKEND</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Enqueuing timeout must be set carefully when multiple backends are used
@@ -809,8 +811,8 @@ backends.</p>
 <p>As the shell is a complex logger backend, it can not output logs if
 the application crashes before the shell thread is running. In this
 situation, you can enable one of the simple logging backends instead,
-such as UART (<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_LOG_BACKEND_UART"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LOG_BACKEND_UART</span></code></a>) or
-RTT (<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_LOG_BACKEND_RTT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LOG_BACKEND_RTT</span></code></a>), which are available earlier
+such as UART (<a class="reference internal" href="../../kconfig.html#CONFIG_LOG_BACKEND_UART" title="CONFIG_LOG_BACKEND_UART"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LOG_BACKEND_UART</span></code></a>) or
+RTT (<a class="reference internal" href="../../kconfig.html#CONFIG_LOG_BACKEND_RTT" title="CONFIG_LOG_BACKEND_RTT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LOG_BACKEND_RTT</span></code></a>), which are available earlier
 during system initialization.</p>
 </div>
 </div>
@@ -1737,7 +1739,7 @@ Example usage: static int my_handler(const struct shell *shell, size_t argc, cha
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>shell</strong> – <strong>[in]</strong> Pointer to the shell instance. It can be NULL when the <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_BACKEND_DUMMY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_BACKEND_DUMMY</span></code></a> </span> option is enabled. </p></li>
+<li><p><strong>shell</strong> – <strong>[in]</strong> Pointer to the shell instance. It can be NULL when the <span> <a class="reference internal" href="../../kconfig.html#CONFIG_SHELL_BACKEND_DUMMY" title="CONFIG_SHELL_BACKEND_DUMMY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_BACKEND_DUMMY</span></code></a> </span> option is enabled. </p></li>
 <li><p><strong>cmd</strong> – <strong>[in]</strong> Command to be executed.</p></li>
 </ul>
 </dd>
@@ -2388,8 +2390,8 @@ Example usage: static int my_handler(const struct shell *shell, size_t argc, cha
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

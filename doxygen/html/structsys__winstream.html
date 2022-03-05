@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -118,7 +118,8 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Lockless shared memory byte stream IPC. </p>
-<p >The <a class="el" href="structsys__winstream.html" title="Lockless shared memory byte stream IPC.">sys_winstream</a> utility implements a unidirectional byte stream with simple read/write semantics on top of a memory region shared by the writer and reader. It requires no locking or synchronization mechanisms beyond reliable ordering of memory operations, and so is a good fit for use with heterogenous shared memory environments (for example, where Zephyr needs to talk to other CPUs in the system running their own software). </p>
+<p >The <a class="el" href="structsys__winstream.html" title="Lockless shared memory byte stream IPC.">sys_winstream</a> utility implements a unidirectional byte stream with simple read/write semantics on top of a memory region shared by the writer and reader. It requires no locking or synchronization mechanisms beyond reliable ordering of memory operations, and so is a good fit for use with heterogenous shared memory environments (for example, where Zephyr needs to talk to other CPUs in the system running their own software).</p>
+<p >This object does not keep track of the last sequence number read: the reader must keep that state and provide it on every read operation. After reaching "steady state", 'end' and 'start' are one byte apart because the buffer is always full. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a id="a341203116bfee52d4b801466097fc3eb" name="a341203116bfee52d4b801466097fc3eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a341203116bfee52d4b801466097fc3eb">&#9670;&nbsp;</a></span>data</h2>
@@ -200,7 +201,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structsys__winstream.html">sys_winstream</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:48 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

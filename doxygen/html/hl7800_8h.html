@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -250,11 +250,16 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a65c8ed3a7c2a2aee39ca65e57f33b773"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5bb68d2f392f6358f833f8c163a4707"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707">mdm_hl7800_sleep_state</a> { <a class="el" href="hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707a062b63b9b21f48348a190c1558012c72">HL7800_SLEEP_STATE_UNINITIALIZED</a> = 0
-, <a class="el" href="hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707ab25eaa7f59ebe4495a01ebd76f6be8ff">HL7800_SLEEP_STATE_ASLEEP</a>
-, <a class="el" href="hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707ab00559336013a5e4f1830fa464075f89">HL7800_SLEEP_STATE_AWAKE</a>
+<tr class="memitem:a3396149e553c32a597739096efe2aff7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7">mdm_hl7800_sleep</a> { <br />
+&#160;&#160;<a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7af81cd0793c7faded881246c6a44b099a">HL7800_SLEEP_UNINITIALIZED</a> = 0
+, <a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7af1253aa2135a3c1fb0f3a47a1f0265a4">HL7800_SLEEP_HIBERNATE</a>
+, <a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7ac7bf9c4685d31858b98d4188747387ba">HL7800_SLEEP_AWAKE</a>
+, <a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7a58c8b0b7a63a3f85b14d0cd0eea4b452">HL7800_SLEEP_LITE_HIBERNATE</a>
+, <br />
+&#160;&#160;<a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7a37e4283b77e32e890f7cc3eca3985289">HL7800_SLEEP_SLEEP</a>
+<br />
  }</td></tr>
-<tr class="separator:aa5bb68d2f392f6358f833f8c163a4707"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a3396149e553c32a597739096efe2aff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ed2ea65436083a9b1a49bb1f64574f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#a8ed2ea65436083a9b1a49bb1f64574f3">mdm_hl7800_fota_state</a> { <br />
 &#160;&#160;<a class="el" href="hl7800_8h.html#a8ed2ea65436083a9b1a49bb1f64574f3ab7d67051e56e05be47da306377bb8801">HL7800_FOTA_IDLE</a>
 , <a class="el" href="hl7800_8h.html#a8ed2ea65436083a9b1a49bb1f64574f3ae6b160137651a7375551760f938b9da8">HL7800_FOTA_START</a>
@@ -333,7 +338,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a82805bc8e86e4a7dcffee5f604194f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send an AT command to the HL7800.  <a href="hl7800_8h.html#a82805bc8e86e4a7dcffee5f604194f30">More...</a><br /></td></tr>
 <tr class="separator:a82805bc8e86e4a7dcffee5f604194f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7d20cde62d5e7c987672cc9c10b152e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#ad7d20cde62d5e7c987672cc9c10b152e">mdm_hl7800_get_signal_quality</a> (int *rsrp, int *sinr)</td></tr>
-<tr class="memdesc:ad7d20cde62d5e7c987672cc9c10b152e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the signal quality of the HL7800.  <a href="hl7800_8h.html#ad7d20cde62d5e7c987672cc9c10b152e">More...</a><br /></td></tr>
+<tr class="memdesc:ad7d20cde62d5e7c987672cc9c10b152e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the signal quality of the HL7800. If CONFIG_MODEM_HL7800_RSSI_RATE_SECONDS is non-zero, then this function returns the value from the last periodic read. If CONFIG_MODEM_HL7800_RSSI_RATE_SECONDS is 0, then this may cause the modem to be woken so that the values can be queried.  <a href="hl7800_8h.html#ad7d20cde62d5e7c987672cc9c10b152e">More...</a><br /></td></tr>
 <tr class="separator:ad7d20cde62d5e7c987672cc9c10b152e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af84e782e572faf543a37a40147660eb0"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#af84e782e572faf543a37a40147660eb0">mdm_hl7800_get_iccid</a> (void)</td></tr>
 <tr class="memdesc:af84e782e572faf543a37a40147660eb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the SIM card ICCID.  <a href="hl7800_8h.html#af84e782e572faf543a37a40147660eb0">More...</a><br /></td></tr>
@@ -391,6 +396,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a975a4cd75d9d89dd23b182af2376ef91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#a975a4cd75d9d89dd23b182af2376ef91">mdm_hl7800_perform_site_survey</a> (void)</td></tr>
 <tr class="memdesc:a975a4cd75d9d89dd23b182af2376ef91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform a site survey. This command may return different values each time it is run (depending on what is in range).  <a href="hl7800_8h.html#a975a4cd75d9d89dd23b182af2376ef91">More...</a><br /></td></tr>
 <tr class="separator:a975a4cd75d9d89dd23b182af2376ef91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2388ecc33d15263091c63185ccda3ea3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#a2388ecc33d15263091c63185ccda3ea3">mdm_hl7800_set_desired_sleep_level</a> (enum <a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7">mdm_hl7800_sleep</a> level)</td></tr>
+<tr class="memdesc:a2388ecc33d15263091c63185ccda3ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set desired sleep level. Requires MODEM_HL7800_LOW_POWER_MODE.  <a href="hl7800_8h.html#a2388ecc33d15263091c63185ccda3ea3">More...</a><br /></td></tr>
+<tr class="separator:a2388ecc33d15263091c63185ccda3ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16ac0447c88a9f025fc13009e63f46ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#a16ac0447c88a9f025fc13009e63f46ef">mdm_hl7800_register_wake_test_point_callback</a> (void(*func)(int <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>))</td></tr>
+<tr class="memdesc:a16ac0447c88a9f025fc13009e63f46ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows mapping of WAKE_UP signal to a user accessible test point on the development board.  <a href="hl7800_8h.html#a16ac0447c88a9f025fc13009e63f46ef">More...</a><br /></td></tr>
+<tr class="separator:a16ac0447c88a9f025fc13009e63f46ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e5213411b27b4c5eeffd746464332a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#a0e5213411b27b4c5eeffd746464332a8">mdm_hl7800_register_gpio6_callback</a> (void(*func)(int <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>))</td></tr>
+<tr class="memdesc:a0e5213411b27b4c5eeffd746464332a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows mapping of P1.12_GPIO6 signal to a user accessible test point on the development board.  <a href="hl7800_8h.html#a0e5213411b27b4c5eeffd746464332a8">More...</a><br /></td></tr>
+<tr class="separator:a0e5213411b27b4c5eeffd746464332a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aead5a1419d87676f13fdea12f705b125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hl7800_8h.html#aead5a1419d87676f13fdea12f705b125">mdm_hl7800_register_cts_callback</a> (void(*func)(int <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>))</td></tr>
+<tr class="memdesc:aead5a1419d87676f13fdea12f705b125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows mapping of UART1_CTS signal to a user accessible test point on the development board.  <a href="hl7800_8h.html#aead5a1419d87676f13fdea12f705b125">More...</a><br /></td></tr>
+<tr class="separator:aead5a1419d87676f13fdea12f705b125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >HL7800 modem public API header file. </p>
@@ -1061,21 +1078,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aa5bb68d2f392f6358f833f8c163a4707" name="aa5bb68d2f392f6358f833f8c163a4707"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa5bb68d2f392f6358f833f8c163a4707">&#9670;&nbsp;</a></span>mdm_hl7800_sleep_state</h2>
+<a id="a3396149e553c32a597739096efe2aff7" name="a3396149e553c32a597739096efe2aff7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3396149e553c32a597739096efe2aff7">&#9670;&nbsp;</a></span>mdm_hl7800_sleep</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707">mdm_hl7800_sleep_state</a></td>
+          <td class="memname">enum <a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7">mdm_hl7800_sleep</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa5bb68d2f392f6358f833f8c163a4707a062b63b9b21f48348a190c1558012c72" name="aa5bb68d2f392f6358f833f8c163a4707a062b63b9b21f48348a190c1558012c72"></a>HL7800_SLEEP_STATE_UNINITIALIZED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa5bb68d2f392f6358f833f8c163a4707ab25eaa7f59ebe4495a01ebd76f6be8ff" name="aa5bb68d2f392f6358f833f8c163a4707ab25eaa7f59ebe4495a01ebd76f6be8ff"></a>HL7800_SLEEP_STATE_ASLEEP&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="aa5bb68d2f392f6358f833f8c163a4707ab00559336013a5e4f1830fa464075f89" name="aa5bb68d2f392f6358f833f8c163a4707ab00559336013a5e4f1830fa464075f89"></a>HL7800_SLEEP_STATE_AWAKE&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3396149e553c32a597739096efe2aff7af81cd0793c7faded881246c6a44b099a" name="a3396149e553c32a597739096efe2aff7af81cd0793c7faded881246c6a44b099a"></a>HL7800_SLEEP_UNINITIALIZED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3396149e553c32a597739096efe2aff7af1253aa2135a3c1fb0f3a47a1f0265a4" name="a3396149e553c32a597739096efe2aff7af1253aa2135a3c1fb0f3a47a1f0265a4"></a>HL7800_SLEEP_HIBERNATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3396149e553c32a597739096efe2aff7ac7bf9c4685d31858b98d4188747387ba" name="a3396149e553c32a597739096efe2aff7ac7bf9c4685d31858b98d4188747387ba"></a>HL7800_SLEEP_AWAKE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3396149e553c32a597739096efe2aff7a58c8b0b7a63a3f85b14d0cd0eea4b452" name="a3396149e553c32a597739096efe2aff7a58c8b0b7a63a3f85b14d0cd0eea4b452"></a>HL7800_SLEEP_LITE_HIBERNATE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a3396149e553c32a597739096efe2aff7a37e4283b77e32e890f7cc3eca3985289" name="a3396149e553c32a597739096efe2aff7a37e4283b77e32e890f7cc3eca3985289"></a>HL7800_SLEEP_SLEEP&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1316,7 +1335,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get the signal quality of the HL7800. </p>
+<p>Get the signal quality of the HL7800. If CONFIG_MODEM_HL7800_RSSI_RATE_SECONDS is non-zero, then this function returns the value from the last periodic read. If CONFIG_MODEM_HL7800_RSSI_RATE_SECONDS is 0, then this may cause the modem to be woken so that the values can be queried. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rsrp</td><td>Reference Signals Received Power (dBm) Range = -140 dBm to -44 dBm </td></tr>
@@ -1477,6 +1496,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aead5a1419d87676f13fdea12f705b125" name="aead5a1419d87676f13fdea12f705b125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aead5a1419d87676f13fdea12f705b125">&#9670;&nbsp;</a></span>mdm_hl7800_register_cts_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mdm_hl7800_register_cts_callback </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows mapping of UART1_CTS signal to a user accessible test point on the development board. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>to be called when CTS state changes if sleep level is sleep. The state parameter of the callback follows gpio_pin_get definitions, but will default low if there is an error reading pin </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a4640c9f9e42e6f5b73c4344be5546796" name="a4640c9f9e42e6f5b73c4344be5546796"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4640c9f9e42e6f5b73c4344be5546796">&#9670;&nbsp;</a></span>mdm_hl7800_register_event_callback()</h2>
 
@@ -1497,6 +1542,58 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb</td><td>event callback </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0e5213411b27b4c5eeffd746464332a8" name="a0e5213411b27b4c5eeffd746464332a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5213411b27b4c5eeffd746464332a8">&#9670;&nbsp;</a></span>mdm_hl7800_register_gpio6_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mdm_hl7800_register_gpio6_callback </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows mapping of P1.12_GPIO6 signal to a user accessible test point on the development board. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>to be called when modem wakes/sleeps is sleep level is hibernate or lite hibernate. The state parameter of the callback follows gpio_pin_get definitions, but will default high if there is an error reading pin </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a16ac0447c88a9f025fc13009e63f46ef" name="a16ac0447c88a9f025fc13009e63f46ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16ac0447c88a9f025fc13009e63f46ef">&#9670;&nbsp;</a></span>mdm_hl7800_register_wake_test_point_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mdm_hl7800_register_wake_test_point_callback </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(int <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)&#160;</td>
+          <td class="paramname"><em>func</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Allows mapping of WAKE_UP signal to a user accessible test point on the development board. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">func</td><td>to be called when application requests modem wake/sleep. The state parameter of the callback is 1 when modem should stay awake, 0 when modem can sleep </td></tr>
   </table>
   </dd>
 </dl>
@@ -1549,6 +1646,33 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>int32_t 0 for success </dd></dl>
+
+</div>
+</div>
+<a id="a2388ecc33d15263091c63185ccda3ea3" name="a2388ecc33d15263091c63185ccda3ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2388ecc33d15263091c63185ccda3ea3">&#9670;&nbsp;</a></span>mdm_hl7800_set_desired_sleep_level()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mdm_hl7800_set_desired_sleep_level </td>
+          <td>(</td>
+          <td class="paramtype">enum <a class="el" href="hl7800_8h.html#a3396149e553c32a597739096efe2aff7">mdm_hl7800_sleep</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set desired sleep level. Requires MODEM_HL7800_LOW_POWER_MODE. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">level</td><td>(sleep, lite hibernate, or hibernate) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int negative errno, 0 on success </dd></dl>
 
 </div>
 </div>
@@ -1718,7 +1842,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe5cf12322eb0f9892753dc20f1484c.html">drivers</a></li><li class="navelem"><a class="el" href="dir_e10e0b79ad5dda4c3d483ba6b8f2b359.html">modem</a></li><li class="navelem"><a class="el" href="hl7800_8h.html">hl7800.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

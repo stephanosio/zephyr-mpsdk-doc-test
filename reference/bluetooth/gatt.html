@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -183,7 +185,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -291,7 +293,7 @@ pass a callback to be called when it is necessary to know the exact instant when
 the data has been transmitted over the air. Indications are supported by
 <a class="reference internal" href="#c.bt_gatt_indicate" title="bt_gatt_indicate"><code class="xref c c-func docutils literal notranslate"><span class="pre">bt_gatt_indicate()</span></code></a> API.</p>
 <p>Client procedures can be enabled with the configuration option:
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_GATT_CLIENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_GATT_CLIENT</span></code></a></p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_BT_GATT_CLIENT" title="CONFIG_BT_GATT_CLIENT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_GATT_CLIENT</span></code></a></p>
 <p>Discover procedures can be initiated with the use of
 <a class="reference internal" href="#c.bt_gatt_discover" title="bt_gatt_discover"><code class="xref c c-func docutils literal notranslate"><span class="pre">bt_gatt_discover()</span></code></a> API which takes the
 <a class="reference internal" href="#c.bt_gatt_discover_params" title="bt_gatt_discover_params"><code class="xref c c-struct docutils literal notranslate"><span class="pre">bt_gatt_discover_params</span></code></a> struct which describes the type of
@@ -305,7 +307,7 @@ to NULL allows all attributes to be discovered.</p>
 <p>Read procedures are supported by <a class="reference internal" href="#c.bt_gatt_read" title="bt_gatt_read"><code class="xref c c-func docutils literal notranslate"><span class="pre">bt_gatt_read()</span></code></a> API which takes the
 <a class="reference internal" href="#c.bt_gatt_read_params" title="bt_gatt_read_params"><code class="xref c c-struct docutils literal notranslate"><span class="pre">bt_gatt_read_params</span></code></a> struct as parameters. In the parameters one or
 more attributes can be set, though setting multiple handles requires the option:
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_GATT_READ_MULTIPLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_GATT_READ_MULTIPLE</span></code></a></p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_BT_GATT_READ_MULTIPLE" title="CONFIG_BT_GATT_READ_MULTIPLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_GATT_READ_MULTIPLE</span></code></a></p>
 <p>Write procedures are supported by <a class="reference internal" href="#c.bt_gatt_write" title="bt_gatt_write"><code class="xref c c-func docutils literal notranslate"><span class="pre">bt_gatt_write()</span></code></a> API and takes
 <a class="reference internal" href="#c.bt_gatt_write_params" title="bt_gatt_write_params"><code class="xref c c-struct docutils literal notranslate"><span class="pre">bt_gatt_write_params</span></code></a> struct as parameters. In case the write
 operation don’t require a response <a class="reference internal" href="#c.bt_gatt_write_without_response" title="bt_gatt_write_without_response"><code class="xref c c-func docutils literal notranslate"><span class="pre">bt_gatt_write_without_response()</span></code></a>
@@ -1252,8 +1254,8 @@ set to NULL.</p>
 <span class="target" id="group__bt__gatt__server_1gab4d9cfea04e44445d5dc30ad52842b64"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_gatt_service_register</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_gatt_service" title="bt_gatt_service"><span class="n"><span class="pre">bt_gatt_service</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">svc</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_gatt_service_register" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Register GATT service. </p>
 <p>Register GATT service. Applications can make use of macros such as BT_GATT_PRIMARY_SERVICE, BT_GATT_CHARACTERISTIC, BT_GATT_DESCRIPTOR, etc.</p>
-<p>When using <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SETTINGS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS</span></code></a> </span> then all services that should have bond configuration loaded, i.e. CCC values, must be registered before calling <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load</span></a>.</p>
-<p>When using <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_GATT_CACHING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_GATT_CACHING</span></code></a> </span> and <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SETTINGS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS</span></code></a> </span> then all services that should be included in the GATT Database Hash calculation should be added before calling <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load</span></a>. All services registered after settings_load will trigger a new database hash calculation and a new hash stored.</p>
+<p>When using <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_SETTINGS" title="CONFIG_BT_SETTINGS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS</span></code></a> </span> then all services that should have bond configuration loaded, i.e. CCC values, must be registered before calling <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load</span></a>.</p>
+<p>When using <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_GATT_CACHING" title="CONFIG_BT_GATT_CACHING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_GATT_CACHING</span></code></a> </span> and <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_SETTINGS" title="CONFIG_BT_SETTINGS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SETTINGS</span></code></a> </span> then all services that should be included in the GATT Database Hash calculation should be added before calling <a class="reference internal" href="../settings/index.html#group__settings_1ga89c6d618df81f197cc5c1a2018b00648"><span class="std std-ref">settings_load</span></a>. All services registered after settings_load will trigger a new database hash calculation and a new hash stored.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1633,7 +1635,7 @@ set to NULL.</p>
 <span class="target" id="group__bt__gatt__server_1ga55e3ef7cb43b8acb0a27643c78390146"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_gatt_notify_cb</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_gatt_notify_params" title="bt_gatt_notify_params"><span class="n"><span class="pre">bt_gatt_notify_params</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">params</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_gatt_notify_cb" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Notify attribute value change. </p>
 <p>This function works in the same way as <a class="reference internal" href="#group__bt__gatt__server_1ga74ee552864c563aa5bc939f37395c14a"><span class="std std-ref">bt_gatt_notify</span></a>. With the addition that after sending the notification the callback function will be called.</p>
-<p>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CONN_TX_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CONN_TX_MAX</span></code></a> </span> option.</p>
+<p>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_CONN_TX_MAX" title="CONFIG_BT_CONN_TX_MAX"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CONN_TX_MAX</span></code></a> </span> option.</p>
 <p>Alternatively it is possible to notify by UUID by setting it on the parameters, when using this method the attribute if provided is used as the start range when looking up for possible matches.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -2178,7 +2180,7 @@ The Response comes in callback <code class="docutils literal notranslate"><span 
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request. Will call <code class="docutils literal notranslate"><span class="pre">params-&gt;func</span></code> on resolution.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2203,7 +2205,7 @@ The Response comes in callback <code class="docutils literal notranslate"><span 
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request. Will call <code class="docutils literal notranslate"><span class="pre">params-&gt;func</span></code> on resolution.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2228,7 +2230,7 @@ The Response comes in callback <code class="docutils literal notranslate"><span 
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request. Will call <code class="docutils literal notranslate"><span class="pre">params-&gt;func</span></code> on resolution.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2250,7 +2252,7 @@ The Response comes in callback <code class="docutils literal notranslate"><span 
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request. Will call <code class="docutils literal notranslate"><span class="pre">params-&gt;func</span></code> on resolution.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside Bluetooth event context to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside Bluetooth event context to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2261,7 +2263,7 @@ The Response comes in callback <code class="docutils literal notranslate"><span 
 <span class="target" id="group__bt__gatt__client_1ga49439413d12b5a8a1c68735e961ab6fa"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_gatt_write_without_response_cb</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">handle</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span>, <span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">length</span></span>, <span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="n"><span class="pre">sign</span></span>, <a class="reference internal" href="#c.bt_gatt_complete_func_t" title="bt_gatt_complete_func_t"><span class="n"><span class="pre">bt_gatt_complete_func_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">func</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">user_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_gatt_write_without_response_cb" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Write Attribute Value by handle without response with callback. </p>
 <p>This function works in the same way as <a class="reference internal" href="#group__bt__gatt__client_1ga9fc78e32230637a6f092da2400c50fe7"><span class="std std-ref">bt_gatt_write_without_response</span></a>. With the addition that after sending the write the callback function will be called.</p>
-<p>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CONN_TX_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CONN_TX_MAX</span></code></a> </span> option.</p>
+<p>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_CONN_TX_MAX" title="CONFIG_BT_CONN_TX_MAX"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CONN_TX_MAX</span></code></a> </span> option.</p>
 <p>
 This function will block while the ATT request queue is full, except when called from the BT RX thread, as this would cause a deadlock.</p>
 <div class="admonition note">
@@ -2283,7 +2285,7 @@ This function will block while the ATT request queue is full, except when called
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2308,7 +2310,7 @@ This function will block while the ATT request queue is full, except when called
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2336,7 +2338,7 @@ This function will block while the ATT request queue is full, except when called
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request. Will call <code class="docutils literal notranslate"><span class="pre">params-&gt;write</span></code> on resolution.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2382,7 +2384,7 @@ This function will block while the ATT request queue is full, except when called
 <dt class="field-even">Return values</dt>
 <dd class="field-even"><ul class="simple">
 <li><p><strong>0</strong> – Successfully queued request. Will call <code class="docutils literal notranslate"><span class="pre">params-&gt;write</span></code> on resolution.</p></li>
-<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
+<li><p><strong>-ENOMEM</strong> – ATT request queue is full and blocking would cause deadlock. Allow a pending request to resolve before retrying, or call this function outside the BT RX thread to get blocking behavior. Queue size is controlled by <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_TX_BUF_COUNT" title="CONFIG_BT_L2CAP_TX_BUF_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_TX_BUF_COUNT</span></code></a> </span>. </p></li>
 </ul>
 </dd>
 </dl>
@@ -2647,8 +2649,8 @@ This function will block while the ATT request queue is full, except when called
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

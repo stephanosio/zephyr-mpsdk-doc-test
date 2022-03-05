@@ -891,7 +891,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_8h_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1056,7 +1056,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_8h_1a7c85443c1df20cf27ebfcb90abb5f9a5" prot="public" static="no">
         <name>STACK_SIZE_MD</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1089,7 +1089,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_8h_1aa7f7c04898e26208c8e5a091e99e699e" prot="public" static="no">
         <name>KOBJECT_STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1527,7 +1527,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="36" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="149" bodyend="159" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="36" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="36" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="158" bodyend="168" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="36" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a624a2a75324b61c1cf8c2ae6e18323ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1548,7 +1548,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="37" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="180" bodyend="190" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="37" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="37" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="189" bodyend="199" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="37" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a2ac642c55538df6d6f07448764d1345e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1568,7 +1568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="38" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="211" bodyend="236" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="38" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="38" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="220" bodyend="245" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="38" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a3f824f076eba7b5faba313968345ce19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1588,7 +1588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="39" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="258" bodyend="281" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="39" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="39" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="267" bodyend="290" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="39" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1aa9f5c6f6c41ffbe8243064bcf26a722d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1609,7 +1609,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="40" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="304" bodyend="318" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="40" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="40" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="313" bodyend="327" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="40" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ab6477e3d247de7d00760029682b92cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1629,7 +1629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="41" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="338" bodyend="353" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="41" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="41" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="347" bodyend="362" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="41" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a518d6ad7708e28d34a7ff6300e6a7ae5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1650,7 +1650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="42" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="393" bodyend="414" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="42" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="42" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="402" bodyend="423" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="42" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a1d079fd39b0030a5aa0ffa0bc14762c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1671,7 +1671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="43" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="442" bodyend="466" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="43" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="43" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="451" bodyend="475" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="43" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a524bff5a2453bf920bf69e45fc0974ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1691,7 +1691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="44" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="477" bodyend="488" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="44" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="44" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="486" bodyend="497" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="44" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a2744c81a11d9bd2363cf25066fe94ce6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1709,7 +1709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="45" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="498" bodyend="505" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="45" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="45" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="507" bodyend="514" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="45" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad72a838230c633930d7cd230794be891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1727,7 +1727,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="46" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="516" bodyend="523" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="46" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="46" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="525" bodyend="532" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="46" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ace6c401dbb827ce99780f219d4965e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1747,7 +1747,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="47" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="541" bodyend="556" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="47" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="47" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="550" bodyend="565" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="47" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1acc771c03532adf85548caeae755363da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1764,7 +1764,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="48" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="584" bodyend="596" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="48" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="48" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="593" bodyend="605" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="48" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a2f2155ae5900fafb5178abf5ed564f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1787,7 +1787,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="49" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="630" bodyend="646" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="49" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="49" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="639" bodyend="655" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="49" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad1d257f149e9427648fce5868a12b40e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1805,7 +1805,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="50" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="680" bodyend="697" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="50" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="50" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="689" bodyend="706" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="50" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a882d2d56884634274a8b9cc2c02b86f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1823,7 +1823,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="51" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="724" bodyend="738" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="51" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="51" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="733" bodyend="747" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="51" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad6d3f3e1d8c3c49a71d3a03fce075b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1841,7 +1841,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="52" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="768" bodyend="783" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="52" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="52" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="777" bodyend="792" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="52" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad84b40a95979d504eb717e3e6c660a87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1859,7 +1859,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="53" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="822" bodyend="838" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="53" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="53" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="831" bodyend="847" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="53" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a8a9a77c0d8d7a50fc5570ded11f7e025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1877,7 +1877,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="54" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="876" bodyend="892" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="54" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="54" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="885" bodyend="901" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="54" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad8f4c029e42dac2b3ea85ab31c12d447" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1894,7 +1894,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="55" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="920" bodyend="935" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="55" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="55" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="929" bodyend="944" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="55" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a22cfe948c18142ba6ade01c596c531d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1912,7 +1912,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="56" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="966" bodyend="982" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="56" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="56" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="975" bodyend="991" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="56" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a512b3074a78a25a27ea3437e54aad2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1930,7 +1930,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="57" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1013" bodyend="1029" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="57" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="57" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1022" bodyend="1038" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="57" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad348dd28e2c74cebfada973fc66415b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1948,7 +1948,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="58" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1056" bodyend="1084" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="58" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="58" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1065" bodyend="1093" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="58" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ab8e9b3bf08f16b2c2366333930a3cc1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2082,7 +2082,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="63" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="81" bodyend="91" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="63" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="63" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="81" bodyend="100" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="63" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ad63f4c0189ae388a36ebd1d4bb19030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2103,7 +2103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="64" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="103" bodyend="108" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="64" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="64" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="112" bodyend="117" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="64" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a4da6c03cb47564b4d536cceb3c4a9cae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2124,7 +2124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="65" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="120" bodyend="125" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="65" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="65" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="129" bodyend="134" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="65" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ae9e91c1692620931cd2395b4f0ed3f42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2145,7 +2145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="66" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="364" bodyend="370" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="66" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="66" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="373" bodyend="379" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="66" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a889b929c625e0771fdadd67e626e23ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2166,7 +2166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="67" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1105" bodyend="1120" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="67" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="67" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1114" bodyend="1129" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="67" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a7b558210687290ff24f6e010fe8f0c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2187,7 +2187,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="68" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1132" bodyend="1143" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="68" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="68" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1141" bodyend="1152" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="68" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1ac1d4b3ad22703d4cb2d0433f7446e7fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2208,7 +2208,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="69" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1155" bodyend="1181" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="69" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="69" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1164" bodyend="1190" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="69" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a31212ba731f42b9b3754ac0a8d19ce5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2224,7 +2224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="70" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1198" bodyend="1238" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="70" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="70" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1207" bodyend="1247" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="70" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a74d76fe246f3e3c35c6935f165e294b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2245,7 +2245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="71" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1250" bodyend="1310" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="71" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="71" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1259" bodyend="1322" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="71" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a1014f7d22ce3b5ebf4e52694d14539d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2266,7 +2266,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="72" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1345" bodyend="1373" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="72" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="72" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1357" bodyend="1385" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="72" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a879c91ce7cd3d820a1c19c8843875624" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2284,7 +2284,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="73" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1384" bodyend="1402" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="73" declcolumn="13"/>
+        <location file="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" line="73" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/kobject.c" bodystart="1396" bodyend="1414" declfile="tests/kernel/mem_protect/mem_protect/src/mem_protect.h" declline="73" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="mem__protect_8h_1a6bc9c5485934a1cb634735eebe320cfe" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2423,7 +2423,7 @@
 <codeline lineno="96" refid="mem__protect_8h_1a7f4e9e375c31bec11cf35f99a965bf2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG_Q_MAX_NUM_MSGS<sp/>(10)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="97" refid="mem__protect_8h_1aa5428a7edeec43ef8e686940f221e780" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG_Q_ALIGN<sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="98" refid="mem__protect_8h_1a25e7852941475e51c875632ac1985d8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIORITY<sp/>5</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="99" refid="mem__protect_8h_1a6423a880df59733d2d9b509c7718d3a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="mem__protect_8h_1a6423a880df59733d2d9b509c7718d3a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="100" refid="mem__protect_8h_1abf2f644fd3fbae3f1262ece9914b49cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_SIZE_MIN<sp/>16</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="101" refid="mem__protect_8h_1a75341588e628cc8059088830880e11ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_SIZE_MAX<sp/>64</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="102" refid="mem__protect_8h_1a5b36f40d28e57c40d7a56e926f36c8f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_NUM_MIN<sp/>8</highlight><highlight class="normal"></highlight></codeline>
@@ -2440,7 +2440,7 @@
 <codeline lineno="113" refid="mem__protect_8h_1a03ce2723018ac78067b43dc5fceaf91a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_NUM_MAX_MD<sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="114" refid="mem__protect_8h_1a9a76ba46a2904c02ac67761ba748d842" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_ALIGN_MD<sp/>BLK_SIZE_MIN_MD</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="115" refid="mem__protect_8h_1a550a75944350b926760a1bf0c553d87f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DESC_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>sizeof(struct<sp/>sys_mem_pool_block)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116" refid="mem__protect_8h_1a7c85443c1df20cf27ebfcb90abb5f9a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE_MD<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="mem__protect_8h_1a7c85443c1df20cf27ebfcb90abb5f9a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE_MD<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="117" refid="mem__protect_8h_1a31b01494975bd3ea9792063fa6e4853c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIORITY_MD<sp/>5</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_X86)</highlight><highlight class="normal"></highlight></codeline>
@@ -2459,7 +2459,7 @@
 <codeline lineno="132" refid="mem__protect_8h_1a3c2d0d295d142e2ad1dcfd544fd64ad9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MEM_DOMAIN_ALIGNMENT<sp/>__aligned(MEM_REGION_ALLOC)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>for<sp/>kobject.c<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="135" refid="mem__protect_8h_1aa7f7c04898e26208c8e5a091e99e699e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KOBJECT_STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="mem__protect_8h_1aa7f7c04898e26208c8e5a091e99e699e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KOBJECT_STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
 <codeline lineno="138"><highlight class="normal"></highlight></codeline>

@@ -83,7 +83,7 @@ cs_hold             [ 12 ]      - Hold on the CS line if possible.
 lock_on             [ 13 ]      - Keep resource locked for the caller.
 cs_active_high      [ 14 ]      - Active high CS logic.
 format              [ 15 ]      - Motorola or TI frame format (optional).
-</verbatim> if <verbatim>embed:rst:inline :kconfig:`CONFIG_SPI_EXTENDED_MODES` </verbatim> is defined: lines [ 16 : 17 ] - MISO lines: Single/Dual/Quad/Octal. reserved [ 18 : 31 ] - reserved for future use. </para>
+</verbatim> if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SPI_EXTENDED_MODES` </verbatim> is defined: lines [ 16 : 17 ] - MISO lines: Single/Dual/Quad/Octal. reserved [ 18 : 31 ] - reserved for future use. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>

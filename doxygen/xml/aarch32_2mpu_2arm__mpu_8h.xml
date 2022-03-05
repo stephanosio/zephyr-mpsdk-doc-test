@@ -56,7 +56,7 @@
 <codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defined(CONFIG_CPU_CORTEX_M3)<sp/>||<sp/>\</highlight></codeline>
 <codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defined(CONFIG_CPU_CORTEX_M4)<sp/>||<sp/>\</highlight></codeline>
 <codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defined(CONFIG_CPU_CORTEX_M7)<sp/>||<sp/>\</highlight></codeline>
-<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defined(CONFIG_CPU_CORTEX_R)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defined(CONFIG_CPU_AARCH32_CORTEX_R)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="arm__mpu__v7m_8h" kindref="compound">arch/arm/aarch32/mpu/arm_mpu_v7m.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(CONFIG_CPU_CORTEX_M23)<sp/>||<sp/>\</highlight></codeline>
 <codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>defined(CONFIG_CPU_CORTEX_M33)<sp/>||<sp/>\</highlight></codeline>
@@ -74,7 +74,7 @@
 <codeline lineno="28" refid="structarm__mpu__region_1a1639ea642561dc45d33774817e6a67b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structarm__mpu__region_1a1639ea642561dc45d33774817e6a67b6" kindref="member">base</ref>;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Region<sp/>Name<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30" refid="structarm__mpu__region_1a18f2dc7696fd55c1fdcce57ae16b46e4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structarm__mpu__region_1a18f2dc7696fd55c1fdcce57ae16b46e4" kindref="member">name</ref>;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_CPU_CORTEX_R)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_R)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Region<sp/>Size<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>size;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
@@ -90,7 +90,7 @@
 <codeline lineno="44" refid="structarm__mpu__config_1ac25f09decb52172736a1ab1e0327a6bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structarm__mpu__region" kindref="compound">arm_mpu_region</ref><sp/>*<ref refid="structarm__mpu__config_1ac25f09decb52172736a1ab1e0327a6bc" kindref="member">mpu_regions</ref>;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_CPU_CORTEX_R)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_R)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MPU_REGION_ENTRY(_name,<sp/>_base,<sp/>_size,<sp/>_attr)<sp/>\</highlight></codeline>
 <codeline lineno="49"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{\</highlight></codeline>
 <codeline lineno="50"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.name<sp/>=<sp/>_name,<sp/>\</highlight></codeline>

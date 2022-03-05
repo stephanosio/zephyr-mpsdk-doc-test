@@ -12,7 +12,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Device address (only available if <verbatim>embed:rst:inline :kconfig:`CONFIG_PINCTRL_STORE_REG` </verbatim> is enabled). </para>
+<para>Device address (only available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PINCTRL_STORE_REG` </verbatim> is enabled). </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -175,7 +177,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -239,7 +241,7 @@
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../kernel/timing/clocks.html#kernel-timing-uptime"><span class="std std-ref">Uptime</span></a> in Zephyr is based on the a tick counter.  With
-the default <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_TICKLESS_KERNEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TICKLESS_KERNEL</span></code></a> this counter advances at a
+the default <a class="reference internal" href="../../kconfig.html#CONFIG_TICKLESS_KERNEL" title="CONFIG_TICKLESS_KERNEL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TICKLESS_KERNEL</span></code></a> this counter advances at a
 nominally constant rate from zero at the instant the system started. The POSIX
 equivalent to this counter is something like <code class="docutils literal notranslate"><span class="pre">CLOCK_MONOTONIC</span></code> or, in Linux,
 <code class="docutils literal notranslate"><span class="pre">CLOCK_MONOTONIC_RAW</span></code>.  <a class="reference internal" href="../kernel/timing/clocks.html#c.k_uptime_get" title="k_uptime_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_uptime_get()</span></code></a> provides a millisecond
@@ -341,7 +343,7 @@ information about time zones.  Zephyr provides this transformation with
 <ul class="simple">
 <li><p>The rate of discrete instant representation change.  For example Zephyr
 uptime is tracked in ticks which advance at events that nominally occur at
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> Hertz, while an external time
+<a class="reference internal" href="../../kconfig.html#CONFIG_SYS_CLOCK_TICKS_PER_SEC" title="CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> Hertz, while an external time
 source may provide data in whole or fractional seconds (e.g. microseconds).</p></li>
 <li><p>The absolute offset required to align the two scales at a single instant.</p></li>
 <li><p>The relative error between observable instants in each scale, required to
@@ -778,8 +780,8 @@ received a GPS with or without a 1pps signal.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

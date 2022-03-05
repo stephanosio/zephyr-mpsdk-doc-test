@@ -748,7 +748,7 @@
       </memberdef>
       <memberdef kind="define" id="test__stack__fail_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -811,16 +811,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="test__stack__fail_8c_1a4e076a37dd170ff46635150cb321e7e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__stack__fail_8c_1a976bd76e0d65fac8327d878814d37afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(threadstack2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(threadstack2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>threadstack2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1071,12 +1071,12 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest__error__hook_8h" kindref="compound">ztest_error_hook.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/>K_MSEC(100)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_LEN<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/>stack_data_t<sp/><ref refid="test__stack__fail_8c_1a4bb6fa6c719fd9021449009ab8befc04" kindref="member">data</ref>[<ref refid="test__stack__fail_8c_1a82c9bc91d6207f493c814b2c33dfdba4" kindref="member">STACK_LEN</ref>];</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_stack<sp/><ref refid="test__stack__fail_8c_1a6856ea318b5a9498715e4444b13a1de1" kindref="member">stack</ref>;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><ref refid="test__stack__fail_8c_1a4e076a37dd170ff46635150cb321e7e5" kindref="member">K_THREAD_STACK_DEFINE</ref>(threadstack2,<sp/><ref refid="test__stack__fail_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="test__stack__fail_8c_1a976bd76e0d65fac8327d878814d37afa" kindref="member">K_THREAD_STACK_DEFINE</ref>(threadstack2,<sp/><ref refid="test__stack__fail_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__stack__fail_8c_1ab51c8e218105b70256a91ca680290635" kindref="member">thread_data2</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__stack__fail_8c_1ad2e5814d9dda00f9b9f7ef9971f4dabc" kindref="member">stack_pop_fail</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>k_stack<sp/>*<ref refid="test__stack__fail_8c_1a6856ea318b5a9498715e4444b13a1de1" kindref="member">stack</ref>)</highlight></codeline>

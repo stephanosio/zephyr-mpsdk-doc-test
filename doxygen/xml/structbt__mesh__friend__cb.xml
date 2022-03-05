@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="618" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="618" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="642" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="642" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__friend__cb_1a1c0d570eb1b857c65b3b5b4ce31999d6" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="629" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="629" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="653" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="653" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__friend__cb_1a7b904967d89173f82ac26216e3849d23" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="642" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="642" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="666" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="666" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -126,7 +126,7 @@
     <detaileddescription>
 <para>Friend Node callback functions. </para>
     </detaileddescription>
-    <location file="include/bluetooth/mesh/main.h" line="607" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="607" bodyend="643"/>
+    <location file="include/bluetooth/mesh/main.h" line="631" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="631" bodyend="667"/>
     <listofallmembers>
       <member refid="structbt__mesh__friend__cb_1a824ed814a46a3954d2c6f669c8900156" prot="public" virt="non-virtual"><scope>bt_mesh_friend_cb</scope><name>established</name></member>
       <member refid="structbt__mesh__friend__cb_1a7b904967d89173f82ac26216e3849d23" prot="public" virt="non-virtual"><scope>bt_mesh_friend_cb</scope><name>polled</name></member>

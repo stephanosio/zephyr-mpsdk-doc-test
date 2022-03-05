@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="581" column="5" declfile="include/bluetooth/mesh/access.h" declline="581" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/access.h" line="602" column="5" declfile="include/bluetooth/mesh/access.h" declline="602" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1ga71794c8253b1fee4aa9c211cd920aa69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="600" column="5" declfile="include/bluetooth/mesh/access.h" declline="600" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/access.h" line="621" column="5" declfile="include/bluetooth/mesh/access.h" declline="621" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1ga1b961d45f8b7c231c698ca229115e434" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -150,7 +150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="610" column="20" bodyfile="include/bluetooth/mesh/access.h" bodystart="610" bodyend="613"/>
+        <location file="include/bluetooth/mesh/access.h" line="631" column="20" bodyfile="include/bluetooth/mesh/access.h" bodystart="631" bodyend="634"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1ga1b07a02835c1496a116f756a6321fc38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structbt__mesh__elem" kindref="compound">bt_mesh_elem</ref> *</type>
@@ -180,7 +180,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="621" column="19" declfile="include/bluetooth/mesh/access.h" declline="621" declcolumn="19"/>
+        <location file="include/bluetooth/mesh/access.h" line="642" column="19" declfile="include/bluetooth/mesh/access.h" declline="642" declcolumn="19"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1ga95a299ff684230697c9753fc5c66d27b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structbt__mesh__model" kindref="compound">bt_mesh_model</ref> *</type>
@@ -222,7 +222,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="631" column="20" declfile="include/bluetooth/mesh/access.h" declline="631" declcolumn="20"/>
+        <location file="include/bluetooth/mesh/access.h" line="652" column="20" declfile="include/bluetooth/mesh/access.h" declline="652" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1ga6128c20284c4122832d348041984cdc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct <ref refid="structbt__mesh__model" kindref="compound">bt_mesh_model</ref> *</type>
@@ -276,7 +276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="643" column="20" declfile="include/bluetooth/mesh/access.h" declline="643" declcolumn="20"/>
+        <location file="include/bluetooth/mesh/access.h" line="664" column="20" declfile="include/bluetooth/mesh/access.h" declline="664" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1gaa8694fdab3f514d8051dad1cc7362ac9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="652" column="20" bodyfile="include/bluetooth/mesh/access.h" bodystart="652" bodyend="655"/>
+        <location file="include/bluetooth/mesh/access.h" line="673" column="20" bodyfile="include/bluetooth/mesh/access.h" bodystart="673" bodyend="676"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1gaab41cba66dff830ee3158a9f6199168a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -384,7 +384,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="668" column="5" declfile="include/bluetooth/mesh/access.h" declline="668" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/access.h" line="689" column="5" declfile="include/bluetooth/mesh/access.h" declline="689" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1gab252dd304be87dc0badb169bda04772b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -436,7 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="691" column="5" declfile="include/bluetooth/mesh/access.h" declline="691" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/access.h" line="712" column="5" declfile="include/bluetooth/mesh/access.h" declline="712" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__access_1ga11be344d48f89c4a8c1a53ceea2c295e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -473,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="700" column="6" declfile="include/bluetooth/mesh/access.h" declline="700" declcolumn="6"/>
+        <location file="include/bluetooth/mesh/access.h" line="721" column="6" declfile="include/bluetooth/mesh/access.h" declline="721" declcolumn="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -665,16 +665,53 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Maximum payload size of an access message (in octets). </para>
+<para>Maximum size of an access message segment (in octets). </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="include/bluetooth/mesh/access.h" line="60" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="60" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="group__bt__mesh__access_1ga64eb6a94b1db9899c4f5bbf4cc88cd9f" prot="public" static="no">
+        <name>BT_MESH_APP_UNSEG_SDU_MAX</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum payload size of an unsegmented access message (in octets). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/access.h" line="63" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__bt__mesh__access_1ga18756e939ec3b312eef5c3dc9fd70270" prot="public" static="no">
+        <name>BT_MESH_RX_SEG_MAX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of segments supported for incoming messages. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/access.h" line="69" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__bt__mesh__access_1ga1b2a3610ac370266578abce195e65fa2" prot="public" static="no">
+        <name>BT_MESH_TX_SEG_MAX</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum number of segments supported for outgoing messages. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/access.h" line="76" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga86d7386603ecd89952b6d540ea4243c2" prot="public" static="no">
         <name>BT_MESH_TX_SDU_MAX</name>
-        <initializer>				  (CONFIG_BT_MESH_TX_SEG_MAX * \
-				  <ref refid="group__bt__mesh__access_1gaa620c32d1dce8e4b691b7f4270016506" kindref="member">BT_MESH_APP_SEG_SDU_MAX</ref>)</initializer>
+        <initializer>				       <ref refid="group__sys-util_1gafa99ec4acc4ecb2dc3c2d05da15d0e3f" kindref="member">MAX</ref>((<ref refid="group__bt__mesh__access_1ga1b2a3610ac370266578abce195e65fa2" kindref="member">BT_MESH_TX_SEG_MAX</ref> *		\
+				       <ref refid="group__bt__mesh__access_1gaa620c32d1dce8e4b691b7f4270016506" kindref="member">BT_MESH_APP_SEG_SDU_MAX</ref>),	\
+				      <ref refid="group__bt__mesh__access_1ga64eb6a94b1db9899c4f5bbf4cc88cd9f" kindref="member">BT_MESH_APP_UNSEG_SDU_MAX</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -682,12 +719,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="62" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="62" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="80" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga36f299f2fc13892b5a7d871dad1ec9ce" prot="public" static="no">
         <name>BT_MESH_RX_SDU_MAX</name>
-        <initializer>				  (CONFIG_BT_MESH_RX_SEG_MAX * \
-				  <ref refid="group__bt__mesh__access_1gaa620c32d1dce8e4b691b7f4270016506" kindref="member">BT_MESH_APP_SEG_SDU_MAX</ref>)</initializer>
+        <initializer>				       <ref refid="group__sys-util_1gafa99ec4acc4ecb2dc3c2d05da15d0e3f" kindref="member">MAX</ref>((<ref refid="group__bt__mesh__access_1ga18756e939ec3b312eef5c3dc9fd70270" kindref="member">BT_MESH_RX_SEG_MAX</ref> *		\
+				       <ref refid="group__bt__mesh__access_1gaa620c32d1dce8e4b691b7f4270016506" kindref="member">BT_MESH_APP_SEG_SDU_MAX</ref>),	\
+				      <ref refid="group__bt__mesh__access_1ga64eb6a94b1db9899c4f5bbf4cc88cd9f" kindref="member">BT_MESH_APP_UNSEG_SDU_MAX</ref>)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -695,7 +733,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="65" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="65" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="85" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="85" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga321a5091dabd4ec4beb5396db6cabf44" prot="public" static="no">
         <name>BT_MESH_ELEM</name>
@@ -743,7 +781,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="77" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="77" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="98" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="98" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga004d8d1be55b2aec56abbeeca1d118d8" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_CFG_SRV</name>
@@ -754,7 +792,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="105" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="105" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="126" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="126" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga3f8442dcd1a110ea0d0023f50057139f" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_CFG_CLI</name>
@@ -765,7 +803,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="106" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="106" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="127" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga6416216348d7186f91175ca50bb8c903" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_HEALTH_SRV</name>
@@ -776,7 +814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="107" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="107" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="128" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="128" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gab58b85b7a77feeb579973177c12bb446" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_HEALTH_CLI</name>
@@ -787,7 +825,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="108" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="108" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="129" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="129" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga83e1ed5398d513cfeb900e41655aa4d8" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_ONOFF_SRV</name>
@@ -798,7 +836,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="111" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="111" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="132" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga4f0eee2569b518a5e4250f5b7b294fed" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_ONOFF_CLI</name>
@@ -809,7 +847,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="112" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="112" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="133" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga7f10a8332b1406c3ad628b9679e1d7cb" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_LEVEL_SRV</name>
@@ -820,7 +858,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="113" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="113" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="134" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga462c578845a17b20cdb3e008f74f93a6" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_LEVEL_CLI</name>
@@ -831,7 +869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="114" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="114" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="135" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="135" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga004d5ec0870d47a8d37182e5b0c089a5" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_SRV</name>
@@ -842,7 +880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="115" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="115" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="136" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="136" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gafa1c6a7d857fe13a139ce2242b4e62f5" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_DEF_TRANS_TIME_CLI</name>
@@ -853,7 +891,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="116" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="116" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="137" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga09ac731fff09146ec68557f00e8294e0" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_POWER_ONOFF_SRV</name>
@@ -864,7 +902,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="117" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="117" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="138" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="138" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga2a6dad18792ba7f1d81d6c9a1c65f90a" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_POWER_ONOFF_SETUP_SRV</name>
@@ -875,7 +913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="118" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="118" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="139" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga9f6544f7b87f39d0792ea2de13cd45f1" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_POWER_ONOFF_CLI</name>
@@ -886,7 +924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="119" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="119" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="140" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gadd30afe63f89e9c1778e56f722fd82f9" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_POWER_LEVEL_SRV</name>
@@ -897,7 +935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="120" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="120" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="141" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="141" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga1ff6ec64ce3a86d1cfd00fc98e89c0a5" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_POWER_LEVEL_SETUP_SRV</name>
@@ -908,7 +946,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="121" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="121" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="142" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="142" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga8420454c35afc12c62ede55942f3b6d3" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_POWER_LEVEL_CLI</name>
@@ -919,7 +957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="122" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="122" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="143" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gacf891135f54fb1fbb62beb812235619e" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_BATTERY_SRV</name>
@@ -930,7 +968,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="123" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="123" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="144" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="144" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga34bb3d4839e9685ec55f8285aac9a79f" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_BATTERY_CLI</name>
@@ -941,7 +979,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="124" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="124" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="145" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gad516f513c5c942fbfee65b85332b105e" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_LOCATION_SRV</name>
@@ -952,7 +990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="125" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="125" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="146" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga240d1ed34b7341627773cce862f85620" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_LOCATION_SETUPSRV</name>
@@ -963,7 +1001,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="126" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="126" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="147" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="147" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga8fa01ddb1f4de4d61500bb650243390d" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_LOCATION_CLI</name>
@@ -974,7 +1012,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="127" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="127" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="148" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="148" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga3cc6862e9c72f9282055c5cda2343c89" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_ADMIN_PROP_SRV</name>
@@ -985,7 +1023,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="128" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="128" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="149" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga32e09ddfebd2e8b22da9a3102e116aae" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_MANUFACTURER_PROP_SRV</name>
@@ -996,7 +1034,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="129" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="129" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="150" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="150" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga4b7b6a4b47e87de94ccf11ef1abd64b9" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_USER_PROP_SRV</name>
@@ -1007,7 +1045,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="130" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="130" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="151" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="151" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga20906658018ef26114d8a6656c258f62" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_CLIENT_PROP_SRV</name>
@@ -1018,7 +1056,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="131" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="131" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="152" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="152" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga69455e5b1e6def3d909c4bb6e0dee9ae" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_GEN_PROP_CLI</name>
@@ -1029,7 +1067,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="132" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="132" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="153" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="153" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga3e0dcb14f46f6076e5b1b114b977f630" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SENSOR_SRV</name>
@@ -1040,7 +1078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="133" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="133" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="154" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="154" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gad10780bfc1c16866fa28de750e56bec3" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SENSOR_SETUP_SRV</name>
@@ -1051,7 +1089,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="134" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="134" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="155" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="155" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga8f1e4ff66d388627dbe91b2f8d4ed358" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SENSOR_CLI</name>
@@ -1062,7 +1100,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="135" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="135" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="156" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="156" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga93fbf1c661a75d70fdbd2a599353eb94" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_TIME_SRV</name>
@@ -1073,7 +1111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="136" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="136" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="157" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="157" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga2725121dc8c2c21c0ee469fe4348f45f" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_TIME_SETUP_SRV</name>
@@ -1084,7 +1122,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="137" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="137" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="158" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="158" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga500df90af7989794c5d72e760e5e65c6" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_TIME_CLI</name>
@@ -1095,7 +1133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="138" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="138" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="159" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaaa5554e3d48ae101596476e6bd6caf67" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SCENE_SRV</name>
@@ -1106,7 +1144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="139" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="139" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="160" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="160" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaa3b08fc8788684abb960fa3516726264" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SCENE_SETUP_SRV</name>
@@ -1117,7 +1155,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="140" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="140" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="161" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gad60472aa004a8a913aeb63ef62c45857" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SCENE_CLI</name>
@@ -1128,7 +1166,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="141" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="141" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="162" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="162" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga82b723752e240f22b9bcc8dc3dd10eb9" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SCHEDULER_SRV</name>
@@ -1139,7 +1177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="142" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="142" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="163" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="163" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga3dbec5a3b82cb25a142c4bc851e3fe0e" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SCHEDULER_SETUP_SRV</name>
@@ -1150,7 +1188,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="143" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="143" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="164" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="164" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gac743b26cf7e746b16302c25e8cd56221" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_SCHEDULER_CLI</name>
@@ -1161,7 +1199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="144" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="144" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="165" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="165" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga16df49e84e84d0ae4a6ab5d5f3f1b2b6" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_LIGHTNESS_SRV</name>
@@ -1172,7 +1210,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="145" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="145" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="166" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="166" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gadb93b2ed2256a5c9c3f66237841b1bf5" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_LIGHTNESS_SETUP_SRV</name>
@@ -1183,7 +1221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="146" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="146" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="167" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="167" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga960055723dec7b3b366efa7c49cafc2e" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_LIGHTNESS_CLI</name>
@@ -1194,7 +1232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="147" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="147" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="168" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="168" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaa9a211341c5b3283b9b0e0842adef053" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_CTL_SRV</name>
@@ -1205,7 +1243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="148" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="148" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="169" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="169" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga28ac69b2dbeec70bae4bd3c0381e9e93" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_CTL_SETUP_SRV</name>
@@ -1216,7 +1254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="149" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="149" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="170" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="170" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga58fc8d99b746b0061177ac5d95341da1" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_CTL_CLI</name>
@@ -1227,7 +1265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="150" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="150" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="171" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="171" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gafcb1f1ea20bb78b78a9ead4bfdbe3e47" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_CTL_TEMP_SRV</name>
@@ -1238,7 +1276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="151" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="151" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="172" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="172" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaa0ddc753a226060d014dcd368feab17e" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_HSL_SRV</name>
@@ -1249,7 +1287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="152" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="152" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="173" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="173" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga574d3ba3f629bdbffc8f15db931a263a" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_HSL_SETUP_SRV</name>
@@ -1260,7 +1298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="153" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="153" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="174" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga2d111a352322be8e33ba0cba0feb3f0c" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_HSL_CLI</name>
@@ -1271,7 +1309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="154" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="154" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="175" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="175" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga865952346db9336a255c71bcb5f09774" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_HSL_HUE_SRV</name>
@@ -1282,7 +1320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="155" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="155" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="176" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="176" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gae55004e70670a8711e18e9c9b3428720" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_HSL_SAT_SRV</name>
@@ -1293,7 +1331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="156" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="156" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="177" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="177" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga29e1a90f166d88b6773d9b7ccf08e1c7" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_XYL_SRV</name>
@@ -1304,7 +1342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="157" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="157" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="178" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="178" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga4addae460d6b3c0a914198695b3e31ea" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_XYL_SETUP_SRV</name>
@@ -1315,7 +1353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="158" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="158" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="179" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="179" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga0ca4d9997e6016b5c27f42549d42a99d" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_XYL_CLI</name>
@@ -1326,7 +1364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="159" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="159" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="180" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="180" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga789412252034939539ba45e4bf21e3e2" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_LC_SRV</name>
@@ -1337,7 +1375,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="160" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="160" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="181" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga436358740bb64d845aa4d849d462a12e" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_LC_SETUPSRV</name>
@@ -1348,7 +1386,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="161" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="161" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="182" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="182" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaadd48b07e1eb53df24df40b7ea412e90" prot="public" static="no">
         <name>BT_MESH_MODEL_ID_LIGHT_LC_CLI</name>
@@ -1359,7 +1397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="162" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="162" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="183" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga00915cfdff7dc0646f24d6b06e124d0d" prot="public" static="no">
         <name>BT_MESH_MODEL_OP_1</name>
@@ -1371,7 +1409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="191" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="191" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="212" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="212" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaa52a40ef5972c4f34cf5ff5a10e21289" prot="public" static="no">
         <name>BT_MESH_MODEL_OP_2</name>
@@ -1384,7 +1422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="192" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="192" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="213" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="213" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga72d1d19701be52f5eac6af475f9b19a9" prot="public" static="no">
         <name>BT_MESH_MODEL_OP_3</name>
@@ -1397,7 +1435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="193" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="193" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="214" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="214" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga637e1be0298dc681414645867b28b59f" prot="public" static="no">
         <name>BT_MESH_LEN_EXACT</name>
@@ -1411,7 +1449,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="196" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="196" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="217" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="217" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga691ed9b3ab3ddaceda0f81c4a715ab3a" prot="public" static="no">
         <name>BT_MESH_LEN_MIN</name>
@@ -1425,7 +1463,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="198" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="198" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="219" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaf2c164506c601214c85d451747176827" prot="public" static="no">
         <name>BT_MESH_MODEL_OP_END</name>
@@ -1437,7 +1475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="201" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="201" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="222" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="222" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gae6d55e0a27bb7c448affd312a2e11656" prot="public" static="no">
         <name>BT_MESH_MODEL_NO_OPS</name>
@@ -1450,7 +1488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="203" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="203" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="224" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gab0ad2aab95d49e5b60fe8dafd69132a4" prot="public" static="no">
         <name>BT_MESH_MODEL_NONE</name>
@@ -1462,7 +1500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="207" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="207" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="228" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="228" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gac062c101b7310020e11a527de9c40d3a" prot="public" static="no">
         <name>BT_MESH_MODEL_CB</name>
@@ -1529,7 +1567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="219" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="219" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="240" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="240" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gabe79d914990ba2721f5bb7081910e512" prot="public" static="no">
         <name>BT_MESH_MODEL_VND_CB</name>
@@ -1606,7 +1644,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="241" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="241" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="262" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="262" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gae694f5ac7ef9f0de37aaba846443586f" prot="public" static="no">
         <name>BT_MESH_MODEL</name>
@@ -1656,7 +1694,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="263" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="263" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="284" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga3759c8c88db48be662bf2511ff514edd" prot="public" static="no">
         <name>BT_MESH_MODEL_VND</name>
@@ -1715,7 +1753,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="276" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="276" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="297" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="297" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaff82bf652232fbce71c31f38a10577a9" prot="public" static="no">
         <name>BT_MESH_TRANSMIT</name>
@@ -1749,7 +1787,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="290" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="290" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="311" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="311" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga62fda0d731241efbaa4827e4eb9d1795" prot="public" static="no">
         <name>BT_MESH_TRANSMIT_COUNT</name>
@@ -1774,7 +1812,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="300" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="300" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="321" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="321" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga2aa21171c5677d23ad0c472291639417" prot="public" static="no">
         <name>BT_MESH_TRANSMIT_INT</name>
@@ -1799,7 +1837,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="310" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="310" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="331" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="331" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga19208dea7bab9f31c2c793ef6201dd91" prot="public" static="no">
         <name>BT_MESH_PUB_TRANSMIT</name>
@@ -1834,7 +1872,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="323" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="323" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="344" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="344" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga13986422dda5edce4f5fb1ce387093e3" prot="public" static="no">
         <name>BT_MESH_PUB_TRANSMIT_COUNT</name>
@@ -1859,7 +1897,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="334" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="334" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="355" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="355" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1gaac954956dd3913dd7ad2b93a2566afd9" prot="public" static="no">
         <name>BT_MESH_PUB_TRANSMIT_INT</name>
@@ -1884,7 +1922,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="344" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="344" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="365" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="365" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga230538bb39ac3d6c8c0327d1fad77e69" prot="public" static="no">
         <name>BT_MESH_PUB_MSG_TOTAL</name>
@@ -1909,7 +1947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="355" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="355" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="376" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="376" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga115ee29aba3c3e985aa11d6692ca0d83" prot="public" static="no">
         <name>BT_MESH_PUB_MSG_NUM</name>
@@ -1935,7 +1973,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="367" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="367" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="388" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="388" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga8334ff2da1f0dc3ab2fc914059c33622" prot="public" static="no">
         <name>BT_MESH_MODEL_PUB_DEFINE</name>
@@ -1980,7 +2018,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="434" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="434" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="455" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="455" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga16516272b42420263b1c47c3ea16c0c8" prot="public" static="no">
         <name>BT_MESH_TTL_DEFAULT</name>
@@ -1992,7 +2030,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="566" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="566" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="587" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="587" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh__access_1ga071e85e929589d31bf876e2e09cf2f19" prot="public" static="no">
         <name>BT_MESH_TTL_MAX</name>
@@ -2004,7 +2042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="569" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="569" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="590" column="9" bodyfile="include/bluetooth/mesh/access.h" bodystart="590" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

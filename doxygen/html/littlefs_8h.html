@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -184,14 +184,14 @@ Macros</h2></td></tr>
 <p >This defines static arrays required for caches, and initializes the littlefs configuration structure to use the provided values instead of the global Kconfig defaults. A pointer to the named object must be stored in the <code>.fs_data</code> field of a :c:type:<code>struct fs_mount</code> object.</p>
 <p >To define an instance for the Kconfig defaults, use :c:macro:<code>FS_LITTLEFS_DECLARE_DEFAULT_CONFIG</code>.</p>
 <p >To completely control file system configuration the application can directly define and initialize a :c:type:<code>struct <a class="el" href="structfs__littlefs.html" title="Filesystem info structure for LittleFS mount.">fs_littlefs</a></code> object. The application is responsible for ensuring the configured values are consistent with littlefs requirements.</p>
-<dl class="section note"><dt>Note</dt><dd>If you use a non-default configuration for cache size, you must also select <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_FC_HEAP_SIZE` </pre> to relax the size constraints on per-file cache allocations.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>If you use a non-default configuration for cache size, you must also select <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_FC_HEAP_SIZE` </pre> to relax the size constraints on per-file cache allocations.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>the name for the structure. The defined object has file scope. </td></tr>
-    <tr><td class="paramname">read_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_READ_SIZE` </pre> </td></tr>
-    <tr><td class="paramname">prog_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_PROG_SIZE` </pre> </td></tr>
-    <tr><td class="paramname">cache_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_CACHE_SIZE` </pre> </td></tr>
-    <tr><td class="paramname">lookahead_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_LOOKAHEAD_SIZE` </pre> </td></tr>
+    <tr><td class="paramname">read_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_READ_SIZE` </pre> </td></tr>
+    <tr><td class="paramname">prog_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_PROG_SIZE` </pre> </td></tr>
+    <tr><td class="paramname">cache_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_CACHE_SIZE` </pre> </td></tr>
+    <tr><td class="paramname">lookahead_sz</td><td>see <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_LOOKAHEAD_SIZE` </pre> </td></tr>
   </table>
   </dd>
 </dl>
@@ -238,7 +238,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_203f267fac8cf3dfe9f5770a10d988c8.html">fs</a></li><li class="navelem"><a class="el" href="littlefs_8h.html">littlefs.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

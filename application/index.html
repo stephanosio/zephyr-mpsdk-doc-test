@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -174,7 +176,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -670,8 +672,8 @@ assignment:</p>
 started.</p>
 <p>See <a class="reference internal" href="../guides/build/kconfig/setting.html#setting-configuration-values"><span class="std std-ref">Setting Kconfig configuration values</span></a> for detailed documentation on setting
 Kconfig configuration values. The <a class="reference internal" href="../guides/build/kconfig/setting.html#initial-conf"><span class="std std-ref">The Initial Configuration</span></a> section on the same page
-explains how the initial configuration is derived. See
-<a class="reference internal" href="../reference/kconfig/index.html#configuration-options"><span class="std std-ref">Configuration Options</span></a> for a complete list of configuration options.
+explains how the initial configuration is derived. See <a class="reference internal" href="../kconfig.html#kconfig-search"><span class="std std-ref">Kconfig Search</span></a>
+for a complete list of configuration options.
 See <a class="reference internal" href="../security/hardening-tool.html#hardening"><span class="std std-ref">Hardening Tool</span></a> for security information related with Kconfig options.</p>
 <p>The other pages in the <a class="reference internal" href="../guides/build/index.html#kconfig"><span class="std std-ref">Kconfig section of the manual</span></a> are also
 worth going through, especially if you planning to add new configuration
@@ -683,15 +685,15 @@ options.</p>
 <p>Zephyr is a project under constant development and thus there are features that
 are still in early stages of their development cycle. Such features will be
 marked <code class="docutils literal notranslate"><span class="pre">[EXPERIMENTAL]</span></code> in their Kconfig title.</p>
-<p>The <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_WARN_EXPERIMENTAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WARN_EXPERIMENTAL</span></code></a> setting can be used to enable warnings
+<p>The <a class="reference internal" href="../kconfig.html#CONFIG_WARN_EXPERIMENTAL" title="CONFIG_WARN_EXPERIMENTAL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_WARN_EXPERIMENTAL</span></code></a> setting can be used to enable warnings
 at CMake configure time if any experimental feature is enabled.</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>CONFIG_WARN_EXPERIMENTAL=y
 </pre></div>
 </div>
-<p>For example, enabling experimental warnings and building a sample which enables
-<a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_EXT_ADV"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_EXT_ADV</span></code></a> will print the following warning at CMake
-configure time.</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>warning: Experimental symbol BT_EXT_ADV is enabled.
+<p>For example, if option <code class="docutils literal notranslate"><span class="pre">CONFIG_FOO</span></code> is experimental, then enabling it and
+<code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONIG_WARN_EXPERIMENTAL</span></code> will print the following warning at
+CMake configure time when you build an application:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>warning: Experimental symbol FOO is enabled.
 </pre></div>
 </div>
 <div class="section" id="devicetree-overlays">
@@ -1465,8 +1467,8 @@ CONFIG_DEBUG_THREAD_INFO=y in your application.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

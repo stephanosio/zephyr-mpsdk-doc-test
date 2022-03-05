@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_output.h" line="77" column="19" bodyfile="include/logging/log_output.h" bodystart="77" bodyend="-1"/>
+        <location file="include/logging/log_output.h" line="87" column="19" bodyfile="include/logging/log_output.h" bodystart="87" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__output_1a5228e6c2111cb28a8a69e4d99443dd55" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structlog__output__control__block" kindref="compound">log_output_control_block</ref> *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_output.h" line="78" column="31" bodyfile="include/logging/log_output.h" bodystart="78" bodyend="-1"/>
+        <location file="include/logging/log_output.h" line="88" column="31" bodyfile="include/logging/log_output.h" bodystart="88" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__output_1af43d26be4e52647c2b281362a01d1a10" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_output.h" line="79" column="9" bodyfile="include/logging/log_output.h" bodystart="79" bodyend="-1"/>
+        <location file="include/logging/log_output.h" line="89" column="9" bodyfile="include/logging/log_output.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__output_1af88be3afe8b2fc2f7acb703a93992030" prot="public" static="no" mutable="no">
         <type>size_t</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_output.h" line="80" column="8" bodyfile="include/logging/log_output.h" bodystart="80" bodyend="-1"/>
+        <location file="include/logging/log_output.h" line="90" column="8" bodyfile="include/logging/log_output.h" bodystart="90" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -75,7 +75,7 @@
         <link refid="structlog__output__control__block"/>
       </node>
     </collaborationgraph>
-    <location file="include/logging/log_output.h" line="76" column="1" bodyfile="include/logging/log_output.h" bodystart="76" bodyend="81"/>
+    <location file="include/logging/log_output.h" line="86" column="1" bodyfile="include/logging/log_output.h" bodystart="86" bodyend="91"/>
     <listofallmembers>
       <member refid="structlog__output_1af43d26be4e52647c2b281362a01d1a10" prot="public" virt="non-virtual"><scope>log_output</scope><name>buf</name></member>
       <member refid="structlog__output_1a5228e6c2111cb28a8a69e4d99443dd55" prot="public" virt="non-virtual"><scope>log_output</scope><name>control_block</name></member>

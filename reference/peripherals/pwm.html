@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -200,7 +202,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -329,7 +331,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected to enable PWM capture support.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected to enable PWM capture support.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Param dev</dt>
@@ -425,7 +427,7 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -455,7 +457,7 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
 <p>The PWM pin must be configured using <em><a class="reference internal" href="#group__pwm__interface_1ga720cffa0a0e985d0dd78c3df6ff1d32a"><span class="std std-ref">pwm_pin_configure_capture()</span></a></em> prior to calling this function.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -482,7 +484,7 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
 <dd><p>Disable PWM period/pulse width capture for a single PWM input. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -509,7 +511,7 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
 <p>This API function wraps calls to <em><a class="reference internal" href="#group__pwm__interface_1ga720cffa0a0e985d0dd78c3df6ff1d32a"><span class="std std-ref">pwm_pin_configure_capture()</span></a></em>, <em><a class="reference internal" href="#group__pwm__interface_1gab4e0e3555692d1c8d9b3389685b398da"><span class="std std-ref">pwm_pin_enable_capture()</span></a></em>, and <em><a class="reference internal" href="#group__pwm__interface_1gad9f1705c343a6c915ceffa79aef7c809"><span class="std std-ref">pwm_pin_disable_capture()</span></a></em> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -654,7 +656,7 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
 <p>This API function wraps calls to <em><a class="reference internal" href="#group__pwm__interface_1ga1c87879e7cc0cdce1158ffb6f08f73a8"><span class="std std-ref">pwm_pin_capture_cycles()</span></a></em> and <em><a class="reference internal" href="#group__pwm__interface_1gace629ef3f488b247c1223c00f024f606"><span class="std std-ref">pwm_pin_cycles_to_usec()</span></a></em> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -686,7 +688,7 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
 <p>This API function wraps calls to <em><a class="reference internal" href="#group__pwm__interface_1ga1c87879e7cc0cdce1158ffb6f08f73a8"><span class="std std-ref">pwm_pin_capture_cycles()</span></a></em> and <em><a class="reference internal" href="#group__pwm__interface_1ga309dc05dcda01648052eabcb3b550a0b"><span class="std std-ref">pwm_pin_cycles_to_nsec()</span></a></em> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PWM_CAPTURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_PWM_CAPTURE" title="CONFIG_PWM_CAPTURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PWM_CAPTURE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -734,8 +736,8 @@ Passing 0 as <code class="docutils literal notranslate"><span class="pre">pulse<
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

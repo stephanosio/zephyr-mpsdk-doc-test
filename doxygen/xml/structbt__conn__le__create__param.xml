@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="524" column="10" bodyfile="include/bluetooth/conn.h" bodystart="524" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="527" column="10" bodyfile="include/bluetooth/conn.h" bodystart="527" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__le__create__param_1a5cfae677f924534dc5bc7b38c457a7af" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="527" column="10" bodyfile="include/bluetooth/conn.h" bodystart="527" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="530" column="10" bodyfile="include/bluetooth/conn.h" bodystart="530" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__le__create__param_1a339b99f65c5029ada6cdf453ab1f258e" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="530" column="10" bodyfile="include/bluetooth/conn.h" bodystart="530" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="533" column="10" bodyfile="include/bluetooth/conn.h" bodystart="533" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__le__create__param_1a2bc978ac97435fe5f87c6e01692f2910" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="536" column="10" bodyfile="include/bluetooth/conn.h" bodystart="536" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="539" column="10" bodyfile="include/bluetooth/conn.h" bodystart="539" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__le__create__param_1ae62491837d35d95e32016b793edf8c96" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="542" column="10" bodyfile="include/bluetooth/conn.h" bodystart="542" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="545" column="10" bodyfile="include/bluetooth/conn.h" bodystart="545" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__le__create__param_1a59f05bfb9468779d02f8d0beeb7a35c1" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -85,21 +85,21 @@
 <para>Connection initiation timeout (N * 10 MS) </para>
         </briefdescription>
         <detaileddescription>
-<para>Set zero to use the default <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_CREATE_CONN_TIMEOUT` </verbatim> timeout.</para>
+<para>Set zero to use the default <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_CREATE_CONN_TIMEOUT` </verbatim> timeout.</para>
 <para><simplesect kind="note"><para>Unused in <ref refid="group__bt__conn_1gaecfaf2cb44772511dbb585de8f76f09b" kindref="member">bt_conn_le_create_auto</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="551" column="10" bodyfile="include/bluetooth/conn.h" bodystart="551" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="554" column="10" bodyfile="include/bluetooth/conn.h" bodystart="554" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/bluetooth/conn.h" line="521" column="1" bodyfile="include/bluetooth/conn.h" bodystart="521" bodyend="552"/>
+    <location file="include/bluetooth/conn.h" line="524" column="1" bodyfile="include/bluetooth/conn.h" bodystart="524" bodyend="555"/>
     <listofallmembers>
       <member refid="structbt__conn__le__create__param_1a5cfae677f924534dc5bc7b38c457a7af" prot="public" virt="non-virtual"><scope>bt_conn_le_create_param</scope><name>interval</name></member>
       <member refid="structbt__conn__le__create__param_1a2bc978ac97435fe5f87c6e01692f2910" prot="public" virt="non-virtual"><scope>bt_conn_le_create_param</scope><name>interval_coded</name></member>

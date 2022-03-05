@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -108,15 +108,15 @@ $(document).ready(function(){initNavTree('early__sleep_2src_2main_8c.html',''); 
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:af9a5d6addf893be0502ae41f52e794b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#af9a5d6addf893be0502ae41f52e794b2">THREAD_STACK</a>&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACKSIZE)</td></tr>
+<tr class="memitem:af9a5d6addf893be0502ae41f52e794b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#af9a5d6addf893be0502ae41f52e794b2">THREAD_STACK</a>&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</td></tr>
 <tr class="separator:af9a5d6addf893be0502ae41f52e794b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ea9aa451559f29e07f8716031b54b19"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#a3ea9aa451559f29e07f8716031b54b19">TEST_TICKS_TO_SLEEP</a>&#160;&#160;&#160;(<a class="el" href="ztest_8h.html#a5b30ac02803b92fea0759730f33b9e35">CONFIG_SYS_CLOCK_TICKS_PER_SEC</a> / 2)</td></tr>
 <tr class="separator:a3ea9aa451559f29e07f8716031b54b19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9b0828430bdc0a990e498b19b7883ef9"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#a9b0828430bdc0a990e498b19b7883ef9">K_THREAD_STACK_DEFINE</a> (helper_tstack,(384+CONFIG_TEST_EXTRA_STACKSIZE))</td></tr>
-<tr class="separator:a9b0828430bdc0a990e498b19b7883ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839b75df7ac28a7f4d96cd451323c081"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#a839b75df7ac28a7f4d96cd451323c081">K_THREAD_STACK_DEFINE</a> (helper_tstack,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</td></tr>
+<tr class="separator:a839b75df7ac28a7f4d96cd451323c081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a444655b46a733d8e0ef18dc69cb15773"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#a444655b46a733d8e0ef18dc69cb15773">helper_thread</a> (void *p1, void *p2, void *p3)</td></tr>
 <tr class="separator:a444655b46a733d8e0ef18dc69cb15773"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa96b5ca1278818bd0c64fb9d314ceb9f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="early__sleep_2src_2main_8c.html#aa96b5ca1278818bd0c64fb9d314ceb9f">ticks_to_sleep</a> (int ticks)</td></tr>
@@ -172,7 +172,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define THREAD_STACK&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACKSIZE)</td>
+          <td class="memname">#define THREAD_STACK&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -222,8 +222,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9b0828430bdc0a990e498b19b7883ef9" name="a9b0828430bdc0a990e498b19b7883ef9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b0828430bdc0a990e498b19b7883ef9">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
+<a id="a839b75df7ac28a7f4d96cd451323c081" name="a839b75df7ac28a7f4d96cd451323c081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839b75df7ac28a7f4d96cd451323c081">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,7 +240,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(384+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(384+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -591,7 +591,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_9648a9fb053468b7e83fdb516a7fd999.html">early_sleep</a></li><li class="navelem"><a class="el" href="dir_9d3e8d70c658ed63655b1e4458f7ad0a.html">src</a></li><li class="navelem"><a class="el" href="early__sleep_2src_2main_8c.html">main.c</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

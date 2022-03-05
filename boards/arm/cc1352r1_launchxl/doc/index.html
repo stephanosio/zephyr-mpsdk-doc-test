@@ -43,7 +43,7 @@
             <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -200,6 +202,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../frdm_k82f/doc/index.html">NXP FRDM-K82F</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../frdm_kl25z/doc/index.html">NXP FRDM-KL25Z</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../frdm_kw41z/doc/index.html">NXP FRDM-KW41Z</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gd32e103v_eval/doc/index.html">GigaDevice GD32E103V-EVAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gd32f350r_eval/doc/index.html">GigaDevice GD32F350R-EVAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gd32f403z_eval/doc/index.html">GigaDevice GD32F403Z-EVAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gd32f450i_eval/doc/index.html">GigaDevice GD32F450I-EVAL</a></li>
@@ -254,6 +257,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52833dk_nrf52833/doc/index.html">nRF52833 DK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840_blip/doc/index.html">Electronut Labs Blip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840_mdk/doc/index.html">nRF52840-mdk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../nrf52840_mdk_usb_dongle/doc/index.html">nRF52840 MDK USB Dongle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840_papyr/doc/nrf52840_papyr.html">Electronut Labs Papyr</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840dk_nrf52811/doc/index.html">nRF52811 emulation on nRF52840 DK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840dk_nrf52840/doc/index.html">nRF52840 DK</a></li>
@@ -377,6 +381,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../stm32g081b_eval/doc/index.html">ST STM32G081B Evaluation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32h735g_disco/doc/index.html">ST STM32H735G Discovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32h747i_disco/doc/index.html">ST STM32H747I Discovery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../stm32h7b3i_dk/doc/index.html">ST STM32H7B3I Discovery Kit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32l1_disco/doc/index.html">ST STM32L1 Discovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32l476g_disco/doc/index.html">ST STM32L476G Discovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32l496g_disco/doc/index.html">ST STM32L496G Discovery</a></li>
@@ -432,7 +437,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -751,7 +756,7 @@ serial device can be found. For example, <code class="code docutils literal notr
 <p>The ROM bootloader on CC13x2 and CC26x2 devices is enabled by default. The
 bootloader will start if there is no valid application image in flash or the
 so-called backdoor is enabled (via option
-<a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CC13X2_CC26X2_BOOTLOADER_BACKDOOR_ENABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CC13X2_CC26X2_BOOTLOADER_BACKDOOR_ENABLE</span></code></a>) and BTN-1 is held
+<a class="reference internal" href="../../../../kconfig.html#CONFIG_CC13X2_CC26X2_BOOTLOADER_BACKDOOR_ENABLE" title="CONFIG_CC13X2_CC26X2_BOOTLOADER_BACKDOOR_ENABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CC13X2_CC26X2_BOOTLOADER_BACKDOOR_ENABLE</span></code></a>) and BTN-1 is held
 down during reset. See the bootloader documentation in chapter 10 of the <a class="reference external" href="http://www.ti.com/lit/pdf/swcu185">TI
 CC13x2 / CC26x2 Technical Reference Manual</a> for additional information.</p>
 </div>
@@ -759,7 +764,7 @@ CC13x2 / CC26x2 Technical Reference Manual</a> for additional information.</p>
 <h3>Power Management and UART<a class="headerlink" href="#power-management-and-uart" title="Permalink to this headline">¶</a></h3>
 <p>System and device power management are supported on this platform, and
 can be enabled via the standard Kconfig options in Zephyr, such as
-<a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_PM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM</span></code></a>, <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a>.</p>
+<a class="reference internal" href="../../../../kconfig.html#CONFIG_PM" title="CONFIG_PM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM</span></code></a>, <a class="reference internal" href="../../../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a>.</p>
 <p>When system power management is turned on (CONFIG_PM=y),
 sleep state 2 (standby mode) is allowed, and polling is used to retrieve input
 by calling uart_poll_in(), it is possible for characters to be missed if the
@@ -791,8 +796,8 @@ disable sleep state 2 while polling:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

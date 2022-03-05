@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -175,7 +177,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -357,7 +359,7 @@ requiring the architecture to discover at runtime which interrupt is
 executing. A common interrupt handler demuxer is installed for all entries of
 the real interrupt vector table, which then fetches the device’s ISR and
 parameter from the separate table. This approach is commonly used in the ARC
-and ARM architectures via the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_GEN_ISR_TABLES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a> implementation.
+and ARM architectures via the <a class="reference internal" href="../../kconfig.html#CONFIG_GEN_ISR_TABLES" title="CONFIG_GEN_ISR_TABLES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a> implementation.
 You can find examples of the stubs by looking at <code class="code docutils literal notranslate"><span class="pre">_interrupt_enter()</span></code> in
 x86, <code class="code docutils literal notranslate"><span class="pre">_IntExit()</span></code> in ARM, <code class="code docutils literal notranslate"><span class="pre">_isr_wrapper()</span></code> in ARM, or the full
 implementation description for ARC in <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/arch/arc/core/isr_wrapper.S">arch/arc/core/isr_wrapper.S</a>.</p></li>
@@ -475,7 +477,7 @@ will not function as intended and will experience bizarre crashes, mostly due
 to stack corruption.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If running a coop-only system, i.e. if <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a>
+<p>If running a coop-only system, i.e. if <a class="reference internal" href="../../kconfig.html#CONFIG_NUM_PREEMPT_PRIORITIES" title="CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a>
 is 0, no preemptive context switch ever happens. The interrupt code can be
 optimized to not take any scheduling decision when this is the case.</p>
 </div>
@@ -503,7 +505,7 @@ mode if the thread triggered a fatal exception, but not if the thread
 gracefully exits its entry point function.</p>
 <p>This means implementing an architecture-specific version of
 <a class="reference internal" href="../../reference/kernel/threads/index.html#c.k_thread_abort" title="k_thread_abort"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_thread_abort()</span></code></a>, and setting the Kconfig option
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_THREAD_ABORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_THREAD_ABORT</span></code></a> as needed for the architecture (e.g. see
+<code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_THREAD_ABORT</span></code> as needed for the architecture (e.g. see
 <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/arch/arm/core/aarch32/cortex_m/Kconfig">arch/arm/core/aarch32/cortex_m/Kconfig</a>).</p>
 </div>
 <div class="section" id="thread-local-storage">
@@ -571,7 +573,7 @@ interrupt handler.</p>
 port, since it is so useful for debugging. It is a simple polling, output-only,
 serial port driver on which to send the console (<code class="code docutils literal notranslate"><span class="pre">printk</span></code>,
 <code class="code docutils literal notranslate"><span class="pre">printf</span></code>) output.</p>
-<p>It is not required, and a RAM console (<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_RAM_CONSOLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RAM_CONSOLE</span></code></a>)
+<p>It is not required, and a RAM console (<a class="reference internal" href="../../kconfig.html#CONFIG_RAM_CONSOLE" title="CONFIG_RAM_CONSOLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_RAM_CONSOLE</span></code></a>)
 can be used to send all output to a circular buffer that can be read
 by a debugger instead.</p>
 </div>
@@ -585,12 +587,12 @@ expected to be implemented as part of an architecture port.</p>
 <li><p>Atomic operators.</p>
 <ul>
 <li><p>If instructions do exist for a given architecture, the implementation is
-configured using the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ATOMIC_OPERATIONS_ARCH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ATOMIC_OPERATIONS_ARCH</span></code></a> Kconfig
+configured using the <a class="reference internal" href="../../kconfig.html#CONFIG_ATOMIC_OPERATIONS_ARCH" title="CONFIG_ATOMIC_OPERATIONS_ARCH"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ATOMIC_OPERATIONS_ARCH</span></code></a> Kconfig
 option.</p></li>
 <li><p>If instructions do not exist for a given architecture,
 a generic version that wraps <a class="reference internal" href="../../reference/kernel/other/interrupts.html#c.irq_lock" title="irq_lock"><code class="xref c c-func docutils literal notranslate"><span class="pre">irq_lock()</span></code></a> or <a class="reference internal" href="../../reference/kernel/other/interrupts.html#c.irq_unlock" title="irq_unlock"><code class="xref c c-func docutils literal notranslate"><span class="pre">irq_unlock()</span></code></a>
 around non-atomic operations exists. It is configured using the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ATOMIC_OPERATIONS_C"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ATOMIC_OPERATIONS_C</span></code></a> Kconfig option.</p></li>
+<a class="reference internal" href="../../kconfig.html#CONFIG_ATOMIC_OPERATIONS_C" title="CONFIG_ATOMIC_OPERATIONS_C"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ATOMIC_OPERATIONS_C</span></code></a> Kconfig option.</p></li>
 </ul>
 </li>
 <li><p>Find-least-significant-bit-set and find-most-significant-bit-set.</p>
@@ -656,7 +658,7 @@ IDT section on x86.</p>
 <div class="section" id="memory-management">
 <h2>Memory Management<a class="headerlink" href="#memory-management" title="Permalink to this headline">¶</a></h2>
 <p>If the target platform enables paging and requires drivers to memory-map
-their I/O regions, <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MMU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MMU</span></code></a> needs to be enabled and the
+their I/O regions, <a class="reference internal" href="../../kconfig.html#CONFIG_MMU" title="CONFIG_MMU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MMU</span></code></a> needs to be enabled and the
 <a class="reference internal" href="#c.arch_mem_map" title="arch_mem_map"><code class="xref c c-func docutils literal notranslate"><span class="pre">arch_mem_map()</span></code></a> API implemented.</p>
 </div>
 <div class="section" id="stack-objects">
@@ -676,7 +678,7 @@ reserved for prvilege elevation stacks.</p></li>
 <li><p>“thread” stacks which typically use more memory, but are capable of hosting
 thread running in user mode, as well as any use-cases for kernel stacks.</p></li>
 </ul>
-<p>If <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is not enabled, “thread” and “kernel” stacks are
+<p>If <a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is not enabled, “thread” and “kernel” stacks are
 equivalent.</p>
 <p>Additional macros may be defined in the architecture layer to specify
 the alignment of the base of stack objects, any reserved data inside the
@@ -745,22 +747,22 @@ occurs, leaving important global data structures in a corrupted state.</p></li>
 it’s possible to overshoot the guard and corrupt adjacent data structures
 before the hardware detects this situation.</p></li>
 </ul>
-<p>To enable the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_HW_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> feature, the system must
+<p>To enable the <a class="reference internal" href="../../kconfig.html#CONFIG_HW_STACK_PROTECTION" title="CONFIG_HW_STACK_PROTECTION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> feature, the system must
 provide some kind of hardware-based stack overflow protection, and enable the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_STACK_PROTECTION</span></code></a> option.</p>
+<code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_STACK_PROTECTION</span></code> option.</p>
 <p>Two forms of HW-based stack overflow detection are supported: dedicated
 CPU features for this purpose, or special read-only guard regions immediately
 preceding stack buffers.</p>
-<p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_HW_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> only catches stack overflows for
+<p><a class="reference internal" href="../../kconfig.html#CONFIG_HW_STACK_PROTECTION" title="CONFIG_HW_STACK_PROTECTION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> only catches stack overflows for
 supervisor threads. This is not required to catch stack overflow from user
-threads; <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is orthogonal.</p>
+threads; <a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is orthogonal.</p>
 <p>This feature only detects supervisor mode stack overflows, including stack
 overflows when handling system calls. It doesn’t guarantee that the kernel has
 not been corrupted. Any stack overflow in supervisor mode should be treated as
 a fatal error, with no assertions about the integrity of the overall system
 possible.</p>
 <p>Stack overflows in user mode are recoverable (from the kernel’s perspective)
-and require no special configuration; <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_HW_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a>
+and require no special configuration; <a class="reference internal" href="../../kconfig.html#CONFIG_HW_STACK_PROTECTION" title="CONFIG_HW_STACK_PROTECTION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a>
 only applies to catching overflows when the CPU is in sueprvisor mode.</p>
 <div class="section" id="cpu-based-stack-overflow-detection">
 <h4>CPU-based stack overflow detection<a class="headerlink" href="#cpu-based-stack-overflow-detection" title="Permalink to this headline">¶</a></h4>
@@ -810,7 +812,7 @@ memory is carved out if the thread uses floating point.</p></li>
 <p>Enabling user mode activates two new requirements:</p>
 <ul class="simple">
 <li><p>A separate fixed-sized privilege mode stack, specified by
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_PRIVILEGED_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PRIVILEGED_STACK_SIZE</span></code></a>, must be allocated that the user
+<a class="reference internal" href="../../kconfig.html#CONFIG_PRIVILEGED_STACK_SIZE" title="CONFIG_PRIVILEGED_STACK_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PRIVILEGED_STACK_SIZE</span></code></a>, must be allocated that the user
 thread cannot access. It is used as the stack by the kernel when handling
 system calls. If stack guards are implemented, a stack guard region must
 be able to be placed before it, with support for carve-outs if necessary.</p></li>
@@ -824,7 +826,7 @@ granularity of the memory protection hardware.</p></li>
 <p>This becomes more complicated if the memory protection hardware requires that
 all memory regions be sized to a power of two, and aligned to their own size.
 This is common on older MPUs and is known with
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT" title="CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a>.</p>
 <p><code class="docutils literal notranslate"><span class="pre">thread.stack_info</span></code> always tracks the user-accessible part of the stack
 object, it must always be correct to program a memory protection region with
 user access using the range stored within.</p>
@@ -878,7 +880,7 @@ privilege elevation stack must be allocated elsewhere.</p>
 <p><code class="xref c c-macro docutils literal notranslate"><span class="pre">ARCH_THREAD_STACK_SIZE_ADJUST()</span></code> and
 <code class="xref c c-macro docutils literal notranslate"><span class="pre">ARCH_THREAD_STACK_OBJ_ALIGN()</span></code> should both be defined to
 <code class="xref c c-macro docutils literal notranslate"><span class="pre">Z_POW2_CEIL()</span></code>. <code class="xref c c-macro docutils literal notranslate"><span class="pre">K_THREAD_STACK_RESERVED</span></code> must be 0.</p>
-<p>For the privilege stacks, the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_GEN_PRIV_STACKS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_PRIV_STACKS</span></code></a> must be,
+<p>For the privilege stacks, the <a class="reference internal" href="../../kconfig.html#CONFIG_GEN_PRIV_STACKS" title="CONFIG_GEN_PRIV_STACKS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_GEN_PRIV_STACKS</span></code></a> must be,
 enabled. For every thread stack found in the system, a corresponding fixed-
 size kernel stack used for handling system calls is generated. The address
 of the privilege stacks can be looked up quickly at runtime based on the
@@ -913,7 +915,7 @@ associated user mode thread and <code class="docutils literal notranslate"><span
 <div class="section" id="user-mode-threads">
 <h2>User Mode Threads<a class="headerlink" href="#user-mode-threads" title="Permalink to this headline">¶</a></h2>
 <p>To support user mode threads, several kernel-to-arch APIs need to be
-implemented, and the system must enable the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_USERSPACE</span></code></a>
+implemented, and the system must enable the <code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_USERSPACE</span></code>
 option. Please see the documentation for each of these functions for more
 details:</p>
 <ul class="simple">
@@ -936,7 +938,7 @@ MPU systems have constraints on this.</p></li>
 </ul>
 <p>Some architectures may need to update software memory management structures
 or modify hardware registers on another CPU when memory domain APIs are invoked.
-If so, <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_MEM_DOMAIN_SYNCHRONOUS_API"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_MEM_DOMAIN_SYNCHRONOUS_API</span></code></a> must be selected by the
+If so, <a class="reference internal" href="../../kconfig.html#CONFIG_ARCH_MEM_DOMAIN_SYNCHRONOUS_API" title="CONFIG_ARCH_MEM_DOMAIN_SYNCHRONOUS_API"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_MEM_DOMAIN_SYNCHRONOUS_API</span></code></a> must be selected by the
 architecture and some additional APIs must be implemented. This is common
 on MMU systems and uncommon on MPU systems:</p>
 <ul class="simple">
@@ -2520,8 +2522,8 @@ and read/write can be done byte-by-byte.</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

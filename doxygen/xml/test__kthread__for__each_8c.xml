@@ -394,6 +394,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
         <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
@@ -975,16 +977,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="test__kthread__for__each_8c_1a21b2c5f7b268518659b07184d88b14e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__kthread__for__each_8c_1a9bcc9b0a561e08fc8f01cff937397237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>tstack1</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1193,7 +1195,7 @@
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="test__kthread__for__each_8c_1acddba25af37284bb3ff9b98b78edeada" kindref="member">in_callback_tid</ref>;</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__kthread__for__each_8c_1a82c3f4a9aaaf6ca8f1ca77cc6666f892" kindref="member">tdata1</ref>;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="test__kthread__for__each_8c_1a21b2c5f7b268518659b07184d88b14e7" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack1,<sp/><ref refid="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="test__kthread__for__each_8c_1a9bcc9b0a561e08fc8f01cff937397237" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack1,<sp/><ref refid="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__kthread__for__each_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3)</highlight></codeline>
 <codeline lineno="26"><highlight class="normal">{</highlight></codeline>

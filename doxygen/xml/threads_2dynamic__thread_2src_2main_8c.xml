@@ -393,6 +393,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
         <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
@@ -866,7 +868,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="threads_2dynamic__thread_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(256 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(256 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -905,16 +907,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="threads_2dynamic__thread_2src_2main_8c_1aa1ba719324dea8f6f41919d32b8b05bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2dynamic__thread_2src_2main_8c_1afe03976e29db90117872356499265232" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(dyn_thread_stack,(256+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(dyn_thread_stack,(256+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>dyn_thread_stack</type>
         </param>
         <param>
-          <type>(256+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(256+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1194,9 +1196,9 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="irq__offload_8h" kindref="compound">irq_offload.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stack_8h" kindref="compound">debug/stack.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(256<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(256<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(dyn_thread_stack,<sp/><ref refid="threads_2dynamic__thread_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(dyn_thread_stack,<sp/><ref refid="threads_2dynamic__thread_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="mem__protect_2obj__validation_2src_2main_8c_1acccdee2c9edbab556b941bd865918c2a" kindref="member">K_SEM_DEFINE</ref>(start_sem,<sp/>0,<sp/>1);</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="mem__protect_2obj__validation_2src_2main_8c_1acccdee2c9edbab556b941bd865918c2a" kindref="member">K_SEM_DEFINE</ref>(<ref refid="interrupt__offload_8c_1a4ab9e51e08cf8b70325cec1ec84c6e57" kindref="member">end_sem</ref>,<sp/>0,<sp/>1);</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/>*<ref refid="threads_2dynamic__thread_2src_2main_8c_1a23b234dec79a48ca01ebdb0530ec2c8a" kindref="member">dyn_thread</ref>;</highlight></codeline>

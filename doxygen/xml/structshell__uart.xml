@@ -74,44 +74,9 @@
         <label>device_state</label>
         <link refid="structdevice__state"/>
       </node>
-      <node id="10">
-        <label>k_spinlock</label>
-        <link refid="structk__spinlock"/>
-      </node>
       <node id="5">
         <label>ring_buf</label>
         <link refid="structring__buf"/>
-        <childnode refid="6" relation="usage">
-          <edgelabel>misc</edgelabel>
-        </childnode>
-        <childnode refid="9" relation="usage">
-          <edgelabel>buf</edgelabel>
-        </childnode>
-        <childnode refid="10" relation="usage">
-          <edgelabel>lock</edgelabel>
-        </childnode>
-      </node>
-      <node id="9">
-        <label>ring_buf::ring_buf_buffer</label>
-        <link refid="unionring__buf_1_1ring__buf__buffer"/>
-      </node>
-      <node id="6">
-        <label>ring_buf::ring_buf_misc</label>
-        <link refid="unionring__buf_1_1ring__buf__misc"/>
-        <childnode refid="7" relation="usage">
-          <edgelabel>item_mode</edgelabel>
-        </childnode>
-        <childnode refid="8" relation="usage">
-          <edgelabel>byte_mode</edgelabel>
-        </childnode>
-      </node>
-      <node id="8">
-        <label>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</label>
-        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode"/>
-      </node>
-      <node id="7">
-        <label>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</label>
-        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode"/>
       </node>
       <node id="1">
         <label>shell_uart</label>

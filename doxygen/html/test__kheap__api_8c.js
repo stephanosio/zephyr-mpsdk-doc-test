@@ -6,7 +6,7 @@ var test__kheap__api_8c =
     [ "STACK_SIZE", "test__kheap__api_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "K_HEAP_DEFINE", "test__kheap__api_8c.html#a4c122ad7506d0d751fd2236ceef875e4", null ],
     [ "K_HEAP_DEFINE", "test__kheap__api_8c.html#aa291fd5d9f580d6d220564f598bb3382", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__kheap__api_8c.html#a92d3d873c3cf4cd0327c5aa5bf8a0fc7", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__kheap__api_8c.html#a3e6b65a6d59086025e05164fc2c45504", null ],
     [ "test_k_heap_alloc", "test__kheap__api_8c.html#accba8be70594a6a2989b108ddeba854c", null ],
     [ "test_k_heap_alloc_fail", "test__kheap__api_8c.html#a0595cd66c99ada682ca8e9450de6bd0f", null ],
     [ "test_k_heap_alloc_pending", "group__kernel__heap__tests.html#gaac7f10d7cd380bf0cea84e08a0d504f4", null ],

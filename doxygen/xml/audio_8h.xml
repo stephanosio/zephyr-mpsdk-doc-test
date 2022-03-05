@@ -26,6 +26,8 @@
         <link refid="att_8h"/>
         <childnode refid="30" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>include/bluetooth/audio/audio.h</label>
@@ -97,7 +99,7 @@
       </node>
       <node id="26">
         <label>bluetooth/crypto.h</label>
-        <link refid="crypto_8h"/>
+        <link refid="bluetooth_2crypto_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -2413,7 +2415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1266" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1266" bodyend="1269"/>
+        <location file="include/bluetooth/audio/audio.h" line="1250" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1250" bodyend="1253"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -2430,7 +2432,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1318" column="9" bodyfile="include/bluetooth/audio/audio.h" bodystart="1318" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1300" column="9" bodyfile="include/bluetooth/audio/audio.h" bodystart="1300" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -2465,17 +2467,15 @@
 <parametername>ops</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Stream operations structure.</para>
+<para>Stream operations structure. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>0 in case of success or negative value in case of error. </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1280" column="6" declfile="include/bluetooth/audio/audio.h" declline="1280" declcolumn="6"/>
+        <location file="include/bluetooth/audio/audio.h" line="1262" column="6" declfile="include/bluetooth/audio/audio.h" declline="1262" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio_1ga744bc7ae2dab426e2178185d639ba26c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2506,7 +2506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1292" column="5" declfile="include/bluetooth/audio/audio.h" declline="1292" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1274" column="5" declfile="include/bluetooth/audio/audio.h" declline="1274" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio_1gacc0ce9b476b94901a959cd01f292df2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2537,7 +2537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1303" column="5" declfile="include/bluetooth/audio/audio.h" declline="1303" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1285" column="5" declfile="include/bluetooth/audio/audio.h" declline="1285" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga4be0b9ef2d3bab0dfc490be61c9c81e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2580,7 +2580,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1349" column="5" declfile="include/bluetooth/audio/audio.h" declline="1349" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1331" column="5" declfile="include/bluetooth/audio/audio.h" declline="1331" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga80ae693776d45404e5e521d627a42cbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2647,7 +2647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1364" column="5" declfile="include/bluetooth/audio/audio.h" declline="1364" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1346" column="5" declfile="include/bluetooth/audio/audio.h" declline="1346" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga1b7e2de7173dc74a1eb5d947af090fdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2691,7 +2691,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1381" column="5" declfile="include/bluetooth/audio/audio.h" declline="1381" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1363" column="5" declfile="include/bluetooth/audio/audio.h" declline="1363" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga2d7b7251f8d48f26785c95ca428ea8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2746,7 +2746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1397" column="5" declfile="include/bluetooth/audio/audio.h" declline="1397" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1379" column="5" declfile="include/bluetooth/audio/audio.h" declline="1379" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gacb5e3b0ae9bfcfa18d82f18ecb848266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2802,7 +2802,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1414" column="5" declfile="include/bluetooth/audio/audio.h" declline="1414" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1396" column="5" declfile="include/bluetooth/audio/audio.h" declline="1396" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gaa94cd5f835d9672b0a4eefe81e87d61c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2857,7 +2857,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1427" column="5" declfile="include/bluetooth/audio/audio.h" declline="1427" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1409" column="5" declfile="include/bluetooth/audio/audio.h" declline="1409" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gaad16c6bd4e6744ec6a956f8e1ceba7db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2889,7 +2889,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1441" column="5" declfile="include/bluetooth/audio/audio.h" declline="1441" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1423" column="5" declfile="include/bluetooth/audio/audio.h" declline="1423" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga35cb1771e7849e8f8daf306cc7adc4c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2921,7 +2921,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1455" column="5" declfile="include/bluetooth/audio/audio.h" declline="1455" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1437" column="5" declfile="include/bluetooth/audio/audio.h" declline="1437" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga77741223cef4104c99096e978d962192" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2953,7 +2953,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1469" column="5" declfile="include/bluetooth/audio/audio.h" declline="1469" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1451" column="5" declfile="include/bluetooth/audio/audio.h" declline="1451" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga65efbba8455086b58620bda1b17f515a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2997,7 +2997,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1486" column="5" declfile="include/bluetooth/audio/audio.h" declline="1486" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1468" column="5" declfile="include/bluetooth/audio/audio.h" declline="1468" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga714941f5156ef6a80dbc82f09d11cbf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3042,7 +3042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1500" column="5" declfile="include/bluetooth/audio/audio.h" declline="1500" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1482" column="5" declfile="include/bluetooth/audio/audio.h" declline="1482" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gaa874abb217ced90179c6d1090def5f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3097,7 +3097,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1515" column="5" declfile="include/bluetooth/audio/audio.h" declline="1515" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1497" column="5" declfile="include/bluetooth/audio/audio.h" declline="1497" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga3c8331932f58d35d05a9183864098eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3128,7 +3128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1528" column="5" declfile="include/bluetooth/audio/audio.h" declline="1528" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1510" column="5" declfile="include/bluetooth/audio/audio.h" declline="1510" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga01d836f556f3941a299508c9c92a33f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3209,7 +3209,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1551" column="5" declfile="include/bluetooth/audio/audio.h" declline="1551" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1533" column="5" declfile="include/bluetooth/audio/audio.h" declline="1533" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gabc4be88e8a667da74de441e79b44b5b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3264,7 +3264,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1568" column="5" declfile="include/bluetooth/audio/audio.h" declline="1568" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1550" column="5" declfile="include/bluetooth/audio/audio.h" declline="1550" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gae62725cce191d312746645be0da3e491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3295,7 +3295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1582" column="5" declfile="include/bluetooth/audio/audio.h" declline="1582" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1564" column="5" declfile="include/bluetooth/audio/audio.h" declline="1564" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gac7299a22e9337ed454cef0ad28c13f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3326,7 +3326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1594" column="5" declfile="include/bluetooth/audio/audio.h" declline="1594" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1576" column="5" declfile="include/bluetooth/audio/audio.h" declline="1576" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga36ed8bc36f09096a456e241a2468351a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3357,7 +3357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1606" column="5" declfile="include/bluetooth/audio/audio.h" declline="1606" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1588" column="5" declfile="include/bluetooth/audio/audio.h" declline="1588" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga42e59478c8a5a1bec32bfa36cc565ed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3385,7 +3385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1612" column="6" declfile="include/bluetooth/audio/audio.h" declline="1612" declcolumn="6"/>
+        <location file="include/bluetooth/audio/audio.h" line="1594" column="6" declfile="include/bluetooth/audio/audio.h" declline="1594" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga6a0f85e56aacf457af82ec6eb586fd97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3416,7 +3416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1626" column="5" declfile="include/bluetooth/audio/audio.h" declline="1626" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1608" column="5" declfile="include/bluetooth/audio/audio.h" declline="1608" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1gab148a4aca92215189d889ed66829d0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3437,7 +3437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1635" column="5" declfile="include/bluetooth/audio/audio.h" declline="1635" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1617" column="5" declfile="include/bluetooth/audio/audio.h" declline="1617" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga1284d368c1a803f68a56b6a8797a759d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3516,7 +3516,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1654" column="5" declfile="include/bluetooth/audio/audio.h" declline="1654" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1636" column="5" declfile="include/bluetooth/audio/audio.h" declline="1636" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga8b73d5449ed8a7b4a951870759d5d1eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3547,7 +3547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1670" column="5" declfile="include/bluetooth/audio/audio.h" declline="1670" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1652" column="5" declfile="include/bluetooth/audio/audio.h" declline="1652" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio__client_1ga1f2f6f63c95f25fe729ad7cae9b3251f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -3578,7 +3578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1683" column="5" declfile="include/bluetooth/audio/audio.h" declline="1683" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1665" column="5" declfile="include/bluetooth/audio/audio.h" declline="1665" declcolumn="5"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -4369,133 +4369,133 @@
 <codeline lineno="1157"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="1158"><highlight class="normal"></highlight></codeline>
 <codeline lineno="1160" refid="structbt__audio__stream__ops" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream__ops" kindref="compound">bt_audio_stream_ops</ref><sp/>{</highlight></codeline>
-<codeline lineno="1169" refid="structbt__audio__stream__ops_1a34f9b7a2a2c69b920cec3027699fb866" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a34f9b7a2a2c69b920cec3027699fb866" kindref="member">configured</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
-<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__codec__qos__pref" kindref="compound">bt_codec_qos_pref</ref><sp/>*pref);</highlight></codeline>
-<codeline lineno="1171"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1179" refid="structbt__audio__stream__ops_1ae9b3bc783b26882e68e327c6b9101550" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1ae9b3bc783b26882e68e327c6b9101550" kindref="member">qos_set</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1180"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1188" refid="structbt__audio__stream__ops_1a6e87b31f475ee57b23059b2732d1997a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a6e87b31f475ee57b23059b2732d1997a" kindref="member">enabled</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1189"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1197" refid="structbt__audio__stream__ops_1a6ec265ed94fa914404eec7f326ed97df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a6ec265ed94fa914404eec7f326ed97df" kindref="member">started</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1198"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1206" refid="structbt__audio__stream__ops_1a3715c73209af2fd6799f5648c72aa90e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a3715c73209af2fd6799f5648c72aa90e" kindref="member">metadata_updated</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1207"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1215" refid="structbt__audio__stream__ops_1a1e22d3d9898230e62d293cc88ab9b4b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a1e22d3d9898230e62d293cc88ab9b4b8" kindref="member">disabled</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1224" refid="structbt__audio__stream__ops_1a37ef1b5e8688c37f5f7dcb4cc845e911" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a37ef1b5e8688c37f5f7dcb4cc845e911" kindref="member">stopped</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1233" refid="structbt__audio__stream__ops_1a57f542057d195cdfd6ea5b12da807f6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a57f542057d195cdfd6ea5b12da807f6b" kindref="member">released</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1234"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1242" refid="structbt__audio__stream__ops_1a930f643ecef717e88c6c7a80901925f7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a930f643ecef717e88c6c7a80901925f7" kindref="member">connected</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1243"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1253" refid="structbt__audio__stream__ops_1aad9d92620e6671b6744c273222150284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1aad9d92620e6671b6744c273222150284" kindref="member">disconnected</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>reason);</highlight></codeline>
+<codeline lineno="1161"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_BT_AUDIO_UNICAST)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*configured)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
+<codeline lineno="1171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__codec__qos__pref" kindref="compound">bt_codec_qos_pref</ref><sp/>*pref);</highlight></codeline>
+<codeline lineno="1172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*qos_set)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*enabled)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*metadata_updated)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*disabled)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*released)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_BT_AUDIO_UNICAST<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1226" refid="structbt__audio__stream__ops_1a6ec265ed94fa914404eec7f326ed97df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a6ec265ed94fa914404eec7f326ed97df" kindref="member">started</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1235" refid="structbt__audio__stream__ops_1a37ef1b5e8688c37f5f7dcb4cc845e911" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a37ef1b5e8688c37f5f7dcb4cc845e911" kindref="member">stopped</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1237"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_BT_AUDIO_UNICAST)<sp/>||<sp/>defined(CONFIG_BT_AUDIO_BROADCAST_SINK)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="posix_2sys_2socket_8h_1ae11da452beee536eac85d5f26e5cdd40" kindref="member">recv</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnet__buf" kindref="compound">net_buf</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="1246"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_BT_AUDIO_UNICAST<sp/>||<sp/>CONFIG_BT_AUDIO_BROADCAST_SINK<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1247"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1250" refid="group__bt__audio_1ga72309b288f1e2f541a7eb3ff2e9b4eb9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1ga72309b288f1e2f541a7eb3ff2e9b4eb9" kindref="member">bt_audio_pac_type</ref><sp/>{</highlight></codeline>
+<codeline lineno="1251" refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a51746a12fa774afd2e1c37fb6257d50f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a51746a12fa774afd2e1c37fb6257d50f" kindref="member">BT_AUDIO_SINK</ref><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="1252" refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a3ab1b4089a6a9349c874e7387d62da8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a3ab1b4089a6a9349c874e7387d62da8f" kindref="member">BT_AUDIO_SOURCE</ref><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="1253"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="1254"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1262" refid="structbt__audio__stream__ops_1a3aafc6932c1ebb1fa7567fe4a332d57e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>(*<ref refid="structbt__audio__stream__ops_1a3aafc6932c1ebb1fa7567fe4a332d57e" kindref="member">recv</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnet__buf" kindref="compound">net_buf</ref><sp/>*buf);</highlight></codeline>
-<codeline lineno="1263"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1262" refid="group__bt__audio_1ga773c98264c04f00c8d0668b9d8e1c44a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1ga773c98264c04f00c8d0668b9d8e1c44a" kindref="member">bt_audio_stream_cb_register</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
+<codeline lineno="1263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream__ops" kindref="compound">bt_audio_stream_ops</ref><sp/>*ops);</highlight></codeline>
 <codeline lineno="1264"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1266" refid="group__bt__audio_1ga72309b288f1e2f541a7eb3ff2e9b4eb9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1ga72309b288f1e2f541a7eb3ff2e9b4eb9" kindref="member">bt_audio_pac_type</ref><sp/>{</highlight></codeline>
-<codeline lineno="1267" refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a51746a12fa774afd2e1c37fb6257d50f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a51746a12fa774afd2e1c37fb6257d50f" kindref="member">BT_AUDIO_SINK</ref><sp/>=<sp/>0x01,</highlight></codeline>
-<codeline lineno="1268" refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a3ab1b4089a6a9349c874e7387d62da8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__audio_1gga72309b288f1e2f541a7eb3ff2e9b4eb9a3ab1b4089a6a9349c874e7387d62da8f" kindref="member">BT_AUDIO_SOURCE</ref><sp/>=<sp/>0x02,</highlight></codeline>
-<codeline lineno="1269"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="1270"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1280" refid="group__bt__audio_1ga773c98264c04f00c8d0668b9d8e1c44a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1ga773c98264c04f00c8d0668b9d8e1c44a" kindref="member">bt_audio_stream_cb_register</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
-<codeline lineno="1281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream__ops" kindref="compound">bt_audio_stream_ops</ref><sp/>*ops);</highlight></codeline>
-<codeline lineno="1282"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1292" refid="group__bt__audio_1ga744bc7ae2dab426e2178185d639ba26c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1ga744bc7ae2dab426e2178185d639ba26c" kindref="member">bt_audio_unicast_server_register_cb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__unicast__server__cb" kindref="compound">bt_audio_unicast_server_cb</ref><sp/>*cb);</highlight></codeline>
-<codeline lineno="1293"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1303" refid="group__bt__audio_1gacc0ce9b476b94901a959cd01f292df2d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1gacc0ce9b476b94901a959cd01f292df2d" kindref="member">bt_audio_unicast_server_unregister_cb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__unicast__server__cb" kindref="compound">bt_audio_unicast_server_cb</ref><sp/>*cb);</highlight></codeline>
+<codeline lineno="1274" refid="group__bt__audio_1ga744bc7ae2dab426e2178185d639ba26c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1ga744bc7ae2dab426e2178185d639ba26c" kindref="member">bt_audio_unicast_server_register_cb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__unicast__server__cb" kindref="compound">bt_audio_unicast_server_cb</ref><sp/>*cb);</highlight></codeline>
+<codeline lineno="1275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1285" refid="group__bt__audio_1gacc0ce9b476b94901a959cd01f292df2d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio_1gacc0ce9b476b94901a959cd01f292df2d" kindref="member">bt_audio_unicast_server_unregister_cb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__unicast__server__cb" kindref="compound">bt_audio_unicast_server_cb</ref><sp/>*cb);</highlight></codeline>
+<codeline lineno="1286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1293"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref>;</highlight></codeline>
+<codeline lineno="1294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1300" refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" kindref="member">bt_audio_discover_func_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">bt_conn<sp/>*conn,</highlight></codeline>
+<codeline lineno="1301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
+<codeline lineno="1302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">bt_audio_ep<sp/>*ep,</highlight></codeline>
+<codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref><sp/>*params);</highlight></codeline>
 <codeline lineno="1304"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1311"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref>;</highlight></codeline>
-<codeline lineno="1312"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1318" refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" kindref="member">bt_audio_discover_func_t</ref>)(</highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">bt_conn<sp/>*conn,</highlight></codeline>
-<codeline lineno="1319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
-<codeline lineno="1320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">bt_audio_ep<sp/>*ep,</highlight></codeline>
-<codeline lineno="1321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref><sp/>*params);</highlight></codeline>
-<codeline lineno="1322"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1323" refid="structbt__audio__discover__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref><sp/>{</highlight></codeline>
-<codeline lineno="1325" refid="structbt__audio__discover__params_1a5f9f868aa3894c96149fd4f7540e8f74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1a5f9f868aa3894c96149fd4f7540e8f74" kindref="member">type</ref>;</highlight></codeline>
-<codeline lineno="1327" refid="structbt__audio__discover__params_1adfb69bb674815e20181603486d083837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" kindref="member">bt_audio_discover_func_t</ref><sp/><ref refid="structbt__audio__discover__params_1adfb69bb674815e20181603486d083837" kindref="member">func</ref>;</highlight></codeline>
-<codeline lineno="1329" refid="structbt__audio__discover__params_1a12666f1701c3e46cbfe5d62ee3257ce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1a12666f1701c3e46cbfe5d62ee3257ce8" kindref="member">num_caps</ref>;</highlight></codeline>
-<codeline lineno="1331" refid="structbt__audio__discover__params_1aadcf45a8bba229eebaf7646859116047" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1aadcf45a8bba229eebaf7646859116047" kindref="member">num_eps</ref>;</highlight></codeline>
-<codeline lineno="1333" refid="structbt__audio__discover__params_1a42ee9b44935f835a2dcadde8e0e4f12c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1a42ee9b44935f835a2dcadde8e0e4f12c" kindref="member">err</ref>;</highlight></codeline>
-<codeline lineno="1334" refid="structbt__audio__discover__params_1ad5811c5f0eb1072a8ceefa6c7ea7d21b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__gatt__read__params" kindref="compound">bt_gatt_read_params</ref><sp/><ref refid="structbt__audio__discover__params_1ad5811c5f0eb1072a8ceefa6c7ea7d21b" kindref="member">read</ref>;</highlight></codeline>
-<codeline lineno="1335" refid="structbt__audio__discover__params_1ad85d397205b0a5db5c38f8b244b8e7ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__gatt__discover__params" kindref="compound">bt_gatt_discover_params</ref><sp/><ref refid="structbt__audio__discover__params_1ad85d397205b0a5db5c38f8b244b8e7ea" kindref="member">discover</ref>;</highlight></codeline>
-<codeline lineno="1336"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="1337"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1349" refid="group__bt__audio__client_1ga4be0b9ef2d3bab0dfc490be61c9c81e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga4be0b9ef2d3bab0dfc490be61c9c81e9" kindref="member">bt_audio_discover</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,</highlight></codeline>
-<codeline lineno="1350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref><sp/>*params);</highlight></codeline>
-<codeline lineno="1351"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1364" refid="group__bt__audio__client_1ga80ae693776d45404e5e521d627a42cbc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga80ae693776d45404e5e521d627a42cbc" kindref="member">bt_audio_stream_config</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,</highlight></codeline>
-<codeline lineno="1365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
-<codeline lineno="1366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_ep<sp/>*ep,</highlight></codeline>
-<codeline lineno="1367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec);</highlight></codeline>
-<codeline lineno="1368"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1381" refid="group__bt__audio__client_1ga1b7e2de7173dc74a1eb5d947af090fdc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga1b7e2de7173dc74a1eb5d947af090fdc" kindref="member">bt_audio_stream_reconfig</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
-<codeline lineno="1382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec);</highlight></codeline>
-<codeline lineno="1383"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1397" refid="group__bt__audio__client_1ga2d7b7251f8d48f26785c95ca428ea8b7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga2d7b7251f8d48f26785c95ca428ea8b7" kindref="member">bt_audio_stream_qos</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,</highlight></codeline>
-<codeline lineno="1398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_unicast_group<sp/>*group,</highlight></codeline>
-<codeline lineno="1399"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__qos" kindref="compound">bt_codec_qos</ref><sp/>*qos);</highlight></codeline>
-<codeline lineno="1400"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1414" refid="group__bt__audio__client_1gacb5e3b0ae9bfcfa18d82f18ecb848266" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gacb5e3b0ae9bfcfa18d82f18ecb848266" kindref="member">bt_audio_stream_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
-<codeline lineno="1415"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>meta_count,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__data" kindref="compound">bt_codec_data</ref><sp/>*meta);</highlight></codeline>
-<codeline lineno="1416"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1427" refid="group__bt__audio__client_1gaa94cd5f835d9672b0a4eefe81e87d61c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gaa94cd5f835d9672b0a4eefe81e87d61c" kindref="member">bt_audio_stream_metadata</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
-<codeline lineno="1428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>meta_count,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__data" kindref="compound">bt_codec_data</ref><sp/>*meta);</highlight></codeline>
-<codeline lineno="1429"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1441" refid="group__bt__audio__client_1gaad16c6bd4e6744ec6a956f8e1ceba7db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gaad16c6bd4e6744ec6a956f8e1ceba7db" kindref="member">bt_audio_stream_disable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1442"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1455" refid="group__bt__audio__client_1ga35cb1771e7849e8f8daf306cc7adc4c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga35cb1771e7849e8f8daf306cc7adc4c4" kindref="member">bt_audio_stream_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1456"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1469" refid="group__bt__audio__client_1ga77741223cef4104c99096e978d962192" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga77741223cef4104c99096e978d962192" kindref="member">bt_audio_stream_stop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
-<codeline lineno="1470"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1486" refid="group__bt__audio__client_1ga65efbba8455086b58620bda1b17f515a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga65efbba8455086b58620bda1b17f515a" kindref="member">bt_audio_stream_release</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cache);</highlight></codeline>
-<codeline lineno="1487"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1500" refid="group__bt__audio__client_1ga714941f5156ef6a80dbc82f09d11cbf3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga714941f5156ef6a80dbc82f09d11cbf3" kindref="member">bt_audio_stream_send</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnet__buf" kindref="compound">net_buf</ref><sp/>*buf);</highlight></codeline>
-<codeline lineno="1501"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1515" refid="group__bt__audio__client_1gaa874abb217ced90179c6d1090def5f5c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gaa874abb217ced90179c6d1090def5f5c" kindref="member">bt_audio_unicast_group_create</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*streams,</highlight></codeline>
-<codeline lineno="1516"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>num_stream,</highlight></codeline>
-<codeline lineno="1517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_unicast_group<sp/>**unicast_group);</highlight></codeline>
-<codeline lineno="1518"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1528" refid="group__bt__audio__client_1ga3c8331932f58d35d05a9183864098eee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga3c8331932f58d35d05a9183864098eee" kindref="member">bt_audio_unicast_group_delete</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_unicast_group<sp/>*unicast_group);</highlight></codeline>
-<codeline lineno="1529"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1551" refid="group__bt__audio__client_1ga01d836f556f3941a299508c9c92a33f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga01d836f556f3941a299508c9c92a33f2" kindref="member">bt_audio_broadcast_source_create</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*streams,</highlight></codeline>
-<codeline lineno="1552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>num_stream,</highlight></codeline>
-<codeline lineno="1553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
-<codeline lineno="1554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__qos" kindref="compound">bt_codec_qos</ref><sp/>*qos,</highlight></codeline>
-<codeline lineno="1555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>**source);</highlight></codeline>
-<codeline lineno="1556"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1568" refid="group__bt__audio__client_1gabc4be88e8a667da74de441e79b44b5b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gabc4be88e8a667da74de441e79b44b5b5" kindref="member">bt_audio_broadcast_source_reconfig</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source,</highlight></codeline>
-<codeline lineno="1569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
-<codeline lineno="1570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__qos" kindref="compound">bt_codec_qos</ref><sp/>*qos);</highlight></codeline>
-<codeline lineno="1571"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1582" refid="group__bt__audio__client_1gae62725cce191d312746645be0da3e491" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gae62725cce191d312746645be0da3e491" kindref="member">bt_audio_broadcast_source_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source);</highlight></codeline>
-<codeline lineno="1583"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1594" refid="group__bt__audio__client_1gac7299a22e9337ed454cef0ad28c13f7e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gac7299a22e9337ed454cef0ad28c13f7e" kindref="member">bt_audio_broadcast_source_stop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source);</highlight></codeline>
+<codeline lineno="1305" refid="structbt__audio__discover__params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref><sp/>{</highlight></codeline>
+<codeline lineno="1307" refid="structbt__audio__discover__params_1a5f9f868aa3894c96149fd4f7540e8f74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1a5f9f868aa3894c96149fd4f7540e8f74" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="1309" refid="structbt__audio__discover__params_1adfb69bb674815e20181603486d083837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" kindref="member">bt_audio_discover_func_t</ref><sp/><ref refid="structbt__audio__discover__params_1adfb69bb674815e20181603486d083837" kindref="member">func</ref>;</highlight></codeline>
+<codeline lineno="1311" refid="structbt__audio__discover__params_1a12666f1701c3e46cbfe5d62ee3257ce8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1a12666f1701c3e46cbfe5d62ee3257ce8" kindref="member">num_caps</ref>;</highlight></codeline>
+<codeline lineno="1313" refid="structbt__audio__discover__params_1aadcf45a8bba229eebaf7646859116047" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1aadcf45a8bba229eebaf7646859116047" kindref="member">num_eps</ref>;</highlight></codeline>
+<codeline lineno="1315" refid="structbt__audio__discover__params_1a42ee9b44935f835a2dcadde8e0e4f12c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/><sp/><ref refid="structbt__audio__discover__params_1a42ee9b44935f835a2dcadde8e0e4f12c" kindref="member">err</ref>;</highlight></codeline>
+<codeline lineno="1316" refid="structbt__audio__discover__params_1ad5811c5f0eb1072a8ceefa6c7ea7d21b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__gatt__read__params" kindref="compound">bt_gatt_read_params</ref><sp/><ref refid="structbt__audio__discover__params_1ad5811c5f0eb1072a8ceefa6c7ea7d21b" kindref="member">read</ref>;</highlight></codeline>
+<codeline lineno="1317" refid="structbt__audio__discover__params_1ad85d397205b0a5db5c38f8b244b8e7ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structbt__gatt__discover__params" kindref="compound">bt_gatt_discover_params</ref><sp/><ref refid="structbt__audio__discover__params_1ad85d397205b0a5db5c38f8b244b8e7ea" kindref="member">discover</ref>;</highlight></codeline>
+<codeline lineno="1318"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1331" refid="group__bt__audio__client_1ga4be0b9ef2d3bab0dfc490be61c9c81e9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga4be0b9ef2d3bab0dfc490be61c9c81e9" kindref="member">bt_audio_discover</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,</highlight></codeline>
+<codeline lineno="1332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__discover__params" kindref="compound">bt_audio_discover_params</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="1333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1346" refid="group__bt__audio__client_1ga80ae693776d45404e5e521d627a42cbc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga80ae693776d45404e5e521d627a42cbc" kindref="member">bt_audio_stream_config</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,</highlight></codeline>
+<codeline lineno="1347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
+<codeline lineno="1348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_ep<sp/>*ep,</highlight></codeline>
+<codeline lineno="1349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec);</highlight></codeline>
+<codeline lineno="1350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1363" refid="group__bt__audio__client_1ga1b7e2de7173dc74a1eb5d947af090fdc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga1b7e2de7173dc74a1eb5d947af090fdc" kindref="member">bt_audio_stream_reconfig</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
+<codeline lineno="1364"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec);</highlight></codeline>
+<codeline lineno="1365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1379" refid="group__bt__audio__client_1ga2d7b7251f8d48f26785c95ca428ea8b7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga2d7b7251f8d48f26785c95ca428ea8b7" kindref="member">bt_audio_stream_qos</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,</highlight></codeline>
+<codeline lineno="1380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_unicast_group<sp/>*group,</highlight></codeline>
+<codeline lineno="1381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__qos" kindref="compound">bt_codec_qos</ref><sp/>*qos);</highlight></codeline>
+<codeline lineno="1382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1396" refid="group__bt__audio__client_1gacb5e3b0ae9bfcfa18d82f18ecb848266" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gacb5e3b0ae9bfcfa18d82f18ecb848266" kindref="member">bt_audio_stream_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
+<codeline lineno="1397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>meta_count,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__data" kindref="compound">bt_codec_data</ref><sp/>*meta);</highlight></codeline>
+<codeline lineno="1398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1409" refid="group__bt__audio__client_1gaa94cd5f835d9672b0a4eefe81e87d61c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gaa94cd5f835d9672b0a4eefe81e87d61c" kindref="member">bt_audio_stream_metadata</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,</highlight></codeline>
+<codeline lineno="1410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>meta_count,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__data" kindref="compound">bt_codec_data</ref><sp/>*meta);</highlight></codeline>
+<codeline lineno="1411"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1423" refid="group__bt__audio__client_1gaad16c6bd4e6744ec6a956f8e1ceba7db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gaad16c6bd4e6744ec6a956f8e1ceba7db" kindref="member">bt_audio_stream_disable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1437" refid="group__bt__audio__client_1ga35cb1771e7849e8f8daf306cc7adc4c4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga35cb1771e7849e8f8daf306cc7adc4c4" kindref="member">bt_audio_stream_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1451" refid="group__bt__audio__client_1ga77741223cef4104c99096e978d962192" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga77741223cef4104c99096e978d962192" kindref="member">bt_audio_stream_stop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream);</highlight></codeline>
+<codeline lineno="1452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1468" refid="group__bt__audio__client_1ga65efbba8455086b58620bda1b17f515a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga65efbba8455086b58620bda1b17f515a" kindref="member">bt_audio_stream_release</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>cache);</highlight></codeline>
+<codeline lineno="1469"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1482" refid="group__bt__audio__client_1ga714941f5156ef6a80dbc82f09d11cbf3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga714941f5156ef6a80dbc82f09d11cbf3" kindref="member">bt_audio_stream_send</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*stream,<sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnet__buf" kindref="compound">net_buf</ref><sp/>*buf);</highlight></codeline>
+<codeline lineno="1483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1497" refid="group__bt__audio__client_1gaa874abb217ced90179c6d1090def5f5c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gaa874abb217ced90179c6d1090def5f5c" kindref="member">bt_audio_unicast_group_create</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*streams,</highlight></codeline>
+<codeline lineno="1498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>num_stream,</highlight></codeline>
+<codeline lineno="1499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_unicast_group<sp/>**unicast_group);</highlight></codeline>
+<codeline lineno="1500"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1510" refid="group__bt__audio__client_1ga3c8331932f58d35d05a9183864098eee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga3c8331932f58d35d05a9183864098eee" kindref="member">bt_audio_unicast_group_delete</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_unicast_group<sp/>*unicast_group);</highlight></codeline>
+<codeline lineno="1511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1533" refid="group__bt__audio__client_1ga01d836f556f3941a299508c9c92a33f2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga01d836f556f3941a299508c9c92a33f2" kindref="member">bt_audio_broadcast_source_create</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*streams,</highlight></codeline>
+<codeline lineno="1534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>num_stream,</highlight></codeline>
+<codeline lineno="1535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
+<codeline lineno="1536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__qos" kindref="compound">bt_codec_qos</ref><sp/>*qos,</highlight></codeline>
+<codeline lineno="1537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>**source);</highlight></codeline>
+<codeline lineno="1538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1550" refid="group__bt__audio__client_1gabc4be88e8a667da74de441e79b44b5b5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gabc4be88e8a667da74de441e79b44b5b5" kindref="member">bt_audio_broadcast_source_reconfig</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source,</highlight></codeline>
+<codeline lineno="1551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
+<codeline lineno="1552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec__qos" kindref="compound">bt_codec_qos</ref><sp/>*qos);</highlight></codeline>
+<codeline lineno="1553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1564" refid="group__bt__audio__client_1gae62725cce191d312746645be0da3e491" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gae62725cce191d312746645be0da3e491" kindref="member">bt_audio_broadcast_source_start</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source);</highlight></codeline>
+<codeline lineno="1565"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1576" refid="group__bt__audio__client_1gac7299a22e9337ed454cef0ad28c13f7e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gac7299a22e9337ed454cef0ad28c13f7e" kindref="member">bt_audio_broadcast_source_stop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source);</highlight></codeline>
+<codeline lineno="1577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1588" refid="group__bt__audio__client_1ga36ed8bc36f09096a456e241a2468351a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga36ed8bc36f09096a456e241a2468351a" kindref="member">bt_audio_broadcast_source_delete</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source);</highlight></codeline>
+<codeline lineno="1589"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1594" refid="group__bt__audio__client_1ga42e59478c8a5a1bec32bfa36cc565ed8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga42e59478c8a5a1bec32bfa36cc565ed8" kindref="member">bt_audio_broadcast_sink_register_cb</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__broadcast__sink__cb" kindref="compound">bt_audio_broadcast_sink_cb</ref><sp/>*cb);</highlight></codeline>
 <codeline lineno="1595"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1606" refid="group__bt__audio__client_1ga36ed8bc36f09096a456e241a2468351a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga36ed8bc36f09096a456e241a2468351a" kindref="member">bt_audio_broadcast_source_delete</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_source<sp/>*source);</highlight></codeline>
-<codeline lineno="1607"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1612" refid="group__bt__audio__client_1ga42e59478c8a5a1bec32bfa36cc565ed8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga42e59478c8a5a1bec32bfa36cc565ed8" kindref="member">bt_audio_broadcast_sink_register_cb</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__broadcast__sink__cb" kindref="compound">bt_audio_broadcast_sink_cb</ref><sp/>*cb);</highlight></codeline>
-<codeline lineno="1613"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1626" refid="group__bt__audio__client_1ga6a0f85e56aacf457af82ec6eb586fd97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga6a0f85e56aacf457af82ec6eb586fd97" kindref="member">bt_audio_broadcast_sink_scan_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__le__scan__param" kindref="compound">bt_le_scan_param</ref><sp/>*param);</highlight></codeline>
-<codeline lineno="1627"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1635" refid="group__bt__audio__client_1gab148a4aca92215189d889ed66829d0c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gab148a4aca92215189d889ed66829d0c5" kindref="member">bt_audio_broadcast_sink_scan_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="1636"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1654" refid="group__bt__audio__client_1ga1284d368c1a803f68a56b6a8797a759d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga1284d368c1a803f68a56b6a8797a759d" kindref="member">bt_audio_broadcast_sink_sync</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_sink<sp/>*sink,</highlight></codeline>
-<codeline lineno="1655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>indexes_bitfield,</highlight></codeline>
-<codeline lineno="1656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*streams,</highlight></codeline>
-<codeline lineno="1657"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
-<codeline lineno="1658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>broadcast_code[16]);</highlight></codeline>
-<codeline lineno="1659"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1670" refid="group__bt__audio__client_1ga8b73d5449ed8a7b4a951870759d5d1eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga8b73d5449ed8a7b4a951870759d5d1eb" kindref="member">bt_audio_broadcast_sink_stop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_sink<sp/>*sink);</highlight></codeline>
-<codeline lineno="1671"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1683" refid="group__bt__audio__client_1ga1f2f6f63c95f25fe729ad7cae9b3251f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga1f2f6f63c95f25fe729ad7cae9b3251f" kindref="member">bt_audio_broadcast_sink_delete</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_sink<sp/>*sink);</highlight></codeline>
-<codeline lineno="1684"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1687"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1688"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="1689"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="1690"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1695"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_BLUETOOTH_AUDIO_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="1608" refid="group__bt__audio__client_1ga6a0f85e56aacf457af82ec6eb586fd97" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga6a0f85e56aacf457af82ec6eb586fd97" kindref="member">bt_audio_broadcast_sink_scan_start</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__le__scan__param" kindref="compound">bt_le_scan_param</ref><sp/>*param);</highlight></codeline>
+<codeline lineno="1609"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1617" refid="group__bt__audio__client_1gab148a4aca92215189d889ed66829d0c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1gab148a4aca92215189d889ed66829d0c5" kindref="member">bt_audio_broadcast_sink_scan_stop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1636" refid="group__bt__audio__client_1ga1284d368c1a803f68a56b6a8797a759d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga1284d368c1a803f68a56b6a8797a759d" kindref="member">bt_audio_broadcast_sink_sync</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_sink<sp/>*sink,</highlight></codeline>
+<codeline lineno="1637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>indexes_bitfield,</highlight></codeline>
+<codeline lineno="1638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__audio__stream" kindref="compound">bt_audio_stream</ref><sp/>*streams,</highlight></codeline>
+<codeline lineno="1639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structbt__codec" kindref="compound">bt_codec</ref><sp/>*codec,</highlight></codeline>
+<codeline lineno="1640"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>broadcast_code[16]);</highlight></codeline>
+<codeline lineno="1641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1652" refid="group__bt__audio__client_1ga8b73d5449ed8a7b4a951870759d5d1eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga8b73d5449ed8a7b4a951870759d5d1eb" kindref="member">bt_audio_broadcast_sink_stop</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_sink<sp/>*sink);</highlight></codeline>
+<codeline lineno="1653"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1665" refid="group__bt__audio__client_1ga1f2f6f63c95f25fe729ad7cae9b3251f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__bt__audio__client_1ga1f2f6f63c95f25fe729ad7cae9b3251f" kindref="member">bt_audio_broadcast_sink_delete</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_audio_broadcast_sink<sp/>*sink);</highlight></codeline>
+<codeline lineno="1666"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1669"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1670"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1671"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1672"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1677"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_BLUETOOTH_AUDIO_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/bluetooth/audio/audio.h"/>
   </compounddef>

@@ -728,7 +728,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1002,16 +1002,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="mbox_2mbox__usage_2src_2main_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mbox_2mbox__usage_2src_2main_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1021,16 +1021,16 @@
         </inbodydescription>
         <location file="tests/kernel/mbox/mbox_usage/src/main.c" line="15" column="8" declfile="tests/kernel/mbox/mbox_usage/src/main.c" declline="15" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="mbox_2mbox__usage_2src_2main_8c_1aa55682d2d3e2dff5e0b68c250fbdeb95" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mbox_2mbox__usage_2src_2main_8c_1afc0617c2ddfb1a62e1a82b43f2500cd3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(high_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(high_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>high_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1040,16 +1040,16 @@
         </inbodydescription>
         <location file="tests/kernel/mbox/mbox_usage/src/main.c" line="16" column="8" declfile="tests/kernel/mbox/mbox_usage/src/main.c" declline="16" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="mbox_2mbox__usage_2src_2main_8c_1a4039bf257a40f1dc3b73c968c83f03ea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mbox_2mbox__usage_2src_2main_8c_1adbc7089de7661e48e3e53e95a0cc3177" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(low_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(low_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>low_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1301,14 +1301,14 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAIL_LEN<sp/>64</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH_PRIO<sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOW_PRIO<sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(high_stack,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(low_stack,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(high_stack,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(low_stack,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="msgq_2msgq__api_2src_2main_8c_1aa15baae19d44279cac3d8bf47c9e707f" kindref="member">tdata</ref>,<sp/>high_tdata,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1a2d6413b7868ef01c6ba03bfcc7989595" kindref="member">low_tdata</ref>;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__mbox" kindref="compound">k_mbox</ref><sp/><ref refid="test__mbox__api_8c_1ab64dcf4f081bd916b6351045d0166c0b" kindref="member">mbox</ref>,<sp/><ref refid="mbox_2mbox__usage_2src_2main_8c_1acb6a472a3004801917df4d13392781a1" kindref="member">multi_tmbox</ref>;</highlight></codeline>

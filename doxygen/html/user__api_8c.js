@@ -2,7 +2,7 @@ var user__api_8c =
 [
     [ "THREAD_TEST_PRIORITY", "user__api_8c.html#a122fcce70e98e17966bab36f75ced5da", null ],
     [ "K_SEM_DEFINE", "user__api_8c.html#a8c3fe3d8e97adabcd1edcba014505290", null ],
-    [ "K_THREAD_STACK_DEFINE", "user__api_8c.html#a67cb99942997d62519a6b6716ba25f8c", null ],
+    [ "K_THREAD_STACK_DEFINE", "user__api_8c.html#aa4844a71855245264fb45a6c4c33ddb4", null ],
     [ "preempt_test_thread", "user__api_8c.html#ad9684fb1711114ceb595e3867cca662e", null ],
     [ "sleepy_thread", "user__api_8c.html#a83eb9e06e92cee756464b2aeb352f496", null ],
     [ "test_k_thread_priority_get_init_null", "group__kernel__sched__tests.html#ga280a0acbd9dea9af67ee56b05fc4639d", null ],

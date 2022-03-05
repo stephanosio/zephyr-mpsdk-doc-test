@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -178,7 +180,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -265,10 +267,10 @@ real network interface. This is similar to how Linux implements VLANs. The
 <em>eth0</em> is the real network interface and <em>vlan0</em> is a virtual network interface
 that is run on top of <em>eth0</em>.</p>
 <p>VLAN support must be enabled at compile time by setting option
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_VLAN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN</span></code></a> and <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_VLAN_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN_COUNT</span></code></a> to reflect how
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_VLAN" title="CONFIG_NET_VLAN"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN</span></code></a> and <a class="reference internal" href="../../kconfig.html#CONFIG_NET_VLAN_COUNT" title="CONFIG_NET_VLAN_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN_COUNT</span></code></a> to reflect how
 many network interfaces there will be in the system.  For example, if there is
 one network interface without VLAN support, and two with VLAN support, the
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_VLAN_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN_COUNT</span></code></a> option should be set to 3.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_VLAN_COUNT" title="CONFIG_NET_VLAN_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN_COUNT</span></code></a> option should be set to 3.</p>
 <p>Even if VLAN is enabled in a <code class="file docutils literal notranslate"><span class="pre">prj.conf</span></code> file, the VLAN needs to be
 activated at runtime by the application. The VLAN API provides a
 <a class="reference internal" href="ethernet.html#c.net_eth_vlan_enable" title="net_eth_vlan_enable"><code class="xref c c-func docutils literal notranslate"><span class="pre">net_eth_vlan_enable()</span></code></a> function to do that. The application needs
@@ -414,8 +416,8 @@ that can be used to enable or disable VLAN tags for a given network interface.</
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

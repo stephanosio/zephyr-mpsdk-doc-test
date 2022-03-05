@@ -11,7 +11,7 @@ var test__mslab__threadsafe_8c =
     [ "THREAD_NUM", "test__mslab__threadsafe_8c.html#acd532f688378febc70bf2aedccd9bb60", null ],
     [ "TIMEOUT", "test__mslab__threadsafe_8c.html#a45ba202b05caf39795aeca91b0ae547e", null ],
     [ "K_MEM_SLAB_DEFINE", "test__mslab__threadsafe_8c.html#a5c6997323d17e3f7c030e2af6cd60c5c", null ],
-    [ "K_THREAD_STACK_ARRAY_DEFINE", "test__mslab__threadsafe_8c.html#a8b49fec2a8d9b46c26588f772665bafa", null ],
+    [ "K_THREAD_STACK_ARRAY_DEFINE", "test__mslab__threadsafe_8c.html#ae45f2df95725c87f43c7e16a8c6a6c60", null ],
     [ "test_mslab_threadsafe", "group__kernel__memory__slab__tests.html#ga58d6a9fba99ee0e71ee19e7852faf421", null ],
     [ "tmslab_api", "test__mslab__threadsafe_8c.html#a382bde5415ef7c97469ced3f110dfeed", null ],
     [ "slab_id", "test__mslab__threadsafe_8c.html#a2f57357356ec65d349e071e8a332cddf", null ],

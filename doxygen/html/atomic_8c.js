@@ -6,7 +6,7 @@ var atomic_8c =
     [ "TEST_CYCLE", "atomic_8c.html#a2477c12659a70e565a2e0c6cc032f769", null ],
     [ "THREADS_NUM", "atomic_8c.html#a51e2e876217651c49f5dda708e3c54f3", null ],
     [ "atomic_handler", "group__kernel__common__tests.html#ga103fe8057e7e23a7136fe05f1e055237", null ],
-    [ "K_THREAD_STACK_ARRAY_DEFINE", "atomic_8c.html#a32e866e7378df221318e16894c0145c7", null ],
+    [ "K_THREAD_STACK_ARRAY_DEFINE", "atomic_8c.html#a704875c50db3f469f4a18dbc94de9231", null ],
     [ "test_atomic", "group__kernel__common__tests.html#ga674b21994cf9148555e16f401d63c9e7", null ],
     [ "test_threads_access_atomic", "group__kernel__common__tests.html#gae4f64eff153f6d061c63f74df3e70bf9", null ],
     [ "thread", "atomic_8c.html#ae3e7b70821cb2fc4b41ff1189e70bc92", null ],

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -183,7 +185,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -402,6 +404,11 @@ also get hold of the connection object through the return value of the
 <span class="target" id="group__bt__conn_1ga9cc26afda3c507cb5439184fedcd61ba"></span><span class="sig-name descname"><span class="n"><span class="pre">BT_LE_DATA_LEN_PARAM_MAX</span></span></span><a class="headerlink" href="#c.BT_LE_DATA_LEN_PARAM_MAX" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Maximum LE data length parameters. </p>
 </dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.BT_CONN_INTERVAL_TO_MS">
+<span class="target" id="group__bt__conn_1ga707cc62b12c89478aebd0488a464a776"></span><span class="sig-name descname"><span class="n"><span class="pre">BT_CONN_INTERVAL_TO_MS</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">interval</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.BT_CONN_INTERVAL_TO_MS" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
 
 <dl class="c macro">
 <dt class="sig sig-object c" id="c.BT_CONN_ROLE_MASTER">
@@ -895,7 +902,7 @@ also get hold of the connection object through the return value of the
 <dd><p>Get connection info for the remote device. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In order to retrieve the remote version (version, manufacturer and subversion) <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_REMOTE_VERSION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_REMOTE_VERSION</span></code></a> </span> must be enabled</p>
+<p>In order to retrieve the remote version (version, manufacturer and subversion) <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_REMOTE_VERSION" title="CONFIG_BT_REMOTE_VERSION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_REMOTE_VERSION</span></code></a> </span> must be enabled</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -941,7 +948,7 @@ also get hold of the connection object through the return value of the
 <dt class="sig sig-object c" id="c.bt_conn_le_param_update">
 <span class="target" id="group__bt__conn_1gab44a964725f54ed2d37de17c6e2fd3eb"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_conn_le_param_update</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.bt_le_conn_param" title="bt_le_conn_param"><span class="n"><span class="pre">bt_le_conn_param</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">param</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_conn_le_param_update" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Update the connection parameters. </p>
-<p>If the local device is in the peripheral role then updating the connection parameters will be delayed. This delay can be configured by through the <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CONN_PARAM_UPDATE_TIMEOUT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CONN_PARAM_UPDATE_TIMEOUT</span></code></a> </span> option.</p>
+<p>If the local device is in the peripheral role then updating the connection parameters will be delayed. This delay can be configured by through the <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_CONN_PARAM_UPDATE_TIMEOUT" title="CONFIG_BT_CONN_PARAM_UPDATE_TIMEOUT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CONN_PARAM_UPDATE_TIMEOUT</span></code></a> </span> option.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1106,11 +1113,11 @@ also get hold of the connection object through the return value of the
 <p>This function may return error if the pairing procedure has already been initiated by the local device or the peer device.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SMP_SC_ONLY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SMP_SC_ONLY</span></code></a> </span> is enabled then the security level will always be level 4.</p>
+<p>When <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_SMP_SC_ONLY" title="CONFIG_BT_SMP_SC_ONLY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SMP_SC_ONLY</span></code></a> </span> is enabled then the security level will always be level 4.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SMP_OOB_LEGACY_PAIR_ONLY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SMP_OOB_LEGACY_PAIR_ONLY</span></code></a> </span> is enabled then the security level will always be level 3.</p>
+<p>When <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_SMP_OOB_LEGACY_PAIR_ONLY" title="CONFIG_BT_SMP_OOB_LEGACY_PAIR_ONLY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SMP_OOB_LEGACY_PAIR_ONLY</span></code></a> </span> is enabled then the security level will always be level 3.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1678,7 +1685,7 @@ also get hold of the connection object through the return value of the
 <p>Connection Remote Info Structure. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The version, manufacturer and subversion fields will only contain valid data if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_REMOTE_VERSION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_REMOTE_VERSION</span></code></a> </span> is enabled. </p>
+<p>The version, manufacturer and subversion fields will only contain valid data if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_REMOTE_VERSION" title="CONFIG_BT_REMOTE_VERSION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_REMOTE_VERSION</span></code></a> </span> is enabled. </p>
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-public-members">Public Members</p>
@@ -1793,7 +1800,7 @@ also get hold of the connection object through the return value of the
 <dt class="sig sig-object c" id="c.bt_conn_le_create_param.timeout">
 <span class="target" id="structbt__conn__le__create__param_1a59f05bfb9468779d02f8d0beeb7a35c1"></span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">timeout</span></span></span><a class="headerlink" href="#c.bt_conn_le_create_param.timeout" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Connection initiation timeout (N * 10 MS) </p>
-<p>Set zero to use the default <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CREATE_CONN_TIMEOUT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CREATE_CONN_TIMEOUT</span></code></a> </span> timeout.</p>
+<p>Set zero to use the default <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_CREATE_CONN_TIMEOUT" title="CONFIG_BT_CREATE_CONN_TIMEOUT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CREATE_CONN_TIMEOUT</span></code></a> </span> timeout.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Unused in <a class="reference internal" href="#group__bt__conn_1gaecfaf2cb44772511dbb585de8f76f09b"><span class="std std-ref">bt_conn_le_create_auto</span></a> </p>
@@ -1818,7 +1825,7 @@ also get hold of the connection object through the return value of the
 <dd><p>A new connection has been established. </p>
 <p>This callback notifies the application of a new connection. In case the err parameter is non-zero it means that the connection establishment failed.</p>
 <p><code class="docutils literal notranslate"><span class="pre">err</span></code> can mean either of the following:<ul class="simple">
-<li><p>BT_HCI_ERR_UNKNOWN_CONN_ID Creating the connection started by <a class="reference internal" href="#group__bt__conn_1ga8d66f3e0262a51279e9fa8b3139252e6"><span class="std std-ref">bt_conn_le_create</span></a> was canceled either by the user through <a class="reference internal" href="#group__bt__conn_1ga14e7c852b0271781594e742ae509c5d3"><span class="std std-ref">bt_conn_disconnect</span></a> or by the timeout in the host through <a class="reference internal" href="#structbt__conn__le__create__param"><span class="std std-ref">bt_conn_le_create_param</span></a> timeout parameter, which defaults to <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CREATE_CONN_TIMEOUT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CREATE_CONN_TIMEOUT</span></code></a> </span> seconds.</p></li>
+<li><p>BT_HCI_ERR_UNKNOWN_CONN_ID Creating the connection started by <a class="reference internal" href="#group__bt__conn_1ga8d66f3e0262a51279e9fa8b3139252e6"><span class="std std-ref">bt_conn_le_create</span></a> was canceled either by the user through <a class="reference internal" href="#group__bt__conn_1ga14e7c852b0271781594e742ae509c5d3"><span class="std std-ref">bt_conn_disconnect</span></a> or by the timeout in the host through <a class="reference internal" href="#structbt__conn__le__create__param"><span class="std std-ref">bt_conn_le_create_param</span></a> timeout parameter, which defaults to <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_CREATE_CONN_TIMEOUT" title="CONFIG_BT_CREATE_CONN_TIMEOUT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CREATE_CONN_TIMEOUT</span></code></a> </span> seconds.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">BT_HCI_ERR_ADV_TIMEOUT</span></code> High duty cycle directed connectable advertiser started by <a class="reference internal" href="gap.html#group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02"><span class="std std-ref">bt_le_adv_start</span></a> failed to be connected within the timeout. </p></li>
 </ul>
 </p>
@@ -1841,7 +1848,7 @@ also get hold of the connection object through the return value of the
 <span class="target" id="structbt__conn__cb_1a8b8983b5b5b05c9e2dae242485b6c914"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">disconnected</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="n"><span class="pre">bt_conn</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">conn</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">reason</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.bt_conn_cb.disconnected" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>A connection has been disconnected. </p>
 <p>This callback notifies the application that a connection has been disconnected.</p>
-<p>When this callback is called the stack still has one reference to the connection object. If the application in this callback tries to start either a connectable advertiser or create a new connection this might fail because there are no free connection objects available. To avoid this issue it is recommended to either start connectable advertise or create a new connection using <a class="reference internal" href="../kernel/threads/workqueue.html#group__workqueue__apis_1gace61b59575093d7442f39ccb7be686d7"><span class="std std-ref">k_work_submit</span></a> or increase <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_MAX_CONN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_MAX_CONN</span></code></a> </span>.</p>
+<p>When this callback is called the stack still has one reference to the connection object. If the application in this callback tries to start either a connectable advertiser or create a new connection this might fail because there are no free connection objects available. To avoid this issue it is recommended to either start connectable advertise or create a new connection using <a class="reference internal" href="../kernel/threads/workqueue.html#group__workqueue__apis_1gace61b59575093d7442f39ccb7be686d7"><span class="std std-ref">k_work_submit</span></a> or increase <span> <a class="reference internal" href="../../kconfig.html#CONFIG_BT_MAX_CONN" title="CONFIG_BT_MAX_CONN"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_MAX_CONN</span></code></a> </span>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Param conn</dt>
 <dd class="field-odd"><p>Connection object. </p>
@@ -2282,8 +2289,8 @@ also get hold of the connection object through the return value of the
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

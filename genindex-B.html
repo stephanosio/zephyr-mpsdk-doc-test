@@ -43,7 +43,7 @@
             <img src="_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -125,7 +127,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -494,6 +496,8 @@
       <li><a href="reference/bluetooth/connection_mgmt.html#c.bt_conn_info.role">bt_conn_info.role (C var)</a>
 </li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.bt_conn_info.type">bt_conn_info.type (C var)</a>
+</li>
+      <li><a href="reference/bluetooth/connection_mgmt.html#c.BT_CONN_INTERVAL_TO_MS">BT_CONN_INTERVAL_TO_MS (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.bt_conn_le_create">bt_conn_le_create (C function)</a>
 </li>
@@ -1329,13 +1333,13 @@
 </li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONFIG">bt_l2cap_chan_state.BT_L2CAP_CONFIG (C enumerator)</a>
 </li>
-      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONNECT">bt_l2cap_chan_state.BT_L2CAP_CONNECT (C enumerator)</a>
-</li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONNECTED">bt_l2cap_chan_state.BT_L2CAP_CONNECTED (C enumerator)</a>
 </li>
-      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECT">bt_l2cap_chan_state.BT_L2CAP_DISCONNECT (C enumerator)</a>
+      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONNECTING">bt_l2cap_chan_state.BT_L2CAP_CONNECTING (C enumerator)</a>
 </li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECTED">bt_l2cap_chan_state.BT_L2CAP_DISCONNECTED (C enumerator)</a>
+</li>
+      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECTING">bt_l2cap_chan_state.BT_L2CAP_DISCONNECTING (C enumerator)</a>
 </li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state_t">bt_l2cap_chan_state_t (C type)</a>
 </li>
@@ -1811,6 +1815,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_APP_SEG_SDU_MAX">BT_MESH_APP_SEG_SDU_MAX (C macro)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_APP_UNSEG_SDU_MAX">BT_MESH_APP_UNSEG_SDU_MAX (C macro)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_auth_method_set_input">bt_mesh_auth_method_set_input (C function)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_auth_method_set_none">bt_mesh_auth_method_set_none (C function)</a>
@@ -2257,12 +2263,12 @@
 </li>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_NO_FAULT">BT_MESH_HEALTH_FAULT_NO_FAULT (C macro)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_NO_LOAD_ERROR">BT_MESH_HEALTH_FAULT_NO_LOAD_ERROR (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_NO_LOAD_WARNING">BT_MESH_HEALTH_FAULT_NO_LOAD_WARNING (C macro)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_OVERFLOW_ERROR">BT_MESH_HEALTH_FAULT_OVERFLOW_ERROR (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_OVERFLOW_WARNING">BT_MESH_HEALTH_FAULT_OVERFLOW_WARNING (C macro)</a>
@@ -2763,6 +2769,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.unprovisioned_beacon">bt_mesh_prov.unprovisioned_beacon (C var)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.unprovisioned_beacon_gatt">bt_mesh_prov.unprovisioned_beacon_gatt (C var)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.uri">bt_mesh_prov.uri (C var)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.uuid">bt_mesh_prov.uuid (C var)</a>
@@ -2809,6 +2817,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_provision_adv">bt_mesh_provision_adv (C function)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_provision_gatt">bt_mesh_provision_gatt (C function)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_cb">bt_mesh_proxy_cb (C struct)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_cb.identity_disabled">bt_mesh_proxy_cb.identity_disabled (C var)</a>
@@ -2816,6 +2826,10 @@
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_cb.identity_enabled">bt_mesh_proxy_cb.identity_enabled (C var)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.BT_MESH_PROXY_CB_DEFINE">BT_MESH_PROXY_CB_DEFINE (C macro)</a>
+</li>
+      <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_connect">bt_mesh_proxy_connect (C function)</a>
+</li>
+      <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_disconnect">bt_mesh_proxy_disconnect (C function)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_identity_enable">bt_mesh_proxy_identity_enable (C function)</a>
 </li>
@@ -2857,6 +2871,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_RX_SDU_MAX">BT_MESH_RX_SDU_MAX (C macro)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_RX_SEG_MAX">BT_MESH_RX_SEG_MAX (C macro)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/access.html#c.bt_mesh_send_cb">bt_mesh_send_cb (C struct)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.bt_mesh_send_cb.end">bt_mesh_send_cb.end (C var)</a>
@@ -2876,6 +2892,8 @@
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_TTL_MAX">BT_MESH_TTL_MAX (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_TX_SDU_MAX">BT_MESH_TX_SDU_MAX (C macro)</a>
+</li>
+      <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_TX_SEG_MAX">BT_MESH_TX_SEG_MAX (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.BT_PASSKEY_INVALID">BT_PASSKEY_INVALID (C macro)</a>
 </li>
@@ -4343,8 +4361,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

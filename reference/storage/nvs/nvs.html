@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -177,7 +179,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -267,6 +269,7 @@ endless loop of flash page erases when there is limited free space. When such
 a loop is detected NVS returns that there is no more space available.</p>
 <p>For NVS the file system is declared as:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="k">struct</span><span class="w"> </span><span class="nc">nvs_fs</span><span class="w"> </span><span class="n">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="p">.</span><span class="n">flash_device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVS_FLASH_DEVICE</span><span class="p">,</span><span class="w"></span>
 <span class="p">.</span><span class="n">sector_size</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVS_SECTOR_SIZE</span><span class="p">,</span><span class="w"></span>
 <span class="p">.</span><span class="n">sector_count</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVS_SECTOR_COUNT</span><span class="p">,</span><span class="w"></span>
 <span class="p">.</span><span class="n">offset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NVS_STORAGE_OFFSET</span><span class="p">,</span><span class="w"></span>
@@ -275,6 +278,8 @@ a loop is detected NVS returns that there is no more space available.</p>
 </div>
 <p>where</p>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">NVS_FLASH_DEVICE</span></code> is a reference to the flash device that will be used. The
+device needs to be operational.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">NVS_SECTOR_SIZE</span></code> is the sector size, it has to be a multiple of
 the flash erase page size and a power of 2.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">NVS_SECTOR_COUNT</span></code> is the number of sectors, it is at least 2, one
@@ -333,7 +338,7 @@ Especially, migration between 1,2,4,8-bytes write block sizes is allowed.</p>
 <dl class="simple">
 <dt>MPU fault while using NVS, or <code class="docutils literal notranslate"><span class="pre">-ETIMEDOUT</span></code> error returned</dt><dd><p>NVS can use the internal flash of the SoC.  While the MPU is enabled,
 the flash driver requires MPU RWX access to flash memory, configured
-using <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_ALLOW_FLASH_WRITE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_ALLOW_FLASH_WRITE</span></code></a>.  If this option is
+using <a class="reference internal" href="../../../kconfig.html#CONFIG_MPU_ALLOW_FLASH_WRITE" title="CONFIG_MPU_ALLOW_FLASH_WRITE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_ALLOW_FLASH_WRITE</span></code></a>.  If this option is
 disabled, the NVS application will get an MPU fault if it references
 the internal SoC flash and it’s the only thread running.  In a
 multi-threaded application, another thread might intercept the fault
@@ -394,15 +399,14 @@ and the NVS API will return an <code class="docutils literal notranslate"><span 
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
-<dt class="sig sig-object c" id="c.nvs_init">
-<span class="target" id="group__nvs__high__level__api_1ga1867563e4a7932f25f3c961114d746d5"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nvs_init</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.nvs_fs" title="nvs_fs"><span class="n"><span class="pre">nvs_fs</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">fs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.nvs_init" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>nvs_init </p>
-<p>Initializes a NVS file system in flash.</p>
+<dt class="sig sig-object c" id="c.nvs_mount">
+<span class="target" id="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nvs_mount</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.nvs_fs" title="nvs_fs"><span class="n"><span class="pre">nvs_fs</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">fs</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.nvs_mount" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>nvs_mount </p>
+<p>Mount a NVS file system onto the flash device specified in <code class="docutils literal notranslate"><span class="pre">fs</span></code>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>fs</strong> – Pointer to file system </p></li>
-<li><p><strong>dev_name</strong> – Pointer to flash device name </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return values</dt>
@@ -533,6 +537,34 @@ and the NVS API will return an <code class="docutils literal notranslate"><span 
 </dl>
 </dd></dl>
 
+<dl class="c function">
+<dt class="sig sig-object c" id="c.nvs_init">
+<span class="target" id="group__nvs__high__level__api_1ga7f17dc517f55d39ba1ef07d38cf4879b"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">nvs_init</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.nvs_fs" title="nvs_fs"><span class="n"><span class="pre">nvs_fs</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">fs</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev_name</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.nvs_init" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>nvs_init </p>
+<p>Initializes a NVS file system in flash.</p>
+<p><dl>
+<dt class="sig sig-object cpp">
+<em><span class="pre">Deprecated:</span></em></dt>
+<dd><p>Use <a class="reference internal" href="#group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065"><span class="std std-ref">nvs_mount()</span></a> instead.</p>
+</dd></dl>
+
+</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>fs</strong> – Pointer to file system </p></li>
+<li><p><strong>dev_name</strong> – Pointer to flash device name </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return values</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>0</strong> – Success </p></li>
+<li><p><strong>-ERRNO</strong> – errno code if error </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 </dd></dl>
 
@@ -548,8 +580,8 @@ and the NVS API will return an <code class="docutils literal notranslate"><span 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -237,6 +237,8 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
       </node>
@@ -276,6 +278,14 @@
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>sys/errno_private.h</label>
+        <link refid="errno__private_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
         </childnode>
       </node>
       <node id="28">
@@ -366,6 +376,12 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
+      <node id="49">
+        <label>errno.h</label>
+        <link refid="errno_8h"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
       <node id="7">
         <label>stdbool.h</label>
         <link refid="stdbool_8h"/>
@@ -385,6 +401,9 @@
       </node>
       <node id="5">
         <label>stddef.h</label>
+      </node>
+      <node id="51">
+        <label>syscalls/errno_private.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>

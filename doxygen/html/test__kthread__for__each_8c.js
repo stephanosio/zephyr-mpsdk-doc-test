@@ -3,7 +3,7 @@ var test__kthread__for__each_8c =
     [ "SLEEP_MS", "test__kthread__for__each_8c.html#a3a47b19b66290aa414c508fe6f5039c4", null ],
     [ "TEST_STRING", "test__kthread__for__each_8c.html#ae266fd2d3b1b5374127ad824217bb025", null ],
     [ "TEST_STRING_UNLOCKED", "test__kthread__for__each_8c.html#a84fcbb70019d138ce584604a9acfb2c1", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__kthread__for__each_8c.html#a21b2c5f7b268518659b07184d88b14e7", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__kthread__for__each_8c.html#a9bcc9b0a561e08fc8f01cff937397237", null ],
     [ "test_k_thread_foreach", "group__kernel__thread__tests.html#ga577ab12bd0b4769e5399bb3d699fc8bc", null ],
     [ "test_k_thread_foreach_null_cb", "group__kernel__thread__tests.html#gab8855ec6f9d9b1991c4678482c3702b8", null ],
     [ "test_k_thread_foreach_unlocked", "group__kernel__thread__tests.html#gabdcfc826ee116f4e4286617dcdb9eee5", null ],

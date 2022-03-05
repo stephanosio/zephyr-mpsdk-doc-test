@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="34" column="1" bodyfile="include/logging/log_backend.h" bodystart="34" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="35" column="1" bodyfile="include/logging/log_backend.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend__api_1ae3bec146686d68d17a6d51ced4f6f2d2" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="38" column="1" bodyfile="include/logging/log_backend.h" bodystart="38" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="39" column="1" bodyfile="include/logging/log_backend.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend__api_1a6cbc8e6c87ed8700146ae7db49172a66" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="40" column="1" bodyfile="include/logging/log_backend.h" bodystart="40" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="41" column="1" bodyfile="include/logging/log_backend.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend__api_1ac7424cf8e1d87f8cbf574b481df487e6" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="43" column="1" bodyfile="include/logging/log_backend.h" bodystart="43" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="44" column="1" bodyfile="include/logging/log_backend.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend__api_1a849b25667c299c4a7a97f598a1b2fbd7" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="48" column="1" bodyfile="include/logging/log_backend.h" bodystart="48" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="49" column="1" bodyfile="include/logging/log_backend.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend__api_1a04bdb8030ad4e70000d8572a6b7e07b1" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="49" column="1" bodyfile="include/logging/log_backend.h" bodystart="49" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="50" column="1" bodyfile="include/logging/log_backend.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend__api_1addc850f99813854df8083a5ee93a36c8" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -93,7 +93,20 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="50" column="1" bodyfile="include/logging/log_backend.h" bodystart="50" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="51" column="1" bodyfile="include/logging/log_backend.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structlog__backend__api_1ae23c17899721f8254a9f50bedd667226" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* log_backend_api::format_set) (const struct log_backend *const backend, uint32_t log_type)</definition>
+        <argsstring>)(const struct log_backend *const backend, uint32_t log_type)</argsstring>
+        <name>format_set</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_backend.h" line="52" column="1" bodyfile="include/logging/log_backend.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -101,9 +114,10 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/logging/log_backend.h" line="32" column="1" bodyfile="include/logging/log_backend.h" bodystart="32" bodyend="51"/>
+    <location file="include/logging/log_backend.h" line="33" column="1" bodyfile="include/logging/log_backend.h" bodystart="33" bodyend="54"/>
     <listofallmembers>
       <member refid="structlog__backend__api_1a849b25667c299c4a7a97f598a1b2fbd7" prot="public" virt="non-virtual"><scope>log_backend_api</scope><name>dropped</name></member>
+      <member refid="structlog__backend__api_1ae23c17899721f8254a9f50bedd667226" prot="public" virt="non-virtual"><scope>log_backend_api</scope><name>format_set</name></member>
       <member refid="structlog__backend__api_1addc850f99813854df8083a5ee93a36c8" prot="public" virt="non-virtual"><scope>log_backend_api</scope><name>init</name></member>
       <member refid="structlog__backend__api_1a04bdb8030ad4e70000d8572a6b7e07b1" prot="public" virt="non-virtual"><scope>log_backend_api</scope><name>panic</name></member>
       <member refid="structlog__backend__api_1ac05cec5dc8396178b0eca480dafe4794" prot="public" virt="non-virtual"><scope>log_backend_api</scope><name>process</name></member>

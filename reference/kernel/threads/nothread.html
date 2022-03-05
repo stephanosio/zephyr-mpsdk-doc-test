@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -184,7 +186,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -254,14 +256,14 @@
 <li><p>Examples intended to demonstrate core functionality</p></li>
 </ul>
 <p>Thread support can be disabled in Zephyr by setting
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MULTITHREADING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a> to <code class="docutils literal notranslate"><span class="pre">n</span></code>.  Since this configuration has
+<a class="reference internal" href="../../../kconfig.html#CONFIG_MULTITHREADING" title="CONFIG_MULTITHREADING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a> to <code class="docutils literal notranslate"><span class="pre">n</span></code>.  Since this configuration has
 a significant impact on Zephyr’s functionality and testing of it has
 been limited, there are conditions on what can be expected to work in
 this configuration.</p>
 <div class="section" id="what-can-be-expected-to-work">
 <h2>What Can be Expected to Work<a class="headerlink" href="#what-can-be-expected-to-work" title="Permalink to this headline">¶</a></h2>
 <p>These core capabilities shall function correctly when
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MULTITHREADING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a> is disabled:</p>
+<a class="reference internal" href="../../../kconfig.html#CONFIG_MULTITHREADING" title="CONFIG_MULTITHREADING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a> is disabled:</p>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="../../../application/index.html#application"><span class="std std-ref">build system</span></a></p></li>
 <li><p>The ability to boot the application to <code class="docutils literal notranslate"><span class="pre">main()</span></code></p></li>
@@ -275,11 +277,11 @@ this configuration.</p>
 <li><p>Specifically identified drivers in certain subsystems, listed below.</p></li>
 </ul>
 <p>The expectations above affect selection of other features; for example
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_EXISTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_EXISTS</span></code></a> cannot be set to <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+<a class="reference internal" href="../../../kconfig.html#CONFIG_SYS_CLOCK_EXISTS" title="CONFIG_SYS_CLOCK_EXISTS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_EXISTS</span></code></a> cannot be set to <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 </div>
 <div class="section" id="what-cannot-be-expected-to-work">
 <h2>What Cannot be Expected to Work<a class="headerlink" href="#what-cannot-be-expected-to-work" title="Permalink to this headline">¶</a></h2>
-<p>Functionality that will not work with <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MULTITHREADING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a>
+<p>Functionality that will not work with <a class="reference internal" href="../../../kconfig.html#CONFIG_MULTITHREADING" title="CONFIG_MULTITHREADING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a>
 includes majority of the kernel API:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="index.html#threads-v2"><span class="std std-ref">Threads</span></a></p></li>
@@ -295,7 +297,7 @@ includes majority of the kernel API:</p>
 <div class="section" id="subsystem-behavior-without-thread-support">
 <h2>Subsystem Behavior Without Thread Support<a class="headerlink" href="#subsystem-behavior-without-thread-support" title="Permalink to this headline">¶</a></h2>
 <p>The sections below list driver and functional subsystems that are
-expected to work to some degree when <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MULTITHREADING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a> is
+expected to work to some degree when <a class="reference internal" href="../../../kconfig.html#CONFIG_MULTITHREADING" title="CONFIG_MULTITHREADING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MULTITHREADING</span></code></a> is
 disabled.  Subsystems that are not listed here should not be expected to
 work.</p>
 <p>Some existing drivers within the listed subsystems do not work when
@@ -322,12 +324,12 @@ drivers.  Bus-accessed devices like GPIO extenders may not be supported.</p>
 <p>A subset of the <a class="reference internal" href="../../peripherals/uart.html#uart-api"><span class="std std-ref">UART</span></a> is expected to work for all SoC UART
 peripheral drivers.</p>
 <ul class="simple">
-<li><p>Applications that select <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_INTERRUPT_DRIVEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_INTERRUPT_DRIVEN</span></code></a> may
+<li><p>Applications that select <a class="reference internal" href="../../../kconfig.html#CONFIG_UART_INTERRUPT_DRIVEN" title="CONFIG_UART_INTERRUPT_DRIVEN"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UART_INTERRUPT_DRIVEN</span></code></a> may
 work, depending on driver implementation.</p></li>
-<li><p>Applications that select <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_ASYNC_API"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_ASYNC_API</span></code></a> may
+<li><p>Applications that select <a class="reference internal" href="../../../kconfig.html#CONFIG_UART_ASYNC_API" title="CONFIG_UART_ASYNC_API"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UART_ASYNC_API</span></code></a> may
 work, depending on driver implementation.</p></li>
-<li><p>Applications that do not select either <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_ASYNC_API"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_ASYNC_API</span></code></a>
-or <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_INTERRUPT_DRIVEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_INTERRUPT_DRIVEN</span></code></a> are expected to work.</p></li>
+<li><p>Applications that do not select either <a class="reference internal" href="../../../kconfig.html#CONFIG_UART_ASYNC_API" title="CONFIG_UART_ASYNC_API"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UART_ASYNC_API</span></code></a>
+or <a class="reference internal" href="../../../kconfig.html#CONFIG_UART_INTERRUPT_DRIVEN" title="CONFIG_UART_INTERRUPT_DRIVEN"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UART_INTERRUPT_DRIVEN</span></code></a> are expected to work.</p></li>
 </ul>
 <p><em>List/table of supported drivers to go here, including which API options
 are supported</em></p>
@@ -344,8 +346,8 @@ are supported</em></p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

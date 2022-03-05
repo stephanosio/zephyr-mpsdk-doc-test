@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -199,7 +201,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -279,7 +281,7 @@ below.</p>
 </div>
 <p>Normally one needs extra privileges to create and configure the TAP device in
 the host system. If the user has set the
-<a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC</span></code></a> option (this is disabled
+<a class="reference internal" href="../../../kconfig.html#CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC" title="CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC</span></code></a> option (this is disabled
 by default), then the user needs to use <code class="docutils literal notranslate"><span class="pre">sudo</span></code> to execute the Zephyr process
 with admin privileges, like this:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo --preserve-env=ZEPHYR_BASE make -Cbuild run</span>
@@ -287,7 +289,7 @@ with admin privileges, like this:</p>
 </div>
 <p>If the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">--preserve-env=ZEPHYR_BASE</span></code> gives an error,
 just use <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">--preserve-env</span></code> instead.</p>
-<p>If the <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC</span></code></a> option
+<p>If the <a class="reference internal" href="../../../kconfig.html#CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC" title="CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ETH_NATIVE_POSIX_STARTUP_AUTOMATIC</span></code></a> option
 is not enabled (this is the default), then the user should
 execute the <code class="docutils literal notranslate"><span class="pre">net-setup.sh</span></code> script from Zephyr <a class="reference external" href="https://github.com/zephyrproject-rtos/net-tools">net-tools</a> repository.
 The script should be run before executing the Zephyr process. The script
@@ -383,8 +385,8 @@ bridge.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

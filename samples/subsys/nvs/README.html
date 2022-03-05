@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -169,7 +171,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -262,9 +264,9 @@ is incremented.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">***** Booting Zephyr OS v1.12.0-rc1-176-gf091be783 *****</span>
 <span class="go">[fs/nvs] [DBG] nvs_reinit: (Re)Initializing sectors</span>
 <span class="go">[fs/nvs] [DBG] _nvs_sector_init: f-&gt;write_location set to c</span>
-<span class="go">[fs/nvs] [INF] nvs_init: maximum storage length 256 byte</span>
-<span class="go">[fs/nvs] [INF] nvs_init: write-align: 1, write-addr: c</span>
-<span class="go">[fs/nvs] [INF] nvs_init: entry sector: 0, entry sector ID: 1</span>
+<span class="go">[fs/nvs] [INF] nvs_mount: maximum storage length 256 byte</span>
+<span class="go">[fs/nvs] [INF] nvs_mount: write-align: 1, write-addr: c</span>
+<span class="go">[fs/nvs] [INF] nvs_mount: entry sector: 0, entry sector ID: 1</span>
 <span class="go">No address found, adding 192.168.1.1 at id 1</span>
 <span class="go">No key found, adding it at id 2</span>
 <span class="go">No Reboot counter found, adding it at id 3</span>
@@ -274,9 +276,9 @@ is incremented.</p>
 <span class="go">Oldest reboot counter: 0</span>
 <span class="go">Rebooting in ...5...4...3...2...1</span>
 <span class="go">***** Booting Zephyr OS v1.12.0-rc1-176-gf091be783 *****</span>
-<span class="go">[fs/nvs] [INF] nvs_init: maximum storage length 256 byte</span>
-<span class="go">[fs/nvs] [INF] nvs_init: write-align: 1, write-addr: c7</span>
-<span class="go">[fs/nvs] [INF] nvs_init: entry sector: 0, entry sector ID: 1</span>
+<span class="go">[fs/nvs] [INF] nvs_mount: maximum storage length 256 byte</span>
+<span class="go">[fs/nvs] [INF] nvs_mount: write-align: 1, write-addr: c7</span>
+<span class="go">[fs/nvs] [INF] nvs_mount: entry sector: 0, entry sector ID: 1</span>
 <span class="go">Entry: 1, Address: 192.168.1.1</span>
 <span class="go">Id: 2, Key: ff fe fd fc fb fa f9 f8</span>
 <span class="go">Id: 3, Reboot_counter: 1</span>
@@ -301,8 +303,8 @@ is incremented.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -3,7 +3,7 @@ var test__fifo__contexts_8c =
     [ "LIST_LEN", "test__fifo__contexts_8c.html#aa0db7e0f64676a51b9d71faafae093cd", null ],
     [ "STACK_SIZE", "test__fifo__contexts_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "K_FIFO_DEFINE", "test__fifo__contexts_8c.html#a43ee408f83e82042b95b5ec21a344670", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__fifo__contexts_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__fifo__contexts_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "test_fifo_is_empty_isr", "group__kernel__fifo__tests.html#ga46db1e3ada655404331eb226a4ac69ae", null ],
     [ "test_fifo_is_empty_thread", "group__kernel__fifo__tests.html#gac2b599bc4432d2021e31e84c82fa8105", null ],
     [ "test_fifo_isr2thread", "group__kernel__fifo__tests.html#gab9aa7234b95b21068f4ab84d386f5c56", null ],

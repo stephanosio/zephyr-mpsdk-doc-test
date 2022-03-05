@@ -1490,9 +1490,9 @@
         </inbodydescription>
         <location file="include/drivers/sensor.h" line="659" column="22" bodyfile="include/drivers/sensor.h" bodystart="659" bodyend="662"/>
       </memberdef>
-      <memberdef kind="function" id="group__sensor__interface_1ga1b900b0afde216d2874fdf3be9e4dff6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void sensor_value_from_double</definition>
+      <memberdef kind="function" id="group__sensor__interface_1gaf01bbb251ad0c7f6c55c5b702e8a4048" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int sensor_value_from_double</definition>
         <argsstring>(struct sensor_value *val, double inp)</argsstring>
         <name>sensor_value_from_double</name>
         <param>
@@ -1524,11 +1524,13 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
+<simplesect kind="return"><para>0 if successful, negative errno code if failure. </para>
+</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/sensor.h" line="670" column="20" bodyfile="include/drivers/sensor.h" bodystart="670" bodyend="674"/>
+        <location file="include/drivers/sensor.h" line="671" column="19" bodyfile="include/drivers/sensor.h" bodystart="671" bodyend="687"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1847,19 +1849,31 @@
 <codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)val-&gt;<ref refid="structsensor__value_1af21dddb084da4c42a7e77b48edf26fbe" kindref="member">val1</ref><sp/>+<sp/>(double)val-&gt;<ref refid="structsensor__value_1a91f81bd0f5da69084cf3c629fde68a1b" kindref="member">val2</ref><sp/>/<sp/>1000000;</highlight></codeline>
 <codeline lineno="662"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="663"><highlight class="normal"></highlight></codeline>
-<codeline lineno="670" refid="group__sensor__interface_1ga1b900b0afde216d2874fdf3be9e4dff6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__sensor__interface_1ga1b900b0afde216d2874fdf3be9e4dff6" kindref="member">sensor_value_from_double</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structsensor__value" kindref="compound">sensor_value</ref><sp/>*val,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inp)</highlight></codeline>
-<codeline lineno="671"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val-&gt;<ref refid="structsensor__value_1af21dddb084da4c42a7e77b48edf26fbe" kindref="member">val1</ref><sp/>=<sp/>(<ref refid="stdint_8h_1a0c18914b3041c2f583aba76f418399c2" kindref="member">int32_t</ref>)<sp/>inp;</highlight></codeline>
-<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val-&gt;<ref refid="structsensor__value_1a91f81bd0f5da69084cf3c629fde68a1b" kindref="member">val2</ref><sp/>=<sp/>(<ref refid="stdint_8h_1a0c18914b3041c2f583aba76f418399c2" kindref="member">int32_t</ref>)(inp<sp/>*<sp/>1000000)<sp/>%<sp/>1000000;</highlight></codeline>
-<codeline lineno="674"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="675"><highlight class="normal"></highlight></codeline>
-<codeline lineno="680"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="681"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="682"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="683"><highlight class="normal"></highlight></codeline>
-<codeline lineno="684"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;syscalls/sensor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="671" refid="group__sensor__interface_1gaf01bbb251ad0c7f6c55c5b702e8a4048" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__sensor__interface_1gaf01bbb251ad0c7f6c55c5b702e8a4048" kindref="member">sensor_value_from_double</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structsensor__value" kindref="compound">sensor_value</ref><sp/>*val,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>inp)</highlight></codeline>
+<codeline lineno="672"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inp<sp/>&lt;<sp/>INT32_MIN<sp/>||<sp/>inp<sp/>&gt;<sp/><ref refid="stdint_8h_1a181807730d4a375f848ba139813ce04f" kindref="member">INT32_MAX</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="group__system__errno_1gaa1591a4f3a86360108de5b9ba34980ca" kindref="member">ERANGE</ref>;</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val2<sp/>=<sp/>(inp<sp/>-<sp/>(<ref refid="stdint_8h_1a0c18914b3041c2f583aba76f418399c2" kindref="member">int32_t</ref>)inp)<sp/>*<sp/>1000000.0;</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(val2<sp/>&lt;<sp/>INT32_MIN<sp/>||<sp/>val2<sp/>&gt;<sp/><ref refid="stdint_8h_1a181807730d4a375f848ba139813ce04f" kindref="member">INT32_MAX</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="group__system__errno_1gaa1591a4f3a86360108de5b9ba34980ca" kindref="member">ERANGE</ref>;</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val-&gt;<ref refid="structsensor__value_1af21dddb084da4c42a7e77b48edf26fbe" kindref="member">val1</ref><sp/>=<sp/>(<ref refid="stdint_8h_1a0c18914b3041c2f583aba76f418399c2" kindref="member">int32_t</ref>)inp;</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val-&gt;<ref refid="structsensor__value_1a91f81bd0f5da69084cf3c629fde68a1b" kindref="member">val2</ref><sp/>=<sp/>(<ref refid="stdint_8h_1a0c18914b3041c2f583aba76f418399c2" kindref="member">int32_t</ref>)val2;</highlight></codeline>
 <codeline lineno="685"><highlight class="normal"></highlight></codeline>
-<codeline lineno="686"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_DRIVERS_SENSOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="687"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="694"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;syscalls/sensor.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_DRIVERS_SENSOR_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/drivers/sensor.h"/>
   </compounddef>

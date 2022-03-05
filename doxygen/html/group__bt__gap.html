@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -591,7 +591,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="bluetooth_8h.html">include/bluetooth/bluetooth.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">        <a class="code hl_define" href="group__bt__gap.html#ga8481217e632522e1f322de87d745f8f0">BT_DATA</a>(_type, ((<a class="code hl_typedef" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> []) { _bytes }), \</div>
 <div class="line">                <span class="keyword">sizeof</span>((<a class="code hl_typedef" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> []) { _bytes }))</div>
-<div class="ttc" id="agroup__bt__gap_html_ga8481217e632522e1f322de87d745f8f0"><div class="ttname"><a href="group__bt__gap.html#ga8481217e632522e1f322de87d745f8f0">BT_DATA</a></div><div class="ttdeci">#define BT_DATA(_type, _data, _data_len)</div><div class="ttdoc">Helper to declare elements of bt_data arrays.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:309</div></div>
+<div class="ttc" id="agroup__bt__gap_html_ga8481217e632522e1f322de87d745f8f0"><div class="ttname"><a href="group__bt__gap.html#ga8481217e632522e1f322de87d745f8f0">BT_DATA</a></div><div class="ttdeci">#define BT_DATA(_type, _data, _data_len)</div><div class="ttdoc">Helper to declare elements of bt_data arrays.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:312</div></div>
 </div><!-- fragment -->
 <p>Helper to declare elements of <a class="el" href="structbt__data.html" title="Bluetooth data.">bt_data</a> arrays. </p>
 <p >This macro is mainly for creating an array of struct <a class="el" href="structbt__data.html" title="Bluetooth data.">bt_data</a> elements which is then passed to e.g. <a class="el" href="group__bt__gap.html#gad2e3caef88d52d720e8e4d21df767b02">bt_le_adv_start()</a>.</p>
@@ -640,8 +640,8 @@ Functions</h2></td></tr>
 <div class="line">                                       <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, NULL)</div>
 <div class="ttc" id="agroup__bt__gap__defines_html_ga9573e6bcdae3aae9d51c0becbbd7ac60"><div class="ttname"><a href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a></div><div class="ttdeci">#define BT_GAP_ADV_FAST_INT_MIN_2</div><div class="ttdef"><b>Definition:</b> gap.h:77</div></div>
 <div class="ttc" id="agroup__bt__gap__defines_html_gaebc3ce60836522d883f664227a3ffcfb"><div class="ttname"><a href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a></div><div class="ttdeci">#define BT_GAP_ADV_FAST_INT_MAX_2</div><div class="ttdef"><b>Definition:</b> gap.h:78</div></div>
-<div class="ttc" id="agroup__bt__gap_html_ga9557269dd36b624b49e76c511c3a0cc1"><div class="ttname"><a href="group__bt__gap.html#ga9557269dd36b624b49e76c511c3a0cc1">BT_LE_ADV_PARAM</a></div><div class="ttdeci">#define BT_LE_ADV_PARAM(_options, _int_min, _int_max, _peer)</div><div class="ttdoc">Helper to declare advertising parameters inline.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:654</div></div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3">BT_LE_ADV_OPT_CONNECTABLE</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_CONNECTABLE</div><div class="ttdoc">Advertise as connectable.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:342</div></div>
+<div class="ttc" id="agroup__bt__gap_html_ga9557269dd36b624b49e76c511c3a0cc1"><div class="ttname"><a href="group__bt__gap.html#ga9557269dd36b624b49e76c511c3a0cc1">BT_LE_ADV_PARAM</a></div><div class="ttdeci">#define BT_LE_ADV_PARAM(_options, _int_min, _int_max, _peer)</div><div class="ttdoc">Helper to declare advertising parameters inline.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:657</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3">BT_LE_ADV_OPT_CONNECTABLE</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_CONNECTABLE</div><div class="ttdoc">Advertise as connectable.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:345</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -665,7 +665,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">                                                  <a class="code hl_define" href="group__bt__gap.html#ga9557269dd36b624b49e76c511c3a0cc1">BT_LE_ADV_PARAM</a>(<a class="code hl_enumvalue" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3">BT_LE_ADV_OPT_CONNECTABLE</a> |  \</div>
 <div class="line">                                                  <a class="code hl_enumvalue" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2">BT_LE_ADV_OPT_ONE_TIME</a>, 0, 0,\</div>
 <div class="line">                                                  _peer)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2">BT_LE_ADV_OPT_ONE_TIME</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_ONE_TIME</div><div class="ttdoc">Advertise one time.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:358</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2">BT_LE_ADV_OPT_ONE_TIME</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_ONE_TIME</div><div class="ttdoc">Advertise one time.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:361</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -690,7 +690,7 @@ Functions</h2></td></tr>
 <div class="line">                        <a class="code hl_enumvalue" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dafd164ec5476f5e2d9aedf50032946872">BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY</a>, \</div>
 <div class="line">                        <a class="code hl_define" href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a>, <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, \</div>
 <div class="line">                        _peer)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dafd164ec5476f5e2d9aedf50032946872"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dafd164ec5476f5e2d9aedf50032946872">BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY</div><div class="ttdoc">Low duty cycle directed advertising.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:400</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dafd164ec5476f5e2d9aedf50032946872"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dafd164ec5476f5e2d9aedf50032946872">BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY</div><div class="ttdoc">Low duty cycle directed advertising.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:403</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -711,7 +711,7 @@ Functions</h2></td></tr>
 <div class="line">                                            <a class="code hl_enumvalue" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2dbc9ec77d6de134d96a7bd3d9256398">BT_LE_ADV_OPT_USE_NAME</a>, \</div>
 <div class="line">                                            <a class="code hl_define" href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a>, \</div>
 <div class="line">                                            <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, NULL)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da2dbc9ec77d6de134d96a7bd3d9256398"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2dbc9ec77d6de134d96a7bd3d9256398">BT_LE_ADV_OPT_USE_NAME</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_USE_NAME</div><div class="ttdef"><b>Definition:</b> bluetooth.h:392</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da2dbc9ec77d6de134d96a7bd3d9256398"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2dbc9ec77d6de134d96a7bd3d9256398">BT_LE_ADV_OPT_USE_NAME</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_USE_NAME</div><div class="ttdef"><b>Definition:</b> bluetooth.h:395</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -733,7 +733,7 @@ Functions</h2></td></tr>
 <div class="line">                                            <a class="code hl_enumvalue" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da0a9642077d93cf9c0eb42f64a9e34e73">BT_LE_ADV_OPT_FORCE_NAME_IN_AD</a>, \</div>
 <div class="line">                                            <a class="code hl_define" href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a>, \</div>
 <div class="line">                                            <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, NULL)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da0a9642077d93cf9c0eb42f64a9e34e73"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da0a9642077d93cf9c0eb42f64a9e34e73">BT_LE_ADV_OPT_FORCE_NAME_IN_AD</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_FORCE_NAME_IN_AD</div><div class="ttdoc">Put GAP device name into advert data.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:519</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da0a9642077d93cf9c0eb42f64a9e34e73"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da0a9642077d93cf9c0eb42f64a9e34e73">BT_LE_ADV_OPT_FORCE_NAME_IN_AD</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_FORCE_NAME_IN_AD</div><div class="ttdoc">Put GAP device name into advert data.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:522</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -773,7 +773,7 @@ Functions</h2></td></tr>
 <div class="line">                                                 <a class="code hl_define" href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a>, \</div>
 <div class="line">                                                 <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, \</div>
 <div class="line">                                                 NULL)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da407cf5ae358d3c00dd7e47dfaad3ec6e"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da407cf5ae358d3c00dd7e47dfaad3ec6e">BT_LE_ADV_OPT_USE_IDENTITY</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_USE_IDENTITY</div><div class="ttdoc">Advertise using identity address.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:370</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89da407cf5ae358d3c00dd7e47dfaad3ec6e"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da407cf5ae358d3c00dd7e47dfaad3ec6e">BT_LE_ADV_OPT_USE_IDENTITY</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_USE_IDENTITY</div><div class="ttdoc">Advertise using identity address.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:373</div></div>
 </div><!-- fragment --><p >Non-connectable advertising with <a class="el" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da407cf5ae358d3c00dd7e47dfaad3ec6e">BT_LE_ADV_OPT_USE_IDENTITY</a> </p>
 
 </div>
@@ -840,7 +840,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">        ((<span class="keyword">struct </span><a class="code hl_struct" href="structbt__le__adv__param.html">bt_le_adv_param</a>[]) { \</div>
 <div class="line">                BT_LE_ADV_PARAM_INIT(_options, _int_min, _int_max, _peer) \</div>
 <div class="line">         })</div>
-<div class="ttc" id="astructbt__le__adv__param_html"><div class="ttname"><a href="structbt__le__adv__param.html">bt_le_adv_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:523</div></div>
+<div class="ttc" id="astructbt__le__adv__param_html"><div class="ttname"><a href="structbt__le__adv__param.html">bt_le_adv_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:526</div></div>
 </div><!-- fragment -->
 <p>Helper to declare advertising parameters inline. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -936,8 +936,8 @@ Functions</h2></td></tr>
 <div class="line">                                                  <a class="code hl_define" href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a>, \</div>
 <div class="line">                                                  <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, \</div>
 <div class="line">                                                  NULL)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dad01c4962a350d3218ba0cabd713708b1"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dad01c4962a350d3218ba0cabd713708b1">BT_LE_ADV_OPT_CODED</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_CODED</div><div class="ttdoc">Advertise on the LE Coded PHY (Long Range).</div><div class="ttdef"><b>Definition:</b> bluetooth.h:486</div></div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dae33ae9d8e43cce82e47fa73999d415ab"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dae33ae9d8e43cce82e47fa73999d415ab">BT_LE_ADV_OPT_EXT_ADV</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_EXT_ADV</div><div class="ttdoc">Advertise with extended advertising.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:458</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dad01c4962a350d3218ba0cabd713708b1"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dad01c4962a350d3218ba0cabd713708b1">BT_LE_ADV_OPT_CODED</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_CODED</div><div class="ttdoc">Advertise on the LE Coded PHY (Long Range).</div><div class="ttdef"><b>Definition:</b> bluetooth.h:489</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dae33ae9d8e43cce82e47fa73999d415ab"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dae33ae9d8e43cce82e47fa73999d415ab">BT_LE_ADV_OPT_EXT_ADV</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_EXT_ADV</div><div class="ttdoc">Advertise with extended advertising.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:461</div></div>
 </div><!-- fragment --><p >Non-connectable extended advertising on coded PHY with private address </p>
 
 </div>
@@ -1089,7 +1089,7 @@ Functions</h2></td></tr>
 <div class="line">                                                <a class="code hl_define" href="group__bt__gap__defines.html#ga9573e6bcdae3aae9d51c0becbbd7ac60">BT_GAP_ADV_FAST_INT_MIN_2</a>, \</div>
 <div class="line">                                                <a class="code hl_define" href="group__bt__gap__defines.html#gaebc3ce60836522d883f664227a3ffcfb">BT_GAP_ADV_FAST_INT_MAX_2</a>, \</div>
 <div class="line">                                                NULL)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dae60eafe69ef10b84f61a1f4accf789c9"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dae60eafe69ef10b84f61a1f4accf789c9">BT_LE_ADV_OPT_SCANNABLE</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_SCANNABLE</div><div class="ttdoc">Support scan response data.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:438</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga2970898e8a43ce21e1cc510d49f1b89dae60eafe69ef10b84f61a1f4accf789c9"><div class="ttname"><a href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89dae60eafe69ef10b84f61a1f4accf789c9">BT_LE_ADV_OPT_SCANNABLE</a></div><div class="ttdeci">@ BT_LE_ADV_OPT_SCANNABLE</div><div class="ttdoc">Support scan response data.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:441</div></div>
 </div><!-- fragment --><p >Scannable extended advertising with <a class="el" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1b89da2dbc9ec77d6de134d96a7bd3d9256398">BT_LE_ADV_OPT_USE_NAME</a> </p>
 
 </div>
@@ -1140,7 +1140,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">        ((<span class="keyword">struct </span><a class="code hl_struct" href="structbt__le__ext__adv__start__param.html">bt_le_ext_adv_start_param</a>[]) { \</div>
 <div class="line">                BT_LE_EXT_ADV_START_PARAM_INIT((_timeout), (_n_evts)) \</div>
 <div class="line">        })</div>
-<div class="ttc" id="astructbt__le__ext__adv__start__param_html"><div class="ttname"><a href="structbt__le__ext__adv__start__param.html">bt_le_ext_adv_start_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:888</div></div>
+<div class="ttc" id="astructbt__le__ext__adv__start__param_html"><div class="ttname"><a href="structbt__le__ext__adv__start__param.html">bt_le_ext_adv_start_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:891</div></div>
 </div><!-- fragment --><p >Helper to declare extended advertising start parameters inline</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1212,8 +1212,8 @@ Functions</h2></td></tr>
 <div class="line">                                                  <a class="code hl_enumvalue" href="group__bt__gap.html#ggafa231099d07583c3ed0981e0bb665f55aa2c689d726eacfb18d87655b1f587518">BT_LE_PER_ADV_OPT_NONE</a>)</div>
 <div class="ttc" id="agroup__bt__gap__defines_html_gaa618da2a7c217527b0d962315caa1c22"><div class="ttname"><a href="group__bt__gap__defines.html#gaa618da2a7c217527b0d962315caa1c22">BT_GAP_PER_ADV_SLOW_INT_MAX</a></div><div class="ttdeci">#define BT_GAP_PER_ADV_SLOW_INT_MAX</div><div class="ttdef"><b>Definition:</b> gap.h:86</div></div>
 <div class="ttc" id="agroup__bt__gap__defines_html_gab51898ce46ee9ae468ed7ffc1d117321"><div class="ttname"><a href="group__bt__gap__defines.html#gab51898ce46ee9ae468ed7ffc1d117321">BT_GAP_PER_ADV_SLOW_INT_MIN</a></div><div class="ttdeci">#define BT_GAP_PER_ADV_SLOW_INT_MIN</div><div class="ttdef"><b>Definition:</b> gap.h:85</div></div>
-<div class="ttc" id="agroup__bt__gap_html_gaf46e54f8fcda7b65b659685bb225d243"><div class="ttname"><a href="group__bt__gap.html#gaf46e54f8fcda7b65b659685bb225d243">BT_LE_PER_ADV_PARAM</a></div><div class="ttdeci">#define BT_LE_PER_ADV_PARAM(_int_min, _int_max, _options)</div><div class="ttdef"><b>Definition:</b> bluetooth.h:806</div></div>
-<div class="ttc" id="agroup__bt__gap_html_ggafa231099d07583c3ed0981e0bb665f55aa2c689d726eacfb18d87655b1f587518"><div class="ttname"><a href="group__bt__gap.html#ggafa231099d07583c3ed0981e0bb665f55aa2c689d726eacfb18d87655b1f587518">BT_LE_PER_ADV_OPT_NONE</a></div><div class="ttdeci">@ BT_LE_PER_ADV_OPT_NONE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:594</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gaf46e54f8fcda7b65b659685bb225d243"><div class="ttname"><a href="group__bt__gap.html#gaf46e54f8fcda7b65b659685bb225d243">BT_LE_PER_ADV_PARAM</a></div><div class="ttdeci">#define BT_LE_PER_ADV_PARAM(_int_min, _int_max, _options)</div><div class="ttdef"><b>Definition:</b> bluetooth.h:809</div></div>
+<div class="ttc" id="agroup__bt__gap_html_ggafa231099d07583c3ed0981e0bb665f55aa2c689d726eacfb18d87655b1f587518"><div class="ttname"><a href="group__bt__gap.html#ggafa231099d07583c3ed0981e0bb665f55aa2c689d726eacfb18d87655b1f587518">BT_LE_PER_ADV_OPT_NONE</a></div><div class="ttdeci">@ BT_LE_PER_ADV_OPT_NONE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:597</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1253,7 +1253,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">        ((<span class="keyword">struct </span><a class="code hl_struct" href="structbt__le__per__adv__param.html">bt_le_per_adv_param</a>[]) { \</div>
 <div class="line">                BT_LE_PER_ADV_PARAM_INIT(_int_min, _int_max, _options) \</div>
 <div class="line">        })</div>
-<div class="ttc" id="astructbt__le__per__adv__param_html"><div class="ttname"><a href="structbt__le__per__adv__param.html">bt_le_per_adv_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:604</div></div>
+<div class="ttc" id="astructbt__le__per__adv__param_html"><div class="ttname"><a href="structbt__le__per__adv__param.html">bt_le_per_adv_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:607</div></div>
 </div><!-- fragment --><p >Helper to declare periodic advertising parameters inline</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1335,9 +1335,9 @@ Functions</h2></td></tr>
 <div class="line">                                           <a class="code hl_define" href="group__bt__gap__defines.html#ga100e1c20813630848a1a80390e8a06a0">BT_GAP_SCAN_FAST_WINDOW</a>)</div>
 <div class="ttc" id="agroup__bt__gap__defines_html_ga100e1c20813630848a1a80390e8a06a0"><div class="ttname"><a href="group__bt__gap__defines.html#ga100e1c20813630848a1a80390e8a06a0">BT_GAP_SCAN_FAST_WINDOW</a></div><div class="ttdeci">#define BT_GAP_SCAN_FAST_WINDOW</div><div class="ttdef"><b>Definition:</b> gap.h:70</div></div>
 <div class="ttc" id="agroup__bt__gap__defines_html_ga747caa714962215453a966a323e77cf8"><div class="ttname"><a href="group__bt__gap__defines.html#ga747caa714962215453a966a323e77cf8">BT_GAP_SCAN_FAST_INTERVAL</a></div><div class="ttdeci">#define BT_GAP_SCAN_FAST_INTERVAL</div><div class="ttdef"><b>Definition:</b> gap.h:69</div></div>
-<div class="ttc" id="agroup__bt__gap_html_ga57ace75133343ba8de7fa965f452ee3d"><div class="ttname"><a href="group__bt__gap.html#ga57ace75133343ba8de7fa965f452ee3d">BT_LE_SCAN_PARAM</a></div><div class="ttdeci">#define BT_LE_SCAN_PARAM(_type, _options, _interval, _window)</div><div class="ttdoc">Helper to declare scan parameters inline.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1762</div></div>
-<div class="ttc" id="agroup__bt__gap_html_gga157d5577a5b2f5986037d0d09c7dc77da0af65ac48e068f7e6f1815cb151d4394"><div class="ttname"><a href="group__bt__gap.html#gga157d5577a5b2f5986037d0d09c7dc77da0af65ac48e068f7e6f1815cb151d4394">BT_LE_SCAN_OPT_FILTER_DUPLICATE</a></div><div class="ttdeci">@ BT_LE_SCAN_OPT_FILTER_DUPLICATE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1613</div></div>
-<div class="ttc" id="agroup__bt__gap_html_gga1fb9092bcdeada2d206bdc74afbbe122af202213813092ba298cd046aed687f22"><div class="ttname"><a href="group__bt__gap.html#gga1fb9092bcdeada2d206bdc74afbbe122af202213813092ba298cd046aed687f22">BT_LE_SCAN_TYPE_ACTIVE</a></div><div class="ttdeci">@ BT_LE_SCAN_TYPE_ACTIVE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1636</div></div>
+<div class="ttc" id="agroup__bt__gap_html_ga57ace75133343ba8de7fa965f452ee3d"><div class="ttname"><a href="group__bt__gap.html#ga57ace75133343ba8de7fa965f452ee3d">BT_LE_SCAN_PARAM</a></div><div class="ttdeci">#define BT_LE_SCAN_PARAM(_type, _options, _interval, _window)</div><div class="ttdoc">Helper to declare scan parameters inline.</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1767</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga157d5577a5b2f5986037d0d09c7dc77da0af65ac48e068f7e6f1815cb151d4394"><div class="ttname"><a href="group__bt__gap.html#gga157d5577a5b2f5986037d0d09c7dc77da0af65ac48e068f7e6f1815cb151d4394">BT_LE_SCAN_OPT_FILTER_DUPLICATE</a></div><div class="ttdeci">@ BT_LE_SCAN_OPT_FILTER_DUPLICATE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1618</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga1fb9092bcdeada2d206bdc74afbbe122af202213813092ba298cd046aed687f22"><div class="ttname"><a href="group__bt__gap.html#gga1fb9092bcdeada2d206bdc74afbbe122af202213813092ba298cd046aed687f22">BT_LE_SCAN_TYPE_ACTIVE</a></div><div class="ttdeci">@ BT_LE_SCAN_TYPE_ACTIVE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1641</div></div>
 </div><!-- fragment -->
 <p>Helper macro to enable active scanning to discover new devices. </p>
 
@@ -1361,7 +1361,7 @@ Functions</h2></td></tr>
 <div class="line">                                 <a class="code hl_enumvalue" href="group__bt__gap.html#gga157d5577a5b2f5986037d0d09c7dc77da0af65ac48e068f7e6f1815cb151d4394">BT_LE_SCAN_OPT_FILTER_DUPLICATE</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="group__bt__gap__defines.html#ga747caa714962215453a966a323e77cf8">BT_GAP_SCAN_FAST_INTERVAL</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="group__bt__gap__defines.html#ga100e1c20813630848a1a80390e8a06a0">BT_GAP_SCAN_FAST_WINDOW</a>)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga157d5577a5b2f5986037d0d09c7dc77da16f171c649dd090333e9822a92b4bbdb"><div class="ttname"><a href="group__bt__gap.html#gga157d5577a5b2f5986037d0d09c7dc77da16f171c649dd090333e9822a92b4bbdb">BT_LE_SCAN_OPT_CODED</a></div><div class="ttdeci">@ BT_LE_SCAN_OPT_CODED</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1619</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga157d5577a5b2f5986037d0d09c7dc77da16f171c649dd090333e9822a92b4bbdb"><div class="ttname"><a href="group__bt__gap.html#gga157d5577a5b2f5986037d0d09c7dc77da16f171c649dd090333e9822a92b4bbdb">BT_LE_SCAN_OPT_CODED</a></div><div class="ttdeci">@ BT_LE_SCAN_OPT_CODED</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1624</div></div>
 </div><!-- fragment -->
 <p>Helper macro to enable active scanning to discover new devices. Include scanning on Coded PHY in addition to 1M PHY. </p>
 
@@ -1385,7 +1385,7 @@ Functions</h2></td></tr>
 <div class="line">                                 <a class="code hl_enumvalue" href="group__bt__gap.html#gga157d5577a5b2f5986037d0d09c7dc77da0af65ac48e068f7e6f1815cb151d4394">BT_LE_SCAN_OPT_FILTER_DUPLICATE</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="group__bt__gap__defines.html#ga747caa714962215453a966a323e77cf8">BT_GAP_SCAN_FAST_INTERVAL</a>, \</div>
 <div class="line">                                 <a class="code hl_define" href="group__bt__gap__defines.html#ga100e1c20813630848a1a80390e8a06a0">BT_GAP_SCAN_FAST_WINDOW</a>)</div>
-<div class="ttc" id="agroup__bt__gap_html_gga1fb9092bcdeada2d206bdc74afbbe122a731c507ed451eb6f8f8372849185b006"><div class="ttname"><a href="group__bt__gap.html#gga1fb9092bcdeada2d206bdc74afbbe122a731c507ed451eb6f8f8372849185b006">BT_LE_SCAN_TYPE_PASSIVE</a></div><div class="ttdeci">@ BT_LE_SCAN_TYPE_PASSIVE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1633</div></div>
+<div class="ttc" id="agroup__bt__gap_html_gga1fb9092bcdeada2d206bdc74afbbe122a731c507ed451eb6f8f8372849185b006"><div class="ttname"><a href="group__bt__gap.html#gga1fb9092bcdeada2d206bdc74afbbe122a731c507ed451eb6f8f8372849185b006">BT_LE_SCAN_TYPE_PASSIVE</a></div><div class="ttdeci">@ BT_LE_SCAN_TYPE_PASSIVE</div><div class="ttdef"><b>Definition:</b> bluetooth.h:1638</div></div>
 </div><!-- fragment -->
 <p>Helper macro to enable passive scanning to discover new devices. Include scanning on Coded PHY in addition to 1M PHY. </p>
 <p >This macro should be used if information required for device identification (e.g., UUID) are known to be placed in Advertising Data. </p>
@@ -1450,7 +1450,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">        ((<span class="keyword">struct </span><a class="code hl_struct" href="structbt__le__scan__param.html">bt_le_scan_param</a>[]) { \</div>
 <div class="line">                BT_LE_SCAN_PARAM_INIT(_type, _options, _interval, _window) \</div>
 <div class="line">         })</div>
-<div class="ttc" id="astructbt__le__scan__param_html"><div class="ttname"><a href="structbt__le__scan__param.html">bt_le_scan_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:1640</div></div>
+<div class="ttc" id="astructbt__le__scan__param_html"><div class="ttname"><a href="structbt__le__scan__param.html">bt_le_scan_param</a></div><div class="ttdef"><b>Definition:</b> bluetooth.h:1645</div></div>
 </div><!-- fragment -->
 <p>Helper to declare scan parameters inline. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1648,7 +1648,7 @@ Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga2970898e8a43ce21e1cc510d49f1b89da928b376123819cb0a69fbb5b35608dbf" name="gga2970898e8a43ce21e1cc510d49f1b89da928b376123819cb0a69fbb5b35608dbf"></a>BT_LE_ADV_OPT_NONE&#160;</td><td class="fielddoc"><p >Convenience value when no options are specified. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3" name="gga2970898e8a43ce21e1cc510d49f1b89da2a90f8d144a194f74c5432079c5d42a3"></a>BT_LE_ADV_OPT_CONNECTABLE&#160;</td><td class="fielddoc"><p >Advertise as connectable. </p>
-<p >Advertise as connectable. If not connectable then the type of advertising is determined by providing scan response data. The advertiser address is determined by the type of advertising and/or enabling privacy </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </pre><p>. </p>
+<p >Advertise as connectable. If not connectable then the type of advertising is determined by providing scan response data. The advertiser address is determined by the type of advertising and/or enabling privacy </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </pre><p>. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2" name="gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2"></a>BT_LE_ADV_OPT_ONE_TIME&#160;</td><td class="fielddoc"><p >Advertise one time. </p>
 <p >Don't try to resume connectable advertising after a connection. This option is only meaningful when used together with BT_LE_ADV_OPT_CONNECTABLE. If set the advertising will be stopped when <a class="el" href="group__bt__gap.html#ga1776e310b9d80898e6b32d50c4fe0b49" title="Stop advertising.">bt_le_adv_stop()</a> is called or when an incoming (peripheral) connection happens. If this option is not set the stack will take care of keeping advertising enabled even as connections occur. If Advertising directed or the advertiser was started with <a class="el" href="group__bt__gap.html#gaddc6da5166cd8415d2b367380447eac1">bt_le_ext_adv_start</a> then this behavior is the default behavior and this flag has no effect. </p>
@@ -2160,7 +2160,7 @@ Requires <a class="el" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1
 
 <p>Enable Bluetooth. </p>
 <p >Enable Bluetooth. Must be the called before any calls that require communication with the local Bluetooth hardware.</p>
-<p >When </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_SETTINGS` </pre><p> has been enabled and the application is not managing identities of the stack itself then the application must call <a class="el" href="group__settings.html#ga89c6d618df81f197cc5c1a2018b00648">settings_load()</a> before the stack is fully enabled. See <a class="el" href="group__bt__gap.html#gae11eb8ad254418c38a0e8689df25a159">bt_id_create()</a> for more information.</p>
+<p >When </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_SETTINGS` </pre><p> is enabled, the application must load the Bluetooth settings after this API call successfully completes before Bluetooth APIs can be used. Loading the settings before calling this function is insufficient. Bluetooth settings can be loaded with <a class="el" href="group__settings.html#ga89c6d618df81f197cc5c1a2018b00648">settings_load()</a> or <a class="el" href="group__settings.html#gab80e8a21c80243359b652386f7ce2424">settings_load_subtree()</a> with argument "bt". The latter selectively loads only Bluetooth settings and is recommended if <a class="el" href="group__settings.html#ga89c6d618df81f197cc5c1a2018b00648">settings_load()</a> has been called earlier.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cb</td><td>Callback to notify completion or NULL to perform the enabling synchronously.</td></tr>
@@ -2276,7 +2276,7 @@ Requires <a class="el" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">addr</td><td>Address to use for the new identity. If NULL or initialized to BT_ADDR_LE_ANY the stack will generate a new random static address for the identity and copy it to the given parameter upon return from this function (in case the parameter was non-NULL). </td></tr>
-    <tr><td class="paramname">irk</td><td>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </pre> is not enabled this parameter must be NULL.</td></tr>
+    <tr><td class="paramname">irk</td><td>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </pre> is not enabled this parameter must be NULL.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2398,7 +2398,7 @@ Requires <a class="el" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1
   <table class="params">
     <tr><td class="paramname">id</td><td>Existing identity identifier. </td></tr>
     <tr><td class="paramname">addr</td><td>Address to use for the new identity. If NULL or initialized to BT_ADDR_LE_ANY the stack will generate a new static random address for the identity and copy it to the given parameter upon return from this function (in case the parameter was non-NULL). </td></tr>
-    <tr><td class="paramname">irk</td><td>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </pre> is not enabled this parameter must be NULL.</td></tr>
+    <tr><td class="paramname">irk</td><td>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </pre> is not enabled this parameter must be NULL.</td></tr>
   </table>
   </dd>
 </dl>
@@ -2724,7 +2724,7 @@ Requires <a class="el" href="group__bt__gap.html#gga2970898e8a43ce21e1cc510d49f1
 
 <p>Get local LE Out of Band (OOB) information. </p>
 <p >This function allows to get local information that are useful for Out of Band pairing or connection creation.</p>
-<p >If privacy </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </pre><p> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_RPA_TIMEOUT` </pre><p> seconds. This address will be used by the advertising set.</p>
+<p >If privacy </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </pre><p> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_RPA_TIMEOUT` </pre><p> seconds. This address will be used by the advertising set.</p>
 <dl class="section note"><dt>Note</dt><dd>When generating OOB information for multiple advertising set all OOB information needs to be generated at the same time.</dd>
 <dd>
 If privacy is enabled the RPA cannot be refreshed in the following cases:<ul>
@@ -3038,9 +3038,9 @@ When updating the advertising data while advertising the advertising data and sc
 
 <p>Get local LE Out of Band (OOB) information. </p>
 <p >This function allows to get local information that are useful for Out of Band pairing or connection creation.</p>
-<p >If privacy </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </pre><p> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_RPA_TIMEOUT` </pre><p> seconds. This address will be used for advertising started by <a class="el" href="group__bt__gap.html#gad2e3caef88d52d720e8e4d21df767b02">bt_le_adv_start</a>, active scanning and connection creation.</p>
+<p >If privacy </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </pre><p> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_RPA_TIMEOUT` </pre><p> seconds. This address will be used for advertising started by <a class="el" href="group__bt__gap.html#gad2e3caef88d52d720e8e4d21df767b02">bt_le_adv_start</a>, active scanning and connection creation.</p>
 <dl class="section note"><dt>Note</dt><dd>If privacy is enabled the RPA cannot be refreshed in the following cases:<ul>
-<li>Creating a connection in progress, wait for the connected callback. In addition when extended advertising <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_EXT_ADV` </pre> is not enabled or not supported by the controller:</li>
+<li>Creating a connection in progress, wait for the connected callback. In addition when extended advertising <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_EXT_ADV` </pre> is not enabled or not supported by the controller:</li>
 <li>Advertiser is enabled using a Random Static Identity Address for a different local identity.</li>
 <li>The local identity conflicts with the local identity used by other roles.</li>
 </ul>
@@ -3840,7 +3840,7 @@ When updating the advertising data while advertising the advertising data and sc
 
 <p>Start (LE) scanning. </p>
 <p >Start LE scanning with given parameters and provide results through the specified callback.</p>
-<dl class="section note"><dt>Note</dt><dd>The LE scanner by default does not use the Identity Address of the local device when <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </pre> is disabled. This is to prevent the active scanner from disclosing the identity information when requesting additional information from advertisers. In order to enable directed advertiser reports then <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_SCAN_WITH_IDENTITY` </pre> must be enabled.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The LE scanner by default does not use the Identity Address of the local device when <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </pre> is disabled. This is to prevent the active scanner from disclosing the identity information when requesting additional information from advertisers. In order to enable directed advertiser reports then <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_SCAN_WITH_IDENTITY` </pre> must be enabled.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">param</td><td>Scan parameters. </td></tr>
@@ -4066,7 +4066,7 @@ When updating the advertising data while advertising the advertising data and sc
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

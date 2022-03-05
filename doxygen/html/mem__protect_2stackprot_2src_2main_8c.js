@@ -4,7 +4,7 @@ var mem__protect_2stackprot_2src_2main_8c =
     [ "alternate_thread", "mem__protect_2stackprot_2src_2main_8c.html#a29aeea6df25ffd5f127ce9144628ce6d", null ],
     [ "check_input", "mem__protect_2stackprot_2src_2main_8c.html#a343d332e3a4b49ba4567865b82c81a96", null ],
     [ "k_sys_fatal_error_handler", "group__fatal__apis.html#gab6dfd75572a84729df534fde49ef7d85", null ],
-    [ "K_THREAD_STACK_DEFINE", "mem__protect_2stackprot_2src_2main_8c.html#ab97dd758b2c94968e65f175438e03415", null ],
+    [ "K_THREAD_STACK_DEFINE", "mem__protect_2stackprot_2src_2main_8c.html#a9638c59d0e6604336890b049b493238d", null ],
     [ "print_loop", "mem__protect_2stackprot_2src_2main_8c.html#a3ce95ccc24331a2b92c73d16e3b51704", null ],
     [ "test_create_alt_thread", "mem__protect_2stackprot_2src_2main_8c.html#ab68d85156141c8436205d3bae5e630d3", null ],
     [ "test_main", "mem__protect_2stackprot_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

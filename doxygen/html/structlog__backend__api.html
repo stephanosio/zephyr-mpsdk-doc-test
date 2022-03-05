@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -119,6 +119,8 @@ Data Fields</h2></td></tr>
 <tr class="separator:a04bdb8030ad4e70000d8572a6b7e07b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addc850f99813854df8083a5ee93a36c8"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlog__backend__api.html#addc850f99813854df8083a5ee93a36c8">init</a> )(const struct <a class="el" href="structlog__backend.html">log_backend</a> *const backend)</td></tr>
 <tr class="separator:addc850f99813854df8083a5ee93a36c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae23c17899721f8254a9f50bedd667226"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlog__backend__api.html#ae23c17899721f8254a9f50bedd667226">format_set</a> )(const struct <a class="el" href="structlog__backend.html">log_backend</a> *const backend, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> log_type)</td></tr>
+<tr class="separator:ae23c17899721f8254a9f50bedd667226"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Logger backend API. </p>
@@ -131,6 +133,20 @@ Data Fields</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">void(* log_backend_api::dropped) (const struct <a class="el" href="structlog__backend.html">log_backend</a> *const backend, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> cnt)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae23c17899721f8254a9f50bedd667226" name="ae23c17899721f8254a9f50bedd667226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae23c17899721f8254a9f50bedd667226">&#9670;&nbsp;</a></span>format_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* log_backend_api::format_set) (const struct <a class="el" href="structlog__backend.html">log_backend</a> *const backend, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> log_type)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +247,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structlog__backend__api.html">log_backend_api</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:48 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

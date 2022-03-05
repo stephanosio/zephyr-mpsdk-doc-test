@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5395" column="13" bodyfile="include/kernel.h" bodystart="5395" bodyend="-1"/>
+        <location file="include/kernel.h" line="5391" column="13" bodyfile="include/kernel.h" bodystart="5391" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__signal_1ae9fe6751d75f7d2b2800cb723603c0fe" prot="public" static="no" mutable="no">
         <type><ref refid="lib_2libc_2minimal_2include_2sys_2types_8h_1a4089fb16419d359081465355db05f846" kindref="member">unsigned</ref> int</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5401" column="14" bodyfile="include/kernel.h" bodystart="5401" bodyend="-1"/>
+        <location file="include/kernel.h" line="5397" column="14" bodyfile="include/kernel.h" bodystart="5397" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__signal_1ab438c1e36cecda66fe2c4642518a1db1" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5404" column="5" bodyfile="include/kernel.h" bodystart="5404" bodyend="-1"/>
+        <location file="include/kernel.h" line="5400" column="5" bodyfile="include/kernel.h" bodystart="5400" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -63,7 +63,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/kernel.h" line="5393" column="1" bodyfile="include/kernel.h" bodystart="5393" bodyend="5405"/>
+    <location file="include/kernel.h" line="5389" column="1" bodyfile="include/kernel.h" bodystart="5389" bodyend="5401"/>
     <listofallmembers>
       <member refid="structk__poll__signal_1a22e88955ba0e369d39edefadcf4c60fd" prot="public" virt="non-virtual"><scope>k_poll_signal</scope><name>poll_events</name></member>
       <member refid="structk__poll__signal_1ab438c1e36cecda66fe2c4642518a1db1" prot="public" virt="non-virtual"><scope>k_poll_signal</scope><name>result</name></member>

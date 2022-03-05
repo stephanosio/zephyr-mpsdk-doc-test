@@ -21,12 +21,14 @@
     <includedby refid="json_8h" local="no">include/data/json.h</includedby>
     <includedby refid="mb__display_8h" local="no">include/display/mb_display.h</includedby>
     <includedby refid="fatal_8h" local="no">include/fatal.h</includedby>
+    <includedby refid="nvs_8h" local="no">include/fs/nvs.h</includedby>
     <includedby refid="init_8h" local="no">include/init.h</includedby>
     <includedby refid="irq_8h" local="no">include/irq.h</includedby>
     <includedby refid="include_2kernel_8h" local="no">include/kernel.h</includedby>
     <includedby refid="kernel__includes_8h" local="no">include/kernel_includes.h</includedby>
     <includedby refid="linker-defs_8h" local="no">include/linker/linker-defs.h</includedby>
     <includedby refid="section__tags_8h" local="no">include/linker/section_tags.h</includedby>
+    <includedby refid="include_2logging_2log__msg2_8h" local="no">include/logging/log_msg2.h</includedby>
     <includedby refid="log__output__dict_8h" local="no">include/logging/log_output_dict.h</includedby>
     <includedby refid="ilog2_8h" local="no">include/math/ilog2.h</includedby>
     <includedby refid="net__ip_8h" local="no">include/net/net_ip.h</includedby>
@@ -63,7 +65,7 @@
     <includedby refid="workq_2work_2src_2main_8c" local="no">tests/kernel/workq/work/src/main.c</includedby>
     <includedby refid="workq_2work__queue_2src_2main_8c" local="no">tests/kernel/workq/work_queue/src/main.c</includedby>
     <invincdepgraph>
-      <node id="227">
+      <node id="228">
         <label>include/app_memory/app_memdomain.h</label>
         <link refid="app__memdomain_8h"/>
         <childnode refid="10" relation="include">
@@ -85,7 +87,7 @@
         <label>include/arch/arc/arch.h</label>
         <link refid="arc_2arch_8h"/>
       </node>
-      <node id="307">
+      <node id="328">
         <label>include/arch/arc/arch_inlines.h</label>
         <link refid="arc_2arch__inlines_8h"/>
       </node>
@@ -95,12 +97,12 @@
         <childnode refid="187" relation="include">
         </childnode>
       </node>
-      <node id="292">
+      <node id="313">
         <label>include/arch/arc/v2/irq.h</label>
         <link refid="arch_2arc_2v2_2irq_8h"/>
         <childnode refid="187" relation="include">
         </childnode>
-        <childnode refid="292" relation="include">
+        <childnode refid="313" relation="include">
         </childnode>
       </node>
       <node id="188">
@@ -111,34 +113,34 @@
         <label>include/arch/arm/aarch32/arch.h</label>
         <link refid="arm_2aarch32_2arch_8h"/>
       </node>
-      <node id="294">
+      <node id="315">
         <label>include/arch/arm/aarch32/asm_inline_gcc.h</label>
         <link refid="arm_2aarch32_2asm__inline__gcc_8h"/>
       </node>
-      <node id="293">
+      <node id="314">
         <label>include/arch/arm/aarch32/irq.h</label>
         <link refid="arch_2arm_2aarch32_2irq_8h"/>
         <childnode refid="190" relation="include">
         </childnode>
-        <childnode refid="294" relation="include">
+        <childnode refid="315" relation="include">
         </childnode>
-        <childnode refid="293" relation="include">
+        <childnode refid="314" relation="include">
         </childnode>
       </node>
       <node id="191">
         <label>include/arch/arm64/arch.h</label>
         <link refid="arm64_2arch_8h"/>
       </node>
-      <node id="308">
+      <node id="329">
         <label>include/arch/arm64/arch_inlines.h</label>
         <link refid="arm64_2arch__inlines_8h"/>
       </node>
-      <node id="295">
+      <node id="316">
         <label>include/arch/arm64/irq.h</label>
         <link refid="arch_2arm64_2irq_8h"/>
         <childnode refid="191" relation="include">
         </childnode>
-        <childnode refid="295" relation="include">
+        <childnode refid="316" relation="include">
         </childnode>
       </node>
       <node id="189">
@@ -177,16 +179,16 @@
         <childnode refid="197" relation="include">
         </childnode>
       </node>
-      <node id="297">
+      <node id="318">
         <label>include/arch/cpu.h</label>
         <link refid="include_2arch_2cpu_8h"/>
         <childnode refid="224" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="226" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="298" relation="include">
+        <childnode refid="319" relation="include">
         </childnode>
       </node>
       <node id="192">
@@ -218,6 +220,10 @@
       <node id="195">
         <label>include/arch/riscv/arch.h</label>
         <link refid="riscv_2arch_8h"/>
+      </node>
+      <node id="330">
+        <label>include/arch/riscv/arch_inlines.h</label>
+        <link refid="riscv_2arch__inlines_8h"/>
       </node>
       <node id="203">
         <label>include/arch/riscv/error.h</label>
@@ -261,7 +267,7 @@
         <childnode refid="207" relation="include">
         </childnode>
       </node>
-      <node id="230">
+      <node id="231">
         <label>include/arch/x86/ia32/syscall.h</label>
         <link refid="arch_2x86_2ia32_2syscall_8h"/>
         <childnode refid="207" relation="include">
@@ -271,7 +277,7 @@
         <label>include/arch/xtensa/arch.h</label>
         <link refid="xtensa_2arch_8h"/>
       </node>
-      <node id="309">
+      <node id="331">
         <label>include/arch/xtensa/arch_inlines.h</label>
         <link refid="xtensa_2arch__inlines_8h"/>
       </node>
@@ -291,22 +297,28 @@
         <label>include/bluetooth/a2dp.h</label>
         <link refid="a2dp_8h"/>
       </node>
-      <node id="382">
+      <node id="384">
         <label>include/bluetooth/addr.h</label>
         <link refid="addr_8h"/>
-        <childnode refid="383" relation="include">
+        <childnode refid="385" relation="include">
         </childnode>
-        <childnode refid="389" relation="include">
+        <childnode refid="391" relation="include">
         </childnode>
         <childnode refid="211" relation="include">
         </childnode>
       </node>
-      <node id="384">
+      <node id="392">
+        <label>include/bluetooth/att.h</label>
+        <link refid="att_8h"/>
+        <childnode refid="393" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
         <label>include/bluetooth/audio/aics.h</label>
         <link refid="aics_8h"/>
-        <childnode refid="385" relation="include">
+        <childnode refid="387" relation="include">
         </childnode>
-        <childnode refid="386" relation="include">
+        <childnode refid="388" relation="include">
         </childnode>
       </node>
       <node id="212">
@@ -319,25 +331,25 @@
         <label>include/bluetooth/audio/capabilities.h</label>
         <link refid="capabilities_8h"/>
       </node>
-      <node id="390">
+      <node id="394">
         <label>include/bluetooth/audio/csis.h</label>
         <link refid="csis_8h"/>
       </node>
-      <node id="388">
+      <node id="390">
         <label>include/bluetooth/audio/mcc.h</label>
         <link refid="mcc_8h"/>
       </node>
-      <node id="387">
+      <node id="389">
         <label>include/bluetooth/audio/media_proxy.h</label>
         <link refid="media__proxy_8h"/>
-        <childnode refid="388" relation="include">
+        <childnode refid="390" relation="include">
         </childnode>
       </node>
-      <node id="385">
+      <node id="387">
         <label>include/bluetooth/audio/mics.h</label>
         <link refid="mics_8h"/>
       </node>
-      <node id="386">
+      <node id="388">
         <label>include/bluetooth/audio/vcs.h</label>
         <link refid="vcs_8h"/>
       </node>
@@ -347,16 +359,16 @@
         <childnode refid="218" relation="include">
         </childnode>
       </node>
-      <node id="383">
+      <node id="385">
         <label>include/bluetooth/bluetooth.h</label>
         <link refid="bluetooth_8h"/>
-        <childnode refid="384" relation="include">
-        </childnode>
-        <childnode refid="387" relation="include">
+        <childnode refid="386" relation="include">
         </childnode>
         <childnode refid="389" relation="include">
         </childnode>
-        <childnode refid="393" relation="include">
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
         </childnode>
       </node>
       <node id="214">
@@ -373,16 +385,18 @@
         <childnode refid="220" relation="include">
         </childnode>
       </node>
-      <node id="389">
+      <node id="391">
         <label>include/bluetooth/conn.h</label>
         <link refid="conn_8h"/>
+        <childnode refid="392" relation="include">
+        </childnode>
         <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
         </childnode>
         <childnode refid="390" relation="include">
         </childnode>
-        <childnode refid="388" relation="include">
-        </childnode>
-        <childnode refid="391" relation="include">
+        <childnode refid="393" relation="include">
         </childnode>
         <childnode refid="211" relation="include">
         </childnode>
@@ -392,12 +406,12 @@
         </childnode>
         <childnode refid="219" relation="include">
         </childnode>
-        <childnode refid="392" relation="include">
+        <childnode refid="395" relation="include">
         </childnode>
-        <childnode refid="340" relation="include">
+        <childnode refid="342" relation="include">
         </childnode>
       </node>
-      <node id="391">
+      <node id="393">
         <label>include/bluetooth/gatt.h</label>
         <link refid="gatt_8h"/>
         <childnode refid="212" relation="include">
@@ -423,7 +437,7 @@
         <childnode refid="220" relation="include">
         </childnode>
       </node>
-      <node id="393">
+      <node id="396">
         <label>include/bluetooth/hfp_hf.h</label>
         <link refid="hfp__hf_8h"/>
       </node>
@@ -439,19 +453,19 @@
         <childnode refid="217" relation="include">
         </childnode>
       </node>
-      <node id="304">
+      <node id="325">
         <label>include/bluetooth/mesh.h</label>
         <link refid="mesh_8h"/>
-        <childnode refid="305" relation="include">
+        <childnode refid="326" relation="include">
         </childnode>
       </node>
-      <node id="303">
+      <node id="324">
         <label>include/bluetooth/mesh/cdb.h</label>
         <link refid="cdb_8h"/>
-        <childnode refid="304" relation="include">
+        <childnode refid="325" relation="include">
         </childnode>
       </node>
-      <node id="305">
+      <node id="326">
         <label>include/bluetooth/mesh/shell.h</label>
         <link refid="bluetooth_2mesh_2shell_8h"/>
       </node>
@@ -459,11 +473,11 @@
         <label>include/bluetooth/rfcomm.h</label>
         <link refid="rfcomm_8h"/>
       </node>
-      <node id="392">
+      <node id="395">
         <label>include/bluetooth/sdp.h</label>
         <link refid="sdp_8h"/>
       </node>
-      <node id="340">
+      <node id="342">
         <label>include/bluetooth/services/ots.h</label>
         <link refid="ots_8h"/>
       </node>
@@ -471,23 +485,23 @@
         <label>include/cache.h</label>
         <link refid="cache_8h"/>
       </node>
-      <node id="428">
+      <node id="431">
         <label>include/canbus/isotp.h</label>
         <link refid="isotp_8h"/>
       </node>
-      <node id="355">
-        <label>include/crypto/cipher.h</label>
-        <link refid="cipher_8h"/>
+      <node id="357">
+        <label>include/crypto/crypto.h</label>
+        <link refid="crypto_2crypto_8h"/>
       </node>
       <node id="222">
         <label>include/data/json.h</label>
         <link refid="json_8h"/>
       </node>
-      <node id="310">
+      <node id="332">
         <label>include/debug/object_tracing.h</label>
         <link refid="object__tracing_8h"/>
       </node>
-      <node id="326">
+      <node id="247">
         <label>include/debug/stack.h</label>
         <link refid="stack_8h"/>
         <childnode refid="91" relation="include">
@@ -499,7 +513,7 @@
         <childnode refid="157" relation="include">
         </childnode>
       </node>
-      <node id="313">
+      <node id="335">
         <label>include/debug/tracing.h</label>
         <link refid="debug_2tracing_8h"/>
       </node>
@@ -511,7 +525,7 @@
         <label>include/display/mb_display.h</label>
         <link refid="mb__display_8h"/>
       </node>
-      <node id="407">
+      <node id="410">
         <label>include/drivers/adc/lmp90xxx.h</label>
         <link refid="lmp90xxx_8h"/>
       </node>
@@ -519,127 +533,127 @@
         <label>include/drivers/bluetooth/hci_driver.h</label>
         <link refid="hci__driver_8h"/>
       </node>
-      <node id="427">
+      <node id="430">
         <label>include/drivers/can.h</label>
         <link refid="drivers_2can_8h"/>
-        <childnode refid="428" relation="include">
+        <childnode refid="431" relation="include">
         </childnode>
-        <childnode refid="239" relation="include">
+        <childnode refid="251" relation="include">
         </childnode>
         <childnode refid="282" relation="include">
         </childnode>
       </node>
-      <node id="395">
+      <node id="398">
         <label>include/drivers/clock_control.h</label>
         <link refid="clock__control_8h"/>
-        <childnode refid="396" relation="include">
-        </childnode>
-        <childnode refid="397" relation="include">
-        </childnode>
-        <childnode refid="398" relation="include">
-        </childnode>
         <childnode refid="399" relation="include">
         </childnode>
         <childnode refid="400" relation="include">
         </childnode>
         <childnode refid="401" relation="include">
         </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
       </node>
-      <node id="396">
+      <node id="399">
         <label>include/drivers/clock_control/arm_clock_control.h</label>
         <link refid="arm__clock__control_8h"/>
       </node>
-      <node id="397">
+      <node id="400">
         <label>include/drivers/clock_control/lpc11u6x_clock_control.h</label>
         <link refid="lpc11u6x__clock__control_8h"/>
       </node>
-      <node id="398">
+      <node id="401">
         <label>include/drivers/clock_control/mchp_xec_clock_control.h</label>
         <link refid="mchp__xec__clock__control_8h"/>
       </node>
-      <node id="399">
+      <node id="402">
         <label>include/drivers/clock_control/nrf_clock_control.h</label>
         <link refid="nrf__clock__control_8h"/>
       </node>
-      <node id="400">
+      <node id="403">
         <label>include/drivers/clock_control/rcar_clock_control.h</label>
         <link refid="rcar__clock__control_8h"/>
       </node>
-      <node id="401">
+      <node id="404">
         <label>include/drivers/clock_control/stm32_clock_control.h</label>
         <link refid="stm32__clock__control_8h"/>
       </node>
-      <node id="374">
+      <node id="376">
         <label>include/drivers/console/ipm_console.h</label>
         <link refid="ipm__console_8h"/>
       </node>
-      <node id="366">
+      <node id="368">
         <label>include/drivers/console/uart_mux.h</label>
         <link refid="uart__mux_8h"/>
       </node>
-      <node id="345">
+      <node id="347">
         <label>include/drivers/disk.h</label>
         <link refid="disk_8h"/>
-        <childnode refid="346" relation="include">
+        <childnode refid="348" relation="include">
         </childnode>
       </node>
-      <node id="402">
+      <node id="405">
         <label>include/drivers/ec_host_cmd_periph.h</label>
         <link refid="ec__host__cmd__periph_8h"/>
-        <childnode refid="403" relation="include">
+        <childnode refid="406" relation="include">
         </childnode>
       </node>
-      <node id="403">
+      <node id="406">
         <label>include/drivers/ec_host_cmd_periph/ec_host_cmd_simulator.h</label>
         <link refid="ec__host__cmd__simulator_8h"/>
       </node>
-      <node id="404">
+      <node id="407">
         <label>include/drivers/espi.h</label>
         <link refid="espi_8h"/>
       </node>
-      <node id="405">
+      <node id="408">
         <label>include/drivers/espi_saf.h</label>
         <link refid="espi__saf_8h"/>
       </node>
-      <node id="406">
+      <node id="409">
         <label>include/drivers/gpio.h</label>
         <link refid="drivers_2gpio_8h"/>
-        <childnode refid="407" relation="include">
-        </childnode>
-        <childnode refid="408" relation="include">
-        </childnode>
-        <childnode refid="409" relation="include">
-        </childnode>
         <childnode refid="410" relation="include">
         </childnode>
         <childnode refid="411" relation="include">
         </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
         <childnode refid="413" relation="include">
         </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
       </node>
-      <node id="408">
+      <node id="411">
         <label>include/drivers/gpio/gpio_emul.h</label>
         <link refid="gpio__emul_8h"/>
       </node>
-      <node id="409">
+      <node id="412">
         <label>include/drivers/gpio/gpio_mmio32.h</label>
         <link refid="gpio__mmio32_8h"/>
       </node>
-      <node id="410">
+      <node id="413">
         <label>include/drivers/gpio/gpio_sx1509b.h</label>
         <link refid="gpio__sx1509b_8h"/>
       </node>
-      <node id="356">
+      <node id="358">
         <label>include/drivers/hwinfo.h</label>
         <link refid="hwinfo_8h"/>
       </node>
-      <node id="232">
+      <node id="233">
         <label>include/drivers/interrupt_controller/loapic.h</label>
         <link refid="loapic_8h"/>
-        <childnode refid="233" relation="include">
+        <childnode refid="234" relation="include">
         </childnode>
       </node>
-      <node id="233">
+      <node id="234">
         <label>include/drivers/interrupt_controller/sysapic.h</label>
         <link refid="sysapic_8h"/>
         <childnode refid="208" relation="include">
@@ -649,77 +663,77 @@
         <label>include/drivers/pcie/endpoint/pcie_ep.h</label>
         <link refid="pcie__ep_8h"/>
       </node>
-      <node id="357">
+      <node id="359">
         <label>include/drivers/peci.h</label>
         <link refid="peci_8h"/>
       </node>
-      <node id="286">
+      <node id="291">
         <label>include/drivers/ptp_clock.h</label>
         <link refid="ptp__clock_8h"/>
       </node>
-      <node id="358">
+      <node id="360">
         <label>include/drivers/pwm.h</label>
         <link refid="drivers_2pwm_8h"/>
       </node>
-      <node id="411">
+      <node id="414">
         <label>include/drivers/regulator.h</label>
         <link refid="regulator_8h"/>
-        <childnode refid="412" relation="include">
+        <childnode refid="415" relation="include">
         </childnode>
       </node>
-      <node id="412">
+      <node id="415">
         <label>include/drivers/regulator/consumer.h</label>
         <link refid="consumer_8h"/>
       </node>
-      <node id="359">
+      <node id="361">
         <label>include/drivers/sensor.h</label>
         <link refid="sensor_8h"/>
-        <childnode refid="360" relation="include">
-        </childnode>
-        <childnode refid="361" relation="include">
-        </childnode>
         <childnode refid="362" relation="include">
         </childnode>
         <childnode refid="363" relation="include">
         </childnode>
         <childnode refid="364" relation="include">
         </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
       </node>
-      <node id="360">
+      <node id="362">
         <label>include/drivers/sensor/ccs811.h</label>
         <link refid="ccs811_8h"/>
       </node>
-      <node id="361">
+      <node id="363">
         <label>include/drivers/sensor/fdc2x1x.h</label>
         <link refid="fdc2x1x_8h"/>
       </node>
-      <node id="362">
+      <node id="364">
         <label>include/drivers/sensor/mcux_acmp.h</label>
         <link refid="mcux__acmp_8h"/>
       </node>
-      <node id="363">
+      <node id="365">
         <label>include/drivers/sensor/mhz19b.h</label>
         <link refid="mhz19b_8h"/>
       </node>
-      <node id="364">
+      <node id="366">
         <label>include/drivers/sensor/sht4x.h</label>
         <link refid="sht4x_8h"/>
       </node>
-      <node id="413">
+      <node id="416">
         <label>include/drivers/spi.h</label>
         <link refid="drivers_2spi_8h"/>
       </node>
-      <node id="365">
+      <node id="367">
         <label>include/drivers/uart.h</label>
         <link refid="uart_8h"/>
-        <childnode refid="366" relation="include">
+        <childnode refid="368" relation="include">
         </childnode>
-        <childnode refid="367" relation="include">
+        <childnode refid="369" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="368">
+      <node id="370">
         <label>include/drivers/uart/cdc_acm.h</label>
         <link refid="cdc__acm_8h"/>
       </node>
@@ -729,11 +743,15 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="347">
+      <node id="349">
         <label>include/fs/fs.h</label>
         <link refid="fs_8h"/>
-        <childnode refid="348" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
+      </node>
+      <node id="225">
+        <label>include/fs/nvs.h</label>
+        <link refid="nvs_8h"/>
       </node>
       <node id="6">
         <label>include/init.h</label>
@@ -755,29 +773,29 @@
         <childnode refid="33" relation="include">
         </childnode>
       </node>
-      <node id="423">
+      <node id="426">
         <label>include/ipc/ipc_rpmsg.h</label>
         <link refid="ipc__rpmsg_8h"/>
       </node>
-      <node id="422">
+      <node id="425">
         <label>include/ipc/ipc_service.h</label>
         <link refid="ipc__service_8h"/>
-        <childnode refid="423" relation="include">
+        <childnode refid="426" relation="include">
         </childnode>
-        <childnode refid="424" relation="include">
+        <childnode refid="427" relation="include">
         </childnode>
-        <childnode refid="425" relation="include">
+        <childnode refid="428" relation="include">
         </childnode>
       </node>
-      <node id="424">
+      <node id="427">
         <label>include/ipc/ipc_service_backend.h</label>
         <link refid="ipc__service__backend_8h"/>
       </node>
-      <node id="425">
+      <node id="428">
         <label>include/ipc/ipc_static_vrings.h</label>
         <link refid="ipc__static__vrings_8h"/>
       </node>
-      <node id="225">
+      <node id="226">
         <label>include/irq.h</label>
         <link refid="irq_8h"/>
         <childnode refid="3" relation="include">
@@ -797,12 +815,12 @@
         <childnode refid="184" relation="include">
         </childnode>
       </node>
-      <node id="350">
+      <node id="352">
         <label>include/kernel/sched_priq.h</label>
         <link refid="sched__priq_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="306" relation="include">
+        <childnode refid="327" relation="include">
         </childnode>
         <childnode refid="182" relation="include">
         </childnode>
@@ -813,24 +831,26 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="306">
+      <node id="327">
         <label>include/kernel_structs.h</label>
         <link refid="kernel__structs_8h"/>
-        <childnode refid="307" relation="include">
+        <childnode refid="328" relation="include">
         </childnode>
-        <childnode refid="308" relation="include">
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
         </childnode>
         <childnode refid="207" relation="include">
         </childnode>
-        <childnode refid="309" relation="include">
+        <childnode refid="331" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="310" relation="include">
+        <childnode refid="332" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="311" relation="include">
+        <childnode refid="333" relation="include">
         </childnode>
         <childnode refid="182" relation="include">
         </childnode>
@@ -863,10 +883,10 @@
         <childnode refid="166" relation="include">
         </childnode>
       </node>
-      <node id="226">
+      <node id="227">
         <label>include/linker/linker-defs.h</label>
         <link refid="linker-defs_8h"/>
-        <childnode refid="227" relation="include">
+        <childnode refid="228" relation="include">
         </childnode>
         <childnode refid="74" relation="include">
         </childnode>
@@ -875,34 +895,34 @@
         <childnode refid="91" relation="include">
         </childnode>
       </node>
-      <node id="380">
+      <node id="382">
         <label>include/linker/linker-tool-gcc.h</label>
         <link refid="linker-tool-gcc_8h"/>
       </node>
-      <node id="228">
+      <node id="229">
         <label>include/linker/section_tags.h</label>
         <link refid="section__tags_8h"/>
-        <childnode refid="229" relation="include">
+        <childnode refid="230" relation="include">
         </childnode>
       </node>
-      <node id="229">
+      <node id="230">
         <label>include/linker/sections.h</label>
         <link refid="sections_8h"/>
         <childnode refid="208" relation="include">
         </childnode>
         <childnode refid="205" relation="include">
         </childnode>
-        <childnode refid="230" relation="include">
+        <childnode refid="231" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="227" relation="include">
         </childnode>
-        <childnode refid="231" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
+        <childnode refid="235" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
@@ -915,432 +935,434 @@
         <childnode refid="174" relation="include">
         </childnode>
       </node>
-      <node id="325">
+      <node id="246">
         <label>include/logging/log.h</label>
         <link refid="log_8h"/>
-        <childnode refid="326" relation="include">
+        <childnode refid="247" relation="include">
         </childnode>
-        <childnode refid="327" relation="include">
-        </childnode>
-        <childnode refid="318" relation="include">
-        </childnode>
-        <childnode refid="180" relation="include">
-        </childnode>
-        <childnode refid="329" relation="include">
-        </childnode>
-      </node>
-      <node id="315">
-        <label>include/logging/log_backend.h</label>
-        <link refid="log__backend_8h"/>
-        <childnode refid="316" relation="include">
-        </childnode>
-        <childnode refid="317" relation="include">
-        </childnode>
-      </node>
-      <node id="323">
-        <label>include/logging/log_backend_std.h</label>
-        <link refid="log__backend__std_8h"/>
-      </node>
-      <node id="324">
-        <label>include/logging/log_core.h</label>
-        <link refid="include_2logging_2log__core_8h"/>
-        <childnode refid="325" relation="include">
-        </childnode>
-        <childnode refid="330" relation="include">
-        </childnode>
-        <childnode refid="331" relation="include">
-        </childnode>
-      </node>
-      <node id="316">
-        <label>include/logging/log_ctrl.h</label>
-        <link refid="include_2logging_2log__ctrl_8h"/>
-      </node>
-      <node id="330">
-        <label>include/logging/log_frontend.h</label>
-        <link refid="log__frontend_8h"/>
-      </node>
-      <node id="331">
-        <label>include/logging/log_internal.h</label>
-        <link refid="log__internal_8h"/>
-        <childnode refid="316" relation="include">
-        </childnode>
-      </node>
-      <node id="314">
-        <label>include/logging/log_msg.h</label>
-        <link refid="log__msg_8h"/>
-        <childnode refid="315" relation="include">
-        </childnode>
-        <childnode refid="323" relation="include">
-        </childnode>
-        <childnode refid="324" relation="include">
-        </childnode>
-        <childnode refid="316" relation="include">
-        </childnode>
-        <childnode refid="332" relation="include">
-        </childnode>
-      </node>
-      <node id="333">
-        <label>include/logging/log_msg2.h</label>
-        <link refid="include_2logging_2log__msg2_8h"/>
-        <childnode refid="315" relation="include">
-        </childnode>
-        <childnode refid="324" relation="include">
-        </childnode>
-        <childnode refid="314" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-      </node>
-      <node id="332">
-        <label>include/logging/log_output.h</label>
-        <link refid="log__output_8h"/>
-        <childnode refid="323" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-        <childnode refid="317" relation="include">
-        </childnode>
-      </node>
-      <node id="235">
-        <label>include/logging/log_output_dict.h</label>
-        <link refid="log__output__dict_8h"/>
-      </node>
-      <node id="236">
-        <label>include/math/ilog2.h</label>
-        <link refid="ilog2_8h"/>
-        <childnode refid="237" relation="include">
-        </childnode>
-      </node>
-      <node id="367">
-        <label>include/modbus/modbus.h</label>
-        <link refid="modbus_8h"/>
-      </node>
-      <node id="274">
-        <label>include/net/bt.h</label>
-        <link refid="bt_8h"/>
-      </node>
-      <node id="239">
-        <label>include/net/can.h</label>
-        <link refid="net_2can_8h"/>
-      </node>
-      <node id="240">
-        <label>include/net/coap.h</label>
-        <link refid="coap_8h"/>
-        <childnode refid="241" relation="include">
-        </childnode>
-      </node>
-      <node id="242">
-        <label>include/net/dns_resolve.h</label>
-        <link refid="dns__resolve_8h"/>
-        <childnode refid="243" relation="include">
-        </childnode>
-      </node>
-      <node id="341">
-        <label>include/net/dns_sd.h</label>
-        <link refid="dns__sd_8h"/>
-      </node>
-      <node id="279">
-        <label>include/net/dsa.h</label>
-        <link refid="dsa_8h"/>
-      </node>
-      <node id="265">
-        <label>include/net/dummy.h</label>
-        <link refid="dummy_8h"/>
-      </node>
-      <node id="255">
-        <label>include/net/ethernet.h</label>
-        <link refid="ethernet_8h"/>
-        <childnode refid="256" relation="include">
-        </childnode>
-        <childnode refid="257" relation="include">
-        </childnode>
-      </node>
-      <node id="256">
-        <label>include/net/ethernet_mgmt.h</label>
-        <link refid="ethernet__mgmt_8h"/>
-      </node>
-      <node id="287">
-        <label>include/net/gptp.h</label>
-        <link refid="gptp_8h"/>
-      </node>
-      <node id="258">
-        <label>include/net/http_client.h</label>
-        <link refid="http__client_8h"/>
-        <childnode refid="259" relation="include">
-        </childnode>
-      </node>
-      <node id="275">
-        <label>include/net/ieee802154.h</label>
-        <link refid="ieee802154_8h"/>
-        <childnode refid="276" relation="include">
-        </childnode>
-        <childnode refid="266" relation="include">
-        </childnode>
-      </node>
-      <node id="276">
-        <label>include/net/ieee802154_mgmt.h</label>
-        <link refid="ieee802154__mgmt_8h"/>
-      </node>
-      <node id="266">
-        <label>include/net/ieee802154_radio.h</label>
-        <link refid="ieee802154__radio_8h"/>
-      </node>
-      <node id="261">
-        <label>include/net/igmp.h</label>
-        <link refid="igmp_8h"/>
-      </node>
-      <node id="241">
-        <label>include/net/lwm2m.h</label>
-        <link refid="lwm2m_8h"/>
-      </node>
-      <node id="260">
-        <label>include/net/mqtt.h</label>
-        <link refid="mqtt_8h"/>
-      </node>
-      <node id="280">
-        <label>include/net/net_config.h</label>
-        <link refid="net__config_8h"/>
-      </node>
-      <node id="262">
-        <label>include/net/net_context.h</label>
-        <link refid="net__context_8h"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-        <childnode refid="263" relation="include">
-        </childnode>
-        <childnode refid="264" relation="include">
-        </childnode>
-      </node>
-      <node id="327">
-        <label>include/net/net_core.h</label>
-        <link refid="net__core_8h"/>
-        <childnode refid="287" relation="include">
-        </childnode>
-        <childnode refid="278" relation="include">
-        </childnode>
-        <childnode refid="273" relation="include">
-        </childnode>
-        <childnode refid="264" relation="include">
-        </childnode>
-        <childnode refid="257" relation="include">
-        </childnode>
-        <childnode refid="277" relation="include">
-        </childnode>
-        <childnode refid="285" relation="include">
-        </childnode>
-        <childnode refid="328" relation="include">
-        </childnode>
-        <childnode refid="269" relation="include">
-        </childnode>
-      </node>
-      <node id="272">
-        <label>include/net/net_event.h</label>
-        <link refid="net__event_8h"/>
-        <childnode refid="273" relation="include">
-        </childnode>
-      </node>
-      <node id="278">
-        <label>include/net/net_if.h</label>
-        <link refid="net__if_8h"/>
-        <childnode refid="239" relation="include">
-        </childnode>
-        <childnode refid="279" relation="include">
-        </childnode>
-        <childnode refid="265" relation="include">
-        </childnode>
-        <childnode refid="255" relation="include">
-        </childnode>
-        <childnode refid="266" relation="include">
-        </childnode>
-        <childnode refid="261" relation="include">
-        </childnode>
-        <childnode refid="280" relation="include">
-        </childnode>
-        <childnode refid="262" relation="include">
-        </childnode>
-        <childnode refid="264" relation="include">
-        </childnode>
-        <childnode refid="281" relation="include">
-        </childnode>
-        <childnode refid="267" relation="include">
-        </childnode>
-        <childnode refid="268" relation="include">
-        </childnode>
-        <childnode refid="282" relation="include">
-        </childnode>
-        <childnode refid="283" relation="include">
-        </childnode>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="284" relation="include">
-        </childnode>
-      </node>
-      <node id="238">
-        <label>include/net/net_ip.h</label>
-        <link refid="net__ip_8h"/>
-        <childnode refid="239" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
         <childnode refid="240" relation="include">
         </childnode>
-        <childnode refid="242" relation="include">
+        <childnode refid="180" relation="include">
         </childnode>
-        <childnode refid="255" relation="include">
-        </childnode>
-        <childnode refid="258" relation="include">
-        </childnode>
-        <childnode refid="261" relation="include">
-        </childnode>
-        <childnode refid="260" relation="include">
-        </childnode>
-        <childnode refid="262" relation="include">
-        </childnode>
-        <childnode refid="272" relation="include">
-        </childnode>
-        <childnode refid="278" relation="include">
-        </childnode>
-        <childnode refid="263" relation="include">
-        </childnode>
-        <childnode refid="264" relation="include">
-        </childnode>
-        <childnode refid="243" relation="include">
-        </childnode>
-        <childnode refid="282" relation="include">
-        </childnode>
-        <childnode refid="283" relation="include">
-        </childnode>
-        <childnode refid="244" relation="include">
-        </childnode>
-        <childnode refid="269" relation="include">
-        </childnode>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="259" relation="include">
+        <childnode refid="293" relation="include">
         </childnode>
       </node>
-      <node id="369">
-        <label>include/net/net_linkaddr.h</label>
-        <link refid="net__linkaddr_8h"/>
-        <childnode refid="278" relation="include">
+      <node id="237">
+        <label>include/logging/log_backend.h</label>
+        <link refid="log__backend_8h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>include/logging/log_backend_std.h</label>
+        <link refid="log__backend__std_8h"/>
+      </node>
+      <node id="245">
+        <label>include/logging/log_core.h</label>
+        <link refid="include_2logging_2log__core_8h"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+      </node>
+      <node id="238">
+        <label>include/logging/log_ctrl.h</label>
+        <link refid="include_2logging_2log__ctrl_8h"/>
+      </node>
+      <node id="294">
+        <label>include/logging/log_frontend.h</label>
+        <link refid="log__frontend_8h"/>
+      </node>
+      <node id="295">
+        <label>include/logging/log_internal.h</label>
+        <link refid="log__internal_8h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>include/logging/log_msg.h</label>
+        <link refid="log__msg_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
         </childnode>
         <childnode refid="238" relation="include">
         </childnode>
-        <childnode refid="264" relation="include">
+        <childnode refid="298" relation="include">
         </childnode>
       </node>
-      <node id="273">
-        <label>include/net/net_mgmt.h</label>
-        <link refid="net__mgmt_8h"/>
-        <childnode refid="274" relation="include">
+      <node id="236">
+        <label>include/logging/log_msg2.h</label>
+        <link refid="include_2logging_2log__msg2_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>include/logging/log_output.h</label>
+        <link refid="log__output_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>include/logging/log_output_dict.h</label>
+        <link refid="log__output__dict_8h"/>
+      </node>
+      <node id="300">
+        <label>include/math/ilog2.h</label>
+        <link refid="ilog2_8h"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>include/modbus/modbus.h</label>
+        <link refid="modbus_8h"/>
+      </node>
+      <node id="286">
+        <label>include/net/bt.h</label>
+        <link refid="bt_8h"/>
+      </node>
+      <node id="251">
+        <label>include/net/can.h</label>
+        <link refid="net_2can_8h"/>
+      </node>
+      <node id="303">
+        <label>include/net/coap.h</label>
+        <link refid="coap_8h"/>
+        <childnode refid="304" relation="include">
+        </childnode>
+      </node>
+      <node id="261">
+        <label>include/net/dns_resolve.h</label>
+        <link refid="dns__resolve_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>include/net/dns_sd.h</label>
+        <link refid="dns__sd_8h"/>
+      </node>
+      <node id="252">
+        <label>include/net/dsa.h</label>
+        <link refid="dsa_8h"/>
+      </node>
+      <node id="253">
+        <label>include/net/dummy.h</label>
+        <link refid="dummy_8h"/>
+      </node>
+      <node id="254">
+        <label>include/net/ethernet.h</label>
+        <link refid="ethernet_8h"/>
+        <childnode refid="255" relation="include">
         </childnode>
         <childnode refid="256" relation="include">
         </childnode>
+      </node>
+      <node id="255">
+        <label>include/net/ethernet_mgmt.h</label>
+        <link refid="ethernet__mgmt_8h"/>
+      </node>
+      <node id="249">
+        <label>include/net/gptp.h</label>
+        <link refid="gptp_8h"/>
+      </node>
+      <node id="305">
+        <label>include/net/http_client.h</label>
+        <link refid="http__client_8h"/>
+        <childnode refid="306" relation="include">
+        </childnode>
+      </node>
+      <node id="287">
+        <label>include/net/ieee802154.h</label>
+        <link refid="ieee802154_8h"/>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>include/net/ieee802154_mgmt.h</label>
+        <link refid="ieee802154__mgmt_8h"/>
+      </node>
+      <node id="257">
+        <label>include/net/ieee802154_radio.h</label>
+        <link refid="ieee802154__radio_8h"/>
+      </node>
+      <node id="258">
+        <label>include/net/igmp.h</label>
+        <link refid="igmp_8h"/>
+      </node>
+      <node id="304">
+        <label>include/net/lwm2m.h</label>
+        <link refid="lwm2m_8h"/>
+      </node>
+      <node id="307">
+        <label>include/net/mqtt.h</label>
+        <link refid="mqtt_8h"/>
+      </node>
+      <node id="259">
+        <label>include/net/net_config.h</label>
+        <link refid="net__config_8h"/>
+      </node>
+      <node id="260">
+        <label>include/net/net_context.h</label>
+        <link refid="net__context_8h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
         <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>include/net/net_core.h</label>
+        <link refid="net__core_8h"/>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>include/net/net_event.h</label>
+        <link refid="net__event_8h"/>
+        <childnode refid="285" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>include/net/net_if.h</label>
+        <link refid="net__if_8h"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
         </childnode>
         <childnode refid="276" relation="include">
         </childnode>
         <childnode refid="277" relation="include">
         </childnode>
-        <childnode refid="267" relation="include">
+        <childnode refid="282" relation="include">
         </childnode>
         <childnode refid="283" relation="include">
         </childnode>
-        <childnode refid="271" relation="include">
+        <childnode refid="279" relation="include">
         </childnode>
         <childnode refid="284" relation="include">
         </childnode>
       </node>
-      <node id="263">
-        <label>include/net/net_offload.h</label>
-        <link refid="net__offload_8h"/>
-      </node>
-      <node id="264">
-        <label>include/net/net_pkt.h</label>
-        <link refid="net__pkt_8h"/>
-        <childnode refid="265" relation="include">
+      <node id="302">
+        <label>include/net/net_ip.h</label>
+        <link refid="net__ip_8h"/>
+        <childnode refid="251" relation="include">
         </childnode>
-        <childnode refid="255" relation="include">
+        <childnode refid="303" relation="include">
         </childnode>
-        <childnode refid="266" relation="include">
+        <childnode refid="261" relation="include">
         </childnode>
-        <childnode refid="267" relation="include">
+        <childnode refid="254" relation="include">
         </childnode>
-        <childnode refid="268" relation="include">
+        <childnode refid="305" relation="include">
         </childnode>
-        <childnode refid="269" relation="include">
+        <childnode refid="258" relation="include">
         </childnode>
-        <childnode refid="270" relation="include">
+        <childnode refid="307" relation="include">
         </childnode>
-      </node>
-      <node id="257">
-        <label>include/net/net_pkt_filter.h</label>
-        <link refid="net__pkt__filter_8h"/>
-      </node>
-      <node id="277">
-        <label>include/net/net_stats.h</label>
-        <link refid="net__stats_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
         <childnode refid="262" relation="include">
         </childnode>
-        <childnode refid="278" relation="include">
+        <childnode refid="282" relation="include">
         </childnode>
-        <childnode refid="267" relation="include">
+        <childnode refid="283" relation="include">
         </childnode>
-      </node>
-      <node id="429">
-        <label>include/net/net_timeout.h</label>
-        <link refid="net__timeout_8h"/>
-        <childnode refid="327" relation="include">
+        <childnode refid="263" relation="include">
         </childnode>
         <childnode refid="278" relation="include">
         </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
       </node>
-      <node id="281">
-        <label>include/net/openthread.h</label>
-        <link refid="openthread_8h"/>
-      </node>
-      <node id="267">
-        <label>include/net/ppp.h</label>
-        <link refid="ppp_8h"/>
-      </node>
-      <node id="268">
-        <label>include/net/promiscuous.h</label>
-        <link refid="promiscuous_8h"/>
+      <node id="371">
+        <label>include/net/net_linkaddr.h</label>
+        <link refid="net__linkaddr_8h"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
       </node>
       <node id="285">
-        <label>include/net/ptp_time.h</label>
-        <link refid="ptp__time_8h"/>
+        <label>include/net/net_mgmt.h</label>
+        <link refid="net__mgmt_8h"/>
         <childnode refid="286" relation="include">
         </childnode>
         <childnode refid="255" relation="include">
         </childnode>
         <childnode refid="287" relation="include">
         </childnode>
-        <childnode refid="264" relation="include">
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
         </childnode>
       </node>
-      <node id="253">
-        <label>include/net/sntp.h</label>
-        <link refid="sntp_8h"/>
+      <node id="274">
+        <label>include/net/net_offload.h</label>
+        <link refid="net__offload_8h"/>
       </node>
-      <node id="243">
-        <label>include/net/socket.h</label>
-        <link refid="net_2socket_8h"/>
-        <childnode refid="244" relation="include">
+      <node id="275">
+        <label>include/net/net_pkt.h</label>
+        <link refid="net__pkt_8h"/>
+        <childnode refid="253" relation="include">
         </childnode>
-        <childnode refid="245" relation="include">
+        <childnode refid="254" relation="include">
         </childnode>
-        <childnode refid="246" relation="include">
+        <childnode refid="257" relation="include">
         </childnode>
-        <childnode refid="247" relation="include">
+        <childnode refid="276" relation="include">
         </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>include/net/net_pkt_filter.h</label>
+        <link refid="net__pkt__filter_8h"/>
+      </node>
+      <node id="289">
+        <label>include/net/net_stats.h</label>
+        <link refid="net__stats_8h"/>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>include/net/net_timeout.h</label>
+        <link refid="net__timeout_8h"/>
         <childnode refid="248" relation="include">
         </childnode>
         <childnode refid="250" relation="include">
         </childnode>
-        <childnode refid="251" relation="include">
-        </childnode>
-        <childnode refid="252" relation="include">
+      </node>
+      <node id="281">
+        <label>include/net/openthread.h</label>
+        <link refid="openthread_8h"/>
+      </node>
+      <node id="276">
+        <label>include/net/ppp.h</label>
+        <link refid="ppp_8h"/>
+      </node>
+      <node id="277">
+        <label>include/net/promiscuous.h</label>
+        <link refid="promiscuous_8h"/>
+      </node>
+      <node id="290">
+        <label>include/net/ptp_time.h</label>
+        <link refid="ptp__time_8h"/>
+        <childnode refid="291" relation="include">
         </childnode>
         <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>include/net/sntp.h</label>
+        <link refid="sntp_8h"/>
+      </node>
+      <node id="262">
+        <label>include/net/socket.h</label>
+        <link refid="net_2socket_8h"/>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
         </childnode>
       </node>
       <node id="282">
@@ -1351,67 +1373,67 @@
         <label>include/net/socket_net_mgmt.h</label>
         <link refid="socket__net__mgmt_8h"/>
       </node>
-      <node id="244">
+      <node id="263">
         <label>include/net/socket_offload.h</label>
         <link refid="socket__offload_8h"/>
       </node>
-      <node id="288">
+      <node id="309">
         <label>include/net/socket_select.h</label>
         <link refid="socket__select_8h"/>
-        <childnode refid="243" relation="include">
+        <childnode refid="262" relation="include">
         </childnode>
-        <childnode refid="289" relation="include">
+        <childnode refid="310" relation="include">
         </childnode>
       </node>
-      <node id="249">
+      <node id="268">
         <label>include/net/socketutils.h</label>
         <link refid="socketutils_8h"/>
       </node>
-      <node id="245">
+      <node id="264">
         <label>include/net/tftp.h</label>
         <link refid="tftp_8h"/>
       </node>
-      <node id="328">
+      <node id="292">
         <label>include/net/trickle.h</label>
         <link refid="trickle_8h"/>
       </node>
-      <node id="269">
+      <node id="278">
         <label>include/net/udp.h</label>
         <link refid="udp_8h"/>
       </node>
-      <node id="270">
+      <node id="279">
         <label>include/net/virtual.h</label>
         <link refid="virtual_8h"/>
-        <childnode refid="271" relation="include">
+        <childnode refid="280" relation="include">
         </childnode>
       </node>
-      <node id="271">
+      <node id="280">
         <label>include/net/virtual_mgmt.h</label>
         <link refid="virtual__mgmt_8h"/>
       </node>
-      <node id="259">
+      <node id="306">
         <label>include/net/websocket.h</label>
         <link refid="websocket_8h"/>
-        <childnode refid="260" relation="include">
+        <childnode refid="307" relation="include">
         </childnode>
       </node>
       <node id="284">
         <label>include/net/wifi_mgmt.h</label>
         <link refid="wifi__mgmt_8h"/>
       </node>
-      <node id="334">
+      <node id="336">
         <label>include/pm/device.h</label>
         <link refid="pm_2device_8h"/>
-        <childnode refid="334" relation="include">
+        <childnode refid="336" relation="include">
         </childnode>
-        <childnode refid="335" relation="include">
+        <childnode refid="337" relation="include">
         </childnode>
       </node>
-      <node id="335">
+      <node id="337">
         <label>include/pm/device_runtime.h</label>
         <link refid="device__runtime_8h"/>
       </node>
-      <node id="290">
+      <node id="311">
         <label>include/pm/pm.h</label>
         <link refid="pm_8h"/>
         <childnode refid="207" relation="include">
@@ -1421,109 +1443,109 @@
         <childnode refid="167" relation="include">
         </childnode>
       </node>
-      <node id="246">
+      <node id="265">
         <label>include/posix/arpa/inet.h</label>
         <link refid="inet_8h"/>
       </node>
-      <node id="371">
+      <node id="373">
         <label>include/posix/mqueue.h</label>
         <link refid="mqueue_8h"/>
       </node>
-      <node id="247">
+      <node id="266">
         <label>include/posix/net/if.h</label>
         <link refid="if_8h"/>
       </node>
-      <node id="248">
+      <node id="267">
         <label>include/posix/netdb.h</label>
         <link refid="netdb_8h"/>
-        <childnode refid="249" relation="include">
+        <childnode refid="268" relation="include">
         </childnode>
       </node>
-      <node id="250">
+      <node id="269">
         <label>include/posix/netinet/in.h</label>
         <link refid="in_8h"/>
       </node>
-      <node id="251">
+      <node id="270">
         <label>include/posix/netinet/tcp.h</label>
         <link refid="tcp_8h"/>
       </node>
-      <node id="252">
+      <node id="271">
         <label>include/posix/poll.h</label>
         <link refid="poll_8h"/>
-        <childnode refid="253" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
       </node>
       <node id="183">
         <label>include/posix/pthread.h</label>
         <link refid="pthread_8h"/>
       </node>
-      <node id="372">
+      <node id="374">
         <label>include/posix/semaphore.h</label>
         <link refid="semaphore_8h"/>
       </node>
-      <node id="349">
+      <node id="351">
         <label>include/posix/sys/eventfd.h</label>
         <link refid="eventfd_8h"/>
       </node>
-      <node id="289">
+      <node id="310">
         <label>include/posix/sys/select.h</label>
         <link refid="select_8h"/>
       </node>
-      <node id="254">
+      <node id="273">
         <label>include/posix/sys/socket.h</label>
         <link refid="posix_2sys_2socket_8h"/>
-        <childnode refid="253" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
       </node>
-      <node id="370">
+      <node id="372">
         <label>include/posix/time.h</label>
         <link refid="include_2posix_2time_8h"/>
-        <childnode refid="371" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
         <childnode refid="183" relation="include">
         </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
         <childnode refid="372" relation="include">
         </childnode>
-        <childnode refid="370" relation="include">
-        </childnode>
       </node>
-      <node id="318">
+      <node id="240">
         <label>include/shell/shell.h</label>
         <link refid="shell_2shell_8h"/>
-        <childnode refid="319" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
-        <childnode refid="320" relation="include">
+        <childnode refid="242" relation="include">
         </childnode>
-        <childnode refid="321" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
-        <childnode refid="322" relation="include">
+        <childnode refid="244" relation="include">
         </childnode>
       </node>
-      <node id="319">
+      <node id="241">
         <label>include/shell/shell_dummy.h</label>
         <link refid="shell__dummy_8h"/>
       </node>
-      <node id="351">
+      <node id="353">
         <label>include/shell/shell_history.h</label>
         <link refid="shell__history_8h"/>
-        <childnode refid="318" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
       </node>
-      <node id="317">
+      <node id="239">
         <label>include/shell/shell_log_backend.h</label>
         <link refid="shell__log__backend_8h"/>
-        <childnode refid="318" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
       </node>
-      <node id="320">
+      <node id="242">
         <label>include/shell/shell_rtt.h</label>
         <link refid="shell__rtt_8h"/>
       </node>
-      <node id="321">
+      <node id="243">
         <label>include/shell/shell_telnet.h</label>
         <link refid="shell__telnet_8h"/>
       </node>
-      <node id="322">
+      <node id="244">
         <label>include/shell/shell_uart.h</label>
         <link refid="shell__uart_8h"/>
       </node>
@@ -1531,7 +1553,7 @@
         <label>include/smf.h</label>
         <link refid="smf_8h"/>
       </node>
-      <node id="298">
+      <node id="319">
         <label>include/spinlock.h</label>
         <link refid="spinlock_8h"/>
         <childnode refid="3" relation="include">
@@ -1541,20 +1563,20 @@
         <childnode refid="149" relation="include">
         </childnode>
       </node>
-      <node id="346">
+      <node id="348">
         <label>include/storage/disk_access.h</label>
         <link refid="disk__access_8h"/>
       </node>
-      <node id="291">
+      <node id="312">
         <label>include/sw_isr_table.h</label>
         <link refid="sw__isr__table_8h"/>
         <childnode refid="187" relation="include">
         </childnode>
-        <childnode refid="292" relation="include">
+        <childnode refid="313" relation="include">
         </childnode>
-        <childnode refid="293" relation="include">
+        <childnode refid="314" relation="include">
         </childnode>
-        <childnode refid="295" relation="include">
+        <childnode refid="316" relation="include">
         </childnode>
         <childnode refid="192" relation="include">
         </childnode>
@@ -1571,61 +1593,61 @@
         <childnode refid="52" relation="include">
         </childnode>
       </node>
-      <node id="394">
+      <node id="397">
         <label>include/sys/__assert.h</label>
         <link refid="____assert_8h_source"/>
-        <childnode refid="355" relation="include">
+        <childnode refid="357" relation="include">
         </childnode>
-        <childnode refid="395" relation="include">
-        </childnode>
-        <childnode refid="402" relation="include">
-        </childnode>
-        <childnode refid="404" relation="include">
+        <childnode refid="398" relation="include">
         </childnode>
         <childnode refid="405" relation="include">
         </childnode>
-        <childnode refid="406" relation="include">
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="315" relation="include">
+        <childnode refid="237" relation="include">
         </childnode>
-        <childnode refid="331" relation="include">
+        <childnode refid="295" relation="include">
         </childnode>
-        <childnode refid="327" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
-        <childnode refid="273" relation="include">
+        <childnode refid="285" relation="include">
         </childnode>
-        <childnode refid="298" relation="include">
+        <childnode refid="319" relation="include">
         </childnode>
-        <childnode refid="339" relation="include">
+        <childnode refid="341" relation="include">
         </childnode>
-        <childnode refid="414" relation="include">
+        <childnode refid="417" relation="include">
         </childnode>
-        <childnode refid="379" relation="include">
+        <childnode refid="381" relation="include">
         </childnode>
-        <childnode refid="415" relation="include">
+        <childnode refid="418" relation="include">
         </childnode>
-        <childnode refid="416" relation="include">
+        <childnode refid="419" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="296">
+      <node id="317">
         <label>include/sys/arch_interface.h</label>
         <link refid="arch__interface_8h"/>
-        <childnode refid="297" relation="include">
+        <childnode refid="318" relation="include">
         </childnode>
         <childnode refid="180" relation="include">
         </childnode>
-        <childnode refid="299" relation="include">
+        <childnode refid="320" relation="include">
         </childnode>
-        <childnode refid="300" relation="include">
+        <childnode refid="321" relation="include">
         </childnode>
-        <childnode refid="301" relation="include">
+        <childnode refid="322" relation="include">
         </childnode>
       </node>
-      <node id="302">
+      <node id="323">
         <label>include/sys/atomic.h</label>
         <link refid="atomic_8h"/>
         <childnode refid="212" relation="include">
@@ -1634,149 +1656,149 @@
         </childnode>
         <childnode refid="216" relation="include">
         </childnode>
-        <childnode refid="303" relation="include">
+        <childnode refid="324" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="306" relation="include">
+        <childnode refid="327" relation="include">
         </childnode>
-        <childnode refid="314" relation="include">
+        <childnode refid="296" relation="include">
         </childnode>
-        <childnode refid="333" relation="include">
-        </childnode>
-        <childnode refid="332" relation="include">
-        </childnode>
-        <childnode refid="255" relation="include">
-        </childnode>
-        <childnode refid="262" relation="include">
-        </childnode>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="334" relation="include">
-        </childnode>
-        <childnode refid="317" relation="include">
-        </childnode>
-        <childnode refid="322" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
         <childnode refid="298" relation="include">
         </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
         <childnode refid="336" relation="include">
         </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
         <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
       </node>
-      <node id="339">
+      <node id="341">
         <label>include/sys/byteorder.h</label>
         <link refid="byteorder_8h"/>
-        <childnode refid="340" relation="include">
+        <childnode refid="342" relation="include">
         </childnode>
-        <childnode refid="341" relation="include">
+        <childnode refid="343" relation="include">
         </childnode>
-        <childnode refid="238" relation="include">
+        <childnode refid="302" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="342">
+      <node id="344">
         <label>include/sys/cbprintf.h</label>
         <link refid="cbprintf_8h"/>
-        <childnode refid="333" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
       </node>
-      <node id="343">
+      <node id="345">
         <label>include/sys/cbprintf_internal.h</label>
         <link refid="cbprintf__internal_8h"/>
-        <childnode refid="342" relation="include">
+        <childnode refid="344" relation="include">
         </childnode>
       </node>
-      <node id="414">
+      <node id="417">
         <label>include/sys/check.h</label>
         <link refid="check_8h"/>
       </node>
-      <node id="231">
+      <node id="232">
         <label>include/sys/device_mmio.h</label>
         <link refid="device__mmio_8h"/>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="233" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="344">
+      <node id="346">
         <label>include/sys/dlist.h</label>
         <link refid="dlist_8h"/>
-        <childnode refid="227" relation="include">
+        <childnode refid="228" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
-        </childnode>
         <childnode refid="347" relation="include">
         </childnode>
-        <childnode refid="350" relation="include">
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="306" relation="include">
+        <childnode refid="327" relation="include">
         </childnode>
-        <childnode refid="351" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
         <childnode refid="182" relation="include">
         </childnode>
       </node>
-      <node id="353">
+      <node id="355">
         <label>include/sys/errno_private.h</label>
         <link refid="errno__private_8h"/>
-        <childnode refid="354" relation="include">
+        <childnode refid="356" relation="include">
         </childnode>
       </node>
-      <node id="348">
+      <node id="350">
         <label>include/sys/fdtable.h</label>
         <link refid="fdtable_8h"/>
-        <childnode refid="349" relation="include">
+        <childnode refid="351" relation="include">
         </childnode>
       </node>
-      <node id="375">
+      <node id="377">
         <label>include/sys/heap_listener.h</label>
         <link refid="heap__listener_8h"/>
       </node>
-      <node id="376">
+      <node id="378">
         <label>include/sys/libc-hooks.h</label>
         <link refid="libc-hooks_8h"/>
         <childnode refid="166" relation="include">
         </childnode>
       </node>
-      <node id="378">
+      <node id="380">
         <label>include/sys/math_extras.h</label>
         <link refid="math__extras_8h"/>
-        <childnode refid="358" relation="include">
+        <childnode refid="360" relation="include">
         </childnode>
         <childnode refid="180" relation="include">
         </childnode>
       </node>
-      <node id="377">
+      <node id="379">
         <label>include/sys/math_extras_impl.h</label>
         <link refid="math__extras__impl_8h"/>
-        <childnode refid="378" relation="include">
+        <childnode refid="380" relation="include">
         </childnode>
       </node>
-      <node id="237">
+      <node id="301">
         <label>include/sys/mem_blocks.h</label>
         <link refid="mem__blocks_8h"/>
       </node>
-      <node id="379">
+      <node id="381">
         <label>include/sys/mem_manage.h</label>
         <link refid="mem__manage_8h"/>
-        <childnode refid="380" relation="include">
+        <childnode refid="382" relation="include">
         </childnode>
-        <childnode refid="231" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
@@ -1787,44 +1809,44 @@
         <childnode refid="77" relation="include">
         </childnode>
       </node>
-      <node id="430">
+      <node id="433">
         <label>include/sys/mpsc_packet.h</label>
         <link refid="mpsc__packet_8h"/>
-        <childnode refid="333" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
-        <childnode refid="431" relation="include">
+        <childnode refid="434" relation="include">
         </childnode>
       </node>
-      <node id="431">
+      <node id="434">
         <label>include/sys/mpsc_pbuf.h</label>
         <link refid="mpsc__pbuf_8h"/>
-        <childnode refid="317" relation="include">
+        <childnode refid="239" relation="include">
         </childnode>
       </node>
-      <node id="336">
+      <node id="338">
         <label>include/sys/mutex.h</label>
         <link refid="mutex_8h"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="304" relation="include">
         </childnode>
-        <childnode refid="260" relation="include">
+        <childnode refid="307" relation="include">
         </childnode>
         <childnode refid="76" relation="include">
         </childnode>
         <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="337" relation="include">
+        <childnode refid="339" relation="include">
         </childnode>
         <childnode refid="111" relation="include">
         </childnode>
       </node>
-      <node id="381">
+      <node id="383">
         <label>include/sys/printk.h</label>
         <link refid="printk_8h"/>
-        <childnode refid="382" relation="include">
+        <childnode refid="384" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="394" relation="include">
+        <childnode refid="397" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -1832,54 +1854,54 @@
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="417" relation="include">
+        <childnode refid="420" relation="include">
         </childnode>
-        <childnode refid="418" relation="include">
+        <childnode refid="421" relation="include">
         </childnode>
         <childnode refid="169" relation="include">
         </childnode>
       </node>
-      <node id="419">
+      <node id="422">
         <label>include/sys/reboot.h</label>
         <link refid="reboot_8h"/>
       </node>
-      <node id="373">
+      <node id="375">
         <label>include/sys/ring_buffer.h</label>
         <link refid="ring__buffer_8h"/>
-        <childnode refid="374" relation="include">
+        <childnode refid="376" relation="include">
         </childnode>
-        <childnode refid="351" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
-        <childnode refid="322" relation="include">
+        <childnode refid="244" relation="include">
         </childnode>
       </node>
-      <node id="338">
+      <node id="340">
         <label>include/sys/sem.h</label>
         <link refid="sem_8h"/>
         <childnode refid="89" relation="include">
         </childnode>
       </node>
-      <node id="415">
+      <node id="418">
         <label>include/sys/sflist.h</label>
         <link refid="sflist_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="420">
+      <node id="423">
         <label>include/sys/time_units.h</label>
         <link refid="time__units_8h"/>
-        <childnode refid="352" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
         <childnode refid="171" relation="include">
         </childnode>
       </node>
-      <node id="352">
+      <node id="354">
         <label>include/sys_clock.h</label>
         <link refid="include_2sys__clock_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="234">
+      <node id="235">
         <label>include/syscall.h</label>
         <link refid="syscall_8h"/>
         <childnode refid="3" relation="include">
@@ -1909,7 +1931,7 @@
         <childnode refid="182" relation="include">
         </childnode>
       </node>
-      <node id="299">
+      <node id="320">
         <label>include/timing/timing.h</label>
         <link refid="timing_8h"/>
         <childnode refid="75" relation="include">
@@ -1956,73 +1978,71 @@
         </childnode>
         <childnode refid="224" relation="include">
         </childnode>
+        <childnode refid="225" relation="include">
+        </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="225" relation="include">
+        <childnode refid="226" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="227" relation="include">
         </childnode>
-        <childnode refid="228" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
+        <childnode refid="229" relation="include">
         </childnode>
         <childnode refid="236" relation="include">
         </childnode>
-        <childnode refid="238" relation="include">
+        <childnode refid="299" relation="include">
         </childnode>
-        <childnode refid="285" relation="include">
-        </childnode>
-        <childnode refid="288" relation="include">
-        </childnode>
-        <childnode refid="290" relation="include">
-        </childnode>
-        <childnode refid="291" relation="include">
-        </childnode>
-        <childnode refid="296" relation="include">
+        <childnode refid="300" relation="include">
         </childnode>
         <childnode refid="302" relation="include">
         </childnode>
-        <childnode refid="339" relation="include">
+        <childnode refid="290" relation="include">
         </childnode>
-        <childnode refid="342" relation="include">
+        <childnode refid="309" relation="include">
         </childnode>
-        <childnode refid="343" relation="include">
+        <childnode refid="311" relation="include">
         </childnode>
-        <childnode refid="231" relation="include">
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
         </childnode>
         <childnode refid="344" relation="include">
         </childnode>
-        <childnode refid="353" relation="include">
+        <childnode refid="345" relation="include">
         </childnode>
-        <childnode refid="375" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="376" relation="include">
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
         </childnode>
         <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
         </childnode>
         <childnode refid="379" relation="include">
         </childnode>
         <childnode refid="381" relation="include">
         </childnode>
-        <childnode refid="419" relation="include">
+        <childnode refid="383" relation="include">
         </childnode>
-        <childnode refid="420" relation="include">
+        <childnode refid="422" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="423" relation="include">
         </childnode>
-        <childnode refid="421" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-        <childnode refid="426" relation="include">
+        <childnode refid="424" relation="include">
         </childnode>
-        <childnode refid="432" relation="include">
-        </childnode>
-        <childnode refid="433" relation="include">
-        </childnode>
-        <childnode refid="434" relation="include">
+        <childnode refid="429" relation="include">
         </childnode>
         <childnode refid="435" relation="include">
         </childnode>
@@ -2032,6 +2052,12 @@
         </childnode>
         <childnode refid="438" relation="include">
         </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
         <childnode refid="77" relation="include">
         </childnode>
         <childnode refid="176" relation="include">
@@ -2039,21 +2065,21 @@
         <childnode refid="177" relation="include">
         </childnode>
       </node>
-      <node id="312">
+      <node id="334">
         <label>include/tracing/tracing.h</label>
         <link refid="tracing_2tracing_8h"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="335" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="311">
+      <node id="333">
         <label>include/tracing/tracking.h</label>
         <link refid="tracking_8h"/>
-        <childnode refid="312" relation="include">
+        <childnode refid="334" relation="include">
         </childnode>
       </node>
-      <node id="329">
+      <node id="293">
         <label>include/usb/usb_device.h</label>
         <link refid="usb__device_8h"/>
       </node>
@@ -2075,11 +2101,11 @@
         <childnode refid="185" relation="include">
         </childnode>
       </node>
-      <node id="300">
+      <node id="321">
         <label>kernel/include/kernel_arch_interface.h</label>
         <link refid="kernel__arch__interface_8h"/>
       </node>
-      <node id="416">
+      <node id="419">
         <label>lib/libc/minimal/include/assert.h</label>
         <link refid="assert_8h"/>
         <childnode refid="37" relation="include">
@@ -2087,82 +2113,82 @@
         <childnode refid="38" relation="include">
         </childnode>
       </node>
-      <node id="354">
+      <node id="356">
         <label>lib/libc/minimal/include/errno.h</label>
         <link refid="errno_8h"/>
-        <childnode refid="355" relation="include">
-        </childnode>
-        <childnode refid="356" relation="include">
-        </childnode>
         <childnode refid="357" relation="include">
         </childnode>
         <childnode refid="358" relation="include">
         </childnode>
         <childnode refid="359" relation="include">
         </childnode>
-        <childnode refid="365" relation="include">
+        <childnode refid="360" relation="include">
         </childnode>
-        <childnode refid="368" relation="include">
+        <childnode refid="361" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="369" relation="include">
+        <childnode refid="367" relation="include">
         </childnode>
         <childnode refid="370" relation="include">
         </childnode>
-        <childnode refid="343" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="373" relation="include">
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="421">
+      <node id="424">
         <label>lib/libc/minimal/include/stdio.h</label>
         <link refid="stdio_8h"/>
         <childnode refid="223" relation="include">
         </childnode>
-        <childnode refid="422" relation="include">
+        <childnode refid="425" relation="include">
         </childnode>
-        <childnode refid="424" relation="include">
+        <childnode refid="427" relation="include">
         </childnode>
-        <childnode refid="342" relation="include">
+        <childnode refid="344" relation="include">
         </childnode>
-        <childnode refid="376" relation="include">
+        <childnode refid="378" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="426">
+      <node id="429">
         <label>lib/libc/minimal/include/string.h</label>
         <link refid="string_8h"/>
-        <childnode refid="382" relation="include">
+        <childnode refid="384" relation="include">
         </childnode>
-        <childnode refid="383" relation="include">
+        <childnode refid="385" relation="include">
         </childnode>
         <childnode refid="211" relation="include">
         </childnode>
-        <childnode refid="427" relation="include">
+        <childnode refid="430" relation="include">
         </childnode>
-        <childnode refid="314" relation="include">
+        <childnode refid="296" relation="include">
         </childnode>
-        <childnode refid="333" relation="include">
+        <childnode refid="236" relation="include">
         </childnode>
-        <childnode refid="327" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
-        <childnode refid="238" relation="include">
+        <childnode refid="302" relation="include">
         </childnode>
-        <childnode refid="429" relation="include">
+        <childnode refid="432" relation="include">
         </childnode>
         <childnode refid="183" relation="include">
         </childnode>
-        <childnode refid="430" relation="include">
+        <childnode refid="433" relation="include">
         </childnode>
-        <childnode refid="431" relation="include">
-        </childnode>
-        <childnode refid="373" relation="include">
+        <childnode refid="434" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -2177,11 +2203,11 @@
         <childnode refid="155" relation="include">
         </childnode>
       </node>
-      <node id="432">
+      <node id="435">
         <label>lib/libc/minimal/include/time.h</label>
         <link refid="lib_2libc_2minimal_2include_2time_8h"/>
       </node>
-      <node id="301">
+      <node id="322">
         <label>subsys/testsuite/ztest/include/arch/cpu.h</label>
         <link refid="subsys_2testsuite_2ztest_2include_2arch_2cpu_8h"/>
       </node>
@@ -2599,7 +2625,7 @@
         <label>tests/kernel/fatal/exception/src/main.c</label>
         <link refid="fatal_2exception_2src_2main_8c"/>
       </node>
-      <node id="417">
+      <node id="420">
         <label>tests/kernel/fatal/message_capture/src/main.c</label>
         <link refid="fatal_2message__capture_2src_2main_8c"/>
       </node>
@@ -2655,27 +2681,27 @@
         <label>tests/kernel/fpu_sharing/float_disable/src/main.c</label>
         <link refid="fpu__sharing_2float__disable_2src_2main_8c"/>
       </node>
-      <node id="433">
+      <node id="436">
         <label>tests/kernel/fpu_sharing/generic/src/float_regs_arc_gcc.h</label>
         <link refid="float__regs__arc__gcc_8h"/>
       </node>
-      <node id="434">
+      <node id="437">
         <label>tests/kernel/fpu_sharing/generic/src/float_regs_arm64_gcc.h</label>
         <link refid="float__regs__arm64__gcc_8h"/>
       </node>
-      <node id="435">
+      <node id="438">
         <label>tests/kernel/fpu_sharing/generic/src/float_regs_arm_gcc.h</label>
         <link refid="float__regs__arm__gcc_8h"/>
       </node>
-      <node id="436">
+      <node id="439">
         <label>tests/kernel/fpu_sharing/generic/src/float_regs_riscv_gcc.h</label>
         <link refid="float__regs__riscv__gcc_8h"/>
       </node>
-      <node id="437">
+      <node id="440">
         <label>tests/kernel/fpu_sharing/generic/src/float_regs_sparc.h</label>
         <link refid="float__regs__sparc_8h"/>
       </node>
-      <node id="438">
+      <node id="441">
         <label>tests/kernel/fpu_sharing/generic/src/float_regs_x86_gcc.h</label>
         <link refid="float__regs__x86__gcc_8h"/>
       </node>
@@ -2847,7 +2873,7 @@
         <label>tests/kernel/mem_protect/protection/src/main.c</label>
         <link refid="mem__protect_2protection_2src_2main_8c"/>
       </node>
-      <node id="418">
+      <node id="421">
         <label>tests/kernel/mem_protect/protection/src/targets.c</label>
         <link refid="targets_8c"/>
       </node>
@@ -2955,7 +2981,7 @@
         <label>tests/kernel/mutex/sys_mutex/src/main.c</label>
         <link refid="mutex_2sys__mutex_2src_2main_8c"/>
       </node>
-      <node id="337">
+      <node id="339">
         <label>tests/kernel/mutex/sys_mutex/src/thread_12.c</label>
         <link refid="thread__12_8c"/>
       </node>
@@ -3273,6 +3299,66 @@
         </inbodydescription>
         <location file="include/toolchain.h" line="33" column="9" bodyfile="include/toolchain.h" bodystart="33" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="toolchain_8h_1adbba0f726fc66d7100916c683b7568ae" prot="public" static="no">
+        <name>GCC_VERSION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>GCC version in xxyyzz for xx.yy.zz. Zero if not GCC compatible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain.h" line="60" column="9" bodyfile="include/toolchain.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="toolchain_8h_1a4e6966b83377f8ea001f6bc19b551b24" prot="public" static="no">
+        <name>CLANG_VERSION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Clang version in xxyyzz for xx.yy.zz. Zero if not Clang compatible. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain.h" line="68" column="9" bodyfile="include/toolchain.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="toolchain_8h_1a763b60a74b3b8917b8a91614f1d443e4" prot="public" static="no">
+        <name>TOOLCHAIN_HAS_PRAGMA_DIAG</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Indicate if toolchain supports #pragma diagnostics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain.h" line="76" column="9" bodyfile="include/toolchain.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="toolchain_8h_1a49263980cf39cd330a9e9976dccb4c90" prot="public" static="no">
+        <name>TOOLCHAIN_HAS_C_GENERIC</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Indicate if toolchain supports C Generic. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain.h" line="91" column="11" bodyfile="include/toolchain.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="toolchain_8h_1a9502cad506e0dfb7c3a7b51b5eeb5eeb" prot="public" static="no">
+        <name>TOOLCHAIN_HAS_C_AUTO_TYPE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+<para>Indicate if toolchain supports C __auto_type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain.h" line="100" column="9" bodyfile="include/toolchain.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Macros to abstract toolchain specific capabilities. </para>
@@ -3320,21 +3406,49 @@
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;Invalid/unknown<sp/>toolchain<sp/>configuration&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>Ensure<sp/>that<sp/>__BYTE_ORDER__<sp/>and<sp/>related<sp/>preprocessor<sp/>definitions<sp/>are<sp/>defined,</highlight></codeline>
-<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>as<sp/>these<sp/>are<sp/>often<sp/>used<sp/>without<sp/>checking<sp/>for<sp/>definition<sp/>and<sp/>doing<sp/>so<sp/>can</highlight></codeline>
-<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>cause<sp/>unexpected<sp/>behaviours.</highlight></codeline>
-<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LINKER</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__BYTE_ORDER__)<sp/>||<sp/>!defined(__ORDER_BIG_ENDIAN__)<sp/>||<sp/>\</highlight></codeline>
-<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>!defined(__ORDER_LITTLE_ENDIAN__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;__BYTE_ORDER__<sp/>is<sp/>not<sp/>defined&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!_LINKER<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_TOOLCHAIN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GCC_VERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="toolchain_8h_1adbba0f726fc66d7100916c683b7568ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GCC_VERSION<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CLANG_VERSION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="toolchain_8h_1a4e6966b83377f8ea001f6bc19b551b24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLANG_VERSION<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TOOLCHAIN_HAS_PRAGMA_DIAG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="toolchain_8h_1a763b60a74b3b8917b8a91614f1d443e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLCHAIN_HAS_PRAGMA_DIAG<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__STDC_VERSION__<sp/>&gt;=<sp/>201112L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>_Generic<sp/>is<sp/>introduced<sp/>in<sp/>C11,<sp/>so<sp/>it<sp/>is<sp/>supported.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifdef<sp/>TOOLCHAIN_HAS_C_GENERIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>undef<sp/>TOOLCHAIN_HAS_C_GENERIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>TOOLCHAIN_HAS_C_GENERIC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>ifndef<sp/>TOOLCHAIN_HAS_C_GENERIC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="toolchain_8h_1a49263980cf39cd330a9e9976dccb4c90" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/><sp/>define<sp/>TOOLCHAIN_HAS_C_GENERIC<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TOOLCHAIN_HAS_C_AUTO_TYPE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="toolchain_8h_1a9502cad506e0dfb7c3a7b51b5eeb5eeb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLCHAIN_HAS_C_AUTO_TYPE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>*<sp/>Ensure<sp/>that<sp/>__BYTE_ORDER__<sp/>and<sp/>related<sp/>preprocessor<sp/>definitions<sp/>are<sp/>defined,</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/>*<sp/>as<sp/>these<sp/>are<sp/>often<sp/>used<sp/>without<sp/>checking<sp/>for<sp/>definition<sp/>and<sp/>doing<sp/>so<sp/>can</highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/>*<sp/>cause<sp/>unexpected<sp/>behaviours.</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LINKER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(__BYTE_ORDER__)<sp/>||<sp/>!defined(__ORDER_BIG_ENDIAN__)<sp/>||<sp/>\</highlight></codeline>
+<codeline lineno="110"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>!defined(__ORDER_LITTLE_ENDIAN__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;__BYTE_ORDER__<sp/>is<sp/>not<sp/>defined&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!_LINKER<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_TOOLCHAIN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/toolchain.h"/>
   </compounddef>

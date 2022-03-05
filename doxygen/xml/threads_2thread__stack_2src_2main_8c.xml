@@ -389,6 +389,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="103" relation="include">
@@ -938,7 +940,7 @@
       </memberdef>
       <memberdef kind="define" id="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" prot="public" static="no">
         <name>STEST_STACKSIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -990,16 +992,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1afd3035ccb7dcdcb5cb3dda5278281a76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1aa3e7c885076ce363fa60bfaf84ec55c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(user_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(user_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>user_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1009,10 +1011,10 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_stack/src/main.c" line="20" column="1" declfile="tests/kernel/threads/thread_stack/src/main.c" declline="20" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1a527f8cdb4752b23c1bf4258ce454c72f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1a833b718aabfc093611f43156718b7f8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(user_stack_array, 3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(user_stack_array, 3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>user_stack_array</type>
@@ -1021,7 +1023,7 @@
           <type>3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1031,16 +1033,16 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_stack/src/main.c" line="21" column="1" declfile="tests/kernel/threads/thread_stack/src/main.c" declline="21" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1abf20d8da7b5829da0eb6ccb4dae81b37" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1a72c0793eec55b1d100382b62b7d3c06d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_KERNEL_STACK_DEFINE</definition>
-        <argsstring>(kern_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(kern_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_KERNEL_STACK_DEFINE</name>
         <param>
           <type>kern_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1050,10 +1052,10 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_stack/src/main.c" line="22" column="1" declfile="tests/kernel/threads/thread_stack/src/main.c" declline="22" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1a79a4151c7dc31ed5375f6885975d7cc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__stack_2src_2main_8c_1a04898bb159f1775eabb0351239cb357a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_KERNEL_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(kern_stack_array, 3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(kern_stack_array, 3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_KERNEL_STACK_ARRAY_DEFINE</name>
         <param>
           <type>kern_stack_array</type>
@@ -1062,7 +1064,7 @@
           <type>3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1269,16 +1271,16 @@
 <codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="threads_2thread__stack_2src_2main_8c_1aaf99baf6b57ceed1a2949db9e149af47" kindref="member">test_thread</ref>;</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_STACKS<sp/><sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STEST_STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(user_stack,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(user_stack_array,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a8e40d3bd60ba1c7c371a6099be36fb53" kindref="member">NUM_STACKS</ref>,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><ref refid="threads_2thread__stack_2src_2main_8c_1abf20d8da7b5829da0eb6ccb4dae81b37" kindref="member">K_KERNEL_STACK_DEFINE</ref>(kern_stack,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="threads_2thread__stack_2src_2main_8c_1a79a4151c7dc31ed5375f6885975d7cc2" kindref="member">K_KERNEL_STACK_ARRAY_DEFINE</ref>(kern_stack_array,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a8e40d3bd60ba1c7c371a6099be36fb53" kindref="member">NUM_STACKS</ref>,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STEST_STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(user_stack,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(user_stack_array,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a8e40d3bd60ba1c7c371a6099be36fb53" kindref="member">NUM_STACKS</ref>,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="threads_2thread__stack_2src_2main_8c_1a72c0793eec55b1d100382b62b7d3c06d" kindref="member">K_KERNEL_STACK_DEFINE</ref>(kern_stack,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="threads_2thread__stack_2src_2main_8c_1a04898bb159f1775eabb0351239cb357a" kindref="member">K_KERNEL_STACK_ARRAY_DEFINE</ref>(kern_stack_array,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a8e40d3bd60ba1c7c371a6099be36fb53" kindref="member">NUM_STACKS</ref>,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25" refid="structfoo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfoo" kindref="compound">foo</ref><sp/>{</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfoo_1a791ce045b5de311896179f7892df233f" kindref="member">bar</ref>;</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfoo_1a8e2d880f4ccefc7e0431bca7b50d351e" kindref="member">K_KERNEL_STACK_MEMBER</ref>(<ref refid="smp__boot__delay_2src_2main_8c_1a96786824adbf96016a9dbf6eded02b94" kindref="member">stack</ref>,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structfoo_1a534ae57e6aba79b1d2ccf6a19402d727" kindref="member">K_KERNEL_STACK_MEMBER</ref>(<ref refid="smp__boot__delay_2src_2main_8c_1a96786824adbf96016a9dbf6eded02b94" kindref="member">stack</ref>,<sp/><ref refid="threads_2thread__stack_2src_2main_8c_1a2b8e8c7827c15e768ee3d2bd88d369a9" kindref="member">STEST_STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfoo_1a322ba1ca32537c718f36f8f3cb58f167" kindref="member">baz</ref>;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>

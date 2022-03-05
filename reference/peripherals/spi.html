@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -200,7 +202,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -381,8 +383,8 @@
 
 </div>
 <div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric" id="breathe-section-title-spi-miso-lines-(if-\verbatim-embed:rst:inline-:kconfig:`config_spi_extended_modes`-\endverbatim-is-enabled)">SPI MISO lines (if \verbatim embed:rst:inline :kconfig:`CONFIG_SPI_EXTENDED_MODES` \endverbatim is enabled)</p>
-<p>Some controllers support dual, quad or octal MISO lines connected to slaves. Default is single, which is the case most of the time. Without <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SPI_EXTENDED_MODES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPI_EXTENDED_MODES</span></code></a> </span> being enabled, single is the only supported one. </p>
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-spi-miso-lines-(if-\verbatim-embed:rst:inline-:kconfig:option:`config_spi_extended_modes`-\endverbatim-is-enabled)">SPI MISO lines (if \verbatim embed:rst:inline :kconfig:option:`CONFIG_SPI_EXTENDED_MODES` \endverbatim is enabled)</p>
+<p>Some controllers support dual, quad or octal MISO lines connected to slaves. Default is single, which is the case most of the time. Without <span> <a class="reference internal" href="../../kconfig.html#CONFIG_SPI_EXTENDED_MODES" title="CONFIG_SPI_EXTENDED_MODES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SPI_EXTENDED_MODES</span></code></a> </span> being enabled, single is the only supported one. </p>
 <dl class="c macro">
 <dt class="sig sig-object c" id="c.SPI_LINES_SINGLE">
 <span class="target" id="group__spi__interface_1ga7a183f157e8cb8b437857a0babbd923b"></span><span class="sig-name descname"><span class="n"><span class="pre">SPI_LINES_SINGLE</span></span></span><a class="headerlink" href="#c.SPI_LINES_SINGLE" title="Permalink to this definition">¶</a><br /></dt>
@@ -819,7 +821,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This function is available only if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SPI_ASYNC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPI_ASYNC</span></code></a> </span> is selected.</p>
+<p>This function is available only if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_SPI_ASYNC" title="CONFIG_SPI_ASYNC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SPI_ASYNC</span></code></a> </span> is selected.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -855,7 +857,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This function is available only if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SPI_ASYNC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPI_ASYNC</span></code></a> </span> is selected.</p>
+<p>This function is available only if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_SPI_ASYNC" title="CONFIG_SPI_ASYNC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SPI_ASYNC</span></code></a> </span> is selected.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -889,7 +891,7 @@
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This function is available only if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SPI_ASYNC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPI_ASYNC</span></code></a> </span> is selected.</p>
+<p>This function is available only if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_SPI_ASYNC" title="CONFIG_SPI_ASYNC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SPI_ASYNC</span></code></a> </span> is selected.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1001,7 +1003,7 @@
 <span class="nb">format</span>              <span class="p">[</span> <span class="mi">15</span> <span class="p">]</span>      <span class="o">-</span> <span class="n">Motorola</span> <span class="ow">or</span> <span class="n">TI</span> <span class="n">frame</span> <span class="nb">format</span> <span class="p">(</span><span class="n">optional</span><span class="p">)</span><span class="o">.</span>
 </pre></div>
 </div>
- if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SPI_EXTENDED_MODES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SPI_EXTENDED_MODES</span></code></a> </span> is defined: lines [ 16 : 17 ] - MISO lines: Single/Dual/Quad/Octal. reserved [ 18 : 31 ] - reserved for future use. </p>
+ if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_SPI_EXTENDED_MODES" title="CONFIG_SPI_EXTENDED_MODES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SPI_EXTENDED_MODES</span></code></a> </span> is defined: lines [ 16 : 17 ] - MISO lines: Single/Dual/Quad/Octal. reserved [ 18 : 31 ] - reserved for future use. </p>
 </dd>
 <dt class="field-odd">Param slave</dt>
 <dd class="field-odd"><p>is the slave number from 0 to host controller slave limit. </p>
@@ -1082,8 +1084,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

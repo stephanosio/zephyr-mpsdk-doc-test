@@ -43,7 +43,7 @@
             <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -163,7 +165,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -284,9 +286,9 @@ Timer (32 KHz)</p></td>
 <td><p>on-chip</p></td>
 <td><p>timer</p></td>
 </tr>
-<tr class="row-even"><td><p>PINMUX</p></td>
+<tr class="row-even"><td><p>PINCTRL</p></td>
 <td><p>on-chip</p></td>
-<td><p>pinmux</p></td>
+<td><p>pinctrl</p></td>
 </tr>
 <tr class="row-odd"><td><p>GPIO</p></td>
 <td><p>on-chip</p></td>
@@ -412,14 +414,20 @@ The default settings are 115200 8N1.</p>
 <h2>Programming and debugging<a class="headerlink" href="#programming-and-debugging" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="building">
 <h3>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h3>
-<p>You can build applications in the usual way. Here is an example for
-the “hello_world” application.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>These instructions assume you’ve set up a development environment as
+described in the <a class="reference external" href="https://docs.zephyrproject.org/latest/getting_started/index.html">Zephyr Getting Started Guide</a> <a class="footnote-reference brackets" href="#id16" id="id17">7</a>.</p>
+</div>
+<p>To build applications using the default RISC-V toolchain from Zephyr SDK, just run the west build command.
+Here is an example for the “hello_world” application.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>From the root of the zephyr repository
 <span class="go">west build -b tlsr9518adk80d samples/hello_world</span>
 </pre></div>
 </div>
 <p>To use <a class="reference external" href="http://wiki.telink-semi.cn/tools_and_sdk/Tools/IDE/telink_riscv_linux_toolchain.zip">Telink RISC-V Linux Toolchain</a> <a class="footnote-reference brackets" href="#id5" id="id6">3</a>, <code class="docutils literal notranslate"><span class="pre">ZEPHYR_TOOLCHAIN_VARIANT</span></code> and <code class="docutils literal notranslate"><span class="pre">CROSS_COMPILE</span></code> variables need to be set.
-In addition <code class="docutils literal notranslate"><span class="pre">CONFIG_FPU=y</span></code> must be selected in <code class="docutils literal notranslate"><span class="pre">boards/riscv/tlsr9518adk80d/tlsr9518adk80d_defconfig</span></code> file.</p>
+In addition <code class="docutils literal notranslate"><span class="pre">CONFIG_FPU=y</span></code> must be selected in <code class="docutils literal notranslate"><span class="pre">boards/riscv/tlsr9518adk80d/tlsr9518adk80d_defconfig</span></code> file since this
+toolchain is compatible only with the float point unit usage.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>Set Zephyr toolchain variant to cross-compile
 <span class="go">export ZEPHYR_TOOLCHAIN_VARIANT=cross-compile</span>
 <span class="gp"># </span>Specify the Telink RISC-V Toolchain location
@@ -445,18 +453,42 @@ serial port:</p>
 </div>
 <div class="section" id="flashing">
 <h3>Flashing<a class="headerlink" href="#flashing" title="Permalink to this headline">¶</a></h3>
-<p>Use west flash command in order to flash the TLSR9518ADK80D board:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">west flash --telink-tools-path=$TELINK_TOOLCHAIN_PATH</span>
-</pre></div>
-</div>
-<p>Here, TELINK_TOOLCHAIN_PATH is a path to <a class="reference external" href="http://wiki.telink-semi.cn/tools_and_sdk/Tools/IDE/telink_riscv_linux_toolchain.zip">Telink RISC-V Linux Toolchain</a> <a class="footnote-reference brackets" href="#id5" id="id8">3</a>.
-The toolchain contains tools for the board flashing as well.</p>
-<p>Refer for the following resources for more information about the board flashing:</p>
+<p>To flash the TLSR9518ADK80D board see the sources below:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="http://wiki.telink-semi.cn/wiki/IDE-and-Tools/Burning-and-Debugging-Tools-for-all-Series/">Burning and Debugging Tools for all Series</a> <a class="footnote-reference brackets" href="#id9" id="id10">4</a></p></li>
 <li><p><a class="reference external" href="http://wiki.telink-semi.cn/wiki/IDE-and-Tools/Burning-and-Debugging-Tools-for-TLSR9-Series/">Burning and Debugging Tools for TLSR9 Series</a> <a class="footnote-reference brackets" href="#id11" id="id12">5</a></p></li>
 <li><p><a class="reference external" href="http://wiki.telink-semi.cn/wiki/IDE-and-Tools/BDT_for_TLSR9_Series_in_Linux/">Burning and Debugging Tools for TLSR9 Series in Linux</a> <a class="footnote-reference brackets" href="#id13" id="id15">6</a></p></li>
 </ul>
+<p>It is also possible to use the west flash command, but additional steps are required to set it up:</p>
+<ul class="simple">
+<li><p>Download <a class="reference external" href="http://wiki.telink-semi.cn/tools_and_sdk/Tools/IDE/telink_riscv_linux_toolchain.zip">Telink RISC-V Linux Toolchain</a> <a class="footnote-reference brackets" href="#id5" id="id8">3</a>. The toolchain contains tools for the board flashing as well.</p></li>
+<li><p>Since the ICEman tool is created for the 32-bit OS version it is necessary to install additional packages in case of the 64-bit OS version.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">sudo dpkg --add-architecture i386</span>
+<span class="go">sudo apt-get update</span>
+<span class="go">sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Run the “ICEman.sh” script.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>From the root of the <span class="o">{</span>path to the Telink RISC-V Linux Toolchain<span class="o">}</span>/ice repository
+<span class="go">sudo ./ICEman.sh</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Now you should be able to run the west flash command with the toolchain path specified (TELINK_TOOLCHAIN_PATH).</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">west flash --telink-tools-path=$TELINK_TOOLCHAIN_PATH</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>You can also run the west flash command without toolchain path specification if add SPI_burn and ICEman to PATH.</p></li>
+</ul>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">export PATH=$TELINK_TOOLCHAIN_PATH/flash/bin:&quot;$PATH&quot;</span>
+<span class="go">export PATH=$TELINK_TOOLCHAIN_PATH/ice:&quot;$PATH&quot;</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="debugging">
 <h3>Debugging<a class="headerlink" href="#debugging" title="Permalink to this headline">¶</a></h3>
@@ -484,6 +516,9 @@ The toolchain contains tools for the board flashing as well.</p>
 <dt class="label" id="id13"><span class="brackets">6</span><span class="fn-backref">(<a href="#id14">1</a>,<a href="#id15">2</a>)</span></dt>
 <dd><p><a class="reference external" href="http://wiki.telink-semi.cn/wiki/IDE-and-Tools/BDT_for_TLSR9_Series_in_Linux/">http://wiki.telink-semi.cn/wiki/IDE-and-Tools/BDT_for_TLSR9_Series_in_Linux/</a></p>
 </dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id17">7</a></span></dt>
+<dd><p><a class="reference external" href="https://docs.zephyrproject.org/latest/getting_started/index.html">https://docs.zephyrproject.org/latest/getting_started/index.html</a></p>
+</dd>
 </dl>
 </div>
 </div>
@@ -497,8 +532,8 @@ The toolchain contains tools for the board flashing as well.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

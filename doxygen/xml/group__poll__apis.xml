@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5376" column="1" bodyfile="include/kernel.h" bodystart="5376" bodyend="5381"/>
+        <location file="include/kernel.h" line="5372" column="1" bodyfile="include/kernel.h" bodystart="5372" bodyend="5377"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5490" column="13" declfile="include/kernel.h" declline="5490" declcolumn="13"/>
+        <location file="include/kernel.h" line="5486" column="13" declfile="include/kernel.h" declline="5486" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__poll__apis_1gac550dc93662ce164fb22a5a91d6830db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -195,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5536" column="6" declfile="include/kernel.h" declline="5536" declcolumn="6"/>
+        <location file="include/kernel.h" line="5532" column="6" declfile="include/kernel.h" declline="5532" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__poll__apis_1gaee3090c2a912b93b6a5855e3018c3551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5547" column="7" declfile="include/kernel.h" declline="5547" declcolumn="7"/>
+        <location file="include/kernel.h" line="5543" column="7" declfile="include/kernel.h" declline="5543" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group__poll__apis_1ga02d899d1455ae1f3f55ffe8f1ebd6994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -241,7 +241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5554" column="7" declfile="include/kernel.h" declline="5554" declcolumn="7"/>
+        <location file="include/kernel.h" line="5550" column="7" declfile="include/kernel.h" declline="5550" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group__poll__apis_1ga69dae11c7cb2c669caa411c3e7001311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5566" column="7" declfile="include/kernel.h" declline="5566" declcolumn="7"/>
+        <location file="include/kernel.h" line="5562" column="7" declfile="include/kernel.h" declline="5562" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group__poll__apis_1gad0bf3825f828ec3ca37481bf3cbd6723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -354,7 +354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5593" column="6" declfile="include/kernel.h" declline="5593" declcolumn="6"/>
+        <location file="include/kernel.h" line="5589" column="6" declfile="include/kernel.h" declline="5589" declcolumn="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -367,7 +367,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5368" column="9" bodyfile="include/kernel.h" bodystart="5368" bodyend="-1"/>
+        <location file="include/kernel.h" line="5364" column="9" bodyfile="include/kernel.h" bodystart="5364" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga144d8eb34d85f6053e454410a10bf56a" prot="public" static="no">
         <name>K_POLL_TYPE_SIGNAL</name>
@@ -378,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5369" column="9" bodyfile="include/kernel.h" bodystart="5369" bodyend="-1"/>
+        <location file="include/kernel.h" line="5365" column="9" bodyfile="include/kernel.h" bodystart="5365" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga0fd7605bdffd43dff7480a90a603ffde" prot="public" static="no">
         <name>K_POLL_TYPE_SEM_AVAILABLE</name>
@@ -389,7 +389,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5370" column="9" bodyfile="include/kernel.h" bodystart="5370" bodyend="-1"/>
+        <location file="include/kernel.h" line="5366" column="9" bodyfile="include/kernel.h" bodystart="5366" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga58d656f73f031a39b8a936133fe5504f" prot="public" static="no">
         <name>K_POLL_TYPE_DATA_AVAILABLE</name>
@@ -400,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5371" column="9" bodyfile="include/kernel.h" bodystart="5371" bodyend="-1"/>
+        <location file="include/kernel.h" line="5367" column="9" bodyfile="include/kernel.h" bodystart="5367" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga71734fee18c523cf70276260118afb91" prot="public" static="no">
         <name>K_POLL_TYPE_FIFO_DATA_AVAILABLE</name>
@@ -411,7 +411,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5372" column="9" bodyfile="include/kernel.h" bodystart="5372" bodyend="-1"/>
+        <location file="include/kernel.h" line="5368" column="9" bodyfile="include/kernel.h" bodystart="5368" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gaa83509b54175fb6c98324422a928d5e1" prot="public" static="no">
         <name>K_POLL_TYPE_MSGQ_DATA_AVAILABLE</name>
@@ -422,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5373" column="9" bodyfile="include/kernel.h" bodystart="5373" bodyend="-1"/>
+        <location file="include/kernel.h" line="5369" column="9" bodyfile="include/kernel.h" bodystart="5369" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga522822c5e06a89b22ce4dcefd10c66aa" prot="public" static="no">
         <name>K_POLL_STATE_NOT_READY</name>
@@ -433,7 +433,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5384" column="9" bodyfile="include/kernel.h" bodystart="5384" bodyend="-1"/>
+        <location file="include/kernel.h" line="5380" column="9" bodyfile="include/kernel.h" bodystart="5380" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga478aae7fe4fb5c7b7c76ed216c22a7f1" prot="public" static="no">
         <name>K_POLL_STATE_SIGNALED</name>
@@ -444,7 +444,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5385" column="9" bodyfile="include/kernel.h" bodystart="5385" bodyend="-1"/>
+        <location file="include/kernel.h" line="5381" column="9" bodyfile="include/kernel.h" bodystart="5381" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gae9e3eefd5a29a538d22f53592578bb37" prot="public" static="no">
         <name>K_POLL_STATE_SEM_AVAILABLE</name>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5386" column="9" bodyfile="include/kernel.h" bodystart="5386" bodyend="-1"/>
+        <location file="include/kernel.h" line="5382" column="9" bodyfile="include/kernel.h" bodystart="5382" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gac166d9919d591bace163c5211e7b41f4" prot="public" static="no">
         <name>K_POLL_STATE_DATA_AVAILABLE</name>
@@ -466,7 +466,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5387" column="9" bodyfile="include/kernel.h" bodystart="5387" bodyend="-1"/>
+        <location file="include/kernel.h" line="5383" column="9" bodyfile="include/kernel.h" bodystart="5383" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gabd5ac3341698534f39ded718079d6168" prot="public" static="no">
         <name>K_POLL_STATE_FIFO_DATA_AVAILABLE</name>
@@ -477,7 +477,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5388" column="9" bodyfile="include/kernel.h" bodystart="5388" bodyend="-1"/>
+        <location file="include/kernel.h" line="5384" column="9" bodyfile="include/kernel.h" bodystart="5384" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gac236074cd43f59f28b803fe2c4a4f6f7" prot="public" static="no">
         <name>K_POLL_STATE_MSGQ_DATA_AVAILABLE</name>
@@ -488,7 +488,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5389" column="9" bodyfile="include/kernel.h" bodystart="5389" bodyend="-1"/>
+        <location file="include/kernel.h" line="5385" column="9" bodyfile="include/kernel.h" bodystart="5385" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gadaf4b4c8e13afb54114af72d133e1fdb" prot="public" static="no">
         <name>K_POLL_STATE_CANCELLED</name>
@@ -499,7 +499,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5390" column="9" bodyfile="include/kernel.h" bodystart="5390" bodyend="-1"/>
+        <location file="include/kernel.h" line="5386" column="9" bodyfile="include/kernel.h" bodystart="5386" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga6d6321e189afca73a276cd671ec531ae" prot="public" static="no">
         <name>K_POLL_SIGNAL_INITIALIZER</name>
@@ -515,7 +515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5407" column="9" bodyfile="include/kernel.h" bodystart="5407" bodyend="-1"/>
+        <location file="include/kernel.h" line="5403" column="9" bodyfile="include/kernel.h" bodystart="5403" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1ga8e3889f2bac281a6e65e31068e58047e" prot="public" static="no">
         <name>K_POLL_EVENT_INITIALIZER</name>
@@ -538,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5450" column="9" bodyfile="include/kernel.h" bodystart="5450" bodyend="-1"/>
+        <location file="include/kernel.h" line="5446" column="9" bodyfile="include/kernel.h" bodystart="5446" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__poll__apis_1gada2366896d913dc916b3c28642648b63" prot="public" static="no">
         <name>K_POLL_EVENT_STATIC_INITIALIZER</name>
@@ -562,7 +562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5463" column="9" bodyfile="include/kernel.h" bodystart="5462" bodyend="-1"/>
+        <location file="include/kernel.h" line="5459" column="9" bodyfile="include/kernel.h" bodystart="5458" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

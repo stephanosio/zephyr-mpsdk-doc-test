@@ -230,8 +230,8 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <header>SPI MISO lines (if \verbatim embed:rst:inline :kconfig:`CONFIG_SPI_EXTENDED_MODES` \endverbatim is enabled)</header>
-      <description><para>Some controllers support dual, quad or octal MISO lines connected to slaves. Default is single, which is the case most of the time. Without <verbatim>embed:rst:inline :kconfig:`CONFIG_SPI_EXTENDED_MODES` </verbatim> being enabled, single is the only supported one. </para>
+      <header>SPI MISO lines (if \verbatim embed:rst:inline :kconfig:option:`CONFIG_SPI_EXTENDED_MODES` \endverbatim is enabled)</header>
+      <description><para>Some controllers support dual, quad or octal MISO lines connected to slaves. Default is single, which is the case most of the time. Without <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SPI_EXTENDED_MODES` </verbatim> being enabled, single is the only supported one. </para>
 </description>
       <memberdef kind="define" id="group__spi__interface_1ga7a183f157e8cb8b437857a0babbd923b" prot="public" static="no">
         <name>SPI_LINES_SINGLE</name>
@@ -842,7 +842,7 @@
         <detaileddescription>
 <para><simplesect kind="note"><para>This function is asynchronous.</para>
 </simplesect>
-<simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:`CONFIG_SPI_ASYNC` </verbatim> is selected.</para>
+<simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SPI_ASYNC` </verbatim> is selected.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -945,7 +945,7 @@
 </simplesect>
 <simplesect kind="note"><para>This function is an helper function calling spi_transceive_async.</para>
 </simplesect>
-<simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:`CONFIG_SPI_ASYNC` </verbatim> is selected.</para>
+<simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SPI_ASYNC` </verbatim> is selected.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1032,7 +1032,7 @@
 </simplesect>
 <simplesect kind="note"><para>This function is an helper function calling spi_transceive_async.</para>
 </simplesect>
-<simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:`CONFIG_SPI_ASYNC` </verbatim> is selected.</para>
+<simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SPI_ASYNC` </verbatim> is selected.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>

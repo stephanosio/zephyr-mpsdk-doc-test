@@ -14,7 +14,7 @@
     <innerfile refid="bluetooth_2buf_8h">buf.h</innerfile>
     <innerfile refid="conn_8h">conn.h</innerfile>
     <innerfile refid="bluetooth_2controller_8h">controller.h</innerfile>
-    <innerfile refid="crypto_8h">crypto.h</innerfile>
+    <innerfile refid="bluetooth_2crypto_8h">crypto.h</innerfile>
     <innerfile refid="direction_8h">direction.h</innerfile>
     <innerfile refid="gap_8h">gap.h</innerfile>
     <innerfile refid="gatt_8h">gatt.h</innerfile>

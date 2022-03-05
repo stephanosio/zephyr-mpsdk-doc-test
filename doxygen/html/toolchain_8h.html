@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -108,11 +108,58 @@ Macros</h2></td></tr>
 <tr class="memitem:a474a719388efd0578c7c98a0961e23dd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toolchain_8h.html#a474a719388efd0578c7c98a0961e23dd">HAS_BUILTIN</a>(x)&#160;&#160;&#160;HAS_BUILTIN_##x</td></tr>
 <tr class="memdesc:a474a719388efd0578c7c98a0961e23dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the compiler supports the built-in function <em>x</em>.  <a href="toolchain_8h.html#a474a719388efd0578c7c98a0961e23dd">More...</a><br /></td></tr>
 <tr class="separator:a474a719388efd0578c7c98a0961e23dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbba0f726fc66d7100916c683b7568ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toolchain_8h.html#adbba0f726fc66d7100916c683b7568ae">GCC_VERSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:adbba0f726fc66d7100916c683b7568ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">GCC version in xxyyzz for xx.yy.zz. Zero if not GCC compatible.  <a href="toolchain_8h.html#adbba0f726fc66d7100916c683b7568ae">More...</a><br /></td></tr>
+<tr class="separator:adbba0f726fc66d7100916c683b7568ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e6966b83377f8ea001f6bc19b551b24"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toolchain_8h.html#a4e6966b83377f8ea001f6bc19b551b24">CLANG_VERSION</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a4e6966b83377f8ea001f6bc19b551b24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clang version in xxyyzz for xx.yy.zz. Zero if not Clang compatible.  <a href="toolchain_8h.html#a4e6966b83377f8ea001f6bc19b551b24">More...</a><br /></td></tr>
+<tr class="separator:a4e6966b83377f8ea001f6bc19b551b24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a763b60a74b3b8917b8a91614f1d443e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toolchain_8h.html#a763b60a74b3b8917b8a91614f1d443e4">TOOLCHAIN_HAS_PRAGMA_DIAG</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a763b60a74b3b8917b8a91614f1d443e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if toolchain supports #pragma diagnostics.  <a href="toolchain_8h.html#a763b60a74b3b8917b8a91614f1d443e4">More...</a><br /></td></tr>
+<tr class="separator:a763b60a74b3b8917b8a91614f1d443e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49263980cf39cd330a9e9976dccb4c90"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toolchain_8h.html#a49263980cf39cd330a9e9976dccb4c90">TOOLCHAIN_HAS_C_GENERIC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a49263980cf39cd330a9e9976dccb4c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if toolchain supports C Generic.  <a href="toolchain_8h.html#a49263980cf39cd330a9e9976dccb4c90">More...</a><br /></td></tr>
+<tr class="separator:a49263980cf39cd330a9e9976dccb4c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9502cad506e0dfb7c3a7b51b5eeb5eeb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="toolchain_8h.html#a9502cad506e0dfb7c3a7b51b5eeb5eeb">TOOLCHAIN_HAS_C_AUTO_TYPE</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:a9502cad506e0dfb7c3a7b51b5eeb5eeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if toolchain supports C __auto_type.  <a href="toolchain_8h.html#a9502cad506e0dfb7c3a7b51b5eeb5eeb">More...</a><br /></td></tr>
+<tr class="separator:a9502cad506e0dfb7c3a7b51b5eeb5eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Macros to abstract toolchain specific capabilities. </p>
 <p >This file contains various macros to abstract compiler capabilities that utilize toolchain specific attributes and/or pragmas. </p>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a4e6966b83377f8ea001f6bc19b551b24" name="a4e6966b83377f8ea001f6bc19b551b24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e6966b83377f8ea001f6bc19b551b24">&#9670;&nbsp;</a></span>CLANG_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLANG_VERSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clang version in xxyyzz for xx.yy.zz. Zero if not Clang compatible. </p>
+
+</div>
+</div>
+<a id="adbba0f726fc66d7100916c683b7568ae" name="adbba0f726fc66d7100916c683b7568ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbba0f726fc66d7100916c683b7568ae">&#9670;&nbsp;</a></span>GCC_VERSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GCC_VERSION&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>GCC version in xxyyzz for xx.yy.zz. Zero if not GCC compatible. </p>
+
+</div>
+</div>
 <a id="a474a719388efd0578c7c98a0961e23dd" name="a474a719388efd0578c7c98a0961e23dd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a474a719388efd0578c7c98a0961e23dd">&#9670;&nbsp;</a></span>HAS_BUILTIN</h2>
 
@@ -134,6 +181,54 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a id="a9502cad506e0dfb7c3a7b51b5eeb5eeb" name="a9502cad506e0dfb7c3a7b51b5eeb5eeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9502cad506e0dfb7c3a7b51b5eeb5eeb">&#9670;&nbsp;</a></span>TOOLCHAIN_HAS_C_AUTO_TYPE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOOLCHAIN_HAS_C_AUTO_TYPE&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate if toolchain supports C __auto_type. </p>
+
+</div>
+</div>
+<a id="a49263980cf39cd330a9e9976dccb4c90" name="a49263980cf39cd330a9e9976dccb4c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49263980cf39cd330a9e9976dccb4c90">&#9670;&nbsp;</a></span>TOOLCHAIN_HAS_C_GENERIC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOOLCHAIN_HAS_C_GENERIC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate if toolchain supports C Generic. </p>
+
+</div>
+</div>
+<a id="a763b60a74b3b8917b8a91614f1d443e4" name="a763b60a74b3b8917b8a91614f1d443e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a763b60a74b3b8917b8a91614f1d443e4">&#9670;&nbsp;</a></span>TOOLCHAIN_HAS_PRAGMA_DIAG</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define TOOLCHAIN_HAS_PRAGMA_DIAG&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Indicate if toolchain supports #pragma diagnostics. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -141,7 +236,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="toolchain_8h.html">toolchain.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

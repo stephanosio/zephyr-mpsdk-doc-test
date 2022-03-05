@@ -886,16 +886,16 @@
         </inbodydescription>
         <location file="tests/kernel/fpu_sharing/generic/src/load_store.c" line="226" column="13" bodyfile="tests/kernel/fpu_sharing/generic/src/load_store.c" bodystart="226" bodyend="306"/>
       </memberdef>
-      <memberdef kind="function" id="load__store_8c_1a5f412007e6e1142a9996ef323acf9bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="load__store_8c_1a972c33cce282f633257a5825ca248766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(load_low,(1024+CONFIG_TEST_EXTRA_STACKSIZE), load_store_low, NULL, NULL, NULL, 10,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
+        <argsstring>(load_low,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), load_store_low, NULL, NULL, NULL, 10,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>load_low</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="load__store_8c_1a6cc2b36e8aad5d16041e753979c5476e" kindref="member">load_store_low</ref></type>
@@ -926,16 +926,16 @@
         </inbodydescription>
         <location file="tests/kernel/fpu_sharing/generic/src/load_store.c" line="308" column="1" declfile="tests/kernel/fpu_sharing/generic/src/load_store.c" declline="308" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="load__store_8c_1aebaefb2cea4781f0b031aa20a78424f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="load__store_8c_1a369451afaa71c5609e1ad793fa590c9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(load_high,(1024+CONFIG_TEST_EXTRA_STACKSIZE), load_store_high, NULL, NULL, NULL, 5,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
+        <argsstring>(load_high,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), load_store_high, NULL, NULL, NULL, 5,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>load_high</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="load__store_8c_1a27e8a6457aed4592543905a5149861a8" kindref="member">load_store_high</ref></type>
@@ -1280,10 +1280,10 @@
 <codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__semaphore__apis_1gab9be3cf1988af2cd6afdace52d497c84" kindref="member">k_sem_give</ref>(&amp;test_exit_sem);</highlight></codeline>
 <codeline lineno="306"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="307"><highlight class="normal"></highlight></codeline>
-<codeline lineno="308"><highlight class="normal"><ref refid="load__store_8c_1a5f412007e6e1142a9996ef323acf9bcc" kindref="member">K_THREAD_DEFINE</ref>(load_low,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="load__store_8c_1a6cc2b36e8aad5d16041e753979c5476e" kindref="member">load_store_low</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><ref refid="load__store_8c_1a972c33cce282f633257a5825ca248766" kindref="member">K_THREAD_DEFINE</ref>(load_low,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="load__store_8c_1a6cc2b36e8aad5d16041e753979c5476e" kindref="member">load_store_low</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="test__common_8h_1af1f5400d65f4b45e9729464ac00c251c" kindref="member">THREAD_LOW_PRIORITY</ref>,<sp/><ref refid="test__common_8h_1a5a2a373f092dcc9cecdeb0ad3e02b52a" kindref="member">THREAD_FP_FLAGS</ref>,<sp/><ref refid="group__clock__apis_1ga66e180b3d8940c30786a1d972cbd6d8d" kindref="member">K_TICKS_FOREVER</ref>);</highlight></codeline>
 <codeline lineno="310"><highlight class="normal"></highlight></codeline>
-<codeline lineno="311"><highlight class="normal"><ref refid="load__store_8c_1a5f412007e6e1142a9996ef323acf9bcc" kindref="member">K_THREAD_DEFINE</ref>(load_high,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="load__store_8c_1a27e8a6457aed4592543905a5149861a8" kindref="member">load_store_high</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><ref refid="load__store_8c_1a972c33cce282f633257a5825ca248766" kindref="member">K_THREAD_DEFINE</ref>(load_high,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="load__store_8c_1a27e8a6457aed4592543905a5149861a8" kindref="member">load_store_high</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="test__common_8h_1a0ef2f7e9b8d0aa30d9f7066f679d00db" kindref="member">THREAD_HIGH_PRIORITY</ref>,<sp/><ref refid="test__common_8h_1a5a2a373f092dcc9cecdeb0ad3e02b52a" kindref="member">THREAD_FP_FLAGS</ref>,<sp/><ref refid="group__clock__apis_1ga66e180b3d8940c30786a1d972cbd6d8d" kindref="member">K_TICKS_FOREVER</ref>);</highlight></codeline>
 <codeline lineno="313"><highlight class="normal"></highlight></codeline>
 <codeline lineno="314"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="load__store_8c_1a8b8bbeec718fd53c7330bee2058d9c3c" kindref="member">test_load_store</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>

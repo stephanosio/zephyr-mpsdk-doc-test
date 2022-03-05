@@ -742,7 +742,7 @@
       </memberdef>
       <memberdef kind="define" id="timeout__order_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -845,10 +845,10 @@
         </inbodydescription>
         <location file="tests/kernel/common/src/timeout_order.c" line="18" column="13" bodyfile="tests/kernel/common/src/timeout_order.c" bodystart="18" bodyend="31"/>
       </memberdef>
-      <memberdef kind="function" id="timeout__order_8c_1a442e202f8d2cb40c05ed377b6f8a5b19" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="timeout__order_8c_1a0f19635a68391eb89c4d32ac80bfb9ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(stacks, 3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stacks, 3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>stacks</type>
@@ -857,7 +857,7 @@
           <type>3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -926,9 +926,9 @@
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__semaphore__apis_1gab9be3cf1988af2cd6afdace52d497c84" kindref="member">k_sem_give</ref>(&amp;<ref refid="timeout__order_8c_1a415c37e05febf68101d95d933a50c66b" kindref="member">sem</ref>[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">]);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="timeout__order_8c_1a442e202f8d2cb40c05ed377b6f8a5b19" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(stacks,<sp/><ref refid="timeout__order_8c_1a6ff914ab4c98d405975c8eabbc4632fc" kindref="member">NUM_TIMEOUTS</ref>,<sp/><ref refid="timeout__order_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="timeout__order_8c_1a0f19635a68391eb89c4d32ac80bfb9ab" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(stacks,<sp/><ref refid="timeout__order_8c_1a6ff914ab4c98d405975c8eabbc4632fc" kindref="member">NUM_TIMEOUTS</ref>,<sp/><ref refid="timeout__order_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="timeout__order_8c_1a02dfe6308827e5313b77ad77ea9dce06" kindref="member">threads</ref>[<ref refid="timeout__order_8c_1a6ff914ab4c98d405975c8eabbc4632fc" kindref="member">NUM_TIMEOUTS</ref>];</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__kernel__common__tests_1ga6c6a0a9fd80f06d514b6cd73b5bf60e4" kindref="member">test_timeout_order</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>

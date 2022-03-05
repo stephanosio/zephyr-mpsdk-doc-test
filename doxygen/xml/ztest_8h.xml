@@ -2058,7 +2058,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="subsys/testsuite/ztest/include/ztest.h" line="70" column="6" bodyfile="tests/kernel/common/src/main.c" bodystart="120" bodyend="173" declfile="subsys/testsuite/ztest/include/ztest.h" declline="70" declcolumn="6"/>
+        <location file="subsys/testsuite/ztest/include/ztest.h" line="70" column="6" bodyfile="tests/kernel/common/src/main.c" bodystart="121" bodyend="175" declfile="subsys/testsuite/ztest/include/ztest.h" declline="70" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

@@ -739,7 +739,7 @@
       </memberdef>
       <memberdef kind="define" id="test__mslab__threadsafe_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -931,10 +931,10 @@
         </inbodydescription>
         <location file="tests/kernel/mem_slab/mslab_threadsafe/src/test_mslab_threadsafe.c" line="31" column="1" declfile="tests/kernel/mem_slab/mslab_threadsafe/src/test_mslab_threadsafe.c" declline="31" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__mslab__threadsafe_8c_1a8b49fec2a8d9b46c26588f772665bafa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mslab__threadsafe_8c_1ae45f2df95725c87f43c7e16a8c6a6c60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(tstack, 4,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack, 4,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
@@ -943,7 +943,7 @@
           <type>4</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1012,7 +1012,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="atomic_8h" kindref="compound">sys/atomic.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOOP<sp/>10</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_NUM<sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLAB_NUM<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/>K_MSEC(200)</highlight><highlight class="normal"></highlight></codeline>
@@ -1034,7 +1034,7 @@
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><ref refid="test__mslab__threadsafe_8c_1a5c6997323d17e3f7c030e2af6cd60c5c" kindref="member">K_MEM_SLAB_DEFINE</ref>(mslab1,<sp/><ref refid="test__mslab__threadsafe_8c_1a1597c5eba063c8f11f8bf9c466ac7dca" kindref="member">BLK_SIZE1</ref>,<sp/><ref refid="test__mslab__threadsafe_8c_1a128a1dbd46b46f38bfcc2ddd2d82e7db" kindref="member">SLAB_BLOCKS</ref>,<sp/><ref refid="test__mslab__threadsafe_8c_1a66edaa498a82de98246e8be258cb0e06" kindref="member">BLK_ALIGN</ref>);</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_mem_slab<sp/>mslab2,<sp/>*<ref refid="test__mslab__threadsafe_8c_1a03d29a428a5f29497d6fa9fa38cc8951" kindref="member">slabs</ref>[<ref refid="test__mslab__threadsafe_8c_1a49d97163fe7c8f899a1f3f1325ac6892" kindref="member">SLAB_NUM</ref>]<sp/>=<sp/>{<sp/>&amp;mslab1,<sp/>&amp;mslab2<sp/>};</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mslab__threadsafe_8c_1a8b49fec2a8d9b46c26588f772665bafa" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mslab__threadsafe_8c_1acd532f688378febc70bf2aedccd9bb60" kindref="member">THREAD_NUM</ref>,<sp/><ref refid="test__mslab__threadsafe_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mslab__threadsafe_8c_1ae45f2df95725c87f43c7e16a8c6a6c60" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mslab__threadsafe_8c_1acd532f688378febc70bf2aedccd9bb60" kindref="member">THREAD_NUM</ref>,<sp/><ref refid="test__mslab__threadsafe_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__mslab__threadsafe_8c_1a3379fbeaf7234e041f6d31f5ce34c971" kindref="member">tdata</ref>[<ref refid="test__mslab__threadsafe_8c_1acd532f688378febc70bf2aedccd9bb60" kindref="member">THREAD_NUM</ref>];</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>__aligned(<ref refid="test__mslab__threadsafe_8c_1a66edaa498a82de98246e8be258cb0e06" kindref="member">BLK_ALIGN</ref>)<sp/><ref refid="test__mslab__threadsafe_8c_1a90b915b344fa84af836e56a303c83f14" kindref="member">tslab</ref>[<ref refid="test__mslab__threadsafe_8c_1afdae0cbb3311ee831f60100055407b8f" kindref="member">BLK_SIZE2</ref><sp/>*<sp/><ref refid="test__mslab__threadsafe_8c_1a128a1dbd46b46f38bfcc2ddd2d82e7db" kindref="member">SLAB_BLOCKS</ref>];</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8h_1a124f07c3a788e53c3a40e4e1c06d8af8" kindref="member">atomic_t</ref><sp/><ref refid="test__mslab__threadsafe_8c_1a2f57357356ec65d349e071e8a332cddf" kindref="member">slab_id</ref>;</highlight></codeline>

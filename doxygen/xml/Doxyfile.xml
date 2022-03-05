@@ -2,7 +2,7 @@
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.9.2" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["Zephyr API Documentation"]]></value></option>
-  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[3.0.0-rc3]]></value></option>
+  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[3.0.99]]></value></option>
   <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["A Scalable Open Source RTOS"]]></value></option>
   <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[/home/runner/work/zephyr/zephyr/doc/_doxygen/logo.svg]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[/home/runner/work/zephyr/zephyr/doc/_build/html/doxygen/tmp]]></value></option>
@@ -34,8 +34,8 @@
   <option  id='ALIASES' default='no' type='stringlist'>
     <value><![CDATA["rst=\verbatim embed:rst:leading-asterisk"]]></value>
     <value><![CDATA[endrst=\endverbatim]]></value>
-    <value><![CDATA["option{1}=\verbatim embed:rst:inline :kconfig:`\1` \endverbatim"]]></value>
-    <value><![CDATA["kconfig{1}=\verbatim embed:rst:inline :kconfig:`\1` \endverbatim"]]></value>
+    <value><![CDATA["option{1}=\verbatim embed:rst:inline :kconfig:option:`\1` \endverbatim"]]></value>
+    <value><![CDATA["kconfig{1}=\verbatim embed:rst:inline :kconfig:option:`\1` \endverbatim"]]></value>
     <value><![CDATA["req{1}=\ref ZEPH_\1 \"ZEPH-\1\""]]></value>
     <value><![CDATA["satisfy{1}=\xrefitem satisfy \"Satisfies requirement\" \"Requirement Implementation\" \1"]]></value>
     <value><![CDATA["verify{1}=\xrefitem verify \"Verifies requirement\" \"Requirement Verification\" \1"]]></value>

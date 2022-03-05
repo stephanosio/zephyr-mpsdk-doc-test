@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2402" column="9" bodyfile="include/bluetooth/hci.h" bodystart="2402" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2403" column="9" bodyfile="include/bluetooth/hci.h" bodystart="2403" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__ext__advertising__report_1a84b9c47a79ccea04198721e2f05ac1a8" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structbt__hci__evt__le__ext__advertising__info" kindref="compound">bt_hci_evt_le_ext_advertising_info</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2403" column="41" bodyfile="include/bluetooth/hci.h" bodystart="2403" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2404" column="41" bodyfile="include/bluetooth/hci.h" bodystart="2404" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -63,7 +63,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/hci.h" line="2401" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2401" bodyend="2404"/>
+    <location file="include/bluetooth/hci.h" line="2402" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2402" bodyend="2405"/>
     <listofallmembers>
       <member refid="structbt__hci__evt__le__ext__advertising__report_1a84b9c47a79ccea04198721e2f05ac1a8" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_ext_advertising_report</scope><name>adv_info</name></member>
       <member refid="structbt__hci__evt__le__ext__advertising__report_1a72fc9736934b415e88c51a1f96179871" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_ext_advertising_report</scope><name>num_reports</name></member>

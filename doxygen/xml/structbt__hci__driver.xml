@@ -104,7 +104,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Executes vendor-specific commands sequence to initialize BT Controller before BT Host executes Reset sequence.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_BT_HCI_SETUP` </verbatim> must be selected for this field to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_HCI_SETUP` </verbatim> must be selected for this field to be available.</para>
 </simplesect>
 <simplesect kind="return"><para>0 on success or negative error number on failure. </para>
 </simplesect>

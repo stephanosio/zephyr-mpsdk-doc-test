@@ -70,7 +70,7 @@
       </node>
       <node id="23">
         <label>bluetooth/crypto.h</label>
-        <link refid="crypto_8h"/>
+        <link refid="bluetooth_2crypto_8h"/>
         <childnode refid="10" relation="include">
         </childnode>
       </node>
@@ -329,7 +329,7 @@
         <name>BT_BUF_ISO_SIZE</name>
         <param><defname>size</defname></param>
         <initializer>					  <ref refid="group__bt__buf_1ga9c114a415dc8fc2b84503736b1283468" kindref="member">BT_BUF_SIZE</ref>(<ref refid="hci_8h_1a75c1f5e8a44b034004ecfebdb75ee4be" kindref="member">BT_HCI_ISO_HDR_SIZE</ref> + \
-					  <ref refid="hci_8h_1a7c351e4eb31cdd5469cfecbbff0a1db0" kindref="member">BT_HCI_ISO_DATA_HDR_SIZE</ref> + \
+					  <ref refid="hci_8h_1a0ad84468158c3df92d4dd2fb10771f6e" kindref="member">BT_HCI_ISO_TS_DATA_HDR_SIZE</ref> + \
 					  (size))</initializer>
         <briefdescription>
         </briefdescription>
@@ -818,7 +818,7 @@
 <codeline lineno="69" refid="group__bt__buf_1ga9dc9de00be5e8bf673ec60921ea6681b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_BUF_CMD_SIZE(size)<sp/>BT_BUF_SIZE(BT_HCI_CMD_HDR_SIZE<sp/>+<sp/>(size))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
 <codeline lineno="72" refid="group__bt__buf_1gaa820dee05a7202304e1aaa9a36386ca4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_BUF_ISO_SIZE(size)<sp/>BT_BUF_SIZE(BT_HCI_ISO_HDR_SIZE<sp/>+<sp/>\</highlight></codeline>
-<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_HCI_ISO_DATA_HDR_SIZE<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_HCI_ISO_TS_DATA_HDR_SIZE<sp/>+<sp/>\</highlight></codeline>
 <codeline lineno="74"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(size))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77" refid="group__bt__buf_1ga3ad106326ce13d6eb61d0ac16f592003" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_BUF_ACL_RX_SIZE<sp/>BT_BUF_ACL_SIZE(CONFIG_BT_BUF_ACL_RX_SIZE)</highlight><highlight class="normal"></highlight></codeline>

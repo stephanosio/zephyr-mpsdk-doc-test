@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="529" column="6" declfile="include/drivers/uart.h" declline="529" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="507" column="6" declfile="include/drivers/uart.h" declline="507" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__polling_1gaad39c1358019bfdcb919da7982743553" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="557" column="6" declfile="include/drivers/uart.h" declline="557" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="535" column="6" declfile="include/drivers/uart.h" declline="535" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__polling_1ga06ba27ba772a7a18462b8cdbc7f9353c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -198,7 +198,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="589" column="7" declfile="include/drivers/uart.h" declline="589" declcolumn="7"/>
+        <location file="include/drivers/uart.h" line="567" column="7" declfile="include/drivers/uart.h" declline="567" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__polling_1ga8faa3f58b9098c97e288e9c5f3367fd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -240,7 +240,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="614" column="7" declfile="include/drivers/uart.h" declline="614" declcolumn="7"/>
+        <location file="include/drivers/uart.h" line="592" column="7" declfile="include/drivers/uart.h" declline="592" declcolumn="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

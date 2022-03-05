@@ -105,7 +105,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Define device PM resources for the given device name.</para>
-<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
+<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -142,7 +142,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Define device PM resources for the given node identifier.</para>
-<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
+<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -180,7 +180,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Define device PM resources for the given instance.</para>
-<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
+<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -224,7 +224,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
+<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -249,7 +249,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
+<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -274,7 +274,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
+<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -420,108 +420,6 @@
         </inbodydescription>
         <location file="include/pm/device.h" line="315" column="12" declfile="include/pm/device.h" declline="315" declcolumn="12"/>
       </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1ga37fb93d42a507abc7aa51c4a08e5353c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int pm_device_state_set</definition>
-        <argsstring>(const struct device *dev, enum pm_device_state state)</argsstring>
-        <name>pm_device_state_set</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <param>
-          <type>enum <ref refid="group__subsys__pm__device_1ga561c0789071e3c3963f21f4c4a1bb2c6" kindref="member">pm_device_state</ref></type>
-          <declname>state</declname>
-        </param>
-        <briefdescription>
-<para>Set the power state of a device. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" kindref="member">pm_device_action_run()</ref> instead.</para>
-</xrefdescription></xrefsect></para>
-<para>This function calls the device PM control callback so that the device does the necessary operations to put the device into the given state.</para>
-<para><simplesect kind="note"><para>Some devices may not support all device power states.</para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>state</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device power state to be set.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>0</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If successful. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-ENOTSUP</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If requested state is not supported. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EALREADY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device is already at the requested state. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EBUSY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device is changing its state. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-ENOSYS</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device does not support PM. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EPERM</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device has power state locked. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>Errno</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Other negative errno on failure. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="338" column="6" declfile="include/pm/device.h" declline="338" declcolumn="6"/>
-      </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaffcf0aea5df10657235d4ed1f8c74d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int pm_device_state_get</definition>
@@ -577,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="350" column="5" declfile="include/pm/device.h" declline="350" declcolumn="5"/>
+        <location file="include/pm/device.h" line="326" column="5" declfile="include/pm/device.h" declline="326" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -675,7 +573,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="370" column="5" declfile="include/pm/device.h" declline="370" declcolumn="5"/>
+        <location file="include/pm/device.h" line="346" column="5" declfile="include/pm/device.h" declline="346" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga765a5412f66070ccefd8e80ed9f62b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -728,7 +626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="383" column="6" declfile="include/pm/device.h" declline="383" declcolumn="6"/>
+        <location file="include/pm/device.h" line="359" column="6" declfile="include/pm/device.h" declline="359" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -759,7 +657,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="399" column="6" declfile="include/pm/device.h" declline="399" declcolumn="6"/>
+        <location file="include/pm/device.h" line="375" column="6" declfile="include/pm/device.h" declline="375" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -789,7 +687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="408" column="6" declfile="include/pm/device.h" declline="408" declcolumn="6"/>
+        <location file="include/pm/device.h" line="384" column="6" declfile="include/pm/device.h" declline="384" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -824,7 +722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="416" column="6" declfile="include/pm/device.h" declline="416" declcolumn="6"/>
+        <location file="include/pm/device.h" line="392" column="6" declfile="include/pm/device.h" declline="392" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -869,7 +767,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="426" column="6" declfile="include/pm/device.h" declline="426" declcolumn="6"/>
+        <location file="include/pm/device.h" line="402" column="6" declfile="include/pm/device.h" declline="402" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -927,7 +825,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="441" column="6" declfile="include/pm/device.h" declline="441" declcolumn="6"/>
+        <location file="include/pm/device.h" line="417" column="6" declfile="include/pm/device.h" declline="417" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -972,7 +870,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="451" column="6" declfile="include/pm/device.h" declline="451" declcolumn="6"/>
+        <location file="include/pm/device.h" line="427" column="6" declfile="include/pm/device.h" declline="427" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -1017,7 +915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="461" column="6" declfile="include/pm/device.h" declline="461" declcolumn="6"/>
+        <location file="include/pm/device.h" line="437" column="6" declfile="include/pm/device.h" declline="437" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1050,7 +948,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="477" column="6" declfile="include/pm/device.h" declline="477" declcolumn="6"/>
+        <location file="include/pm/device.h" line="453" column="6" declfile="include/pm/device.h" declline="453" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1081,7 +979,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="488" column="6" declfile="include/pm/device.h" declline="488" declcolumn="6"/>
+        <location file="include/pm/device.h" line="464" column="6" declfile="include/pm/device.h" declline="464" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -1126,7 +1024,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="498" column="6" declfile="include/pm/device.h" declline="498" declcolumn="6"/>
+        <location file="include/pm/device.h" line="474" column="6" declfile="include/pm/device.h" declline="474" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -1171,151 +1069,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="508" column="6" declfile="include/pm/device.h" declline="508" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1gabfaec92a92766154b8b9ac9dd29f2c1e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void device_busy_set</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>device_busy_set</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Mark a device as busy.</para>
-<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="568" column="21" bodyfile="include/pm/device.h" bodystart="568" bodyend="571"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1gadff113f34359db32c8739294143a1c8f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void device_busy_clear</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>device_busy_clear</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-<para>Clear busy status of a device. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="580" column="21" bodyfile="include/pm/device.h" bodystart="580" bodyend="583"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1ga9ee3ee2f5dac79c85fc901c179fbadf9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int device_any_busy_check</definition>
-        <argsstring>(void)</argsstring>
-        <name>device_any_busy_check</name>
-        <param>
-          <type>void</type>
-        </param>
-        <briefdescription>
-<para>Check if any device is busy. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000007"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>0</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>No devices are busy. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EBUSY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>One or more devices are busy. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="593" column="20" bodyfile="include/pm/device.h" bodystart="593" bodyend="596"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1ga24bd4cb295002584c4f8183e937badc1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int device_busy_check</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>device_busy_check</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-<para>Check if a device is busy. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000008"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>0</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device is not busy. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EBUSY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device is busy. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="608" column="20" bodyfile="include/pm/device.h" bodystart="608" bodyend="611"/>
+        <location file="include/pm/device.h" line="484" column="6" declfile="include/pm/device.h" declline="484" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1460,118 +1214,95 @@
 <codeline lineno="309"><highlight class="normal"></highlight></codeline>
 <codeline lineno="315" refid="group__subsys__pm__device_1gad109511e4314fa6145ee97dd655ec7bb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__subsys__pm__device_1gad109511e4314fa6145ee97dd655ec7bb" kindref="member">pm_device_state_str</ref>(</highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga561c0789071e3c3963f21f4c4a1bb2c6" kindref="member">pm_device_state</ref><sp/><ref refid="http__parser__state_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref>);</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"></highlight></codeline>
-<codeline lineno="338" refid="group__subsys__pm__device_1ga37fb93d42a507abc7aa51c4a08e5353c" refkind="member"><highlight class="normal">__deprecated<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga37fb93d42a507abc7aa51c4a08e5353c" kindref="member">pm_device_state_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga561c0789071e3c3963f21f4c4a1bb2c6" kindref="member">pm_device_state</ref><sp/><ref refid="http__parser__state_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref>);</highlight></codeline>
-<codeline lineno="340"><highlight class="normal"></highlight></codeline>
-<codeline lineno="350" refid="group__subsys__pm__device_1gaffcf0aea5df10657235d4ed1f8c74d5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaffcf0aea5df10657235d4ed1f8c74d5a" kindref="member">pm_device_state_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga561c0789071e3c3963f21f4c4a1bb2c6" kindref="member">pm_device_state</ref><sp/>*<ref refid="http__parser__state_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref>);</highlight></codeline>
-<codeline lineno="352"><highlight class="normal"></highlight></codeline>
-<codeline lineno="370" refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" kindref="member">pm_device_action_run</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaee5546eacb9be7caa9d59ab63926cc4c" kindref="member">pm_device_action</ref><sp/>action);</highlight></codeline>
-<codeline lineno="372"><highlight class="normal"></highlight></codeline>
-<codeline lineno="383" refid="group__subsys__pm__device_1ga765a5412f66070ccefd8e80ed9f62b1b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga765a5412f66070ccefd8e80ed9f62b1b" kindref="member">pm_device_children_action_run</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
-<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaee5546eacb9be7caa9d59ab63926cc4c" kindref="member">pm_device_action</ref><sp/>action,</highlight></codeline>
-<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pm_device_action_failed_cb_t<sp/>failure_cb);</highlight></codeline>
-<codeline lineno="386"><highlight class="normal"></highlight></codeline>
-<codeline lineno="387"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_PM_DEVICE)<sp/>||<sp/>defined(__DOXYGEN__)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="399" refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="400"><highlight class="normal"></highlight></codeline>
-<codeline lineno="408" refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="409"><highlight class="normal"></highlight></codeline>
-<codeline lineno="416" refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="417"><highlight class="normal"></highlight></codeline>
-<codeline lineno="426" refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="427"><highlight class="normal"></highlight></codeline>
-<codeline lineno="441" refid="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" kindref="member">pm_device_wakeup_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
-<codeline lineno="442"><highlight class="normal"></highlight></codeline>
-<codeline lineno="451" refid="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" kindref="member">pm_device_wakeup_is_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="452"><highlight class="normal"></highlight></codeline>
-<codeline lineno="461" refid="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" kindref="member">pm_device_wakeup_is_capable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="462"><highlight class="normal"></highlight></codeline>
-<codeline lineno="477" refid="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" kindref="member">pm_device_state_lock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="478"><highlight class="normal"></highlight></codeline>
-<codeline lineno="488" refid="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" kindref="member">pm_device_state_unlock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="489"><highlight class="normal"></highlight></codeline>
-<codeline lineno="498" refid="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" kindref="member">pm_device_state_is_locked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="499"><highlight class="normal"></highlight></codeline>
-<codeline lineno="508" refid="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" kindref="member">pm_device_on_power_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
-<codeline lineno="509"><highlight class="normal"></highlight></codeline>
-<codeline lineno="510"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="511"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="512"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="514"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="515"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="516"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="518"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="519"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="520"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="521"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="522"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="326" refid="group__subsys__pm__device_1gaffcf0aea5df10657235d4ed1f8c74d5a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaffcf0aea5df10657235d4ed1f8c74d5a" kindref="member">pm_device_state_get</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga561c0789071e3c3963f21f4c4a1bb2c6" kindref="member">pm_device_state</ref><sp/>*<ref refid="http__parser__state_8h_1adc6e5733fc3c22f0a7b2914188c49c90" kindref="member">state</ref>);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" kindref="member">pm_device_action_run</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaee5546eacb9be7caa9d59ab63926cc4c" kindref="member">pm_device_action</ref><sp/>action);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359" refid="group__subsys__pm__device_1ga765a5412f66070ccefd8e80ed9f62b1b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga765a5412f66070ccefd8e80ed9f62b1b" kindref="member">pm_device_children_action_run</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaee5546eacb9be7caa9d59ab63926cc4c" kindref="member">pm_device_action</ref><sp/>action,</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pm_device_action_failed_cb_t<sp/>failure_cb);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_PM_DEVICE)<sp/>||<sp/>defined(__DOXYGEN__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375" refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384" refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392" refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402" refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417" refid="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" kindref="member">pm_device_wakeup_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427" refid="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" kindref="member">pm_device_wakeup_is_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437" refid="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" kindref="member">pm_device_wakeup_is_capable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453" refid="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" kindref="member">pm_device_state_lock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464" refid="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" kindref="member">pm_device_state_unlock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474" refid="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" kindref="member">pm_device_state_is_locked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484" refid="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" kindref="member">pm_device_on_power_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev);</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="488"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="492"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="494"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="497"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="500"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" kindref="member">pm_device_wakeup_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
+<codeline lineno="502"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(enable);</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" kindref="member">pm_device_wakeup_is_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="508"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" kindref="member">pm_device_wakeup_is_capable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="513"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" kindref="member">pm_device_state_lock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="518"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" kindref="member">pm_device_state_unlock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
 <codeline lineno="524"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="525"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" kindref="member">pm_device_wakeup_enable</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable)</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" kindref="member">pm_device_state_is_locked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
 <codeline lineno="526"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(enable);</highlight></codeline>
-<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="530"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="531"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" kindref="member">pm_device_wakeup_is_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="532"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="535"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="536"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" kindref="member">pm_device_wakeup_is_capable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="537"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" kindref="member">pm_device_on_power_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
+<codeline lineno="531"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_PM_DEVICE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="540"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="541"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" kindref="member">pm_device_state_lock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="542"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="544"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="545"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" kindref="member">pm_device_state_unlock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="546"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="548"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="549"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" kindref="member">pm_device_state_is_locked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="550"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="553"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="554"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" kindref="member">pm_device_on_power_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="555"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARG_UNUSED(dev);</highlight></codeline>
-<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="558"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="559"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_PM_DEVICE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="560"><highlight class="normal"></highlight></codeline>
-<codeline lineno="568" refid="group__subsys__pm__device_1gabfaec92a92766154b8b9ac9dd29f2c1e" refkind="member"><highlight class="normal">__deprecated<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gabfaec92a92766154b8b9ac9dd29f2c1e" kindref="member">device_busy_set</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="569"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set</ref>(dev);</highlight></codeline>
-<codeline lineno="571"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="572"><highlight class="normal"></highlight></codeline>
-<codeline lineno="580" refid="group__subsys__pm__device_1gadff113f34359db32c8739294143a1c8f" refkind="member"><highlight class="normal">__deprecated<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gadff113f34359db32c8739294143a1c8f" kindref="member">device_busy_clear</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="581"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear</ref>(dev);</highlight></codeline>
-<codeline lineno="583"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="584"><highlight class="normal"></highlight></codeline>
-<codeline lineno="593" refid="group__subsys__pm__device_1ga9ee3ee2f5dac79c85fc901c179fbadf9" refkind="member"><highlight class="normal">__deprecated<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga9ee3ee2f5dac79c85fc901c179fbadf9" kindref="member">device_any_busy_check</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="594"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy</ref>()<sp/>?<sp/>-<ref refid="group__system__errno_1ga8368025077a0385849d6817b2007c095" kindref="member">EBUSY</ref><sp/>:<sp/>0;</highlight></codeline>
-<codeline lineno="596"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="597"><highlight class="normal"></highlight></codeline>
-<codeline lineno="608" refid="group__subsys__pm__device_1ga24bd4cb295002584c4f8183e937badc1" refkind="member"><highlight class="normal">__deprecated<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga24bd4cb295002584c4f8183e937badc1" kindref="member">device_busy_check</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structdevice" kindref="compound">device</ref><sp/>*dev)</highlight></codeline>
-<codeline lineno="609"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy</ref>(dev)<sp/>?<sp/>-<ref refid="group__system__errno_1ga8368025077a0385849d6817b2007c095" kindref="member">EBUSY</ref><sp/>:<sp/>0;</highlight></codeline>
-<codeline lineno="611"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="612"><highlight class="normal"></highlight></codeline>
-<codeline lineno="615"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="616"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="617"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="618"><highlight class="normal"></highlight></codeline>
-<codeline lineno="619"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="include/pm/device.h"/>
   </compounddef>

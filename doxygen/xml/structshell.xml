@@ -297,110 +297,79 @@
           <edgelabel>arch</edgelabel>
         </childnode>
       </node>
-      <node id="45">
+      <node id="41">
         <label>log_backend</label>
         <link refid="structlog__backend"/>
-        <childnode refid="46" relation="usage">
+        <childnode refid="42" relation="usage">
           <edgelabel>api</edgelabel>
         </childnode>
-        <childnode refid="47" relation="usage">
+        <childnode refid="43" relation="usage">
           <edgelabel>cb</edgelabel>
         </childnode>
       </node>
-      <node id="46">
+      <node id="42">
         <label>log_backend_api</label>
         <link refid="structlog__backend__api"/>
       </node>
-      <node id="47">
+      <node id="43">
         <label>log_backend_control_block</label>
         <link refid="structlog__backend__control__block"/>
       </node>
-      <node id="48">
+      <node id="44">
         <label>log_output</label>
         <link refid="structlog__output"/>
-        <childnode refid="49" relation="usage">
+        <childnode refid="45" relation="usage">
           <edgelabel>control_block</edgelabel>
         </childnode>
       </node>
-      <node id="49">
+      <node id="45">
         <label>log_output_control_block</label>
         <link refid="structlog__output__control__block"/>
       </node>
-      <node id="52">
+      <node id="48">
         <label>mpsc_pbuf_buffer</label>
         <link refid="structmpsc__pbuf__buffer"/>
         <childnode refid="23" relation="usage">
           <edgelabel>lock</edgelabel>
         </childnode>
-        <childnode refid="52" relation="usage">
+        <childnode refid="48" relation="usage">
           <edgelabel>notify_drop</edgelabel>
         </childnode>
-        <childnode refid="53" relation="usage">
+        <childnode refid="49" relation="usage">
           <edgelabel>get_wlen</edgelabel>
         </childnode>
       </node>
-      <node id="51">
+      <node id="47">
         <label>mpsc_pbuf_buffer_config</label>
         <link refid="structmpsc__pbuf__buffer__config"/>
-        <childnode refid="52" relation="usage">
+        <childnode refid="48" relation="usage">
           <edgelabel>notify_drop</edgelabel>
         </childnode>
-        <childnode refid="53" relation="usage">
+        <childnode refid="49" relation="usage">
           <edgelabel>get_wlen</edgelabel>
         </childnode>
       </node>
-      <node id="53">
+      <node id="49">
         <label>mpsc_pbuf_generic</label>
         <link refid="unionmpsc__pbuf__generic"/>
-        <childnode refid="54" relation="usage">
+        <childnode refid="50" relation="usage">
           <edgelabel>hdr</edgelabel>
         </childnode>
-        <childnode refid="55" relation="usage">
+        <childnode refid="51" relation="usage">
           <edgelabel>skip</edgelabel>
         </childnode>
       </node>
-      <node id="54">
+      <node id="50">
         <label>mpsc_pbuf_hdr</label>
         <link refid="structmpsc__pbuf__hdr"/>
       </node>
-      <node id="55">
+      <node id="51">
         <label>mpsc_pbuf_skip</label>
         <link refid="structmpsc__pbuf__skip"/>
       </node>
       <node id="36">
         <label>ring_buf</label>
         <link refid="structring__buf"/>
-        <childnode refid="37" relation="usage">
-          <edgelabel>misc</edgelabel>
-        </childnode>
-        <childnode refid="40" relation="usage">
-          <edgelabel>buf</edgelabel>
-        </childnode>
-        <childnode refid="23" relation="usage">
-          <edgelabel>lock</edgelabel>
-        </childnode>
-      </node>
-      <node id="40">
-        <label>ring_buf::ring_buf_buffer</label>
-        <link refid="unionring__buf_1_1ring__buf__buffer"/>
-      </node>
-      <node id="37">
-        <label>ring_buf::ring_buf_misc</label>
-        <link refid="unionring__buf_1_1ring__buf__misc"/>
-        <childnode refid="38" relation="usage">
-          <edgelabel>item_mode</edgelabel>
-        </childnode>
-        <childnode refid="39" relation="usage">
-          <edgelabel>byte_mode</edgelabel>
-        </childnode>
-      </node>
-      <node id="39">
-        <label>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</label>
-        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode"/>
-      </node>
-      <node id="38">
-        <label>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</label>
-        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode"/>
       </node>
       <node id="1">
         <label>shell</label>
@@ -414,13 +383,13 @@
         <childnode refid="35" relation="usage">
           <edgelabel>history</edgelabel>
         </childnode>
-        <childnode refid="41" relation="usage">
+        <childnode refid="37" relation="usage">
           <edgelabel>fprintf_ctx</edgelabel>
         </childnode>
-        <childnode refid="43" relation="usage">
+        <childnode refid="39" relation="usage">
           <edgelabel>stats</edgelabel>
         </childnode>
-        <childnode refid="44" relation="usage">
+        <childnode refid="40" relation="usage">
           <edgelabel>log_backend</edgelabel>
         </childnode>
         <childnode refid="25" relation="usage">
@@ -500,14 +469,14 @@
           <edgelabel>tid</edgelabel>
         </childnode>
       </node>
-      <node id="41">
+      <node id="37">
         <label>shell_fprintf</label>
         <link refid="structshell__fprintf"/>
-        <childnode refid="42" relation="usage">
+        <childnode refid="38" relation="usage">
           <edgelabel>ctrl_blk</edgelabel>
         </childnode>
       </node>
-      <node id="42">
+      <node id="38">
         <label>shell_fprintf_control_block</label>
         <link refid="structshell__fprintf__control__block"/>
       </node>
@@ -522,29 +491,29 @@
           <edgelabel>list</edgelabel>
         </childnode>
       </node>
-      <node id="44">
+      <node id="40">
         <label>shell_log_backend</label>
         <link refid="structshell__log__backend"/>
-        <childnode refid="45" relation="usage">
+        <childnode refid="41" relation="usage">
           <edgelabel>backend</edgelabel>
         </childnode>
         <childnode refid="21" relation="usage">
           <edgelabel>msgq</edgelabel>
         </childnode>
-        <childnode refid="48" relation="usage">
+        <childnode refid="44" relation="usage">
           <edgelabel>log_output</edgelabel>
         </childnode>
-        <childnode refid="50" relation="usage">
+        <childnode refid="46" relation="usage">
           <edgelabel>control_block</edgelabel>
         </childnode>
-        <childnode refid="51" relation="usage">
+        <childnode refid="47" relation="usage">
           <edgelabel>mpsc_buffer_config</edgelabel>
         </childnode>
-        <childnode refid="52" relation="usage">
+        <childnode refid="48" relation="usage">
           <edgelabel>mpsc_buffer</edgelabel>
         </childnode>
       </node>
-      <node id="50">
+      <node id="46">
         <label>shell_log_backend_control_block</label>
         <link refid="structshell__log__backend__control__block"/>
       </node>
@@ -569,7 +538,7 @@
           <edgelabel>args</edgelabel>
         </childnode>
       </node>
-      <node id="43">
+      <node id="39">
         <label>shell_stats</label>
         <link refid="structshell__stats"/>
       </node>

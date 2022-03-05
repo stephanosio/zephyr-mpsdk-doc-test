@@ -659,7 +659,7 @@ If invoked from user mode, any sequence struct options for callback must be NULL
 <para>Set an asynchronous read request. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:`CONFIG_ADC_ASYNC` </verbatim> is selected.</para>
+<para><simplesect kind="note"><para>This function is available only if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_ADC_ASYNC` </verbatim> is selected.</para>
 </simplesect>
 If invoked from user mode, any sequence struct options for callback must be NULL.</para>
 <para><parameterlist kind="param"><parameteritem>

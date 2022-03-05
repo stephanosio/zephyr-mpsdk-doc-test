@@ -30,6 +30,18 @@
         </inbodydescription>
         <location file="include/sys/mpsc_pbuf.h" line="59" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="59" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="group__MPSC__PBUF__FLAGS_1gad0f57dbcecbb51a6b5b916c31a8eaab2" prot="public" static="no">
+        <name>MPSC_PBUF_MAX_UTILIZATION</name>
+        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(2)</initializer>
+        <briefdescription>
+<para>Flag indicating that maximum buffer usage is tracked. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/sys/mpsc_pbuf.h" line="62" column="9" bodyfile="include/sys/mpsc_pbuf.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>

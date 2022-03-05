@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -162,6 +162,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga2c8ac7f489fba611a2bca25bb2bbb5fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpsc__buf.html#ga2c8ac7f489fba611a2bca25bb2bbb5fb">mpsc_pbuf_is_pending</a> (struct <a class="el" href="structmpsc__pbuf__buffer.html">mpsc_pbuf_buffer</a> *<a class="el" href="group__kernel__mbox__api.html#gab659fc0dee01e6639b8b6108addbd046">buffer</a>)</td></tr>
 <tr class="memdesc:ga2c8ac7f489fba611a2bca25bb2bbb5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there are any message pending.  <a href="group__mpsc__buf.html#ga2c8ac7f489fba611a2bca25bb2bbb5fb">More...</a><br /></td></tr>
 <tr class="separator:ga2c8ac7f489fba611a2bca25bb2bbb5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73be0efc020500865cfa07c45494f4a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpsc__buf.html#ga73be0efc020500865cfa07c45494f4a5">mpsc_pbuf_get_utilization</a> (struct <a class="el" href="structmpsc__pbuf__buffer.html">mpsc_pbuf_buffer</a> *<a class="el" href="group__kernel__mbox__api.html#gab659fc0dee01e6639b8b6108addbd046">buffer</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *size, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *<a class="el" href="timer_2starve_2src_2main_8c.html#ad2a5acb9b13b943cac9ef0b8c8370100">now</a>)</td></tr>
+<tr class="memdesc:ga73be0efc020500865cfa07c45494f4a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current memory utilization.  <a href="group__mpsc__buf.html#ga73be0efc020500865cfa07c45494f4a5">More...</a><br /></td></tr>
+<tr class="separator:ga73be0efc020500865cfa07c45494f4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8ee7fd071effaca18797862d423279d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__mpsc__buf.html#ga8ee7fd071effaca18797862d423279d7">mpsc_pbuf_get_max_utilization</a> (struct <a class="el" href="structmpsc__pbuf__buffer.html">mpsc_pbuf_buffer</a> *<a class="el" href="group__kernel__mbox__api.html#gab659fc0dee01e6639b8b6108addbd046">buffer</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *max)</td></tr>
+<tr class="memdesc:ga8ee7fd071effaca18797862d423279d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum memory utilization.  <a href="group__mpsc__buf.html#ga8ee7fd071effaca18797862d423279d7">More...</a><br /></td></tr>
+<tr class="separator:ga8ee7fd071effaca18797862d423279d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Multi producer, single consumer packet buffer API. </p>
@@ -366,6 +372,92 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">buffer</td><td>Buffer.</td></tr>
     <tr><td class="paramname">packet</td><td>Packet. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8ee7fd071effaca18797862d423279d7" name="ga8ee7fd071effaca18797862d423279d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8ee7fd071effaca18797862d423279d7">&#9670;&nbsp;</a></span>mpsc_pbuf_get_max_utilization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mpsc_pbuf_get_max_utilization </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structmpsc__pbuf__buffer.html">mpsc_pbuf_buffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="mpsc__pbuf_8h.html">include/sys/mpsc_pbuf.h</a>&gt;</code></p>
+
+<p>Get maximum memory utilization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>Buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">max</td><td>Maximum buffer usage in bytes.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>retval 0 if utilization data collected successfully. retval -ENOTSUP if Collecting utilization data is not supported. </p>
+
+</div>
+</div>
+<a id="ga73be0efc020500865cfa07c45494f4a5" name="ga73be0efc020500865cfa07c45494f4a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga73be0efc020500865cfa07c45494f4a5">&#9670;&nbsp;</a></span>mpsc_pbuf_get_utilization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mpsc_pbuf_get_utilization </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structmpsc__pbuf__buffer.html">mpsc_pbuf_buffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>now</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="mpsc__pbuf_8h.html">include/sys/mpsc_pbuf.h</a>&gt;</code></p>
+
+<p>Get current memory utilization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">buffer</td><td>Buffer. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">size</td><td>Buffer size in bytes. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">now</td><td>Current buffer usage in bytes. </td></tr>
   </table>
   </dd>
 </dl>
@@ -588,7 +680,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

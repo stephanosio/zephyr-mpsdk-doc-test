@@ -165,7 +165,7 @@ the next tick&quot;, this convention was chosen to match legacy usage). Similarl
 <para>Get system uptime, in system ticks. </para>
         </briefdescription>
         <detaileddescription>
-<para>This routine returns the elapsed time since the system booted, in ticks (c.f. <verbatim>embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim>), which is the fundamental unit of resolution of kernel timekeeping.</para>
+<para>This routine returns the elapsed time since the system booted, in ticks (c.f. <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim>), which is the fundamental unit of resolution of kernel timekeeping.</para>
 <para><simplesect kind="return"><para>Current uptime in ticks. </para>
 </simplesect>
 </para>
@@ -187,7 +187,7 @@ the next tick&quot;, this convention was chosen to match legacy usage). Similarl
         </briefdescription>
         <detaileddescription>
 <para>This routine returns the elapsed time since the system booted, in milliseconds.</para>
-<para><simplesect kind="note"><para>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <verbatim>embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim> config option.</para>
+<para><simplesect kind="note"><para>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim> config option.</para>
 </simplesect>
 <simplesect kind="return"><para>Current uptime in milliseconds. </para>
 </simplesect>
@@ -211,7 +211,7 @@ the next tick&quot;, this convention was chosen to match legacy usage). Similarl
         <detaileddescription>
 <para>This routine returns the lower 32 bits of the system uptime in milliseconds.</para>
 <para>Because correct conversion requires full precision of the system clock there is no benefit to using this over <ref refid="group__clock__apis_1gae3e992cd3257c23d5b26d765fcbb2b69" kindref="member">k_uptime_get()</ref> unless you know the application will never run long enough for the system clock to approach 2^32 ticks. Calls to this function may involve interrupt blocking and 64-bit math.</para>
-<para><simplesect kind="note"><para>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <verbatim>embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim> config option</para>
+<para><simplesect kind="note"><para>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim> config option</para>
 </simplesect>
 <simplesect kind="return"><para>The low 32 bits of the current uptime, in milliseconds. </para>
 </simplesect>

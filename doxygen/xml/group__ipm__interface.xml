@@ -129,6 +129,21 @@
         </inbodydescription>
         <location file="include/drivers/ipm.h" line="88" column="9" bodyfile="include/drivers/ipm.h" bodystart="88" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="typedef" id="group__ipm__interface_1ga868351e00ca191f65fccfbe2514903b5" prot="public" static="no">
+        <type>void(*</type>
+        <definition>ipm_complete_t</definition>
+        <argsstring>)(const struct device *ipmdev)</argsstring>
+        <name>ipm_complete_t</name>
+        <briefdescription>
+<para>Callback API upon command completion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>See <emphasis><ref refid="group__ipm__interface_1ga53f785ecfac17b9fb2e5f3a9505c7fd2" kindref="member">ipm_complete()</ref></emphasis> for argument definitions. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/ipm.h" line="96" column="9" bodyfile="include/drivers/ipm.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
       <memberdef kind="function" id="group__ipm__interface_1ga8f3fe21c1a4ffd3c38b67f81749af043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -241,7 +256,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="133" column="6" declfile="include/drivers/ipm.h" declline="133" declcolumn="6"/>
+        <location file="include/drivers/ipm.h" line="144" column="6" declfile="include/drivers/ipm.h" declline="144" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__ipm__interface_1ga557b15bc8a353483ca55888dba27493b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -293,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="154" column="20" bodyfile="include/drivers/ipm.h" bodystart="154" bodyend="161"/>
+        <location file="include/drivers/ipm.h" line="165" column="20" bodyfile="include/drivers/ipm.h" bodystart="165" bodyend="172"/>
       </memberdef>
       <memberdef kind="function" id="group__ipm__interface_1ga0a11eecaa7254575ab6baf0783a18b5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -324,7 +339,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="173" column="6" declfile="include/drivers/ipm.h" declline="173" declcolumn="6"/>
+        <location file="include/drivers/ipm.h" line="184" column="6" declfile="include/drivers/ipm.h" declline="184" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__ipm__interface_1ga168fd277b7819b639baa4e630c596a7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -355,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="194" column="11" declfile="include/drivers/ipm.h" declline="194" declcolumn="11"/>
+        <location file="include/drivers/ipm.h" line="205" column="11" declfile="include/drivers/ipm.h" declline="205" declcolumn="11"/>
       </memberdef>
       <memberdef kind="function" id="group__ipm__interface_1ga5884fa95cb38ddfe4493eb70dafebe8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -412,7 +427,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="213" column="6" declfile="include/drivers/ipm.h" declline="213" declcolumn="6"/>
+        <location file="include/drivers/ipm.h" line="224" column="6" declfile="include/drivers/ipm.h" declline="224" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__ipm__interface_1ga53f785ecfac17b9fb2e5f3a9505c7fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ipm_complete</definition>
+        <argsstring>(const struct device *ipmdev)</argsstring>
+        <name>ipm_complete</name>
+        <param>
+          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
+          <declname>ipmdev</declname>
+        </param>
+        <briefdescription>
+<para>Signal asynchronous command completion. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Some IPM backends have an ability to deliver a command asynchronously. The callback will be invoked in interrupt context, but the message (including the provided data pointer) will stay &quot;active&quot; and unacknowledged until later code (presumably in thread mode) calls <ref refid="group__ipm__interface_1ga53f785ecfac17b9fb2e5f3a9505c7fd2" kindref="member">ipm_complete()</ref>.</para>
+<para>This function is, obviously, a noop on drivers without async support.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ipmdev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Driver instance pointer. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/ipm.h" line="249" column="7" declfile="include/drivers/ipm.h" declline="249" declcolumn="7"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

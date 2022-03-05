@@ -1,8 +1,8 @@
 var load__store_8c =
 [
     [ "K_SEM_DEFINE", "load__store_8c.html#abc701677052e08df201675b1657bf094", null ],
-    [ "K_THREAD_DEFINE", "load__store_8c.html#aebaefb2cea4781f0b031aa20a78424f9", null ],
-    [ "K_THREAD_DEFINE", "load__store_8c.html#a5f412007e6e1142a9996ef323acf9bcc", null ],
+    [ "K_THREAD_DEFINE", "load__store_8c.html#a369451afaa71c5609e1ad793fa590c9d", null ],
+    [ "K_THREAD_DEFINE", "load__store_8c.html#a972c33cce282f633257a5825ca248766", null ],
     [ "load_store_high", "load__store_8c.html#a27e8a6457aed4592543905a5149861a8", null ],
     [ "load_store_low", "load__store_8c.html#a6cc2b36e8aad5d16041e753979c5476e", null ],
     [ "test_load_store", "load__store_8c.html#a8b8bbeec718fd53c7330bee2058d9c3c", null ],

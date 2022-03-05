@@ -69,7 +69,7 @@
       </memberdef>
       <memberdef kind="define" id="mslab__api_2src_2test__mslab_8h_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -116,7 +116,7 @@
 <codeline lineno="11" refid="mslab__api_2src_2test__mslab_8h_1a4d6cfcd53ce1e9420843a5ce9b5c631d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_NUM<sp/>3</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12" refid="mslab__api_2src_2test__mslab_8h_1a66edaa498a82de98246e8be258cb0e06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_ALIGN<sp/>8</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13" refid="mslab__api_2src_2test__mslab_8h_1a5394435edf20efdffac70b5c362ade81" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLK_SIZE<sp/>16</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="mslab__api_2src_2test__mslab_8h_1a21d9543c516fffee84a7963224271f95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="mslab__api_2src_2test__mslab_8h_1a21d9543c516fffee84a7963224271f95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mslab__api_2src_2test__mslab_8h_1afe9be01511381d2a7056370d35f877bf" kindref="member">tmslab_alloc_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="test__fifo__contexts_8c_1a8b1feab52ee372b1ee1297129329eaad" kindref="member">data</ref>);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>

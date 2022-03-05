@@ -14,7 +14,7 @@ var fatal_2exception_2src_2main_8c =
     [ "entry_panic", "fatal_2exception_2src_2main_8c.html#a4afa57e0a67fb3286c1a3ebdfda1e975", null ],
     [ "entry_zephyr_assert", "fatal_2exception_2src_2main_8c.html#adcbefc15b0d418eef815d3532ea59de6", null ],
     [ "k_sys_fatal_error_handler", "group__fatal__apis.html#gab6dfd75572a84729df534fde49ef7d85", null ],
-    [ "K_THREAD_STACK_DEFINE", "fatal_2exception_2src_2main_8c.html#af7ec9f5d010452974fac92c7fc50b583", null ],
+    [ "K_THREAD_STACK_DEFINE", "fatal_2exception_2src_2main_8c.html#a8eb092c2b70094af1394d3fc0f806168", null ],
     [ "stack_hw_overflow", "fatal_2exception_2src_2main_8c.html#a6867256eda307a3285f8c31fbbb6779d", null ],
     [ "stack_sentinel_swap", "fatal_2exception_2src_2main_8c.html#ad58f1b56379735dd7a44521814b764e0", null ],
     [ "stack_sentinel_timer", "fatal_2exception_2src_2main_8c.html#ae91c28d0f4a383097832ad292e4035bc", null ],

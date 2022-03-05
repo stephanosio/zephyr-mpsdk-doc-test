@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Zephyr API Documentation: include/display/grove_lcd.h File Reference</title>
+<title>Zephyr API Documentation: include/drivers/misc/grove_lcd/grove_lcd.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -98,13 +98,13 @@ $(document).ready(function(){initNavTree('grove__lcd_8h.html',''); initResizable
   <div class="headertitle"><div class="title">grove_lcd.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;<a class="el" href="stdint_8h_source.html">stdint.h</a>&gt;</code><br />
+<code>#include &lt;device.h&gt;</code><br />
+</div>
 <p><a href="grove__lcd_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga99c15a838cd9f4a2c30a01084c04934c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga99c15a838cd9f4a2c30a01084c04934c">GROVE_LCD_NAME</a>&#160;&#160;&#160;&quot;GLCD&quot;</td></tr>
-<tr class="separator:ga99c15a838cd9f4a2c30a01084c04934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4fe4ad1bc603fa658247ea2f7dbf7f31"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga4fe4ad1bc603fa658247ea2f7dbf7f31">GLCD_DS_DISPLAY_ON</a>&#160;&#160;&#160;(1 &lt;&lt; 2)</td></tr>
 <tr class="separator:ga4fe4ad1bc603fa658247ea2f7dbf7f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga66bc1e76fcda544f619d02ecbdcb368f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga66bc1e76fcda544f619d02ecbdcb368f">GLCD_DS_DISPLAY_OFF</a>&#160;&#160;&#160;(0 &lt;&lt; 2)</td></tr>
@@ -146,42 +146,39 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7f8b4cf3f7c685811d750d5adbc4de50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga7f8b4cf3f7c685811d750d5adbc4de50">glcd_print</a> (const struct <a class="el" href="structdevice.html">device</a> *port, char *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size)</td></tr>
-<tr class="memdesc:ga7f8b4cf3f7c685811d750d5adbc4de50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send text to the screen.  <a href="group__grove__display.html#ga7f8b4cf3f7c685811d750d5adbc4de50">More...</a><br /></td></tr>
-<tr class="separator:ga7f8b4cf3f7c685811d750d5adbc4de50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaacf2fcb77fed7b0c946cf263fdd8ff40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gaacf2fcb77fed7b0c946cf263fdd8ff40">glcd_cursor_pos_set</a> (const struct <a class="el" href="structdevice.html">device</a> *port, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> col, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> row)</td></tr>
-<tr class="memdesc:gaacf2fcb77fed7b0c946cf263fdd8ff40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set text cursor position for next additions.  <a href="group__grove__display.html#gaacf2fcb77fed7b0c946cf263fdd8ff40">More...</a><br /></td></tr>
-<tr class="separator:gaacf2fcb77fed7b0c946cf263fdd8ff40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac314fbf0a6c9f63cbe1caf41704a5c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gac314fbf0a6c9f63cbe1caf41704a5c1f">glcd_clear</a> (const struct <a class="el" href="structdevice.html">device</a> *port)</td></tr>
-<tr class="memdesc:gac314fbf0a6c9f63cbe1caf41704a5c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the current display.  <a href="group__grove__display.html#gac314fbf0a6c9f63cbe1caf41704a5c1f">More...</a><br /></td></tr>
-<tr class="separator:gac314fbf0a6c9f63cbe1caf41704a5c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ea278bf350bceaa3fef2750c28a22ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga9ea278bf350bceaa3fef2750c28a22ca">glcd_display_state_set</a> (const struct <a class="el" href="structdevice.html">device</a> *port, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> opt)</td></tr>
-<tr class="memdesc:ga9ea278bf350bceaa3fef2750c28a22ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to change the display state.  <a href="group__grove__display.html#ga9ea278bf350bceaa3fef2750c28a22ca">More...</a><br /></td></tr>
-<tr class="separator:ga9ea278bf350bceaa3fef2750c28a22ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga999519eba431d5ceb6c2cd7ee98da04a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga999519eba431d5ceb6c2cd7ee98da04a">glcd_display_state_get</a> (const struct <a class="el" href="structdevice.html">device</a> *port)</td></tr>
-<tr class="memdesc:ga999519eba431d5ceb6c2cd7ee98da04a"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the display feature set associated with the device  <a href="group__grove__display.html#ga999519eba431d5ceb6c2cd7ee98da04a">More...</a><br /></td></tr>
-<tr class="separator:ga999519eba431d5ceb6c2cd7ee98da04a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga118e7d7fa97af32d7d21f6ee7b8393c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga118e7d7fa97af32d7d21f6ee7b8393c0">glcd_input_state_set</a> (const struct <a class="el" href="structdevice.html">device</a> *port, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> opt)</td></tr>
-<tr class="memdesc:ga118e7d7fa97af32d7d21f6ee7b8393c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to change the input state.  <a href="group__grove__display.html#ga118e7d7fa97af32d7d21f6ee7b8393c0">More...</a><br /></td></tr>
-<tr class="separator:ga118e7d7fa97af32d7d21f6ee7b8393c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa1b626fe58845ac9654695f73efd0708"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gaa1b626fe58845ac9654695f73efd0708">glcd_input_state_get</a> (const struct <a class="el" href="structdevice.html">device</a> *port)</td></tr>
-<tr class="memdesc:gaa1b626fe58845ac9654695f73efd0708"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the input set associated with the device  <a href="group__grove__display.html#gaa1b626fe58845ac9654695f73efd0708">More...</a><br /></td></tr>
-<tr class="separator:gaa1b626fe58845ac9654695f73efd0708"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad8957246688288a56961a2fadc0b5798"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gad8957246688288a56961a2fadc0b5798">glcd_function_set</a> (const struct <a class="el" href="structdevice.html">device</a> *port, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> opt)</td></tr>
-<tr class="memdesc:gad8957246688288a56961a2fadc0b5798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the functional state of the display.  <a href="group__grove__display.html#gad8957246688288a56961a2fadc0b5798">More...</a><br /></td></tr>
-<tr class="separator:gad8957246688288a56961a2fadc0b5798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacdc6c6143a89e5491b36d31d4f15dd44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gacdc6c6143a89e5491b36d31d4f15dd44">glcd_function_get</a> (const struct <a class="el" href="structdevice.html">device</a> *port)</td></tr>
-<tr class="memdesc:gacdc6c6143a89e5491b36d31d4f15dd44"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the function set associated with the device  <a href="group__grove__display.html#gacdc6c6143a89e5491b36d31d4f15dd44">More...</a><br /></td></tr>
-<tr class="separator:gacdc6c6143a89e5491b36d31d4f15dd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad1f5159cc923f0f7e4e6b1078a3fc694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gad1f5159cc923f0f7e4e6b1078a3fc694">glcd_color_select</a> (const struct <a class="el" href="structdevice.html">device</a> *port, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> color)</td></tr>
-<tr class="memdesc:gad1f5159cc923f0f7e4e6b1078a3fc694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LCD background to a predefined color.  <a href="group__grove__display.html#gad1f5159cc923f0f7e4e6b1078a3fc694">More...</a><br /></td></tr>
-<tr class="separator:gad1f5159cc923f0f7e4e6b1078a3fc694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8ca3666f1f35df94d7e8907846aca77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gaf8ca3666f1f35df94d7e8907846aca77">glcd_color_set</a> (const struct <a class="el" href="structdevice.html">device</a> *port, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> <a class="el" href="asm-macro-64-bit-gnu_8h.html#af16d2973cfd145a2ebdbf9528d5d9ae2">r</a>, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> g, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> b)</td></tr>
-<tr class="memdesc:gaf8ca3666f1f35df94d7e8907846aca77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LCD background to custom RGB color value.  <a href="group__grove__display.html#gaf8ca3666f1f35df94d7e8907846aca77">More...</a><br /></td></tr>
-<tr class="separator:gaf8ca3666f1f35df94d7e8907846aca77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9aa7faeafdf1bb683ded10f2d52db062"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga9aa7faeafdf1bb683ded10f2d52db062">glcd_initialize</a> (const struct <a class="el" href="structdevice.html">device</a> *port)</td></tr>
-<tr class="memdesc:ga9aa7faeafdf1bb683ded10f2d52db062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the Grove LCD panel.  <a href="group__grove__display.html#ga9aa7faeafdf1bb683ded10f2d52db062">More...</a><br /></td></tr>
-<tr class="separator:ga9aa7faeafdf1bb683ded10f2d52db062"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaecd7b73186d110fa4bd2c47bbb7d63a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gaecd7b73186d110fa4bd2c47bbb7d63a2">glcd_print</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, char *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size)</td></tr>
+<tr class="memdesc:gaecd7b73186d110fa4bd2c47bbb7d63a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send text to the screen.  <a href="group__grove__display.html#gaecd7b73186d110fa4bd2c47bbb7d63a2">More...</a><br /></td></tr>
+<tr class="separator:gaecd7b73186d110fa4bd2c47bbb7d63a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8272c8c1ff41835306908a0f6932feae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga8272c8c1ff41835306908a0f6932feae">glcd_cursor_pos_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> col, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> row)</td></tr>
+<tr class="memdesc:ga8272c8c1ff41835306908a0f6932feae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set text cursor position for next additions.  <a href="group__grove__display.html#ga8272c8c1ff41835306908a0f6932feae">More...</a><br /></td></tr>
+<tr class="separator:ga8272c8c1ff41835306908a0f6932feae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga10929139f1632247968ccdd4fdd79dcd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga10929139f1632247968ccdd4fdd79dcd">glcd_clear</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
+<tr class="memdesc:ga10929139f1632247968ccdd4fdd79dcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the current display.  <a href="group__grove__display.html#ga10929139f1632247968ccdd4fdd79dcd">More...</a><br /></td></tr>
+<tr class="separator:ga10929139f1632247968ccdd4fdd79dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga103c6edb0b5ed37f34c12694338acc70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga103c6edb0b5ed37f34c12694338acc70">glcd_display_state_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> opt)</td></tr>
+<tr class="memdesc:ga103c6edb0b5ed37f34c12694338acc70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to change the display state.  <a href="group__grove__display.html#ga103c6edb0b5ed37f34c12694338acc70">More...</a><br /></td></tr>
+<tr class="separator:ga103c6edb0b5ed37f34c12694338acc70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac3139bf68d1acbb27905a2346da13b17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gac3139bf68d1acbb27905a2346da13b17">glcd_display_state_get</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
+<tr class="memdesc:gac3139bf68d1acbb27905a2346da13b17"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the display feature set associated with the device  <a href="group__grove__display.html#gac3139bf68d1acbb27905a2346da13b17">More...</a><br /></td></tr>
+<tr class="separator:gac3139bf68d1acbb27905a2346da13b17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae73554047414529e5e7957a5d394e4a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gae73554047414529e5e7957a5d394e4a2">glcd_input_state_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> opt)</td></tr>
+<tr class="memdesc:gae73554047414529e5e7957a5d394e4a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to change the input state.  <a href="group__grove__display.html#gae73554047414529e5e7957a5d394e4a2">More...</a><br /></td></tr>
+<tr class="separator:gae73554047414529e5e7957a5d394e4a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c590c83b2f1c8ea0fe301daa7a40198"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga3c590c83b2f1c8ea0fe301daa7a40198">glcd_input_state_get</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
+<tr class="memdesc:ga3c590c83b2f1c8ea0fe301daa7a40198"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the input set associated with the device  <a href="group__grove__display.html#ga3c590c83b2f1c8ea0fe301daa7a40198">More...</a><br /></td></tr>
+<tr class="separator:ga3c590c83b2f1c8ea0fe301daa7a40198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5e9fb362faf9c040eaa16addbfad2b6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#ga5e9fb362faf9c040eaa16addbfad2b6d">glcd_function_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> opt)</td></tr>
+<tr class="memdesc:ga5e9fb362faf9c040eaa16addbfad2b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to set the functional state of the display.  <a href="group__grove__display.html#ga5e9fb362faf9c040eaa16addbfad2b6d">More...</a><br /></td></tr>
+<tr class="separator:ga5e9fb362faf9c040eaa16addbfad2b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad660824e481428b811c914d6bf4634f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gad660824e481428b811c914d6bf4634f5">glcd_function_get</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
+<tr class="memdesc:gad660824e481428b811c914d6bf4634f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the function set associated with the device  <a href="group__grove__display.html#gad660824e481428b811c914d6bf4634f5">More...</a><br /></td></tr>
+<tr class="separator:gad660824e481428b811c914d6bf4634f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabd119208e05f9f878b7f24a62da08db2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gabd119208e05f9f878b7f24a62da08db2">glcd_color_select</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> color)</td></tr>
+<tr class="memdesc:gabd119208e05f9f878b7f24a62da08db2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LCD background to a predefined color.  <a href="group__grove__display.html#gabd119208e05f9f878b7f24a62da08db2">More...</a><br /></td></tr>
+<tr class="separator:gabd119208e05f9f878b7f24a62da08db2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf99aa37f71396baaf523348a3ea9cbbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__grove__display.html#gaf99aa37f71396baaf523348a3ea9cbbe">glcd_color_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> <a class="el" href="asm-macro-64-bit-gnu_8h.html#af16d2973cfd145a2ebdbf9528d5d9ae2">r</a>, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> g, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> b)</td></tr>
+<tr class="memdesc:gaf99aa37f71396baaf523348a3ea9cbbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set LCD background to custom RGB color value.  <a href="group__grove__display.html#gaf99aa37f71396baaf523348a3ea9cbbe">More...</a><br /></td></tr>
+<tr class="separator:gaf99aa37f71396baaf523348a3ea9cbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -189,8 +186,8 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4636d4e18f69ebf0de83434441c44c49.html">display</a></li><li class="navelem"><a class="el" href="grove__lcd_8h.html">grove_lcd.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe5cf12322eb0f9892753dc20f1484c.html">drivers</a></li><li class="navelem"><a class="el" href="dir_7b27f9222e576cc48dc575c9b59104f7.html">misc</a></li><li class="navelem"><a class="el" href="dir_28507d6684867fe80d3508bdfe4f3ae9.html">grove_lcd</a></li><li class="navelem"><a class="el" href="grove__lcd_8h.html">grove_lcd.h</a></li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

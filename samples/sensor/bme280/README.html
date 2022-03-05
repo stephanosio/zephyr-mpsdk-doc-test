@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -204,7 +206,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -280,7 +282,7 @@ sensor in polling mode (without interrupt trigger).</p>
 <p>The sample can be configured to support BME280 sensors connected via either I2C
 or SPI. Configuration is done via <a class="reference internal" href="../../../guides/dts/index.html#dt-guide"><span class="std std-ref">devicetree</span></a>. The devicetree
 must have an enabled node with <code class="docutils literal notranslate"><span class="pre">compatible</span> <span class="pre">=</span> <span class="pre">&quot;bosch,bme280&quot;;</span></code>. See
-<a class="reference internal" href="../../../reference/devicetree/compatibles/bosch%2Cbme280.html#std-dtcompatible-bosch-bme280"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">bosch,bme280</span></code></a> for the devicetree binding and see below for
+<a class="reference internal" href="../../../reference/devicetree/bindings.html#std-dtcompatible-bosch-bme280"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">bosch,bme280</span></code></a> for the devicetree binding and see below for
 examples and common configurations.</p>
 <p>If the sensor is not built into your board, start by wiring the sensor pins
 according to the connection diagram given in the <a class="reference external" href="https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf">BME280 datasheet</a> at
@@ -386,8 +388,8 @@ temp: 20.150000; press: 99.859234; humidity: 46.469726
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

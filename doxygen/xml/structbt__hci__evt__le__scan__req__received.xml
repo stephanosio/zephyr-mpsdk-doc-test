@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2445" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2445" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2446" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2446" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__scan__req__received_1a7dca5ad876dc97859a139d8bd4b207af" prot="public" static="no" mutable="no">
         <type><ref refid="structbt__addr__le__t" kindref="compound">bt_addr_le_t</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2446" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2446" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2447" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2447" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -55,7 +55,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/hci.h" line="2444" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2444" bodyend="2447"/>
+    <location file="include/bluetooth/hci.h" line="2445" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2445" bodyend="2448"/>
     <listofallmembers>
       <member refid="structbt__hci__evt__le__scan__req__received_1a7dca5ad876dc97859a139d8bd4b207af" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_scan_req_received</scope><name>addr</name></member>
       <member refid="structbt__hci__evt__le__scan__req__received_1a62c6d5e5b7079665c0aea8eb676a0433" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_scan_req_received</scope><name>handle</name></member>

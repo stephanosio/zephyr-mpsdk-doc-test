@@ -44,7 +44,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -66,6 +66,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -140,7 +142,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -580,13 +582,13 @@ as custom QEMU and OpenOCD.</p>
 <div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-6-VWJ1bnR1" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-6-VWJ1bnR1" name="VWJ1bnR1" role="tab" tabindex="0">Ubuntu</button><button aria-controls="panel-6-bWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-6-bWFjT1M=" name="bWFjT1M=" role="tab" tabindex="-1">macOS</button><button aria-controls="panel-6-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-6-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-6-VWJ1bnR1" class="sphinx-tabs-panel group-tab" id="panel-6-VWJ1bnR1" name="VWJ1bnR1" role="tabpanel" tabindex="0"><ol class="arabic">
 <li><p>Download and verify the <a class="reference external" href="https://github.com/zephyrproject-rtos/sdk-ng/releases">latest Zephyr SDK bundle</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~
-wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_linux-x86_64.tar.gz
-wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/sha256.sum <span class="p">|</span> shasum --check --ignore-missing
+wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
+wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/sha256.sum <span class="p">|</span> shasum --check --ignore-missing
 </pre></div>
 </div>
 </li>
 <li><p>Extract the Zephyr SDK bundle archive:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvf zephyr-sdk-0.90.22_linux-x86_64.tar.gz
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvf zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
 </pre></div>
 </div>
 <div class="admonition note">
@@ -598,13 +600,13 @@ wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download
 <li><p><code class="docutils literal notranslate"><span class="pre">/opt</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/usr/local</span></code></p></li>
 </ul>
-<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.90.22</span></code> directory and, when
+<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.14.0-beta1</span></code> directory and, when
 extracted under <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>, the resulting installation path will be
-<code class="docutils literal notranslate"><span class="pre">$HOME/zephyr-sdk-0.90.22</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">$HOME/zephyr-sdk-0.14.0-beta1</span></code>.</p>
 </div>
 </li>
 <li><p>Run the Zephyr SDK bundle setup script:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.90.22
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.14.0-beta1
 ./setup.sh
 </pre></div>
 </div>
@@ -617,7 +619,7 @@ directory after the initial setup.</p>
 </li>
 <li><p>Install <a class="reference external" href="https://en.wikipedia.org/wiki/Udev">udev</a> rules, which
 allow you to flash most Zephyr boards as a regular user:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo cp ~/zephyr-sdk-0.90.22/sysroots/x86_64-pokysdk-linux/usr/share/openocd/contrib/60-openocd.rules /etc/udev/rules.d
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo cp ~/zephyr-sdk-0.14.0-beta1/sysroots/x86_64-pokysdk-linux/usr/share/openocd/contrib/60-openocd.rules /etc/udev/rules.d
 sudo udevadm control --reload
 </pre></div>
 </div>
@@ -626,13 +628,13 @@ sudo udevadm control --reload
 </div><div aria-labelledby="tab-6-bWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-6-bWFjT1M=" name="bWFjT1M=" role="tabpanel" tabindex="0"><ol class="arabic">
 <li><p>Download and verify the <a class="reference external" href="https://github.com/zephyrproject-rtos/sdk-ng/releases">latest Zephyr SDK bundle</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~
-wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_macos-x86_64.tar.gz
-wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/sha256.sum <span class="p">|</span> shasum --check --ignore-missing
+wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_macos-x86_64.tar.gz
+wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/sha256.sum <span class="p">|</span> shasum --check --ignore-missing
 </pre></div>
 </div>
 </li>
 <li><p>Extract the Zephyr SDK bundle archive:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvf zephyr-sdk-0.90.22_macos-x86_64.tar.gz
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tar xvf zephyr-sdk-0.14.0-beta1_macos-x86_64.tar.gz
 </pre></div>
 </div>
 <div class="admonition note">
@@ -644,13 +646,13 @@ wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download
 <li><p><code class="docutils literal notranslate"><span class="pre">/opt</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">/usr/local</span></code></p></li>
 </ul>
-<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.90.22</span></code> directory and, when
+<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.14.0-beta1</span></code> directory and, when
 extracted under <code class="docutils literal notranslate"><span class="pre">$HOME</span></code>, the resulting installation path will be
-<code class="docutils literal notranslate"><span class="pre">$HOME/zephyr-sdk-0.90.22</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">$HOME/zephyr-sdk-0.14.0-beta1</span></code>.</p>
 </div>
 </li>
 <li><p>Run the Zephyr SDK bundle setup script:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.90.22
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.14.0-beta1
 ./setup.sh
 </pre></div>
 </div>
@@ -665,12 +667,12 @@ directory after the initial setup.</p>
 </div><div aria-labelledby="tab-6-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-6-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><ol class="arabic">
 <li><p>Download the <a class="reference external" href="https://github.com/zephyrproject-rtos/sdk-ng/releases">latest Zephyr SDK bundle</a>:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> %HOMEPATH%
-wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_windows-x86_64.zip
+wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_windows-x86_64.zip
 </pre></div>
 </div>
 </li>
 <li><p>Extract the Zephyr SDK bundle archive:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>unzip zephyr-sdk-0.90.22_windows-x86_64.zip
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>unzip zephyr-sdk-0.14.0-beta1_windows-x86_64.zip
 </pre></div>
 </div>
 <div class="admonition note">
@@ -680,13 +682,13 @@ wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.9
 <li><p><code class="docutils literal notranslate"><span class="pre">%HOMEPATH%</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">%PROGRAMFILES%</span></code></p></li>
 </ul>
-<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.90.22</span></code> directory and, when
+<p>The Zephyr SDK bundle archive contains the <code class="docutils literal notranslate"><span class="pre">zephyr-sdk-0.14.0-beta1</span></code> directory and, when
 extracted under <code class="docutils literal notranslate"><span class="pre">%HOMEPATH%</span></code>, the resulting installation path will be
-<code class="docutils literal notranslate"><span class="pre">%HOMEPATH%\zephyr-sdk-0.90.22</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">%HOMEPATH%\zephyr-sdk-0.14.0-beta1</span></code>.</p>
 </div>
 </li>
 <li><p>Run the Zephyr SDK bundle setup script:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.90.22
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> zephyr-sdk-0.14.0-beta1
 setup.cmd
 </pre></div>
 </div>
@@ -803,8 +805,8 @@ three backticks to delimit the snippet.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -24,7 +24,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5620" column="20" bodyfile="include/kernel.h" bodystart="5620" bodyend="5623"/>
+        <location file="include/kernel.h" line="5616" column="20" bodyfile="include/kernel.h" bodystart="5616" bodyend="5619"/>
       </memberdef>
       <memberdef kind="function" id="group__cpu__idle__apis_1gadf88ece6447b65b7d0d2f3a70ab4fe8f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -55,7 +55,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5639" column="20" bodyfile="include/kernel.h" bodystart="5639" bodyend="5642"/>
+        <location file="include/kernel.h" line="5635" column="20" bodyfile="include/kernel.h" bodystart="5635" bodyend="5638"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

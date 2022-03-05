@@ -1113,7 +1113,7 @@
         <detaileddescription>
 <para>The Node Identity state of a Subnet determines whether the Subnet advertises connectable Node Identity beacons for Proxy Clients to connect to. Once started, the Node Identity beacon runs for 60 seconds, or until it is stopped.</para>
 <para>This function serves the same purpose as <ref refid="group__bt__mesh__proxy_1ga7fb3c76f1be6943dd4a18f26e8dd18e7" kindref="member">bt_mesh_proxy_identity_enable</ref>, but only acts on a single Subnet.</para>
-<para>GATT Proxy support must be enabled through <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_MESH_GATT_PROXY` </verbatim>.</para>
+<para>GATT Proxy support must be enabled through <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_MESH_GATT_PROXY` </verbatim>.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>net_idx</parametername>

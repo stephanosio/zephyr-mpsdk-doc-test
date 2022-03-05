@@ -341,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="498" column="6" declfile="include/drivers/uart.h" declline="498" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="476" column="6" declfile="include/drivers/uart.h" declline="476" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__interface_1gaa0b75777b879af10543f7e8f463ff9a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -407,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="644" column="6" declfile="include/drivers/uart.h" declline="644" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="622" column="6" declfile="include/drivers/uart.h" declline="622" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__interface_1ga81dfc5f2134de8e4acb5f063512cf703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -473,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="672" column="6" declfile="include/drivers/uart.h" declline="672" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="650" column="6" declfile="include/drivers/uart.h" declline="650" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__interface_1gab039414b41145dc8d31349836da91263" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -558,7 +558,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="1507" column="6" declfile="include/drivers/uart.h" declline="1507" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="1485" column="6" declfile="include/drivers/uart.h" declline="1485" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__interface_1gafda8a550284a54c8e1d6b6638de978e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -643,7 +643,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="1538" column="6" declfile="include/drivers/uart.h" declline="1538" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="1516" column="6" declfile="include/drivers/uart.h" declline="1516" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__uart__interface_1gaa8683398e5d709b513509d08841ed51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -729,7 +729,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/uart.h" line="1572" column="6" declfile="include/drivers/uart.h" declline="1572" declcolumn="6"/>
+        <location file="include/drivers/uart.h" line="1550" column="6" declfile="include/drivers/uart.h" declline="1550" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

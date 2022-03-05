@@ -3,7 +3,7 @@ var early__sleep_2src_2main_8c =
     [ "TEST_TICKS_TO_SLEEP", "early__sleep_2src_2main_8c.html#a3ea9aa451559f29e07f8716031b54b19", null ],
     [ "THREAD_STACK", "early__sleep_2src_2main_8c.html#af9a5d6addf893be0502ae41f52e794b2", null ],
     [ "helper_thread", "early__sleep_2src_2main_8c.html#a444655b46a733d8e0ef18dc69cb15773", null ],
-    [ "K_THREAD_STACK_DEFINE", "early__sleep_2src_2main_8c.html#a9b0828430bdc0a990e498b19b7883ef9", null ],
+    [ "K_THREAD_STACK_DEFINE", "early__sleep_2src_2main_8c.html#a839b75df7ac28a7f4d96cd451323c081", null ],
     [ "SYS_INIT", "early__sleep_2src_2main_8c.html#a080adab9e7b88edfe90c6d2115d9d06e", null ],
     [ "SYS_INIT", "early__sleep_2src_2main_8c.html#a687c1f0b2610a3676bd1c096485e1879", null ],
     [ "test_early_sleep", "early__sleep_2src_2main_8c.html#a9f44a7f5a4213bbce7d6857d215cb451", null ],

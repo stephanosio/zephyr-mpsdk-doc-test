@@ -140,108 +140,6 @@
         </inbodydescription>
         <location file="include/pm/device.h" line="315" column="12" declfile="include/pm/device.h" declline="315" declcolumn="12"/>
       </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1ga37fb93d42a507abc7aa51c4a08e5353c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int pm_device_state_set</definition>
-        <argsstring>(const struct device *dev, enum pm_device_state state)</argsstring>
-        <name>pm_device_state_set</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <param>
-          <type>enum <ref refid="group__subsys__pm__device_1ga561c0789071e3c3963f21f4c4a1bb2c6" kindref="member">pm_device_state</ref></type>
-          <declname>state</declname>
-        </param>
-        <briefdescription>
-<para>Set the power state of a device. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" kindref="member">pm_device_action_run()</ref> instead.</para>
-</xrefdescription></xrefsect></para>
-<para>This function calls the device PM control callback so that the device does the necessary operations to put the device into the given state.</para>
-<para><simplesect kind="note"><para>Some devices may not support all device power states.</para>
-</simplesect>
-<parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>state</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device power state to be set.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>0</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If successful. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-ENOTSUP</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If requested state is not supported. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EALREADY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device is already at the requested state. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EBUSY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device is changing its state. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-ENOSYS</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device does not support PM. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EPERM</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>If device has power state locked. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>Errno</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Other negative errno on failure. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="338" column="6" declfile="include/pm/device.h" declline="338" declcolumn="6"/>
-      </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaffcf0aea5df10657235d4ed1f8c74d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int pm_device_state_get</definition>
@@ -297,7 +195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="350" column="5" declfile="include/pm/device.h" declline="350" declcolumn="5"/>
+        <location file="include/pm/device.h" line="326" column="5" declfile="include/pm/device.h" declline="326" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -395,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="370" column="5" declfile="include/pm/device.h" declline="370" declcolumn="5"/>
+        <location file="include/pm/device.h" line="346" column="5" declfile="include/pm/device.h" declline="346" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga765a5412f66070ccefd8e80ed9f62b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -448,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="383" column="6" declfile="include/pm/device.h" declline="383" declcolumn="6"/>
+        <location file="include/pm/device.h" line="359" column="6" declfile="include/pm/device.h" declline="359" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -479,7 +377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="399" column="6" declfile="include/pm/device.h" declline="399" declcolumn="6"/>
+        <location file="include/pm/device.h" line="375" column="6" declfile="include/pm/device.h" declline="375" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -509,7 +407,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="408" column="6" declfile="include/pm/device.h" declline="408" declcolumn="6"/>
+        <location file="include/pm/device.h" line="384" column="6" declfile="include/pm/device.h" declline="384" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -544,7 +442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="416" column="6" declfile="include/pm/device.h" declline="416" declcolumn="6"/>
+        <location file="include/pm/device.h" line="392" column="6" declfile="include/pm/device.h" declline="392" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -589,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="426" column="6" declfile="include/pm/device.h" declline="426" declcolumn="6"/>
+        <location file="include/pm/device.h" line="402" column="6" declfile="include/pm/device.h" declline="402" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga8837ac66f849821757b3638bbb65d3ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -647,7 +545,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="441" column="6" declfile="include/pm/device.h" declline="441" declcolumn="6"/>
+        <location file="include/pm/device.h" line="417" column="6" declfile="include/pm/device.h" declline="417" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga0716c6158804ac48022280d8d237f8c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -692,7 +590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="451" column="6" declfile="include/pm/device.h" declline="451" declcolumn="6"/>
+        <location file="include/pm/device.h" line="427" column="6" declfile="include/pm/device.h" declline="427" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gac818aafb748b57d70909808b45d89379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -737,7 +635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="461" column="6" declfile="include/pm/device.h" declline="461" declcolumn="6"/>
+        <location file="include/pm/device.h" line="437" column="6" declfile="include/pm/device.h" declline="437" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaab27e932950e1063b2f1f4c4e19dbf01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -770,7 +668,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="477" column="6" declfile="include/pm/device.h" declline="477" declcolumn="6"/>
+        <location file="include/pm/device.h" line="453" column="6" declfile="include/pm/device.h" declline="453" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaa5d2387a01a4ca4d765b1ea2361155bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -801,7 +699,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="488" column="6" declfile="include/pm/device.h" declline="488" declcolumn="6"/>
+        <location file="include/pm/device.h" line="464" column="6" declfile="include/pm/device.h" declline="464" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1gaf577cada579b6f871bc55e4a282ef8a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -846,7 +744,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="498" column="6" declfile="include/pm/device.h" declline="498" declcolumn="6"/>
+        <location file="include/pm/device.h" line="474" column="6" declfile="include/pm/device.h" declline="474" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__device_1ga32eb5e210d2f0ba533b0185a94c8744e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -891,151 +789,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/device.h" line="508" column="6" declfile="include/pm/device.h" declline="508" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1gabfaec92a92766154b8b9ac9dd29f2c1e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void device_busy_set</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>device_busy_set</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Mark a device as busy.</para>
-<para><xrefsect id="deprecated_1_deprecated000005"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="568" column="21" bodyfile="include/pm/device.h" bodystart="568" bodyend="571"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1gadff113f34359db32c8739294143a1c8f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>static void device_busy_clear</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>device_busy_clear</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-<para>Clear busy status of a device. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000006"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="580" column="21" bodyfile="include/pm/device.h" bodystart="580" bodyend="583"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1ga9ee3ee2f5dac79c85fc901c179fbadf9" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int device_any_busy_check</definition>
-        <argsstring>(void)</argsstring>
-        <name>device_any_busy_check</name>
-        <param>
-          <type>void</type>
-        </param>
-        <briefdescription>
-<para>Check if any device is busy. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000007"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>0</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>No devices are busy. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EBUSY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>One or more devices are busy. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="593" column="20" bodyfile="include/pm/device.h" bodystart="593" bodyend="596"/>
-      </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__device_1ga24bd4cb295002584c4f8183e937badc1" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int device_busy_check</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>device_busy_check</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-<para>Check if a device is busy. </para>
-        </briefdescription>
-        <detaileddescription>
-<para><xrefsect id="deprecated_1_deprecated000008"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy()</ref> instead</para>
-</xrefdescription></xrefsect></para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device instance.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<parameterlist kind="retval"><parameteritem>
-<parameternamelist>
-<parametername>0</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device is not busy. </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>-EBUSY</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Device is busy. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/pm/device.h" line="608" column="20" bodyfile="include/pm/device.h" bodystart="608" bodyend="611"/>
+        <location file="include/pm/device.h" line="484" column="6" declfile="include/pm/device.h" declline="484" declcolumn="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -1048,7 +802,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Define device PM resources for the given device name.</para>
-<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
+<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1085,7 +839,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Define device PM resources for the given node identifier.</para>
-<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
+<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1123,7 +877,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Define device PM resources for the given instance.</para>
-<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
+<para><simplesect kind="note"><para>This macro is a no-op if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is not enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1167,7 +921,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
+<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -1192,7 +946,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
+<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -1217,7 +971,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
+<simplesect kind="return"><para>Reference to the device PM resources (NULL if device <verbatim>embed:rst:inline :kconfig:option:`CONFIG_PM_DEVICE` </verbatim> is disabled). </para>
 </simplesect>
 </para>
         </detaileddescription>

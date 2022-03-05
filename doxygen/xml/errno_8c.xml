@@ -743,7 +743,7 @@
       </memberdef>
       <memberdef kind="define" id="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(384 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -761,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/common/src/errno.c" line="112" column="9" bodyfile="tests/kernel/common/src/errno.c" bodystart="112" bodyend="-1"/>
+        <location file="tests/kernel/common/src/errno.c" line="116" column="9" bodyfile="tests/kernel/common/src/errno.c" bodystart="116" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -837,10 +837,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="errno_8c_1ad0020539fd4082e53e1e05543205e94e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="errno_8c_1aa51d4ea6e0ab81c98d0df4d9c4385922" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(stacks, 2,(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stacks, 2,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>stacks</type>
@@ -849,7 +849,7 @@
           <type>2</type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -859,16 +859,16 @@
         </inbodydescription>
         <location file="tests/kernel/common/src/errno.c" line="24" column="8" declfile="tests/kernel/common/src/errno.c" declline="24" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="errno_8c_1a0b0c7d83e54130520a2cba422d1b3f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="errno_8c_1a0ad9739cc5ed2f711226b589a2122009" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(eno_stack,(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(eno_stack,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="common_2src_2main_8c_1a991a9fbbfe92d0d6853f1ad0f5f33765" kindref="member">eno_stack</ref></type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -920,7 +920,7 @@
         <inbodydescription>
 <para>TESTPOINT: thread- threads stacks are separate</para>
         </inbodydescription>
-        <location file="tests/kernel/common/src/errno.c" line="70" column="6" bodyfile="tests/kernel/common/src/errno.c" bodystart="70" bodyend="109"/>
+        <location file="tests/kernel/common/src/errno.c" line="70" column="6" bodyfile="tests/kernel/common/src/errno.c" bodystart="70" bodyend="113"/>
       </memberdef>
       <memberdef kind="function" id="errno_8c_1ae1da7ba27dc32b7638b34d5b7c971df5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -945,7 +945,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/common/src/errno.c" line="114" column="6" bodyfile="tests/kernel/common/src/errno.c" bodystart="114" bodyend="132"/>
+        <location file="tests/kernel/common/src/errno.c" line="118" column="6" bodyfile="tests/kernel/common/src/errno.c" bodystart="118" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="group__kernel__threadcontext__tests_1gae888e752b293dbc161763614bae1bc07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -963,7 +963,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/common/src/errno.c" line="142" column="6" bodyfile="tests/kernel/common/src/errno.c" bodystart="142" bodyend="157"/>
+        <location file="tests/kernel/common/src/errno.c" line="146" column="6" bodyfile="tests/kernel/common/src/errno.c" bodystart="146" bodyend="161"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -982,12 +982,12 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="errno_8h" kindref="compound">errno.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>N_THREADS<sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="errno_8c_1ad0020539fd4082e53e1e05543205e94e" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(stacks,<sp/><ref refid="errno_8c_1ab60b5074c740fd36061f48f90d1a0b21" kindref="member">N_THREADS</ref>,<sp/><ref refid="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="errno_8c_1aa51d4ea6e0ab81c98d0df4d9c4385922" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(stacks,<sp/><ref refid="errno_8c_1ab60b5074c740fd36061f48f90d1a0b21" kindref="member">N_THREADS</ref>,<sp/><ref refid="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="errno_8c_1aa47de3bb67d016f0271dfd2723a06ae4" kindref="member">threads</ref>[<ref refid="errno_8c_1ab60b5074c740fd36061f48f90d1a0b21" kindref="member">N_THREADS</ref>];</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><ref refid="errno_8c_1a0b0c7d83e54130520a2cba422d1b3f9b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="common_2src_2main_8c_1a991a9fbbfe92d0d6853f1ad0f5f33765" kindref="member">eno_stack</ref>,<sp/><ref refid="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="errno_8c_1a0ad9739cc5ed2f711226b589a2122009" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="common_2src_2main_8c_1a991a9fbbfe92d0d6853f1ad0f5f33765" kindref="member">eno_stack</ref>,<sp/><ref refid="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="errno_8c_1a1953cdf5241a800d5dbac95181ceea66" kindref="member">eno_thread</ref>;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="errno_8c_1af0c742bcb292bee029fb1d0bdedaa443" kindref="member">errno_values</ref>[<ref refid="errno_8c_1ab60b5074c740fd36061f48f90d1a0b21" kindref="member">N_THREADS</ref><sp/>+<sp/>1]<sp/>=<sp/>{</highlight></codeline>
@@ -1014,7 +1014,7 @@
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__thread__apis_1ga51307cdfe153ab3e918b18755d97c5d9" kindref="member">k_msleep</ref>(30<sp/>-<sp/>(n<sp/>*<sp/>10));</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__system__errno_1gab03f640d90fbc5bcb75285d08a0f25ed" kindref="member">errno</ref><sp/>==<sp/>my_errno)<sp/>{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structresult" kindref="compound">result</ref>[n].<ref refid="structresult_1a50636d4dca7dd8cdc78bb49bbfb0ed15" kindref="member">pass</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structresult" kindref="compound">result</ref>[n].<ref refid="structresult_1a50636d4dca7dd8cdc78bb49bbfb0ed15" kindref="member">pass</ref><sp/>=<sp/>TC_PASS;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__assert_1ga107b470a617e5c398353db398a3424e2" kindref="member">zassert_equal</ref>(<ref refid="group__system__errno_1gab03f640d90fbc5bcb75285d08a0f25ed" kindref="member">errno</ref>,<sp/>my_errno,<sp/>NULL);</highlight></codeline>
@@ -1045,7 +1045,7 @@
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ii<sp/>=<sp/>0;<sp/>ii<sp/>&lt;<sp/><ref refid="errno_8c_1ab60b5074c740fd36061f48f90d1a0b21" kindref="member">N_THREADS</ref>;<sp/>ii++)<sp/>{</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structresult" kindref="compound">result</ref><sp/>*<ref refid="kobject_8c_1a5bf2789125fcfa98cff775cb82fbd3c9" kindref="member">p</ref><sp/>=<sp/><ref refid="group__fifo__apis_1ga1e2c480e2124116af97e94e7b4435de6" kindref="member">k_fifo_get</ref>(&amp;<ref refid="errno_8c_1a4c78dc47164573bcfb8130a8d52e1b77" kindref="member">fifo</ref>,<sp/><ref refid="group__clock__apis_1ga302af954e87b10a9b731f1ad07775e9f" kindref="member">K_MSEC</ref>(100));</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="kobject_8c_1a5bf2789125fcfa98cff775cb82fbd3c9" kindref="member">p</ref><sp/>||<sp/>!<ref refid="kobject_8c_1a5bf2789125fcfa98cff775cb82fbd3c9" kindref="member">p</ref>-&gt;pass)<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="kobject_8c_1a5bf2789125fcfa98cff775cb82fbd3c9" kindref="member">p</ref><sp/>||<sp/>(<ref refid="kobject_8c_1a5bf2789125fcfa98cff775cb82fbd3c9" kindref="member">p</ref>-&gt;pass<sp/>!=<sp/>TC_PASS))<sp/>{</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fatal_2exception_2src_2main_8c_1ae3b62d25a3304d081b4272eeab42de09" kindref="member">rv</ref><sp/>=<sp/>TC_FAIL;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1060,47 +1060,51 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ii<sp/>=<sp/>0;<sp/>ii<sp/>&lt;<sp/><ref refid="errno_8c_1ab60b5074c740fd36061f48f90d1a0b21" kindref="member">N_THREADS</ref>;<sp/>ii++)<sp/>{</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__thread__apis_1ga40a733561eb1f64dcaae0e01b167d233" kindref="member">k_thread_join</ref>(&amp;<ref refid="errno_8c_1aa47de3bb67d016f0271dfd2723a06ae4" kindref="member">threads</ref>[ii],<sp/><ref refid="group__clock__apis_1ga0bb4b83f0222193b21a8910311bab0ca" kindref="member">K_FOREVER</ref>);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERROR_ANY<sp/>0xfc</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="errno_8c_1ae1da7ba27dc32b7638b34d5b7c971df5" kindref="member">thread_entry_user</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3)</highlight></codeline>
-<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_ARCH_POSIX</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>errno<sp/>in<sp/>native<sp/>posix<sp/>will<sp/>be<sp/>handled<sp/>by<sp/>native</highlight></codeline>
-<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>operation<sp/>system,<sp/>so<sp/>we<sp/>skip<sp/>it.</highlight></codeline>
-<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__test__deprecated_1gada3b1fcfa71db1bf7787c03ff45256d5" kindref="member">ztest_test_skip</ref>();</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>got_errno;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>assign<sp/>the<sp/>error<sp/>number<sp/>to<sp/>C<sp/>standard<sp/>errno<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__system__errno_1gab03f640d90fbc5bcb75285d08a0f25ed" kindref="member">errno</ref><sp/>=<sp/><ref refid="errno_8c_1a5bcbeeb72e3d6a263780e5890fc47a4d" kindref="member">ERROR_ANY</ref>;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>got<sp/>errno<sp/>zephyr<sp/>stored<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>got_errno<sp/>=<sp/>*(z_errno());</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__assert_1ga107b470a617e5c398353db398a3424e2" kindref="member">zassert_equal</ref>(<ref refid="group__system__errno_1gab03f640d90fbc5bcb75285d08a0f25ed" kindref="member">errno</ref>,<sp/>got_errno,<sp/></highlight><highlight class="stringliteral">&quot;errno<sp/>is<sp/>not<sp/>corresponding.&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="fatal_2exception_2src_2main_8c_1ae3b62d25a3304d081b4272eeab42de09" kindref="member">rv</ref><sp/>!=<sp/>TC_PASS)<sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ztest__assert_8h_1acd6eb423f54dce8544f7c3b1618c0374" kindref="member">ztest_test_fail</ref>();</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ERROR_ANY<sp/>0xfc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="errno_8c_1ae1da7ba27dc32b7638b34d5b7c971df5" kindref="member">thread_entry_user</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>CONFIG_ARCH_POSIX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>The<sp/>errno<sp/>in<sp/>native<sp/>posix<sp/>will<sp/>be<sp/>handled<sp/>by<sp/>native</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>operation<sp/>system,<sp/>so<sp/>we<sp/>skip<sp/>it.</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__test__deprecated_1gada3b1fcfa71db1bf7787c03ff45256d5" kindref="member">ztest_test_skip</ref>();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>got_errno;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>assign<sp/>the<sp/>error<sp/>number<sp/>to<sp/>C<sp/>standard<sp/>errno<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__system__errno_1gab03f640d90fbc5bcb75285d08a0f25ed" kindref="member">errno</ref><sp/>=<sp/><ref refid="errno_8c_1a5bcbeeb72e3d6a263780e5890fc47a4d" kindref="member">ERROR_ANY</ref>;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>got<sp/>errno<sp/>zephyr<sp/>stored<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>got_errno<sp/>=<sp/>*(z_errno());</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__kernel__threadcontext__tests_1gae888e752b293dbc161763614bae1bc07" kindref="member">test_errno</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref>;</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>perm<sp/>=<sp/><ref refid="group__thread__apis_1gaa1788a413a055745d1de71b4da7c2eb2" kindref="member">K_INHERIT_PERMS</ref>;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="syscall_8h_1acd625881dd1a23de2573fa86d870df20" kindref="member">k_is_user_context</ref>())<sp/>{</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perm<sp/>=<sp/>perm<sp/>|<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>;</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__assert_1ga107b470a617e5c398353db398a3424e2" kindref="member">zassert_equal</ref>(<ref refid="group__system__errno_1gab03f640d90fbc5bcb75285d08a0f25ed" kindref="member">errno</ref>,<sp/>got_errno,<sp/></highlight><highlight class="stringliteral">&quot;errno<sp/>is<sp/>not<sp/>corresponding.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__kernel__threadcontext__tests_1gae888e752b293dbc161763614bae1bc07" kindref="member">test_errno</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref>;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/>perm<sp/>=<sp/><ref refid="group__thread__apis_1gaa1788a413a055745d1de71b4da7c2eb2" kindref="member">K_INHERIT_PERMS</ref>;</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref><sp/>=<sp/><ref refid="group__thread__apis_1gad5b0bff3102f1656089f5875d999a367" kindref="member">k_thread_create</ref>(&amp;<ref refid="errno_8c_1a1953cdf5241a800d5dbac95181ceea66" kindref="member">eno_thread</ref>,<sp/><ref refid="common_2src_2main_8c_1a991a9fbbfe92d0d6853f1ad0f5f33765" kindref="member">eno_stack</ref>,<sp/><ref refid="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>,</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="errno_8c_1ae1da7ba27dc32b7638b34d5b7c971df5" kindref="member">thread_entry_user</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="include_2kernel_8h_1aa0e916aae3ddd0e998cd41ac32afe30a" kindref="member">K_PRIO_PREEMPT</ref>(1),<sp/>perm,</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__clock__apis_1ga3d9541cfe2e8395af66d186efa77362f" kindref="member">K_NO_WAIT</ref>);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__thread__apis_1ga40a733561eb1f64dcaae0e01b167d233" kindref="member">k_thread_join</ref>(<ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref>,<sp/><ref refid="group__clock__apis_1ga0bb4b83f0222193b21a8910311bab0ca" kindref="member">K_FOREVER</ref>);</highlight></codeline>
-<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="syscall_8h_1acd625881dd1a23de2573fa86d870df20" kindref="member">k_is_user_context</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>perm<sp/>=<sp/>perm<sp/>|<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref><sp/>=<sp/><ref refid="group__thread__apis_1gad5b0bff3102f1656089f5875d999a367" kindref="member">k_thread_create</ref>(&amp;<ref refid="errno_8c_1a1953cdf5241a800d5dbac95181ceea66" kindref="member">eno_thread</ref>,<sp/><ref refid="common_2src_2main_8c_1a991a9fbbfe92d0d6853f1ad0f5f33765" kindref="member">eno_stack</ref>,<sp/><ref refid="errno_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="errno_8c_1ae1da7ba27dc32b7638b34d5b7c971df5" kindref="member">thread_entry_user</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="include_2kernel_8h_1aa0e916aae3ddd0e998cd41ac32afe30a" kindref="member">K_PRIO_PREEMPT</ref>(1),<sp/>perm,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__clock__apis_1ga3d9541cfe2e8395af66d186efa77362f" kindref="member">K_NO_WAIT</ref>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__thread__apis_1ga40a733561eb1f64dcaae0e01b167d233" kindref="member">k_thread_join</ref>(<ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref>,<sp/><ref refid="group__clock__apis_1ga0bb4b83f0222193b21a8910311bab0ca" kindref="member">K_FOREVER</ref>);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="tests/kernel/common/src/errno.c"/>
   </compounddef>

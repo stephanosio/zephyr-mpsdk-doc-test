@@ -729,7 +729,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="fifo_2fifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -850,16 +850,16 @@
         </inbodydescription>
         <location file="tests/kernel/fifo/fifo_usage/src/main.c" line="47" column="8" declfile="tests/kernel/fifo/fifo_usage/src/main.c" declline="47" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="fifo_2fifo__usage_2src_2main_8c_1a12cc64ae3e012d7dc5df490386732679" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="fifo_2fifo__usage_2src_2main_8c_1a2afd38b239841508c0f9e4be7ff14323" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1097,7 +1097,7 @@
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="irq__offload_8h" kindref="compound">irq_offload.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIST_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41" refid="structfdata__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfdata__t" kindref="compound">fdata_t</ref><sp/>{</highlight></codeline>
@@ -1113,7 +1113,7 @@
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfdata__t" kindref="compound">fdata_t</ref><sp/><ref refid="fifo_2fifo__usage_2src_2main_8c_1a2013e43281c3345708e2533f55d983ee" kindref="member">data2</ref>[<ref refid="fifo_2fifo__usage_2src_2main_8c_1aa0db7e0f64676a51b9d71faafae093cd" kindref="member">LIST_LEN</ref>];</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfdata__t" kindref="compound">fdata_t</ref><sp/><ref refid="fifo_2fifo__usage_2src_2main_8c_1a15703d971b49db5b519841e2b30fa728" kindref="member">data_isr</ref>[<ref refid="fifo_2fifo__usage_2src_2main_8c_1aa0db7e0f64676a51b9d71faafae093cd" kindref="member">LIST_LEN</ref>];</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="fifo_2fifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="fifo_2fifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="fifo_2fifo__usage_2src_2main_8c_1aa15baae19d44279cac3d8bf47c9e707f" kindref="member">tdata</ref>;</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="fifo_2fifo__usage_2src_2main_8c_1a37d12066b90b5226eb1895e59f5908e8" kindref="member">end_sema</ref>;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>

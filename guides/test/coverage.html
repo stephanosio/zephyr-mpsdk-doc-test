@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -163,7 +165,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -255,9 +257,9 @@ code coverage with gcov is a function of RAM available. Therefore ensure that th
 device has enough RAM when enabling the coverage for it. For example a small device
 like frdm_k64f can run a simple test application but the more complex test
 cases which consume more RAM will crash when coverage is enabled.</p>
-<p>To enable the device for coverage, select <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_HAS_COVERAGE_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_COVERAGE_SUPPORT</span></code></a>
+<p>To enable the device for coverage, select <a class="reference internal" href="../../kconfig.html#CONFIG_HAS_COVERAGE_SUPPORT" title="CONFIG_HAS_COVERAGE_SUPPORT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HAS_COVERAGE_SUPPORT</span></code></a>
 in the Kconfig.board file.</p>
-<p>To report the coverage for the particular test application set <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_COVERAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_COVERAGE</span></code></a>.</p>
+<p>To report the coverage for the particular test application set <a class="reference internal" href="../../kconfig.html#CONFIG_COVERAGE" title="CONFIG_COVERAGE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_COVERAGE</span></code></a>.</p>
 </div>
 <div class="section" id="steps-to-generate-code-coverage-reports">
 <h3>Steps to generate code coverage reports<a class="headerlink" href="#steps-to-generate-code-coverage-reports" title="Permalink to this headline">¶</a></h3>
@@ -313,7 +315,7 @@ and some basic HW emulation.</p>
 <p>That means you can use the same tools you would while developing any
 other desktop application.</p>
 <p>To build your application with <code class="docutils literal notranslate"><span class="pre">gcc</span></code>’s <a class="reference external" href="https://gcc.gnu.org/onlinedocs/gcc/Gcov.html">gcov</a>, simply set
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_COVERAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_COVERAGE</span></code></a> before compiling it.
+<a class="reference internal" href="../../kconfig.html#CONFIG_COVERAGE" title="CONFIG_COVERAGE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_COVERAGE</span></code></a> before compiling it.
 When you run your application, <code class="docutils literal notranslate"><span class="pre">gcov</span></code> coverage data will be dumped into the
 respective <code class="docutils literal notranslate"><span class="pre">gcda</span></code> and <code class="docutils literal notranslate"><span class="pre">gcno</span></code> files.
 You may postprocess these with your preferred tools. For example:</p>
@@ -365,8 +367,8 @@ toolchain and require a different board:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

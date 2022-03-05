@@ -4,7 +4,6 @@
     <compoundname>include/display</compoundname>
     <innerfile refid="cfb_8h">cfb.h</innerfile>
     <innerfile refid="framebuf_8h">framebuf.h</innerfile>
-    <innerfile refid="grove__lcd_8h">grove_lcd.h</innerfile>
     <innerfile refid="mb__display_8h">mb_display.h</innerfile>
     <briefdescription>
     </briefdescription>

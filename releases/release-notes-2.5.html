@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -113,7 +115,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../samples/index.html">Samples and Demos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Supported Boards</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Release Notes</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="release-notes-3.0.html">Zephyr 3.0.0 (Working draft)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-3.1.html">Zephyr 3.1.0 (Working Draft)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-3.0.html">Zephyr 3.0.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="release-notes-2.7.html">Zephyr 2.7.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="release-notes-2.6.html">Zephyr 2.6.0</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Zephyr 2.5.0</a><ul>
@@ -177,7 +180,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -393,9 +396,9 @@ look at porting their logic, or perhaps at the k_mem_slab utility.</p></li>
 <li><p>This allows variables declared with <code class="docutils literal notranslate"><span class="pre">__thread</span></code> keyword to be allocated
 on a per-thread basis, and every thread has its own copy of these
 variables.</p></li>
-<li><p>Enable via <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_LOCAL_STORAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_LOCAL_STORAGE</span></code></a>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">errno</span></code> can be stored inside TLS if <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ERRNO_IN_TLS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ERRNO_IN_TLS</span></code></a>
-is enabled (together with <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ERRNO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ERRNO</span></code></a>). This allow user
+<li><p>Enable via <a class="reference internal" href="../kconfig.html#CONFIG_THREAD_LOCAL_STORAGE" title="CONFIG_THREAD_LOCAL_STORAGE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_LOCAL_STORAGE</span></code></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">errno</span></code> can be stored inside TLS if <a class="reference internal" href="../kconfig.html#CONFIG_ERRNO_IN_TLS" title="CONFIG_ERRNO_IN_TLS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ERRNO_IN_TLS</span></code></a>
+is enabled (together with <a class="reference internal" href="../kconfig.html#CONFIG_ERRNO" title="CONFIG_ERRNO"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ERRNO</span></code></a>). This allow user
 threads to access the value of <code class="docutils literal notranslate"><span class="pre">errno</span></code> without making a system call.</p></li>
 </ul>
 </li>
@@ -504,8 +507,8 @@ must now be pre-allocated.</p></li>
 <ul>
 <li><p>This allows a smaller virtual address space thus requiring a smaller
 paging structure.</p></li>
-<li><p>Only the kernel image is mapped when <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ACPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ACPI</span></code></a> is not enabled.</p></li>
-<li><p>When <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ACPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ACPI</span></code></a> is enabled, the previous behavior to map
+<li><p>Only the kernel image is mapped when <a class="reference internal" href="../kconfig.html#CONFIG_ACPI" title="CONFIG_ACPI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ACPI</span></code></a> is not enabled.</p></li>
+<li><p>When <a class="reference internal" href="../kconfig.html#CONFIG_ACPI" title="CONFIG_ACPI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ACPI</span></code></a> is enabled, the previous behavior to map
 all physical memory is retained as platforms with ACPI are usually not
 memory constrained and can accommodate bigger paging structure.</p></li>
 </ul>
@@ -1129,7 +1132,7 @@ path. The recommended Zephyr SDK version is 0.12.0 or newer.</p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_FS_LITTLEFS_FC_MEM_POOL</span></code> has been deprecated and
-should be replaced by <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_FS_LITTLEFS_FC_HEAP_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FS_LITTLEFS_FC_HEAP_SIZE</span></code></a>.</p></li>
+should be replaced by <a class="reference internal" href="../kconfig.html#CONFIG_FS_LITTLEFS_FC_HEAP_SIZE" title="CONFIG_FS_LITTLEFS_FC_HEAP_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FS_LITTLEFS_FC_HEAP_SIZE</span></code></a>.</p></li>
 </ul>
 </li>
 <li><p>Management</p>
@@ -1138,7 +1141,7 @@ should be replaced by <a class="reference internal" href="../reference/kconfig/d
 <ul>
 <li><p>Added support for flash devices that have non-0xff erase value.</p></li>
 <li><p>Added optional verification, enabled via
-<a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_IMG_MGMT_REJECT_DIRECT_XIP_MISMATCHED_SLOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IMG_MGMT_REJECT_DIRECT_XIP_MISMATCHED_SLOT</span></code></a>, of an uploaded
+<a class="reference internal" href="../kconfig.html#CONFIG_IMG_MGMT_REJECT_DIRECT_XIP_MISMATCHED_SLOT" title="CONFIG_IMG_MGMT_REJECT_DIRECT_XIP_MISMATCHED_SLOT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_IMG_MGMT_REJECT_DIRECT_XIP_MISMATCHED_SLOT</span></code></a>, of an uploaded
 Direct-XIP binary, which will reject any binary that is not able to boot
 from base address of offered upload slot.</p></li>
 </ul>
@@ -2300,8 +2303,8 @@ release:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

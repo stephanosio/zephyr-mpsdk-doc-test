@@ -1685,7 +1685,7 @@
         <name>K_THREAD_PINNED_STACK_DEFINE</name>
         <param><defname>sym</defname></param>
         <param><defname>size</defname></param>
-        <initializer>	<ref refid="workq_2work__queue_2src_2main_8c_1aea43146399d79961f9fc8020163c997d" kindref="member">K_THREAD_STACK_DEFINE</ref>(sym, size)</initializer>
+        <initializer>	<ref refid="workq_2work__queue_2src_2main_8c_1a3cae6f14ff609be8071cbbcf686729b6" kindref="member">K_THREAD_STACK_DEFINE</ref>(sym, size)</initializer>
         <briefdescription>
 <para>Define a toplevel thread stack memory region in pinned section. </para>
         </briefdescription>
@@ -1795,7 +1795,7 @@
         <param><defname>sym</defname></param>
         <param><defname>nmemb</defname></param>
         <param><defname>size</defname></param>
-        <initializer>	<ref refid="tickless_2tickless__concept_2src_2main_8c_1a8b49fec2a8d9b46c26588f772665bafa" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(sym, nmemb, size)</initializer>
+        <initializer>	<ref refid="tickless_2tickless__concept_2src_2main_8c_1ae45f2df95725c87f43c7e16a8c6a6c60" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(sym, nmemb, size)</initializer>
         <briefdescription>
 <para>Declare a toplevel array of thread stack memory regions in pinned section. </para>
         </briefdescription>

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -186,7 +188,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -262,13 +264,13 @@
 <p>A networked device might need a hostname, for example, if the device
 is configured to be a mDNS responder (see <a class="reference internal" href="dns_resolve.html#dns-resolve-interface"><span class="std std-ref">DNS Resolve</span></a> for
 details) and needs to respond to <code class="docutils literal notranslate"><span class="pre">&lt;hostname&gt;.local</span></code> DNS queries.</p>
-<p>The <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_HOSTNAME_ENABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_HOSTNAME_ENABLE</span></code></a> must be set in order
+<p>The <a class="reference internal" href="../../kconfig.html#CONFIG_NET_HOSTNAME_ENABLE" title="CONFIG_NET_HOSTNAME_ENABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_HOSTNAME_ENABLE</span></code></a> must be set in order
 to store the hostname and enable the relevant APIs. If the option is enabled,
 then the default hostname is set to be <code class="docutils literal notranslate"><span class="pre">zephyr</span></code> by
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_HOSTNAME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_HOSTNAME</span></code></a> option.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_HOSTNAME" title="CONFIG_NET_HOSTNAME"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_HOSTNAME</span></code></a> option.</p>
 <p>If the same firmware image is used to flash multiple boards, then it is not
 practical to use the same hostname in all of the boards. In that case, one
-can enable <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_HOSTNAME_UNIQUE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_HOSTNAME_UNIQUE</span></code></a> which will add a unique
+can enable <a class="reference internal" href="../../kconfig.html#CONFIG_NET_HOSTNAME_UNIQUE" title="CONFIG_NET_HOSTNAME_UNIQUE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_HOSTNAME_UNIQUE</span></code></a> which will add a unique
 postfix to the hostname. By default the link local address of the first network
 interface is used as a postfix. In Ethernet networks, the link local address
 refers to MAC address. For example, if the link local address is
@@ -276,7 +278,7 @@ refers to MAC address. For example, if the link local address is
 <code class="docutils literal notranslate"><span class="pre">zephyr010203040506</span></code>. If you want to set the prefix yourself, then call
 <code class="docutils literal notranslate"><span class="pre">net_hostname_set_postfix()</span></code> before the network interfaces are created.
 For example for the Ethernet networks, the initialization priority is set by
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_ETH_INIT_PRIORITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ETH_INIT_PRIORITY</span></code></a> so you would need to set the postfix before
+<a class="reference internal" href="../../kconfig.html#CONFIG_ETH_INIT_PRIORITY" title="CONFIG_ETH_INIT_PRIORITY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ETH_INIT_PRIORITY</span></code></a> so you would need to set the postfix before
 that. The postfix can be set only once.</p>
 </div>
 <div class="section" id="api-reference">
@@ -346,8 +348,8 @@ that. The postfix can be set only once.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

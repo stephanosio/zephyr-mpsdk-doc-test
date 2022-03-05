@@ -3,6 +3,7 @@
   <compounddef id="dir_7b27f9222e576cc48dc575c9b59104f7" kind="dir">
     <compoundname>include/drivers/misc</compoundname>
     <innerdir refid="dir_a097221c8b1982cf842ab48da9ce4b8f">include/drivers/misc/ft8xx</innerdir>
+    <innerdir refid="dir_28507d6684867fe80d3508bdfe4f3ae9">include/drivers/misc/grove_lcd</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

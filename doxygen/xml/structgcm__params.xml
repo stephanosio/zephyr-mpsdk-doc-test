@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
   <compounddef id="structgcm__params" kind="struct" language="C++" prot="public">
     <compoundname>gcm_params</compoundname>
-    <includes refid="cipher__structs_8h" local="no">cipher_structs.h</includes>
+    <includes refid="cipher_8h" local="no">cipher.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structgcm__params_1a4fd478dee1eedfd75ab77e8e63bcbf40" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="100" column="10" bodyfile="include/crypto/cipher_structs.h" bodystart="100" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="100" column="10" bodyfile="include/crypto/cipher.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structgcm__params_1ae4458a261310577778fca927e7fdc829" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -28,14 +28,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="101" column="10" bodyfile="include/crypto/cipher_structs.h" bodystart="101" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="101" column="10" bodyfile="include/crypto/cipher.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/crypto/cipher_structs.h" line="99" column="1" bodyfile="include/crypto/cipher_structs.h" bodystart="99" bodyend="102"/>
+    <location file="include/crypto/cipher.h" line="99" column="1" bodyfile="include/crypto/cipher.h" bodystart="99" bodyend="102"/>
     <listofallmembers>
       <member refid="structgcm__params_1ae4458a261310577778fca927e7fdc829" prot="public" virt="non-virtual"><scope>gcm_params</scope><name>nonce_len</name></member>
       <member refid="structgcm__params_1a4fd478dee1eedfd75ab77e8e63bcbf40" prot="public" virt="non-virtual"><scope>gcm_params</scope><name>tag_len</name></member>

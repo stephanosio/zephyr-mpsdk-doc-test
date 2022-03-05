@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="513" column="16" bodyfile="include/bluetooth/mesh/access.h" bodystart="513" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="534" column="16" bodyfile="include/bluetooth/mesh/access.h" bodystart="534" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a3372deccde1a5ab26d9204c97339596e" prot="public" static="no" mutable="no">
         <type>const struct <ref refid="structbt__mesh__mod__id__vnd" kindref="compound">bt_mesh_mod_id_vnd</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="515" column="31" bodyfile="include/bluetooth/mesh/access.h" bodystart="515" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="536" column="31" bodyfile="include/bluetooth/mesh/access.h" bodystart="536" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1ae6f07e60a82991e626f4d29c2e2e26d7" prot="public" static="no" mutable="no">
         <type>union bt_mesh_model::@80</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="516" column="1"/>
+        <location file="include/bluetooth/mesh/access.h" line="537" column="1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a24e7f9e519242d96d57da0fe237abbab" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="519" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="519" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="540" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="540" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a9e2c6554dbf5431038d5dc5327a8b751" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="520" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="520" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="541" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="541" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a6e6ce8893e93ed3dd16cfb8aa9761fbb" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -82,7 +82,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="521" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="521" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="542" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="542" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1af4a1b5e837b3a1266c7f61ee21020c0b" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structbt__mesh__model__pub" kindref="compound">bt_mesh_model_pub</ref> *const</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="524" column="31" bodyfile="include/bluetooth/mesh/access.h" bodystart="524" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="545" column="31" bodyfile="include/bluetooth/mesh/access.h" bodystart="545" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a33836368989acc5b74dfc883f5ef0d98" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -110,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="527" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="527" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="548" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="548" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a546bfa087459131f656b889366d88d5a" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="530" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="530" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="551" column="10" bodyfile="include/bluetooth/mesh/access.h" bodystart="551" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a4acc656c737cf79161414984312100b6" prot="public" static="no" mutable="no">
         <type>const struct <ref refid="structbt__mesh__model__op" kindref="compound">bt_mesh_model_op</ref> *const</type>
@@ -138,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="533" column="36" bodyfile="include/bluetooth/mesh/access.h" bodystart="533" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="554" column="36" bodyfile="include/bluetooth/mesh/access.h" bodystart="554" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a67a91d64051e055b79f5d9166ab12660" prot="public" static="no" mutable="no">
         <type>const struct <ref refid="structbt__mesh__model__cb" kindref="compound">bt_mesh_model_cb</ref> *const</type>
@@ -152,7 +152,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="536" column="36" bodyfile="include/bluetooth/mesh/access.h" bodystart="536" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="557" column="36" bodyfile="include/bluetooth/mesh/access.h" bodystart="557" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1abcac4e08cbbee262695f80c049235a8e" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structbt__mesh__model" kindref="compound">bt_mesh_model</ref> *</type>
@@ -165,7 +165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="540" column="20" bodyfile="include/bluetooth/mesh/access.h" bodystart="540" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="561" column="20" bodyfile="include/bluetooth/mesh/access.h" bodystart="561" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__model_1a64fced8e10266c8512b3ac7a344e64b0" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -179,7 +179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/access.h" line="544" column="6" bodyfile="include/bluetooth/mesh/access.h" bodystart="544" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/access.h" line="565" column="6" bodyfile="include/bluetooth/mesh/access.h" bodystart="565" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -365,7 +365,7 @@
         <label>z_thread_stack_element</label>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/mesh/access.h" line="510" column="1" bodyfile="include/bluetooth/mesh/access.h" bodystart="510" bodyend="545"/>
+    <location file="include/bluetooth/mesh/access.h" line="531" column="1" bodyfile="include/bluetooth/mesh/access.h" bodystart="531" bodyend="566"/>
     <listofallmembers>
       <member refid="structbt__mesh__model_1a67a91d64051e055b79f5d9166ab12660" prot="public" virt="non-virtual"><scope>bt_mesh_model</scope><name>cb</name></member>
       <member refid="structbt__mesh__model_1a24e7f9e519242d96d57da0fe237abbab" prot="public" virt="non-virtual"><scope>bt_mesh_model</scope><name>elem_idx</name></member>

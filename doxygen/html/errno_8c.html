@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -113,17 +113,17 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:ab60b5074c740fd36061f48f90d1a0b21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#ab60b5074c740fd36061f48f90d1a0b21">N_THREADS</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ab60b5074c740fd36061f48f90d1a0b21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACKSIZE)</td></tr>
+<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</td></tr>
 <tr class="separator:a6423a880df59733d2d9b509c7718d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bcbeeb72e3d6a263780e5890fc47a4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#a5bcbeeb72e3d6a263780e5890fc47a4d">ERROR_ANY</a>&#160;&#160;&#160;0xfc</td></tr>
 <tr class="separator:a5bcbeeb72e3d6a263780e5890fc47a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad0020539fd4082e53e1e05543205e94e"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#ad0020539fd4082e53e1e05543205e94e">K_THREAD_STACK_ARRAY_DEFINE</a> (stacks, 2,(384+CONFIG_TEST_EXTRA_STACKSIZE))</td></tr>
-<tr class="separator:ad0020539fd4082e53e1e05543205e94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b0c7d83e54130520a2cba422d1b3f9b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#a0b0c7d83e54130520a2cba422d1b3f9b">K_THREAD_STACK_DEFINE</a> (<a class="el" href="common_2src_2main_8c.html#a991a9fbbfe92d0d6853f1ad0f5f33765">eno_stack</a>,(384+CONFIG_TEST_EXTRA_STACKSIZE))</td></tr>
-<tr class="separator:a0b0c7d83e54130520a2cba422d1b3f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51d4ea6e0ab81c98d0df4d9c4385922"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#aa51d4ea6e0ab81c98d0df4d9c4385922">K_THREAD_STACK_ARRAY_DEFINE</a> (stacks, 2,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</td></tr>
+<tr class="separator:aa51d4ea6e0ab81c98d0df4d9c4385922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ad9739cc5ed2f711226b589a2122009"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#a0ad9739cc5ed2f711226b589a2122009">K_THREAD_STACK_DEFINE</a> (<a class="el" href="common_2src_2main_8c.html#a991a9fbbfe92d0d6853f1ad0f5f33765">eno_stack</a>,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</td></tr>
+<tr class="separator:a0ad9739cc5ed2f711226b589a2122009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0f232c0ffa0404b623516ecd11933d3"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="errno_8c.html#af0f232c0ffa0404b623516ecd11933d3">errno_thread</a> (void *_n, void *_my_errno, void *_unused)</td></tr>
 <tr class="separator:af0f232c0ffa0404b623516ecd11933d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5cf395a065ed67c9f54f630cee97a066"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__kernel__threadcontext__tests.html#ga5cf395a065ed67c9f54f630cee97a066">test_thread_context</a> (void)</td></tr>
@@ -184,7 +184,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACKSIZE)</td>
+          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -234,8 +234,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad0020539fd4082e53e1e05543205e94e" name="ad0020539fd4082e53e1e05543205e94e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0020539fd4082e53e1e05543205e94e">&#9670;&nbsp;</a></span>K_THREAD_STACK_ARRAY_DEFINE()</h2>
+<a id="aa51d4ea6e0ab81c98d0df4d9c4385922" name="aa51d4ea6e0ab81c98d0df4d9c4385922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51d4ea6e0ab81c98d0df4d9c4385922">&#9670;&nbsp;</a></span>K_THREAD_STACK_ARRAY_DEFINE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +258,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(384+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(384+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -276,8 +276,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0b0c7d83e54130520a2cba422d1b3f9b" name="a0b0c7d83e54130520a2cba422d1b3f9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b0c7d83e54130520a2cba422d1b3f9b">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
+<a id="a0ad9739cc5ed2f711226b589a2122009" name="a0ad9739cc5ed2f711226b589a2122009"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ad9739cc5ed2f711226b589a2122009">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -291,7 +291,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(384+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(384+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -437,7 +437,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_778ede3882122473ce08d4267fde70b2.html">common</a></li><li class="navelem"><a class="el" href="dir_bafebe425ce5f78d511066cb24572cc0.html">src</a></li><li class="navelem"><a class="el" href="errno_8c.html">errno.c</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

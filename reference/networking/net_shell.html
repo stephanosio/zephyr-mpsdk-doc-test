@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -186,7 +188,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -267,11 +269,11 @@ for detailed shell information.</p>
 <tbody>
 <tr class="row-even"><td><p>net allocs</p></td>
 <td><p>Print network memory allocations. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_DEBUG_NET_PKT_ALLOC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_DEBUG_NET_PKT_ALLOC</span></code></a> is set.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_DEBUG_NET_PKT_ALLOC" title="CONFIG_NET_DEBUG_NET_PKT_ALLOC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_DEBUG_NET_PKT_ALLOC</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net arp</p></td>
 <td><p>Print information about IPv4 ARP cache. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_ARP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_ARP</span></code></a> is set in IPv4 enabled networks.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_ARP" title="CONFIG_NET_ARP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_ARP</span></code></a> is set in IPv4 enabled networks.</p></td>
 </tr>
 <tr class="row-even"><td><p>net capture</p></td>
 <td><p>Monitor network traffic See <a class="reference internal" href="../../guides/networking/network_monitoring.html#network-monitoring"><span class="std std-ref">Monitor Network Traffic</span></a>
@@ -282,48 +284,48 @@ for details.</p></td>
 </tr>
 <tr class="row-even"><td><p>net dns</p></td>
 <td><p>Show how DNS is configured. The command can also be used to
-resolve a DNS name. Only available if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DNS_RESOLVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DNS_RESOLVER</span></code></a> is set.</p></td>
+resolve a DNS name. Only available if <a class="reference internal" href="../../kconfig.html#CONFIG_DNS_RESOLVER" title="CONFIG_DNS_RESOLVER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DNS_RESOLVER</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net events</p></td>
 <td><p>Enable network event monitoring. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_MGMT_EVENT_MONITOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_MGMT_EVENT_MONITOR</span></code></a> is set.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_MGMT_EVENT_MONITOR" title="CONFIG_NET_MGMT_EVENT_MONITOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_MGMT_EVENT_MONITOR</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-even"><td><p>net gptp</p></td>
 <td><p>Print information about gPTP support. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_GPTP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_GPTP</span></code></a> is set.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_GPTP" title="CONFIG_NET_GPTP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_GPTP</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net iface</p></td>
 <td><p>Print information about network interfaces.</p></td>
 </tr>
 <tr class="row-even"><td><p>net ipv6</p></td>
 <td><p>Print IPv6 specific information and configuration.
-Only available if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_IPV6"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_IPV6</span></code></a> is set.</p></td>
+Only available if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_IPV6" title="CONFIG_NET_IPV6"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_IPV6</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net mem</p></td>
 <td><p>Print information about network memory usage. The command will
-print more information if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_BUF_POOL_USAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_BUF_POOL_USAGE</span></code></a> is set.</p></td>
+print more information if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_BUF_POOL_USAGE" title="CONFIG_NET_BUF_POOL_USAGE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_BUF_POOL_USAGE</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-even"><td><p>net nbr</p></td>
 <td><p>Print neighbor information. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_IPV6"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_IPV6</span></code></a> is set.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_IPV6" title="CONFIG_NET_IPV6"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_IPV6</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net ping</p></td>
 <td><p>Ping a network host.</p></td>
 </tr>
 <tr class="row-even"><td><p>net route</p></td>
 <td><p>Show IPv6 network routes. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_ROUTE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_ROUTE</span></code></a> is set.</p></td>
+<code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_ROUTE</span></code> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net stats</p></td>
 <td><p>Show network statistics.</p></td>
 </tr>
 <tr class="row-even"><td><p>net tcp</p></td>
 <td><p>Connect/send data/close TCP connection. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_TCP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_TCP</span></code></a> is set.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_TCP" title="CONFIG_NET_TCP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_TCP</span></code></a> is set.</p></td>
 </tr>
 <tr class="row-odd"><td><p>net vlan</p></td>
 <td><p>Show Ethernet virtual LAN information. Only available if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_VLAN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN</span></code></a> is set.</p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_VLAN" title="CONFIG_NET_VLAN"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_VLAN</span></code></a> is set.</p></td>
 </tr>
 </tbody>
 </table>
@@ -338,8 +340,8 @@ print more information if <a class="reference internal" href="../kconfig/dummy-s
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

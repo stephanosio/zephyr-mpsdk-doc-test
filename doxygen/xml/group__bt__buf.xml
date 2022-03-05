@@ -410,7 +410,7 @@
         <name>BT_BUF_ISO_SIZE</name>
         <param><defname>size</defname></param>
         <initializer>					  <ref refid="group__bt__buf_1ga9c114a415dc8fc2b84503736b1283468" kindref="member">BT_BUF_SIZE</ref>(<ref refid="hci_8h_1a75c1f5e8a44b034004ecfebdb75ee4be" kindref="member">BT_HCI_ISO_HDR_SIZE</ref> + \
-					  <ref refid="hci_8h_1a7c351e4eb31cdd5469cfecbbff0a1db0" kindref="member">BT_HCI_ISO_DATA_HDR_SIZE</ref> + \
+					  <ref refid="hci_8h_1a0ad84468158c3df92d4dd2fb10771f6e" kindref="member">BT_HCI_ISO_TS_DATA_HDR_SIZE</ref> + \
 					  (size))</initializer>
         <briefdescription>
         </briefdescription>

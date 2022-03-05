@@ -42,7 +42,7 @@
             <img src="_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -64,6 +64,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -124,7 +126,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -1325,6 +1327,8 @@
 </li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.bt_conn_info.type">bt_conn_info.type (C var)</a>
 </li>
+      <li><a href="reference/bluetooth/connection_mgmt.html#c.BT_CONN_INTERVAL_TO_MS">BT_CONN_INTERVAL_TO_MS (C macro)</a>
+</li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.bt_conn_le_create">bt_conn_le_create (C function)</a>
 </li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.bt_conn_le_create_auto">bt_conn_le_create_auto (C function)</a>
@@ -2159,13 +2163,13 @@
 </li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONFIG">bt_l2cap_chan_state.BT_L2CAP_CONFIG (C enumerator)</a>
 </li>
-      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONNECT">bt_l2cap_chan_state.BT_L2CAP_CONNECT (C enumerator)</a>
-</li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONNECTED">bt_l2cap_chan_state.BT_L2CAP_CONNECTED (C enumerator)</a>
 </li>
-      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECT">bt_l2cap_chan_state.BT_L2CAP_DISCONNECT (C enumerator)</a>
+      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_CONNECTING">bt_l2cap_chan_state.BT_L2CAP_CONNECTING (C enumerator)</a>
 </li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECTED">bt_l2cap_chan_state.BT_L2CAP_DISCONNECTED (C enumerator)</a>
+</li>
+      <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECTING">bt_l2cap_chan_state.BT_L2CAP_DISCONNECTING (C enumerator)</a>
 </li>
       <li><a href="reference/bluetooth/l2cap.html#c.bt_l2cap_chan_state_t">bt_l2cap_chan_state_t (C type)</a>
 </li>
@@ -2641,6 +2645,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_APP_SEG_SDU_MAX">BT_MESH_APP_SEG_SDU_MAX (C macro)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_APP_UNSEG_SDU_MAX">BT_MESH_APP_UNSEG_SDU_MAX (C macro)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_auth_method_set_input">bt_mesh_auth_method_set_input (C function)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_auth_method_set_none">bt_mesh_auth_method_set_none (C function)</a>
@@ -3087,12 +3093,12 @@
 </li>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_NO_FAULT">BT_MESH_HEALTH_FAULT_NO_FAULT (C macro)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_NO_LOAD_ERROR">BT_MESH_HEALTH_FAULT_NO_LOAD_ERROR (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_NO_LOAD_WARNING">BT_MESH_HEALTH_FAULT_NO_LOAD_WARNING (C macro)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_OVERFLOW_ERROR">BT_MESH_HEALTH_FAULT_OVERFLOW_ERROR (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/health_srv.html#c.BT_MESH_HEALTH_FAULT_OVERFLOW_WARNING">BT_MESH_HEALTH_FAULT_OVERFLOW_WARNING (C macro)</a>
@@ -3593,6 +3599,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.unprovisioned_beacon">bt_mesh_prov.unprovisioned_beacon (C var)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.unprovisioned_beacon_gatt">bt_mesh_prov.unprovisioned_beacon_gatt (C var)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.uri">bt_mesh_prov.uri (C var)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_prov.uuid">bt_mesh_prov.uuid (C var)</a>
@@ -3639,6 +3647,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_provision_adv">bt_mesh_provision_adv (C function)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/provisioning.html#c.bt_mesh_provision_gatt">bt_mesh_provision_gatt (C function)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_cb">bt_mesh_proxy_cb (C struct)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_cb.identity_disabled">bt_mesh_proxy_cb.identity_disabled (C var)</a>
@@ -3646,6 +3656,10 @@
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_cb.identity_enabled">bt_mesh_proxy_cb.identity_enabled (C var)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.BT_MESH_PROXY_CB_DEFINE">BT_MESH_PROXY_CB_DEFINE (C macro)</a>
+</li>
+      <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_connect">bt_mesh_proxy_connect (C function)</a>
+</li>
+      <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_disconnect">bt_mesh_proxy_disconnect (C function)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/proxy.html#c.bt_mesh_proxy_identity_enable">bt_mesh_proxy_identity_enable (C function)</a>
 </li>
@@ -3687,6 +3701,8 @@
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_RX_SDU_MAX">BT_MESH_RX_SDU_MAX (C macro)</a>
 </li>
+      <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_RX_SEG_MAX">BT_MESH_RX_SEG_MAX (C macro)</a>
+</li>
       <li><a href="reference/bluetooth/mesh/access.html#c.bt_mesh_send_cb">bt_mesh_send_cb (C struct)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.bt_mesh_send_cb.end">bt_mesh_send_cb.end (C var)</a>
@@ -3706,6 +3722,8 @@
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_TTL_MAX">BT_MESH_TTL_MAX (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_TX_SDU_MAX">BT_MESH_TX_SDU_MAX (C macro)</a>
+</li>
+      <li><a href="reference/bluetooth/mesh/access.html#c.BT_MESH_TX_SEG_MAX">BT_MESH_TX_SEG_MAX (C macro)</a>
 </li>
       <li><a href="reference/bluetooth/connection_mgmt.html#c.BT_PASSKEY_INVALID">BT_PASSKEY_INVALID (C macro)</a>
 </li>
@@ -5195,6 +5213,12 @@
 </li>
       <li><a href="reference/canbus/controller.html#c.can_copy_zframe_to_frame">can_copy_zframe_to_frame (C function)</a>
 </li>
+      <li><a href="reference/canbus/controller.html#c.CAN_DEVICE_DT_DEFINE">CAN_DEVICE_DT_DEFINE (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_DEVICE_DT_INST_DEFINE">CAN_DEVICE_DT_INST_DEFINE (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.can_device_state">can_device_state (C struct)</a>
+</li>
       <li><a href="reference/canbus/controller.html#c.can_dlc_to_bytes">can_dlc_to_bytes (C function)</a>
 </li>
       <li><a href="reference/canbus/controller.html#c.CAN_EXT_ID_MASK">CAN_EXT_ID_MASK (C macro)</a>
@@ -5278,6 +5302,18 @@
       <li><a href="reference/canbus/controller.html#c.can_state.CAN_ERROR_WARNING">can_state.CAN_ERROR_WARNING (C enumerator)</a>
 </li>
       <li><a href="reference/canbus/controller.html#c.can_state_change_callback_t">can_state_change_callback_t (C type)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_STATS_ACK_ERROR_INC">CAN_STATS_ACK_ERROR_INC (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_STATS_BIT0_ERROR_INC">CAN_STATS_BIT0_ERROR_INC (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_STATS_BIT1_ERROR_INC">CAN_STATS_BIT1_ERROR_INC (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_STATS_CRC_ERROR_INC">CAN_STATS_CRC_ERROR_INC (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_STATS_FORM_ERROR_INC">CAN_STATS_FORM_ERROR_INC (C macro)</a>
+</li>
+      <li><a href="reference/canbus/controller.html#c.CAN_STATS_STUFF_ERROR_INC">CAN_STATS_STUFF_ERROR_INC (C macro)</a>
 </li>
       <li><a href="reference/canbus/controller.html#c.CAN_STD_ID_MASK">CAN_STD_ID_MASK (C macro)</a>
 </li>
@@ -5429,6 +5465,8 @@
 </li>
       <li><a href="reference/crypto/index.html#c.cipher_ccm_op">cipher_ccm_op (C function)</a>
 </li>
+      <li><a href="reference/crypto/index.html#c.cipher_completion_cb">cipher_completion_cb (C type)</a>
+</li>
       <li><a href="reference/crypto/index.html#c.cipher_ctr_op">cipher_ctr_op (C function)</a>
 </li>
       <li><a href="reference/crypto/index.html#c.cipher_ctx">cipher_ctx (C struct)</a>
@@ -5486,8 +5524,6 @@
       <li><a href="reference/crypto/index.html#c.cipher_pkt.out_buf_max">cipher_pkt.out_buf_max (C var)</a>
 </li>
       <li><a href="reference/crypto/index.html#c.cipher_pkt.out_len">cipher_pkt.out_len (C var)</a>
-</li>
-      <li><a href="reference/crypto/index.html#c.cipher_query_hwcaps">cipher_query_hwcaps (C function)</a>
 </li>
       <li><a href="reference/util/index.html#c.CLAMP">CLAMP (C macro)</a>
 </li>
@@ -5559,6 +5595,8 @@
 </li>
       <li><a href="reference/networking/coap.html#c.coap_append_size2_option">coap_append_size2_option (C function)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/networking/coap.html#c.coap_block_context">coap_block_context (C struct)</a>
 </li>
       <li><a href="reference/networking/coap.html#c.coap_block_size">coap_block_size (C enum)</a>
@@ -5569,8 +5607,6 @@
 </li>
       <li><a href="reference/networking/coap.html#c.coap_block_size.COAP_BLOCK_16">coap_block_size.COAP_BLOCK_16 (C enumerator)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/networking/coap.html#c.coap_block_size.COAP_BLOCK_256">coap_block_size.COAP_BLOCK_256 (C enumerator)</a>
 </li>
       <li><a href="reference/networking/coap.html#c.coap_block_size.COAP_BLOCK_32">coap_block_size.COAP_BLOCK_32 (C enumerator)</a>
@@ -5961,9 +5997,9 @@
 </li>
       <li><a href="boards/riscv/rv32m1_vega/doc/index.html#index-0">CROSS_COMPILE</a>, <a href="boards/riscv/rv32m1_vega/doc/index.html#index-1">[1]</a>, <a href="boards/riscv/rv32m1_vega/doc/index.html#index-2">[2]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-0">[3]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-2">[4]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-3">[5]</a>
 </li>
-      <li><a href="reference/crypto/index.html#c.crypto_completion_cb">crypto_completion_cb (C type)</a>
-</li>
       <li><a href="reference/crypto/index.html#c.crypto_driver_api">crypto_driver_api (C struct)</a>
+</li>
+      <li><a href="reference/crypto/index.html#c.crypto_query_hwcaps">crypto_query_hwcaps (C function)</a>
 </li>
       <li><a href="reference/crypto/index.html#c.ctr_op_t">ctr_op_t (C type)</a>
 </li>
@@ -6006,14 +6042,6 @@
       <li><a href="reference/drivers/index.html#c.device.name">device.name (C var)</a>
 </li>
       <li><a href="reference/drivers/index.html#c.device.state">device.state (C var)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.device_any_busy_check">device_any_busy_check (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.device_busy_check">device_busy_check (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.device_busy_clear">device_busy_clear (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.device_busy_set">device_busy_set (C function)</a>
 </li>
       <li><a href="reference/drivers/index.html#c.DEVICE_DECLARE">DEVICE_DECLARE (C macro)</a>
 </li>
@@ -6481,12 +6509,12 @@
 </li>
       <li><a href="reference/devicetree/api.html#c.DT_CLOCKS_CELL_BY_NAME">DT_CLOCKS_CELL_BY_NAME (C macro)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/devicetree/api.html#c.DT_CLOCKS_CTLR">DT_CLOCKS_CTLR (C macro)</a>
 </li>
       <li><a href="reference/devicetree/api.html#c.DT_CLOCKS_CTLR_BY_IDX">DT_CLOCKS_CTLR_BY_IDX (C macro)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/devicetree/api.html#c.DT_CLOCKS_CTLR_BY_NAME">DT_CLOCKS_CTLR_BY_NAME (C macro)</a>
 </li>
       <li><a href="reference/devicetree/api.html#c.DT_COMPAT_GET_ANY_STATUS_OKAY">DT_COMPAT_GET_ANY_STATUS_OKAY (C macro)</a>
@@ -7325,7 +7353,7 @@
 </li>
         <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-24">XCC_NO_G_FLAG</a>
 </li>
-        <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-23">XCC_USE_CLANG</a>
+        <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-25">XCC_USE_CLANG</a>
 </li>
         <li><a href="guides/west/config.html#index-0">XDG_CONFIG_HOME</a>
 </li>
@@ -7345,7 +7373,7 @@
 </li>
         <li><a href="getting_started/installation_linux.html#index-0">ZEPHYR_SDK_INSTALL_DIR</a>, <a href="getting_started/installation_linux.html#index-1">[1]</a>, <a href="getting_started/installation_linux.html#index-2">[2]</a>, <a href="getting_started/installation_linux.html#index-3">[3]</a>
 </li>
-        <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-0">ZEPHYR_TOOLCHAIN_VARIANT</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-10">[1]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-11">[2]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-16">[3]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-19">[4]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-3">[5]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-5">[6]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-0">[7]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-2">[8]</a>, <a href="getting_started/toolchain_host.html#index-0">[9]</a>, <a href="getting_started/toolchain_host.html#index-1">[10]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-1">[11]</a>, <a href="guides/beyond-GSG.html#index-1">[12]</a>, <a href="guides/env_vars.html#index-12">[13]</a>, <a href="guides/env_vars.html#index-14">[14]</a>
+        <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-0">ZEPHYR_TOOLCHAIN_VARIANT</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-10">[1]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-11">[2]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-16">[3]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-19">[4]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-23">[5]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-26">[6]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-27">[7]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-3">[8]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-5">[9]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-0">[10]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-2">[11]</a>, <a href="getting_started/toolchain_host.html#index-0">[12]</a>, <a href="getting_started/toolchain_host.html#index-1">[13]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-1">[14]</a>, <a href="guides/beyond-GSG.html#index-1">[15]</a>, <a href="guides/env_vars.html#index-12">[16]</a>, <a href="guides/env_vars.html#index-14">[17]</a>
 </li>
       </ul></li>
       <li><a href="reference/libc/index.html#c.ENXIO">ENXIO (C macro)</a>
@@ -8154,8 +8182,6 @@
 </li>
       <li><a href="reference/display/index.html#c.glcd_function_set">glcd_function_set (C function)</a>
 </li>
-      <li><a href="reference/display/index.html#c.glcd_initialize">glcd_initialize (C function)</a>
-</li>
       <li><a href="reference/display/index.html#c.glcd_input_state_get">glcd_input_state_get (C function)</a>
 </li>
       <li><a href="reference/display/index.html#c.glcd_input_state_set">glcd_input_state_set (C function)</a>
@@ -8469,8 +8495,6 @@
       <li><a href="reference/networking/gptp.html#c.gptp_uscaled_ns.high">gptp_uscaled_ns.high (C var)</a>
 </li>
       <li><a href="reference/networking/gptp.html#c.gptp_uscaled_ns.low">gptp_uscaled_ns.low (C var)</a>
-</li>
-      <li><a href="reference/display/index.html#c.GROVE_LCD_NAME">GROVE_LCD_NAME (C macro)</a>
 </li>
       <li><a href="reference/display/index.html#c.GROVE_RGB_BLUE">GROVE_RGB_BLUE (C macro)</a>
 </li>
@@ -9294,10 +9318,10 @@
 </li>
       <li><a href="reference/networking/ieee802154.html#c.ieee802154_fpb_mode.IEEE802154_FPB_ADDR_MATCH_THREAD">ieee802154_fpb_mode.IEEE802154_FPB_ADDR_MATCH_THREAD (C enumerator)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/networking/ieee802154.html#c.ieee802154_fpb_mode.IEEE802154_FPB_ADDR_MATCH_ZIGBEE">ieee802154_fpb_mode.IEEE802154_FPB_ADDR_MATCH_ZIGBEE (C enumerator)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/networking/ieee802154.html#c.ieee802154_hw_caps">ieee802154_hw_caps (C enum)</a>
 </li>
       <li><a href="reference/networking/ieee802154.html#c.ieee802154_hw_caps.IEEE802154_HW_2_4_GHZ">ieee802154_hw_caps.IEEE802154_HW_2_4_GHZ (C enumerator)</a>
@@ -9441,6 +9465,10 @@
       <li><a href="reference/networking/ip_4_6.html#c.iovec">iovec (C struct)</a>
 </li>
       <li><a href="reference/peripherals/ipm.html#c.ipm_callback_t">ipm_callback_t (C type)</a>
+</li>
+      <li><a href="reference/peripherals/ipm.html#c.ipm_complete">ipm_complete (C function)</a>
+</li>
+      <li><a href="reference/peripherals/ipm.html#c.ipm_complete_t">ipm_complete_t (C type)</a>
 </li>
       <li><a href="reference/peripherals/ipm.html#c.ipm_driver_api">ipm_driver_api (C struct)</a>
 </li>
@@ -10674,7 +10702,11 @@
 </li>
       <li><a href="reference/logging/index.html#c.log_backend_enable">log_backend_enable (C function)</a>
 </li>
+      <li><a href="reference/logging/index.html#c.log_backend_format_set">log_backend_format_set (C function)</a>
+</li>
       <li><a href="reference/logging/index.html#c.log_backend_get">log_backend_get (C function)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_backend_get_by_name">log_backend_get_by_name (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_backend_id_get">log_backend_id_get (C function)</a>
 </li>
@@ -10711,6 +10743,12 @@
       <li><a href="reference/logging/index.html#c.log_filter_get">log_filter_get (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_filter_set">log_filter_set (C function)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_format_func_t">log_format_func_t (C type)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_format_func_t_get">log_format_func_t_get (C function)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_format_set_all_active_backends">log_format_set_all_active_backends (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_get_strdup_longest_string">log_get_strdup_longest_string (C function)</a>
 </li>
@@ -10751,6 +10789,10 @@
       <li><a href="reference/logging/index.html#c.LOG_LEVEL_SET">LOG_LEVEL_SET (C macro)</a>
 </li>
       <li><a href="reference/logging/index.html#c.LOG_MAX_NARGS">LOG_MAX_NARGS (C macro)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_mem_get_max_usage">log_mem_get_max_usage (C function)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_mem_get_usage">log_mem_get_usage (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.LOG_MODULE_DECLARE">LOG_MODULE_DECLARE (C macro)</a>
 </li>
@@ -10813,6 +10855,8 @@
       <li><a href="reference/logging/index.html#c.log_msg_generic_hdr">log_msg_generic_hdr (C struct)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_msg_get">log_msg_get (C function)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.log_msg_get_slab_size">log_msg_get_slab_size (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_msg_hdr">log_msg_hdr (C struct)</a>
 </li>
@@ -10904,6 +10948,8 @@
 </li>
       <li><a href="reference/logging/index.html#c.LOG_OUTPUT_DEFINE">LOG_OUTPUT_DEFINE (C macro)</a>
 </li>
+      <li><a href="reference/logging/index.html#c.LOG_OUTPUT_DICT">LOG_OUTPUT_DICT (C macro)</a>
+</li>
       <li><a href="reference/logging/index.html#c.log_output_dropped_process">log_output_dropped_process (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.LOG_OUTPUT_FLAG_COLORS">LOG_OUTPUT_FLAG_COLORS (C macro)</a>
@@ -10924,19 +10970,25 @@
 </li>
       <li><a href="reference/logging/index.html#c.log_output_flush">log_output_flush (C function)</a>
 </li>
-      <li><a href="reference/logging/index.html#c.log_output_func_t">log_output_func_t (C type)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="reference/logging/index.html#c.log_output_func_t">log_output_func_t (C type)</a>
+</li>
       <li><a href="reference/logging/index.html#c.log_output_hexdump">log_output_hexdump (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_output_hostname_set">log_output_hostname_set (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_output_msg2_process">log_output_msg2_process (C function)</a>
 </li>
+      <li><a href="reference/logging/index.html#c.log_output_msg2_syst_process">log_output_msg2_syst_process (C function)</a>
+</li>
       <li><a href="reference/logging/index.html#c.log_output_msg_process">log_output_msg_process (C function)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_output_string">log_output_string (C function)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.LOG_OUTPUT_SYST">LOG_OUTPUT_SYST (C macro)</a>
+</li>
+      <li><a href="reference/logging/index.html#c.LOG_OUTPUT_TEXT">LOG_OUTPUT_TEXT (C macro)</a>
 </li>
       <li><a href="reference/logging/index.html#c.log_output_timestamp_freq_set">log_output_timestamp_freq_set (C function)</a>
 </li>
@@ -11124,6 +11176,8 @@
 </li>
       <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_get_u8">lwm2m_engine_get_u8 (C function)</a>
 </li>
+      <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_path_is_observed">lwm2m_engine_path_is_observed (C function)</a>
+</li>
       <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_register_create_callback">lwm2m_engine_register_create_callback (C function)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_register_delete_callback">lwm2m_engine_register_delete_callback (C function)</a>
@@ -11137,6 +11191,8 @@
       <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_register_read_callback">lwm2m_engine_register_read_callback (C function)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_register_validate_callback">lwm2m_engine_register_validate_callback (C function)</a>
+</li>
+      <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_send">lwm2m_engine_send (C function)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.lwm2m_engine_set_bool">lwm2m_engine_set_bool (C function)</a>
 </li>
@@ -11197,6 +11253,8 @@
       <li><a href="reference/networking/lwm2m.html#c.LWM2M_OBJECT_GATEWAY_ID">LWM2M_OBJECT_GATEWAY_ID (C macro)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.LWM2M_OBJECT_LOCATION_ID">LWM2M_OBJECT_LOCATION_ID (C macro)</a>
+</li>
+      <li><a href="reference/networking/lwm2m.html#c.LWM2M_OBJECT_PORTFOLIO_ID">LWM2M_OBJECT_PORTFOLIO_ID (C macro)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.LWM2M_OBJECT_SECURITY_ID">LWM2M_OBJECT_SECURITY_ID (C macro)</a>
 </li>
@@ -13731,6 +13789,8 @@
 </li>
       <li><a href="reference/storage/nvs/nvs.html#c.nvs_init">nvs_init (C function)</a>
 </li>
+      <li><a href="reference/storage/nvs/nvs.html#c.nvs_mount">nvs_mount (C function)</a>
+</li>
       <li><a href="reference/storage/nvs/nvs.html#c.nvs_read">nvs_read (C function)</a>
 </li>
       <li><a href="reference/storage/nvs/nvs.html#c.nvs_read_hist">nvs_read_hist (C function)</a>
@@ -14243,8 +14303,6 @@
 </li>
       <li><a href="reference/pm/index.html#c.pm_device_state_lock">pm_device_state_lock (C function)</a>
 </li>
-      <li><a href="reference/pm/index.html#c.pm_device_state_set">pm_device_state_set (C function)</a>
-</li>
       <li><a href="reference/pm/index.html#c.pm_device_state_str">pm_device_state_str (C function)</a>
 </li>
       <li><a href="reference/pm/index.html#c.pm_device_state_unlock">pm_device_state_unlock (C function)</a>
@@ -14264,14 +14322,6 @@
       <li><a href="reference/pm/index.html#c.pm_notifier_register">pm_notifier_register (C function)</a>
 </li>
       <li><a href="reference/pm/index.html#c.pm_notifier_unregister">pm_notifier_unregister (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.pm_power_state_exit_post_ops">pm_power_state_exit_post_ops (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.pm_power_state_force">pm_power_state_force (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.pm_power_state_next_get">pm_power_state_next_get (C function)</a>
-</li>
-      <li><a href="reference/pm/index.html#c.pm_power_state_set">pm_power_state_set (C function)</a>
 </li>
       <li><a href="reference/pm/index.html#c.pm_state">pm_state (C enum)</a>
 </li>
@@ -14295,6 +14345,10 @@
 </li>
       <li><a href="reference/pm/index.html#c.PM_STATE_DT_INIT">PM_STATE_DT_INIT (C macro)</a>
 </li>
+      <li><a href="reference/pm/index.html#c.pm_state_exit_post_ops">pm_state_exit_post_ops (C function)</a>
+</li>
+      <li><a href="reference/pm/index.html#c.pm_state_force">pm_state_force (C function)</a>
+</li>
       <li><a href="reference/pm/index.html#c.pm_state_info">pm_state_info (C struct)</a>
 </li>
       <li><a href="reference/pm/index.html#c.pm_state_info.exit_latency_us">pm_state_info.exit_latency_us (C var)</a>
@@ -14308,6 +14362,10 @@
       <li><a href="reference/pm/index.html#c.PM_STATE_INFO_LIST_FROM_DT_CPU">PM_STATE_INFO_LIST_FROM_DT_CPU (C macro)</a>
 </li>
       <li><a href="reference/pm/index.html#c.PM_STATE_LIST_FROM_DT_CPU">PM_STATE_LIST_FROM_DT_CPU (C macro)</a>
+</li>
+      <li><a href="reference/pm/index.html#c.pm_state_next_get">pm_state_next_get (C function)</a>
+</li>
+      <li><a href="reference/pm/index.html#c.pm_state_set">pm_state_set (C function)</a>
 </li>
       <li><a href="reference/peripherals/pinmux.html#c.pmux_get">pmux_get (C type)</a>
 </li>
@@ -14485,12 +14543,12 @@
 </li>
       <li><a href="reference/networking/lwm2m.html#c.RESULT_INTEGRITY_FAILED">RESULT_INTEGRITY_FAILED (C macro)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/networking/lwm2m.html#c.RESULT_INVALID_URI">RESULT_INVALID_URI (C macro)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.RESULT_NO_STORAGE">RESULT_NO_STORAGE (C macro)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="reference/networking/lwm2m.html#c.RESULT_OUT_OF_MEM">RESULT_OUT_OF_MEM (C macro)</a>
 </li>
       <li><a href="reference/networking/lwm2m.html#c.RESULT_SUCCESS">RESULT_SUCCESS (C macro)</a>
@@ -14519,13 +14577,19 @@
 </li>
       <li><a href="reference/data_structures/ring_buffers.html#c.ring_buf_is_empty">ring_buf_is_empty (C function)</a>
 </li>
+      <li><a href="reference/data_structures/ring_buffers.html#c.RING_BUF_ITEM_DECLARE">RING_BUF_ITEM_DECLARE (C macro)</a>
+</li>
       <li><a href="reference/data_structures/ring_buffers.html#c.RING_BUF_ITEM_DECLARE_POW2">RING_BUF_ITEM_DECLARE_POW2 (C macro)</a>
 </li>
       <li><a href="reference/data_structures/ring_buffers.html#c.RING_BUF_ITEM_DECLARE_SIZE">RING_BUF_ITEM_DECLARE_SIZE (C macro)</a>
 </li>
       <li><a href="reference/data_structures/ring_buffers.html#c.ring_buf_item_get">ring_buf_item_get (C function)</a>
 </li>
+      <li><a href="reference/data_structures/ring_buffers.html#c.ring_buf_item_init">ring_buf_item_init (C function)</a>
+</li>
       <li><a href="reference/data_structures/ring_buffers.html#c.ring_buf_item_put">ring_buf_item_put (C function)</a>
+</li>
+      <li><a href="reference/data_structures/ring_buffers.html#c.ring_buf_item_space_get">ring_buf_item_space_get (C function)</a>
 </li>
       <li><a href="reference/data_structures/ring_buffers.html#c.ring_buf_peek">ring_buf_peek (C function)</a>
 </li>
@@ -17083,7 +17147,7 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-24">XCC_NO_G_FLAG</a>
 </li>
-      <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-23">XCC_USE_CLANG</a>
+      <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-25">XCC_USE_CLANG</a>
 </li>
       <li><a href="guides/west/config.html#index-0">XDG_CONFIG_HOME</a>
 </li>
@@ -17169,7 +17233,7 @@
 </li>
       <li><a href="getting_started/installation_linux.html#index-0">ZEPHYR_SDK_INSTALL_DIR</a>, <a href="getting_started/installation_linux.html#index-1">[1]</a>, <a href="getting_started/installation_linux.html#index-2">[2]</a>, <a href="getting_started/installation_linux.html#index-3">[3]</a>
 </li>
-      <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-0">ZEPHYR_TOOLCHAIN_VARIANT</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-10">[1]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-11">[2]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-16">[3]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-19">[4]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-3">[5]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-5">[6]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-0">[7]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-2">[8]</a>, <a href="getting_started/toolchain_host.html#index-0">[9]</a>, <a href="getting_started/toolchain_host.html#index-1">[10]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-1">[11]</a>, <a href="guides/beyond-GSG.html#index-1">[12]</a>, <a href="guides/env_vars.html#index-12">[13]</a>, <a href="guides/env_vars.html#index-14">[14]</a>
+      <li><a href="getting_started/toolchain_3rd_party_x_compilers.html#index-0">ZEPHYR_TOOLCHAIN_VARIANT</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-10">[1]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-11">[2]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-16">[3]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-19">[4]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-23">[5]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-26">[6]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-27">[7]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-3">[8]</a>, <a href="getting_started/toolchain_3rd_party_x_compilers.html#index-5">[9]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-0">[10]</a>, <a href="getting_started/toolchain_custom_cmake.html#index-2">[11]</a>, <a href="getting_started/toolchain_host.html#index-0">[12]</a>, <a href="getting_started/toolchain_host.html#index-1">[13]</a>, <a href="getting_started/toolchain_other_x_compilers.html#index-1">[14]</a>, <a href="guides/beyond-GSG.html#index-1">[15]</a>, <a href="guides/env_vars.html#index-12">[16]</a>, <a href="guides/env_vars.html#index-14">[17]</a>
 </li>
       <li><a href="guides/west/build-flash-debug.html#runners.core.ZephyrBinaryRunner">ZephyrBinaryRunner (class in runners.core)</a>
 </li>
@@ -17344,8 +17408,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

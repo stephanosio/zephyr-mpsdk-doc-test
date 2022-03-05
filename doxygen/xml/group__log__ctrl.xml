@@ -525,6 +525,80 @@
         </inbodydescription>
         <location file="include/logging/log_ctrl.h" line="171" column="6" declfile="include/logging/log_ctrl.h" declline="171" declcolumn="6"/>
       </memberdef>
+      <memberdef kind="function" id="group__log__ctrl_1ga8c374e83492b221eeaf2c2b0f38e3b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structlog__backend" kindref="compound">log_backend</ref> *</type>
+        <definition>const struct log_backend * log_backend_get_by_name</definition>
+        <argsstring>(const char *backend_name)</argsstring>
+        <name>log_backend_get_by_name</name>
+        <param>
+          <type>const char *</type>
+          <declname>backend_name</declname>
+        </param>
+        <briefdescription>
+<para>Get backend by name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">backend_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the backend as defined by the LOG_BACKEND_DEFINE.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to the backend instance if found, NULL if backend is not found. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_ctrl.h" line="180" column="24" declfile="include/logging/log_ctrl.h" declline="180" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="group__log__ctrl_1gaeaaaa2e68877837a4af20fa172fc2f06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structlog__backend" kindref="compound">log_backend</ref> *</type>
+        <definition>const struct log_backend * log_format_set_all_active_backends</definition>
+        <argsstring>(size_t log_type)</argsstring>
+        <name>log_format_set_all_active_backends</name>
+        <param>
+          <type>size_t</type>
+          <declname>log_type</declname>
+        </param>
+        <briefdescription>
+<para>Sets logging format for all active backends. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>log_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log format.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>Pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>to the last backend that failed, NULL for success. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_ctrl.h" line="188" column="24" declfile="include/logging/log_ctrl.h" declline="188" declcolumn="24"/>
+      </memberdef>
       <memberdef kind="function" id="group__log__ctrl_1ga58c62e37b9fe470e0b0fc22967fa164d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
         <definition>uint32_t log_get_strdup_pool_current_utilization</definition>
@@ -540,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="176" column="10" declfile="include/logging/log_ctrl.h" declline="176" declcolumn="10"/>
+        <location file="include/logging/log_ctrl.h" line="193" column="10" declfile="include/logging/log_ctrl.h" declline="193" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group__log__ctrl_1ga0f5f78bf165604a1e1008a54f04dc85b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -558,7 +632,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="184" column="10" declfile="include/logging/log_ctrl.h" declline="184" declcolumn="10"/>
+        <location file="include/logging/log_ctrl.h" line="201" column="10" declfile="include/logging/log_ctrl.h" declline="201" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group__log__ctrl_1ga098c342ec5c975a6c2dd2fbada365f6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -576,7 +650,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="191" column="10" declfile="include/logging/log_ctrl.h" declline="191" declcolumn="10"/>
+        <location file="include/logging/log_ctrl.h" line="208" column="10" declfile="include/logging/log_ctrl.h" declline="208" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="group__log__ctrl_1ga6d6c48ddd4b6739e34fde2098ad61731" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -612,7 +686,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="202" column="20" bodyfile="include/logging/log_ctrl.h" bodystart="202" bodyend="210"/>
+        <location file="include/logging/log_ctrl.h" line="219" column="20" bodyfile="include/logging/log_ctrl.h" bodystart="219" bodyend="227"/>
       </memberdef>
       <memberdef kind="function" id="group__log__ctrl_1ga58499087f61cc377615311498eedf1ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -665,7 +739,118 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="221" column="5" declfile="include/logging/log_ctrl.h" declline="221" declcolumn="5"/>
+        <location file="include/logging/log_ctrl.h" line="238" column="5" declfile="include/logging/log_ctrl.h" declline="238" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__log__ctrl_1ga5f3487ab08e421ae7ce8a8b80310a338" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int log_mem_get_usage</definition>
+        <argsstring>(uint32_t *buf_size, uint32_t *usage)</argsstring>
+        <name>log_mem_get_usage</name>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>buf_size</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>usage</declname>
+        </param>
+        <briefdescription>
+<para>Get current memory usage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capacity of the buffer used for storing log messages. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">usage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes currently containing pending log messages.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if logging mode does not use the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>successfully collected usage data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_ctrl.h" line="249" column="5" declfile="include/logging/log_ctrl.h" declline="249" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__log__ctrl_1ga2d3f29bf2783e70242c8608a20a934ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int log_mem_get_max_usage</definition>
+        <argsstring>(uint32_t *max)</argsstring>
+        <name>log_mem_get_max_usage</name>
+        <param>
+          <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref> *</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+<para>Get maximum memory usage. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Requires CONFIG_LOG_MEM_UTILIZATION option.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">max</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of bytes used for pending log messages.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>-EINVAL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if logging mode does not use the buffer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-ENOTSUP</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if instrumentation is not enabled. not been enabled.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>successfully collected usage data. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_ctrl.h" line="264" column="5" declfile="include/logging/log_ctrl.h" declline="264" declcolumn="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -679,7 +864,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="229" column="10" bodyfile="include/logging/log_ctrl.h" bodystart="229" bodyend="-1"/>
+        <location file="include/logging/log_ctrl.h" line="272" column="10" bodyfile="include/logging/log_ctrl.h" bodystart="272" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__log__ctrl_1ga062ce2496c8e47adec91c0d11744a7a7" prot="public" static="no">
         <name>LOG_INIT</name>
@@ -691,7 +876,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="230" column="9" bodyfile="include/logging/log_ctrl.h" bodystart="230" bodyend="-1"/>
+        <location file="include/logging/log_ctrl.h" line="273" column="9" bodyfile="include/logging/log_ctrl.h" bodystart="273" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__log__ctrl_1ga9ee5a99e0487e3f1e6d289b12c19ad5a" prot="public" static="no">
         <name>LOG_PANIC</name>
@@ -703,7 +888,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="231" column="9" bodyfile="include/logging/log_ctrl.h" bodystart="231" bodyend="-1"/>
+        <location file="include/logging/log_ctrl.h" line="274" column="9" bodyfile="include/logging/log_ctrl.h" bodystart="274" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__log__ctrl_1gacd14d69929496cea19c699509eb5ea1b" prot="public" static="no">
         <name>LOG_PROCESS</name>
@@ -715,7 +900,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_ctrl.h" line="232" column="9" bodyfile="include/logging/log_ctrl.h" bodystart="232" bodyend="-1"/>
+        <location file="include/logging/log_ctrl.h" line="275" column="9" bodyfile="include/logging/log_ctrl.h" bodystart="275" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

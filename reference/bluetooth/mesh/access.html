@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -191,7 +193,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -299,7 +301,7 @@ opcode list definition.</p>
 messages on. Only messages encrypted with application keys in the AppKey list
 will be passed to the model.</p>
 <p>The maximum number of supported application keys each model can hold is
-configured with the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_MESH_MODEL_KEY_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_MODEL_KEY_COUNT</span></code></a> configuration
+configured with the <a class="reference internal" href="../../../kconfig.html#CONFIG_BT_MESH_MODEL_KEY_COUNT" title="CONFIG_BT_MESH_MODEL_KEY_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_MODEL_KEY_COUNT</span></code></a> configuration
 option. The contents of the AppKey list is managed by the
 <a class="reference internal" href="cfg_srv.html#bluetooth-mesh-models-cfg-srv"><span class="std std-ref">Configuration Server</span></a>.</p>
 </div>
@@ -311,7 +313,7 @@ list). Additionally, the model will process packets addressed to any group or
 virtual address in its subscription list. This allows nodes to address
 multiple nodes throughout the mesh network with a single message.</p>
 <p>The maximum number of supported addresses in the Subscription list each model
-can hold is configured with the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_MESH_MODEL_GROUP_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_MODEL_GROUP_COUNT</span></code></a>
+can hold is configured with the <a class="reference internal" href="../../../kconfig.html#CONFIG_BT_MESH_MODEL_GROUP_COUNT" title="CONFIG_BT_MESH_MODEL_GROUP_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_MODEL_GROUP_COUNT</span></code></a>
 configuration option. The contents of the subscription list is managed by the
 <a class="reference internal" href="cfg_srv.html#bluetooth-mesh-models-cfg-srv"><span class="std std-ref">Configuration Server</span></a>.</p>
 </div>
@@ -367,7 +369,7 @@ extensions cannot be circular. Note that binding of node states and other
 relationships between the models must be defined by the model implementations.</p>
 <p>The model extension concept adds some overhead in the access layer packet
 processing, and must be explicitly enabled with
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_MESH_MODEL_EXTENSIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_MODEL_EXTENSIONS</span></code></a> to have any effect.</p>
+<a class="reference internal" href="../../../kconfig.html#CONFIG_BT_MESH_MODEL_EXTENSIONS" title="CONFIG_BT_MESH_MODEL_EXTENSIONS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_MODEL_EXTENSIONS</span></code></a> to have any effect.</p>
 </div>
 <div class="section" id="model-data-storage">
 <h3>Model data storage<a class="headerlink" href="#model-data-storage" title="Permalink to this headline">¶</a></h3>
@@ -475,7 +477,25 @@ details.</p>
 <dl class="c macro">
 <dt class="sig sig-object c" id="c.BT_MESH_APP_SEG_SDU_MAX">
 <span class="target" id="group__bt__mesh__access_1gaa620c32d1dce8e4b691b7f4270016506"></span><span class="sig-name descname"><span class="n"><span class="pre">BT_MESH_APP_SEG_SDU_MAX</span></span></span><a class="headerlink" href="#c.BT_MESH_APP_SEG_SDU_MAX" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Maximum payload size of an access message (in octets). </p>
+<dd><p>Maximum size of an access message segment (in octets). </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.BT_MESH_APP_UNSEG_SDU_MAX">
+<span class="target" id="group__bt__mesh__access_1ga64eb6a94b1db9899c4f5bbf4cc88cd9f"></span><span class="sig-name descname"><span class="n"><span class="pre">BT_MESH_APP_UNSEG_SDU_MAX</span></span></span><a class="headerlink" href="#c.BT_MESH_APP_UNSEG_SDU_MAX" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum payload size of an unsegmented access message (in octets). </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.BT_MESH_RX_SEG_MAX">
+<span class="target" id="group__bt__mesh__access_1ga18756e939ec3b312eef5c3dc9fd70270"></span><span class="sig-name descname"><span class="n"><span class="pre">BT_MESH_RX_SEG_MAX</span></span></span><a class="headerlink" href="#c.BT_MESH_RX_SEG_MAX" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum number of segments supported for incoming messages. </p>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.BT_MESH_TX_SEG_MAX">
+<span class="target" id="group__bt__mesh__access_1ga1b2a3610ac370266578abce195e65fa2"></span><span class="sig-name descname"><span class="n"><span class="pre">BT_MESH_TX_SEG_MAX</span></span></span><a class="headerlink" href="#c.BT_MESH_TX_SEG_MAX" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum number of segments supported for outgoing messages. </p>
 </dd></dl>
 
 <dl class="c macro">
@@ -1720,8 +1740,8 @@ details.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -164,7 +166,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -541,9 +543,11 @@ automation setup based on “fixture” keyword. Some sample fixture names
 are i2c_hts221, i2c_bme280, i2c_FRAM, ble_fw and gpio_loop.</p>
 <p>Only one fixture can be defined per testcase.</p>
 </dd>
-<dt>pytest_root: &lt;pytest dirctory&gt; (default pytest)</dt><dd><p>Specify a pytest directory which need to excute when test case begin to running,
+<dt>pytest_root: &lt;pytest directory&gt; (default pytest)</dt><dd><p>Specify a pytest directory which need to excute when test case begin to running,
 default pytest directory name is pytest, after pytest finished, twister will
 check if this case pass or fail according the pytest report.</p>
+</dd>
+<dt>pytest_args: &lt;list of arguments&gt; (default empty)</dt><dd><p>Specify a list of additional arguments to pass to <code class="docutils literal notranslate"><span class="pre">pytest</span></code>.</p>
 </dd>
 </dl>
 <p>The following is an example yaml file with a few harness_config options.</p>
@@ -768,6 +772,10 @@ in the hardware map file will be matched to testcases requesting the same fixtur
 and these tests will be executed on the boards that provide this fixture.</p>
 <div class="align-center figure align-default">
 <img alt="../../_images/fixtures.svg" src="../../_images/fixtures.svg" /></div>
+<p>Fixtures can also be provided via twister command option <code class="docutils literal notranslate"><span class="pre">--fixture</span></code>, this option
+can be used multiple times and all given fixtures will be appended as a list. And the
+given fixtures will be assigned to all boards, this means that all boards set by
+current twister command can run those testcases which request the same fixtures.</p>
 </div>
 <div class="section" id="notes">
 <h4>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h4>
@@ -854,8 +862,8 @@ be added to the output reports.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

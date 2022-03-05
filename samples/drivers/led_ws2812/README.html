@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -161,6 +163,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../misc/ft800/README.html">FT800</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../misc/grove_display/README.html">Grove LCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../peci/README.html">PECI Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../ps2/README.html">PS/2 Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../spi_bitbang/README.html">SPI-Bitbang Sample</a></li>
@@ -194,7 +197,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -290,8 +293,8 @@ to the data input pin of the first WS2812 IC in the strip.</p></li>
 <p>To make sure the sample is set up properly for building, you must:</p>
 <ul class="simple">
 <li><p>select the correct WS2812 driver backend for your SoC. This currently should
-be <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_WS2812_STRIP_SPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WS2812_STRIP_SPI</span></code></a> unless you are using an nRF51 SoC, in
-which case it will be <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_WS2812_STRIP_GPIO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WS2812_STRIP_GPIO</span></code></a>.</p></li>
+be <a class="reference internal" href="../../../kconfig.html#CONFIG_WS2812_STRIP_SPI" title="CONFIG_WS2812_STRIP_SPI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_WS2812_STRIP_SPI</span></code></a> unless you are using an nRF51 SoC, in
+which case it will be <a class="reference internal" href="../../../kconfig.html#CONFIG_WS2812_STRIP_GPIO" title="CONFIG_WS2812_STRIP_GPIO"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_WS2812_STRIP_GPIO</span></code></a>.</p></li>
 <li><p>create a <code class="docutils literal notranslate"><span class="pre">led-strip</span></code> <a class="reference internal" href="../../../guides/dts/intro.html#dt-alias-chosen"><span class="std std-ref">devicetree alias</span></a>, which
 refers to a node in your <a class="reference internal" href="../../../guides/dts/index.html#dt-guide"><span class="std std-ref">devicetree</span></a> with a
 <code class="docutils literal notranslate"><span class="pre">worldsemi,ws2812-spi</span></code> or <code class="docutils literal notranslate"><span class="pre">worldsemi,ws2812-gpio</span></code> compatible. The node
@@ -335,8 +338,8 @@ following output:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

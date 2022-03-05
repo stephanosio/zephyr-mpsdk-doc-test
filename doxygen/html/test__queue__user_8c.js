@@ -3,7 +3,7 @@ var test__queue__user_8c =
     [ "LIST_LEN", "test__queue__user_8c.html#aa0db7e0f64676a51b9d71faafae093cd", null ],
     [ "STACK_SIZE", "test__queue__user_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "child_thread_get", "test__queue__user_8c.html#aadcda5b12ed4dcd690ae06dd96f8b17b", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__queue__user_8c.html#a6f8a060367358c52f8ce1a0c87279d16", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__queue__user_8c.html#aafd6368b560d1dc20714366afcaa3e18", null ],
     [ "test_auto_free", "group__kernel__queue__tests.html#gab194fe3b40e86eb2c6178e372cc8d8c7", null ],
     [ "test_queue_alloc_append_user", "group__kernel__queue__tests.html#gaa517a1497728197f4cada7f397ba6fee", null ],
     [ "test_queue_alloc_prepend_user", "group__kernel__queue__tests.html#gacf4a07403bef6fa6caa29c0abbfbf960", null ],

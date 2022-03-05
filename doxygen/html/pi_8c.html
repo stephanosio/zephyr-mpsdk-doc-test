@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -112,10 +112,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a005533d1a8a79536692f8f13c0b0134f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pi_8c.html#a005533d1a8a79536692f8f13c0b0134f">calculate_pi_high</a> (void)</td></tr>
 <tr class="memdesc:a005533d1a8a79536692f8f13c0b0134f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Entry point for the high priority pi compute task.  <a href="pi_8c.html#a005533d1a8a79536692f8f13c0b0134f">More...</a><br /></td></tr>
 <tr class="separator:a005533d1a8a79536692f8f13c0b0134f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a38a67cbf91a41aec2cdaa0a29c3970"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pi_8c.html#a9a38a67cbf91a41aec2cdaa0a29c3970">K_THREAD_DEFINE</a> (pi_low,(1024+CONFIG_TEST_EXTRA_STACKSIZE), <a class="el" href="pi_8c.html#a57913c0b6a1cee47dd5b80f788c1b546">calculate_pi_low</a>, NULL, NULL, NULL, 10,(<a class="el" href="group__thread__apis.html#gab18cf1e8728e7adf53db2ae4bbcdd951">K_FP_REGS</a>), <a class="el" href="group__clock__apis.html#ga66e180b3d8940c30786a1d972cbd6d8d">K_TICKS_FOREVER</a>)</td></tr>
-<tr class="separator:a9a38a67cbf91a41aec2cdaa0a29c3970"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68ea0e759c01f17d74d939a203118642"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pi_8c.html#a68ea0e759c01f17d74d939a203118642">K_THREAD_DEFINE</a> (pi_high,(1024+CONFIG_TEST_EXTRA_STACKSIZE), <a class="el" href="pi_8c.html#a005533d1a8a79536692f8f13c0b0134f">calculate_pi_high</a>, NULL, NULL, NULL, 5,(<a class="el" href="group__thread__apis.html#gab18cf1e8728e7adf53db2ae4bbcdd951">K_FP_REGS</a>), <a class="el" href="group__clock__apis.html#ga66e180b3d8940c30786a1d972cbd6d8d">K_TICKS_FOREVER</a>)</td></tr>
-<tr class="separator:a68ea0e759c01f17d74d939a203118642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a817e9cde859c9d14671b4538da5c7231"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pi_8c.html#a817e9cde859c9d14671b4538da5c7231">K_THREAD_DEFINE</a> (pi_low,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), <a class="el" href="pi_8c.html#a57913c0b6a1cee47dd5b80f788c1b546">calculate_pi_low</a>, NULL, NULL, NULL, 10,(<a class="el" href="group__thread__apis.html#gab18cf1e8728e7adf53db2ae4bbcdd951">K_FP_REGS</a>), <a class="el" href="group__clock__apis.html#ga66e180b3d8940c30786a1d972cbd6d8d">K_TICKS_FOREVER</a>)</td></tr>
+<tr class="separator:a817e9cde859c9d14671b4538da5c7231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac351b175e358ee74e1fa6abf6a857800"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pi_8c.html#ac351b175e358ee74e1fa6abf6a857800">K_THREAD_DEFINE</a> (pi_high,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), <a class="el" href="pi_8c.html#a005533d1a8a79536692f8f13c0b0134f">calculate_pi_high</a>, NULL, NULL, NULL, 5,(<a class="el" href="group__thread__apis.html#gab18cf1e8728e7adf53db2ae4bbcdd951">K_FP_REGS</a>), <a class="el" href="group__clock__apis.html#ga66e180b3d8940c30786a1d972cbd6d8d">K_TICKS_FOREVER</a>)</td></tr>
+<tr class="separator:ac351b175e358ee74e1fa6abf6a857800"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9689659610f2be20d8040bd3916b3ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pi_8c.html#ac9689659610f2be20d8040bd3916b3ad">test_pi</a> (void)</td></tr>
 <tr class="separator:ac9689659610f2be20d8040bd3916b3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -229,8 +229,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a68ea0e759c01f17d74d939a203118642" name="a68ea0e759c01f17d74d939a203118642"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68ea0e759c01f17d74d939a203118642">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[1/2]</span></h2>
+<a id="ac351b175e358ee74e1fa6abf6a857800" name="ac351b175e358ee74e1fa6abf6a857800"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac351b175e358ee74e1fa6abf6a857800">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -244,7 +244,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -299,8 +299,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a38a67cbf91a41aec2cdaa0a29c3970" name="a9a38a67cbf91a41aec2cdaa0a29c3970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a38a67cbf91a41aec2cdaa0a29c3970">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[2/2]</span></h2>
+<a id="a817e9cde859c9d14671b4538da5c7231" name="a817e9cde859c9d14671b4538da5c7231"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a817e9cde859c9d14671b4538da5c7231">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,7 +314,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -483,7 +483,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_0dd69ecf7cc3bec3282c9f52c109d35f.html">fpu_sharing</a></li><li class="navelem"><a class="el" href="dir_a98808d87ffc04b5583621633e6abd3a.html">generic</a></li><li class="navelem"><a class="el" href="dir_183d90876575f4deb40e40891bec1a1a.html">src</a></li><li class="navelem"><a class="el" href="pi_8c.html">pi.c</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

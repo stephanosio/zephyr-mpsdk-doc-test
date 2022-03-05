@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2256" column="10" bodyfile="include/bluetooth/hci.h" bodystart="2256" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2257" column="10" bodyfile="include/bluetooth/hci.h" bodystart="2257" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/bluetooth/hci.h" line="2255" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2255" bodyend="2257"/>
+    <location file="include/bluetooth/hci.h" line="2256" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2256" bodyend="2258"/>
     <listofallmembers>
       <member refid="structbt__hci__evt__auth__payload__timeout__exp_1a799bc3c63fe5083d61d8bf152ef4cee7" prot="public" virt="non-virtual"><scope>bt_hci_evt_auth_payload_timeout_exp</scope><name>handle</name></member>
     </listofallmembers>

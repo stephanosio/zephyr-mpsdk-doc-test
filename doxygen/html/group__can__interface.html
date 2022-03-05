@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('group__can__interface.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">CAN Interface<div class="ingroups"><a class="el" href="group__io__interfaces.html">Device Driver APIs</a></div></div></div>
@@ -117,12 +118,42 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__timing.html">can_timing</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN bus timing structure.  <a href="structcan__timing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__device__state.html">can_device_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN specific device state which allows for CAN device class specific additions.  <a href="structcan__device__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__frame.html">can_frame</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN frame for Linux SocketCAN compatibility.  <a href="structcan__frame.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__filter.html">can_filter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN filter for Linux SocketCAN compatibility.  <a href="structcan__filter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga120a37d5ae5064dcbf116e488f733764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga120a37d5ae5064dcbf116e488f733764">CAN_STATS_BIT0_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), bit0_error)</td></tr>
+<tr class="memdesc:ga120a37d5ae5064dcbf116e488f733764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the bit0 error counter for a CAN device.  <a href="group__can__interface.html#ga120a37d5ae5064dcbf116e488f733764">More...</a><br /></td></tr>
+<tr class="separator:ga120a37d5ae5064dcbf116e488f733764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga678b74039632302efcb5ef80f0e3a90b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga678b74039632302efcb5ef80f0e3a90b">CAN_STATS_BIT1_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), bit1_error)</td></tr>
+<tr class="memdesc:ga678b74039632302efcb5ef80f0e3a90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the bit1 (recessive) error counter for a CAN device.  <a href="group__can__interface.html#ga678b74039632302efcb5ef80f0e3a90b">More...</a><br /></td></tr>
+<tr class="separator:ga678b74039632302efcb5ef80f0e3a90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4146843944b7ffb1c96636e889282f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#gae4146843944b7ffb1c96636e889282f7">CAN_STATS_STUFF_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), stuff_error)</td></tr>
+<tr class="memdesc:gae4146843944b7ffb1c96636e889282f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the stuffing error counter for a CAN device.  <a href="group__can__interface.html#gae4146843944b7ffb1c96636e889282f7">More...</a><br /></td></tr>
+<tr class="separator:gae4146843944b7ffb1c96636e889282f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga125ce05d40881476f5f156ad5e28c664"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga125ce05d40881476f5f156ad5e28c664">CAN_STATS_CRC_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), crc_error)</td></tr>
+<tr class="memdesc:ga125ce05d40881476f5f156ad5e28c664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the CRC error counter for a CAN device.  <a href="group__can__interface.html#ga125ce05d40881476f5f156ad5e28c664">More...</a><br /></td></tr>
+<tr class="separator:ga125ce05d40881476f5f156ad5e28c664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5809b3f5e1a463822e76921cddc9909"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#gac5809b3f5e1a463822e76921cddc9909">CAN_STATS_FORM_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), form_error)</td></tr>
+<tr class="memdesc:gac5809b3f5e1a463822e76921cddc9909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the form error counter for a CAN device.  <a href="group__can__interface.html#gac5809b3f5e1a463822e76921cddc9909">More...</a><br /></td></tr>
+<tr class="separator:gac5809b3f5e1a463822e76921cddc9909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15f7ca18badbbe2fe24be68cacce6171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga15f7ca18badbbe2fe24be68cacce6171">CAN_STATS_ACK_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), ack_error)</td></tr>
+<tr class="memdesc:ga15f7ca18badbbe2fe24be68cacce6171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the acknowledge error counter for a CAN device.  <a href="group__can__interface.html#ga15f7ca18badbbe2fe24be68cacce6171">More...</a><br /></td></tr>
+<tr class="separator:ga15f7ca18badbbe2fe24be68cacce6171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c93ae9a5c48ec78045a6a64cfc0f81b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">CAN_DEVICE_DT_DEFINE</a>(node_id,  init_fn,  pm_device,  data_ptr,  cfg_ptr,  level,  prio,  api_ptr, ...)</td></tr>
+<tr class="memdesc:ga6c93ae9a5c48ec78045a6a64cfc0f81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="group__device__model.html#gaac590af7705a3223968164406a483548" title="Create a device object from a devicetree node identifier and set it up for boot time initialization.">DEVICE_DT_DEFINE()</a> with CAN device specifics.  <a href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">More...</a><br /></td></tr>
+<tr class="separator:ga6c93ae9a5c48ec78045a6a64cfc0f81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20266dc5e962922144e078b85ccb8351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga20266dc5e962922144e078b85ccb8351">CAN_DEVICE_DT_INST_DEFINE</a>(inst, ...)&#160;&#160;&#160;	<a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">CAN_DEVICE_DT_DEFINE</a>(<a class="el" href="group__devicetree-inst.html#ga219f413efba2f4c0151468b9a25a8dc1">DT_DRV_INST</a>(inst), __VA_ARGS__)</td></tr>
+<tr class="memdesc:ga20266dc5e962922144e078b85ccb8351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b" title="Like DEVICE_DT_DEFINE() with CAN device specifics.">CAN_DEVICE_DT_DEFINE()</a> for an instance of a DT_DRV_COMPAT compatible.  <a href="group__can__interface.html#ga20266dc5e962922144e078b85ccb8351">More...</a><br /></td></tr>
+<tr class="separator:ga20266dc5e962922144e078b85ccb8351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -208,7 +239,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Transmitting CAN frames</h2></td></tr>
 <tr class="memitem:ga1bf5353bf15ffc252726e71ace9f5372"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372">can_send</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, const struct <a class="el" href="structzcan__frame.html">zcan_frame</a> *frame, <a class="el" href="structk__timeout__t.html">k_timeout_t</a> <a class="el" href="timer_2cycle64_2src_2main_8c.html#a8f4b69a82b00d7baf3f1f7d480bb7fa0">timeout</a>, <a class="el" href="group__can__interface.html#ga3973b4d5f1c8078eba566c8f0e2c01f1">can_tx_callback_t</a> callback, void *<a class="el" href="timer_2timer__api_2src_2main_8c.html#a862de962130decf51321624c10294338">user_data</a>)</td></tr>
-<tr class="memdesc:ga1bf5353bf15ffc252726e71ace9f5372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit a CAN frame on the CAN bus.  <a href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372">More...</a><br /></td></tr>
+<tr class="memdesc:ga1bf5353bf15ffc252726e71ace9f5372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a CAN frame for transmission on the CAN bus.  <a href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372">More...</a><br /></td></tr>
 <tr class="separator:ga1bf5353bf15ffc252726e71ace9f5372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader">Receiving CAN frames</h2></td></tr>
@@ -270,6 +301,145 @@ Enumerations</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >CAN Interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga6c93ae9a5c48ec78045a6a64cfc0f81b" name="ga6c93ae9a5c48ec78045a6a64cfc0f81b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6c93ae9a5c48ec78045a6a64cfc0f81b">&#9670;&nbsp;</a></span>CAN_DEVICE_DT_DEFINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_DEVICE_DT_DEFINE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">node_id, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">init_fn, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pm_device, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">data_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">cfg_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">level, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">prio, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">api_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+<b>Value:</b><div class="fragment"><div class="line">        Z_CAN_DEVICE_STATE_DEFINE(node_id, Z_DEVICE_DT_DEV_NAME(node_id)); \</div>
+<div class="line">        Z_CAN_INIT_FN(Z_DEVICE_DT_DEV_NAME(node_id), init_fn)           \</div>
+<div class="line">        Z_DEVICE_DEFINE(node_id, Z_DEVICE_DT_DEV_NAME(node_id),         \</div>
+<div class="line">                        <a class="code hl_define" href="group__device__model.html#gad864d7a50ee45285dacd68be1e5a49ce">DEVICE_DT_NAME</a>(node_id),                        \</div>
+<div class="line">                        &amp;<a class="code hl_define" href="util__internal_8h.html#a7e7766e792d1638bfbbc9d0f328d3d0d">UTIL_CAT</a>(Z_DEVICE_DT_DEV_NAME(node_id), _init), \</div>
+<div class="line">                        pm_device,                                      \</div>
+<div class="line">                        data_ptr, cfg_ptr, level, prio,                 \</div>
+<div class="line">                        api_ptr,                                        \</div>
+<div class="line">                        &amp;(Z_DEVICE_STATE_NAME(Z_DEVICE_DT_DEV_NAME(node_id)).devstate), \</div>
+<div class="line">                        __VA_ARGS__)</div>
+<div class="ttc" id="agroup__device__model_html_gad864d7a50ee45285dacd68be1e5a49ce"><div class="ttname"><a href="group__device__model.html#gad864d7a50ee45285dacd68be1e5a49ce">DEVICE_DT_NAME</a></div><div class="ttdeci">#define DEVICE_DT_NAME(node_id)</div><div class="ttdoc">Return a string name for a devicetree node.</div><div class="ttdef"><b>Definition:</b> device.h:202</div></div>
+<div class="ttc" id="autil__internal_8h_html_a7e7766e792d1638bfbbc9d0f328d3d0d"><div class="ttname"><a href="util__internal_8h.html#a7e7766e792d1638bfbbc9d0f328d3d0d">UTIL_CAT</a></div><div class="ttdeci">#define UTIL_CAT(a,...)</div><div class="ttdef"><b>Definition:</b> util_internal.h:98</div></div>
+</div><!-- fragment -->
+<p>Like <a class="el" href="group__device__model.html#gaac590af7705a3223968164406a483548" title="Create a device object from a devicetree node identifier and set it up for boot time initialization.">DEVICE_DT_DEFINE()</a> with CAN device specifics. </p>
+<p >Defines a device which implements the CAN API. May generate a custom <a class="el" href="structdevice__state.html" title="Runtime device dynamic structure (in RAM) per driver instance.">device_state</a> container struct and init_fn wrapper when needed depending on </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_CAN_STATS` </pre><p>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">node_id</td><td>The devicetree node identifier. </td></tr>
+    <tr><td class="paramname">init_fn</td><td>Name of the init function of the driver. </td></tr>
+    <tr><td class="paramname">pm_device</td><td>PM device resources reference (NULL if device does not use PM). </td></tr>
+    <tr><td class="paramname">data_ptr</td><td>Pointer to the device's private data. </td></tr>
+    <tr><td class="paramname">cfg_ptr</td><td>The address to the structure containing the configuration information for this instance of the driver. </td></tr>
+    <tr><td class="paramname">level</td><td>The initialization level. See <a class="el" href="group__device__model.html#ga1e50fdff086356a75b0e91179952cc8d" title="Run an initialization function at boot at specified priority.">SYS_INIT()</a> for details. </td></tr>
+    <tr><td class="paramname">prio</td><td>Priority within the selected initialization level. See <a class="el" href="group__device__model.html#ga1e50fdff086356a75b0e91179952cc8d" title="Run an initialization function at boot at specified priority.">SYS_INIT()</a> for details. </td></tr>
+    <tr><td class="paramname">api_ptr</td><td>Provides an initial pointer to the API function struct used by the driver. Can be NULL. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga20266dc5e962922144e078b85ccb8351" name="ga20266dc5e962922144e078b85ccb8351"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga20266dc5e962922144e078b85ccb8351">&#9670;&nbsp;</a></span>CAN_DEVICE_DT_INST_DEFINE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_DEVICE_DT_INST_DEFINE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">inst, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">CAN_DEVICE_DT_DEFINE</a>(<a class="el" href="group__devicetree-inst.html#ga219f413efba2f4c0151468b9a25a8dc1">DT_DRV_INST</a>(inst), __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Like <a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b" title="Like DEVICE_DT_DEFINE() with CAN device specifics.">CAN_DEVICE_DT_DEFINE()</a> for an instance of a DT_DRV_COMPAT compatible. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inst</td><td>Instance number. This is replaced by <code><a class="el" href="mmio_8c.html#a5d94980d4c538356e9abcf30eb73d1d4">DT_DRV_COMPAT(inst)</a></code> in the call to <a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b" title="Like DEVICE_DT_DEFINE() with CAN device specifics.">CAN_DEVICE_DT_DEFINE()</a>. </td></tr>
+    <tr><td class="paramname">...</td><td>Other parameters as expected by <a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b" title="Like DEVICE_DT_DEFINE() with CAN device specifics.">CAN_DEVICE_DT_DEFINE()</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga15ee71e8abcf51008925585049125986" name="ga15ee71e8abcf51008925585049125986"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga15ee71e8abcf51008925585049125986">&#9670;&nbsp;</a></span>CAN_EXT_ID_MASK</h2>
 
@@ -400,6 +570,180 @@ Enumerations</h2></td></tr>
 
 </div>
 </div>
+<a id="ga15f7ca18badbbe2fe24be68cacce6171" name="ga15f7ca18badbbe2fe24be68cacce6171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga15f7ca18badbbe2fe24be68cacce6171">&#9670;&nbsp;</a></span>CAN_STATS_ACK_ERROR_INC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_STATS_ACK_ERROR_INC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_</td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), ack_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Increment the acknowledge error counter for a CAN device. </p>
+<p >The acknowledge error counter is incremented when the CAN controller does not monitor a dominant bit in the ACK slot.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_</td><td>Pointer to the device structure for the driver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga120a37d5ae5064dcbf116e488f733764" name="ga120a37d5ae5064dcbf116e488f733764"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga120a37d5ae5064dcbf116e488f733764">&#9670;&nbsp;</a></span>CAN_STATS_BIT0_ERROR_INC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_STATS_BIT0_ERROR_INC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_</td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), bit0_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Increment the bit0 error counter for a CAN device. </p>
+<p >The bit0 error counter is incremented when the CAN controller is unable to transmit a dominant bit.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_</td><td>Pointer to the device structure for the driver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga678b74039632302efcb5ef80f0e3a90b" name="ga678b74039632302efcb5ef80f0e3a90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga678b74039632302efcb5ef80f0e3a90b">&#9670;&nbsp;</a></span>CAN_STATS_BIT1_ERROR_INC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_STATS_BIT1_ERROR_INC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_</td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), bit1_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Increment the bit1 (recessive) error counter for a CAN device. </p>
+<p >The bit1 error counter is incremented when the CAN controller is unable to transmit a recessive bit.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_</td><td>Pointer to the device structure for the driver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga125ce05d40881476f5f156ad5e28c664" name="ga125ce05d40881476f5f156ad5e28c664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga125ce05d40881476f5f156ad5e28c664">&#9670;&nbsp;</a></span>CAN_STATS_CRC_ERROR_INC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_STATS_CRC_ERROR_INC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_</td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), crc_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Increment the CRC error counter for a CAN device. </p>
+<p >The CRC error counter is incremented when the CAN controller detects a frame with an invalid CRC.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_</td><td>Pointer to the device structure for the driver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gac5809b3f5e1a463822e76921cddc9909" name="gac5809b3f5e1a463822e76921cddc9909"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac5809b3f5e1a463822e76921cddc9909">&#9670;&nbsp;</a></span>CAN_STATS_FORM_ERROR_INC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_STATS_FORM_ERROR_INC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_</td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), form_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Increment the form error counter for a CAN device. </p>
+<p >The form error counter is incremented when the CAN controller detects a fixed-form bit field containing illegal bits.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_</td><td>Pointer to the device structure for the driver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gae4146843944b7ffb1c96636e889282f7" name="gae4146843944b7ffb1c96636e889282f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae4146843944b7ffb1c96636e889282f7">&#9670;&nbsp;</a></span>CAN_STATS_STUFF_ERROR_INC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CAN_STATS_STUFF_ERROR_INC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dev_</td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), stuff_error)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
+
+<p>Increment the stuffing error counter for a CAN device. </p>
+<p >The stuffing error counter is incremented when the CAN controller detects a bit stuffing error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dev_</td><td>Pointer to the device structure for the driver instance. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga4cd8ce34887b90baeeaa6a4aa048b398" name="ga4cd8ce34887b90baeeaa6a4aa048b398"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4cd8ce34887b90baeeaa6a4aa048b398">&#9670;&nbsp;</a></span>CAN_STD_ID_MASK</h2>
 
@@ -505,7 +849,7 @@ Enumerations</h2></td></tr>
 <p>Defines the application callback handler function signature. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">error</td><td>Status of the performed send operation. See the list of return values for <em><a class="el" href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372" title="Transmit a CAN frame on the CAN bus.">can_send()</a></em> for value descriptions. </td></tr>
+    <tr><td class="paramname">error</td><td>Status of the performed send operation. See the list of return values for <em><a class="el" href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372" title="Queue a CAN frame for transmission on the CAN bus.">can_send()</a></em> for value descriptions. </td></tr>
     <tr><td class="paramname">user_data</td><td>User data provided when the frame was sent. </td></tr>
   </table>
   </dd>
@@ -978,7 +1322,7 @@ Enumerations</h2></td></tr>
 
 <p>Calculate timing parameters for the data phase. </p>
 <p >Same as <em><a class="el" href="group__can__interface.html#gac27fe64142603f0d32d422594356b2d7" title="Calculate timing parameters from bitrate and sample point.">can_calc_timing()</a></em> but with the maximum and minimum values from the data phase.</p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_CAN_FD_MODE` </pre> must be selected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_CAN_FD_MODE` </pre> must be selected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1402,7 +1746,7 @@ Enumerations</h2></td></tr>
 
 <p>Recover from bus-off state. </p>
 <p >Recover the CAN controller from bus-off state to error-active state.</p>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_CAN_AUTO_BUS_OFF_RECOVERY` </pre> must be deselected for this function to be available.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_CAN_AUTO_BUS_OFF_RECOVERY` </pre> must be deselected for this function to be available.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1506,9 +1850,16 @@ Enumerations</h2></td></tr>
 
 <p><code>#include &lt;<a class="el" href="drivers_2can_8h.html">include/drivers/can.h</a>&gt;</code></p>
 
-<p>Transmit a CAN frame on the CAN bus. </p>
-<p >Transmit a CAN frame on the CAN bus with optional timeout and completion callback function.</p>
-<p >By default, the CAN controller will automatically retry transmission in case of lost bus arbitration or missing acknowledge. Some CAN controllers support disabling automatic retransmissions ("one-shot" mode) via a devicetree property.</p>
+<p>Queue a CAN frame for transmission on the CAN bus. </p>
+<p >Queue a CAN frame for transmission on the CAN bus with optional timeout and completion callback function.</p>
+<p >Queued CAN frames are transmitted in order according to the their priority:</p><ul>
+<li>The lower the CAN-ID, the higher the priority.</li>
+<li>Data frames have higher priority than Remote Transmission Request (RTR) frames with identical CAN-IDs.</li>
+<li>Frames with standard (11-bit) identifiers have higher priority than frames with extended (29-bit) identifiers with identical base IDs (the higher 11 bits of the extended identifier).</li>
+<li>Transmission order for queued frames with the same priority is hardware dependent.</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>If transmitting segmented messages spanning multiple CAN frames with identical CAN-IDs, the sender must ensure to only queue one frame at a time if FIFO order is required.</dd></dl>
+<p>By default, the CAN controller will automatically retry transmission in case of lost bus arbitration or missing acknowledge. Some CAN controllers support disabling automatic retransmissions ("one-shot" mode) via a devicetree property.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1577,7 +1928,7 @@ Enumerations</h2></td></tr>
 
 <p>Set the bitrate of the CAN controller. </p>
 <p >The sample point is set to the CiA DS 301 recommended value of 87.5%.</p>
-<dl class="section note"><dt>Note</dt><dd>The parameter <code>bitrate_data</code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_CAN_FD_MODE` </pre> is not selected, the value of this parameter is ignored.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The parameter <code>bitrate_data</code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_CAN_FD_MODE` </pre> is not selected, the value of this parameter is ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1735,7 +2086,7 @@ Enumerations</h2></td></tr>
 
 <p>Configure the bus timing of a CAN controller. </p>
 <p >If the sjw equals CAN_SJW_NO_CHANGE, the sjw parameter is not changed.</p>
-<dl class="section note"><dt>Note</dt><dd>The parameter <code>timing_data</code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_CAN_FD_MODE` </pre> is not selected, the value of this parameter is ignored.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The parameter <code>timing_data</code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_CAN_FD_MODE` </pre> is not selected, the value of this parameter is ignored.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance. </td></tr>
@@ -1760,7 +2111,7 @@ Enumerations</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

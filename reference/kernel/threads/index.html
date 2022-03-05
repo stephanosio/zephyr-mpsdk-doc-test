@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -184,7 +186,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -316,7 +318,7 @@ starting the thread.</p></li>
 By default, threads run in supervisor mode and allow access to
 privileged CPU instructions, the entire memory address space, and
 peripherals. User mode threads have a reduced set of privileges.
-This depends on the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> option. See <a class="reference internal" href="../../usermode/index.html#usermode-api"><span class="std std-ref">User Mode</span></a>.</p></li>
+This depends on the <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> option. See <a class="reference internal" href="../../usermode/index.html#usermode-api"><span class="std std-ref">User Mode</span></a>.</p></li>
 </ul>
 <div class="section" id="lifecycle">
 <span id="lifecycle-v2"></span><h2><a class="toc-backref" href="#id3">Lifecycle</a><a class="headerlink" href="#lifecycle" title="Permalink to this headline">¶</a></h2>
@@ -483,19 +485,19 @@ a cooperative thread, and vice versa, by changing its priority.</p>
 Thread priorities are set and changed only at the application’s request.</p>
 </div>
 <p>The kernel supports a virtually unlimited number of thread priority levels.
-The configuration options <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_COOP_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_COOP_PRIORITIES</span></code></a> and
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a> specify the number of priority
+The configuration options <a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_COOP_PRIORITIES" title="CONFIG_NUM_COOP_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_COOP_PRIORITIES</span></code></a> and
+<a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_PREEMPT_PRIORITIES" title="CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a> specify the number of priority
 levels for each class of thread, resulting in the following usable priority
 ranges:</p>
 <ul class="simple">
-<li><p>cooperative threads: (-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_COOP_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_COOP_PRIORITIES</span></code></a>) to -1</p></li>
-<li><p>preemptive threads: 0 to (<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a> - 1)</p></li>
+<li><p>cooperative threads: (-<a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_COOP_PRIORITIES" title="CONFIG_NUM_COOP_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_COOP_PRIORITIES</span></code></a>) to -1</p></li>
+<li><p>preemptive threads: 0 to (<a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_PREEMPT_PRIORITIES" title="CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a> - 1)</p></li>
 </ul>
 <img alt="../../../_images/priorities.svg" class="align-center" src="../../../_images/priorities.svg" /><p>For example, configuring 5 cooperative priorities and 10 preemptive priorities
 results in the ranges -5 to -1 and 0 to 9, respectively.</p>
 <div class="section" id="meta-irq-priorities">
 <span id="metairq-priorities"></span><h3><a class="toc-backref" href="#id13">Meta-IRQ Priorities</a><a class="headerlink" href="#meta-irq-priorities" title="Permalink to this headline">¶</a></h3>
-<p>When enabled (see <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_METAIRQ_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_METAIRQ_PRIORITIES</span></code></a>), there is a special
+<p>When enabled (see <a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_METAIRQ_PRIORITIES" title="CONFIG_NUM_METAIRQ_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_METAIRQ_PRIORITIES</span></code></a>), there is a special
 subclass of cooperative priorities at the highest (numerically lowest)
 end of the priority space: meta-IRQ threads.  These are scheduled
 according to their normal priority, but also have the special ability
@@ -550,11 +552,11 @@ and restore the contents of these registers when scheduling the thread.
 <p>By default, the kernel does not attempt to save and restore the contents
 of this register when scheduling the thread.</p>
 </dd>
-<dt><a class="reference internal" href="#c.K_USER" title="K_USER"><code class="xref c c-macro docutils literal notranslate"><span class="pre">K_USER</span></code></a></dt><dd><p>If <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, this thread will be created in
+<dt><a class="reference internal" href="#c.K_USER" title="K_USER"><code class="xref c c-macro docutils literal notranslate"><span class="pre">K_USER</span></code></a></dt><dd><p>If <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, this thread will be created in
 user mode and will have reduced privileges. See <a class="reference internal" href="../../usermode/index.html#usermode-api"><span class="std std-ref">User Mode</span></a>. Otherwise
 this flag does nothing.</p>
 </dd>
-<dt><a class="reference internal" href="#c.K_INHERIT_PERMS" title="K_INHERIT_PERMS"><code class="xref c c-macro docutils literal notranslate"><span class="pre">K_INHERIT_PERMS</span></code></a></dt><dd><p>If <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, this thread will inherit all
+<dt><a class="reference internal" href="#c.K_INHERIT_PERMS" title="K_INHERIT_PERMS"><code class="xref c c-macro docutils literal notranslate"><span class="pre">K_INHERIT_PERMS</span></code></a></dt><dd><p>If <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, this thread will inherit all
 kernel object permissions that the parent thread had, except the parent
 thread object.  See <a class="reference internal" href="../../usermode/index.html#usermode-api"><span class="std std-ref">User Mode</span></a>.</p>
 </dd>
@@ -571,7 +573,7 @@ it chooses. The default custom data value for a thread is zero.</p>
 within a single shared kernel interrupt handling context.</p>
 </div>
 <p>By default, thread custom data support is disabled. The configuration option
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_CUSTOM_DATA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_CUSTOM_DATA</span></code></a> can be used to enable support.</p>
+<a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_CUSTOM_DATA" title="CONFIG_THREAD_CUSTOM_DATA"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_CUSTOM_DATA</span></code></a> can be used to enable support.</p>
 <p>The <a class="reference internal" href="#c.k_thread_custom_data_set" title="k_thread_custom_data_set"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_thread_custom_data_set()</span></code></a> and
 <a class="reference internal" href="#c.k_thread_custom_data_get" title="k_thread_custom_data_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_thread_custom_data_get()</span></code></a> functions are used to write and read
 a thread’s custom data, respectively. A thread can only access its own
@@ -664,7 +666,7 @@ is a duration in integral milliseconds, so the equivalent argument is 0.</p>
 </div>
 <div class="section" id="user-mode-constraints">
 <h4>User Mode Constraints<a class="headerlink" href="#user-mode-constraints" title="Permalink to this headline">¶</a></h4>
-<p>This section only applies if <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, and a user
+<p>This section only applies if <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, and a user
 thread tries to create a new thread. The <a class="reference internal" href="#c.k_thread_create" title="k_thread_create"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_thread_create()</span></code></a> API is
 still used, but there are additional constraints which must be met or the
 calling thread will be terminated:</p>
@@ -686,7 +688,7 @@ or lower than the parent thread.</p></li>
 </div>
 <div class="section" id="dropping-permissions">
 <h3><a class="toc-backref" href="#id18">Dropping Permissions</a><a class="headerlink" href="#dropping-permissions" title="Permalink to this headline">¶</a></h3>
-<p>If <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, a thread running in supervisor mode
+<p>If <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, a thread running in supervisor mode
 may perform a one-way transition to user mode using the
 <a class="reference internal" href="#c.k_thread_user_mode_enter" title="k_thread_user_mode_enter"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_thread_user_mode_enter()</span></code></a> API. This is a one-way operation which
 will reset and zero the thread’s stack memory. The thread will be marked
@@ -710,19 +712,19 @@ as non-essential.</p>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
-<p>If <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, aborting a thread will additionally
+<p>If <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is enabled, aborting a thread will additionally
 mark the thread and stack objects as uninitialized so that they may be re-used.</p>
 </div>
 </div>
 <div class="section" id="runtime-statistics">
 <h2><a class="toc-backref" href="#id20">Runtime Statistics</a><a class="headerlink" href="#runtime-statistics" title="Permalink to this headline">¶</a></h2>
 <p>Thread runtime statistics can be gathered and retrieved if
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_RUNTIME_STATS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_RUNTIME_STATS</span></code></a> is enabled, for example, total number of
+<a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_RUNTIME_STATS" title="CONFIG_THREAD_RUNTIME_STATS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_RUNTIME_STATS</span></code></a> is enabled, for example, total number of
 execution cycles of a thread.</p>
 <p>By default, the runtime statistics are gathered using the default kernel
 timer. For some architectures, SoCs or boards, there are timers with higher
 resolution available via timing functions. Using of these timers can be
-enabled via <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_RUNTIME_STATS_USE_TIMING_FUNCTIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_RUNTIME_STATS_USE_TIMING_FUNCTIONS</span></code></a>.</p>
+enabled via <a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_RUNTIME_STATS_USE_TIMING_FUNCTIONS" title="CONFIG_THREAD_RUNTIME_STATS_USE_TIMING_FUNCTIONS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_RUNTIME_STATS_USE_TIMING_FUNCTIONS</span></code></a>.</p>
 <p>Here is an example:</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">k_thread_runtime_stats_t</span><span class="w"> </span><span class="n">rt_stats_thread</span><span class="p">;</span><span class="w"></span>
 
@@ -742,16 +744,16 @@ that can execute in parallel.</p>
 <h2><a class="toc-backref" href="#id22">Configuration Options</a><a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h2>
 <p>Related configuration options:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MAIN_THREAD_PRIORITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAIN_THREAD_PRIORITY</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MAIN_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAIN_STACK_SIZE</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_IDLE_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IDLE_STACK_SIZE</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_CUSTOM_DATA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_CUSTOM_DATA</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_COOP_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_COOP_PRIORITIES</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_TIMESLICING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TIMESLICING</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_TIMESLICE_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TIMESLICE_SIZE</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_TIMESLICE_PRIORITY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TIMESLICE_PRIORITY</span></code></a></p></li>
-<li><p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_MAIN_THREAD_PRIORITY" title="CONFIG_MAIN_THREAD_PRIORITY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MAIN_THREAD_PRIORITY</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_MAIN_STACK_SIZE" title="CONFIG_MAIN_STACK_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MAIN_STACK_SIZE</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_IDLE_STACK_SIZE" title="CONFIG_IDLE_STACK_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_IDLE_STACK_SIZE</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_CUSTOM_DATA" title="CONFIG_THREAD_CUSTOM_DATA"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_CUSTOM_DATA</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_COOP_PRIORITIES" title="CONFIG_NUM_COOP_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_COOP_PRIORITIES</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_NUM_PREEMPT_PRIORITIES" title="CONFIG_NUM_PREEMPT_PRIORITIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NUM_PREEMPT_PRIORITIES</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_TIMESLICING" title="CONFIG_TIMESLICING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TIMESLICING</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_TIMESLICE_SIZE" title="CONFIG_TIMESLICE_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TIMESLICE_SIZE</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_TIMESLICE_PRIORITY" title="CONFIG_TIMESLICE_PRIORITY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TIMESLICE_PRIORITY</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></li>
 </ul>
 </div>
 <div class="section" id="api-reference">
@@ -771,7 +773,7 @@ that can execute in parallel.</p>
 <dt class="sig sig-object c" id="c.K_FP_REGS">
 <span class="target" id="group__thread__apis_1gab18cf1e8728e7adf53db2ae4bbcdd951"></span><span class="sig-name descname"><span class="n"><span class="pre">K_FP_REGS</span></span></span><a class="headerlink" href="#c.K_FP_REGS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>FPU registers are managed by context switch. </p>
-<p>This option indicates that the thread uses the CPU’s floating point registers. This instructs the kernel to take additional steps to save and restore the contents of these registers when scheduling the thread. No effect if <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> </span> is not enabled. </p>
+<p>This option indicates that the thread uses the CPU’s floating point registers. This instructs the kernel to take additional steps to save and restore the contents of these registers when scheduling the thread. No effect if <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> </span> is not enabled. </p>
 </dd></dl>
 
 <dl class="c macro">
@@ -785,7 +787,7 @@ that can execute in parallel.</p>
 <dt class="sig sig-object c" id="c.K_INHERIT_PERMS">
 <span class="target" id="group__thread__apis_1gaa1788a413a055745d1de71b4da7c2eb2"></span><span class="sig-name descname"><span class="n"><span class="pre">K_INHERIT_PERMS</span></span></span><a class="headerlink" href="#c.K_INHERIT_PERMS" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Inherit Permissions. </p>
-<p>Indicates that the thread being created should inherit all kernel object permissions from the thread that created it. No effect if <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> </span> is not enabled. </p>
+<p>Indicates that the thread being created should inherit all kernel object permissions from the thread that created it. No effect if <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> </span> is not enabled. </p>
 </dd></dl>
 
 <dl class="c macro">
@@ -857,7 +859,7 @@ that can execute in parallel.</p>
 <p>This routine iterates over all the threads in the system and calls the user_cb function for each thread.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_MONITOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_MONITOR</span></code></a> </span> must be set for this function to be effective. </p>
+<p><span> <a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_MONITOR" title="CONFIG_THREAD_MONITOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_MONITOR</span></code></a> </span> must be set for this function to be effective. </p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -880,7 +882,7 @@ that can execute in parallel.</p>
 <p>This routine works exactly the same like <a class="reference internal" href="#group__thread__apis_1gae2596d56800769b06fc03c194a126a97"><span class="std std-ref">k_thread_foreach</span></a> but unlocks interrupts when user_cb is executed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_MONITOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_MONITOR</span></code></a> </span> must be set for this function to be effective. </p>
+<p><span> <a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_MONITOR" title="CONFIG_THREAD_MONITOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_MONITOR</span></code></a> </span> must be set for this function to be effective. </p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1059,7 +1061,7 @@ that can execute in parallel.</p>
 <dt class="sig sig-object c" id="c.k_usleep">
 <span class="target" id="group__thread__apis_1gaeac56bb072ce295b9fdc372ab8cee67e"></span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">k_usleep</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">int32_t</span></span><span class="w"> </span><span class="n"><span class="pre">us</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.k_usleep" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Put the current thread to sleep with microsecond resolution. </p>
-<p>This function is unlikely to work as expected without kernel tuning. In particular, because the lower bound on the duration of a sleep is the duration of a tick, <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span> must be adjusted to achieve the resolution desired. The implications of doing this must be understood before attempting to use <a class="reference internal" href="#group__thread__apis_1gaeac56bb072ce295b9fdc372ab8cee67e"><span class="std std-ref">k_usleep()</span></a>. Use with caution.</p>
+<p>This function is unlikely to work as expected without kernel tuning. In particular, because the lower bound on the duration of a sleep is the duration of a tick, <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SYS_CLOCK_TICKS_PER_SEC" title="CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span> must be adjusted to achieve the resolution desired. The implications of doing this must be understood before attempting to use <a class="reference internal" href="#group__thread__apis_1gaeac56bb072ce295b9fdc372ab8cee67e"><span class="std std-ref">k_usleep()</span></a>. Use with caution.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1217,7 +1219,7 @@ that can execute in parallel.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You should enable <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DEADLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
+<p>You should enable <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DEADLINE" title="CONFIG_SCHED_DEADLINE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1236,7 +1238,7 @@ that can execute in parallel.</p>
 <p>After this returns, the thread will no longer be schedulable on any CPUs. The thread must not be currently runnable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You should enable <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DEADLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
+<p>You should enable <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DEADLINE" title="CONFIG_SCHED_DEADLINE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1257,7 +1259,7 @@ that can execute in parallel.</p>
 <p>After this returns, the thread will be schedulable on any CPU. The thread must not be currently runnable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You should enable <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DEADLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
+<p>You should enable <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DEADLINE" title="CONFIG_SCHED_DEADLINE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1278,7 +1280,7 @@ that can execute in parallel.</p>
 <p>The thread must not be currently runnable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You should enable <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DEADLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
+<p>You should enable <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DEADLINE" title="CONFIG_SCHED_DEADLINE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1300,7 +1302,7 @@ that can execute in parallel.</p>
 <p>The thread must not be currently runnable.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You should enable <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DEADLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
+<p>You should enable <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DEADLINE" title="CONFIG_SCHED_DEADLINE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a> </span> in your project configuration.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1414,7 +1416,7 @@ that can execute in parallel.</p>
 <dt class="sig sig-object c" id="c.k_thread_name_set">
 <span class="target" id="group__thread__apis_1ga23107333f134b9c9a8b692374211e841"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">k_thread_name_set</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">k_tid_t</span></span><span class="w"> </span><span class="n"><span class="pre">thread</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">str</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.k_thread_name_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set current thread name. </p>
-<p>Set the name of the thread to be used when <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_MONITOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_MONITOR</span></code></a> </span> is enabled for tracing and debugging.</p>
+<p>Set the name of the thread to be used when <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_MONITOR" title="CONFIG_THREAD_MONITOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_MONITOR</span></code></a> </span> is enabled for tracing and debugging.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -1858,8 +1860,8 @@ that can execute in parallel.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -15,7 +15,7 @@ var workq_2work__queue_2src_2main_8c =
     [ "delayed_test_items_init", "group__kernel__workqueue__tests.html#ga56bd582675fd5d24bdf95af73765325f", null ],
     [ "delayed_test_items_submit", "group__kernel__workqueue__tests.html#gae8a2bfb4f07d8c5668096086409dcae2", null ],
     [ "delayed_work_handler", "workq_2work__queue_2src_2main_8c.html#adbb76f0017b21189a8f5558e6aee78e0", null ],
-    [ "K_THREAD_STACK_DEFINE", "workq_2work__queue_2src_2main_8c.html#aea43146399d79961f9fc8020163c997d", null ],
+    [ "K_THREAD_STACK_DEFINE", "workq_2work__queue_2src_2main_8c.html#a3cae6f14ff609be8071cbbcf686729b6", null ],
     [ "reset_results", "workq_2work__queue_2src_2main_8c.html#a9a7e7ea294eb1a8c7ffb5605ef607ce0", null ],
     [ "resubmit_work_handler", "workq_2work__queue_2src_2main_8c.html#a644d66f98a935d3aea02689af37eba30", null ],
     [ "test_already_triggered", "group__kernel__workqueue__tests.html#ga2b6a9ab21d2e52dbe1d1837fc24da8b6", null ],

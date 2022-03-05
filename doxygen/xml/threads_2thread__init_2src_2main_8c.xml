@@ -737,7 +737,7 @@
       </memberdef>
       <memberdef kind="define" id="threads_2thread__init_2src_2main_8c_1aec9a985cbb44a248222c68bf8f2ea3d0" prot="public" static="no">
         <name>INIT_COOP_STACK_SIZE</name>
-        <initializer>(500 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(500 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -814,7 +814,7 @@
       </memberdef>
       <memberdef kind="define" id="threads_2thread__init_2src_2main_8c_1a97373c1c3294c2fa41dae0d17bbba557" prot="public" static="no">
         <name>INIT_PREEMPT_STACK_SIZE</name>
-        <initializer>(499 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(499 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -961,16 +961,16 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_init/src/main.c" line="57" column="13" bodyfile="tests/kernel/threads/thread_init/src/main.c" bodystart="57" bodyend="77" declfile="tests/kernel/threads/thread_init/src/main.c" declline="25" declcolumn="13"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1a6742a12de8139eec2de7c43e6eb72554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1a3bfb493db3a806adcd6b8640ad25e8a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(T_KDEFINE_COOP_THREAD,(500+CONFIG_TEST_EXTRA_STACKSIZE), thread_entry,((void *) 0xFFFF0000),((void *) 0xCDEF),((void *) 0x1234), -2,(K_USER|K_INHERIT_PERMS), 2000)</argsstring>
+        <argsstring>(T_KDEFINE_COOP_THREAD,(500+CONFIG_TEST_EXTRA_STACK_SIZE), thread_entry,((void *) 0xFFFF0000),((void *) 0xCDEF),((void *) 0x1234), -2,(K_USER|K_INHERIT_PERMS), 2000)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>T_KDEFINE_COOP_THREAD</type>
         </param>
         <param>
-          <type>(500+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(500+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="threads_2thread__init_2src_2main_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref></type>
@@ -1002,16 +1002,16 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_init/src/main.c" line="27" column="1" declfile="tests/kernel/threads/thread_init/src/main.c" declline="27" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1af9091b89cd56127a322e115f5604d2fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1a0de216685778b45e87d94202b7219475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(T_KDEFINE_PREEMPT_THREAD,(499+CONFIG_TEST_EXTRA_STACKSIZE), thread_entry,((void *) 5),((void *) 6),((void *) 7), 1,(K_USER|K_INHERIT_PERMS), 0)</argsstring>
+        <argsstring>(T_KDEFINE_PREEMPT_THREAD,(499+CONFIG_TEST_EXTRA_STACK_SIZE), thread_entry,((void *) 5),((void *) 6),((void *) 7), 1,(K_USER|K_INHERIT_PERMS), 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>T_KDEFINE_PREEMPT_THREAD</type>
         </param>
         <param>
-          <type>(499+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(499+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="threads_2thread__init_2src_2main_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref></type>
@@ -1134,16 +1134,16 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_init/src/main.c" line="40" column="1" declfile="tests/kernel/threads/thread_init/src/main.c" declline="40" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1a968f0283625e9db18f3e00c293417744" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1a5cc8739b828118d9264aed56cb686622" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack_coop,(500+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack_coop,(500+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>stack_coop</type>
         </param>
         <param>
-          <type>(500+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(500+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1153,16 +1153,16 @@
         </inbodydescription>
         <location file="tests/kernel/threads/thread_init/src/main.c" line="43" column="8" declfile="tests/kernel/threads/thread_init/src/main.c" declline="43" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1a870570517119ed6eb003ef5f90e68c91" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="threads_2thread__init_2src_2main_8c_1aa3e8683dac5008645f1eca178de519ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack_preempt,(499+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack_preempt,(499+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>stack_preempt</type>
         </param>
         <param>
-          <type>(499+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(499+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1285,14 +1285,14 @@
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*macro<sp/>definition*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_PRIO<sp/>-2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_STACK_SIZE<sp/>(500<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_STACK_SIZE<sp/>(500<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_P1<sp/>((void<sp/>*)0xFFFF0000)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_P2<sp/>((void<sp/>*)0xCDEF)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_P3<sp/>((void<sp/>*)0x1234)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_OPTION<sp/>(K_USER<sp/>|<sp/>K_INHERIT_PERMS)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_COOP_DELAY<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_PREEMPT_PRIO<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_PREEMPT_STACK_SIZE<sp/>(499<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_PREEMPT_STACK_SIZE<sp/>(499<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_PREEMPT_P1<sp/>((void<sp/>*)5)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_PREEMPT_P2<sp/>((void<sp/>*)6)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INIT_PREEMPT_P3<sp/>((void<sp/>*)7)</highlight><highlight class="normal"></highlight></codeline>
@@ -1301,11 +1301,11 @@
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="threads_2thread__init_2src_2main_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(T_KDEFINE_COOP_THREAD,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1aec9a985cbb44a248222c68bf8f2ea3d0" kindref="member">INIT_COOP_STACK_SIZE</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(T_KDEFINE_COOP_THREAD,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1aec9a985cbb44a248222c68bf8f2ea3d0" kindref="member">INIT_COOP_STACK_SIZE</ref>,</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="threads_2thread__init_2src_2main_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1ababbbf0d759b285ba602749b09e19759" kindref="member">INIT_COOP_P1</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1aa540f9265c9cee7aac7f819a84489208" kindref="member">INIT_COOP_P2</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a5cb97d0c26d61a247fb8ef20cbdf7f88" kindref="member">INIT_COOP_P3</ref>,</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="threads_2thread__init_2src_2main_8c_1aead29c9949bc7633cd22dae38697f9f9" kindref="member">INIT_COOP_PRIO</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1aa3ced08888f331f8d7093a59c3007c16" kindref="member">INIT_COOP_OPTION</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1ab7b51a3eff55287e585bae12c058c0a1" kindref="member">INIT_COOP_DELAY</ref>);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(T_KDEFINE_PREEMPT_THREAD,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a97373c1c3294c2fa41dae0d17bbba557" kindref="member">INIT_PREEMPT_STACK_SIZE</ref>,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(T_KDEFINE_PREEMPT_THREAD,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a97373c1c3294c2fa41dae0d17bbba557" kindref="member">INIT_PREEMPT_STACK_SIZE</ref>,</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="threads_2thread__init_2src_2main_8c_1ac8d72017cdde7fad33f88bae68426254" kindref="member">thread_entry</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1ab9cc3aec12365b71041117402cdcaaaa" kindref="member">INIT_PREEMPT_P1</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1ae64723dc18d996af8e2a4023cd8c92fd" kindref="member">INIT_PREEMPT_P2</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1af24f57a42c8a5d17b16583f6ab1f9ed9" kindref="member">INIT_PREEMPT_P3</ref>,</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="threads_2thread__init_2src_2main_8c_1ac55e505bc0aafcaf796e65f4dff6086c" kindref="member">INIT_PREEMPT_PRIO</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a49e3e718dfdd35aeab7d8c09b2a70590" kindref="member">INIT_PREEMPT_OPTION</ref>,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a5a9fe97d157920e8d6fa90ef286e3c70" kindref="member">INIT_PREEMPT_DELAY</ref>);</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
@@ -1317,8 +1317,8 @@
 <codeline lineno="40"><highlight class="normal"><ref refid="threads_2thread__init_2src_2main_8c_1a369bf8a999578f83a2be3ab00d15582e" kindref="member">K_THREAD_ACCESS_GRANT</ref>(T_KDEFINE_PREEMPT_THREAD,<sp/>&amp;start_sema,<sp/>&amp;<ref refid="msgq_2msgq__api_2src_2main_8c_1a37d12066b90b5226eb1895e59f5908e8" kindref="member">end_sema</ref>);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*local<sp/>variables*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_coop,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1aec9a985cbb44a248222c68bf8f2ea3d0" kindref="member">INIT_COOP_STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_preempt,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a97373c1c3294c2fa41dae0d17bbba557" kindref="member">INIT_PREEMPT_STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_coop,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1aec9a985cbb44a248222c68bf8f2ea3d0" kindref="member">INIT_COOP_STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_preempt,<sp/><ref refid="threads_2thread__init_2src_2main_8c_1a97373c1c3294c2fa41dae0d17bbba557" kindref="member">INIT_PREEMPT_STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="threads_2thread__init_2src_2main_8c_1a8bad32f9f3872590467dee67af74eb52" kindref="member">thread_coop</ref>;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="threads_2thread__init_2src_2main_8c_1a4baf720ce53dfc7882a85ac28b3bfa8e" kindref="member">thread_preempt</ref>;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/><ref refid="stdint_8h_1a2095b9bffea4b2656950c6c0419edbf1" kindref="member">uint64_t</ref><sp/><ref refid="threads_2thread__init_2src_2main_8c_1aac27b6448efb79daa869539ce40c4850" kindref="member">t_create</ref>;</highlight></codeline>

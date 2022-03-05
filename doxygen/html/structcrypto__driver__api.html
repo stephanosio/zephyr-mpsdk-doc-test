@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -94,60 +94,113 @@ $(document).ready(function(){initNavTree('structcrypto__driver__api.html',''); i
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
-  <div class="headertitle"><div class="title">crypto_driver_api Struct Reference<div class="ingroups"><a class="el" href="group__crypto.html">Crypto</a> &raquo; <a class="el" href="group__crypto__cipher.html">Cipher</a></div></div></div>
+  <div class="headertitle"><div class="title">crypto_driver_api Struct Reference<div class="ingroups"><a class="el" href="group__crypto.html">Crypto</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="cipher_8h_source.html">cipher.h</a>&gt;</code></p>
+<p>Crypto driver API definition.  
+ <a href="structcrypto__driver__api.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="crypto_2crypto_8h_source.html">crypto.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a19859cdd9185f5d333fe6893efc27967"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a19859cdd9185f5d333fe6893efc27967">query_hw_caps</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
 <tr class="separator:a19859cdd9185f5d333fe6893efc27967"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97d1349cbce7a6736054c2f53f8e1833"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a97d1349cbce7a6736054c2f53f8e1833">begin_session</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx, enum <a class="el" href="group__crypto__cipher.html#gaa43d9907b508cb28c649aaa524d84424">cipher_algo</a> algo, enum <a class="el" href="group__crypto__cipher.html#gaeedaf8017f8d6518f7dedef365bbae43">cipher_mode</a> mode, enum <a class="el" href="group__crypto__cipher.html#ga1db3a5604bff0669672af4457aaaee21">cipher_op</a> op_type)</td></tr>
-<tr class="separator:a97d1349cbce7a6736054c2f53f8e1833"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a178e5232a0b20a67c028ac41c3d8655f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a178e5232a0b20a67c028ac41c3d8655f">free_session</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx)</td></tr>
-<tr class="separator:a178e5232a0b20a67c028ac41c3d8655f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe59aca855659c2881ce54bb8ad4696d"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#abe59aca855659c2881ce54bb8ad4696d">crypto_async_callback_set</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="group__crypto__cipher.html#ga5bca6057c7fe56b3c6de4399e78e5389">crypto_completion_cb</a> cb)</td></tr>
-<tr class="separator:abe59aca855659c2881ce54bb8ad4696d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2ddc3aa1447dbef500715e1ea4dd780"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#af2ddc3aa1447dbef500715e1ea4dd780">cipher_begin_session</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx, enum <a class="el" href="group__crypto__cipher.html#gaa43d9907b508cb28c649aaa524d84424">cipher_algo</a> algo, enum <a class="el" href="group__crypto__cipher.html#gaeedaf8017f8d6518f7dedef365bbae43">cipher_mode</a> mode, enum <a class="el" href="group__crypto__cipher.html#ga1db3a5604bff0669672af4457aaaee21">cipher_op</a> op_type)</td></tr>
+<tr class="separator:af2ddc3aa1447dbef500715e1ea4dd780"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77f9e6ab2b527c4433ddf5cbcf6b8dca"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a77f9e6ab2b527c4433ddf5cbcf6b8dca">cipher_free_session</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx)</td></tr>
+<tr class="separator:a77f9e6ab2b527c4433ddf5cbcf6b8dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c59735e94df3e8740611937c6ed1c2f"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a2c59735e94df3e8740611937c6ed1c2f">cipher_async_callback_set</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="group__crypto__cipher.html#ga062b07459bcc2990535465a7b9044ecd">cipher_completion_cb</a> cb)</td></tr>
+<tr class="separator:a2c59735e94df3e8740611937c6ed1c2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48845d14ff94ff16633227d10f971f57"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a48845d14ff94ff16633227d10f971f57">hash_begin_session</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structhash__ctx.html">hash_ctx</a> *ctx, enum <a class="el" href="group__crypto__hash.html#gaaea88501aa8243eacc8c57ac0914ac7a">hash_algo</a> algo)</td></tr>
+<tr class="separator:a48845d14ff94ff16633227d10f971f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3033ec374a10abd180af38f6fdc080b"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#aa3033ec374a10abd180af38f6fdc080b">hash_free_session</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structhash__ctx.html">hash_ctx</a> *ctx)</td></tr>
+<tr class="separator:aa3033ec374a10abd180af38f6fdc080b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d5891e9ce4a76ed50c7591ae7a27ff"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcrypto__driver__api.html#a87d5891e9ce4a76ed50c7591ae7a27ff">hash_async_callback_set</a> )(const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="group__crypto__hash.html#ga1f49008c35d9f04b66e587d1b43404bd">hash_completion_cb</a> cb)</td></tr>
+<tr class="separator:a87d5891e9ce4a76ed50c7591ae7a27ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a97d1349cbce7a6736054c2f53f8e1833" name="a97d1349cbce7a6736054c2f53f8e1833"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97d1349cbce7a6736054c2f53f8e1833">&#9670;&nbsp;</a></span>begin_session</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Crypto driver API definition. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a2c59735e94df3e8740611937c6ed1c2f" name="a2c59735e94df3e8740611937c6ed1c2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c59735e94df3e8740611937c6ed1c2f">&#9670;&nbsp;</a></span>cipher_async_callback_set</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* crypto_driver_api::begin_session) (const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx, enum <a class="el" href="group__crypto__cipher.html#gaa43d9907b508cb28c649aaa524d84424">cipher_algo</a> algo, enum <a class="el" href="group__crypto__cipher.html#gaeedaf8017f8d6518f7dedef365bbae43">cipher_mode</a> mode, enum <a class="el" href="group__crypto__cipher.html#ga1db3a5604bff0669672af4457aaaee21">cipher_op</a> op_type)</td>
+          <td class="memname">int(* crypto_driver_api::cipher_async_callback_set) (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="group__crypto__cipher.html#ga062b07459bcc2990535465a7b9044ecd">cipher_completion_cb</a> cb)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="abe59aca855659c2881ce54bb8ad4696d" name="abe59aca855659c2881ce54bb8ad4696d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe59aca855659c2881ce54bb8ad4696d">&#9670;&nbsp;</a></span>crypto_async_callback_set</h2>
+<a id="af2ddc3aa1447dbef500715e1ea4dd780" name="af2ddc3aa1447dbef500715e1ea4dd780"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2ddc3aa1447dbef500715e1ea4dd780">&#9670;&nbsp;</a></span>cipher_begin_session</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* crypto_driver_api::crypto_async_callback_set) (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="group__crypto__cipher.html#ga5bca6057c7fe56b3c6de4399e78e5389">crypto_completion_cb</a> cb)</td>
+          <td class="memname">int(* crypto_driver_api::cipher_begin_session) (const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx, enum <a class="el" href="group__crypto__cipher.html#gaa43d9907b508cb28c649aaa524d84424">cipher_algo</a> algo, enum <a class="el" href="group__crypto__cipher.html#gaeedaf8017f8d6518f7dedef365bbae43">cipher_mode</a> mode, enum <a class="el" href="group__crypto__cipher.html#ga1db3a5604bff0669672af4457aaaee21">cipher_op</a> op_type)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a178e5232a0b20a67c028ac41c3d8655f" name="a178e5232a0b20a67c028ac41c3d8655f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a178e5232a0b20a67c028ac41c3d8655f">&#9670;&nbsp;</a></span>free_session</h2>
+<a id="a77f9e6ab2b527c4433ddf5cbcf6b8dca" name="a77f9e6ab2b527c4433ddf5cbcf6b8dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77f9e6ab2b527c4433ddf5cbcf6b8dca">&#9670;&nbsp;</a></span>cipher_free_session</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int(* crypto_driver_api::free_session) (const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx)</td>
+          <td class="memname">int(* crypto_driver_api::cipher_free_session) (const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structcipher__ctx.html">cipher_ctx</a> *ctx)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d5891e9ce4a76ed50c7591ae7a27ff" name="a87d5891e9ce4a76ed50c7591ae7a27ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d5891e9ce4a76ed50c7591ae7a27ff">&#9670;&nbsp;</a></span>hash_async_callback_set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* crypto_driver_api::hash_async_callback_set) (const struct <a class="el" href="structdevice.html">device</a> *dev, <a class="el" href="group__crypto__hash.html#ga1f49008c35d9f04b66e587d1b43404bd">hash_completion_cb</a> cb)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48845d14ff94ff16633227d10f971f57" name="a48845d14ff94ff16633227d10f971f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48845d14ff94ff16633227d10f971f57">&#9670;&nbsp;</a></span>hash_begin_session</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* crypto_driver_api::hash_begin_session) (const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structhash__ctx.html">hash_ctx</a> *ctx, enum <a class="el" href="group__crypto__hash.html#gaaea88501aa8243eacc8c57ac0914ac7a">hash_algo</a> algo)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3033ec374a10abd180af38f6fdc080b" name="aa3033ec374a10abd180af38f6fdc080b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3033ec374a10abd180af38f6fdc080b">&#9670;&nbsp;</a></span>hash_free_session</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* crypto_driver_api::hash_free_session) (const struct <a class="el" href="structdevice.html">device</a> *dev, struct <a class="el" href="structhash__ctx.html">hash_ctx</a> *ctx)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -169,7 +222,7 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/crypto/<a class="el" href="cipher_8h_source.html">cipher.h</a></li>
+<li>include/crypto/<a class="el" href="crypto_2crypto_8h_source.html">crypto.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -178,7 +231,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structcrypto__driver__api.html">crypto_driver_api</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:48 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

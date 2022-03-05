@@ -51,7 +51,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="567" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="567" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="591" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="591" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__lpn__cb_1af2e2f5043503c62926f96a5fcb48890c" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="578" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="578" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="602" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="602" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__lpn__cb_1a9805ad8578faec5b371d6f39178332ef" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -126,7 +126,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="592" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="592" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="616" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="616" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -134,7 +134,7 @@
     <detaileddescription>
 <para>Low Power Node callback functions. </para>
     </detaileddescription>
-    <location file="include/bluetooth/mesh/main.h" line="555" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="555" bodyend="593"/>
+    <location file="include/bluetooth/mesh/main.h" line="579" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="579" bodyend="617"/>
     <listofallmembers>
       <member refid="structbt__mesh__lpn__cb_1a74b8b398b383518af069266cf3b0be91" prot="public" virt="non-virtual"><scope>bt_mesh_lpn_cb</scope><name>established</name></member>
       <member refid="structbt__mesh__lpn__cb_1a9805ad8578faec5b371d6f39178332ef" prot="public" virt="non-virtual"><scope>bt_mesh_lpn_cb</scope><name>polled</name></member>

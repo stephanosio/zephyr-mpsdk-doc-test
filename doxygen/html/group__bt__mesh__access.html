@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -158,6 +158,12 @@ Macros</h2></td></tr>
 <tr class="separator:gac4aafa0bdd24fb51d515a62e83917936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa620c32d1dce8e4b691b7f4270016506"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__access.html#gaa620c32d1dce8e4b691b7f4270016506">BT_MESH_APP_SEG_SDU_MAX</a>&#160;&#160;&#160;12</td></tr>
 <tr class="separator:gaa620c32d1dce8e4b691b7f4270016506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga64eb6a94b1db9899c4f5bbf4cc88cd9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__access.html#ga64eb6a94b1db9899c4f5bbf4cc88cd9f">BT_MESH_APP_UNSEG_SDU_MAX</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:ga64eb6a94b1db9899c4f5bbf4cc88cd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga18756e939ec3b312eef5c3dc9fd70270"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__access.html#ga18756e939ec3b312eef5c3dc9fd70270">BT_MESH_RX_SEG_MAX</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga18756e939ec3b312eef5c3dc9fd70270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1b2a3610ac370266578abce195e65fa2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__access.html#ga1b2a3610ac370266578abce195e65fa2">BT_MESH_TX_SEG_MAX</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga1b2a3610ac370266578abce195e65fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga86d7386603ecd89952b6d540ea4243c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__access.html#ga86d7386603ecd89952b6d540ea4243c2">BT_MESH_TX_SDU_MAX</a></td></tr>
 <tr class="separator:ga86d7386603ecd89952b6d540ea4243c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga36f299f2fc13892b5a7d871dad1ec9ce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__bt__mesh__access.html#ga36f299f2fc13892b5a7d871dad1ec9ce">BT_MESH_RX_SDU_MAX</a></td></tr>
@@ -544,7 +550,24 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
-<p >Maximum payload size of an access message (in octets). </p>
+<p >Maximum size of an access message segment (in octets). </p>
+
+</div>
+</div>
+<a id="ga64eb6a94b1db9899c4f5bbf4cc88cd9f" name="ga64eb6a94b1db9899c4f5bbf4cc88cd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga64eb6a94b1db9899c4f5bbf4cc88cd9f">&#9670;&nbsp;</a></span>BT_MESH_APP_UNSEG_SDU_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BT_MESH_APP_UNSEG_SDU_MAX&#160;&#160;&#160;15</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
+<p >Maximum payload size of an unsegmented access message (in octets). </p>
 
 </div>
 </div>
@@ -1803,8 +1826,8 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
 <b>Value:</b><div class="fragment"><div class="line">                              ((<span class="keyword">struct </span><a class="code hl_struct" href="structbt__mesh__model__op.html">bt_mesh_model_op</a> []) \</div>
 <div class="line">                              { <a class="code hl_define" href="group__bt__mesh__access.html#gaf2c164506c601214c85d451747176827">BT_MESH_MODEL_OP_END</a> })</div>
-<div class="ttc" id="agroup__bt__mesh__access_html_gaf2c164506c601214c85d451747176827"><div class="ttname"><a href="group__bt__mesh__access.html#gaf2c164506c601214c85d451747176827">BT_MESH_MODEL_OP_END</a></div><div class="ttdeci">#define BT_MESH_MODEL_OP_END</div><div class="ttdef"><b>Definition:</b> access.h:201</div></div>
-<div class="ttc" id="astructbt__mesh__model__op_html"><div class="ttname"><a href="structbt__mesh__model__op.html">bt_mesh_model_op</a></div><div class="ttdef"><b>Definition:</b> access.h:165</div></div>
+<div class="ttc" id="agroup__bt__mesh__access_html_gaf2c164506c601214c85d451747176827"><div class="ttname"><a href="group__bt__mesh__access.html#gaf2c164506c601214c85d451747176827">BT_MESH_MODEL_OP_END</a></div><div class="ttdeci">#define BT_MESH_MODEL_OP_END</div><div class="ttdef"><b>Definition:</b> access.h:222</div></div>
+<div class="ttc" id="astructbt__mesh__model__op_html"><div class="ttname"><a href="structbt__mesh__model__op.html">bt_mesh_model_op</a></div><div class="ttdef"><b>Definition:</b> access.h:186</div></div>
 </div><!-- fragment --><p >Helper to define an empty opcode list. </p>
 
 </div>
@@ -1962,9 +1985,9 @@ Functions</h2></td></tr>
 <div class="line">                .<a class="code hl_variable" href="structbt__mesh__model__pub.html#a20fe8f8697f48a51e1e1c8374c1d3b3d">update</a> = _update, \</div>
 <div class="line">        }</div>
 <div class="ttc" id="agroup__net__buf_html_ga21ced8b3082d57bf071008de5fffc0f4"><div class="ttname"><a href="group__net__buf.html#ga21ced8b3082d57bf071008de5fffc0f4">NET_BUF_SIMPLE_DEFINE_STATIC</a></div><div class="ttdeci">#define NET_BUF_SIMPLE_DEFINE_STATIC(_name, _size)</div><div class="ttdoc">Define a static net_buf_simple variable.</div><div class="ttdef"><b>Definition:</b> buf.h:61</div></div>
-<div class="ttc" id="astructbt__mesh__model__pub_html"><div class="ttname"><a href="structbt__mesh__model__pub.html">bt_mesh_model_pub</a></div><div class="ttdef"><b>Definition:</b> access.h:374</div></div>
-<div class="ttc" id="astructbt__mesh__model__pub_html_a20fe8f8697f48a51e1e1c8374c1d3b3d"><div class="ttname"><a href="structbt__mesh__model__pub.html#a20fe8f8697f48a51e1e1c8374c1d3b3d">bt_mesh_model_pub::update</a></div><div class="ttdeci">int(* update)(struct bt_mesh_model *mod)</div><div class="ttdoc">Callback for updating the publication buffer.</div><div class="ttdef"><b>Definition:</b> access.h:420</div></div>
-<div class="ttc" id="astructbt__mesh__model__pub_html_a5f5639c01d3704ec3d527c418d35f827"><div class="ttname"><a href="structbt__mesh__model__pub.html#a5f5639c01d3704ec3d527c418d35f827">bt_mesh_model_pub::msg</a></div><div class="ttdeci">struct net_buf_simple * msg</div><div class="ttdoc">Publication buffer, containing the publication message.</div><div class="ttdef"><b>Definition:</b> access.h:400</div></div>
+<div class="ttc" id="astructbt__mesh__model__pub_html"><div class="ttname"><a href="structbt__mesh__model__pub.html">bt_mesh_model_pub</a></div><div class="ttdef"><b>Definition:</b> access.h:395</div></div>
+<div class="ttc" id="astructbt__mesh__model__pub_html_a20fe8f8697f48a51e1e1c8374c1d3b3d"><div class="ttname"><a href="structbt__mesh__model__pub.html#a20fe8f8697f48a51e1e1c8374c1d3b3d">bt_mesh_model_pub::update</a></div><div class="ttdeci">int(* update)(struct bt_mesh_model *mod)</div><div class="ttdoc">Callback for updating the publication buffer.</div><div class="ttdef"><b>Definition:</b> access.h:441</div></div>
+<div class="ttc" id="astructbt__mesh__model__pub_html_a5f5639c01d3704ec3d527c418d35f827"><div class="ttname"><a href="structbt__mesh__model__pub.html#a5f5639c01d3704ec3d527c418d35f827">bt_mesh_model_pub::msg</a></div><div class="ttdeci">struct net_buf_simple * msg</div><div class="ttdoc">Publication buffer, containing the publication message.</div><div class="ttdef"><b>Definition:</b> access.h:421</div></div>
 </div><!-- fragment --><p >Define a model publication context.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2203,7 +2226,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">                                                             <a class="code hl_define" href="group__bt__mesh__access.html#gaff82bf652232fbce71c31f38a10577a9">BT_MESH_TRANSMIT</a>(<a class="code hl_variable" href="condvar_2condvar__api_2src_2main_8c.html#a612635fe60af527de1e4d54f66e27b94">count</a>,           \</div>
 <div class="line">                                                             (int_ms) / 5)</div>
 <div class="ttc" id="acondvar_2condvar__api_2src_2main_8c_html_a612635fe60af527de1e4d54f66e27b94"><div class="ttname"><a href="condvar_2condvar__api_2src_2main_8c.html#a612635fe60af527de1e4d54f66e27b94">count</a></div><div class="ttdeci">ZTEST_BMEM int count</div><div class="ttdef"><b>Definition:</b> main.c:33</div></div>
-<div class="ttc" id="agroup__bt__mesh__access_html_gaff82bf652232fbce71c31f38a10577a9"><div class="ttname"><a href="group__bt__mesh__access.html#gaff82bf652232fbce71c31f38a10577a9">BT_MESH_TRANSMIT</a></div><div class="ttdeci">#define BT_MESH_TRANSMIT(count, int_ms)</div><div class="ttdoc">Encode transmission count &amp; interval steps.</div><div class="ttdef"><b>Definition:</b> access.h:290</div></div>
+<div class="ttc" id="agroup__bt__mesh__access_html_gaff82bf652232fbce71c31f38a10577a9"><div class="ttname"><a href="group__bt__mesh__access.html#gaff82bf652232fbce71c31f38a10577a9">BT_MESH_TRANSMIT</a></div><div class="ttdeci">#define BT_MESH_TRANSMIT(count, int_ms)</div><div class="ttdoc">Encode transmission count &amp; interval steps.</div><div class="ttdef"><b>Definition:</b> access.h:311</div></div>
 </div><!-- fragment -->
 <p>Encode Publish Retransmit count &amp; interval steps. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -2288,9 +2311,31 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">                                  (CONFIG_BT_MESH_RX_SEG_MAX * \</div>
-<div class="line">                                  BT_MESH_APP_SEG_SDU_MAX)</div>
+<b>Value:</b><div class="fragment"><div class="line">                                       <a class="code hl_define" href="group__sys-util.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>((<a class="code hl_define" href="group__bt__mesh__access.html#ga18756e939ec3b312eef5c3dc9fd70270">BT_MESH_RX_SEG_MAX</a> *                \</div>
+<div class="line">                                       <a class="code hl_define" href="group__bt__mesh__access.html#gaa620c32d1dce8e4b691b7f4270016506">BT_MESH_APP_SEG_SDU_MAX</a>),        \</div>
+<div class="line">                                      <a class="code hl_define" href="group__bt__mesh__access.html#ga64eb6a94b1db9899c4f5bbf4cc88cd9f">BT_MESH_APP_UNSEG_SDU_MAX</a>)</div>
+<div class="ttc" id="agroup__bt__mesh__access_html_ga18756e939ec3b312eef5c3dc9fd70270"><div class="ttname"><a href="group__bt__mesh__access.html#ga18756e939ec3b312eef5c3dc9fd70270">BT_MESH_RX_SEG_MAX</a></div><div class="ttdeci">#define BT_MESH_RX_SEG_MAX</div><div class="ttdef"><b>Definition:</b> access.h:69</div></div>
+<div class="ttc" id="agroup__bt__mesh__access_html_ga64eb6a94b1db9899c4f5bbf4cc88cd9f"><div class="ttname"><a href="group__bt__mesh__access.html#ga64eb6a94b1db9899c4f5bbf4cc88cd9f">BT_MESH_APP_UNSEG_SDU_MAX</a></div><div class="ttdeci">#define BT_MESH_APP_UNSEG_SDU_MAX</div><div class="ttdef"><b>Definition:</b> access.h:63</div></div>
+<div class="ttc" id="agroup__bt__mesh__access_html_gaa620c32d1dce8e4b691b7f4270016506"><div class="ttname"><a href="group__bt__mesh__access.html#gaa620c32d1dce8e4b691b7f4270016506">BT_MESH_APP_SEG_SDU_MAX</a></div><div class="ttdeci">#define BT_MESH_APP_SEG_SDU_MAX</div><div class="ttdef"><b>Definition:</b> access.h:60</div></div>
+<div class="ttc" id="agroup__sys-util_html_gafa99ec4acc4ecb2dc3c2d05da15d0e3f"><div class="ttname"><a href="group__sys-util.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a></div><div class="ttdeci">#define MAX(a, b)</div><div class="ttdoc">The larger value between a and b.</div><div class="ttdef"><b>Definition:</b> util.h:184</div></div>
 </div><!-- fragment --><p >Maximum possible payload size of an incoming access message (in octets). </p>
+
+</div>
+</div>
+<a id="ga18756e939ec3b312eef5c3dc9fd70270" name="ga18756e939ec3b312eef5c3dc9fd70270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga18756e939ec3b312eef5c3dc9fd70270">&#9670;&nbsp;</a></span>BT_MESH_RX_SEG_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BT_MESH_RX_SEG_MAX&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
+<p >Maximum number of segments supported for incoming messages. </p>
 
 </div>
 </div>
@@ -2439,9 +2484,28 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">                                  (CONFIG_BT_MESH_TX_SEG_MAX * \</div>
-<div class="line">                                  BT_MESH_APP_SEG_SDU_MAX)</div>
+<b>Value:</b><div class="fragment"><div class="line">                                       <a class="code hl_define" href="group__sys-util.html#gafa99ec4acc4ecb2dc3c2d05da15d0e3f">MAX</a>((<a class="code hl_define" href="group__bt__mesh__access.html#ga1b2a3610ac370266578abce195e65fa2">BT_MESH_TX_SEG_MAX</a> *                \</div>
+<div class="line">                                       <a class="code hl_define" href="group__bt__mesh__access.html#gaa620c32d1dce8e4b691b7f4270016506">BT_MESH_APP_SEG_SDU_MAX</a>),        \</div>
+<div class="line">                                      <a class="code hl_define" href="group__bt__mesh__access.html#ga64eb6a94b1db9899c4f5bbf4cc88cd9f">BT_MESH_APP_UNSEG_SDU_MAX</a>)</div>
+<div class="ttc" id="agroup__bt__mesh__access_html_ga1b2a3610ac370266578abce195e65fa2"><div class="ttname"><a href="group__bt__mesh__access.html#ga1b2a3610ac370266578abce195e65fa2">BT_MESH_TX_SEG_MAX</a></div><div class="ttdeci">#define BT_MESH_TX_SEG_MAX</div><div class="ttdef"><b>Definition:</b> access.h:76</div></div>
 </div><!-- fragment --><p >Maximum possible payload size of an outgoing access message (in octets). </p>
+
+</div>
+</div>
+<a id="ga1b2a3610ac370266578abce195e65fa2" name="ga1b2a3610ac370266578abce195e65fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1b2a3610ac370266578abce195e65fa2">&#9670;&nbsp;</a></span>BT_MESH_TX_SEG_MAX</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BT_MESH_TX_SEG_MAX&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="access_8h.html">include/bluetooth/mesh/access.h</a>&gt;</code></p>
+<p >Maximum number of segments supported for outgoing messages. </p>
 
 </div>
 </div>
@@ -2877,7 +2941,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

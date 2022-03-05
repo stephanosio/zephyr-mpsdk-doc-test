@@ -16,7 +16,7 @@
 <para>Test pending of workq, fifo and lifo. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ref refid="group__thread__apis_1ga48d4b041790454da4d68ac8711f29657" kindref="member">k_sleep()</ref>, <ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE()</ref> </para>
+<para><simplesect kind="see"><para><ref refid="group__thread__apis_1ga48d4b041790454da4d68ac8711f29657" kindref="member">k_sleep()</ref>, <ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE()</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>

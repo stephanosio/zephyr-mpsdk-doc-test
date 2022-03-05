@@ -741,7 +741,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -981,16 +981,16 @@
         </inbodydescription>
         <location file="tests/kernel/queue/src/test_queue_contexts.c" line="15" column="1" declfile="tests/kernel/queue/src/test_queue_contexts.c" declline="15" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__queue__contexts_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__queue__contexts_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1000,16 +1000,16 @@
         </inbodydescription>
         <location file="tests/kernel/queue/src/test_queue_contexts.c" line="26" column="8" declfile="tests/kernel/queue/src/test_queue_contexts.c" declline="26" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="test__queue__contexts_8c_1addb2d6358f4f4563e9b7b7e4188188d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__queue__contexts_8c_1a4f7ec7d4863c41f0ba67f2ce3ff3ac2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>tstack1</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1019,16 +1019,16 @@
         </inbodydescription>
         <location file="tests/kernel/queue/src/test_queue_contexts.c" line="28" column="8" declfile="tests/kernel/queue/src/test_queue_contexts.c" declline="28" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="test__queue__contexts_8c_1a62a5c76d0d03aab900e8e4f9d3367902" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__queue__contexts_8c_1ac7393ccbe0c6f704f97f86fd0276d502" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>tstack2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1204,7 +1204,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Static define and Dynamic define queues, Then initialize them. Create a new thread to wait for reading data. Current thread will append item into queue. Verify if rx_data is equal insert-data address. Verify queue can be define at compile time.</para>
-<para><simplesect kind="see"><para><ref refid="group__queue__apis_1ga0236222d42768c2bf00942f328146c21" kindref="member">k_queue_init()</ref>, <ref refid="group__queue__apis_1gad47336f27e433a52600a3b67ab89556a" kindref="member">k_queue_insert()</ref>, <ref refid="group__queue__apis_1gaa84522a5ace6e7f8ba61033baca6972f" kindref="member">k_queue_append()</ref> <ref refid="test__queue__contexts_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE()</ref> </para>
+<para><simplesect kind="see"><para><ref refid="group__queue__apis_1ga0236222d42768c2bf00942f328146c21" kindref="member">k_queue_init()</ref>, <ref refid="group__queue__apis_1gad47336f27e433a52600a3b67ab89556a" kindref="member">k_queue_insert()</ref>, <ref refid="group__queue__apis_1gaa84522a5ace6e7f8ba61033baca6972f" kindref="member">k_queue_append()</ref> <ref refid="test__queue__contexts_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE()</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -1596,7 +1596,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="test__queue_8h" kindref="compound">test_queue.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIST_LEN<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"><ref refid="test__queue__contexts_8c_1ad0c5e530bd2f8ef035b31f9c9b197e01" kindref="member">K_QUEUE_DEFINE</ref>(kqueue);</highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
@@ -1612,11 +1612,11 @@
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structqdata" kindref="compound">qdata_t</ref><sp/>*<ref refid="test__queue__contexts_8c_1a73c4b61d5406b8c2dd4401de076fb2f9" kindref="member">data_append</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structqdata" kindref="compound">qdata_t</ref><sp/>*<ref refid="test__queue__contexts_8c_1adcc54aa8e4aaec95b8b32106997746d9" kindref="member">data_prepend</ref>;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__queue__contexts_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__queue__contexts_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__queue__contexts_8c_1aa15baae19d44279cac3d8bf47c9e707f" kindref="member">tdata</ref>;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__queue__contexts_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack1,<sp/><ref refid="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__queue__contexts_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack1,<sp/><ref refid="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__queue__contexts_8c_1a82c3f4a9aaaf6ca8f1ca77cc6666f892" kindref="member">tdata1</ref>;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__queue__contexts_8c_1a5fdc5fb7330e19795cc524bb2650a6f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack2,<sp/><ref refid="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__queue__contexts_8c_1ac9f7dc87180ded5f1ffe1cdab64aed90" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack2,<sp/><ref refid="test__queue__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__queue__contexts_8c_1a0254f78e372a9cb818cac949ef36f349" kindref="member">tdata2</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__queue__contexts_8c_1a37d12066b90b5226eb1895e59f5908e8" kindref="member">end_sema</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2408" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2408" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2409" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2409" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__per__adv__sync__established_1a3af8529a858992f347ce9570c5696133" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2409" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2409" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2410" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2410" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__per__adv__sync__established_1ab11929ef8d3c71c6f2cb7c549be21282" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2410" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2410" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2411" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2411" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__per__adv__sync__established_1adf65527ea968f4ece37d7e3c91c795d1" prot="public" static="no" mutable="no">
         <type><ref refid="structbt__addr__le__t" kindref="compound">bt_addr_le_t</ref></type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2411" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2411" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2412" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2412" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__per__adv__sync__established_1ab7ce6f56a69b54f02cde8fdae6860e42" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2412" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2412" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2413" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2413" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__per__adv__sync__established_1a4873b917a5bc140bb2f04ad2bee5dd69" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2413" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2413" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2414" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2414" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__hci__evt__le__per__adv__sync__established_1aee68069899cc10bc38ad9fb95cf9b7b7" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/hci.h" line="2414" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2414" bodyend="-1"/>
+        <location file="include/bluetooth/hci.h" line="2415" column="14" bodyfile="include/bluetooth/hci.h" bodystart="2415" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -120,7 +120,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/hci.h" line="2407" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2407" bodyend="2415"/>
+    <location file="include/bluetooth/hci.h" line="2408" column="1" bodyfile="include/bluetooth/hci.h" bodystart="2408" bodyend="2416"/>
     <listofallmembers>
       <member refid="structbt__hci__evt__le__per__adv__sync__established_1adf65527ea968f4ece37d7e3c91c795d1" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_per_adv_sync_established</scope><name>adv_addr</name></member>
       <member refid="structbt__hci__evt__le__per__adv__sync__established_1aee68069899cc10bc38ad9fb95cf9b7b7" prot="public" virt="non-virtual"><scope>bt_hci_evt_le_per_adv_sync_established</scope><name>clock_accuracy</name></member>

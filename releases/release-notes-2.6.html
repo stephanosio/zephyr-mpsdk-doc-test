@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -113,7 +115,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../samples/index.html">Samples and Demos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Supported Boards</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Release Notes</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="release-notes-3.0.html">Zephyr 3.0.0 (Working draft)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-3.1.html">Zephyr 3.1.0 (Working Draft)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-3.0.html">Zephyr 3.0.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="release-notes-2.7.html">Zephyr 2.7.0</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Zephyr 2.6.0</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#security-vulnerability-related">Security Vulnerability Related</a></li>
@@ -174,7 +177,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -1111,8 +1114,8 @@ enabled by default, and can be disabled if needed.</p></li>
 <ul>
 <li><p><a class="reference internal" href="../reference/devicetree/api.html#c.DT_COMPAT_GET_ANY_STATUS_OKAY" title="DT_COMPAT_GET_ANY_STATUS_OKAY"><code class="xref c c-macro docutils literal notranslate"><span class="pre">DT_COMPAT_GET_ANY_STATUS_OKAY</span></code></a>: new macro</p></li>
 <li><p>the <code class="docutils literal notranslate"><span class="pre">96b-lscon-3v3</span></code> and <code class="docutils literal notranslate"><span class="pre">96b-lscon-1v8</span></code> <a class="reference internal" href="../guides/dts/intro.html#dt-important-props"><span class="std std-ref">compatible properties</span></a> now have <code class="docutils literal notranslate"><span class="pre">linaro,</span></code> vendor prefixes, i.e. they are
-now respectively <a class="reference internal" href="../reference/devicetree/bindings/gpio/linaro%2C96b-lscon-3v3.html#std-dtcompatible-linaro-96b-lscon-3v3"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">linaro,96b-lscon-3v3</span></code></a> and
-<a class="reference internal" href="../reference/devicetree/bindings/gpio/linaro%2C96b-lscon-1v8.html#std-dtcompatible-linaro-96b-lscon-1v8"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">linaro,96b-lscon-1v8</span></code></a>.</p>
+now respectively <a class="reference internal" href="../reference/devicetree/bindings.html#std-dtcompatible-linaro-96b-lscon-3v3"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">linaro,96b-lscon-3v3</span></code></a> and
+<a class="reference internal" href="../reference/devicetree/bindings.html#std-dtcompatible-linaro-96b-lscon-1v8"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">linaro,96b-lscon-1v8</span></code></a>.</p>
 <p>This change was made to bring Zephyr’s devicetrees into compliance with an
 upstream Linux regular expression used to validate compatible properties.
 This regular expression requires a letter as the first character.</p>
@@ -1131,7 +1134,7 @@ commands</span></a>:</p>
 bootloader selection. This extends compatibility between Zephyr and
 some Arduino IDE bootloaders.</p></li>
 <li><p>jlink runner: Zephyr thread awareness is now available in GDB by default
-for application builds with <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_DEBUG_THREAD_INFO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DEBUG_THREAD_INFO</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>
+for application builds with <a class="reference internal" href="../kconfig.html#CONFIG_DEBUG_THREAD_INFO" title="CONFIG_DEBUG_THREAD_INFO"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DEBUG_THREAD_INFO</span></code></a> set to <code class="docutils literal notranslate"><span class="pre">y</span></code>
 in <a class="reference internal" href="../guides/build/index.html#kconfig"><span class="std std-ref">Configuration System (Kconfig)</span></a>. This applies to <code class="docutils literal notranslate"><span class="pre">west</span> <span class="pre">debug</span></code>, <code class="docutils literal notranslate"><span class="pre">west</span> <span class="pre">debugserver</span></code>,
 and <code class="docutils literal notranslate"><span class="pre">west</span> <span class="pre">attach</span></code>. JLink version 7.11b or later must be installed on the
 host system, with JLink 7.20 or later strongly recommended.</p></li>
@@ -2579,8 +2582,8 @@ release:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -2,6 +2,7 @@ var group__log__backend =
 [
     [ "log_backend_api", "structlog__backend__api.html", [
       [ "dropped", "structlog__backend__api.html#a849b25667c299c4a7a97f598a1b2fbd7", null ],
+      [ "format_set", "structlog__backend__api.html#ae23c17899721f8254a9f50bedd667226", null ],
       [ "init", "structlog__backend__api.html#addc850f99813854df8083a5ee93a36c8", null ],
       [ "panic", "structlog__backend__api.html#a04bdb8030ad4e70000d8572a6b7e07b1", null ],
       [ "process", "structlog__backend__api.html#ac05cec5dc8396178b0eca480dafe4794", null ],
@@ -25,6 +26,7 @@ var group__log__backend =
     [ "log_backend_count_get", "group__log__backend.html#gad055c1dc8e0236b604cb553df3e16a52", null ],
     [ "log_backend_deactivate", "group__log__backend.html#ga1534fdfabce1e97c829aa79d57739589", null ],
     [ "log_backend_dropped", "group__log__backend.html#gab300348c43168de1e7eaae8c770b6950", null ],
+    [ "log_backend_format_set", "group__log__backend.html#gac0a4dc476c3b641ab570ca2dd4f2096f", null ],
     [ "log_backend_get", "group__log__backend.html#gaf419f3590f42893b7091beed57763c7c", null ],
     [ "log_backend_id_get", "group__log__backend.html#gae3e1d6eaf21dcc1d0961e85271d5e5f3", null ],
     [ "log_backend_id_set", "group__log__backend.html#ga8f263b24140229e5cf8e98b322501bca", null ],

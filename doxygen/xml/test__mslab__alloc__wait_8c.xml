@@ -743,7 +743,7 @@
       </memberdef>
       <memberdef kind="define" id="test__mslab__alloc__wait_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -820,10 +820,10 @@
         </inbodydescription>
         <location file="tests/kernel/mem_slab/mslab_concept/src/test_mslab_alloc_wait.c" line="13" column="1" declfile="tests/kernel/mem_slab/mslab_concept/src/test_mslab_alloc_wait.c" declline="13" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__mslab__alloc__wait_8c_1a3a130b1537a68d8377ad2f1c25c2d41b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mslab__alloc__wait_8c_1aba562c411b9806b2518487108a215f7a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(tstack, 3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack, 3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
@@ -832,7 +832,7 @@
           <type>3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -933,11 +933,11 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mslab__concept_2src_2test__mslab_8h" kindref="compound">test_mslab.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_NUM<sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><ref refid="test__mslab__alloc__wait_8c_1a6e4ccf08aa6eb1f273fb863f5764b0c6" kindref="member">K_MEM_SLAB_DEFINE</ref>(mslab1,<sp/><ref refid="mslab__api_2src_2test__mslab_8h_1a5394435edf20efdffac70b5c362ade81" kindref="member">BLK_SIZE</ref>,<sp/><ref refid="mslab__api_2src_2test__mslab_8h_1a4d6cfcd53ce1e9420843a5ce9b5c631d" kindref="member">BLK_NUM</ref>,<sp/><ref refid="mem__protect_8h_1a66edaa498a82de98246e8be258cb0e06" kindref="member">BLK_ALIGN</ref>);</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mslab__alloc__wait_8c_1a3a130b1537a68d8377ad2f1c25c2d41b" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mslab__alloc__wait_8c_1acd532f688378febc70bf2aedccd9bb60" kindref="member">THREAD_NUM</ref>,<sp/><ref refid="test__mslab__alloc__wait_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="test__mslab__alloc__wait_8c_1aba562c411b9806b2518487108a215f7a" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mslab__alloc__wait_8c_1acd532f688378febc70bf2aedccd9bb60" kindref="member">THREAD_NUM</ref>,<sp/><ref refid="test__mslab__alloc__wait_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__mslab__alloc__wait_8c_1a1ad640159147f620dc41f59b34154124" kindref="member">tdata</ref>[<ref refid="test__mslab__alloc__wait_8c_1acd532f688378febc70bf2aedccd9bb60" kindref="member">THREAD_NUM</ref>];</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__mslab__alloc__wait_8c_1a8273619cc9363219ddb3c7528c38b45d" kindref="member">sync_sema</ref>;</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="test__mslab__alloc__wait_8c_1a5a35d05659a86bb3c1c6a7bd8098329c" kindref="member">block_ok</ref>;</highlight></codeline>

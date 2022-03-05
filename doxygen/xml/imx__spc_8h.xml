@@ -1004,7 +1004,7 @@
 <codeline lineno="12"><highlight class="comment"><sp/>*<sp/>power<sp/>saving.<sp/>See<sp/>your<sp/>SOC&apos;s<sp/>datasheet<sp/>for<sp/>specifics<sp/>of<sp/>what<sp/>peripherals</highlight></codeline>
 <codeline lineno="13"><highlight class="comment"><sp/>*<sp/>have<sp/>their<sp/>clocks<sp/>gated<sp/>at<sp/>each<sp/>set<sp/>point.</highlight></codeline>
 <codeline lineno="14"><highlight class="comment"><sp/>*</highlight></codeline>
-<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Set<sp/>point<sp/>control<sp/>is<sp/>implemented<sp/>at<sp/>the<sp/>soc<sp/>level<sp/>(see<sp/>pm_power_state_set())</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>Set<sp/>point<sp/>control<sp/>is<sp/>implemented<sp/>at<sp/>the<sp/>soc<sp/>level<sp/>(see<sp/>pm_state_set())</highlight></codeline>
 <codeline lineno="16"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ZEPHYR_INCLUDE_DT_BINDINGS_PM_IMX_SPC_H_</highlight><highlight class="normal"></highlight></codeline>

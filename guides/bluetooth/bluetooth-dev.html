@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -167,7 +169,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -271,8 +273,8 @@ application:</p>
 <span class="go">CONFIG_UART_CONSOLE=n</span>
 </pre></div>
 </div>
-<p>Setting <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_DEBUG_MONITOR_UART"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_DEBUG_MONITOR_UART</span></code></a> to <code class="docutils literal notranslate"><span class="pre">y</span></code> replaces the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_DEBUG_LOG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_DEBUG_LOG</span></code></a> option, and setting <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_CONSOLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_CONSOLE</span></code></a>
+<p>Setting <a class="reference internal" href="../../kconfig.html#CONFIG_BT_DEBUG_MONITOR_UART" title="CONFIG_BT_DEBUG_MONITOR_UART"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_DEBUG_MONITOR_UART</span></code></a> to <code class="docutils literal notranslate"><span class="pre">y</span></code> replaces the
+<a class="reference internal" href="../../kconfig.html#CONFIG_BT_DEBUG_LOG" title="CONFIG_BT_DEBUG_LOG"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_DEBUG_LOG</span></code></a> option, and setting <a class="reference internal" href="../../kconfig.html#CONFIG_UART_CONSOLE" title="CONFIG_UART_CONSOLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UART_CONSOLE</span></code></a>
 to <code class="docutils literal notranslate"><span class="pre">n</span></code> disables the default <code class="docutils literal notranslate"><span class="pre">printk</span></code>/<code class="docutils literal notranslate"><span class="pre">printf</span></code> hooks.</p>
 <p>To decode the binary protocol that will now be sent to the console UART you need
 to use the btmon tool from <a class="reference internal" href="bluetooth-tools.html#bluetooth-bluez"><span class="std std-ref">BlueZ</span></a>:</p>
@@ -310,7 +312,7 @@ see a message similar to:</p>
 </pre></div>
 </div>
 <p>when booting your sample of choice (make sure you have enabled
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_DEBUG_LOG"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_DEBUG_LOG</span></code></a> in your <code class="file docutils literal notranslate"><span class="pre">prj.conf</span></code> before running the
+<a class="reference internal" href="../../kconfig.html#CONFIG_BT_DEBUG_LOG" title="CONFIG_BT_DEBUG_LOG"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_DEBUG_LOG</span></code></a> in your <code class="file docutils literal notranslate"><span class="pre">prj.conf</span></code> before running the
 sample), or if there is no data flowing from the Controller to the Host, then
 you need to disable Host to Controller flow control. To do so, set
 <code class="docutils literal notranslate"><span class="pre">CONFIG_BT_HCI_ACL_FLOW_CONTROL=n</span></code> in your <code class="file docutils literal notranslate"><span class="pre">prj.conf</span></code>.</p>
@@ -466,8 +468,8 @@ and scan response data.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

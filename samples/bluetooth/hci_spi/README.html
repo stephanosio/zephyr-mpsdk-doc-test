@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -200,7 +202,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -276,7 +278,7 @@ the Zephyr SPI HCI transport protocol (similar to BlueNRG).</p>
 <h2>Building and Running<a class="headerlink" href="#building-and-running" title="Permalink to this headline">¶</a></h2>
 <p>You then need to ensure that your <a class="reference internal" href="../../../guides/dts/index.html#dt-guide"><span class="std std-ref">devicetree</span></a> defines a node
 for the HCI SPI slave device with compatible
-<a class="reference internal" href="../../../reference/devicetree/bindings/bluetooth/zephyr%2Cbt-hci-spi-slave.html#std-dtcompatible-zephyr-bt-hci-spi-slave"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">zephyr,bt-hci-spi-slave</span></code></a>. This node sets an interrupt line to
+<a class="reference internal" href="../../../reference/devicetree/bindings.html#std-dtcompatible-zephyr-bt-hci-spi-slave"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">zephyr,bt-hci-spi-slave</span></code></a>. This node sets an interrupt line to
 the host and associates the application with a SPI bus to use.</p>
 <p>See <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/bluetooth/hci_spi/boards/nrf51dk_nrf51422.overlay">boards/nrf51dk_nrf51422.overlay</a> in this sample
 directory for an example overlay for the <a class="reference internal" href="../../../boards/arm/nrf51dk_nrf51422/doc/index.html#nrf51dk-nrf51422"><span class="std std-ref">nRF51 DK</span></a> board.</p>
@@ -286,7 +288,7 @@ flashing information.</p>
 <p>You will also need a separate chip acting as BT HCI SPI master. This
 application is compatible with the HCI SPI master driver provided by
 Zephyr’s Bluetooth HCI driver core; see the help associated with the
-<a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_SPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_SPI</span></code></a> configuration option for more information.</p>
+<a class="reference internal" href="../../../kconfig.html#CONFIG_BT_SPI" title="CONFIG_BT_SPI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_SPI</span></code></a> configuration option for more information.</p>
 <p>Refer to <a class="reference internal" href="../bluetooth.html#bluetooth-samples"><span class="std std-ref">Bluetooth samples</span></a> for general Bluetooth information, and
 to <a class="reference internal" href="../../../boards/arm/96b_carbon_nrf51/doc/index.html#b-carbon-nrf51-bluetooth"><span class="std std-ref">Providing Bluetooth to 96b_carbon</span></a> for instructions specific to the
 96Boards Carbon board.</p>
@@ -302,8 +304,8 @@ to <a class="reference internal" href="../../../boards/arm/96b_carbon_nrf51/doc/
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

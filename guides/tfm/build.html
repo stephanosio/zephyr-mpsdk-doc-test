@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -164,7 +166,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -271,15 +273,15 @@ the properties.</p>
 </div>
 <div class="section" id="signing-images">
 <h2>Signing Images<a class="headerlink" href="#signing-images" title="Permalink to this headline">¶</a></h2>
-<p>When <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_BL2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_BL2</span></code></a> is set to <code class="docutils literal notranslate"><span class="pre">y</span></code>, TF-M uses a secure bootloader
+<p>When <a class="reference internal" href="../../kconfig.html#CONFIG_TFM_BL2" title="CONFIG_TFM_BL2"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_BL2</span></code></a> is set to <code class="docutils literal notranslate"><span class="pre">y</span></code>, TF-M uses a secure bootloader
 (BL2) and firmware images must be signed with a private key. The firmware image
 is validated by the bootloader during updates using the corresponding public
 key, which is stored inside the secure bootloader firmware image.</p>
 <p>By default, <code class="docutils literal notranslate"><span class="pre">&lt;tfm-dir&gt;/bl2/ext/mcuboot/root-rsa-3072.pem</span></code> is used to sign secure
 images, and <code class="docutils literal notranslate"><span class="pre">&lt;tfm-dir&gt;/bl2/ext/mcuboot/root-rsa-3072_1.pem</span></code> is used to sign
 non-secure images. Theses default .pem keys can (and <strong>should</strong>) be overridden
-using the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_KEY_FILE_S"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_S</span></code></a> and
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_KEY_FILE_NS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_NS</span></code></a> config flags.</p>
+using the <a class="reference internal" href="../../kconfig.html#CONFIG_TFM_KEY_FILE_S" title="CONFIG_TFM_KEY_FILE_S"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_S</span></code></a> and
+<a class="reference internal" href="../../kconfig.html#CONFIG_TFM_KEY_FILE_NS" title="CONFIG_TFM_KEY_FILE_NS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_NS</span></code></a> config flags.</p>
 <p>To satisfy <a class="reference external" href="https://www.psacertified.org/security-certification/psa-certified-level-1/">PSA Certified Level 1</a> requirements, <strong>You MUST replace
 the default .pem file with a new key pair!</strong></p>
 <p>To generate a new public/private key pair, run the following commands:</p>
@@ -291,7 +293,7 @@ $ imgtool keygen -k root-rsa-3072_ns.pem -t rsa-3072
 </div></blockquote>
 <p>You can then place the new .pem files in an alternate location, such as your
 Zephyr application folder, and reference them in the <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> file via the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_KEY_FILE_S"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_S</span></code></a> and <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_KEY_FILE_NS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_NS</span></code></a> config
+<a class="reference internal" href="../../kconfig.html#CONFIG_TFM_KEY_FILE_S" title="CONFIG_TFM_KEY_FILE_S"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_S</span></code></a> and <a class="reference internal" href="../../kconfig.html#CONFIG_TFM_KEY_FILE_NS" title="CONFIG_TFM_KEY_FILE_NS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_KEY_FILE_NS</span></code></a> config
 flags.</p>
 <blockquote>
 <div><div class="admonition warning">
@@ -341,8 +343,8 @@ options. Also CMake generator expressions are supported, such as
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

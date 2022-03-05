@@ -7,17 +7,17 @@
     <innergroup refid="group__subsys__pm__sys__constraint">Constraints</innergroup>
     <innergroup refid="group__subsys__pm__sys__hooks">Hooks</innergroup>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__subsys__pm__sys_1ga5c22778e2981505a833e8fc9067e1667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__subsys__pm__sys_1ga075be307983f4efdcc93252a31a4258a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
-        <definition>bool pm_power_state_force</definition>
-        <argsstring>(uint8_t cpu, struct pm_state_info info)</argsstring>
-        <name>pm_power_state_force</name>
+        <definition>bool pm_state_force</definition>
+        <argsstring>(uint8_t cpu, const struct pm_state_info *info)</argsstring>
+        <name>pm_state_force</name>
         <param>
           <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
           <declname>cpu</declname>
         </param>
         <param>
-          <type>struct <ref refid="structpm__state__info" kindref="compound">pm_state_info</ref></type>
+          <type>const struct <ref refid="structpm__state__info" kindref="compound">pm_state_info</ref> *</type>
           <declname>info</declname>
         </param>
         <briefdescription>
@@ -48,7 +48,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/pm.h" line="80" column="6" declfile="include/pm/pm.h" declline="80" declcolumn="6"/>
+        <location file="include/pm/pm.h" line="81" column="6" declfile="include/pm/pm.h" declline="81" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__sys_1ga066945118b8f287ee56aacf41b677a78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/pm.h" line="90" column="6" declfile="include/pm/pm.h" declline="90" declcolumn="6"/>
+        <location file="include/pm/pm.h" line="91" column="6" declfile="include/pm/pm.h" declline="91" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__subsys__pm__sys_1gab0856d662e50a3847a1b70cb8370849a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -108,13 +108,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/pm.h" line="103" column="5" declfile="include/pm/pm.h" declline="103" declcolumn="5"/>
+        <location file="include/pm/pm.h" line="104" column="5" declfile="include/pm/pm.h" declline="104" declcolumn="5"/>
       </memberdef>
-      <memberdef kind="function" id="group__subsys__pm__sys_1ga9d244527bfaa67a9fbae4a5bbe1ab6bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>struct <ref refid="structpm__state__info" kindref="compound">pm_state_info</ref></type>
-        <definition>struct pm_state_info pm_power_state_next_get</definition>
+      <memberdef kind="function" id="group__subsys__pm__sys_1ga3861a1a0009b96d15de00059257848dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct <ref refid="structpm__state__info" kindref="compound">pm_state_info</ref> *</type>
+        <definition>const struct pm_state_info * pm_state_next_get</definition>
         <argsstring>(uint8_t cpu)</argsstring>
-        <name>pm_power_state_next_get</name>
+        <name>pm_state_next_get</name>
         <param>
           <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
           <declname>cpu</declname>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/pm/pm.h" line="114" column="20" declfile="include/pm/pm.h" declline="114" declcolumn="20"/>
+        <location file="include/pm/pm.h" line="115" column="26" declfile="include/pm/pm.h" declline="115" declcolumn="26"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

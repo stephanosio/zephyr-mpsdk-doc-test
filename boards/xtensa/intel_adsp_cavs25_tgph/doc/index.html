@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intel Tiger Lake PCH H Audio DSP - cAVS2.5 TGPH &mdash; Zephyr Project Documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/tabs.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.png"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script type="module" src="../../../../_static/js/dark-mode-toggle.min.mjs"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=UA-831873-47"></script>
+        <script src="../../../../_static/js/ga-tracker.js"></script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="copyright" title="Copyright" href="../../../../copyright.html" />
+    <link rel="next" title="Intel S1000 CRB" href="../../intel_s1000_crb/doc/index.html" />
+    <link rel="prev" title="Zephyr Audio DSP Development on Chromebooks" href="../../intel_adsp_cavs25/doc/index.html" />
+  <meta name="color-scheme" content="dark light">
+  
+  <link rel="stylesheet" href="../../../../_static/css/light.css" type="text/css" media="(prefers-color-scheme: light)"/>
+  <link rel="stylesheet" href="../../../../_static/css/dark.css" type="text/css" media="(prefers-color-scheme: dark)"/>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html">
+            <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                3.0.99
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+  
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr Project</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Document Release Versions</dt>
+        
+          <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
+        
+          <dd><a href="/2.7.0/">2.7.0</a></dd>
+        
+          <dd><a href="/2.6.0/">2.6.0</a></dd>
+        
+          <dd><a href="/2.5.0/">2.5.0</a></dd>
+        
+          <dd><a href="/2.4.0/">2.4.0</a></dd>
+        
+          <dd><a href="/2.3.0/">2.3.0</a></dd>
+        
+          <dd><a href="/1.14.1/">1.14.1</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+        <dd><a href="/latest/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>zephyrproject.org Links</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">Project Home</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+          </dd>
+      </dl>
+    </div>
+  </div>
+  
+              <p class="caption" role="heading"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/index.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting_started/index.html">Getting Started Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../contribute/index.html">Contribution Guidelines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../development_process/index.html">Development and Contribution Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../guides/build/index.html">Build and Configuration Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../application/index.html">Application Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../reference/index.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../guides/index.html">User and Developer Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../security/index.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../samples/index.html">Samples and Demos</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../index.html">Supported Boards</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../x86/index.html">x86 Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../arm/index.html">ARM Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../arm64/index.html">ARM64 Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../arc/index.html">ARC Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../mips/index.html">MIPS Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../nios2/index.html">NIOS II Boards</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../index.html">XTENSA Boards</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../esp32/doc/index.html">ESP32</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../esp32s2_saola/doc/index.html">ESP32-S2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../esp_wrover_kit/doc/index.html">ESP-WROVER-KIT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../intel_adsp_cavs15/doc/index.html">Up Squared Audio DSP</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../intel_adsp_cavs25/doc/index.html">Zephyr Audio DSP Development on Chromebooks</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Intel Tiger Lake PCH H Audio DSP - cAVS2.5 TGPH</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#build-and-usage">Build and usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#misc-references">Misc References</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../intel_s1000_crb/doc/index.html">Intel S1000 CRB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../odroid_go/doc/index.html">ODROID-GO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../qemu_xtensa/doc/index.html">Xtensa Emulation (QEMU)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../xt-sim/doc/index.html">Xtensa simulator</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../posix/index.html">POSIX/NATIVE Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../riscv/index.html">RISCV Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../sparc/index.html">SPARC Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../shields/index.html">Shields</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../releases/index.html">Release Notes</a></li>
+</ul>
+
+  
+  <div class="toctree-wrapper compound">
+    <p class="caption"><span class="caption-text">Reference</span></p>
+    <ul>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/doxygen/html/index.html">API</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
+      </li>
+      
+      <li class="toctree-l1">
+        <a class="reference internal" href="/latest/reference/devicetree/bindings.html">Devicetree Bindings</a>
+      </li>
+      
+    </ul>
+  </div>
+  
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">Zephyr Project</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+  <!-- Docs / Latest -->
+  
+  
+
+  <li><a href="../../../../index.html">Docs / Latest</a> &raquo;</li>
+  
+     <li><a href="../../../index.html">Supported Boards</a> &raquo;</li>
+  
+     <li><a href="../../index.html">XTENSA Boards</a> &raquo;</li>
+  
+  <li>Intel Tiger Lake PCH H Audio DSP - cAVS2.5 TGPH</li>
+
+
+  <li class="wy-breadcrumbs-aside">
+    <dark-mode-toggle id="dark-mode-toggle" appearance="toggle" permanent="true"/>
+  </li>
+  <li class="wy-breadcrumbs-aside">
+      
+      
+        <a href="https://github.com/zephyrproject-rtos/zephyr/blob/main//boards/xtensa/intel_adsp_cavs25_tgph/doc/index.rst" class="fa fa-github"> Open on GitHub</a>
+      
+    
+  </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+  
+    <div class="wy-alert wy-alert-danger">
+     This is the documentation for the latest (main) development branch of
+     Zephyr. If you are looking for the documentation of previous releases, use
+     the drop-down menu on the left and select the desired version.
+    </div>
+  
+  
+           <div itemprop="articleBody">
+             
+  <div class="section" id="intel-tiger-lake-pch-h-audio-dsp-cavs2-5-tgph">
+<h1>Intel Tiger Lake PCH H Audio DSP - cAVS2.5 TGPH<a class="headerlink" href="#intel-tiger-lake-pch-h-audio-dsp-cavs2-5-tgph" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This board file targets the audio DSP used in systems with Intel
+Tiger Lake H PCH. The hardware is a variant of the Tiger Lake LP
+PCH (intel_adsp_cavs25).</p>
+</div>
+<div class="section" id="build-and-usage">
+<h2>Build and usage<a class="headerlink" href="#build-and-usage" title="Permalink to this headline">¶</a></h2>
+<p>Instructions for intel_adsp_cavs25 apply for this board as well.
+See instructions in <a class="reference internal" href="../../intel_adsp_cavs25/doc/index.html#zephyr-audio-dsp-development-on-chromebooks"><span class="std std-ref">Zephyr Audio DSP Development on Chromebooks</span></a></p>
+</div>
+<div class="section" id="misc-references">
+<h2>Misc References<a class="headerlink" href="#misc-references" title="Permalink to this headline">¶</a></h2>
+<p>Building SOF firmware with Zephyr as RTOS:
+<a class="reference external" href="https://thesofproject.github.io/latest/getting_started/build-guide/build-with-zephyr.html">https://thesofproject.github.io/latest/getting_started/build-guide/build-with-zephyr.html</a></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
+      </span></p>
+  </div>
+
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

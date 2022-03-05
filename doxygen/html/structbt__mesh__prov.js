@@ -20,6 +20,7 @@ var structbt__mesh__prov =
     [ "static_val", "structbt__mesh__prov.html#a97cf41cf857479c8eefee640f7b66788", null ],
     [ "static_val_len", "structbt__mesh__prov.html#a97394dded5fd55b553364a566a2441e8", null ],
     [ "unprovisioned_beacon", "structbt__mesh__prov.html#a8142a3b8120b1686f68513caeac09497", null ],
+    [ "unprovisioned_beacon_gatt", "structbt__mesh__prov.html#a7eddf1f088264f8b6e3fb86dce4c108e", null ],
     [ "uri", "structbt__mesh__prov.html#a6a11cc0d36ca2f4c5aee67a023c295a2", null ],
     [ "uuid", "structbt__mesh__prov.html#a1152d77c4c4d9271bbd72514d94052f2", null ]
 ];

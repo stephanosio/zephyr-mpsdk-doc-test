@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -179,7 +181,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -255,7 +257,7 @@ conditionally compiled. Their definitions may be found in
 <p>Assertions are enabled by setting the <code class="docutils literal notranslate"><span class="pre">__ASSERT_ON</span></code> preprocessor symbol to a
 non-zero value. There are two ways to do this:</p>
 <ul class="simple">
-<li><p>Use the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_ASSERT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ASSERT</span></code></a> and <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_ASSERT_LEVEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ASSERT_LEVEL</span></code></a> kconfig
+<li><p>Use the <a class="reference internal" href="../../../kconfig.html#CONFIG_ASSERT" title="CONFIG_ASSERT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ASSERT</span></code></a> and <a class="reference internal" href="../../../kconfig.html#CONFIG_ASSERT_LEVEL" title="CONFIG_ASSERT_LEVEL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ASSERT_LEVEL</span></code></a> kconfig
 options.</p></li>
 <li><p>Add <code class="docutils literal notranslate"><span class="pre">-D__ASSERT_ON=&lt;level&gt;</span></code> to the project’s CFLAGS, either on the
 build command line or in a CMakeLists.txt.</p></li>
@@ -267,7 +269,7 @@ the kernel contains debug-type <code class="docutils literal notranslate"><span 
 issued since assertion code is not normally present in a final product.
 Specifying assertion level 2 suppresses these warnings.</p>
 <p>Assertions are enabled by default when running Zephyr test cases, as
-configured by the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_TEST"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TEST</span></code></a> option.</p>
+configured by the <a class="reference internal" href="../../../kconfig.html#CONFIG_TEST" title="CONFIG_TEST"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TEST</span></code></a> option.</p>
 <p>The policy for what to do when encountering a failed assertion is controlled
 by the implementation of <code class="xref c c-func docutils literal notranslate"><span class="pre">assert_post_action()</span></code>. Zephyr provides
 a default implementation with weak linkage which invokes a kernel oops if
@@ -402,9 +404,9 @@ as the thread will simply not have permission to write to adjacent memory
 addresses outside of the stack buffer. Because this is enforced by the
 memory protection hardware, there is no risk of data corruption to memory
 that the thread would not otherwise be able to write to.</p>
-<p>If a thread is running in supervisor mode, or if <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is
+<p>If a thread is running in supervisor mode, or if <a class="reference internal" href="../../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is
 not enabled, depending on configuration stack overflows may or may not be
-caught.  <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_HW_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> is supported on some
+caught.  <a class="reference internal" href="../../../kconfig.html#CONFIG_HW_STACK_PROTECTION" title="CONFIG_HW_STACK_PROTECTION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> is supported on some
 architectures and will catch stack overflows in supervisor mode, including
 when handling a system call on behalf of a user thread. Typically this is
 implemented via dedicated CPU features, or read-only MMU/MPU guard regions
@@ -413,14 +415,14 @@ way can detect the overflow, but cannot guarantee against data corruption and
 should be treated as a very serious condition impacting the health of the
 entire system.</p>
 <p>If a platform lacks memory management hardware support,
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_STACK_SENTINEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STACK_SENTINEL</span></code></a> is a software-only stack overflow detection
+<a class="reference internal" href="../../../kconfig.html#CONFIG_STACK_SENTINEL" title="CONFIG_STACK_SENTINEL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_STACK_SENTINEL</span></code></a> is a software-only stack overflow detection
 feature which periodically checks if a sentinel value at the end of the stack
 buffer has been corrupted. It does not require hardware support, but provides
 no protection against data corruption. Since the checks are typically done at
 interrupt exit, the overflow may be detected a nontrivial amount of time after
 the stack actually overflowed.</p>
 <p>Finally, Zephyr supports GCC compiler stack canaries via
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_STACK_CANARIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STACK_CANARIES</span></code></a>.  If enabled, the compiler will insert a canary
+<a class="reference internal" href="../../../kconfig.html#CONFIG_STACK_CANARIES" title="CONFIG_STACK_CANARIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_STACK_CANARIES</span></code></a>.  If enabled, the compiler will insert a canary
 value randomly generated at boot into function stack frames, checking that the
 canary has not been overwritten at function exit. If the check fails, the
 compiler invokes <code class="xref c c-func docutils literal notranslate"><span class="pre">__stack_chk_fail()</span></code>, whose Zephyr implementation
@@ -547,8 +549,8 @@ this function for additional details and constraints.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

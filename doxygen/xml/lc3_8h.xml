@@ -479,11 +479,11 @@
         <param><defname>_len_min</defname></param>
         <param><defname>_len_max</defname></param>
         <initializer>{ \
-	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1gae3f592b55c7f2dc4f2b0a36361dbe31d" kindref="member">BT_CODEC_LC3_FREQ</ref>, _freq, _freq &gt;&gt; 8), \
+	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1gae3f592b55c7f2dc4f2b0a36361dbe31d" kindref="member">BT_CODEC_LC3_FREQ</ref>, (_freq) &amp; 0xffu, (_freq) &gt;&gt; 8), \
 	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1ga82aef70765902f52857bea6530a2e247" kindref="member">BT_CODEC_LC3_DURATION</ref>, _duration), \
 	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1gacdfe87a70b6f8a88aebba81958ac4647" kindref="member">BT_CODEC_LC3_CHAN_COUNT</ref>, _chan_count), \
-	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1ga9a62a9d74c37574b10f4d87c19840bd0" kindref="member">BT_CODEC_LC3_FRAME_LEN</ref>, _len_min, _len_min &gt;&gt; 8, \
-		       _len_max, _len_max &gt;&gt; 8,) \
+	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1ga9a62a9d74c37574b10f4d87c19840bd0" kindref="member">BT_CODEC_LC3_FRAME_LEN</ref>, (_len_min) &amp; 0xffu, (_len_min) &gt;&gt; 8, \
+		       (_len_max) &amp; 0xffu, (_len_max) &gt;&gt; 8) \
 }</initializer>
         <briefdescription>
 <para>Helper to declare LC3 codec capability. </para>
@@ -499,9 +499,9 @@
         <param><defname>_prefer_context</defname></param>
         <param><defname>_context</defname></param>
         <initializer>{ \
-	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__audio_1gac95b2a358780eb8c53fa6af4cf3bf26c" kindref="member">BT_CODEC_META_PREFER_CONTEXT</ref>, _prefer_context &amp; 0xff, \
-		       _prefer_context &gt;&gt; 8), \
-	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__audio_1gadf3e51ab624fb2b643525205fb84487a" kindref="member">BT_CODEC_META_CONTEXT</ref>, _context &amp; 0xff, _context &gt;&gt; 8) \
+	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__audio_1gac95b2a358780eb8c53fa6af4cf3bf26c" kindref="member">BT_CODEC_META_PREFER_CONTEXT</ref>, (_prefer_context) &amp; 0xffu, \
+		       (_prefer_context) &gt;&gt; 8), \
+	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__audio_1gadf3e51ab624fb2b643525205fb84487a" kindref="member">BT_CODEC_META_CONTEXT</ref>, (_context) &amp; 0xffu, (_context) &gt;&gt; 8) \
 }</initializer>
         <briefdescription>
 <para>Helper to declare LC3 codec metadata. </para>
@@ -544,9 +544,9 @@
         <initializer>{ \
 	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1ga54d3deaf66967dd03660f2db5c4df4ef" kindref="member">BT_CODEC_CONFIG_LC3_FREQ</ref>, _freq), \
 	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1gac1f4cf736a04eb259c292fadf1a357c1" kindref="member">BT_CODEC_CONFIG_LC3_DURATION</ref>, _duration), \
-	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1ga190ef5e36010c9683175e3bab7f97428" kindref="member">BT_CODEC_CONFIG_LC3_CHAN_ALLOC</ref>, _loc, _loc &gt;&gt; 8, \
-		       _loc &gt;&gt; 16, _loc &gt;&gt; 24), \
-	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1gae1dad10685c97d3cd1f224ab229c7c7e" kindref="member">BT_CODEC_CONFIG_LC3_FRAME_LEN</ref>, _len, _len &gt;&gt; 8) \
+	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1ga190ef5e36010c9683175e3bab7f97428" kindref="member">BT_CODEC_CONFIG_LC3_CHAN_ALLOC</ref>, (_loc) &amp; 0xffu, ((_loc) &gt;&gt; 8) &amp; 0xffu, \
+		       ((_loc) &gt;&gt; 16) &amp; 0xffu, (_loc) &gt;&gt; 24), \
+	 <ref refid="group__bt__audio_1gaa13f51422356fac9dcc4dfecf2d1c766" kindref="member">BT_CODEC_DATA</ref>(<ref refid="group__bt__codec__lc3_1gae1dad10685c97d3cd1f224ab229c7c7e" kindref="member">BT_CODEC_CONFIG_LC3_FRAME_LEN</ref>, (_len) &amp; 0xffu, (_len) &gt;&gt; 8) \
 }</initializer>
         <briefdescription>
 <para>Helper to declare LC3 codec data configuration. </para>
@@ -1051,18 +1051,18 @@
 <codeline lineno="192"><highlight class="normal"></highlight></codeline>
 <codeline lineno="196" refid="group__bt__codec__lc3_1ga59e2583444ef581cd7b3ca68f106d65b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_CODEC_LC3_DATA(_freq,<sp/>_duration,<sp/>_chan_count,<sp/>_len_min,<sp/>_len_max)<sp/>\</highlight></codeline>
 <codeline lineno="197"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
-<codeline lineno="198"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_LC3_FREQ,<sp/>_freq,<sp/>_freq<sp/>&gt;&gt;<sp/>8),<sp/>\</highlight></codeline>
+<codeline lineno="198"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_LC3_FREQ,<sp/>(_freq)<sp/>&amp;<sp/>0xffu,<sp/>(_freq)<sp/>&gt;&gt;<sp/>8),<sp/>\</highlight></codeline>
 <codeline lineno="199"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_LC3_DURATION,<sp/>_duration),<sp/>\</highlight></codeline>
 <codeline lineno="200"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_LC3_CHAN_COUNT,<sp/>_chan_count),<sp/>\</highlight></codeline>
-<codeline lineno="201"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_LC3_FRAME_LEN,<sp/>_len_min,<sp/>_len_min<sp/>&gt;&gt;<sp/>8,<sp/>\</highlight></codeline>
-<codeline lineno="202"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_len_max,<sp/>_len_max<sp/>&gt;&gt;<sp/>8,)<sp/>\</highlight></codeline>
+<codeline lineno="201"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_LC3_FRAME_LEN,<sp/>(_len_min)<sp/>&amp;<sp/>0xffu,<sp/>(_len_min)<sp/>&gt;&gt;<sp/>8,<sp/>\</highlight></codeline>
+<codeline lineno="202"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_len_max)<sp/>&amp;<sp/>0xffu,<sp/>(_len_max)<sp/>&gt;&gt;<sp/>8)<sp/>\</highlight></codeline>
 <codeline lineno="203"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight></codeline>
 <codeline lineno="208" refid="group__bt__codec__lc3_1gad50a8d34dcbd152d08ce3d0104a1081a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_CODEC_LC3_META(_prefer_context,<sp/>_context)<sp/>\</highlight></codeline>
 <codeline lineno="209"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
-<codeline lineno="210"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_META_PREFER_CONTEXT,<sp/>_prefer_context<sp/>&amp;<sp/>0xff,<sp/>\</highlight></codeline>
-<codeline lineno="211"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_prefer_context<sp/>&gt;&gt;<sp/>8),<sp/>\</highlight></codeline>
-<codeline lineno="212"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_META_CONTEXT,<sp/>_context<sp/>&amp;<sp/>0xff,<sp/>_context<sp/>&gt;&gt;<sp/>8)<sp/>\</highlight></codeline>
+<codeline lineno="210"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_META_PREFER_CONTEXT,<sp/>(_prefer_context)<sp/>&amp;<sp/>0xffu,<sp/>\</highlight></codeline>
+<codeline lineno="211"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_prefer_context)<sp/>&gt;&gt;<sp/>8),<sp/>\</highlight></codeline>
+<codeline lineno="212"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_META_CONTEXT,<sp/>(_context)<sp/>&amp;<sp/>0xffu,<sp/>(_context)<sp/>&gt;&gt;<sp/>8)<sp/>\</highlight></codeline>
 <codeline lineno="213"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>
 <codeline lineno="218" refid="group__bt__codec__lc3_1ga60f3b66792bd925158e86ecbe947b21d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_CODEC_LC3(_freq,<sp/>_duration,<sp/>_chan_count,<sp/>_len_min,<sp/>_len_max,<sp/>\</highlight></codeline>
@@ -1076,9 +1076,9 @@
 <codeline lineno="229"><highlight class="preprocessor">{<sp/>\</highlight></codeline>
 <codeline lineno="230"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_CONFIG_LC3_FREQ,<sp/>_freq),<sp/>\</highlight></codeline>
 <codeline lineno="231"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_CONFIG_LC3_DURATION,<sp/>_duration),<sp/>\</highlight></codeline>
-<codeline lineno="232"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_CONFIG_LC3_CHAN_ALLOC,<sp/>_loc,<sp/>_loc<sp/>&gt;&gt;<sp/>8,<sp/>\</highlight></codeline>
-<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_loc<sp/>&gt;&gt;<sp/>16,<sp/>_loc<sp/>&gt;&gt;<sp/>24),<sp/>\</highlight></codeline>
-<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_CONFIG_LC3_FRAME_LEN,<sp/>_len,<sp/>_len<sp/>&gt;&gt;<sp/>8)<sp/>\</highlight></codeline>
+<codeline lineno="232"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_CONFIG_LC3_CHAN_ALLOC,<sp/>(_loc)<sp/>&amp;<sp/>0xffu,<sp/>((_loc)<sp/>&gt;&gt;<sp/>8)<sp/>&amp;<sp/>0xffu,<sp/>\</highlight></codeline>
+<codeline lineno="233"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((_loc)<sp/>&gt;&gt;<sp/>16)<sp/>&amp;<sp/>0xffu,<sp/>(_loc)<sp/>&gt;&gt;<sp/>24),<sp/>\</highlight></codeline>
+<codeline lineno="234"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BT_CODEC_DATA(BT_CODEC_CONFIG_LC3_FRAME_LEN,<sp/>(_len)<sp/>&amp;<sp/>0xffu,<sp/>(_len)<sp/>&gt;&gt;<sp/>8)<sp/>\</highlight></codeline>
 <codeline lineno="235"><highlight class="preprocessor">}</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight></codeline>
 <codeline lineno="240" refid="group__bt__codec__lc3_1ga1f56ed02a5fe8fe6f04822dc2ba8db35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_CODEC_LC3_CONFIG_META(_context)<sp/>\</highlight></codeline>

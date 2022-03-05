@@ -4,7 +4,7 @@
     <compoundname>__assert.h</compoundname>
     <includes refid="stdbool_8h" local="no">stdbool.h</includes>
     <includes refid="printk_8h" local="no">sys/printk.h</includes>
-    <includedby refid="cipher_8h" local="no">include/crypto/cipher.h</includedby>
+    <includedby refid="crypto_2crypto_8h" local="no">include/crypto/crypto.h</includedby>
     <includedby refid="clock__control_8h" local="no">include/drivers/clock_control.h</includedby>
     <includedby refid="ec__host__cmd__periph_8h" local="no">include/drivers/ec_host_cmd_periph.h</includedby>
     <includedby refid="espi_8h" local="no">include/drivers/espi.h</includedby>
@@ -82,8 +82,8 @@
         <link refid="cache_8h"/>
       </node>
       <node id="2">
-        <label>include/crypto/cipher.h</label>
-        <link refid="cipher_8h"/>
+        <label>include/crypto/crypto.h</label>
+        <link refid="crypto_2crypto_8h"/>
       </node>
       <node id="26">
         <label>include/device.h</label>

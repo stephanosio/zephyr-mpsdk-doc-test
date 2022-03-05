@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -184,7 +186,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -277,7 +279,7 @@ to be the current thread. When multiple ready threads of the same priority
 exist, the scheduler chooses the one that has been waiting longest.</p>
 <p>A thread’s relative priority is primarily determined by its static priority.
 However, when both earliest-deadline-first scheduling is enabled
-(<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DEADLINE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a>) and a choice of threads have equal
+(<a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DEADLINE" title="CONFIG_SCHED_DEADLINE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DEADLINE</span></code></a>) and a choice of threads have equal
 static priority, then the thread with the earlier deadline is considered
 to have the higher priority. Thus, when earliest-deadline-first scheduling is
 enabled, two threads are only considered to have the same priority when both
@@ -294,7 +296,7 @@ cooperative threads and preemptive threads.</p>
 implementation, offering different choices between code size, constant factor
 runtime overhead and performance scaling when many threads are added.</p>
 <ul>
-<li><p>Simple linked-list ready queue (<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DUMB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DUMB</span></code></a>)</p>
+<li><p>Simple linked-list ready queue (<a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DUMB" title="CONFIG_SCHED_DUMB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DUMB</span></code></a>)</p>
 <p>The scheduler ready queue will be implemented as a simple unordered list, with
 very fast constant time performance for single threads and very low code size.
 This implementation should be selected on systems with constrained code size
@@ -302,7 +304,7 @@ that will never see more than a small number (3, maybe) of runnable threads in
 the queue at any given time.  On most platforms (that are not otherwise using
 the red/black tree) this results in a savings of ~2k of code size.</p>
 </li>
-<li><p>Red/black tree ready queue (<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_SCALABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_SCALABLE</span></code></a>)</p>
+<li><p>Red/black tree ready queue (<a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_SCALABLE" title="CONFIG_SCHED_SCALABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_SCALABLE</span></code></a>)</p>
 <p>The scheduler ready queue will be implemented as a red/black tree.  This has
 rather slower constant-time insertion and removal overhead, and on most
 platforms (that are not otherwise using the red/black tree somewhere) requires
@@ -311,7 +313,7 @@ quickly into the many thousands of threads.</p>
 <p>Use this for applications needing many concurrent runnable threads (&gt; 20 or
 so).  Most applications won’t need this ready queue implementation.</p>
 </li>
-<li><p>Traditional multi-queue ready queue (<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_MULTIQ"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_MULTIQ</span></code></a>)</p>
+<li><p>Traditional multi-queue ready queue (<a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_MULTIQ" title="CONFIG_SCHED_MULTIQ"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_MULTIQ</span></code></a>)</p>
 <p>When selected, the scheduler ready queue will be implemented as the
 classic/textbook array of lists, one per priority (max 32 priorities).</p>
 <p>This corresponds to the scheduler algorithm used in Zephyr versions prior to
@@ -330,16 +332,16 @@ DUMB scheduler.</p>
 shares the same backend data structure choices as the scheduler, and can use
 the same options.</p>
 <ul>
-<li><p>Scalable wait_q implementation (<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_WAITQ_SCALABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WAITQ_SCALABLE</span></code></a>)</p>
+<li><p>Scalable wait_q implementation (<a class="reference internal" href="../../../kconfig.html#CONFIG_WAITQ_SCALABLE" title="CONFIG_WAITQ_SCALABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_WAITQ_SCALABLE</span></code></a>)</p>
 <p>When selected, the wait_q will be implemented with a balanced tree.  Choose
 this if you expect to have many threads waiting on individual primitives.
-There is a ~2kb code size increase over <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_WAITQ_DUMB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WAITQ_DUMB</span></code></a> (which may
-be shared with <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_SCALABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_SCALABLE</span></code></a>) if the red/black tree is not
+There is a ~2kb code size increase over <a class="reference internal" href="../../../kconfig.html#CONFIG_WAITQ_DUMB" title="CONFIG_WAITQ_DUMB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_WAITQ_DUMB</span></code></a> (which may
+be shared with <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_SCALABLE" title="CONFIG_SCHED_SCALABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_SCALABLE</span></code></a>) if the red/black tree is not
 used elsewhere in the application, and pend/unpend operations on “small”
 queues will be somewhat slower (though this is not generally a performance
 path).</p>
 </li>
-<li><p>Simple linked-list wait_q (<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_WAITQ_DUMB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_WAITQ_DUMB</span></code></a>)</p>
+<li><p>Simple linked-list wait_q (<a class="reference internal" href="../../../kconfig.html#CONFIG_WAITQ_DUMB" title="CONFIG_WAITQ_DUMB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_WAITQ_DUMB</span></code></a>)</p>
 <p>When selected, the wait_q will be implemented with a doubly-linked list.
 Choose this if you expect to have only a few threads blocked on any single
 IPC primitive.</p>
@@ -468,8 +470,8 @@ over less time-sensitive processing.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -45,6 +45,8 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
@@ -299,6 +301,8 @@
       <node id="73">
         <label>include/logging/log_output.h</label>
         <link refid="log__output_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="74" relation="include">
@@ -1789,6 +1793,26 @@
         </inbodydescription>
         <location file="include/logging/log_msg.h" line="483" column="10" declfile="include/logging/log_msg.h" declline="483" declcolumn="10"/>
       </memberdef>
+      <memberdef kind="function" id="group__log__msg_1ga9169257736149471c6b0692102a9330c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t log_msg_get_slab_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>log_msg_get_slab_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get slab size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of a slab used in slab pool for log messages. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_msg.h" line="490" column="8" declfile="include/logging/log_msg.h" declline="490" declcolumn="8"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -2064,12 +2088,12 @@
 <codeline lineno="479"><highlight class="normal"></highlight></codeline>
 <codeline lineno="483" refid="group__log__msg_1gafb77acf737b6a62fcd3545af569ba1ec" refkind="member"><highlight class="normal"><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="group__log__msg_1gafb77acf737b6a62fcd3545af569ba1ec" kindref="member">log_msg_mem_get_max_used</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="484"><highlight class="normal"></highlight></codeline>
-<codeline lineno="485"><highlight class="normal"></highlight></codeline>
-<codeline lineno="490"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="491"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="492"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="493"><highlight class="normal"></highlight></codeline>
-<codeline lineno="494"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_LOGGING_LOG_MSG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="490" refid="group__log__msg_1ga9169257736149471c6b0692102a9330c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__log__msg_1ga9169257736149471c6b0692102a9330c" kindref="member">log_msg_get_slab_size</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="496"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="499"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_LOGGING_LOG_MSG_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/logging/log_msg.h"/>
   </compounddef>

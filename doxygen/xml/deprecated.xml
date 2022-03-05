@@ -7,23 +7,11 @@
     </briefdescription>
     <detaileddescription>
 <para><variablelist>
-<varlistentry><term>Global <ref refid="group__subsys__pm__device_1ga9ee3ee2f5dac79c85fc901c179fbadf9" kindref="member">device_any_busy_check</ref>  (void)</term></varlistentry>
-<listitem><para><anchor id="deprecated_1_deprecated000007"/>Use <ref refid="group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411" kindref="member">pm_device_is_any_busy()</ref> instead </para>
-</listitem>
-<varlistentry><term>Global <ref refid="group__subsys__pm__device_1ga24bd4cb295002584c4f8183e937badc1" kindref="member">device_busy_check</ref>  (const struct device *dev)</term></varlistentry>
-<listitem><para><anchor id="deprecated_1_deprecated000008"/>Use <ref refid="group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c" kindref="member">pm_device_is_busy()</ref> instead </para>
-</listitem>
-<varlistentry><term>Global <ref refid="group__subsys__pm__device_1gadff113f34359db32c8739294143a1c8f" kindref="member">device_busy_clear</ref>  (const struct device *dev)</term></varlistentry>
-<listitem><para><anchor id="deprecated_1_deprecated000006"/>Use <ref refid="group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275" kindref="member">pm_device_busy_clear()</ref> instead </para>
-</listitem>
-<varlistentry><term>Global <ref refid="group__subsys__pm__device_1gabfaec92a92766154b8b9ac9dd29f2c1e" kindref="member">device_busy_set</ref>  (const struct device *dev)</term></varlistentry>
-<listitem><para><anchor id="deprecated_1_deprecated000005"/>Use <ref refid="group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06" kindref="member">pm_device_busy_set()</ref> instead </para>
-</listitem>
 <varlistentry><term>Global <ref refid="group__device__model_1ga233b32dc38630069c1aee973fa52416e" kindref="member">device_usable_check</ref>  (const struct device *dev)</term></varlistentry>
 <listitem><para><anchor id="deprecated_1_deprecated000003"/>Use <ref refid="group__device__model_1gaa4944bd850e90cbd52b0489f9b12edfb" kindref="member">device_is_ready()</ref> instead. </para>
 </listitem>
-<varlistentry><term>Global <ref refid="group__subsys__pm__device_1ga37fb93d42a507abc7aa51c4a08e5353c" kindref="member">pm_device_state_set</ref>  (const struct device *dev, enum pm_device_state state)</term></varlistentry>
-<listitem><para><anchor id="deprecated_1_deprecated000004"/>Use <ref refid="group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde" kindref="member">pm_device_action_run()</ref> instead. </para>
+<varlistentry><term>Global <ref refid="group__nvs__high__level__api_1ga7f17dc517f55d39ba1ef07d38cf4879b" kindref="member">nvs_init</ref>  (struct <ref refid="structnvs__fs" kindref="compound">nvs_fs</ref> *fs, const char *dev_name)</term></varlistentry>
+<listitem><para><anchor id="deprecated_1_deprecated000004"/>Use <ref refid="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" kindref="member">nvs_mount()</ref> instead. </para>
 </listitem>
 <varlistentry><term>Global <ref refid="group__device__model_1ga42092d245664c3d59c30ceb4776bd642" kindref="member">SYS_DEVICE_DEFINE</ref>  (drv_name, init_fn, level, prio)</term></varlistentry>
 <listitem><para><anchor id="deprecated_1_deprecated000001"/>Use <ref refid="group__device__model_1ga1e50fdff086356a75b0e91179952cc8d" kindref="member">SYS_INIT()</ref> instead.</para>

@@ -12,7 +12,7 @@ var searchData=
   ['mdm_5fhl7800_5fgps_5fstring_5ftypes_9',['mdm_hl7800_gps_string_types',['../hl7800_8h.html#a45fd97039bb3add8ddb09f803ce9b038',1,'hl7800.h']]],
   ['mdm_5fhl7800_5fnetwork_5fstate_10',['mdm_hl7800_network_state',['../hl7800_8h.html#a65c8ed3a7c2a2aee39ca65e57f33b773',1,'hl7800.h']]],
   ['mdm_5fhl7800_5fradio_5fmode_11',['mdm_hl7800_radio_mode',['../hl7800_8h.html#a2d26759e8ea3aca2e8e4a6cccac2361a',1,'hl7800.h']]],
-  ['mdm_5fhl7800_5fsleep_5fstate_12',['mdm_hl7800_sleep_state',['../hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707',1,'hl7800.h']]],
+  ['mdm_5fhl7800_5fsleep_12',['mdm_hl7800_sleep',['../hl7800_8h.html#a3396149e553c32a597739096efe2aff7',1,'hl7800.h']]],
   ['mdm_5fhl7800_5fstartup_5fstate_13',['mdm_hl7800_startup_state',['../hl7800_8h.html#aefcf9c39983d8f3f58bcd1a24ca04e99',1,'hl7800.h']]],
   ['media_5ftype_14',['MEDIA_TYPE',['../a2dp_8h.html#a6244624a5a6adb228209853282d6f7da',1,'a2dp.h']]],
   ['message_5finfo_15',['message_info',['../msgq_2msgq__usage_2src_2main_8c.html#afd33fb6f69f5e0bcc6d5608630a20abe',1,'main.c']]],

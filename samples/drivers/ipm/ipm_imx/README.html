@@ -43,7 +43,7 @@
             <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -159,6 +161,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../led_sx1509b_intensity/README.html">SX1509B LED Intensity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../led_ws2812/README.html">WS2812 Sample Application</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../misc/ft800/README.html">FT800</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../misc/grove_display/README.html">Grove LCD</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../peci/README.html">PECI Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../ps2/README.html">PS/2 Interface</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../spi_bitbang/README.html">SPI-Bitbang Sample</a></li>
@@ -192,7 +195,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -263,10 +266,10 @@ using the IPM and transmits it back unchanged. The information about
 the received data is printed to the console. When sending the data back,
 it blocks until the data are read by the remote side.</p>
 <p>The i.MX Messaging Unit peripheral consists of four 32-bit transmit and receive
-registers. The sample uses the option <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_IPM_IMX_MAX_DATA_SIZE_4"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IPM_IMX_MAX_DATA_SIZE_4</span></code></a>,
+registers. The sample uses the option <a class="reference internal" href="../../../../kconfig.html#CONFIG_IPM_IMX_MAX_DATA_SIZE_4" title="CONFIG_IPM_IMX_MAX_DATA_SIZE_4"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_IPM_IMX_MAX_DATA_SIZE_4</span></code></a>,
 which effectively creates four IPM channels. Selecting the option
-<a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_IPM_IMX_MAX_DATA_SIZE_8"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IPM_IMX_MAX_DATA_SIZE_8</span></code></a> or
-<a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_IPM_IMX_MAX_DATA_SIZE_16"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IPM_IMX_MAX_DATA_SIZE_16</span></code></a> would result in two 64-bit channels
+<a class="reference internal" href="../../../../kconfig.html#CONFIG_IPM_IMX_MAX_DATA_SIZE_8" title="CONFIG_IPM_IMX_MAX_DATA_SIZE_8"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_IPM_IMX_MAX_DATA_SIZE_8</span></code></a> or
+<a class="reference internal" href="../../../../kconfig.html#CONFIG_IPM_IMX_MAX_DATA_SIZE_16" title="CONFIG_IPM_IMX_MAX_DATA_SIZE_16"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_IPM_IMX_MAX_DATA_SIZE_16</span></code></a> would result in two 64-bit channels
 or a single 128-bit channel respectively.</p>
 <p>Note that this is just a simple demo to demonstrate the i.MX IPM functionality
 and blocking sending of the data back is done in the interrupt handler, which
@@ -323,8 +326,8 @@ and write data into the Messaging Unit.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

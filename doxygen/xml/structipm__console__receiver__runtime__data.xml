@@ -80,35 +80,35 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="14">
+      <node id="9">
         <label>__thread_entry</label>
       </node>
-      <node id="12">
+      <node id="7">
         <label>_callee_saved</label>
       </node>
-      <node id="16">
+      <node id="11">
         <label>_mem_domain_info</label>
       </node>
-      <node id="20">
+      <node id="16">
         <label>_thread_arch</label>
       </node>
-      <node id="11">
+      <node id="6">
         <label>_thread_base</label>
       </node>
-      <node id="15">
+      <node id="10">
         <label>_thread_stack_info</label>
       </node>
-      <node id="13">
+      <node id="8">
         <label>_wait_q_t</label>
       </node>
-      <node id="8">
+      <node id="3">
         <label>device</label>
         <link refid="structdevice"/>
-        <childnode refid="9" relation="usage">
+        <childnode refid="4" relation="usage">
           <edgelabel>state</edgelabel>
         </childnode>
       </node>
-      <node id="9">
+      <node id="4">
         <label>device_state</label>
         <link refid="structdevice__state"/>
       </node>
@@ -118,104 +118,73 @@
         <childnode refid="2" relation="usage">
           <edgelabel>rb</edgelabel>
         </childnode>
-        <childnode refid="8" relation="usage">
+        <childnode refid="3" relation="usage">
           <edgelabel>ipm_device</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>rx_thread</edgelabel>
         </childnode>
       </node>
-      <node id="18">
+      <node id="13">
         <label>k_heap</label>
         <link refid="structk__heap"/>
-        <childnode refid="19" relation="usage">
+        <childnode refid="14" relation="usage">
           <edgelabel>heap</edgelabel>
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>wait_q</edgelabel>
         </childnode>
-        <childnode refid="7" relation="usage">
+        <childnode refid="15" relation="usage">
           <edgelabel>lock</edgelabel>
         </childnode>
       </node>
-      <node id="7">
+      <node id="15">
         <label>k_spinlock</label>
         <link refid="structk__spinlock"/>
       </node>
-      <node id="10">
+      <node id="5">
         <label>k_thread</label>
         <link refid="structk__thread"/>
-        <childnode refid="11" relation="usage">
+        <childnode refid="6" relation="usage">
           <edgelabel>base</edgelabel>
         </childnode>
-        <childnode refid="12" relation="usage">
+        <childnode refid="7" relation="usage">
           <edgelabel>callee_saved</edgelabel>
         </childnode>
-        <childnode refid="13" relation="usage">
+        <childnode refid="8" relation="usage">
           <edgelabel>join_queue</edgelabel>
         </childnode>
-        <childnode refid="14" relation="usage">
+        <childnode refid="9" relation="usage">
           <edgelabel>entry</edgelabel>
         </childnode>
-        <childnode refid="10" relation="usage">
+        <childnode refid="5" relation="usage">
           <edgelabel>next_thread</edgelabel>
         </childnode>
-        <childnode refid="15" relation="usage">
+        <childnode refid="10" relation="usage">
           <edgelabel>stack_info</edgelabel>
         </childnode>
-        <childnode refid="16" relation="usage">
+        <childnode refid="11" relation="usage">
           <edgelabel>mem_domain_info</edgelabel>
         </childnode>
-        <childnode refid="17" relation="usage">
+        <childnode refid="12" relation="usage">
           <edgelabel>stack_obj</edgelabel>
         </childnode>
-        <childnode refid="18" relation="usage">
+        <childnode refid="13" relation="usage">
           <edgelabel>resource_pool</edgelabel>
         </childnode>
-        <childnode refid="20" relation="usage">
+        <childnode refid="16" relation="usage">
           <edgelabel>arch</edgelabel>
         </childnode>
       </node>
       <node id="2">
         <label>ring_buf</label>
         <link refid="structring__buf"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>misc</edgelabel>
-        </childnode>
-        <childnode refid="6" relation="usage">
-          <edgelabel>buf</edgelabel>
-        </childnode>
-        <childnode refid="7" relation="usage">
-          <edgelabel>lock</edgelabel>
-        </childnode>
       </node>
-      <node id="6">
-        <label>ring_buf::ring_buf_buffer</label>
-        <link refid="unionring__buf_1_1ring__buf__buffer"/>
-      </node>
-      <node id="3">
-        <label>ring_buf::ring_buf_misc</label>
-        <link refid="unionring__buf_1_1ring__buf__misc"/>
-        <childnode refid="4" relation="usage">
-          <edgelabel>item_mode</edgelabel>
-        </childnode>
-        <childnode refid="5" relation="usage">
-          <edgelabel>byte_mode</edgelabel>
-        </childnode>
-      </node>
-      <node id="5">
-        <label>ring_buf::ring_buf_misc::ring_buf_misc_byte_mode</label>
-        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__byte__mode"/>
-      </node>
-      <node id="4">
-        <label>ring_buf::ring_buf_misc::ring_buf_misc_item_mode</label>
-        <link refid="structring__buf_1_1ring__buf__misc_1_1ring__buf__misc__item__mode"/>
-      </node>
-      <node id="19">
+      <node id="14">
         <label>sys_heap</label>
         <link refid="structsys__heap"/>
       </node>
-      <node id="17">
+      <node id="12">
         <label>z_thread_stack_element</label>
       </node>
     </collaborationgraph>

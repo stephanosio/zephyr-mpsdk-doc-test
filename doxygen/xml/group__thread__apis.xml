@@ -55,7 +55,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_THREAD_MONITOR` </verbatim> must be set for this function to be effective. </para>
+<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_THREAD_MONITOR` </verbatim> must be set for this function to be effective. </para>
 </simplesect>
 <simplesect kind="note"><para>This API uses <ref refid="group__spinlock__apis_1gaac60da4347f5b29ff8c4e5f24c99b3bf" kindref="member">k_spin_lock</ref> to protect the _kernel.threads list which means creation of new threads and terminations of existing threads are blocked until this API returns. </para>
 </simplesect>
@@ -100,7 +100,7 @@
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_THREAD_MONITOR` </verbatim> must be set for this function to be effective. </para>
+<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_THREAD_MONITOR` </verbatim> must be set for this function to be effective. </para>
 </simplesect>
 <simplesect kind="note"><para>This API uses <ref refid="group__spinlock__apis_1gaac60da4347f5b29ff8c4e5f24c99b3bf" kindref="member">k_spin_lock</ref> only when accessing the _kernel.threads queue elements. It unlocks it during user callback function processing. If a new task is created when this <computeroutput>foreach</computeroutput> function is in progress, the added new task would not be included in the enumeration. If a task is aborted during this enumeration, there would be a race here and there is a possibility that this aborted task would be included in the enumeration. </para>
 </simplesect>
@@ -167,14 +167,14 @@
 <para>Stack objects passed to this function must be originally defined with either of these macros in order to be portable:</para>
 <para><itemizedlist>
 <listitem><para><ref refid="group__thread__stack__api_1gac5368ce24fdeab3863b5c8dee2ebd955" kindref="member">K_THREAD_STACK_DEFINE()</ref> - For stacks that may support either user or supervisor threads.</para>
-</listitem><listitem><para><ref refid="threads_2thread__stack_2src_2main_8c_1abf20d8da7b5829da0eb6ccb4dae81b37" kindref="member">K_KERNEL_STACK_DEFINE()</ref> - For stacks that may support supervisor threads only. These stacks use less memory if CONFIG_USERSPACE is enabled.</para>
+</listitem><listitem><para><ref refid="threads_2thread__stack_2src_2main_8c_1a72c0793eec55b1d100382b62b7d3c06d" kindref="member">K_KERNEL_STACK_DEFINE()</ref> - For stacks that may support supervisor threads only. These stacks use less memory if CONFIG_USERSPACE is enabled.</para>
 </listitem></itemizedlist>
 </para>
 <para>The stack_size parameter has constraints. It must either be:</para>
 <para><itemizedlist>
-<listitem><para>The original size value passed to <ref refid="group__thread__stack__api_1gac5368ce24fdeab3863b5c8dee2ebd955" kindref="member">K_THREAD_STACK_DEFINE()</ref> or <ref refid="threads_2thread__stack_2src_2main_8c_1abf20d8da7b5829da0eb6ccb4dae81b37" kindref="member">K_KERNEL_STACK_DEFINE()</ref></para>
+<listitem><para>The original size value passed to <ref refid="group__thread__stack__api_1gac5368ce24fdeab3863b5c8dee2ebd955" kindref="member">K_THREAD_STACK_DEFINE()</ref> or <ref refid="threads_2thread__stack_2src_2main_8c_1a72c0793eec55b1d100382b62b7d3c06d" kindref="member">K_KERNEL_STACK_DEFINE()</ref></para>
 </listitem><listitem><para>The return value of <ref refid="group__thread__stack__api_1ga775f8e6b4144cfdd24f3261b6db64150" kindref="member">K_THREAD_STACK_SIZEOF(stack)</ref> if the stack was defined with <ref refid="group__thread__stack__api_1gac5368ce24fdeab3863b5c8dee2ebd955" kindref="member">K_THREAD_STACK_DEFINE()</ref></para>
-</listitem><listitem><para>The return value of <ref refid="group__thread__stack__api_1ga57b3824b117c634dbb6052d47dc4301c" kindref="member">K_KERNEL_STACK_SIZEOF(stack)</ref> if the stack was defined with <ref refid="threads_2thread__stack_2src_2main_8c_1abf20d8da7b5829da0eb6ccb4dae81b37" kindref="member">K_KERNEL_STACK_DEFINE()</ref>.</para>
+</listitem><listitem><para>The return value of <ref refid="group__thread__stack__api_1ga57b3824b117c634dbb6052d47dc4301c" kindref="member">K_KERNEL_STACK_SIZEOF(stack)</ref> if the stack was defined with <ref refid="threads_2thread__stack_2src_2main_8c_1a72c0793eec55b1d100382b62b7d3c06d" kindref="member">K_KERNEL_STACK_DEFINE()</ref>.</para>
 </listitem></itemizedlist>
 </para>
 <para>Using other values, or sizeof(stack) may produce undefined behavior.</para>
@@ -559,7 +559,7 @@
 <para>Put the current thread to sleep with microsecond resolution. </para>
         </briefdescription>
         <detaileddescription>
-<para>This function is unlikely to work as expected without kernel tuning. In particular, because the lower bound on the duration of a sleep is the duration of a tick, <verbatim>embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim> must be adjusted to achieve the resolution desired. The implications of doing this must be understood before attempting to use <ref refid="group__thread__apis_1gaeac56bb072ce295b9fdc372ab8cee67e" kindref="member">k_usleep()</ref>. Use with caution.</para>
+<para>This function is unlikely to work as expected without kernel tuning. In particular, because the lower bound on the duration of a sleep is the duration of a tick, <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </verbatim> must be adjusted to achieve the resolution desired. The implications of doing this must be understood before attempting to use <ref refid="group__thread__apis_1gaeac56bb072ce295b9fdc372ab8cee67e" kindref="member">k_usleep()</ref>. Use with caution.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>us</parametername>
@@ -867,7 +867,7 @@
 </simplesect>
 <simplesect kind="note"><para>Despite the API naming, the scheduler makes no guarantees the the thread WILL be scheduled within that deadline, nor does it take extra metadata (like e.g. the &quot;runtime&quot; and &quot;period&quot; parameters in Linux sched_setattr()) that allows the kernel to validate the scheduling for achievability. Such features could be implemented above this call, which is simply input to the priority selection logic.</para>
 </simplesect>
-<simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
+<simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -906,7 +906,7 @@
         </briefdescription>
         <detaileddescription>
 <para>After this returns, the thread will no longer be schedulable on any CPUs. The thread must not be currently runnable.</para>
-<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
+<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -939,7 +939,7 @@
         </briefdescription>
         <detaileddescription>
 <para>After this returns, the thread will be schedulable on any CPU. The thread must not be currently runnable.</para>
-<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
+<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -976,7 +976,7 @@
         </briefdescription>
         <detaileddescription>
 <para>The thread must not be currently runnable.</para>
-<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
+<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1021,7 +1021,7 @@
         </briefdescription>
         <detaileddescription>
 <para>The thread must not be currently runnable.</para>
-<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
+<para><simplesect kind="note"><para>You should enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </verbatim> in your project configuration.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1261,7 +1261,7 @@
 <para>Set current thread name. </para>
         </briefdescription>
         <detaileddescription>
-<para>Set the name of the thread to be used when <verbatim>embed:rst:inline :kconfig:`CONFIG_THREAD_MONITOR` </verbatim> is enabled for tracing and debugging.</para>
+<para>Set the name of the thread to be used when <verbatim>embed:rst:inline :kconfig:option:`CONFIG_THREAD_MONITOR` </verbatim> is enabled for tracing and debugging.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>thread</parametername>
@@ -1500,7 +1500,7 @@
 <para>FPU registers are managed by context switch. </para>
         </briefdescription>
         <detaileddescription>
-<para>This option indicates that the thread uses the CPU&apos;s floating point registers. This instructs the kernel to take additional steps to save and restore the contents of these registers when scheduling the thread. No effect if <verbatim>embed:rst:inline :kconfig:`CONFIG_FPU_SHARING` </verbatim> is not enabled. </para>
+<para>This option indicates that the thread uses the CPU&apos;s floating point registers. This instructs the kernel to take additional steps to save and restore the contents of these registers when scheduling the thread. No effect if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_FPU_SHARING` </verbatim> is not enabled. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1526,7 +1526,7 @@
 <para>Inherit Permissions. </para>
         </briefdescription>
         <detaileddescription>
-<para>Indicates that the thread being created should inherit all kernel object permissions from the thread that created it. No effect if <verbatim>embed:rst:inline :kconfig:`CONFIG_USERSPACE` </verbatim> is not enabled. </para>
+<para>Indicates that the thread being created should inherit all kernel object permissions from the thread that created it. No effect if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_USERSPACE` </verbatim> is not enabled. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -1590,7 +1590,7 @@
         <param><defname>prio</defname></param>
         <param><defname>options</defname></param>
         <param><defname>delay</defname></param>
-        <initializer>	<ref refid="workq_2work__queue_2src_2main_8c_1aea43146399d79961f9fc8020163c997d" kindref="member">K_THREAD_STACK_DEFINE</ref>(_k_thread_stack_##name, stack_size);	 \
+        <initializer>	<ref refid="workq_2work__queue_2src_2main_8c_1a3cae6f14ff609be8071cbbcf686729b6" kindref="member">K_THREAD_STACK_DEFINE</ref>(_k_thread_stack_##name, stack_size);	 \
 	struct <ref refid="structk__thread" kindref="compound">k_thread</ref> _k_thread_obj_##name;				 \
 	<ref refid="group__iterable__section__apis_1gabed6642b8cc06863ce97dd536698004d" kindref="member">STRUCT_SECTION_ITERABLE</ref>(_static_thread_data, _k_thread_data_##name) = \
 		Z_THREAD_INITIALIZER(&amp;_k_thread_obj_##name,		 \

@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="copyright" title="Copyright" href="../../copyright.html" />
-    <link rel="next" title="Bindings index" href="bindings.html" />
+    <link rel="next" title="Dummy bindings index" href="bindings.html" />
     <link rel="prev" title="Devicetree" href="index.html" />
   <meta name="color-scheme" content="dark light">
   
@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -122,7 +124,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#chosen-nodes">Chosen nodes</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="bindings.html">Bindings index</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bindings.html">Dummy bindings index</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drivers/index.html">Device Driver Model</a></li>
@@ -173,7 +175,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -7135,7 +7137,7 @@ into</p></td>
 </tr>
 <tr class="row-even"><td><p>zephyr,flash</p></td>
 <td><p>A node whose <code class="docutils literal notranslate"><span class="pre">reg</span></code> is sometimes used to set the defaults for
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_FLASH_BASE_ADDRESS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FLASH_BASE_ADDRESS</span></code></a> and <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_FLASH_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FLASH_SIZE</span></code></a></p></td>
+<a class="reference internal" href="../../kconfig.html#CONFIG_FLASH_BASE_ADDRESS" title="CONFIG_FLASH_BASE_ADDRESS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FLASH_BASE_ADDRESS</span></code></a> and <a class="reference internal" href="../../kconfig.html#CONFIG_FLASH_SIZE" title="CONFIG_FLASH_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FLASH_SIZE</span></code></a></p></td>
 </tr>
 <tr class="row-odd"><td><p>zephyr,flash-controller</p></td>
 <td><p>The node corresponding to the flash controller device for
@@ -7153,26 +7155,29 @@ interprocess-communication (IPC)</p></td>
 <tr class="row-even"><td><p>zephyr,itcm</p></td>
 <td><p>Instruction Tightly Coupled Memory node on some Arm SoCs</p></td>
 </tr>
-<tr class="row-odd"><td><p>zephyr,ot-uart</p></td>
+<tr class="row-odd"><td><p>zephyr,ocm</p></td>
+<td><p>On-chip memory node on Xilinx Zynq-7000 and ZynqMP SoCs</p></td>
+</tr>
+<tr class="row-even"><td><p>zephyr,ot-uart</p></td>
 <td><p>Used by the OpenThread to specify UART device for Spinel protocol</p></td>
 </tr>
-<tr class="row-even"><td><p>zephyr,pcie-controller</p></td>
+<tr class="row-odd"><td><p>zephyr,pcie-controller</p></td>
 <td><p>The node corresponding to the PCIe Controller</p></td>
 </tr>
-<tr class="row-odd"><td><p>zephyr,shell-uart</p></td>
+<tr class="row-even"><td><p>zephyr,shell-uart</p></td>
 <td><p>Sets UART device used by serial shell backend</p></td>
 </tr>
-<tr class="row-even"><td><p>zephyr,sram</p></td>
+<tr class="row-odd"><td><p>zephyr,sram</p></td>
 <td><p>A node whose <code class="docutils literal notranslate"><span class="pre">reg</span></code> sets the base address and size of SRAM memory
 available to the Zephyr image, used during linking</p></td>
 </tr>
-<tr class="row-odd"><td><p>zephyr,uart-mcumgr</p></td>
+<tr class="row-even"><td><p>zephyr,uart-mcumgr</p></td>
 <td><p>UART used for <a class="reference internal" href="../../guides/device_mgmt/index.html#device-mgmt"><span class="std std-ref">Device Management</span></a></p></td>
 </tr>
-<tr class="row-even"><td><p>zephyr,uart-pipe</p></td>
-<td><p>Sets default <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_UART_PIPE_ON_DEV_NAME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UART_PIPE_ON_DEV_NAME</span></code></a></p></td>
+<tr class="row-odd"><td><p>zephyr,uart-pipe</p></td>
+<td><p>Sets default <a class="reference internal" href="../../kconfig.html#CONFIG_UART_PIPE_ON_DEV_NAME" title="CONFIG_UART_PIPE_ON_DEV_NAME"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UART_PIPE_ON_DEV_NAME</span></code></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>zephyr,usb-device</p></td>
+<tr class="row-even"><td><p>zephyr,usb-device</p></td>
 <td><p>USB device node. If defined and has a <code class="docutils literal notranslate"><span class="pre">vbus-gpios</span></code> property, these
 will be used by the USB subsystem to enable/disable VBUS</p></td>
 </tr>
@@ -7190,8 +7195,8 @@ will be used by the USB subsystem to enable/disable VBUS</p></td>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

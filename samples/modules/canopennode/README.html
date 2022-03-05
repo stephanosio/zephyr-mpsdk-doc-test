@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -159,7 +161,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -270,6 +272,21 @@ LED indicators (red and green LEDs)</p>
 </div>
 <p>Pressing the button labelled <code class="docutils literal notranslate"><span class="pre">SW3</span></code> will increment the button press
 counter object at index <code class="docutils literal notranslate"><span class="pre">0x2102</span></code> in the object dictionary.</p>
+</div>
+<div class="section" id="building-and-running-for-stm32f072rb-discovery">
+<h3>Building and Running for STM32F072RB Discovery<a class="headerlink" href="#building-and-running-for-stm32f072rb-discovery" title="Permalink to this headline">¶</a></h3>
+<p>The <a class="reference internal" href="../../../boards/arm/stm32f072b_disco/doc/index.html#stm32f072b-disco-board"><span class="std std-ref">ST STM32F072B Discovery</span></a> board does not come with an onboard CAN
+transceiver. In order to use the CAN bus on the STM32F072RB Discovery board, an
+external CAN bus tranceiver must be connected to <code class="docutils literal notranslate"><span class="pre">PB8</span></code> (<code class="docutils literal notranslate"><span class="pre">CAN_RX</span></code>) and
+<code class="docutils literal notranslate"><span class="pre">PB9</span></code> (<code class="docutils literal notranslate"><span class="pre">CAN_TX</span></code>). This board supports CANopen LED indicators (red and green
+LEDs)</p>
+<p>The sample can be built and executed for the STM32F072RB Discovery as follows:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">west build -b stm32f072b_disco samples/modules/canopennode</span>
+<span class="go">west flash</span>
+</pre></div>
+</div>
+<p>Pressing the button labelled <code class="docutils literal notranslate"><span class="pre">USER</span></code> will increment the button press counter
+object at index <code class="docutils literal notranslate"><span class="pre">0x2102</span></code> in the object dictionary.</p>
 </div>
 <div class="section" id="building-and-running-for-stm32f3-discovery">
 <h3>Building and Running for STM32F3 Discovery<a class="headerlink" href="#building-and-running-for-stm32f3-discovery" title="Permalink to this headline">¶</a></h3>
@@ -617,8 +634,8 @@ Sheet (EDS) file
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -6,7 +6,7 @@ var threads_2dynamic__thread_2src_2main_8c =
     [ "K_SEM_DEFINE", "threads_2dynamic__thread_2src_2main_8c.html#afebf66b50a8f3bddac11c03b0cd14879", null ],
     [ "K_SEM_DEFINE", "threads_2dynamic__thread_2src_2main_8c.html#a27bacbd13578b2cc811bad3fc6d775fd", null ],
     [ "k_sys_fatal_error_handler", "group__fatal__apis.html#gab6dfd75572a84729df534fde49ef7d85", null ],
-    [ "K_THREAD_STACK_DEFINE", "threads_2dynamic__thread_2src_2main_8c.html#aa1ba719324dea8f6f41919d32b8b05bb", null ],
+    [ "K_THREAD_STACK_DEFINE", "threads_2dynamic__thread_2src_2main_8c.html#afe03976e29db90117872356499265232", null ],
     [ "permission_test", "threads_2dynamic__thread_2src_2main_8c.html#a07d108abc61685e3bd6f3f785a68014d", null ],
     [ "prep", "threads_2dynamic__thread_2src_2main_8c.html#a829c8ff6e3c5bec2a5e1a6e002e40040", null ],
     [ "test_dyn_thread_perms", "group__kernel__thread__tests.html#gaa4cf5403b180b184ac8882fdacacfe41", null ],

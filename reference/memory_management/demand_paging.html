@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -175,7 +177,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -312,14 +314,14 @@ the application.</p>
 <div class="section" id="paging-statistics">
 <h2>Paging Statistics<a class="headerlink" href="#paging-statistics" title="Permalink to this headline">¶</a></h2>
 <p>Paging statistics can be obtained via various function calls when
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS</span></code></a> is enabled:</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS" title="CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS</span></code></a> is enabled:</p>
 <ul class="simple">
 <li><p>Overall statistics via <a class="reference internal" href="#c.k_mem_paging_stats_get" title="k_mem_paging_stats_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_mem_paging_stats_get()</span></code></a></p></li>
 <li><p>Per-thread statistics via <a class="reference internal" href="#c.k_mem_paging_thread_stats_get" title="k_mem_paging_thread_stats_get"><code class="xref c c-func docutils literal notranslate"><span class="pre">k_mem_paging_thread_stats_get()</span></code></a>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DEMAND_PAGING_THREAD_STATS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_THREAD_STATS</span></code></a> is enabled</p></li>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_DEMAND_PAGING_THREAD_STATS" title="CONFIG_DEMAND_PAGING_THREAD_STATS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_THREAD_STATS</span></code></a> is enabled</p></li>
 <li><p>Execution time histogram can be obtained when
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM</span></code></a> is enabled, and
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS</span></code></a> is defined.
+<a class="reference internal" href="../../kconfig.html#CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM" title="CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM</span></code></a> is enabled, and
+<a class="reference internal" href="../../kconfig.html#CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS" title="CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DEMAND_PAGING_TIMING_HISTOGRAM_NUM_BINS</span></code></a> is defined.
 Note that the timing is highly dependent on the architecture,
 SoC or board. It is highly recommended that
 <code class="docutils literal notranslate"><span class="pre">k_mem_paging_eviction_histogram_bounds[]</span></code> and
@@ -708,8 +710,8 @@ function if so desired.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

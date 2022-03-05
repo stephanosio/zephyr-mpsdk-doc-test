@@ -15,10 +15,10 @@
         <childnode refid="44" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="23">
         <label>logging/log_backend.h</label>
         <link refid="log__backend_8h"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
@@ -28,11 +28,13 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
       </node>
       <node id="44">
         <label>logging/log_core.h</label>
         <link refid="include_2logging_2log__core_8h"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
@@ -57,14 +59,14 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="24">
         <label>logging/log_msg.h</label>
         <link refid="log__msg_8h"/>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
@@ -78,11 +80,13 @@
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
         </childnode>
@@ -92,13 +96,13 @@
       <node id="41">
         <label>logging/log_output.h</label>
         <link refid="log__output_8h"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
       <node id="47">
@@ -116,9 +120,9 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
@@ -127,7 +131,7 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="21">
         <label>shell/shell_fprintf.h</label>
         <link refid="shell__fprintf_8h"/>
         <childnode refid="3" relation="include">
@@ -151,18 +155,18 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="22">
         <label>shell/shell_log_backend.h</label>
         <link refid="shell__log__backend_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="41" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -176,7 +180,7 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
@@ -189,7 +193,7 @@
         <childnode refid="39" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="25">
         <label>sys/atomic.h</label>
         <link refid="atomic_8h"/>
         <childnode refid="10" relation="include">
@@ -202,10 +206,10 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="26">
         <label>sys/atomic_builtin.h</label>
         <link refid="atomic__builtin_8h"/>
       </node>
@@ -268,7 +272,7 @@
       <node id="30">
         <label>sys/mpsc_packet.h</label>
         <link refid="mpsc__packet_8h"/>
-        <childnode refid="21" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -282,7 +286,7 @@
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -309,8 +313,6 @@
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -383,7 +385,7 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="27">
         <label>string.h</label>
         <link refid="string_8h"/>
         <childnode refid="12" relation="include">

@@ -5,6 +5,7 @@
     <includes refid="lib_2libc_2minimal_2include_2sys_2types_8h" local="no">sys/types.h</includes>
     <includes local="no">kernel.h</includes>
     <includes local="no">device.h</includes>
+    <includes refid="toolchain_8h" local="no">toolchain.h</includes>
     <incdepgraph>
       <node id="1">
         <label>include/fs/nvs.h</label>
@@ -15,6 +16,12 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>toolchain.h</label>
+        <link refid="toolchain_8h"/>
       </node>
       <node id="3">
         <label>stdint.h</label>
@@ -43,38 +50,26 @@
     </incdepgraph>
     <innerclass refid="structnvs__fs" prot="public">nvs_fs</innerclass>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__nvs__high__level__api_1ga1867563e4a7932f25f3c961114d746d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
-        <definition>int nvs_init</definition>
-        <argsstring>(struct nvs_fs *fs, const char *dev_name)</argsstring>
-        <name>nvs_init</name>
+        <definition>int nvs_mount</definition>
+        <argsstring>(struct nvs_fs *fs)</argsstring>
+        <name>nvs_mount</name>
         <param>
           <type>struct <ref refid="structnvs__fs" kindref="compound">nvs_fs</ref> *</type>
           <declname>fs</declname>
         </param>
-        <param>
-          <type>const char *</type>
-          <declname>dev_name</declname>
-        </param>
         <briefdescription>
-<para>nvs_init </para>
+<para>nvs_mount </para>
         </briefdescription>
         <detaileddescription>
-<para>Initializes a NVS file system in flash.</para>
+<para>Mount a NVS file system onto the flash device specified in <computeroutput>fs</computeroutput>.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>fs</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Pointer to file system </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>dev_name</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to flash device name </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -448,6 +443,66 @@
         </inbodydescription>
         <location file="include/fs/nvs.h" line="166" column="9" declfile="include/fs/nvs.h" declline="166" declcolumn="9"/>
       </memberdef>
+      <memberdef kind="function" id="group__nvs__high__level__api_1ga7f17dc517f55d39ba1ef07d38cf4879b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int nvs_init</definition>
+        <argsstring>(struct nvs_fs *fs, const char *dev_name)</argsstring>
+        <name>nvs_init</name>
+        <param>
+          <type>struct <ref refid="structnvs__fs" kindref="compound">nvs_fs</ref> *</type>
+          <declname>fs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dev_name</declname>
+        </param>
+        <briefdescription>
+<para>nvs_init </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a NVS file system in flash.</para>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" kindref="member">nvs_mount()</ref> instead.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to file system </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dev_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to flash device name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Success </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-ERRNO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>errno code if error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/fs/nvs.h" line="180" column="20" bodyfile="include/fs/nvs.h" bodystart="180" bodyend="188"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
@@ -466,24 +521,25 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="lib_2libc_2minimal_2include_2sys_2types_8h" kindref="compound">sys/types.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;device.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47" refid="structnvs__fs" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>{</highlight></codeline>
-<codeline lineno="48" refid="structnvs__fs_1a793b43b069d5e7a42963d84423ab5717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off_t<sp/><ref refid="structnvs__fs_1a793b43b069d5e7a42963d84423ab5717" kindref="member">offset</ref>;</highlight></codeline>
-<codeline lineno="49" refid="structnvs__fs_1aba5caa7709d58fa018cbb91db085f140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structnvs__fs_1aba5caa7709d58fa018cbb91db085f140" kindref="member">ate_wra</ref>;</highlight></codeline>
-<codeline lineno="50" refid="structnvs__fs_1ac6bc3719e803f27fc20de5ebc63d7707" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structnvs__fs_1ac6bc3719e803f27fc20de5ebc63d7707" kindref="member">data_wra</ref>;</highlight></codeline>
-<codeline lineno="51" refid="structnvs__fs_1a036af291edc8d389b56fcb532e6738df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structnvs__fs_1a036af291edc8d389b56fcb532e6738df" kindref="member">sector_size</ref>;</highlight></codeline>
-<codeline lineno="52" refid="structnvs__fs_1abf8ffaea29e3357ca6e897902fd49a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structnvs__fs_1abf8ffaea29e3357ca6e897902fd49a63" kindref="member">sector_count</ref>;</highlight></codeline>
-<codeline lineno="53" refid="structnvs__fs_1a2a167bd6a1698d2070dbe65b669ba0f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs_1a2a167bd6a1698d2070dbe65b669ba0f4" kindref="member">ready</ref>;</highlight></codeline>
-<codeline lineno="54" refid="structnvs__fs_1a6f49bb17819e3b78e0b3c1a1bc578f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__mutex" kindref="compound">k_mutex</ref><sp/><ref refid="structnvs__fs_1a6f49bb17819e3b78e0b3c1a1bc578f09" kindref="member">nvs_lock</ref>;</highlight></codeline>
-<codeline lineno="55" refid="structnvs__fs_1a02381974223dfbd22fe50b2cfecb7da2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*<ref refid="structnvs__fs_1a02381974223dfbd22fe50b2cfecb7da2" kindref="member">flash_device</ref>;</highlight></codeline>
-<codeline lineno="56" refid="structnvs__fs_1a34f769be6fed7c81254501af207147df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structflash__parameters" kindref="compound">flash_parameters</ref><sp/>*<ref refid="structnvs__fs_1a34f769be6fed7c81254501af207147df" kindref="member">flash_parameters</ref>;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="group__nvs__high__level__api_1ga1867563e4a7932f25f3c961114d746d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__nvs__high__level__api_1ga1867563e4a7932f25f3c961114d746d5" kindref="member">nvs_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>*fs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dev_name);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="toolchain_8h" kindref="compound">toolchain.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structnvs__fs" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structnvs__fs_1a793b43b069d5e7a42963d84423ab5717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>off_t<sp/><ref refid="structnvs__fs_1a793b43b069d5e7a42963d84423ab5717" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="50" refid="structnvs__fs_1aba5caa7709d58fa018cbb91db085f140" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structnvs__fs_1aba5caa7709d58fa018cbb91db085f140" kindref="member">ate_wra</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structnvs__fs_1ac6bc3719e803f27fc20de5ebc63d7707" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="structnvs__fs_1ac6bc3719e803f27fc20de5ebc63d7707" kindref="member">data_wra</ref>;</highlight></codeline>
+<codeline lineno="52" refid="structnvs__fs_1a036af291edc8d389b56fcb532e6738df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structnvs__fs_1a036af291edc8d389b56fcb532e6738df" kindref="member">sector_size</ref>;</highlight></codeline>
+<codeline lineno="53" refid="structnvs__fs_1abf8ffaea29e3357ca6e897902fd49a63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref><sp/><ref refid="structnvs__fs_1abf8ffaea29e3357ca6e897902fd49a63" kindref="member">sector_count</ref>;</highlight></codeline>
+<codeline lineno="54" refid="structnvs__fs_1a2a167bd6a1698d2070dbe65b669ba0f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs_1a2a167bd6a1698d2070dbe65b669ba0f4" kindref="member">ready</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structnvs__fs_1a6f49bb17819e3b78e0b3c1a1bc578f09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__mutex" kindref="compound">k_mutex</ref><sp/><ref refid="structnvs__fs_1a6f49bb17819e3b78e0b3c1a1bc578f09" kindref="member">nvs_lock</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structnvs__fs_1a02381974223dfbd22fe50b2cfecb7da2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice" kindref="compound">device</ref><sp/>*<ref refid="structnvs__fs_1a02381974223dfbd22fe50b2cfecb7da2" kindref="member">flash_device</ref>;</highlight></codeline>
+<codeline lineno="57" refid="structnvs__fs_1a34f769be6fed7c81254501af207147df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structflash__parameters" kindref="compound">flash_parameters</ref><sp/>*<ref refid="structnvs__fs_1a34f769be6fed7c81254501af207147df" kindref="member">flash_parameters</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" kindref="member">nvs_mount</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>*fs);</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90" refid="group__nvs__high__level__api_1ga42ee9fd0d98f89dcabc5888f8b4600f0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__nvs__high__level__api_1ga42ee9fd0d98f89dcabc5888f8b4600f0" kindref="member">nvs_clear</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>*fs);</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
@@ -497,11 +553,21 @@
 <codeline lineno="154"><highlight class="normal"></highlight></codeline>
 <codeline lineno="166" refid="group__nvs__high__level__api_1ga37e5a55f0b9209c7c0c95db9e1e84715" refkind="member"><highlight class="normal"><ref refid="lib_2libc_2minimal_2include_2sys_2types_8h_1a5c5d83d87790efd59ea916c2b99f9118" kindref="member">ssize_t</ref><sp/><ref refid="group__nvs__high__level__api_1ga37e5a55f0b9209c7c0c95db9e1e84715" kindref="member">nvs_calc_free_space</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>*fs);</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"></highlight></codeline>
-<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_FS_NVS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="180" refid="group__nvs__high__level__api_1ga7f17dc517f55d39ba1ef07d38cf4879b" refkind="member"><highlight class="normal">__deprecated<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__nvs__high__level__api_1ga7f17dc517f55d39ba1ef07d38cf4879b" kindref="member">nvs_init</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="structnvs__fs" kindref="compound">nvs_fs</ref><sp/>*fs,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dev_name)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fs-&gt;<ref refid="structnvs__fs_1a02381974223dfbd22fe50b2cfecb7da2" kindref="member">flash_device</ref><sp/>=<sp/><ref refid="group__device__model_1ga15386ca9ab38f3e30183c18f604fa835" kindref="member">device_get_binding</ref>(dev_name);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fs-&gt;<ref refid="structnvs__fs_1a02381974223dfbd22fe50b2cfecb7da2" kindref="member">flash_device</ref><sp/>==<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-<ref refid="group__system__errno_1gab9b8cc17d1947160d13faaba7a18d6d1" kindref="member">ENODEV</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" kindref="member">nvs_mount</ref>(fs);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_FS_NVS_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/fs/nvs.h"/>
   </compounddef>

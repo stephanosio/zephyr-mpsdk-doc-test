@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -133,6 +133,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga1db507f3e01af8258669f18b058913ad"><td class="memItemLeft" align="right" valign="top">typedef int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ipm__interface.html#ga1db507f3e01af8258669f18b058913ad">ipm_set_enabled_t</a>) (const struct <a class="el" href="structdevice.html">device</a> *ipmdev, int enable)</td></tr>
 <tr class="memdesc:ga1db507f3e01af8258669f18b058913ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback API upon enablement of interrupts.  <a href="group__ipm__interface.html#ga1db507f3e01af8258669f18b058913ad">More...</a><br /></td></tr>
 <tr class="separator:ga1db507f3e01af8258669f18b058913ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga868351e00ca191f65fccfbe2514903b5"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ipm__interface.html#ga868351e00ca191f65fccfbe2514903b5">ipm_complete_t</a>) (const struct <a class="el" href="structdevice.html">device</a> *ipmdev)</td></tr>
+<tr class="memdesc:ga868351e00ca191f65fccfbe2514903b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback API upon command completion.  <a href="group__ipm__interface.html#ga868351e00ca191f65fccfbe2514903b5">More...</a><br /></td></tr>
+<tr class="separator:ga868351e00ca191f65fccfbe2514903b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -151,6 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5884fa95cb38ddfe4493eb70dafebe8b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ipm__interface.html#ga5884fa95cb38ddfe4493eb70dafebe8b">ipm_set_enabled</a> (const struct <a class="el" href="structdevice.html">device</a> *ipmdev, int enable)</td></tr>
 <tr class="memdesc:ga5884fa95cb38ddfe4493eb70dafebe8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable interrupts and callbacks for inbound channels.  <a href="group__ipm__interface.html#ga5884fa95cb38ddfe4493eb70dafebe8b">More...</a><br /></td></tr>
 <tr class="separator:ga5884fa95cb38ddfe4493eb70dafebe8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga53f785ecfac17b9fb2e5f3a9505c7fd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ipm__interface.html#ga53f785ecfac17b9fb2e5f3a9505c7fd2">ipm_complete</a> (const struct <a class="el" href="structdevice.html">device</a> *ipmdev)</td></tr>
+<tr class="memdesc:ga53f785ecfac17b9fb2e5f3a9505c7fd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signal asynchronous command completion.  <a href="group__ipm__interface.html#ga53f785ecfac17b9fb2e5f3a9505c7fd2">More...</a><br /></td></tr>
+<tr class="separator:ga53f785ecfac17b9fb2e5f3a9505c7fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Generic low-level inter-processor mailbox communication API. </p>
@@ -161,7 +167,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe5cf12322eb0f9892753dc20f1484c.html">drivers</a></li><li class="navelem"><a class="el" href="ipm_8h.html">ipm.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

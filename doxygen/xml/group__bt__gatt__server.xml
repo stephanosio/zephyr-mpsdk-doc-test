@@ -209,8 +209,8 @@
         </briefdescription>
         <detaileddescription>
 <para>Register GATT service. Applications can make use of macros such as BT_GATT_PRIMARY_SERVICE, BT_GATT_CHARACTERISTIC, BT_GATT_DESCRIPTOR, etc.</para>
-<para>When using <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_SETTINGS` </verbatim> then all services that should have bond configuration loaded, i.e. CCC values, must be registered before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>.</para>
-<para>When using <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_GATT_CACHING` </verbatim> and <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_SETTINGS` </verbatim> then all services that should be included in the GATT Database Hash calculation should be added before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>. All services registered after settings_load will trigger a new database hash calculation and a new hash stored.</para>
+<para>When using <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_SETTINGS` </verbatim> then all services that should have bond configuration loaded, i.e. CCC values, must be registered before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>.</para>
+<para>When using <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_GATT_CACHING` </verbatim> and <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_SETTINGS` </verbatim> then all services that should be included in the GATT Database Hash calculation should be added before calling <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load</ref>. All services registered after settings_load will trigger a new database hash calculation and a new hash stored.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>svc</parametername>
@@ -1378,7 +1378,7 @@
         </briefdescription>
         <detaileddescription>
 <para>This function works in the same way as <ref refid="group__bt__gatt__server_1ga74ee552864c563aa5bc939f37395c14a" kindref="member">bt_gatt_notify</ref>. With the addition that after sending the notification the callback function will be called.</para>
-<para>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_CONN_TX_MAX` </verbatim> option.</para>
+<para>The callback is run from System Workqueue context. When called from the System Workqueue context this API will not wait for resources for the callback but instead return an error. The number of pending callbacks can be increased with the <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_CONN_TX_MAX` </verbatim> option.</para>
 <para>Alternatively it is possible to notify by UUID by setting it on the parameters, when using this method the attribute if provided is used as the start range when looking up for possible matches.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>

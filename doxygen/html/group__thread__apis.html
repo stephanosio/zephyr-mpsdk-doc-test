@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -300,7 +300,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="include_2kernel_8h.html">include/kernel.h</a>&gt;</code></p>
 
 <p>FPU registers are managed by context switch. </p>
-<p >This option indicates that the thread uses the CPU's floating point registers. This instructs the kernel to take additional steps to save and restore the contents of these registers when scheduling the thread. No effect if </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_FPU_SHARING` </pre><p> is not enabled. </p>
+<p >This option indicates that the thread uses the CPU's floating point registers. This instructs the kernel to take additional steps to save and restore the contents of these registers when scheduling the thread. No effect if </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_FPU_SHARING` </pre><p> is not enabled. </p>
 
 </div>
 </div>
@@ -319,7 +319,7 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="include_2kernel_8h.html">include/kernel.h</a>&gt;</code></p>
 
 <p>Inherit Permissions. </p>
-<p >Indicates that the thread being created should inherit all kernel object permissions from the thread that created it. No effect if </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_USERSPACE` </pre><p> is not enabled. </p>
+<p >Indicates that the thread being created should inherit all kernel object permissions from the thread that created it. No effect if </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_USERSPACE` </pre><p> is not enabled. </p>
 
 </div>
 </div>
@@ -770,7 +770,7 @@ Functions</h2></td></tr>
 
 <p>Sets all CPU enable masks to zero. </p>
 <p >After this returns, the thread will no longer be schedulable on any CPUs. The thread must not be currently runnable.</p>
-<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>Thread to operate upon </td></tr>
@@ -811,7 +811,7 @@ Functions</h2></td></tr>
 
 <p>Prevent thread to run on specified CPU. </p>
 <p >The thread must not be currently runnable.</p>
-<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>Thread to operate upon </td></tr>
@@ -853,7 +853,7 @@ Functions</h2></td></tr>
 
 <p>Enable thread to run on specified CPU. </p>
 <p >The thread must not be currently runnable.</p>
-<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>Thread to operate upon </td></tr>
@@ -885,7 +885,7 @@ Functions</h2></td></tr>
 
 <p>Sets all CPU enable masks to one. </p>
 <p >After this returns, the thread will be schedulable on any CPU. The thread must not be currently runnable.</p>
-<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>You should enable <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>Thread to operate upon </td></tr>
@@ -979,13 +979,13 @@ Functions</h2></td></tr>
 <p >Stack objects passed to this function must be originally defined with either of these macros in order to be portable:</p>
 <ul>
 <li><a class="el" href="group__thread__stack__api.html#gac5368ce24fdeab3863b5c8dee2ebd955" title="Declare a toplevel thread stack memory region.">K_THREAD_STACK_DEFINE()</a> - For stacks that may support either user or supervisor threads.</li>
-<li><a class="el" href="threads_2thread__stack_2src_2main_8c.html#abf20d8da7b5829da0eb6ccb4dae81b37">K_KERNEL_STACK_DEFINE()</a> - For stacks that may support supervisor threads only. These stacks use less memory if CONFIG_USERSPACE is enabled.</li>
+<li><a class="el" href="threads_2thread__stack_2src_2main_8c.html#a72c0793eec55b1d100382b62b7d3c06d">K_KERNEL_STACK_DEFINE()</a> - For stacks that may support supervisor threads only. These stacks use less memory if CONFIG_USERSPACE is enabled.</li>
 </ul>
 <p >The stack_size parameter has constraints. It must either be:</p>
 <ul>
-<li>The original size value passed to <a class="el" href="group__thread__stack__api.html#gac5368ce24fdeab3863b5c8dee2ebd955" title="Declare a toplevel thread stack memory region.">K_THREAD_STACK_DEFINE()</a> or <a class="el" href="threads_2thread__stack_2src_2main_8c.html#abf20d8da7b5829da0eb6ccb4dae81b37">K_KERNEL_STACK_DEFINE()</a></li>
+<li>The original size value passed to <a class="el" href="group__thread__stack__api.html#gac5368ce24fdeab3863b5c8dee2ebd955" title="Declare a toplevel thread stack memory region.">K_THREAD_STACK_DEFINE()</a> or <a class="el" href="threads_2thread__stack_2src_2main_8c.html#a72c0793eec55b1d100382b62b7d3c06d">K_KERNEL_STACK_DEFINE()</a></li>
 <li>The return value of <a class="el" href="group__thread__stack__api.html#ga775f8e6b4144cfdd24f3261b6db64150" title="Return the size in bytes of a stack memory region.">K_THREAD_STACK_SIZEOF(stack)</a> if the stack was defined with <a class="el" href="group__thread__stack__api.html#gac5368ce24fdeab3863b5c8dee2ebd955" title="Declare a toplevel thread stack memory region.">K_THREAD_STACK_DEFINE()</a></li>
-<li>The return value of <a class="el" href="group__thread__stack__api.html#ga57b3824b117c634dbb6052d47dc4301c">K_KERNEL_STACK_SIZEOF(stack)</a> if the stack was defined with <a class="el" href="threads_2thread__stack_2src_2main_8c.html#abf20d8da7b5829da0eb6ccb4dae81b37">K_KERNEL_STACK_DEFINE()</a>.</li>
+<li>The return value of <a class="el" href="group__thread__stack__api.html#ga57b3824b117c634dbb6052d47dc4301c">K_KERNEL_STACK_SIZEOF(stack)</a> if the stack was defined with <a class="el" href="threads_2thread__stack_2src_2main_8c.html#a72c0793eec55b1d100382b62b7d3c06d">K_KERNEL_STACK_DEFINE()</a>.</li>
 </ul>
 <p >Using other values, or sizeof(stack) may produce undefined behavior.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1095,7 +1095,7 @@ Functions</h2></td></tr>
 <dd>
 Despite the API naming, the scheduler makes no guarantees the the thread WILL be scheduled within that deadline, nor does it take extra metadata (like e.g. the "runtime" and "period" parameters in Linux sched_setattr()) that allows the kernel to validate the scheduling for achievability. Such features could be implemented above this call, which is simply input to the priority selection logic.</dd>
 <dd>
-You should enable <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
+You should enable <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SCHED_DEADLINE` </pre> in your project configuration.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>A thread on which to set the deadline </td></tr>
@@ -1143,7 +1143,7 @@ You should enable <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SCHED_
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_THREAD_MONITOR` </pre> must be set for this function to be effective. </dd>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_THREAD_MONITOR` </pre> must be set for this function to be effective. </dd>
 <dd>
 This API uses <a class="el" href="group__spinlock__apis.html#gaac60da4347f5b29ff8c4e5f24c99b3bf">k_spin_lock</a> to protect the _kernel.threads list which means creation of new threads and terminations of existing threads are blocked until this API returns. </dd></dl>
 
@@ -1186,7 +1186,7 @@ This API uses <a class="el" href="group__spinlock__apis.html#gaac60da4347f5b29ff
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_THREAD_MONITOR` </pre> must be set for this function to be effective. </dd>
+<dl class="section note"><dt>Note</dt><dd><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_THREAD_MONITOR` </pre> must be set for this function to be effective. </dd>
 <dd>
 This API uses <a class="el" href="group__spinlock__apis.html#gaac60da4347f5b29ff8c4e5f24c99b3bf">k_spin_lock</a> only when accessing the _kernel.threads queue elements. It unlocks it during user callback function processing. If a new task is created when this <code>foreach</code> function is in progress, the added new task would not be included in the enumeration. If a task is aborted during this enumeration, there would be a race here and there is a possibility that this aborted task would be included in the enumeration. </dd>
 <dd>
@@ -1412,7 +1412,7 @@ If the task is aborted and the memory occupied by its <code><a class="el" href="
 <p><code>#include &lt;<a class="el" href="include_2kernel_8h.html">include/kernel.h</a>&gt;</code></p>
 
 <p>Set current thread name. </p>
-<p >Set the name of the thread to be used when </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_THREAD_MONITOR` </pre><p> is enabled for tracing and debugging.</p>
+<p >Set the name of the thread to be used when </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_THREAD_MONITOR` </pre><p> is enabled for tracing and debugging.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">thread</td><td>Thread to set name, or NULL to set the current thread </td></tr>
@@ -1785,7 +1785,7 @@ If the task is aborted and the memory occupied by its <code><a class="el" href="
 <p><code>#include &lt;<a class="el" href="include_2kernel_8h.html">include/kernel.h</a>&gt;</code></p>
 
 <p>Put the current thread to sleep with microsecond resolution. </p>
-<p >This function is unlikely to work as expected without kernel tuning. In particular, because the lower bound on the duration of a sleep is the duration of a tick, </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre><p> must be adjusted to achieve the resolution desired. The implications of doing this must be understood before attempting to use <a class="el" href="group__thread__apis.html#gaeac56bb072ce295b9fdc372ab8cee67e" title="Put the current thread to sleep with microsecond resolution.">k_usleep()</a>. Use with caution.</p>
+<p >This function is unlikely to work as expected without kernel tuning. In particular, because the lower bound on the duration of a sleep is the duration of a tick, </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SYS_CLOCK_TICKS_PER_SEC` </pre><p> must be adjusted to achieve the resolution desired. The implications of doing this must be understood before attempting to use <a class="el" href="group__thread__apis.html#gaeac56bb072ce295b9fdc372ab8cee67e" title="Put the current thread to sleep with microsecond resolution.">k_usleep()</a>. Use with caution.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">us</td><td>Number of microseconds to sleep.</td></tr>
@@ -1855,7 +1855,7 @@ If the task is aborted and the memory occupied by its <code><a class="el" href="
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

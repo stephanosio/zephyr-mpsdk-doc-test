@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -169,7 +171,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -300,7 +302,7 @@ buffer).</p></li>
 <p>How to serialize and emit fields as well as handling alignment, can be done
 internally and statically at compile-time in the bottom-layer.</p>
 <p>The CTF top layer is enabled using the configuration option
-<a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRACING_CTF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRACING_CTF</span></code></a> and can be used with the different transport
+<a class="reference internal" href="../../../kconfig.html#CONFIG_TRACING_CTF" title="CONFIG_TRACING_CTF"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRACING_CTF</span></code></a> and can be used with the different transport
 backends both in synchronous and asynchronous modes.</p>
 </div>
 </div>
@@ -313,7 +315,7 @@ relies on RTT as a transport. Newer versions of SystemView support other
 transports, for example UART or using snapshot mode (both still not
 supported in Zephyr).</p>
 <p>To enable tracing support with <a class="reference external" href="https://www.segger.com/products/development-tools/systemview/">SEGGER SystemView</a> add the configuration option
-<a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SEGGER_SYSTEMVIEW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SEGGER_SYSTEMVIEW</span></code></a> to your project configuration file and set
+<a class="reference internal" href="../../../kconfig.html#CONFIG_SEGGER_SYSTEMVIEW" title="CONFIG_SEGGER_SYSTEMVIEW"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SEGGER_SYSTEMVIEW</span></code></a> to your project configuration file and set
 it to <em>y</em>. For example, this can be added to the
 <a class="reference internal" href="../../../samples/synchronization/README.html#synchronization-sample"><span class="std std-ref">Synchronization Sample</span></a> to visualize fast switching between threads.
 SystemView can also be used for post-mortem tracing, which can be enabled with
@@ -358,7 +360,7 @@ not be supported by the other tracing systems</p>
 - <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">sys_trace_isr_enter_user(int</span> <span class="pre">nested_interrupts)</span></code>
 - <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">sys_trace_isr_exit_user(int</span> <span class="pre">nested_interrupts)</span></code>
 - <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">sys_trace_idle_user()</span></code></p>
-<p>Enable this format with the <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRACING_USER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRACING_USER</span></code></a> option.</p>
+<p>Enable this format with the <a class="reference internal" href="../../../kconfig.html#CONFIG_TRACING_USER" title="CONFIG_TRACING_USER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRACING_USER</span></code></a> option.</p>
 </div>
 </div>
 <div class="section" id="transport-backends">
@@ -403,8 +405,8 @@ by pointing the tool to the <code class="docutils literal notranslate"><span cla
 <h3>Using RAM backend<a class="headerlink" href="#using-ram-backend" title="Permalink to this headline">¶</a></h3>
 <p>For devices that do not have available I/O for tracing such as USB or UART but have
 enough RAM to collect trace datas, the ram backend can be enabled with configuration
-<a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRACING_BACKEND_RAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRACING_BACKEND_RAM</span></code></a>.
-Adjust <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_RAM_TRACING_BUFFER_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RAM_TRACING_BUFFER_SIZE</span></code></a> to be able to record enough traces for your needs.
+<a class="reference internal" href="../../../kconfig.html#CONFIG_TRACING_BACKEND_RAM" title="CONFIG_TRACING_BACKEND_RAM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRACING_BACKEND_RAM</span></code></a>.
+Adjust <a class="reference internal" href="../../../kconfig.html#CONFIG_RAM_TRACING_BUFFER_SIZE" title="CONFIG_RAM_TRACING_BUFFER_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_RAM_TRACING_BUFFER_SIZE</span></code></a> to be able to record enough traces for your needs.
 Then thanks to a runtime debugger such as gdb this buffer can be fetched from the target
 to an host computer:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">gdb</span><span class="p">)</span> <span class="n">dump</span> <span class="n">binary</span> <span class="n">memory</span> <span class="n">data</span><span class="o">/</span><span class="n">channel0_0</span> <span class="o">&lt;</span><span class="n">ram_tracing_start</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">ram_tracing_end</span><span class="o">&gt;</span>
@@ -604,10 +606,10 @@ all initialized mutexes, one can write:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>To enable object tracking, enable <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRACING_OBJECT_TRACKING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRACING_OBJECT_TRACKING</span></code></a>.
+<p>To enable object tracking, enable <a class="reference internal" href="../../../kconfig.html#CONFIG_TRACING_OBJECT_TRACKING" title="CONFIG_TRACING_OBJECT_TRACKING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRACING_OBJECT_TRACKING</span></code></a>.
 Note that each list can be enabled or disabled via their tracing
 configuration. For example, to disable tracking of semaphores, one can
-disable <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRACING_SEMAPHORE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRACING_SEMAPHORE</span></code></a>.</p>
+disable <a class="reference internal" href="../../../kconfig.html#CONFIG_TRACING_SEMAPHORE" title="CONFIG_TRACING_SEMAPHORE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRACING_SEMAPHORE</span></code></a>.</p>
 <p>Object tracking is behind tracing configuration as it currently leverages
 tracing infrastructure to perform the tracking.</p>
 </div>
@@ -3825,8 +3827,8 @@ tracing infrastructure to perform the tracking.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

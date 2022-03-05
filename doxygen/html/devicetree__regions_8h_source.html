@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -107,15 +107,15 @@ $(document).ready(function(){initNavTree('devicetree__regions_8h_source.html',''
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="devicetree__regions_8h.html#a3244e16032cc575ab5c7275caca14801">   35</a></span><span class="preprocessor">#define LINKER_DT_NODE_REGION_NAME(node_id) \</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">        DT_PROP_OR(node_id, zephyr_memory_region, DT_NODE_PATH(node_id))</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define _REGION_DECLARE(node_id, attr)              \</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">        LINKER_DT_NODE_REGION_NAME(node_id)(attr) : \</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">        ORIGIN = DT_REG_ADDR(node_id),              \</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">        LENGTH = DT_REG_SIZE(node_id)</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="devicetree__regions_8h.html#a249e6f72a0632d749d9c6a258d6d9b92">   60</a></span><span class="preprocessor">#define LINKER_DT_REGION_FROM_NODE(node_id, attr)      \</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">        COND_CODE_1(DT_NODE_HAS_STATUS(node_id, okay), \</span></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">                    (_REGION_DECLARE(node_id, attr)),  \</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">                    ())</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#define _DT_COMPATIBLE  zephyr_memory_region</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define _REGION_DECLARE(node_id)              \</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">        LINKER_DT_NODE_REGION_NAME(node_id) : \</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">        ORIGIN = DT_REG_ADDR(node_id),        \</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">        LENGTH = DT_REG_SIZE(node_id)</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="devicetree__regions_8h.html#a1b743e1c6c735c87d4fbd2094819c573">   63</a></span><span class="preprocessor">#define LINKER_DT_REGIONS() \</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">        DT_FOREACH_STATUS_OKAY(_DT_COMPATIBLE, _REGION_DECLARE)</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- HTML footer for doxygen 1.9.1-->
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('devicetree__regions_8h_source.html',''
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0227c4e1a7f6a71e41499a97712e4ef4.html">linker</a></li><li class="navelem"><a class="el" href="devicetree__regions_8h.html">devicetree_regions.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:39 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:44 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

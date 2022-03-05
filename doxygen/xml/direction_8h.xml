@@ -4,46 +4,52 @@
     <compoundname>direction.h</compoundname>
     <includedby refid="conn_8h" local="no">include/bluetooth/conn.h</includedby>
     <invincdepgraph>
-      <node id="13">
+      <node id="14">
         <label>include/bluetooth/a2dp.h</label>
         <link refid="a2dp_8h"/>
       </node>
       <node id="3">
-        <label>include/bluetooth/audio/audio.h</label>
-        <link refid="audio_8h"/>
+        <label>include/bluetooth/att.h</label>
+        <link refid="att_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="4">
+      <node id="5">
+        <label>include/bluetooth/audio/audio.h</label>
+        <link refid="audio_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>include/bluetooth/audio/capabilities.h</label>
         <link refid="capabilities_8h"/>
       </node>
-      <node id="5">
+      <node id="7">
         <label>include/bluetooth/audio/csis.h</label>
         <link refid="csis_8h"/>
       </node>
-      <node id="6">
+      <node id="8">
         <label>include/bluetooth/audio/mcc.h</label>
         <link refid="mcc_8h"/>
       </node>
-      <node id="12">
+      <node id="13">
         <label>include/bluetooth/avdtp.h</label>
         <link refid="avdtp_8h"/>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="9">
+      <node id="10">
         <label>include/bluetooth/buf.h</label>
         <link refid="bluetooth_2buf_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -53,21 +59,23 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -76,57 +84,57 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="4">
         <label>include/bluetooth/gatt.h</label>
         <link refid="gatt_8h"/>
-        <childnode refid="3" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>include/bluetooth/hci.h</label>
         <link refid="hci_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-      </node>
-      <node id="16">
-        <label>include/bluetooth/hci_vs.h</label>
-        <link refid="hci__vs_8h"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>include/bluetooth/iso.h</label>
-        <link refid="iso_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>include/bluetooth/l2cap.h</label>
-        <link refid="l2cap_8h"/>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="17">
+        <label>include/bluetooth/hci_vs.h</label>
+        <link refid="hci__vs_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>include/bluetooth/iso.h</label>
+        <link refid="iso_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>include/bluetooth/l2cap.h</label>
+        <link refid="l2cap_8h"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
         <label>include/bluetooth/rfcomm.h</label>
         <link refid="rfcomm_8h"/>
       </node>
-      <node id="17">
+      <node id="18">
         <label>include/bluetooth/sdp.h</label>
         <link refid="sdp_8h"/>
       </node>
-      <node id="18">
+      <node id="19">
         <label>include/bluetooth/services/ots.h</label>
         <link refid="ots_8h"/>
       </node>
-      <node id="15">
+      <node id="16">
         <label>include/drivers/bluetooth/hci_driver.h</label>
         <link refid="hci__driver_8h"/>
       </node>
@@ -576,7 +584,7 @@
 <para>Set Constant Tone Extension transmission parameters for a connection. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function is available if <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_DF_CONNECTION_CTE_TX` </verbatim> is enabled.</para>
+<para>The function is available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_DF_CONNECTION_CTE_TX` </verbatim> is enabled.</para>
 <para><simplesect kind="note"><para>If neither BT_DF_CTE_TYPE_AOD_1US or BT_DF_CTE_TYPE_AOD_2US are set in the bitfield, then the <ref refid="structbt__df__conn__cte__tx__param_1ad49bc64170e8ee4741aa01393284e7de" kindref="member">bt_df_conn_cte_tx_param.num_ant_ids</ref> and <ref refid="structbt__df__conn__cte__tx__param_1a9df1dac6180e77a4c7abc80890346c4a" kindref="member">bt_df_conn_cte_tx_param.ant_ids</ref> parameters will be ignored.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
@@ -621,7 +629,7 @@
 <para>Enable Constant Tone Extension request procedure for a connection. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function is available if <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_DF_CONNECTION_CTE_REQ` </verbatim> is enabled.</para>
+<para>The function is available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_DF_CONNECTION_CTE_REQ` </verbatim> is enabled.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>conn</parametername>
@@ -660,7 +668,7 @@
 <para>Disable Constant Tone Extension request procedure for a connection. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function is available if <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_DF_CONNECTION_CTE_REQ` </verbatim> is enabled.</para>
+<para>The function is available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_DF_CONNECTION_CTE_REQ` </verbatim> is enabled.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>conn</parametername>
@@ -691,7 +699,7 @@
 <para>Enable Constant Tone Extension response procedure for a connection. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function is available if <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_DF_CONNECTION_CTE_RSP` </verbatim> is enabled.</para>
+<para>The function is available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_DF_CONNECTION_CTE_RSP` </verbatim> is enabled.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>conn</parametername>
@@ -722,7 +730,7 @@
 <para>Disable Constant Tone Extension response procedure for a connection. </para>
         </briefdescription>
         <detaileddescription>
-<para>The function is available if <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_DF_CONNECTION_CTE_RSP` </verbatim> is enabled.</para>
+<para>The function is available if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_DF_CONNECTION_CTE_RSP` </verbatim> is enabled.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>conn</parametername>

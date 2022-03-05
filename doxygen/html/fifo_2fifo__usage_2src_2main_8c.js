@@ -5,7 +5,7 @@ var fifo_2fifo__usage_2src_2main_8c =
     [ "STACK_SIZE", "fifo_2fifo__usage_2src_2main_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "K_FIFO_DEFINE", "fifo_2fifo__usage_2src_2main_8c.html#af77954ff6349f7b2b57ffcd42e15cde0", null ],
     [ "K_FIFO_DEFINE", "fifo_2fifo__usage_2src_2main_8c.html#a3c50349308faa7efb13581a06f7ff9d2", null ],
-    [ "K_THREAD_STACK_DEFINE", "fifo_2fifo__usage_2src_2main_8c.html#a12cc64ae3e012d7dc5df490386732679", null ],
+    [ "K_THREAD_STACK_DEFINE", "fifo_2fifo__usage_2src_2main_8c.html#a2afd38b239841508c0f9e4be7ff14323", null ],
     [ "test_dual_fifo_play", "group__kernel__fifo__tests.html#gaab9f8ce6ca2e5b284f1393f44c399eb6", null ],
     [ "test_isr_fifo_play", "group__kernel__fifo__tests.html#ga3ac8ebd02342fbf38d13af7126f3616b", null ],
     [ "test_main", "fifo_2fifo__usage_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

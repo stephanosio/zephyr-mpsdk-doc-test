@@ -492,17 +492,15 @@
 <parametername>pipe</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Address of the pipe.</para>
+<para>Address of the pipe. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>N/A </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="4845" column="7" declfile="include/kernel.h" declline="4845" declcolumn="7"/>
+        <location file="include/kernel.h" line="4843" column="7" declfile="include/kernel.h" declline="4843" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group__pipe__apis_1ga71e0e38a15fa27f27c1f028223936445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -523,17 +521,15 @@
 <parametername>pipe</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Address of the pipe.</para>
+<para>Address of the pipe. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>N/A </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="4860" column="7" declfile="include/kernel.h" declline="4860" declcolumn="7"/>
+        <location file="include/kernel.h" line="4856" column="7" declfile="include/kernel.h" declline="4856" declcolumn="7"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">

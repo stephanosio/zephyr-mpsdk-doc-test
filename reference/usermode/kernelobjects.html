@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -181,7 +183,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -305,7 +307,7 @@ or if the build system is invoked with verbose output.</p>
 <div class="section" id="dynamic-objects">
 <h2>Dynamic Objects<a class="headerlink" href="#dynamic-objects" title="Permalink to this headline">¶</a></h2>
 <p>Kernel objects may also be allocated at runtime if
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DYNAMIC_OBJECTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_OBJECTS</span></code></a> is enabled. In this case, the
+<a class="reference internal" href="../../kconfig.html#CONFIG_DYNAMIC_OBJECTS" title="CONFIG_DYNAMIC_OBJECTS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_OBJECTS</span></code></a> is enabled. In this case, the
 <code class="xref c c-func docutils literal notranslate"><span class="pre">k_object_alloc()</span></code> API may be used to instantiate an object from
 the calling thread’s resource pool. Such allocations may be freed in two
 ways:</p>
@@ -346,7 +348,7 @@ includes:</p>
 <li><p>A bitfield indicating permissions on that object. All threads have a
 numerical ID assigned to them at build time, used to index the permission
 bitfield for an object to see if that thread has permission on it. The size
-of this bitfield is controlled by the <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_MAX_THREAD_BYTES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_THREAD_BYTES</span></code></a>
+of this bitfield is controlled by the <a class="reference internal" href="../../kconfig.html#CONFIG_MAX_THREAD_BYTES" title="CONFIG_MAX_THREAD_BYTES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MAX_THREAD_BYTES</span></code></a>
 option and the build system will generate an error if this value is too low.</p></li>
 <li><p>A type field indicating what kind of object this is, which is some
 instance of <code class="xref c c-enum docutils literal notranslate"><span class="pre">k_objects</span></code>.</p></li>
@@ -473,8 +475,8 @@ new subsystem to the <code class="xref py py-data docutils literal notranslate">
 <h2>Configuration Options<a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h2>
 <p>Related configuration options:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></li>
-<li><p><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_MAX_THREAD_BYTES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MAX_THREAD_BYTES</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_MAX_THREAD_BYTES" title="CONFIG_MAX_THREAD_BYTES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MAX_THREAD_BYTES</span></code></a></p></li>
 </ul>
 </div>
 <div class="section" id="api-reference">
@@ -614,8 +616,8 @@ new subsystem to the <code class="xref py py-data docutils literal notranslate">
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

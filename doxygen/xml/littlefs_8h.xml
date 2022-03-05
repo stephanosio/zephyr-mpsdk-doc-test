@@ -95,7 +95,7 @@
 <para>This defines static arrays required for caches, and initializes the littlefs configuration structure to use the provided values instead of the global Kconfig defaults. A pointer to the named object must be stored in the <computeroutput>.fs_data</computeroutput> field of a :c:type:<computeroutput>struct fs_mount</computeroutput> object.</para>
 <para>To define an instance for the Kconfig defaults, use :c:macro:<computeroutput>FS_LITTLEFS_DECLARE_DEFAULT_CONFIG</computeroutput>.</para>
 <para>To completely control file system configuration the application can directly define and initialize a :c:type:<computeroutput>struct <ref refid="structfs__littlefs" kindref="compound">fs_littlefs</ref></computeroutput> object. The application is responsible for ensuring the configured values are consistent with littlefs requirements.</para>
-<para><simplesect kind="note"><para>If you use a non-default configuration for cache size, you must also select <verbatim>embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_FC_HEAP_SIZE` </verbatim> to relax the size constraints on per-file cache allocations.</para>
+<para><simplesect kind="note"><para>If you use a non-default configuration for cache size, you must also select <verbatim>embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_FC_HEAP_SIZE` </verbatim> to relax the size constraints on per-file cache allocations.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -110,7 +110,7 @@
 <parametername>read_sz</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>see <verbatim>embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_READ_SIZE` </verbatim> </para>
+<para>see <verbatim>embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_READ_SIZE` </verbatim> </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -118,7 +118,7 @@
 <parametername>prog_sz</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>see <verbatim>embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_PROG_SIZE` </verbatim> </para>
+<para>see <verbatim>embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_PROG_SIZE` </verbatim> </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -126,7 +126,7 @@
 <parametername>cache_sz</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>see <verbatim>embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_CACHE_SIZE` </verbatim> </para>
+<para>see <verbatim>embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_CACHE_SIZE` </verbatim> </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -134,7 +134,7 @@
 <parametername>lookahead_sz</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>see <verbatim>embed:rst:inline :kconfig:`CONFIG_FS_LITTLEFS_LOOKAHEAD_SIZE` </verbatim> </para>
+<para>see <verbatim>embed:rst:inline :kconfig:option:`CONFIG_FS_LITTLEFS_LOOKAHEAD_SIZE` </verbatim> </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>

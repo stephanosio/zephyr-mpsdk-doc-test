@@ -750,7 +750,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="test__mheap__api_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -903,16 +903,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_heap/mheap_api_concept/src/test_mheap_api.c" line="16" column="1" declfile="tests/kernel/mem_heap/mheap_api_concept/src/test_mheap_api.c" declline="16" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__mheap__api_8c_1a92d3d873c3cf4cd0327c5aa5bf8a0fc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__mheap__api_8c_1a3e6b65a6d59086025e05164fc2c45504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1153,11 +1153,11 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="multi__heap_8h" kindref="compound">sys/multi_heap.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="test__mheap_8h" kindref="compound">test_mheap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OVERFLOW_SIZE<sp/><sp/><sp/><sp/>SIZE_MAX</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><ref refid="test__mheap__api_8c_1abd593c4a226f06ed3dc0583a565f37dc" kindref="member">K_SEM_DEFINE</ref>(thread_sem,<sp/>0,<sp/>1);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><ref refid="test__mheap__api_8c_1a92d3d873c3cf4cd0327c5aa5bf8a0fc7" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mheap__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><ref refid="test__mheap__api_8c_1a3e6b65a6d59086025e05164fc2c45504" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="test__mheap__api_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__mheap__api_8c_1aa15baae19d44279cac3d8bf47c9e707f" kindref="member">tdata</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="test__mheap__api_8c_1a2a6b990ee0aeb1f8f8f28de3f0bd07ff" kindref="member">tIsr_malloc_and_free</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="test__fifo__contexts_8c_1a8b1feab52ee372b1ee1297129329eaad" kindref="member">data</ref>)</highlight></codeline>

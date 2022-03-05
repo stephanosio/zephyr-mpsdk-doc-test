@@ -286,7 +286,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="46" column="9" bodyfile="include/logging/log_msg2.h" bodystart="46" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="47" column="9" bodyfile="include/logging/log_msg2.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

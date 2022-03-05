@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -156,7 +158,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -382,7 +384,7 @@ by post-process steps that will impact the size of the final binary.</p>
 <dl class="simple">
 <dt>Fixed size binary</dt><dd><p>The fixed size intermediate binary is produced when <a class="reference internal" href="../../reference/usermode/index.html#usermode-api"><span class="std std-ref">User Mode</span></a>
 is enabled or when generated IRQ tables are used,
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_GEN_ISR_TABLES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a>
+<a class="reference internal" href="../../kconfig.html#CONFIG_GEN_ISR_TABLES" title="CONFIG_GEN_ISR_TABLES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a>
 It produces a binary where sizes are fixed and thus the size must not change
 between the intermediate binary and the final binary.</p>
 </dd>
@@ -420,7 +422,7 @@ locate the devices actually present in the application.</p>
 <a class="reference internal image-reference" href="../../_images/build-postprocess-2.svg"><img alt="Zephyr's intermediate binary post-process II" src="../../_images/build-postprocess-2.svg" width="80%" /></a>
 </div>
 <dl class="simple">
-<dt>When <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_GEN_ISR_TABLES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a> is enabled:</dt><dd><p>The <em>gen_isr_tables.py</em> script scant the fixed size binary and creates
+<dt>When <a class="reference internal" href="../../kconfig.html#CONFIG_GEN_ISR_TABLES" title="CONFIG_GEN_ISR_TABLES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_GEN_ISR_TABLES</span></code></a> is enabled:</dt><dd><p>The <em>gen_isr_tables.py</em> script scant the fixed size binary and creates
 an isr_tables.c source file with a hardware vector table and/or software
 IRQ table.</p>
 </dd>
@@ -629,8 +631,9 @@ flat code/data segments for ring 3 execution.</p>
 and places it in the required memory region. This memory region and file
 are given to this python script in the form of a string.</p>
 <p>Example of such a string would be:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SRAM2</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">xyz</span><span class="o">/</span><span class="n">zephyr</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">hello_world</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">c</span><span class="p">,</span>\
-<span class="n">SRAM1</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">xyz</span><span class="o">/</span><span class="n">zephyr</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">hello_world</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main2</span><span class="o">.</span><span class="n">c</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SRAM2</span><span class="p">:</span><span class="n">COPY</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">xyz</span><span class="o">/</span><span class="n">zephyr</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">hello_world</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main</span><span class="o">.</span><span class="n">c</span><span class="p">,</span>\
+<span class="n">SRAM1</span><span class="p">:</span><span class="n">COPY</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">xyz</span><span class="o">/</span><span class="n">zephyr</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">hello_world</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main2</span><span class="o">.</span><span class="n">c</span><span class="p">,</span> \
+<span class="n">FLASH2</span><span class="p">:</span><span class="n">NOCOPY</span><span class="p">:</span><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">xyz</span><span class="o">/</span><span class="n">zephyr</span><span class="o">/</span><span class="n">samples</span><span class="o">/</span><span class="n">hello_world</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">main3</span><span class="o">.</span><span class="n">c</span>
 </pre></div>
 </div>
 <p>To invoke this script:</p>
@@ -644,6 +647,8 @@ the sections</p></li>
 <li><p>If the memory type is appended with _DATA / _TEXT/ _RODATA/ _BSS only the
 selected memory is placed in the required memory region. Others are
 ignored.</p></li>
+<li><p>COPY/NOCOPY defines whether the script should generate the relocation code in
+code_relocation.c or not</p></li>
 </ul>
 <p>Multiple regions can be appended together like SRAM2_DATA_BSS
 this will place data and bss inside SRAM2.</p>
@@ -725,8 +730,8 @@ to the Zephyr Security Guide’s section on the <a class="reference internal" hr
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

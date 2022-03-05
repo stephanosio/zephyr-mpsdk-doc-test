@@ -848,16 +848,16 @@
         </inbodydescription>
         <location file="tests/kernel/fpu_sharing/generic/src/pi.c" line="104" column="13" bodyfile="tests/kernel/fpu_sharing/generic/src/pi.c" bodystart="104" bodyend="161"/>
       </memberdef>
-      <memberdef kind="function" id="pi_8c_1a9a38a67cbf91a41aec2cdaa0a29c3970" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="pi_8c_1a817e9cde859c9d14671b4538da5c7231" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(pi_low,(1024+CONFIG_TEST_EXTRA_STACKSIZE), calculate_pi_low, NULL, NULL, NULL, 10,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
+        <argsstring>(pi_low,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), calculate_pi_low, NULL, NULL, NULL, 10,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>pi_low</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="pi_8c_1a57913c0b6a1cee47dd5b80f788c1b546" kindref="member">calculate_pi_low</ref></type>
@@ -888,16 +888,16 @@
         </inbodydescription>
         <location file="tests/kernel/fpu_sharing/generic/src/pi.c" line="163" column="1" declfile="tests/kernel/fpu_sharing/generic/src/pi.c" declline="163" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="pi_8c_1a68ea0e759c01f17d74d939a203118642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="pi_8c_1ac351b175e358ee74e1fa6abf6a857800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(pi_high,(1024+CONFIG_TEST_EXTRA_STACKSIZE), calculate_pi_high, NULL, NULL, NULL, 5,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
+        <argsstring>(pi_high,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), calculate_pi_high, NULL, NULL, NULL, 5,(K_FP_REGS), K_TICKS_FOREVER)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>pi_high</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="pi_8c_1a005533d1a8a79536692f8f13c0b0134f" kindref="member">calculate_pi_high</ref></type>
@@ -1102,10 +1102,10 @@
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__semaphore__apis_1gab9be3cf1988af2cd6afdace52d497c84" kindref="member">k_sem_give</ref>(&amp;test_exit_sem);</highlight></codeline>
 <codeline lineno="161"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><ref refid="pi_8c_1a9a38a67cbf91a41aec2cdaa0a29c3970" kindref="member">K_THREAD_DEFINE</ref>(pi_low,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="pi_8c_1a57913c0b6a1cee47dd5b80f788c1b546" kindref="member">calculate_pi_low</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><ref refid="pi_8c_1a817e9cde859c9d14671b4538da5c7231" kindref="member">K_THREAD_DEFINE</ref>(pi_low,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="pi_8c_1a57913c0b6a1cee47dd5b80f788c1b546" kindref="member">calculate_pi_low</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="test__common_8h_1af1f5400d65f4b45e9729464ac00c251c" kindref="member">THREAD_LOW_PRIORITY</ref>,<sp/><ref refid="test__common_8h_1a5a2a373f092dcc9cecdeb0ad3e02b52a" kindref="member">THREAD_FP_FLAGS</ref>,<sp/><ref refid="group__clock__apis_1ga66e180b3d8940c30786a1d972cbd6d8d" kindref="member">K_TICKS_FOREVER</ref>);</highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><ref refid="pi_8c_1a9a38a67cbf91a41aec2cdaa0a29c3970" kindref="member">K_THREAD_DEFINE</ref>(pi_high,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="pi_8c_1a005533d1a8a79536692f8f13c0b0134f" kindref="member">calculate_pi_high</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><ref refid="pi_8c_1a817e9cde859c9d14671b4538da5c7231" kindref="member">K_THREAD_DEFINE</ref>(pi_high,<sp/><ref refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" kindref="member">THREAD_STACK_SIZE</ref>,<sp/><ref refid="pi_8c_1a005533d1a8a79536692f8f13c0b0134f" kindref="member">calculate_pi_high</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="test__common_8h_1a0ef2f7e9b8d0aa30d9f7066f679d00db" kindref="member">THREAD_HIGH_PRIORITY</ref>,<sp/><ref refid="test__common_8h_1a5a2a373f092dcc9cecdeb0ad3e02b52a" kindref="member">THREAD_FP_FLAGS</ref>,<sp/><ref refid="group__clock__apis_1ga66e180b3d8940c30786a1d972cbd6d8d" kindref="member">K_TICKS_FOREVER</ref>);</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"></highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pi_8c_1ac9689659610f2be20d8040bd3916b3ad" kindref="member">test_pi</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>

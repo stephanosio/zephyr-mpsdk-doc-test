@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -200,7 +202,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -330,6 +332,13 @@
 <p>See <em><a class="reference internal" href="#group__ipm__interface_1ga5884fa95cb38ddfe4493eb70dafebe8b"><span class="std std-ref">ipm_set_enabled()</span></a></em> for argument definitions. </p>
 </dd></dl>
 
+<dl class="c type">
+<dt class="sig sig-object c" id="c.ipm_complete_t">
+<span class="target" id="group__ipm__interface_1ga868351e00ca191f65fccfbe2514903b5"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">(</span></span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">ipm_complete_t</span></span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">(</span></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ipmdev</span></span><span class="p"><span class="pre">)</span></span><a class="headerlink" href="#c.ipm_complete_t" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Callback API upon command completion. </p>
+<p>See <em><a class="reference internal" href="#group__ipm__interface_1ga53f785ecfac17b9fb2e5f3a9505c7fd2"><span class="std std-ref">ipm_complete()</span></a></em> for argument definitions. </p>
+</dd></dl>
+
 </div>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
@@ -430,6 +439,21 @@
 </dl>
 </dd></dl>
 
+<dl class="c function">
+<dt class="sig sig-object c" id="c.ipm_complete">
+<span class="target" id="group__ipm__interface_1ga53f785ecfac17b9fb2e5f3a9505c7fd2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">ipm_complete</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">ipmdev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.ipm_complete" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Signal asynchronous command completion. </p>
+<p>Some IPM backends have an ability to deliver a command asynchronously. The callback will be invoked in interrupt context, but the message (including the provided data pointer) will stay “active” and unacknowledged until later code (presumably in thread mode) calls <a class="reference internal" href="#group__ipm__interface_1ga53f785ecfac17b9fb2e5f3a9505c7fd2"><span class="std std-ref">ipm_complete()</span></a>.</p>
+<p>This function is, obviously, a noop on drivers without async support.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ipmdev</strong> – Driver instance pointer. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 <dl class="c struct">
 <dt class="sig sig-object c" id="c.ipm_driver_api">
@@ -452,8 +476,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

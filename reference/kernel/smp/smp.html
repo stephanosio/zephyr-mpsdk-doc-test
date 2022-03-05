@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -184,7 +186,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -255,12 +257,12 @@ access to all standard Zephyr APIs supported.</p>
 <p>No special application code needs to be written to take advantage of
 this feature.  If there are two Zephyr application threads runnable on
 a supported dual processor device, they will both run simultaneously.</p>
-<p>SMP configuration is controlled under the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SMP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMP</span></code></a> kconfig
+<p>SMP configuration is controlled under the <a class="reference internal" href="../../../kconfig.html#CONFIG_SMP" title="CONFIG_SMP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SMP</span></code></a> kconfig
 variable.  This must be set to “y” to enable SMP features, otherwise
 a uniprocessor kernel will be built.  In general the platform default
 will have enabled this anywhere it’s supported. When enabled, the
 number of physical CPUs available is visible at build time as
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_MP_NUM_CPUS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MP_NUM_CPUS</span></code></a>.  Likewise, the default for this will be the
+<a class="reference internal" href="../../../kconfig.html#CONFIG_MP_NUM_CPUS" title="CONFIG_MP_NUM_CPUS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MP_NUM_CPUS</span></code></a>.  Likewise, the default for this will be the
 number of available CPUs on the platform and it is not expected that
 typical apps will change it.  But it is legal and supported to set
 this to a smaller (but obviously not larger) number for special
@@ -332,7 +334,7 @@ context should be using the spinlock API wherever possible.</p>
 <p>It is often desirable for real time applications to deliberately
 partition work across physical CPUs instead of relying solely on the
 kernel scheduler to decide on which threads to execute.  Zephyr
-provides an API, controlled by the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_CPU_MASK"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_CPU_MASK</span></code></a>
+provides an API, controlled by the <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_CPU_MASK" title="CONFIG_SCHED_CPU_MASK"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_CPU_MASK</span></code></a>
 kconfig variable, which can associate a specific set of CPUs with each
 thread, indicating on which CPUs it can run.</p>
 <p>By default, new threads can run on any CPU.  Calling
@@ -347,9 +349,9 @@ suspended, otherwise an <code class="docutils literal notranslate"><span class="
 involved in doing the per-CPU mask test requires that the list be
 traversed in full.  The kernel does not keep a per-CPU run queue.
 That means that the performance benefits from the
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_SCALABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_SCALABLE</span></code></a> and <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_MULTIQ"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_MULTIQ</span></code></a>
+<a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_SCALABLE" title="CONFIG_SCHED_SCALABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_SCALABLE</span></code></a> and <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_MULTIQ" title="CONFIG_SCHED_MULTIQ"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_MULTIQ</span></code></a>
 scheduler backends cannot be realized.  CPU mask processing is
-available only when <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SCHED_DUMB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SCHED_DUMB</span></code></a> is the selected
+available only when <a class="reference internal" href="../../../kconfig.html#CONFIG_SCHED_DUMB" title="CONFIG_SCHED_DUMB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SCHED_DUMB</span></code></a> is the selected
 backend.  This requirement is enforced in the configuration layer.</p>
 </div>
 <div class="section" id="smp-boot-process">
@@ -498,8 +500,8 @@ to call <code class="xref c c-func docutils literal notranslate"><span class="pr
 run from the scheduler, passing in an “interrupted” handle reflecting
 the same opaque type used by switch, which the kernel will then save
 in the interrupted thread struct.</p>
-<p>Note that while SMP requires <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_USE_SWITCH"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USE_SWITCH</span></code></a>, the reverse is not
-true.  A uniprocessor architecture built with <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SMP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMP</span></code></a> set to No might
+<p>Note that while SMP requires <a class="reference internal" href="../../../kconfig.html#CONFIG_USE_SWITCH" title="CONFIG_USE_SWITCH"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USE_SWITCH</span></code></a>, the reverse is not
+true.  A uniprocessor architecture built with <a class="reference internal" href="../../../kconfig.html#CONFIG_SMP" title="CONFIG_SMP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SMP</span></code></a> set to No might
 still decide to implement its context switching using
 <a class="reference internal" href="../../../guides/porting/arch.html#c.arch_switch" title="arch_switch"><code class="xref c c-func docutils literal notranslate"><span class="pre">arch_switch()</span></code></a>.</p>
 </div>
@@ -587,8 +589,8 @@ still decide to implement its context switching using
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

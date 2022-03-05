@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -107,15 +107,15 @@ $(document).ready(function(){initNavTree('test__stack__fail_8c.html',''); initRe
 Macros</h2></td></tr>
 <tr class="memitem:a45ba202b05caf39795aeca91b0ae547e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#a45ba202b05caf39795aeca91b0ae547e">TIMEOUT</a>&#160;&#160;&#160;<a class="el" href="group__clock__apis.html#ga302af954e87b10a9b731f1ad07775e9f">K_MSEC</a>(100)</td></tr>
 <tr class="separator:a45ba202b05caf39795aeca91b0ae547e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACKSIZE)</td></tr>
+<tr class="memitem:a6423a880df59733d2d9b509c7718d3a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</td></tr>
 <tr class="separator:a6423a880df59733d2d9b509c7718d3a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c9bc91d6207f493c814b2c33dfdba4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#a82c9bc91d6207f493c814b2c33dfdba4">STACK_LEN</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a82c9bc91d6207f493c814b2c33dfdba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4e076a37dd170ff46635150cb321e7e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#a4e076a37dd170ff46635150cb321e7e5">K_THREAD_STACK_DEFINE</a> (threadstack2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</td></tr>
-<tr class="separator:a4e076a37dd170ff46635150cb321e7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976bd76e0d65fac8327d878814d37afa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#a976bd76e0d65fac8327d878814d37afa">K_THREAD_STACK_DEFINE</a> (threadstack2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</td></tr>
+<tr class="separator:a976bd76e0d65fac8327d878814d37afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2e5814d9dda00f9b9f7ef9971f4dabc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test__stack__fail_8c.html#ad2e5814d9dda00f9b9f7ef9971f4dabc">stack_pop_fail</a> (struct k_stack *<a class="el" href="test__stack__fail_8c.html#a6856ea318b5a9498715e4444b13a1de1">stack</a>)</td></tr>
 <tr class="separator:ad2e5814d9dda00f9b9f7ef9971f4dabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafd3225aaa1a28e80809fcdf795235dff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__kernel__stack__tests.html#gafd3225aaa1a28e80809fcdf795235dff">tStack_pop_entry</a> (void *p1, void *p2, void *p3)</td></tr>
@@ -179,7 +179,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACKSIZE)</td>
+          <td class="memname">#define STACK_SIZE&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,8 +201,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a4e076a37dd170ff46635150cb321e7e5" name="a4e076a37dd170ff46635150cb321e7e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e076a37dd170ff46635150cb321e7e5">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
+<a id="a976bd76e0d65fac8327d878814d37afa" name="a976bd76e0d65fac8327d878814d37afa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a976bd76e0d65fac8327d878814d37afa">&#9670;&nbsp;</a></span>K_THREAD_STACK_DEFINE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +216,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(512+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(512+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -323,7 +323,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_0ca374d5c157f80ba32efa3d4a1a7076.html">stack</a></li><li class="navelem"><a class="el" href="dir_5144ebc81025df519b99ab875f7faf2a.html">stack</a></li><li class="navelem"><a class="el" href="dir_622da413997d04349b0336158ab3a1d8.html">src</a></li><li class="navelem"><a class="el" href="test__stack__fail_8c.html">test_stack_fail.c</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

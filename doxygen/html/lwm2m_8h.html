@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -140,6 +140,8 @@ Macros</h2></td></tr>
 <tr class="separator:gaa6c374c401dd36b6e121ac48c91ca9cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2d140b4a36d6010fe93bca443a658c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#gac2d140b4a36d6010fe93bca443a658c0">LWM2M_OBJECT_SOFTWARE_MANAGEMENT_ID</a>&#160;&#160;&#160;9</td></tr>
 <tr class="separator:gac2d140b4a36d6010fe93bca443a658c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4b4ce912a4554923974461ea3c76007e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#ga4b4ce912a4554923974461ea3c76007e">LWM2M_OBJECT_PORTFOLIO_ID</a>&#160;&#160;&#160;16</td></tr>
+<tr class="separator:ga4b4ce912a4554923974461ea3c76007e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3505e9ddcd54afe86e8bd5fbc03fb565"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#ga3505e9ddcd54afe86e8bd5fbc03fb565">LWM2M_OBJECT_GATEWAY_ID</a>&#160;&#160;&#160;25</td></tr>
 <tr class="separator:ga3505e9ddcd54afe86e8bd5fbc03fb565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeef485c23d306c93fc0f45dd58766ad9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#gaeef485c23d306c93fc0f45dd58766ad9">IPSO_OBJECT_GENERIC_SENSOR_ID</a>&#160;&#160;&#160;3300</td></tr>
@@ -457,6 +459,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab45cebf6f0b6b70974367ca453d16aeb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#gab45cebf6f0b6b70974367ca453d16aeb">lwm2m_update_device_service_period</a> (<a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> period_ms)</td></tr>
 <tr class="memdesc:gab45cebf6f0b6b70974367ca453d16aeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update the period of the device service.  <a href="group__lwm2m__api.html#gab45cebf6f0b6b70974367ca453d16aeb">More...</a><br /></td></tr>
 <tr class="separator:gab45cebf6f0b6b70974367ca453d16aeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07149d4b624a7294f4508df8c1681b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#ga07149d4b624a7294f4508df8c1681b1b">lwm2m_engine_path_is_observed</a> (const char *pathstr)</td></tr>
+<tr class="memdesc:ga07149d4b624a7294f4508df8c1681b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a path is observed.  <a href="group__lwm2m__api.html#ga07149d4b624a7294f4508df8c1681b1b">More...</a><br /></td></tr>
+<tr class="separator:ga07149d4b624a7294f4508df8c1681b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f72fbd0163b15c48ea09cf7d511e444"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#ga9f72fbd0163b15c48ea09cf7d511e444">lwm2m_engine_start</a> (struct <a class="el" href="structlwm2m__ctx.html">lwm2m_ctx</a> *client_ctx)</td></tr>
 <tr class="memdesc:ga9f72fbd0163b15c48ea09cf7d511e444"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the LwM2M engine.  <a href="group__lwm2m__api.html#ga9f72fbd0163b15c48ea09cf7d511e444">More...</a><br /></td></tr>
 <tr class="separator:ga9f72fbd0163b15c48ea09cf7d511e444"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -475,6 +480,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga29b99da5a120ad1073710c3b2e78f14d"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#ga29b99da5a120ad1073710c3b2e78f14d">lwm2m_path_log_strdup</a> (char *buf, struct <a class="el" href="structlwm2m__obj__path.html">lwm2m_obj_path</a> *path)</td></tr>
 <tr class="memdesc:ga29b99da5a120ad1073710c3b2e78f14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to print path objects' contents to log.  <a href="group__lwm2m__api.html#ga29b99da5a120ad1073710c3b2e78f14d">More...</a><br /></td></tr>
 <tr class="separator:ga29b99da5a120ad1073710c3b2e78f14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5a0eed7bf3593f698194e5e047b07fa8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwm2m__api.html#ga5a0eed7bf3593f698194e5e047b07fa8">lwm2m_engine_send</a> (struct <a class="el" href="structlwm2m__ctx.html">lwm2m_ctx</a> *ctx, char const *path_list[], <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> path_list_size, <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> confirmation_request)</td></tr>
+<tr class="memdesc:ga5a0eed7bf3593f698194e5e047b07fa8"><td class="mdescLeft">&#160;</td><td class="mdescRight"> LwM2M SEND operation to given path list  <a href="group__lwm2m__api.html#ga5a0eed7bf3593f698194e5e047b07fa8">More...</a><br /></td></tr>
+<tr class="separator:ga5a0eed7bf3593f698194e5e047b07fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -483,7 +491,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2fa1ed3146d6c2b96c5cfe4341985326.html">net</a></li><li class="navelem"><a class="el" href="lwm2m_8h.html">lwm2m.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="476" column="5" declfile="include/bluetooth/mesh/main.h" declline="476" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="500" column="5" declfile="include/bluetooth/mesh/main.h" declline="500" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga69fc65f4e07e6007388473f139e5d8d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="489" column="6" declfile="include/bluetooth/mesh/main.h" declline="489" declcolumn="6"/>
+        <location file="include/bluetooth/mesh/main.h" line="513" column="6" declfile="include/bluetooth/mesh/main.h" declline="513" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga6c209dbad6881f1e9634d9b7d42f2c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="501" column="5" declfile="include/bluetooth/mesh/main.h" declline="501" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="525" column="5" declfile="include/bluetooth/mesh/main.h" declline="525" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1gaa9114ce8941e641dbb23828d7c0451fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="510" column="5" declfile="include/bluetooth/mesh/main.h" declline="510" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="534" column="5" declfile="include/bluetooth/mesh/main.h" declline="534" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga3fdc601bd036477f6bdf212667c6b0c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -148,7 +148,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="520" column="6" declfile="include/bluetooth/mesh/main.h" declline="520" declcolumn="6"/>
+        <location file="include/bluetooth/mesh/main.h" line="544" column="6" declfile="include/bluetooth/mesh/main.h" declline="544" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1gacdf00423b03057fdf3a4207ee579eb74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="530" column="6" declfile="include/bluetooth/mesh/main.h" declline="530" declcolumn="6"/>
+        <location file="include/bluetooth/mesh/main.h" line="554" column="6" declfile="include/bluetooth/mesh/main.h" declline="554" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga7964f5b1abb7b12728e4ec224c95c849" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -200,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="543" column="5" declfile="include/bluetooth/mesh/main.h" declline="543" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="567" column="5" declfile="include/bluetooth/mesh/main.h" declline="567" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga3fd66605950a55e299ca3a7cc697d453" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -221,7 +221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="552" column="5" declfile="include/bluetooth/mesh/main.h" declline="552" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="576" column="5" declfile="include/bluetooth/mesh/main.h" declline="576" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga28b9b1d7d732e300be8d4bbffdbad391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -252,7 +252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="667" column="5" declfile="include/bluetooth/mesh/main.h" declline="667" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="691" column="5" declfile="include/bluetooth/mesh/main.h" declline="691" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh_1ga62f9a72c4e9dc5e4f3f42bd4df4fe452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -283,7 +283,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="680" column="6" declfile="include/bluetooth/mesh/main.h" declline="680" declcolumn="6"/>
+        <location file="include/bluetooth/mesh/main.h" line="704" column="6" declfile="include/bluetooth/mesh/main.h" declline="704" declcolumn="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="450" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="450" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="474" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="474" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1gac588eefe83db94784a420ce063f02b55" prot="public" static="no">
         <name>BT_MESH_FEAT_RELAY</name>
@@ -308,7 +308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="453" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="453" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="477" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="477" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1gaee648ce202316c56d4d588cb0ad5aeb4" prot="public" static="no">
         <name>BT_MESH_FEAT_PROXY</name>
@@ -320,7 +320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="455" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="455" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="479" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="479" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1ga8f27086b3bc3c4a6e14621836f9f8e80" prot="public" static="no">
         <name>BT_MESH_FEAT_FRIEND</name>
@@ -332,7 +332,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="457" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="457" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="481" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="481" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1gaad71a36c82b4e4d3fa334ecff5cc0171" prot="public" static="no">
         <name>BT_MESH_FEAT_LOW_POWER</name>
@@ -344,7 +344,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="459" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="459" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="483" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="483" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1gac337fd8688d70e862974e010ad42a11b" prot="public" static="no">
         <name>BT_MESH_FEAT_SUPPORTED</name>
@@ -358,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="460" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="460" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="484" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="484" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1gac18d4ce09495a8ade098a6320bb26ec2" prot="public" static="no">
         <name>BT_MESH_LPN_CB_DEFINE</name>
@@ -383,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="601" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="601" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="625" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="625" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__mesh_1ga4f00fa03af86b39e24140eb09c51ca4c" prot="public" static="no">
         <name>BT_MESH_FRIEND_CB_DEFINE</name>
@@ -409,7 +409,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="654" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="654" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="678" column="9" bodyfile="include/bluetooth/mesh/main.h" bodystart="678" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

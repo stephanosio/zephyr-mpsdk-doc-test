@@ -485,14 +485,14 @@ as custom QEMU and OpenOCD.
          .. code-block:: bash
 
             cd ~
-            wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_linux-x86_64.tar.gz
-            wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/sha256.sum | shasum --check --ignore-missing
+            wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
+            wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/sha256.sum | shasum --check --ignore-missing
 
       #. Extract the Zephyr SDK bundle archive:
 
          .. code-block:: bash
 
-            tar xvf zephyr-sdk-0.90.22_linux-x86_64.tar.gz
+            tar xvf zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
 
          .. note::
             It is recommended to extract the Zephyr SDK bundle at one of the following locations:
@@ -502,15 +502,15 @@ as custom QEMU and OpenOCD.
             * ``/opt``
             * ``/usr/local``
 
-            The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.90.22`` directory and, when
+            The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.14.0-beta1`` directory and, when
             extracted under ``$HOME``, the resulting installation path will be
-            ``$HOME/zephyr-sdk-0.90.22``.
+            ``$HOME/zephyr-sdk-0.14.0-beta1``.
 
       #. Run the Zephyr SDK bundle setup script:
 
          .. code-block:: bash
 
-            cd zephyr-sdk-0.90.22
+            cd zephyr-sdk-0.14.0-beta1
             ./setup.sh
 
          .. note::
@@ -524,7 +524,7 @@ as custom QEMU and OpenOCD.
 
          .. code-block:: bash
 
-            sudo cp ~/zephyr-sdk-0.90.22/sysroots/x86_64-pokysdk-linux/usr/share/openocd/contrib/60-openocd.rules /etc/udev/rules.d
+            sudo cp ~/zephyr-sdk-0.14.0-beta1/sysroots/x86_64-pokysdk-linux/usr/share/openocd/contrib/60-openocd.rules /etc/udev/rules.d
             sudo udevadm control --reload
 
    .. group-tab:: macOS
@@ -535,14 +535,14 @@ as custom QEMU and OpenOCD.
          .. code-block:: bash
 
             cd ~
-            wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_macos-x86_64.tar.gz
-            wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/sha256.sum | shasum --check --ignore-missing
+            wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_macos-x86_64.tar.gz
+            wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/sha256.sum | shasum --check --ignore-missing
 
       #. Extract the Zephyr SDK bundle archive:
 
          .. code-block:: bash
 
-            tar xvf zephyr-sdk-0.90.22_macos-x86_64.tar.gz
+            tar xvf zephyr-sdk-0.14.0-beta1_macos-x86_64.tar.gz
 
          .. note::
             It is recommended to extract the Zephyr SDK bundle at one of the following locations:
@@ -552,15 +552,15 @@ as custom QEMU and OpenOCD.
             * ``/opt``
             * ``/usr/local``
 
-            The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.90.22`` directory and, when
+            The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.14.0-beta1`` directory and, when
             extracted under ``$HOME``, the resulting installation path will be
-            ``$HOME/zephyr-sdk-0.90.22``.
+            ``$HOME/zephyr-sdk-0.14.0-beta1``.
 
       #. Run the Zephyr SDK bundle setup script:
 
          .. code-block:: bash
 
-            cd zephyr-sdk-0.90.22
+            cd zephyr-sdk-0.14.0-beta1
             ./setup.sh
 
          .. note::
@@ -577,13 +577,13 @@ as custom QEMU and OpenOCD.
          .. code-block:: bash
 
             cd %HOMEPATH%
-            wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_windows-x86_64.zip
+            wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_windows-x86_64.zip
 
       #. Extract the Zephyr SDK bundle archive:
 
          .. code-block:: bash
 
-            unzip zephyr-sdk-0.90.22_windows-x86_64.zip
+            unzip zephyr-sdk-0.14.0-beta1_windows-x86_64.zip
 
          .. note::
             It is recommended to extract the Zephyr SDK bundle at one of the following locations:
@@ -591,15 +591,15 @@ as custom QEMU and OpenOCD.
             * ``%HOMEPATH%``
             * ``%PROGRAMFILES%``
 
-            The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.90.22`` directory and, when
+            The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.14.0-beta1`` directory and, when
             extracted under ``%HOMEPATH%``, the resulting installation path will be
-            ``%HOMEPATH%\zephyr-sdk-0.90.22``.
+            ``%HOMEPATH%\zephyr-sdk-0.14.0-beta1``.
 
       #. Run the Zephyr SDK bundle setup script:
 
          .. code-block:: bash
 
-            cd zephyr-sdk-0.90.22
+            cd zephyr-sdk-0.14.0-beta1
             setup.cmd
 
          .. note::

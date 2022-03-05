@@ -757,7 +757,7 @@
       </memberdef>
       <memberdef kind="define" id="sched_2deadline_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -835,10 +835,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="sched_2deadline_2src_2main_8c_1a18d270e9eb52a168b6c15f0c953aeca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sched_2deadline_2src_2main_8c_1a135897e71b879959c0e3061bd4c4ba33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(worker_stacks, 8,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(worker_stacks, 8,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>worker_stacks</type>
@@ -847,7 +847,7 @@
           <type>8</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1018,12 +1018,12 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>this<sp/>should<sp/>be<sp/>large<sp/>enough<sp/>for<sp/>us</highlight></codeline>
 <codeline lineno="12"><highlight class="comment"><sp/>*<sp/>to<sp/>print<sp/>a<sp/>failing<sp/>assert<sp/>if<sp/>necessary</highlight></codeline>
 <codeline lineno="13"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="sched_2deadline_2src_2main_8c_1ac6fa6086094cd956168b6e961c6d45be" kindref="member">worker_threads</ref>[<ref refid="sched_2deadline_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="sched_2deadline_2src_2main_8c_1a3e4cd17493bcd017185987d396d038e1" kindref="member">worker_tids</ref>[<ref refid="sched_2deadline_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(worker_stacks,<sp/><ref refid="sched_2deadline_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>,<sp/><ref refid="sched_2deadline_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(worker_stacks,<sp/><ref refid="sched_2deadline_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>,<sp/><ref refid="sched_2deadline_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sched_2deadline_2src_2main_8c_1aa6a9c34a3602a056a43942f5001602f8" kindref="member">thread_deadlines</ref>[<ref refid="sched_2deadline_2src_2main_8c_1a7735206bdfad487588bba2126b806ab7" kindref="member">NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>

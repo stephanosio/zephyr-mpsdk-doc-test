@@ -5,7 +5,7 @@ var timer_2timer__error__case_2src_2main_8c =
     [ "STACK_SIZE", "timer_2timer__error__case_2src_2main_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "TEST_TIMEOUT", "timer_2timer__error__case_2src_2main_8c.html#a9fd0cdfdda29532a444c52dd9e1c1d1f", null ],
     [ "THREAD_TEST_PRIORITY", "timer_2timer__error__case_2src_2main_8c.html#a122fcce70e98e17966bab36f75ced5da", null ],
-    [ "K_THREAD_STACK_DEFINE", "timer_2timer__error__case_2src_2main_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "timer_2timer__error__case_2src_2main_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "sys_clock_announce", "timer_2timer__error__case_2src_2main_8c.html#aa7d3b1bdb8d15c907aaafea3b96ac2b5", null ],
     [ "sys_clock_timeout_end_calc", "timer_2timer__error__case_2src_2main_8c.html#ab72f9cc1ace8424476cbded5a7f66afe", null ],
     [ "test_main", "timer_2timer__error__case_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

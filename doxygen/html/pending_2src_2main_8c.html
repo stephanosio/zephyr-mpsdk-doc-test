@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -126,9 +126,9 @@ Macros</h2></td></tr>
 <tr class="separator:ae96d394715f2f9f61c7e41713a146709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6085227bccccf93967cb8aaaa58b042c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a6085227bccccf93967cb8aaaa58b042c">FOURTH_SECOND</a>&#160;&#160;&#160;(250)</td></tr>
 <tr class="separator:a6085227bccccf93967cb8aaaa58b042c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff292780fcfcd2e0d9f4c0e188c0ee1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a5ff292780fcfcd2e0d9f4c0e188c0ee1">COOP_STACKSIZE</a>&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACKSIZE)</td></tr>
+<tr class="memitem:a5ff292780fcfcd2e0d9f4c0e188c0ee1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a5ff292780fcfcd2e0d9f4c0e188c0ee1">COOP_STACKSIZE</a>&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</td></tr>
 <tr class="separator:a5ff292780fcfcd2e0d9f4c0e188c0ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ef98d8a3bb21001cfbd584f750b634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#ad0ef98d8a3bb21001cfbd584f750b634">PREEM_STACKSIZE</a>&#160;&#160;&#160;(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</td></tr>
+<tr class="memitem:ad0ef98d8a3bb21001cfbd584f750b634"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#ad0ef98d8a3bb21001cfbd584f750b634">PREEM_STACKSIZE</a>&#160;&#160;&#160;(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</td></tr>
 <tr class="separator:ad0ef98d8a3bb21001cfbd584f750b634"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1837e658992207229ff2d87217ccb8d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a1837e658992207229ff2d87217ccb8d4">FIFO_TEST_START</a>&#160;&#160;&#160;10</td></tr>
 <tr class="separator:a1837e658992207229ff2d87217ccb8d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,8 +153,8 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a4cc22fe9f014988ceb30759178e9fa9d"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a4cc22fe9f014988ceb30759178e9fa9d">K_THREAD_STACK_DEFINE</a> (offload_work_q_stack, 1024)</td></tr>
 <tr class="separator:a4cc22fe9f014988ceb30759178e9fa9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b522ccce865cf4a761299949fe2c4dc"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a5b522ccce865cf4a761299949fe2c4dc">K_THREAD_STACK_ARRAY_DEFINE</a> (coop_stack, 2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</td></tr>
-<tr class="separator:a5b522ccce865cf4a761299949fe2c4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa87cf73d3eef61ff7f4c94ed5abd38a2"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#aa87cf73d3eef61ff7f4c94ed5abd38a2">K_THREAD_STACK_ARRAY_DEFINE</a> (coop_stack, 2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</td></tr>
+<tr class="separator:aa87cf73d3eef61ff7f4c94ed5abd38a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24e90d95e665471f5223fba9511fa000"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a24e90d95e665471f5223fba9511fa000">my_fifo_get</a> (struct <a class="el" href="structk__fifo.html">k_fifo</a> *<a class="el" href="pending_2src_2main_8c.html#a4c78dc47164573bcfb8130a8d52e1b77">fifo</a>, <a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> <a class="el" href="timer_2cycle64_2src_2main_8c.html#a8f4b69a82b00d7baf3f1f7d480bb7fa0">timeout</a>)</td></tr>
 <tr class="separator:a24e90d95e665471f5223fba9511fa000"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77c4a98452e46f370028c044ffe7dfe0"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a77c4a98452e46f370028c044ffe7dfe0">my_lifo_get</a> (struct <a class="el" href="structk__lifo.html">k_lifo</a> *<a class="el" href="pending_2src_2main_8c.html#a5f1a84796be0de3921a88115c3d4246c">lifo</a>, <a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> <a class="el" href="timer_2cycle64_2src_2main_8c.html#a8f4b69a82b00d7baf3f1f7d480bb7fa0">timeout</a>)</td></tr>
@@ -186,10 +186,10 @@ Functions</h2></td></tr>
 <tr class="separator:ga2e602bcd93141eb58c25b9cd5058fbee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4533f287d99bb2d7c24c0e29c9a449"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449">test_main</a> (void)</td></tr>
 <tr class="separator:a8a4533f287d99bb2d7c24c0e29c9a449"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e183b402cab151b28192c113b9de4d4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a9e183b402cab151b28192c113b9de4d4">K_THREAD_DEFINE</a> (TASK_LOW,(1024+CONFIG_TEST_EXTRA_STACKSIZE), <a class="el" href="pending_2src_2main_8c.html#abe2ac675cb19c97a17e2b046557a4d87">task_low</a>, NULL, NULL, NULL, 7, 0, 0)</td></tr>
-<tr class="separator:a9e183b402cab151b28192c113b9de4d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d69902a898cf0573b4f4915c3074b29"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a4d69902a898cf0573b4f4915c3074b29">K_THREAD_DEFINE</a> (TASK_HIGH,(1024+CONFIG_TEST_EXTRA_STACKSIZE), <a class="el" href="pending_2src_2main_8c.html#a8d5f54b40026ad33194e0db6ca767b9e">task_high</a>, NULL, NULL, NULL, 5, 0, 0)</td></tr>
-<tr class="separator:a4d69902a898cf0573b4f4915c3074b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc99cf9f974b55849ecdb65e979299ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#adc99cf9f974b55849ecdb65e979299ab">K_THREAD_DEFINE</a> (TASK_LOW,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), <a class="el" href="pending_2src_2main_8c.html#abe2ac675cb19c97a17e2b046557a4d87">task_low</a>, NULL, NULL, NULL, 7, 0, 0)</td></tr>
+<tr class="separator:adc99cf9f974b55849ecdb65e979299ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11e358e08573f06dc2e64b69864eae2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pending_2src_2main_8c.html#a11e358e08573f06dc2e64b69864eae2a">K_THREAD_DEFINE</a> (TASK_HIGH,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), <a class="el" href="pending_2src_2main_8c.html#a8d5f54b40026ad33194e0db6ca767b9e">task_high</a>, NULL, NULL, NULL, 5, 0, 0)</td></tr>
+<tr class="separator:a11e358e08573f06dc2e64b69864eae2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -238,7 +238,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define COOP_STACKSIZE&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACKSIZE)</td>
+          <td class="memname">#define COOP_STACKSIZE&#160;&#160;&#160;(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -396,7 +396,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define PREEM_STACKSIZE&#160;&#160;&#160;(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</td>
+          <td class="memname">#define PREEM_STACKSIZE&#160;&#160;&#160;(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -604,8 +604,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4d69902a898cf0573b4f4915c3074b29" name="a4d69902a898cf0573b4f4915c3074b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d69902a898cf0573b4f4915c3074b29">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[1/2]</span></h2>
+<a id="a11e358e08573f06dc2e64b69864eae2a" name="a11e358e08573f06dc2e64b69864eae2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11e358e08573f06dc2e64b69864eae2a">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +619,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -674,8 +674,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9e183b402cab151b28192c113b9de4d4" name="a9e183b402cab151b28192c113b9de4d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e183b402cab151b28192c113b9de4d4">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[2/2]</span></h2>
+<a id="adc99cf9f974b55849ecdb65e979299ab" name="adc99cf9f974b55849ecdb65e979299ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc99cf9f974b55849ecdb65e979299ab">&#9670;&nbsp;</a></span>K_THREAD_DEFINE() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -689,7 +689,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(1024+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">, </td>
         </tr>
         <tr>
@@ -744,8 +744,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5b522ccce865cf4a761299949fe2c4dc" name="a5b522ccce865cf4a761299949fe2c4dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b522ccce865cf4a761299949fe2c4dc">&#9670;&nbsp;</a></span>K_THREAD_STACK_ARRAY_DEFINE()</h2>
+<a id="aa87cf73d3eef61ff7f4c94ed5abd38a2" name="aa87cf73d3eef61ff7f4c94ed5abd38a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa87cf73d3eef61ff7f4c94ed5abd38a2">&#9670;&nbsp;</a></span>K_THREAD_STACK_ARRAY_DEFINE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -768,7 +768,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">(512+CONFIG_TEST_EXTRA_STACKSIZE)&#160;</td>
+          <td class="paramtype">(512+CONFIG_TEST_EXTRA_STACK_SIZE)&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -1445,7 +1445,7 @@ Variables</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_5dbb00273b3e4dd6e0f7d5fc4d23ba94.html">pending</a></li><li class="navelem"><a class="el" href="dir_64f8de5ee32b4970cf035261ee05a7d5.html">src</a></li><li class="navelem"><a class="el" href="pending_2src_2main_8c.html">main.c</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

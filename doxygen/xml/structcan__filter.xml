@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="946" column="9" bodyfile="include/drivers/can.h" bodystart="946" bodyend="-1"/>
+        <location file="include/drivers/can.h" line="1161" column="9" bodyfile="include/drivers/can.h" bodystart="1161" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcan__filter_1a072a474e675c07a4d36bf9c940e8c571" prot="public" static="no" mutable="no">
         <type><ref refid="group__can__interface_1gaf1c86d266c4de5b8fb79e12ff38def1f" kindref="member">canid_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="948" column="9" bodyfile="include/drivers/can.h" bodystart="948" bodyend="-1"/>
+        <location file="include/drivers/can.h" line="1163" column="9" bodyfile="include/drivers/can.h" bodystart="1163" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -39,7 +39,7 @@
     <detaileddescription>
 <para>A filter is considered a match when <computeroutput>received_can_id &amp; mask == can_id &amp; can_mask</computeroutput>. </para>
     </detaileddescription>
-    <location file="include/drivers/can.h" line="944" column="1" bodyfile="include/drivers/can.h" bodystart="944" bodyend="949"/>
+    <location file="include/drivers/can.h" line="1159" column="1" bodyfile="include/drivers/can.h" bodystart="1159" bodyend="1164"/>
     <listofallmembers>
       <member refid="structcan__filter_1a5fccaff73b647ddc50fb712f936f0b33" prot="public" virt="non-virtual"><scope>can_filter</scope><name>can_id</name></member>
       <member refid="structcan__filter_1a072a474e675c07a4d36bf9c940e8c571" prot="public" virt="non-virtual"><scope>can_filter</scope><name>can_mask</name></member>

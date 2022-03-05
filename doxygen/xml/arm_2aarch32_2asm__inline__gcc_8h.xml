@@ -145,7 +145,7 @@
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="arm_2aarch32_2exc_8h" kindref="compound">arch/arm/aarch32/exc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="irq_8h" kindref="compound">irq.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_CPU_CORTEX_R)<sp/>||<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_A)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_R)<sp/>||<sp/>defined(CONFIG_CPU_AARCH32_CORTEX_A)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="include_2arch_2arm_2aarch32_2cortex__a__r_2cpu_8h" kindref="compound">arch/arm/aarch32/cortex_a_r/cpu.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>

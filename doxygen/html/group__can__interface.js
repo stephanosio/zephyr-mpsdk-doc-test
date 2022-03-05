@@ -29,6 +29,10 @@ var group__can__interface =
       [ "prop_seg", "structcan__timing.html#ac009d40fee9788b663963978498b2ee9", null ],
       [ "sjw", "structcan__timing.html#a5af76a4ee9c741642ec19265a47fceb5", null ]
     ] ],
+    [ "can_device_state", "structcan__device__state.html", [
+      [ "devstate", "structcan__device__state.html#a28061ff1193176dd01b7bb9a88f402ec", null ],
+      [ "stats", "structcan__device__state.html#ae05c85eae4f6bee075ffdc4f0ab56f47", null ]
+    ] ],
     [ "can_frame", "structcan__frame.html", [
       [ "can_dlc", "structcan__frame.html#aa055f09fd81b299201618396b7dc9314", null ],
       [ "can_id", "structcan__frame.html#ac6aeb5fbc99596a37fe1519f3aa8410a", null ],
@@ -38,12 +42,20 @@ var group__can__interface =
       [ "can_id", "structcan__filter.html#a5fccaff73b647ddc50fb712f936f0b33", null ],
       [ "can_mask", "structcan__filter.html#a072a474e675c07a4d36bf9c940e8c571", null ]
     ] ],
+    [ "CAN_DEVICE_DT_DEFINE", "group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b", null ],
+    [ "CAN_DEVICE_DT_INST_DEFINE", "group__can__interface.html#ga20266dc5e962922144e078b85ccb8351", null ],
     [ "CAN_EXT_ID_MASK", "group__can__interface.html#ga15ee71e8abcf51008925585049125986", null ],
     [ "CAN_MAX_DLC", "group__can__interface.html#gadc209a027ee700faf10461e2417bee50", null ],
     [ "CAN_MAX_EXT_ID", "group__can__interface.html#ga0f3572940065f8f6d54099e7a4175f8f", null ],
     [ "CAN_MAX_STD_ID", "group__can__interface.html#ga7987c1d4089742f87a7ac611add1a286", null ],
     [ "CAN_MSGQ_DEFINE", "group__can__interface.html#ga7af0acdfbdad07fc3eba4cbd29bc090b", null ],
     [ "CAN_SJW_NO_CHANGE", "group__can__interface.html#ga3f7eefd33eb0cb074e5d742c5097554a", null ],
+    [ "CAN_STATS_ACK_ERROR_INC", "group__can__interface.html#ga15f7ca18badbbe2fe24be68cacce6171", null ],
+    [ "CAN_STATS_BIT0_ERROR_INC", "group__can__interface.html#ga120a37d5ae5064dcbf116e488f733764", null ],
+    [ "CAN_STATS_BIT1_ERROR_INC", "group__can__interface.html#ga678b74039632302efcb5ef80f0e3a90b", null ],
+    [ "CAN_STATS_CRC_ERROR_INC", "group__can__interface.html#ga125ce05d40881476f5f156ad5e28c664", null ],
+    [ "CAN_STATS_FORM_ERROR_INC", "group__can__interface.html#gac5809b3f5e1a463822e76921cddc9909", null ],
+    [ "CAN_STATS_STUFF_ERROR_INC", "group__can__interface.html#gae4146843944b7ffb1c96636e889282f7", null ],
     [ "CAN_STD_ID_MASK", "group__can__interface.html#ga4cd8ce34887b90baeeaa6a4aa048b398", null ],
     [ "CANFD_MAX_DLC", "group__can__interface.html#gad4b7310536c7e3252c2056abe64c0333", null ],
     [ "can_rx_callback_t", "group__can__interface.html#gaaa6db2ee486884116a801a797af844ba", null ],

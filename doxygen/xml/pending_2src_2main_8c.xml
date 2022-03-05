@@ -788,7 +788,7 @@
       </memberdef>
       <memberdef kind="define" id="pending_2src_2main_8c_1a5ff292780fcfcd2e0d9f4c0e188c0ee1" prot="public" static="no">
         <name>COOP_STACKSIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -799,7 +799,7 @@
       </memberdef>
       <memberdef kind="define" id="pending_2src_2main_8c_1ad0ef98d8a3bb21001cfbd584f750b634" prot="public" static="no">
         <name>PREEM_STACKSIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1172,10 +1172,10 @@
         </inbodydescription>
         <location file="tests/kernel/pending/src/main.c" line="41" column="8" declfile="tests/kernel/pending/src/main.c" declline="41" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="pending_2src_2main_8c_1a5b522ccce865cf4a761299949fe2c4dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="pending_2src_2main_8c_1aa87cf73d3eef61ff7f4c94ed5abd38a2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(coop_stack, 2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(coop_stack, 2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>coop_stack</type>
@@ -1184,7 +1184,7 @@
           <type>2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1437,7 +1437,7 @@
 <para>Test pending of workq, fifo and lifo. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="see"><para><ref refid="group__thread__apis_1ga48d4b041790454da4d68ac8711f29657" kindref="member">k_sleep()</ref>, <ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE()</ref> </para>
+<para><simplesect kind="see"><para><ref refid="group__thread__apis_1ga48d4b041790454da4d68ac8711f29657" kindref="member">k_sleep()</ref>, <ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE()</ref> </para>
 </simplesect>
 </para>
         </detaileddescription>
@@ -1494,16 +1494,16 @@
         </inbodydescription>
         <location file="tests/kernel/pending/src/main.c" line="473" column="6" bodyfile="tests/kernel/pending/src/main.c" bodystart="473" bodyend="481"/>
       </memberdef>
-      <memberdef kind="function" id="pending_2src_2main_8c_1a9e183b402cab151b28192c113b9de4d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="pending_2src_2main_8c_1adc99cf9f974b55849ecdb65e979299ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(TASK_LOW,(1024+CONFIG_TEST_EXTRA_STACKSIZE), task_low, NULL, NULL, NULL, 7, 0, 0)</argsstring>
+        <argsstring>(TASK_LOW,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), task_low, NULL, NULL, NULL, 7, 0, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>TASK_LOW</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="pending_2src_2main_8c_1abe2ac675cb19c97a17e2b046557a4d87" kindref="member">task_low</ref></type>
@@ -1534,16 +1534,16 @@
         </inbodydescription>
         <location file="tests/kernel/pending/src/main.c" line="483" column="1" declfile="tests/kernel/pending/src/main.c" declline="483" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="pending_2src_2main_8c_1a4d69902a898cf0573b4f4915c3074b29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="pending_2src_2main_8c_1a11e358e08573f06dc2e64b69864eae2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(TASK_HIGH,(1024+CONFIG_TEST_EXTRA_STACKSIZE), task_high, NULL, NULL, NULL, 5, 0, 0)</argsstring>
+        <argsstring>(TASK_HIGH,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), task_high, NULL, NULL, NULL, 5, 0, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>TASK_HIGH</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="pending_2src_2main_8c_1a8d5f54b40026ad33194e0db6ca767b9e" kindref="member">task_high</ref></type>
@@ -1598,8 +1598,8 @@
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>THIRD_SECOND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(333)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/><sp/>FOURTH_SECOND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(250)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COOP_STACKSIZE<sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PREEM_STACKSIZE<sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COOP_STACKSIZE<sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PREEM_STACKSIZE<sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIFO_TEST_START<sp/><sp/><sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIFO_TEST_END<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>20</highlight><highlight class="normal"></highlight></codeline>
@@ -1620,7 +1620,7 @@
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFLOAD_WORKQUEUE_PRIORITY<sp/><sp/><sp/><sp/><sp/><sp/>(-1)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__work__q" kindref="compound">k_work_q</ref><sp/><ref refid="pending_2src_2main_8c_1ac0649d933c202a3d327ce1f6feaf4468" kindref="member">offload_work_q</ref>;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(offload_work_q_stack,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(offload_work_q_stack,</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pending_2src_2main_8c_1afab74e343d694a9682cb1e8775b970af" kindref="member">OFFLOAD_WORKQUEUE_STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="44" refid="structfifo__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfifo__data" kindref="compound">fifo_data</ref><sp/>{</highlight></codeline>
@@ -1638,7 +1638,7 @@
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/>*<ref refid="structoffload__work_1aa2a7b19b1a5c3eba14ae6adac73faf2b" kindref="member">sem</ref>;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(coop_stack,<sp/>2,<sp/><ref refid="pending_2src_2main_8c_1a5ff292780fcfcd2e0d9f4c0e188c0ee1" kindref="member">COOP_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(coop_stack,<sp/>2,<sp/><ref refid="pending_2src_2main_8c_1a5ff292780fcfcd2e0d9f4c0e188c0ee1" kindref="member">COOP_STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="pending_2src_2main_8c_1a7cf3f0f9166850de89f82fef405f998e" kindref="member">coop_thread</ref>[2];</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__fifo" kindref="compound">k_fifo</ref><sp/><ref refid="pending_2src_2main_8c_1a4c78dc47164573bcfb8130a8d52e1b77" kindref="member">fifo</ref>;</highlight></codeline>
@@ -2044,10 +2044,10 @@
 <codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__test__deprecated_1ga7f76df4df4bf68a605b923fed8e5465c" kindref="member">ztest_run_test_suite</ref>(pend);</highlight></codeline>
 <codeline lineno="481"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="482"><highlight class="normal"></highlight></codeline>
-<codeline lineno="483"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(TASK_LOW,<sp/><ref refid="pending_2src_2main_8c_1ad0ef98d8a3bb21001cfbd584f750b634" kindref="member">PREEM_STACKSIZE</ref>,<sp/><ref refid="pending_2src_2main_8c_1abe2ac675cb19c97a17e2b046557a4d87" kindref="member">task_low</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(TASK_LOW,<sp/><ref refid="pending_2src_2main_8c_1ad0ef98d8a3bb21001cfbd584f750b634" kindref="member">PREEM_STACKSIZE</ref>,<sp/><ref refid="pending_2src_2main_8c_1abe2ac675cb19c97a17e2b046557a4d87" kindref="member">task_low</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7,<sp/>0,<sp/>0);</highlight></codeline>
 <codeline lineno="485"><highlight class="normal"></highlight></codeline>
-<codeline lineno="486"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(TASK_HIGH,<sp/><ref refid="pending_2src_2main_8c_1ad0ef98d8a3bb21001cfbd584f750b634" kindref="member">PREEM_STACKSIZE</ref>,<sp/><ref refid="pending_2src_2main_8c_1a8d5f54b40026ad33194e0db6ca767b9e" kindref="member">task_high</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(TASK_HIGH,<sp/><ref refid="pending_2src_2main_8c_1ad0ef98d8a3bb21001cfbd584f750b634" kindref="member">PREEM_STACKSIZE</ref>,<sp/><ref refid="pending_2src_2main_8c_1a8d5f54b40026ad33194e0db6ca767b9e" kindref="member">task_high</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5,<sp/>0,<sp/>0);</highlight></codeline>
     </programlisting>
     <location file="tests/kernel/pending/src/main.c"/>

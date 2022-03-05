@@ -1,1769 +1,903 @@
 .. _devicetree_binding_index:
-
-Bindings index
-##############
-
-This page documents the available devicetree bindings.
-See :ref:`dt-bindings` for an introduction to the Zephyr bindings
-file format.
-
-Vendor index
-************
-
-This section contains an index of hardware vendors.
-Click on a vendor's name to go to the list of bindings for
-that vendor.
-
-.. rst-class:: rst-columns
-
-- :ref:`dt_no_vendor`
-- :ref:`dt_vendor_altr`
-- :ref:`dt_vendor_ams`
-- :ref:`dt_vendor_adi`
-- :ref:`dt_vendor_andestech`
-- :ref:`dt_vendor_apa`
-- :ref:`dt_vendor_aptina`
-- :ref:`dt_vendor_arduino`
-- :ref:`dt_vendor_arm`
-- :ref:`dt_vendor_asahi-kasei`
-- :ref:`dt_vendor_asmedia`
-- :ref:`dt_vendor_atmel`
-- :ref:`dt_vendor_avago`
-- :ref:`dt_vendor_bosch`
-- :ref:`dt_vendor_brcm`
-- :ref:`dt_vendor_cdns`
-- :ref:`dt_vendor_cypress`
-- :ref:`dt_vendor_gooddisplay`
-- :ref:`dt_vendor_espressif`
-- :ref:`dt_vendor_fcs`
-- :ref:`dt_vendor_focaltech`
-- :ref:`dt_vendor_fsl`
-- :ref:`dt_vendor_ftdi`
-- :ref:`dt_vendor_gaisler`
-- :ref:`dt_vendor_gd`
-- :ref:`dt_vendor_greeled`
-- :ref:`dt_vendor_aosong`
-- :ref:`dt_vendor_holtek`
-- :ref:`dt_vendor_honeywell`
-- :ref:`dt_vendor_hoperf`
-- :ref:`dt_vendor_ilitek`
-- :ref:`dt_vendor_mti`
-- :ref:`dt_vendor_infineon`
-- :ref:`dt_vendor_intel`
-- :ref:`dt_vendor_isil`
-- :ref:`dt_vendor_invensense`
-- :ref:`dt_vendor_inventek`
-- :ref:`dt_vendor_ite`
-- :ref:`dt_vendor_jedec`
-- :ref:`dt_vendor_linaro`
-- :ref:`dt_vendor_litex`
-- :ref:`dt_vendor_maxim`
-- :ref:`dt_vendor_meas`
-- :ref:`dt_vendor_microbit`
-- :ref:`dt_vendor_microchip`
-- :ref:`dt_vendor_microsemi`
-- :ref:`dt_vendor_nordic`
-- :ref:`dt_vendor_nuclei`
-- :ref:`dt_vendor_nuvoton`
-- :ref:`dt_vendor_nxp`
-- :ref:`dt_vendor_ovti`
-- :ref:`dt_vendor_openisa`
-- :ref:`dt_vendor_opencores`
-- :ref:`dt_vendor_panasonic`
-- :ref:`dt_vendor_plantower`
-- :ref:`dt_vendor_qemu`
-- :ref:`dt_vendor_decawave`
-- :ref:`dt_vendor_quectel`
-- :ref:`dt_vendor_quicklogic`
-- :ref:`dt_vendor_raspberrypi`
-- :ref:`dt_vendor_renesas`
-- :ref:`dt_vendor_riscv`
-- :ref:`dt_vendor_rocktech`
-- :ref:`dt_vendor_seeed`
-- :ref:`dt_vendor_segger`
-- :ref:`dt_vendor_semtech`
-- :ref:`dt_vendor_sensirion`
-- :ref:`dt_vendor_sharp`
-- :ref:`dt_vendor_swir`
-- :ref:`dt_vendor_sifive`
-- :ref:`dt_vendor_silabs`
-- :ref:`dt_vendor_simcom`
-- :ref:`dt_vendor_sitronix`
-- :ref:`dt_vendor_skyworks`
-- :ref:`dt_vendor_sbs`
-- :ref:`dt_vendor_solomon`
-- :ref:`dt_vendor_smsc`
-- :ref:`dt_vendor_st`
-- :ref:`dt_vendor_snps`
-- :ref:`dt_vendor_arc`
-- :ref:`dt_vendor_telink`
-- :ref:`dt_vendor_ti`
-- :ref:`dt_vendor_u-blox`
-- :ref:`dt_vendor_vishay`
-- :ref:`dt_vendor_wnc`
-- :ref:`dt_vendor_wiznet`
-- :ref:`dt_vendor_worldsemi`
-- :ref:`dt_vendor_we`
-- :ref:`dt_vendor_xlnx`
-- :ref:`dt_vendor_zephyr`
-- :ref:`dt_vendor_winsen`
-- :ref:`dt_unknown_vendor`
-
-Bindings by vendor
-******************
-
-This section contains available bindings, grouped by vendor.
-Within each group, bindings are listed by the "compatible" property
-they apply to, like this:
-
-**Vendor name (vendor prefix)**
-
-.. rst-class:: rst-columns
-
-- <compatible-A>
-- <compatible-B> (on <bus-name> bus)
-- <compatible-C>
-- ...
-
-The text "(on <bus-name> bus)" appears when bindings may behave
-differently depending on the bus the node appears on.
-For example, this applies to some sensor device nodes, which may
-appear as children of either I2C or SPI bus nodes.
-
-.. _dt_no_vendor:
-
-Generic or vendor-independent
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_adafruit_feather_header`
-- :ref:`dtbinding_arduino_header_r3`
-- :ref:`dtbinding_atmel_xplained_header`
-- :ref:`dtbinding_atmel_xplained_pro_header`
-- :ref:`dtbinding_ethernet_phy`
-- :ref:`dtbinding_fixed_clock`
-- :ref:`dtbinding_fixed_factor_clock`
-- :ref:`dtbinding_fixed_partitions`
-- :ref:`dtbinding_generic_fem_two_ctrl_pins`
-- :ref:`dtbinding_gpio_i2c`
-- :ref:`dtbinding_gpio_keys`
-- :ref:`dtbinding_gpio_leds`
-- :ref:`dtbinding_lm75`
-- :ref:`dtbinding_lm77`
-- :ref:`dtbinding_mikro_bus`
-- :ref:`dtbinding_mmio_sram`
-- :ref:`dtbinding_neorv32_cpu`
-- :ref:`dtbinding_neorv32_gpio`
-- :ref:`dtbinding_neorv32_trng`
-- :ref:`dtbinding_neorv32_uart`
-- :ref:`dtbinding_ns16550`
-- :ref:`dtbinding_particle_gen3_header`
-- :ref:`dtbinding_pci_host_ecam_generic`
-- :ref:`dtbinding_power_domain`
-- :ref:`dtbinding_power_domain_gpio`
-- :ref:`dtbinding_pwm_leds`
-- :ref:`dtbinding_regulator_fixed`
-- :ref:`dtbinding_regulator_pmic`
-- :ref:`dtbinding_reserved_memory`
-- :ref:`dtbinding_sample_controller`
-- :ref:`dtbinding_shared_irq`
-- :ref:`dtbinding_shared_multi_heap`
-- :ref:`dtbinding_soc_nv_flash`
-- :ref:`dtbinding_syscon`
-- :ref:`dtbinding_usb_audio`
-- :ref:`dtbinding_usb_audio_hp`
-- :ref:`dtbinding_usb_audio_hs`
-- :ref:`dtbinding_usb_audio_mic`
-- :ref:`dtbinding_usb_nop_xceiv`
-- :ref:`dtbinding_vexriscv_intc0`
-- :ref:`dtbinding_voltage_divider`
-
-.. _dt_vendor_altr:
-
-Altera Corp. (altr)
-===================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_altr_jtag_uart`
-- :ref:`dtbinding_altr_msgdma`
-- :ref:`dtbinding_altr_nios2_i2c`
-- :ref:`dtbinding_altr_nios2f`
-
-.. _dt_vendor_ams:
-
-AMS AG (ams)
-============
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_ams_ccs811`
-- :ref:`dtbinding_ams_ens210`
-- :ref:`dtbinding_ams_iaqcore`
-
-.. _dt_vendor_adi:
-
-Analog Devices, Inc. (adi)
-==========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_adi_adt7420`
-- :ref:`dtbinding_adi_adxl345`
-- :ref:`dtbinding_adi_adxl362`
-- :ref:`dtbinding_adi_adxl372_spi`
-- :ref:`dtbinding_adi_adxl372_i2c`
-
-.. _dt_vendor_andestech:
-
-Andes Technology Corporation (andestech)
-========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_andestech_atcgpio100`
-
-.. _dt_vendor_apa:
-
-Apa Electronic Co., Ltd (apa)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_apa_apa102`
-
-.. _dt_vendor_aptina:
-
-Aptina Imaging (aptina)
-=======================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_aptina_mt9m114`
-
-.. _dt_vendor_arduino:
-
-Arduino (arduino)
-=================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_arduino_uno_adc`
-
-.. _dt_vendor_arm:
-
-ARM Ltd. (arm)
-==============
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_arm_armv6m_mpu`
-- :ref:`dtbinding_arm_armv7m_mpu`
-- :ref:`dtbinding_arm_armv8_timer`
-- :ref:`dtbinding_arm_armv8.1m_mpu`
-- :ref:`dtbinding_arm_armv8m_mpu`
-- :ref:`dtbinding_arm_cmsdk_dtimer`
-- :ref:`dtbinding_arm_cmsdk_gpio`
-- :ref:`dtbinding_arm_cmsdk_timer`
-- :ref:`dtbinding_arm_cmsdk_uart`
-- :ref:`dtbinding_arm_cmsdk_watchdog`
-- :ref:`dtbinding_arm_cortex_a53`
-- :ref:`dtbinding_arm_cortex_a72`
-- :ref:`dtbinding_arm_cortex_m0`
-- :ref:`dtbinding_arm_cortex_m0+`
-- :ref:`dtbinding_arm_cortex_m1`
-- :ref:`dtbinding_arm_cortex_m23`
-- :ref:`dtbinding_arm_cortex_m3`
-- :ref:`dtbinding_arm_cortex_m33`
-- :ref:`dtbinding_arm_cortex_m33f`
-- :ref:`dtbinding_arm_cortex_m4`
-- :ref:`dtbinding_arm_cortex_m4f`
-- :ref:`dtbinding_arm_cortex_m7`
-- :ref:`dtbinding_arm_cortex_r4`
-- :ref:`dtbinding_arm_cortex_r4f`
-- :ref:`dtbinding_arm_cortex_r5`
-- :ref:`dtbinding_arm_cortex_r5f`
-- :ref:`dtbinding_arm_cortex_r7`
-- :ref:`dtbinding_arm_cortex_r82`
-- :ref:`dtbinding_arm_cryptocell_310`
-- :ref:`dtbinding_arm_cryptocell_312`
-- :ref:`dtbinding_arm_dma_pl330`
-- :ref:`dtbinding_arm_dtcm`
-- :ref:`dtbinding_arm_gic`
-- :ref:`dtbinding_arm_gic_v3_its`
-- :ref:`dtbinding_arm_itcm`
-- :ref:`dtbinding_arm_mhu`
-- :ref:`dtbinding_arm_mps2_fpgaio_gpio`
-- :ref:`dtbinding_arm_mps3_fpgaio_gpio`
-- :ref:`dtbinding_arm_pl011`
-- :ref:`dtbinding_arm_psci_0.2`
-- :ref:`dtbinding_arm_sbsa_uart`
-- :ref:`dtbinding_arm_scc`
-- :ref:`dtbinding_arm_v6m_nvic`
-- :ref:`dtbinding_arm_v7m_nvic`
-- :ref:`dtbinding_arm_v8.1m_nvic`
-- :ref:`dtbinding_arm_v8m_nvic`
-- :ref:`dtbinding_arm_versatile_i2c`
-
-.. _dt_vendor_asahi-kasei:
-
-Asahi Kasei Corp. (asahi-kasei)
-===============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_asahi_kasei_ak8975`
-
-.. _dt_vendor_asmedia:
-
-ASMedia Technology Inc. (asmedia)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_asmedia_asm2364`
-
-.. _dt_vendor_atmel:
-
-Atmel Corporation (atmel)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_atmel_at24`
-- :ref:`dtbinding_atmel_at25`
-- :ref:`dtbinding_atmel_at45`
-- :ref:`dtbinding_atmel_rf2xx`
-- :ref:`dtbinding_atmel_sam_afec`
-- :ref:`dtbinding_atmel_sam_can`
-- :ref:`dtbinding_atmel_sam_dac`
-- :ref:`dtbinding_atmel_sam_flash_controller`
-- :ref:`dtbinding_atmel_sam_gmac`
-- :ref:`dtbinding_atmel_sam_gpio`
-- :ref:`dtbinding_atmel_sam_i2c_twi`
-- :ref:`dtbinding_atmel_sam_i2c_twihs`
-- :ref:`dtbinding_atmel_sam_i2c_twim`
-- :ref:`dtbinding_atmel_sam_mdio`
-- :ref:`dtbinding_atmel_sam_pinctrl`
-- :ref:`dtbinding_atmel_sam_pwm`
-- :ref:`dtbinding_atmel_sam_spi`
-- :ref:`dtbinding_atmel_sam_ssc`
-- :ref:`dtbinding_atmel_sam_tc`
-- :ref:`dtbinding_atmel_sam_tc_qdec`
-- :ref:`dtbinding_atmel_sam_trng`
-- :ref:`dtbinding_atmel_sam_uart`
-- :ref:`dtbinding_atmel_sam_usart`
-- :ref:`dtbinding_atmel_sam_usbc`
-- :ref:`dtbinding_atmel_sam_usbhs`
-- :ref:`dtbinding_atmel_sam_watchdog`
-- :ref:`dtbinding_atmel_sam_xdmac`
-- :ref:`dtbinding_atmel_sam0_adc`
-- :ref:`dtbinding_atmel_sam0_dac`
-- :ref:`dtbinding_atmel_sam0_dmac`
-- :ref:`dtbinding_atmel_sam0_eic`
-- :ref:`dtbinding_atmel_sam0_gmac`
-- :ref:`dtbinding_atmel_sam0_gpio`
-- :ref:`dtbinding_atmel_sam0_i2c`
-- :ref:`dtbinding_atmel_sam0_id`
-- :ref:`dtbinding_atmel_sam0_nvmctrl`
-- :ref:`dtbinding_atmel_sam0_pinctrl`
-- :ref:`dtbinding_atmel_sam0_pinmux`
-- :ref:`dtbinding_atmel_sam0_rtc`
-- :ref:`dtbinding_atmel_sam0_sercom`
-- :ref:`dtbinding_atmel_sam0_spi`
-- :ref:`dtbinding_atmel_sam0_tc32`
-- :ref:`dtbinding_atmel_sam0_tcc_pwm`
-- :ref:`dtbinding_atmel_sam0_uart`
-- :ref:`dtbinding_atmel_sam0_usb`
-- :ref:`dtbinding_atmel_sam0_watchdog`
-- :ref:`dtbinding_atmel_sam4l_gpio`
-- :ref:`dtbinding_atmel_sam4l_uid`
-- :ref:`dtbinding_atmel_samd2x_gclk`
-- :ref:`dtbinding_atmel_samd2x_pm`
-- :ref:`dtbinding_atmel_samd5x_gclk`
-- :ref:`dtbinding_atmel_samd5x_mclk`
-- :ref:`dtbinding_atmel_winc1500`
-
-.. _dt_vendor_avago:
-
-Avago Technologies (avago)
-==========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_avago_apds9960`
-
-.. _dt_vendor_bosch:
-
-Bosch Sensortec GmbH (bosch)
-============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_bosch_bma280`
-- :ref:`dtbinding_bosch_bmc150_magn`
-- :ref:`dtbinding_bosch_bme280_spi`
-- :ref:`dtbinding_bosch_bme280_i2c`
-- :ref:`dtbinding_bosch_bme680_i2c`
-- :ref:`dtbinding_bosch_bmg160`
-- :ref:`dtbinding_bosch_bmi160`
-- :ref:`dtbinding_bosch_bmi270_i2c`
-- :ref:`dtbinding_bosch_bmm150`
-- :ref:`dtbinding_bosch_bmp388_spi`
-- :ref:`dtbinding_bosch_bmp388_i2c`
-- :ref:`dtbinding_bosch_m_can`
-- :ref:`dtbinding_bosch_m_can_base`
-
-.. _dt_vendor_brcm:
-
-Broadcom Corporation (brcm)
-===========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_brcm_iproc_pax_dma_v1`
-- :ref:`dtbinding_brcm_iproc_pax_dma_v2`
-- :ref:`dtbinding_brcm_iproc_pcie_ep`
-
-.. _dt_vendor_cdns:
-
-Cadence Design Systems Inc. (cdns)
-==================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_cdns_tensilica_xtensa_lx4`
-- :ref:`dtbinding_cdns_tensilica_xtensa_lx6`
-- :ref:`dtbinding_cdns_tensilica_xtensa_lx7`
-- :ref:`dtbinding_cdns_xtensa_core_intc`
-
-.. _dt_vendor_cypress:
-
-Cypress Semiconductor Corporation (cypress)
-===========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_cypress_cy8c95xx_gpio`
-- :ref:`dtbinding_cypress_cy8c95xx_gpio_port`
-- :ref:`dtbinding_cypress_psoc6_flash_controller`
-- :ref:`dtbinding_cypress_psoc6_gpio`
-- :ref:`dtbinding_cypress_psoc6_hsiom`
-- :ref:`dtbinding_cypress_psoc6_intmux`
-- :ref:`dtbinding_cypress_psoc6_intmux_ch`
-- :ref:`dtbinding_cypress_psoc6_pinctrl`
-- :ref:`dtbinding_cypress_psoc6_spi`
-- :ref:`dtbinding_cypress_psoc6_uart`
-- :ref:`dtbinding_cypress_psoc6_uid`
-
-.. _dt_vendor_gooddisplay:
-
-Dalian Good Display Co., Ltd. (gooddisplay)
-===========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_gooddisplay_gd7965`
-
-.. _dt_vendor_espressif:
-
-Espressif Systems (espressif)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_espressif_esp_at`
-- :ref:`dtbinding_espressif_esp32_flash_controller`
-- :ref:`dtbinding_espressif_esp32_gpio`
-- :ref:`dtbinding_espressif_esp32_i2c`
-- :ref:`dtbinding_espressif_esp32_intc`
-- :ref:`dtbinding_espressif_esp32_ledc`
-- :ref:`dtbinding_espressif_esp32_pinmux`
-- :ref:`dtbinding_espressif_esp32_rtc`
-- :ref:`dtbinding_espressif_esp32_spi`
-- :ref:`dtbinding_espressif_esp32_systimer`
-- :ref:`dtbinding_espressif_esp32_trng`
-- :ref:`dtbinding_espressif_esp32_uart`
-- :ref:`dtbinding_espressif_esp32_watchdog`
-
-.. _dt_vendor_fcs:
-
-Fairchild Semiconductor (fcs)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_fcs_fxl6408`
-
-.. _dt_vendor_focaltech:
-
-FocalTech Systems Co.,Ltd (focaltech)
-=====================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_focaltech_ft5336`
-
-.. _dt_vendor_fsl:
-
-Freescale Semiconductor (fsl)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_fsl_imx21_i2c`
-- :ref:`dtbinding_fsl_imx27_pwm`
-- :ref:`dtbinding_fsl_imx6sx_lcdif`
-
-.. _dt_vendor_ftdi:
-
-Future Technology Devices International Ltd. (ftdi)
-===================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_ftdi_ft800`
-
-.. _dt_vendor_gaisler:
-
-Gaisler (gaisler)
-=================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_gaisler_apbuart`
-- :ref:`dtbinding_gaisler_gptimer`
-- :ref:`dtbinding_gaisler_irqmp`
-- :ref:`dtbinding_gaisler_leon3`
-
-.. _dt_vendor_gd:
-
-GigaDevice Semiconductor (gd)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_gd_gd32_afio`
-- :ref:`dtbinding_gd_gd32_dac`
-- :ref:`dtbinding_gd_gd32_exti`
-- :ref:`dtbinding_gd_gd32_gpio`
-- :ref:`dtbinding_gd_gd32_i2c`
-- :ref:`dtbinding_gd_gd32_pinctrl_af`
-- :ref:`dtbinding_gd_gd32_pinctrl_afio`
-- :ref:`dtbinding_gd_gd32_pwm`
-- :ref:`dtbinding_gd_gd32_syscfg`
-- :ref:`dtbinding_gd_gd32_timer`
-- :ref:`dtbinding_gd_gd32_usart`
-
-.. _dt_vendor_greeled:
-
-GreeLed Electronic Ltd. (greeled)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_greeled_lpd8803`
-- :ref:`dtbinding_greeled_lpd8806`
-
-.. _dt_vendor_aosong:
-
-Guangzhou Aosong Electronic Co., Ltd. (aosong)
-==============================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_aosong_dht`
-
-.. _dt_vendor_holtek:
-
-Holtek Semiconductor, Inc. (holtek)
-===================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_holtek_ht16k33`
-- :ref:`dtbinding_holtek_ht16k33_keyscan`
-
-.. _dt_vendor_honeywell:
-
-Honeywell (honeywell)
-=====================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_honeywell_hmc5883l`
-- :ref:`dtbinding_honeywell_mpr`
-- :ref:`dtbinding_honeywell_sm351lt`
-
-.. _dt_vendor_hoperf:
-
-HOPERF Microelectronics Co. Ltd (hoperf)
-========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_hoperf_hp206c`
-- :ref:`dtbinding_hoperf_th02`
-
-.. _dt_vendor_ilitek:
-
-ILI Technology Corporation (ILITEK) (ilitek)
-============================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_ilitek_ili9340`
-- :ref:`dtbinding_ilitek_ili9341`
-- :ref:`dtbinding_ilitek_ili9488`
-
-.. _dt_vendor_mti:
-
-Imagination Technologies Ltd. (formerly MIPS Technologies Inc.) (mti)
-=====================================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_mti_cpu_intc`
-
-.. _dt_vendor_infineon:
-
-Infineon Technologies (infineon)
-================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_infineon_dps310`
-- :ref:`dtbinding_infineon_xmc4xxx_uart`
-
-.. _dt_vendor_intel:
-
-Intel Corporation (intel)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_intel_adsp_mailbox`
-- :ref:`dtbinding_intel_adsp_tlb`
-- :ref:`dtbinding_intel_apollo_lake`
-- :ref:`dtbinding_intel_atom`
-- :ref:`dtbinding_intel_cavs_i2s`
-- :ref:`dtbinding_intel_cavs_idc`
-- :ref:`dtbinding_intel_cavs_intc`
-- :ref:`dtbinding_intel_dmic`
-- :ref:`dtbinding_intel_e1000`
-- :ref:`dtbinding_intel_elkhart_lake`
-- :ref:`dtbinding_intel_gna`
-- :ref:`dtbinding_intel_gpio`
-- :ref:`dtbinding_intel_hpet`
-- :ref:`dtbinding_intel_ibecc`
-- :ref:`dtbinding_intel_ioapic`
-- :ref:`dtbinding_intel_pcie`
-- :ref:`dtbinding_intel_s1000_pinmux`
-- :ref:`dtbinding_intel_vt_d`
-- :ref:`dtbinding_intel_x86`
-
-.. _dt_vendor_isil:
-
-Intersil (isil)
-===============
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_isil_isl29035`
-
-.. _dt_vendor_invensense:
-
-InvenSense Inc. (invensense)
-============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_invensense_icm42605`
-- :ref:`dtbinding_invensense_mpu6050`
-- :ref:`dtbinding_invensense_mpu9150`
-- :ref:`dtbinding_invensense_mpu9250`
-
-.. _dt_vendor_inventek:
-
-Inventek Systems (inventek)
-===========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_inventek_eswifi`
-- :ref:`dtbinding_inventek_eswifi_uart`
-
-.. _dt_vendor_ite:
-
-ITE Tech. Inc. (ite)
-====================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_ite_it8xxx2_adc`
-- :ref:`dtbinding_ite_it8xxx2_bbram`
-- :ref:`dtbinding_ite_it8xxx2_flash_controller`
-- :ref:`dtbinding_ite_it8xxx2_gpio`
-- :ref:`dtbinding_ite_it8xxx2_i2c`
-- :ref:`dtbinding_ite_it8xxx2_intc`
-- :ref:`dtbinding_ite_it8xxx2_kscan`
-- :ref:`dtbinding_ite_it8xxx2_pinctrl_conf`
-- :ref:`dtbinding_ite_it8xxx2_pinmux`
-- :ref:`dtbinding_ite_it8xxx2_pwm`
-- :ref:`dtbinding_ite_it8xxx2_pwmprs`
-- :ref:`dtbinding_ite_it8xxx2_sspi`
-- :ref:`dtbinding_ite_it8xxx2_tach`
-- :ref:`dtbinding_ite_it8xxx2_timer`
-- :ref:`dtbinding_ite_it8xxx2_uart`
-- :ref:`dtbinding_ite_it8xxx2_watchdog`
-- :ref:`dtbinding_ite_riscv_ite`
-
-.. _dt_vendor_jedec:
-
-JEDEC Solid State Technology Association (jedec)
-================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_jedec_spi_nor`
-
-.. _dt_vendor_linaro:
-
-Linaro Limited (linaro)
-=======================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_linaro_96b_lscon_1v8`
-- :ref:`dtbinding_linaro_96b_lscon_3v3`
-
-.. _dt_vendor_litex:
-
-LiteX SoC builder (litex)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_litex_clk`
-- :ref:`dtbinding_litex_clkout`
-- :ref:`dtbinding_litex_dna0`
-- :ref:`dtbinding_litex_eth0`
-- :ref:`dtbinding_litex_gpio`
-- :ref:`dtbinding_litex_i2c`
-- :ref:`dtbinding_litex_i2s`
-- :ref:`dtbinding_litex_prbs`
-- :ref:`dtbinding_litex_pwm`
-- :ref:`dtbinding_litex_spi`
-- :ref:`dtbinding_litex_timer0`
-- :ref:`dtbinding_litex_uart0`
-
-.. _dt_vendor_maxim:
-
-Maxim Integrated Products (maxim)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_maxim_ds3231`
-- :ref:`dtbinding_maxim_max17055`
-- :ref:`dtbinding_maxim_max17262`
-- :ref:`dtbinding_maxim_max30101`
-- :ref:`dtbinding_maxim_max44009`
-- :ref:`dtbinding_maxim_max6675`
-
-.. _dt_vendor_meas:
-
-Measurement Specialties (meas)
-==============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_meas_ms5607_spi`
-- :ref:`dtbinding_meas_ms5607_i2c`
-- :ref:`dtbinding_meas_ms5837`
-
-.. _dt_vendor_microbit:
-
-Micro:bit Educational Foundation (microbit)
-===========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_microbit_edge_connector`
-
-.. _dt_vendor_microchip:
-
-Microchip Technology Inc. (microchip)
-=====================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_microchip_enc28j60`
-- :ref:`dtbinding_microchip_enc424j600`
-- :ref:`dtbinding_microchip_ksz8794`
-- :ref:`dtbinding_microchip_ksz8863`
-- :ref:`dtbinding_microchip_mcp230xx`
-- :ref:`dtbinding_microchip_mcp23s17`
-- :ref:`dtbinding_microchip_mcp23sxx`
-- :ref:`dtbinding_microchip_mcp2515`
-- :ref:`dtbinding_microchip_mcp3204`
-- :ref:`dtbinding_microchip_mcp3208`
-- :ref:`dtbinding_microchip_mcp4725`
-- :ref:`dtbinding_microchip_mcp7940n`
-- :ref:`dtbinding_microchip_mcp9808`
-- :ref:`dtbinding_microchip_xec_adc`
-- :ref:`dtbinding_microchip_xec_adc_v2`
-- :ref:`dtbinding_microchip_xec_ecia`
-- :ref:`dtbinding_microchip_xec_ecia_girq`
-- :ref:`dtbinding_microchip_xec_espi`
-- :ref:`dtbinding_microchip_xec_espi_host_dev`
-- :ref:`dtbinding_microchip_xec_espi_saf`
-- :ref:`dtbinding_microchip_xec_espi_v2`
-- :ref:`dtbinding_microchip_xec_espi_vw_routing`
-- :ref:`dtbinding_microchip_xec_gpio`
-- :ref:`dtbinding_microchip_xec_gpio_v2`
-- :ref:`dtbinding_microchip_xec_i2c`
-- :ref:`dtbinding_microchip_xec_i2c_v2`
-- :ref:`dtbinding_microchip_xec_kscan`
-- :ref:`dtbinding_microchip_xec_pcr`
-- :ref:`dtbinding_microchip_xec_peci`
-- :ref:`dtbinding_microchip_xec_pinmux`
-- :ref:`dtbinding_microchip_xec_ps2`
-- :ref:`dtbinding_microchip_xec_pwm`
-- :ref:`dtbinding_microchip_xec_qmspi`
-- :ref:`dtbinding_microchip_xec_qmspi_ldma`
-- :ref:`dtbinding_microchip_xec_rtos_timer`
-- :ref:`dtbinding_microchip_xec_tach`
-- :ref:`dtbinding_microchip_xec_timer`
-- :ref:`dtbinding_microchip_xec_uart`
-- :ref:`dtbinding_microchip_xec_watchdog`
-
-.. _dt_vendor_microsemi:
-
-Microchip Technology Inc. (formerly Microsemi Corporation) (microsemi)
-======================================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_microsemi_coreuart`
-
-.. _dt_vendor_nordic:
-
-Nordic Semiconductor (nordic)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_nordic_mbox_nrf_ipc`
-- :ref:`dtbinding_nordic_nrf_adc`
-- :ref:`dtbinding_nordic_nrf_cc310`
-- :ref:`dtbinding_nordic_nrf_cc312`
-- :ref:`dtbinding_nordic_nrf_clock`
-- :ref:`dtbinding_nordic_nrf_dppic`
-- :ref:`dtbinding_nordic_nrf_ecb`
-- :ref:`dtbinding_nordic_nrf_egu`
-- :ref:`dtbinding_nordic_nrf_ficr`
-- :ref:`dtbinding_nordic_nrf_gpio`
-- :ref:`dtbinding_nordic_nrf_gpiote`
-- :ref:`dtbinding_nordic_nrf_i2s`
-- :ref:`dtbinding_nordic_nrf_ipc`
-- :ref:`dtbinding_nordic_nrf_kmu`
-- :ref:`dtbinding_nordic_nrf_led_matrix`
-- :ref:`dtbinding_nordic_nrf_pdm`
-- :ref:`dtbinding_nordic_nrf_pinctrl`
-- :ref:`dtbinding_nordic_nrf_power`
-- :ref:`dtbinding_nordic_nrf_pwm`
-- :ref:`dtbinding_nordic_nrf_qdec`
-- :ref:`dtbinding_nordic_nrf_qspi`
-- :ref:`dtbinding_nordic_nrf_radio`
-- :ref:`dtbinding_nordic_nrf_regulators`
-- :ref:`dtbinding_nordic_nrf_rng`
-- :ref:`dtbinding_nordic_nrf_rtc`
-- :ref:`dtbinding_nordic_nrf_saadc`
-- :ref:`dtbinding_nordic_nrf_spi`
-- :ref:`dtbinding_nordic_nrf_spim`
-- :ref:`dtbinding_nordic_nrf_spis`
-- :ref:`dtbinding_nordic_nrf_spu`
-- :ref:`dtbinding_nordic_nrf_sw_pwm`
-- :ref:`dtbinding_nordic_nrf_temp`
-- :ref:`dtbinding_nordic_nrf_timer`
-- :ref:`dtbinding_nordic_nrf_twi`
-- :ref:`dtbinding_nordic_nrf_twim`
-- :ref:`dtbinding_nordic_nrf_twis`
-- :ref:`dtbinding_nordic_nrf_uart`
-- :ref:`dtbinding_nordic_nrf_uarte`
-- :ref:`dtbinding_nordic_nrf_uicr`
-- :ref:`dtbinding_nordic_nrf_usbd`
-- :ref:`dtbinding_nordic_nrf_vmc`
-- :ref:`dtbinding_nordic_nrf_watchdog`
-- :ref:`dtbinding_nordic_nrf21540_fem`
-- :ref:`dtbinding_nordic_nrf21540_fem_spi`
-- :ref:`dtbinding_nordic_nrf51_flash_controller`
-- :ref:`dtbinding_nordic_nrf52_flash_controller`
-- :ref:`dtbinding_nordic_nrf53_flash_controller`
-- :ref:`dtbinding_nordic_nrf91_flash_controller`
-- :ref:`dtbinding_nordic_qspi_nor`
-
-.. _dt_vendor_nuclei:
-
-Nuclei System Technology (nuclei)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_nuclei_bumblebee`
-- :ref:`dtbinding_nuclei_eclic`
-
-.. _dt_vendor_nuvoton:
-
-Nuvoton Technology Corporation (nuvoton)
-========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_nuvoton_nct38xx_gpio`
-- :ref:`dtbinding_nuvoton_nct38xx_gpio_alert`
-- :ref:`dtbinding_nuvoton_nct38xx_gpio_port`
-- :ref:`dtbinding_nuvoton_npcx_adc`
-- :ref:`dtbinding_nuvoton_npcx_bbram`
-- :ref:`dtbinding_nuvoton_npcx_booter_variant`
-- :ref:`dtbinding_nuvoton_npcx_espi`
-- :ref:`dtbinding_nuvoton_npcx_espi_vw_conf`
-- :ref:`dtbinding_nuvoton_npcx_gpio`
-- :ref:`dtbinding_nuvoton_npcx_host_sub`
-- :ref:`dtbinding_nuvoton_npcx_host_uart`
-- :ref:`dtbinding_nuvoton_npcx_i2c_ctrl`
-- :ref:`dtbinding_nuvoton_npcx_i2c_port`
-- :ref:`dtbinding_nuvoton_npcx_itim_timer`
-- :ref:`dtbinding_nuvoton_npcx_lvolctrl_conf`
-- :ref:`dtbinding_nuvoton_npcx_lvolctrl_def`
-- :ref:`dtbinding_nuvoton_npcx_miwu`
-- :ref:`dtbinding_nuvoton_npcx_miwu_int_map`
-- :ref:`dtbinding_nuvoton_npcx_miwu_wui_map`
-- :ref:`dtbinding_nuvoton_npcx_pcc`
-- :ref:`dtbinding_nuvoton_npcx_pinctrl_conf`
-- :ref:`dtbinding_nuvoton_npcx_pinctrl_def`
-- :ref:`dtbinding_nuvoton_npcx_ps2_channel`
-- :ref:`dtbinding_nuvoton_npcx_ps2_ctrl`
-- :ref:`dtbinding_nuvoton_npcx_psl_out`
-- :ref:`dtbinding_nuvoton_npcx_pslctrl_conf`
-- :ref:`dtbinding_nuvoton_npcx_pslctrl_def`
-- :ref:`dtbinding_nuvoton_npcx_pwm`
-- :ref:`dtbinding_nuvoton_npcx_scfg`
-- :ref:`dtbinding_nuvoton_npcx_soc_id`
-- :ref:`dtbinding_nuvoton_npcx_spi_fiu`
-- :ref:`dtbinding_nuvoton_npcx_tach`
-- :ref:`dtbinding_nuvoton_npcx_uart`
-- :ref:`dtbinding_nuvoton_npcx_watchdog`
-- :ref:`dtbinding_nuvoton_numicro_uart`
-
-.. _dt_vendor_nxp:
-
-NXP Semiconductors (nxp)
-========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_nxp_flexpwm`
-- :ref:`dtbinding_nxp_fxas21002`
-- :ref:`dtbinding_nxp_fxos8700`
-- :ref:`dtbinding_nxp_imx_anatop`
-- :ref:`dtbinding_nxp_imx_ccm`
-- :ref:`dtbinding_nxp_imx_ccm_rev2`
-- :ref:`dtbinding_nxp_imx_csi`
-- :ref:`dtbinding_nxp_imx_dtcm`
-- :ref:`dtbinding_nxp_imx_epit`
-- :ref:`dtbinding_nxp_imx_flexspi`
-- :ref:`dtbinding_nxp_imx_flexspi_device`
-- :ref:`dtbinding_nxp_imx_flexspi_hyperflash`
-- :ref:`dtbinding_nxp_imx_flexspi_hyperram`
-- :ref:`dtbinding_nxp_imx_flexspi_mx25um51345g`
-- :ref:`dtbinding_nxp_imx_flexspi_nor`
-- :ref:`dtbinding_nxp_imx_gpio`
-- :ref:`dtbinding_nxp_imx_gpt`
-- :ref:`dtbinding_nxp_imx_itcm`
-- :ref:`dtbinding_nxp_imx_iuart`
-- :ref:`dtbinding_nxp_imx_lpi2c`
-- :ref:`dtbinding_nxp_imx_lpspi`
-- :ref:`dtbinding_nxp_imx_mu`
-- :ref:`dtbinding_nxp_imx_pinmux`
-- :ref:`dtbinding_nxp_imx_pwm`
-- :ref:`dtbinding_nxp_imx_semc`
-- :ref:`dtbinding_nxp_imx_snvs_rtc`
-- :ref:`dtbinding_nxp_imx_uart`
-- :ref:`dtbinding_nxp_imx_usdhc`
-- :ref:`dtbinding_nxp_imx_wdog`
-- :ref:`dtbinding_nxp_kinetis_acmp`
-- :ref:`dtbinding_nxp_kinetis_adc12`
-- :ref:`dtbinding_nxp_kinetis_adc16`
-- :ref:`dtbinding_nxp_kinetis_dac`
-- :ref:`dtbinding_nxp_kinetis_dac32`
-- :ref:`dtbinding_nxp_kinetis_dspi`
-- :ref:`dtbinding_nxp_kinetis_ethernet`
-- :ref:`dtbinding_nxp_kinetis_flexcan`
-- :ref:`dtbinding_nxp_kinetis_ftfa`
-- :ref:`dtbinding_nxp_kinetis_ftfe`
-- :ref:`dtbinding_nxp_kinetis_ftfl`
-- :ref:`dtbinding_nxp_kinetis_ftm`
-- :ref:`dtbinding_nxp_kinetis_ftm_pwm`
-- :ref:`dtbinding_nxp_kinetis_gpio`
-- :ref:`dtbinding_nxp_kinetis_i2c`
-- :ref:`dtbinding_nxp_kinetis_ke1xf_sim`
-- :ref:`dtbinding_nxp_kinetis_lpsci`
-- :ref:`dtbinding_nxp_kinetis_lptmr`
-- :ref:`dtbinding_nxp_kinetis_lpuart`
-- :ref:`dtbinding_nxp_kinetis_mcg`
-- :ref:`dtbinding_nxp_kinetis_pcc`
-- :ref:`dtbinding_nxp_kinetis_pinmux`
-- :ref:`dtbinding_nxp_kinetis_pit`
-- :ref:`dtbinding_nxp_kinetis_ptp`
-- :ref:`dtbinding_nxp_kinetis_pwt`
-- :ref:`dtbinding_nxp_kinetis_rnga`
-- :ref:`dtbinding_nxp_kinetis_rtc`
-- :ref:`dtbinding_nxp_kinetis_scg`
-- :ref:`dtbinding_nxp_kinetis_sim`
-- :ref:`dtbinding_nxp_kinetis_temperature`
-- :ref:`dtbinding_nxp_kinetis_tpm`
-- :ref:`dtbinding_nxp_kinetis_trng`
-- :ref:`dtbinding_nxp_kinetis_uart`
-- :ref:`dtbinding_nxp_kinetis_usbd`
-- :ref:`dtbinding_nxp_kinetis_wdog`
-- :ref:`dtbinding_nxp_kinetis_wdog32`
-- :ref:`dtbinding_nxp_lpc_ctimer`
-- :ref:`dtbinding_nxp_lpc_dma`
-- :ref:`dtbinding_nxp_lpc_flexcomm`
-- :ref:`dtbinding_nxp_lpc_gpio`
-- :ref:`dtbinding_nxp_lpc_i2c`
-- :ref:`dtbinding_nxp_lpc_i2s`
-- :ref:`dtbinding_nxp_lpc_iap`
-- :ref:`dtbinding_nxp_lpc_iocon`
-- :ref:`dtbinding_nxp_lpc_iocon_pio`
-- :ref:`dtbinding_nxp_lpc_lpadc`
-- :ref:`dtbinding_nxp_lpc_mailbox`
-- :ref:`dtbinding_nxp_lpc_mcan`
-- :ref:`dtbinding_nxp_lpc_rng`
-- :ref:`dtbinding_nxp_lpc_spi`
-- :ref:`dtbinding_nxp_lpc_syscon`
-- :ref:`dtbinding_nxp_lpc_uid`
-- :ref:`dtbinding_nxp_lpc_usart`
-- :ref:`dtbinding_nxp_lpc_wwdt`
-- :ref:`dtbinding_nxp_lpc11u6x_eeprom`
-- :ref:`dtbinding_nxp_lpc11u6x_gpio`
-- :ref:`dtbinding_nxp_lpc11u6x_i2c`
-- :ref:`dtbinding_nxp_lpc11u6x_pinmux`
-- :ref:`dtbinding_nxp_lpc11u6x_syscon`
-- :ref:`dtbinding_nxp_lpc11u6x_uart`
-- :ref:`dtbinding_nxp_mcr20a`
-- :ref:`dtbinding_nxp_mcux_12b1msps_sar`
-- :ref:`dtbinding_nxp_mcux_edma`
-- :ref:`dtbinding_nxp_mcux_i2s`
-- :ref:`dtbinding_nxp_mcux_usbd`
-- :ref:`dtbinding_nxp_pca95xx`
-- :ref:`dtbinding_nxp_pca9633`
-- :ref:`dtbinding_nxp_pcal6408a`
-- :ref:`dtbinding_nxp_sctimer_pwm`
-
-.. _dt_vendor_ovti:
-
-OmniVision Technologies (ovti)
-==============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_ovti_ov2640`
-- :ref:`dtbinding_ovti_ov7725`
-
-.. _dt_vendor_openisa:
-
-open-isa.org (openisa)
-======================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_openisa_rv32m1_event_unit`
-- :ref:`dtbinding_openisa_rv32m1_ftfe`
-- :ref:`dtbinding_openisa_rv32m1_genfsk`
-- :ref:`dtbinding_openisa_rv32m1_gpio`
-- :ref:`dtbinding_openisa_rv32m1_intmux`
-- :ref:`dtbinding_openisa_rv32m1_intmux_ch`
-- :ref:`dtbinding_openisa_rv32m1_lpi2c`
-- :ref:`dtbinding_openisa_rv32m1_lpspi`
-- :ref:`dtbinding_openisa_rv32m1_lptmr`
-- :ref:`dtbinding_openisa_rv32m1_lpuart`
-- :ref:`dtbinding_openisa_rv32m1_pcc`
-- :ref:`dtbinding_openisa_rv32m1_pinmux`
-- :ref:`dtbinding_openisa_rv32m1_tpm`
-- :ref:`dtbinding_openisa_rv32m1_trng`
-
-.. _dt_vendor_opencores:
-
-OpenCores.org (opencores)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_opencores_spi_simple`
-
-.. _dt_vendor_panasonic:
-
-Panasonic Corporation (panasonic)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_panasonic_amg88xx`
-
-.. _dt_vendor_plantower:
-
-Plantower Co., Ltd (plantower)
-==============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_plantower_pms7003`
-
-.. _dt_vendor_qemu:
-
-QEMU, a generic and open source machine emulator and virtualizer (qemu)
-=======================================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_qemu_ivshmem`
-- :ref:`dtbinding_qemu_nios2_zephyr`
-
-.. _dt_vendor_decawave:
-
-Qorvo, Inc (formerly Decawave) (decawave)
-=========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_decawave_dw1000`
-
-.. _dt_vendor_quectel:
-
-Quectel Wireless Solutions Co., Ltd. (quectel)
-==============================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_quectel_bg9x`
-
-.. _dt_vendor_quicklogic:
-
-QuickLogic Corp. (quicklogic)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_quicklogic_eos_s3_gpio`
-
-.. _dt_vendor_raspberrypi:
-
-Raspberry Pi Foundation (raspberrypi)
-=====================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_raspberrypi_pico_gpio`
-- :ref:`dtbinding_raspberrypi_pico_pinctrl`
-- :ref:`dtbinding_raspberrypi_pico_uart`
-
-.. _dt_vendor_renesas:
-
-Renesas Electronics Corporation (renesas)
-=========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_renesas_rcar_can`
-- :ref:`dtbinding_renesas_rcar_cmt`
-- :ref:`dtbinding_renesas_rcar_cpg_mssr`
-- :ref:`dtbinding_renesas_rcar_gpio`
-- :ref:`dtbinding_renesas_rcar_i2c`
-- :ref:`dtbinding_renesas_rcar_pfc`
-- :ref:`dtbinding_renesas_rcar_scif`
-
-.. _dt_vendor_riscv:
-
-RISC-V Foundation (riscv)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_riscv_clint0`
-- :ref:`dtbinding_riscv_cpu_intc`
-- :ref:`dtbinding_riscv_machine_timer`
-- :ref:`dtbinding_riscv_sifive_e24`
-
-.. _dt_vendor_rocktech:
-
-ROCKTECH DISPLAYS LIMITED (rocktech)
-====================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_rocktech_rk043fn02h_ct`
-
-.. _dt_vendor_seeed:
-
-Seeed Technology Co., Ltd (seeed)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_seeed_grove_light`
-- :ref:`dtbinding_seeed_grove_temperature`
-- :ref:`dtbinding_seeed_xiao_header`
-
-.. _dt_vendor_segger:
-
-SEGGER Microcontroller GmbH (segger)
-====================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_segger_rtt_uart`
-
-.. _dt_vendor_semtech:
-
-Semtech Corporation (semtech)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_semtech_sx1261`
-- :ref:`dtbinding_semtech_sx1262`
-- :ref:`dtbinding_semtech_sx1272`
-- :ref:`dtbinding_semtech_sx1276`
-- :ref:`dtbinding_semtech_sx1509b`
-- :ref:`dtbinding_semtech_sx9500`
-
-.. _dt_vendor_sensirion:
-
-Sensirion AG (sensirion)
-========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_sensirion_sgp40`
-- :ref:`dtbinding_sensirion_sht3xd`
-- :ref:`dtbinding_sensirion_sht4x`
-- :ref:`dtbinding_sensirion_shtcx`
-
-.. _dt_vendor_sharp:
-
-Sharp Corporation (sharp)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_sharp_ls0xx`
-
-.. _dt_vendor_swir:
-
-Sierra Wireless (swir)
-======================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_swir_hl7800`
-
-.. _dt_vendor_sifive:
-
-SiFive, Inc. (sifive)
-=====================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_sifive_dtim0`
-- :ref:`dtbinding_sifive_gpio0`
-- :ref:`dtbinding_sifive_i2c0`
-- :ref:`dtbinding_sifive_iof`
-- :ref:`dtbinding_sifive_plic_1.0.0`
-- :ref:`dtbinding_sifive_pwm0`
-- :ref:`dtbinding_sifive_spi0`
-- :ref:`dtbinding_sifive_uart0`
-- :ref:`dtbinding_sifive_wdt`
-
-.. _dt_vendor_silabs:
-
-Silicon Laboratories (silabs)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_silabs_gecko_ethernet`
-- :ref:`dtbinding_silabs_gecko_flash_controller`
-- :ref:`dtbinding_silabs_gecko_gpio`
-- :ref:`dtbinding_silabs_gecko_gpio_port`
-- :ref:`dtbinding_silabs_gecko_i2c`
-- :ref:`dtbinding_silabs_gecko_leuart`
-- :ref:`dtbinding_silabs_gecko_pwm`
-- :ref:`dtbinding_silabs_gecko_rtcc`
-- :ref:`dtbinding_silabs_gecko_spi_usart`
-- :ref:`dtbinding_silabs_gecko_timer`
-- :ref:`dtbinding_silabs_gecko_trng`
-- :ref:`dtbinding_silabs_gecko_uart`
-- :ref:`dtbinding_silabs_gecko_usart`
-- :ref:`dtbinding_silabs_gecko_wdog`
-- :ref:`dtbinding_silabs_si7006`
-- :ref:`dtbinding_silabs_si7055`
-- :ref:`dtbinding_silabs_si7060`
-- :ref:`dtbinding_silabs_si7210`
-
-.. _dt_vendor_simcom:
-
-SIMCom Wireless Solutions Co., LTD (simcom)
-===========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_simcom_sim7080`
-
-.. _dt_vendor_sitronix:
-
-Sitronix Technology Corporation (sitronix)
-==========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_sitronix_st7735r`
-- :ref:`dtbinding_sitronix_st7789v`
-
-.. _dt_vendor_skyworks:
-
-Skyworks Solutions, Inc. (skyworks)
-===================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_skyworks_sky13351`
-
-.. _dt_vendor_sbs:
-
-Smart Battery System (sbs)
-==========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_sbs_sbs_gauge`
-
-.. _dt_vendor_solomon:
-
-Solomon Systech Limited (solomon)
-=================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_solomon_ssd1306fb_spi`
-- :ref:`dtbinding_solomon_ssd1306fb_i2c`
-- :ref:`dtbinding_solomon_ssd16xxfb`
-
-.. _dt_vendor_smsc:
-
-Standard Microsystems Corporation (smsc)
-========================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_smsc_lan9220`
-
-.. _dt_vendor_st:
-
-STMicroelectronics (st)
-=======================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_st_hts221_i2c`
-- :ref:`dtbinding_st_hts221_spi`
-- :ref:`dtbinding_st_i3g4250d`
-- :ref:`dtbinding_st_iis2dh_spi`
-- :ref:`dtbinding_st_iis2dh_i2c`
-- :ref:`dtbinding_st_iis2dlpc_i2c`
-- :ref:`dtbinding_st_iis2dlpc_spi`
-- :ref:`dtbinding_st_iis2iclx_spi`
-- :ref:`dtbinding_st_iis2iclx_i2c`
-- :ref:`dtbinding_st_iis2mdc_i2c`
-- :ref:`dtbinding_st_iis2mdc_spi`
-- :ref:`dtbinding_st_iis3dhhc_spi`
-- :ref:`dtbinding_st_ism330dhcx_i2c`
-- :ref:`dtbinding_st_ism330dhcx_spi`
-- :ref:`dtbinding_st_lis2dh_i2c`
-- :ref:`dtbinding_st_lis2dh_spi`
-- :ref:`dtbinding_st_lis2dh12_i2c`
-- :ref:`dtbinding_st_lis2ds12_i2c`
-- :ref:`dtbinding_st_lis2ds12_spi`
-- :ref:`dtbinding_st_lis2dw12_spi`
-- :ref:`dtbinding_st_lis2dw12_i2c`
-- :ref:`dtbinding_st_lis2mdl_i2c`
-- :ref:`dtbinding_st_lis2mdl_spi`
-- :ref:`dtbinding_st_lis3dh_i2c`
-- :ref:`dtbinding_st_lis3mdl_magn`
-- :ref:`dtbinding_st_lps22hb_press`
-- :ref:`dtbinding_st_lps22hh_i2c`
-- :ref:`dtbinding_st_lps22hh_spi`
-- :ref:`dtbinding_st_lps25hb_press`
-- :ref:`dtbinding_st_lsm303agr_accel_i2c`
-- :ref:`dtbinding_st_lsm303agr_accel_spi`
-- :ref:`dtbinding_st_lsm303dlhc_accel`
-- :ref:`dtbinding_st_lsm303dlhc_magn`
-- :ref:`dtbinding_st_lsm6ds0`
-- :ref:`dtbinding_st_lsm6dsl_i2c`
-- :ref:`dtbinding_st_lsm6dsl_spi`
-- :ref:`dtbinding_st_lsm6dso_i2c`
-- :ref:`dtbinding_st_lsm6dso_spi`
-- :ref:`dtbinding_st_lsm9ds0_gyro_i2c`
-- :ref:`dtbinding_st_lsm9ds0_mfd_i2c`
-- :ref:`dtbinding_st_mpxxdtyy_i2s`
-- :ref:`dtbinding_st_stm32_adc`
-- :ref:`dtbinding_st_stm32_aes`
-- :ref:`dtbinding_st_stm32_backup_sram`
-- :ref:`dtbinding_st_stm32_can`
-- :ref:`dtbinding_st_stm32_ccm`
-- :ref:`dtbinding_st_stm32_counter`
-- :ref:`dtbinding_st_stm32_cryp`
-- :ref:`dtbinding_st_stm32_dac`
-- :ref:`dtbinding_st_stm32_dma`
-- :ref:`dtbinding_st_stm32_dma_v1`
-- :ref:`dtbinding_st_stm32_dma_v2`
-- :ref:`dtbinding_st_stm32_dma_v2bis`
-- :ref:`dtbinding_st_stm32_dmamux`
-- :ref:`dtbinding_st_stm32_eeprom`
-- :ref:`dtbinding_st_stm32_ethernet`
-- :ref:`dtbinding_st_stm32_exti`
-- :ref:`dtbinding_st_stm32_fdcan`
-- :ref:`dtbinding_st_stm32_flash_controller`
-- :ref:`dtbinding_st_stm32_fmc`
-- :ref:`dtbinding_st_stm32_fmc_sdram`
-- :ref:`dtbinding_st_stm32_gpio`
-- :ref:`dtbinding_st_stm32_hse_clock`
-- :ref:`dtbinding_st_stm32_hsem_mailbox`
-- :ref:`dtbinding_st_stm32_i2c_v1`
-- :ref:`dtbinding_st_stm32_i2c_v2`
-- :ref:`dtbinding_st_stm32_i2s`
-- :ref:`dtbinding_st_stm32_ipcc_mailbox`
-- :ref:`dtbinding_st_stm32_lptim`
-- :ref:`dtbinding_st_stm32_lpuart`
-- :ref:`dtbinding_st_stm32_msi_clock`
-- :ref:`dtbinding_st_stm32_nv_flash`
-- :ref:`dtbinding_st_stm32_otgfs`
-- :ref:`dtbinding_st_stm32_otghs`
-- :ref:`dtbinding_st_stm32_pinctrl`
-- :ref:`dtbinding_st_stm32_pwm`
-- :ref:`dtbinding_st_stm32_qspi`
-- :ref:`dtbinding_st_stm32_qspi_nor`
-- :ref:`dtbinding_st_stm32_rcc`
-- :ref:`dtbinding_st_stm32_rng`
-- :ref:`dtbinding_st_stm32_rtc`
-- :ref:`dtbinding_st_stm32_sdmmc`
-- :ref:`dtbinding_st_stm32_spi`
-- :ref:`dtbinding_st_stm32_spi_fifo`
-- :ref:`dtbinding_st_stm32_spi_subghz`
-- :ref:`dtbinding_st_stm32_temp`
-- :ref:`dtbinding_st_stm32_temp_cal`
-- :ref:`dtbinding_st_stm32_timers`
-- :ref:`dtbinding_st_stm32_uart`
-- :ref:`dtbinding_st_stm32_ucpd`
-- :ref:`dtbinding_st_stm32_usart`
-- :ref:`dtbinding_st_stm32_usb`
-- :ref:`dtbinding_st_stm32_usbphyc`
-- :ref:`dtbinding_st_stm32_watchdog`
-- :ref:`dtbinding_st_stm32_window_watchdog`
-- :ref:`dtbinding_st_stm32f0_flash_controller`
-- :ref:`dtbinding_st_stm32f0_pll_clock`
-- :ref:`dtbinding_st_stm32f0_rcc`
-- :ref:`dtbinding_st_stm32f1_flash_controller`
-- :ref:`dtbinding_st_stm32f1_pinctrl`
-- :ref:`dtbinding_st_stm32f1_pll_clock`
-- :ref:`dtbinding_st_stm32f100_pll_clock`
-- :ref:`dtbinding_st_stm32f105_pll_clock`
-- :ref:`dtbinding_st_stm32f105_pll2_clock`
-- :ref:`dtbinding_st_stm32f2_flash_controller`
-- :ref:`dtbinding_st_stm32f2_pll_clock`
-- :ref:`dtbinding_st_stm32f3_flash_controller`
-- :ref:`dtbinding_st_stm32f4_flash_controller`
-- :ref:`dtbinding_st_stm32f4_pll_clock`
-- :ref:`dtbinding_st_stm32f7_flash_controller`
-- :ref:`dtbinding_st_stm32f7_pll_clock`
-- :ref:`dtbinding_st_stm32g0_flash_controller`
-- :ref:`dtbinding_st_stm32g0_pll_clock`
-- :ref:`dtbinding_st_stm32g4_flash_controller`
-- :ref:`dtbinding_st_stm32g4_pll_clock`
-- :ref:`dtbinding_st_stm32h7_fdcan`
-- :ref:`dtbinding_st_stm32h7_flash_controller`
-- :ref:`dtbinding_st_stm32h7_hsi_clock`
-- :ref:`dtbinding_st_stm32h7_pll_clock`
-- :ref:`dtbinding_st_stm32h7_rcc`
-- :ref:`dtbinding_st_stm32l0_flash_controller`
-- :ref:`dtbinding_st_stm32l0_msi_clock`
-- :ref:`dtbinding_st_stm32l0_pll_clock`
-- :ref:`dtbinding_st_stm32l1_flash_controller`
-- :ref:`dtbinding_st_stm32l4_flash_controller`
-- :ref:`dtbinding_st_stm32l4_pll_clock`
-- :ref:`dtbinding_st_stm32l5_flash_controller`
-- :ref:`dtbinding_st_stm32mp1_rcc`
-- :ref:`dtbinding_st_stm32u5_flash_controller`
-- :ref:`dtbinding_st_stm32u5_msi_clock`
-- :ref:`dtbinding_st_stm32u5_pll_clock`
-- :ref:`dtbinding_st_stm32u5_rcc`
-- :ref:`dtbinding_st_stm32wb_flash_controller`
-- :ref:`dtbinding_st_stm32wb_pll_clock`
-- :ref:`dtbinding_st_stm32wb_rcc`
-- :ref:`dtbinding_st_stm32wl_hse_clock`
-- :ref:`dtbinding_st_stm32wl_rcc`
-- :ref:`dtbinding_st_stm32wl_subghz_radio`
-- :ref:`dtbinding_st_stmpe1600`
-- :ref:`dtbinding_st_stts751_i2c`
-- :ref:`dtbinding_st_vl53l0x`
-
-.. _dt_vendor_snps:
-
-Synopsys, Inc. (snps)
-=====================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_snps_arcem`
-- :ref:`dtbinding_snps_archs_idu_intc`
-- :ref:`dtbinding_snps_arcv2_intc`
-- :ref:`dtbinding_snps_creg_gpio`
-- :ref:`dtbinding_snps_creg_gpio_mux_hsdk`
-- :ref:`dtbinding_snps_designware_dma`
-- :ref:`dtbinding_snps_designware_ethernet`
-- :ref:`dtbinding_snps_designware_gpio`
-- :ref:`dtbinding_snps_designware_i2c`
-- :ref:`dtbinding_snps_designware_intc`
-- :ref:`dtbinding_snps_designware_pwm`
-- :ref:`dtbinding_snps_designware_spi`
-- :ref:`dtbinding_snps_designware_usb`
-- :ref:`dtbinding_snps_nsim_uart`
-
-.. _dt_vendor_arc:
-
-Synopsys, Inc. (formerly ARC International PLC) (arc)
-=====================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_arc_dccm`
-- :ref:`dtbinding_arc_iccm`
-
-.. _dt_vendor_telink:
-
-Telink Semiconductor (telink)
-=============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_telink_b91`
-- :ref:`dtbinding_telink_b91_flash_controller`
-- :ref:`dtbinding_telink_b91_gpio`
-- :ref:`dtbinding_telink_b91_i2c`
-- :ref:`dtbinding_telink_b91_pinmux`
-- :ref:`dtbinding_telink_b91_power`
-- :ref:`dtbinding_telink_b91_pwm`
-- :ref:`dtbinding_telink_b91_spi`
-- :ref:`dtbinding_telink_b91_trng`
-- :ref:`dtbinding_telink_b91_uart`
-- :ref:`dtbinding_telink_b91_zb`
-
-.. _dt_vendor_ti:
-
-Texas Instruments (ti)
-======================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_ti_boosterpack_header`
-- :ref:`dtbinding_ti_bq274xx`
-- :ref:`dtbinding_ti_cc1200`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_gpio`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_i2c`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_pinmux`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_rtc`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_spi`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_trng`
-- :ref:`dtbinding_ti_cc13xx_cc26xx_uart`
-- :ref:`dtbinding_ti_cc2520`
-- :ref:`dtbinding_ti_cc32xx_adc`
-- :ref:`dtbinding_ti_cc32xx_gpio`
-- :ref:`dtbinding_ti_cc32xx_i2c`
-- :ref:`dtbinding_ti_cc32xx_uart`
-- :ref:`dtbinding_ti_cc32xx_watchdog`
-- :ref:`dtbinding_ti_dac43608`
-- :ref:`dtbinding_ti_dac53608`
-- :ref:`dtbinding_ti_dac60508`
-- :ref:`dtbinding_ti_dac70508`
-- :ref:`dtbinding_ti_dac80508`
-- :ref:`dtbinding_ti_fdc2x1x`
-- :ref:`dtbinding_ti_hdc`
-- :ref:`dtbinding_ti_hdc2010`
-- :ref:`dtbinding_ti_hdc2021`
-- :ref:`dtbinding_ti_hdc2022`
-- :ref:`dtbinding_ti_hdc2080`
-- :ref:`dtbinding_ti_hdc20xx`
-- :ref:`dtbinding_ti_ina219`
-- :ref:`dtbinding_ti_ina230`
-- :ref:`dtbinding_ti_ina237`
-- :ref:`dtbinding_ti_lmp90077`
-- :ref:`dtbinding_ti_lmp90078`
-- :ref:`dtbinding_ti_lmp90079`
-- :ref:`dtbinding_ti_lmp90080`
-- :ref:`dtbinding_ti_lmp90097`
-- :ref:`dtbinding_ti_lmp90098`
-- :ref:`dtbinding_ti_lmp90099`
-- :ref:`dtbinding_ti_lmp90100`
-- :ref:`dtbinding_ti_lmp90xxx_gpio`
-- :ref:`dtbinding_ti_lp3943`
-- :ref:`dtbinding_ti_lp503x`
-- :ref:`dtbinding_ti_lp5562`
-- :ref:`dtbinding_ti_msp432p4xx_uart`
-- :ref:`dtbinding_ti_opt3001`
-- :ref:`dtbinding_ti_stellaris_ethernet`
-- :ref:`dtbinding_ti_stellaris_flash_controller`
-- :ref:`dtbinding_ti_stellaris_gpio`
-- :ref:`dtbinding_ti_stellaris_uart`
-- :ref:`dtbinding_ti_tca9538`
-- :ref:`dtbinding_ti_tca9546a`
-- :ref:`dtbinding_ti_tca9548a`
-- :ref:`dtbinding_ti_tlc59108`
-- :ref:`dtbinding_ti_tlv320dac`
-- :ref:`dtbinding_ti_tmp007`
-- :ref:`dtbinding_ti_tmp108`
-- :ref:`dtbinding_ti_tmp112`
-- :ref:`dtbinding_ti_tmp116`
-- :ref:`dtbinding_ti_tmp116_eeprom`
-
-.. _dt_vendor_u-blox:
-
-u-blox (u-blox)
-===============
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_u_blox_sara_r4`
-
-.. _dt_vendor_vishay:
-
-Vishay Intertechnology, Inc (vishay)
-====================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_vishay_vcnl4040`
-
-.. _dt_vendor_wnc:
-
-Wistron NeWeb Corporation (wnc)
-===============================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_wnc_m14a2a`
-
-.. _dt_vendor_wiznet:
-
-WIZnet Co., Ltd. (wiznet)
-=========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_wiznet_w5500`
-
-.. _dt_vendor_worldsemi:
-
-Worldsemi Co., Limited (worldsemi)
-==================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_worldsemi_ws2812_gpio`
-- :ref:`dtbinding_worldsemi_ws2812_spi`
-
-.. _dt_vendor_we:
-
-Würth Elektronik GmbH. (we)
-===========================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_we_wsen_itds`
-
-.. _dt_vendor_xlnx:
-
-Xilinx (xlnx)
-=============
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_xlnx_gem`
-- :ref:`dtbinding_xlnx_ttcps`
-- :ref:`dtbinding_xlnx_xps_gpio_1.00.a`
-- :ref:`dtbinding_xlnx_xps_gpio_1.00.a_gpio2`
-- :ref:`dtbinding_xlnx_xps_spi_2.00.a`
-- :ref:`dtbinding_xlnx_xps_timer_1.00.a`
-- :ref:`dtbinding_xlnx_xps_timer_1.00.a_pwm`
-- :ref:`dtbinding_xlnx_xps_uartlite_1.00.a`
-- :ref:`dtbinding_xlnx_xuartps`
-- :ref:`dtbinding_xlnx_zynq_ocm`
-
 .. _dt_vendor_zephyr:
 
-Zephyr-specific binding (zephyr)
-================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_zephyr_adc_emul`
-- :ref:`dtbinding_zephyr_bbram_emul`
-- :ref:`dtbinding_zephyr_bt_hci_spi`
-- :ref:`dtbinding_zephyr_bt_hci_spi_slave`
-- :ref:`dtbinding_zephyr_can_loopback`
-- :ref:`dtbinding_zephyr_cdc_acm_uart`
-- :ref:`dtbinding_zephyr_counter_watchdog`
-- :ref:`dtbinding_zephyr_dummy_dc`
-- :ref:`dtbinding_zephyr_emu_eeprom`
-- :ref:`dtbinding_zephyr_espi_emul_controller`
-- :ref:`dtbinding_zephyr_fstab`
-- :ref:`dtbinding_zephyr_fstab_littlefs`
-- :ref:`dtbinding_zephyr_gpio_emul`
-- :ref:`dtbinding_zephyr_gsm_ppp`
-- :ref:`dtbinding_zephyr_i2c_emul_controller`
-- :ref:`dtbinding_zephyr_ipc_openamp_static_vrings`
-- :ref:`dtbinding_zephyr_ipm_console`
-- :ref:`dtbinding_zephyr_mmc_spi_slot`
-- :ref:`dtbinding_zephyr_modbus_serial`
-- :ref:`dtbinding_zephyr_native_posix_cpu`
-- :ref:`dtbinding_zephyr_native_posix_rng`
-- :ref:`dtbinding_zephyr_native_posix_uart`
-- :ref:`dtbinding_zephyr_native_posix_udc`
-- :ref:`dtbinding_zephyr_power_state`
-- :ref:`dtbinding_zephyr_sdl_dc`
-- :ref:`dtbinding_zephyr_sim_ec_host_cmd_periph`
-- :ref:`dtbinding_zephyr_sim_eeprom`
-- :ref:`dtbinding_zephyr_sim_flash`
-- :ref:`dtbinding_zephyr_spi_bitbang`
-- :ref:`dtbinding_zephyr_spi_emul_controller`
-
-.. _dt_vendor_winsen:
-
-Zhengzhou Winsen Electronics Technology Co., Ltd. (winsen)
-==========================================================
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_winsen_mhz19b`
-
-.. _dt_unknown_vendor:
-
-Unknown vendor
-==============
-
-.. rst-class:: rst-columns
-
-- :ref:`dtbinding_swerv_pic`
-
+Dummy bindings index
+####################
+.. dtcompatible:: mti,cpu-intc
+.. dtcompatible:: st,lis3mdl-magn
+.. dtcompatible:: nordic,nrf-gpio-forwarder
+.. dtcompatible:: adi,adxl362
+.. dtcompatible:: ti,cc32xx-watchdog
+.. dtcompatible:: nxp,imx-iuart
+.. dtcompatible:: greeled,lpd8806
+.. dtcompatible:: nordic,nrf-twi
+.. dtcompatible:: st,stm32f1-pll-clock
+.. dtcompatible:: arm,psci-0.2
+.. dtcompatible:: atmel,sam0-adc
+.. dtcompatible:: nordic,nrf-gpiote
+.. dtcompatible:: atmel,sam4l-uid
+.. dtcompatible:: st,stm32-otgfs
+.. dtcompatible:: nordic,nrf-pdm
+.. dtcompatible:: ti,lmp90098
+.. dtcompatible:: quectel,bg9x
+.. dtcompatible:: nxp,kinetis-acmp
+.. dtcompatible:: nxp,kinetis-uart
+.. dtcompatible:: opencores,spi-simple
+.. dtcompatible:: st,stm32f7-pll-clock
+.. dtcompatible:: cypress,psoc6-spi
+.. dtcompatible:: zephyr,cdc-acm-uart
+.. dtcompatible:: adi,adxl372
+.. dtcompatible:: ti,stellaris-uart
+.. dtcompatible:: ti,lp5562
+.. dtcompatible:: atmel,sam0-sercom
+.. dtcompatible:: sifive,wdt
+.. dtcompatible:: nxp,imx-flexspi-device
+.. dtcompatible:: ite,riscv-ite
+.. dtcompatible:: st,stm32-ucpd
+.. dtcompatible:: nordic,nrf-qdec
+.. dtcompatible:: atmel,rf2xx
+.. dtcompatible:: cypress,cy8c95xx-gpio-port
+.. dtcompatible:: nuvoton,npcx-psl-out
+.. dtcompatible:: nordic,nrf-gpio
+.. dtcompatible:: we,wsen-itds
+.. dtcompatible:: nxp,imx-anatop
+.. dtcompatible:: xlnx,zynq-ocm
+.. dtcompatible:: nxp,lpc11u6x-syscon
+.. dtcompatible:: st,stm32-rng
+.. dtcompatible:: telink,b91-pwm
+.. dtcompatible:: atmel,samd5x-mclk
+.. dtcompatible:: nxp,lpc-spi
+.. dtcompatible:: ite,it8xxx2-pwmprs
+.. dtcompatible:: silabs,si7006
+.. dtcompatible:: ti,lmp90079
+.. dtcompatible:: nxp,kinetis-i2c
+.. dtcompatible:: gpio-keys
+.. dtcompatible:: atmel,sam-gmac
+.. dtcompatible:: semtech,sx1261
+.. dtcompatible:: sensirion,shtcx
+.. dtcompatible:: nuvoton,npcx-host-sub
+.. dtcompatible:: nordic,nrf-power
+.. dtcompatible:: st,stm32-pwm
+.. dtcompatible:: usb-audio-mic
+.. dtcompatible:: nxp,lpc-uid
+.. dtcompatible:: telink,b91-uart
+.. dtcompatible:: nxp,kinetis-tpm
+.. dtcompatible:: st,stm32wl-subghz-radio
+.. dtcompatible:: renesas,rcar-cmt
+.. dtcompatible:: usb-audio-hs
+.. dtcompatible:: nxp,kinetis-gpio
+.. dtcompatible:: nxp,kinetis-scg
+.. dtcompatible:: openisa,rv32m1-pinmux
+.. dtcompatible:: xlnx,gem
+.. dtcompatible:: avago,apds9960
+.. dtcompatible:: telink,b91-power
+.. dtcompatible:: cdns,tensilica-xtensa-lx7
+.. dtcompatible:: st,lis2dw12
+.. dtcompatible:: ti,cc13xx-cc26xx-gpio
+.. dtcompatible:: asmedia,asm2364
+.. dtcompatible:: nordic,nrf-kmu
+.. dtcompatible:: nuvoton,npcx-bbram
+.. dtcompatible:: nordic,nrf-spim
+.. dtcompatible:: microchip,mcp230xx
+.. dtcompatible:: microchip,enc28j60
+.. dtcompatible:: arm,dma-pl330
+.. dtcompatible:: litex,i2s
+.. dtcompatible:: silabs,gecko-usart
+.. dtcompatible:: raspberrypi,pico-pinctrl
+.. dtcompatible:: arm,versatile-i2c
+.. dtcompatible:: gd,gd32-usart
+.. dtcompatible:: nordic,nrf-rng
+.. dtcompatible:: st,stm32-temp-cal
+.. dtcompatible:: st,stm32-dma-v2bis
+.. dtcompatible:: zephyr,ipm-console
+.. dtcompatible:: st,stm32mp1-rcc
+.. dtcompatible:: st,stm32g4-flash-controller
+.. dtcompatible:: st,stm32h7-pll-clock
+.. dtcompatible:: nxp,kinetis-rnga
+.. dtcompatible:: nxp,kinetis-lptmr
+.. dtcompatible:: ti,lmp90097
+.. dtcompatible:: riscv,clint0
+.. dtcompatible:: asahi-kasei,ak8975
+.. dtcompatible:: zephyr,espi-emul-controller
+.. dtcompatible:: nxp,lpc-wwdt
+.. dtcompatible:: zephyr,emu-eeprom
+.. dtcompatible:: nordic,nrf21540-fem
+.. dtcompatible:: sitronix,st7789v
+.. dtcompatible:: nxp,mcux-usbd
+.. dtcompatible:: openisa,rv32m1-trng
+.. dtcompatible:: ite,it8xxx2-adc
+.. dtcompatible:: linaro,96b-lscon-3v3
+.. dtcompatible:: silabs,gecko-leuart
+.. dtcompatible:: microchip,mcp23sxx
+.. dtcompatible:: microchip,xec-espi-v2
+.. dtcompatible:: nuvoton,nct38xx-gpio-alert
+.. dtcompatible:: st,lps25hb-press
+.. dtcompatible:: st,stm32-pinctrl
+.. dtcompatible:: nordic,nrf-qspi
+.. dtcompatible:: nxp,imx-gpio
+.. dtcompatible:: atmel,sam-can
+.. dtcompatible:: st,stm32l0-msi-clock
+.. dtcompatible:: nxp,imx-lpspi
+.. dtcompatible:: st,lis3dh
+.. dtcompatible:: atmel,sam0-pinctrl
+.. dtcompatible:: ti,cc32xx-adc
+.. dtcompatible:: lm75
+.. dtcompatible:: intel,apollo_lake
+.. dtcompatible:: snps,nsim-uart
+.. dtcompatible:: nxp,kinetis-pcc
+.. dtcompatible:: snps,creg-gpio
+.. dtcompatible:: arm,cmsdk-timer
+.. dtcompatible:: nxp,kinetis-ftm-pwm
+.. dtcompatible:: atmel-xplained-pro-header
+.. dtcompatible:: nxp,lpc-gpio
+.. dtcompatible:: maxim,max17262
+.. dtcompatible:: espressif,esp32-rtc
+.. dtcompatible:: sifive,plic-1.0.0
+.. dtcompatible:: st,stm32-fdcan
+.. dtcompatible:: cypress,psoc6-intmux
+.. dtcompatible:: atmel,at45
+.. dtcompatible:: st,stm32-rcc
+.. dtcompatible:: st,stm32-lptim
+.. dtcompatible:: openisa,rv32m1-ftfe
+.. dtcompatible:: nxp,pcal6408a
+.. dtcompatible:: intel,gpio
+.. dtcompatible:: cypress,psoc6-pinctrl
+.. dtcompatible:: gaisler,apbuart
+.. dtcompatible:: ti,cc13xx-cc26xx-spi
+.. dtcompatible:: snps,designware-i2c
+.. dtcompatible:: st,stm32u5-rcc
+.. dtcompatible:: ti,ads1013
+.. dtcompatible:: bosch,m-can-base
+.. dtcompatible:: worldsemi,ws2812-gpio
+.. dtcompatible:: nxp,kinetis-sim
+.. dtcompatible:: zephyr,native-posix-cpu
+.. dtcompatible:: nordic,nrf-pwm
+.. dtcompatible:: nxp,lpc11u6x-pinmux
+.. dtcompatible:: arm,scc
+.. dtcompatible:: ti,tca9546a
+.. dtcompatible:: st,stm32-hse-clock
+.. dtcompatible:: st,stm32l4-flash-controller
+.. dtcompatible:: microchip,xec-bbram
+.. dtcompatible:: atmel,sam-pinctrl
+.. dtcompatible:: microchip,xec-pcr
+.. dtcompatible:: st,lsm303agr-accel
+.. dtcompatible:: arm,cortex-m3
+.. dtcompatible:: cypress,psoc6-intmux-ch
+.. dtcompatible:: st,stm32f4-pll-clock
+.. dtcompatible:: zephyr,sim-eeprom
+.. dtcompatible:: openisa,rv32m1-tpm
+.. dtcompatible:: silabs,gecko-gpio-port
+.. dtcompatible:: atmel,sam0-gpio
+.. dtcompatible:: nxp,lpc-rng
+.. dtcompatible:: silabs,si7055
+.. dtcompatible:: silabs,gecko-flash-controller
+.. dtcompatible:: st,lis2dh
+.. dtcompatible:: st,lsm303dlhc-accel
+.. dtcompatible:: cdns,tensilica-xtensa-lx4
+.. dtcompatible:: ti,cc13xx-cc26xx-pinmux
+.. dtcompatible:: seeed,xiao-gpio
+.. dtcompatible:: st,lsm303dlhc-magn
+.. dtcompatible:: litex,prbs
+.. dtcompatible:: maxim,max44009
+.. dtcompatible:: st,stm32-hsem-mailbox
+.. dtcompatible:: microchip,xec-i2c-v2
+.. dtcompatible:: nxp,mcux-i2s
+.. dtcompatible:: gooddisplay,gd7965
+.. dtcompatible:: atmel-xplained-header
+.. dtcompatible:: litex,eth0
+.. dtcompatible:: seeed,grove-lcd-rgb
+.. dtcompatible:: nxp,kinetis-rtc
+.. dtcompatible:: gd,gd32-syscfg
+.. dtcompatible:: maxim,ds3231
+.. dtcompatible:: atmel,sam0-rtc
+.. dtcompatible:: nuvoton,npcx-pinctrl-conf
+.. dtcompatible:: pci-host-ecam-generic
+.. dtcompatible:: snps,designware-gpio
+.. dtcompatible:: nxp,mcux-12b1msps-sar
+.. dtcompatible:: nxp,kinetis-ethernet
+.. dtcompatible:: nordic,nrf-timer
+.. dtcompatible:: xlnx,xps-uartlite-1.00.a
+.. dtcompatible:: invensense,icm42605
+.. dtcompatible:: holtek,ht16k33-keyscan
+.. dtcompatible:: espressif,esp32-watchdog
+.. dtcompatible:: silabs,gecko-trng
+.. dtcompatible:: openisa,rv32m1-intmux
+.. dtcompatible:: st,stm32l4-pll-clock
+.. dtcompatible:: litex,uart0
+.. dtcompatible:: zephyr,gpio-emul
+.. dtcompatible:: nxp,imx-pinmux
+.. dtcompatible:: microchip,mcp9808
+.. dtcompatible:: st,stm32-gpio
+.. dtcompatible:: microchip,xec-i2c
+.. dtcompatible:: atmel,sam-i2c-twi
+.. dtcompatible:: ite,it8xxx2-timer
+.. dtcompatible:: pwm-leds
+.. dtcompatible:: cypress,psoc6-gpio
+.. dtcompatible:: ti,ads1114
+.. dtcompatible:: atmel,sam-mdio
+.. dtcompatible:: st,stm32f4-flash-controller
+.. dtcompatible:: telink,b91-gpio
+.. dtcompatible:: st,stm32-usbphyc
+.. dtcompatible:: honeywell,mpr
+.. dtcompatible:: atmel,sam4l-gpio
+.. dtcompatible:: gd,gd32-timer
+.. dtcompatible:: nxp,lpc-i2s
+.. dtcompatible:: st,stm32h7-flash-controller
+.. dtcompatible:: nxp,lpc-iap
+.. dtcompatible:: nxp,imx-pwm
+.. dtcompatible:: ti,dac60508
+.. dtcompatible:: microchip,mcp23s17
+.. dtcompatible:: lm77
+.. dtcompatible:: altr,msgdma
+.. dtcompatible:: ti,cc32xx-gpio
+.. dtcompatible:: renesas,rcar-pfc
+.. dtcompatible:: st,iis2dlpc
+.. dtcompatible:: nordic,nrf-uart
+.. dtcompatible:: nordic,nrf21540-fem-spi
+.. dtcompatible:: atmel,winc1500
+.. dtcompatible:: ti,hdc20xx
+.. dtcompatible:: zephyr,bt-hci-spi
+.. dtcompatible:: nxp,lpc11u6x-gpio
+.. dtcompatible:: zephyr,i2c-emul-controller
+.. dtcompatible:: ti,ina230
+.. dtcompatible:: silabs,gecko-pwm
+.. dtcompatible:: cypress,psoc6-hsiom
+.. dtcompatible:: nxp,imx-elcdif
+.. dtcompatible:: nxp,imx-snvs-rtc
+.. dtcompatible:: shared-multi-heap
+.. dtcompatible:: atmel,sam-uart
+.. dtcompatible:: arm,v7m-nvic
+.. dtcompatible:: nxp,imx-lpi2c
+.. dtcompatible:: st,stm32h7-rcc
+.. dtcompatible:: neorv32-uart
+.. dtcompatible:: nxp,kinetis-flexcan
+.. dtcompatible:: nxp,kinetis-pinctrl
+.. dtcompatible:: nxp,pca9633
+.. dtcompatible:: infineon,xmc4xxx-uart
+.. dtcompatible:: openisa,rv32m1-lpi2c
+.. dtcompatible:: nordic,nrf51-flash-controller
+.. dtcompatible:: atmel,sam0-spi
+.. dtcompatible:: intel,hpet
+.. dtcompatible:: fixed-factor-clock
+.. dtcompatible:: microchip,xec-qmspi
+.. dtcompatible:: st,stm32-otghs
+.. dtcompatible:: nuvoton,npcx-tach
+.. dtcompatible:: st,stm32u5-flash-controller
+.. dtcompatible:: silabs,gecko-ethernet
+.. dtcompatible:: st,stm32f2-pll-clock
+.. dtcompatible:: usb-audio-hp
+.. dtcompatible:: microchip,xec-ecia-girq
+.. dtcompatible:: ti,lmp90077
+.. dtcompatible:: renesas,rcar-gpio
+.. dtcompatible:: atmel,sam-afec
+.. dtcompatible:: ite,it8xxx2-gpio
+.. dtcompatible:: snps,designware-ethernet
+.. dtcompatible:: arm,cortex-r7
+.. dtcompatible:: intel,cavs-idc
+.. dtcompatible:: gaisler,gptimer
+.. dtcompatible:: zephyr,dummy-dc
+.. dtcompatible:: microchip,xec-uart
+.. dtcompatible:: renesas,rcar-can
+.. dtcompatible:: st,lsm9ds0-mfd
+.. dtcompatible:: brcm,iproc-pax-dma-v2
+.. dtcompatible:: semtech,sx1509b
+.. dtcompatible:: openisa,rv32m1-event-unit
+.. dtcompatible:: panasonic,amg88xx
+.. dtcompatible:: st,vl53l0x
+.. dtcompatible:: atmel,sam-usart
+.. dtcompatible:: sifive,i2c0
+.. dtcompatible:: ti,tmp116-eeprom
+.. dtcompatible:: nxp,kinetis-usbd
+.. dtcompatible:: ti,tmp116
+.. dtcompatible:: ti,cc13xx-cc26xx-i2c
+.. dtcompatible:: mikro-bus
+.. dtcompatible:: xlnx,ttcps
+.. dtcompatible:: st,stm32-adc
+.. dtcompatible:: bosch,bme680
+.. dtcompatible:: xlnx,xps-gpio-1.00.a
+.. dtcompatible:: atmel,sam-xdmac
+.. dtcompatible:: vishay,vcnl4040
+.. dtcompatible:: neorv32-gpio
+.. dtcompatible:: gd,gd32-pinctrl-af
+.. dtcompatible:: maxim,max17055
+.. dtcompatible:: telink,b91-trng
+.. dtcompatible:: silabs,gecko-gpio
+.. dtcompatible:: ti,cc13xx-cc26xx-trng
+.. dtcompatible:: st,lsm6dso
+.. dtcompatible:: qemu,ivshmem
+.. dtcompatible:: mmio-sram
+.. dtcompatible:: openisa,rv32m1-lpuart
+.. dtcompatible:: arm,armv8.1m-mpu
+.. dtcompatible:: nuvoton,npcx-i2c-ctrl
+.. dtcompatible:: ti,lp3943
+.. dtcompatible:: atmel,sam-spi
+.. dtcompatible:: ti,ads1015
+.. dtcompatible:: telink,b91-i2c
+.. dtcompatible:: atmel,sam-usbc
+.. dtcompatible:: ti,tmp007
+.. dtcompatible:: atmel,at24
+.. dtcompatible:: atmel,sam-watchdog
+.. dtcompatible:: microchip,mcp3204
+.. dtcompatible:: st,ism330dhcx
+.. dtcompatible:: snps,archs-idu-intc
+.. dtcompatible:: arm,cmsdk-watchdog
+.. dtcompatible:: gd,gd32-pinctrl-afio
+.. dtcompatible:: atmel,samd2x-pm
+.. dtcompatible:: arm,cortex-m33
+.. dtcompatible:: nxp,lpc-mailbox
+.. dtcompatible:: nordic,nrf-ipc
+.. dtcompatible:: arm,armv7m-mpu
+.. dtcompatible:: arm,cortex-r82
+.. dtcompatible:: nuvoton,npcx-pwm
+.. dtcompatible:: arm,mps3-fpgaio-gpio
+.. dtcompatible:: nxp,kinetis-wdog32
+.. dtcompatible:: nordic,nrf-twis
+.. dtcompatible:: cdns,tensilica-xtensa-lx6
+.. dtcompatible:: linaro,96b-lscon-1v8
+.. dtcompatible:: nxp,kinetis-dac32
+.. dtcompatible:: intel,pcie
+.. dtcompatible:: swir,hl7800
+.. dtcompatible:: maxim,max6675
+.. dtcompatible:: skyworks,sky13351
+.. dtcompatible:: snps,designware-usb
+.. dtcompatible:: nxp,kinetis-adc12
+.. dtcompatible:: nxp,lpc11u6x-eeprom
+.. dtcompatible:: ite,it8xxx2-i2c
+.. dtcompatible:: arm,cortex-m7
+.. dtcompatible:: telink,b91-pinctrl
+.. dtcompatible:: ti,boosterpack-header
+.. dtcompatible:: xlnx,xuartps
+.. dtcompatible:: decawave,dw1000
+.. dtcompatible:: nxp,flexpwm
+.. dtcompatible:: isil,isl29035
+.. dtcompatible:: nuvoton,npcx-pslctrl-conf
+.. dtcompatible:: litex,timer0
+.. dtcompatible:: ti,lmp90078
+.. dtcompatible:: smsc,lan9220
+.. dtcompatible:: regulator-pmic
+.. dtcompatible:: silabs,gecko-rtcc
+.. dtcompatible:: microchip,xec-pinmux
+.. dtcompatible:: espressif,esp-at
+.. dtcompatible:: arm,cmsdk-uart
+.. dtcompatible:: ti,dac70508
+.. dtcompatible:: sifive,gpio0
+.. dtcompatible:: atmel,sam-dac
+.. dtcompatible:: neorv32-cpu
+.. dtcompatible:: st,stm32-fmc-sdram
+.. dtcompatible:: intel,e1000
+.. dtcompatible:: fsl,imx21-i2c
+.. dtcompatible:: arm,cryptocell-312
+.. dtcompatible:: atmel,sam-rstc
+.. dtcompatible:: fsl,imx27-pwm
+.. dtcompatible:: nxp,lpc-usart
+.. dtcompatible:: ti,lmp90099
+.. dtcompatible:: microchip,xec-timer
+.. dtcompatible:: plantower,pms7003
+.. dtcompatible:: espressif,esp32-trng
+.. dtcompatible:: nxp,fxos8700
+.. dtcompatible:: openisa,rv32m1-pcc
+.. dtcompatible:: st,stm32f1-flash-controller
+.. dtcompatible:: espressif,esp32-uart
+.. dtcompatible:: microchip,xec-espi
+.. dtcompatible:: litex,gpio
+.. dtcompatible:: nxp,imx-dtcm
+.. dtcompatible:: atmel,samd5x-gclk
+.. dtcompatible:: microchip,mcp7940n
+.. dtcompatible:: nordic,nrf-uarte
+.. dtcompatible:: nxp,imx-semc
+.. dtcompatible:: arm,dtcm
+.. dtcompatible:: arduino-header-r3
+.. dtcompatible:: simcom,sim7080
+.. dtcompatible:: andestech,atcgpio100
+.. dtcompatible:: st,stm32h7-hsi-clock
+.. dtcompatible:: st,stm32f105-pll-clock
+.. dtcompatible:: nxp,imx-flexspi-mx25um51345g
+.. dtcompatible:: ams,iaqcore
+.. dtcompatible:: particle-gen3-header
+.. dtcompatible:: st,stm32-i2c-v1
+.. dtcompatible:: ilitek,ili9488
+.. dtcompatible:: atmel,sam0-nvmctrl
+.. dtcompatible:: espressif,esp32-intc
+.. dtcompatible:: greeled,lpd8803
+.. dtcompatible:: ovti,ov7725
+.. dtcompatible:: nuvoton,npcx-espi-vw-conf
+.. dtcompatible:: bosch,bmg160
+.. dtcompatible:: semtech,sx9500
+.. dtcompatible:: st,stm32l5-flash-controller
+.. dtcompatible:: regulator-fixed
+.. dtcompatible:: nordic,nrf-twim
+.. dtcompatible:: zephyr,power-state
+.. dtcompatible:: atmel,sam-tc-qdec
+.. dtcompatible:: st,stm32-spi-subghz
+.. dtcompatible:: nuclei,bumblebee
+.. dtcompatible:: arm,cryptocell-310
+.. dtcompatible:: zephyr,fstab,littlefs
+.. dtcompatible:: st,stm32-spi-fifo
+.. dtcompatible:: shared-irq
+.. dtcompatible:: st,stm32-exti
+.. dtcompatible:: microchip,xec-kscan
+.. dtcompatible:: nuvoton,npcx-lvolctrl-conf
+.. dtcompatible:: arc,dccm
+.. dtcompatible:: apa,apa102
+.. dtcompatible:: openisa,rv32m1-lptmr
+.. dtcompatible:: arm,cortex-r5f
+.. dtcompatible:: aptina,mt9m114
+.. dtcompatible:: seeed,grove-light
+.. dtcompatible:: st,stm32-timers
+.. dtcompatible:: nordic,nrf-radio
+.. dtcompatible:: cypress,psoc6-uart
+.. dtcompatible:: intel,x86
+.. dtcompatible:: intel,elkhart_lake
+.. dtcompatible:: st,stm32-dma-v1
+.. dtcompatible:: openisa,rv32m1-intmux-ch
+.. dtcompatible:: nxp,kinetis-mcg
+.. dtcompatible:: nxp,imx-flexspi-hyperflash
+.. dtcompatible:: sitronix,st7735r
+.. dtcompatible:: st,stm32-can
+.. dtcompatible:: wiznet,w5500
+.. dtcompatible:: bosch,bmc150_magn
+.. dtcompatible:: ti,ina219
+.. dtcompatible:: espressif,esp32-gpio
+.. dtcompatible:: nordic,nrf-clock
+.. dtcompatible:: nxp,kinetis-ftfa
+.. dtcompatible:: nuvoton,npcx-itim-timer
+.. dtcompatible:: bosch,bmi270
+.. dtcompatible:: nxp,imx-mu
+.. dtcompatible:: nxp,kinetis-wdog
+.. dtcompatible:: xlnx,xps-spi-2.00.a
+.. dtcompatible:: zephyr,sdl-dc
+.. dtcompatible:: power-domain
+.. dtcompatible:: openisa,rv32m1-genfsk
+.. dtcompatible:: nxp,lpc-i2c
+.. dtcompatible:: microchip,xec-peci
+.. dtcompatible:: ti,tlv320dac
+.. dtcompatible:: reserved-memory
+.. dtcompatible:: zephyr,spi-bitbang
+.. dtcompatible:: espressif,esp32-i2c
+.. dtcompatible:: zephyr,bt-hci-spi-slave
+.. dtcompatible:: openisa,rv32m1-lpspi
+.. dtcompatible:: nxp,imx-itcm
+.. dtcompatible:: st,stm32-usb
+.. dtcompatible:: nxp,kinetis-pwt
+.. dtcompatible:: st,stm32g4-pll-clock
+.. dtcompatible:: nuvoton,npcx-miwu-int-map
+.. dtcompatible:: soc-nv-flash
+.. dtcompatible:: arm,cortex-m0+
+.. dtcompatible:: arm,cortex-m23
+.. dtcompatible:: sifive,uart0
+.. dtcompatible:: nuvoton,numicro-uart
+.. dtcompatible:: st,stm32-spi
+.. dtcompatible:: nxp,lpc-iocon
+.. dtcompatible:: st,stm32-i2s
+.. dtcompatible:: atmel,sam-i2c-twihs
+.. dtcompatible:: ti,tca9538
+.. dtcompatible:: st,iis2iclx
+.. dtcompatible:: st,stm32-flash-controller
+.. dtcompatible:: solomon,ssd16xxfb
+.. dtcompatible:: arm,v8m-nvic
+.. dtcompatible:: st,stm32-uart
+.. dtcompatible:: nxp,lpc-iocon-pio
+.. dtcompatible:: st,iis3dhhc
+.. dtcompatible:: st,stm32l0-flash-controller
+.. dtcompatible:: altr,jtag-uart
+.. dtcompatible:: ti,msp432p4xx-uart
+.. dtcompatible:: atmel,sam-usbhs
+.. dtcompatible:: ite,it8xxx2-pwm
+.. dtcompatible:: ti,tmp108
+.. dtcompatible:: arm,cmsdk-dtimer
+.. dtcompatible:: seeed,grove-temperature
+.. dtcompatible:: silabs,gecko-i2c
+.. dtcompatible:: nuvoton,npcx-gpio
+.. dtcompatible:: meas,ms5607
+.. dtcompatible:: st,stm32f3-flash-controller
+.. dtcompatible:: sifive,pwm0
+.. dtcompatible:: arm,cortex-r4
+.. dtcompatible:: nuvoton,npcx-spi-fiu
+.. dtcompatible:: st,iis2dh
+.. dtcompatible:: nuvoton,npcx-adc
+.. dtcompatible:: st,stm32l0-pll-clock
+.. dtcompatible:: st,lsm6ds0
+.. dtcompatible:: st,lis2mdl
+.. dtcompatible:: ite,it8xxx2-kscan
+.. dtcompatible:: nordic,nrf52-flash-controller
+.. dtcompatible:: sample_controller
+.. dtcompatible:: nordic,nrf-regulators
+.. dtcompatible:: ti,lp503x
+.. dtcompatible:: ti,tca9548a
+.. dtcompatible:: ti,lmp90100
+.. dtcompatible:: st,stm32f0-rcc
+.. dtcompatible:: st,stm32-usart
+.. dtcompatible:: nxp,lpc-syscon
+.. dtcompatible:: nuvoton,npcx-pinctrl-def
+.. dtcompatible:: atmel,sam-ssc
+.. dtcompatible:: nxp,imx-csi
+.. dtcompatible:: adafruit-feather-header
+.. dtcompatible:: atmel,sam0-eic
+.. dtcompatible:: snps,creg-gpio-mux-hsdk
+.. dtcompatible:: ti,tmp112
+.. dtcompatible:: sifive,iof
+.. dtcompatible:: zephyr,memory-region
+.. dtcompatible:: zephyr,native-posix-udc
+.. dtcompatible:: microchip,ksz8794
+.. dtcompatible:: snps,designware-dma
+.. dtcompatible:: gd,gd32-pwm
+.. dtcompatible:: nordic,nrf-uicr
+.. dtcompatible:: nuvoton,npcx-miwu-wui-map
+.. dtcompatible:: telink,b91-zb
+.. dtcompatible:: brcm,iproc-pax-dma-v1
+.. dtcompatible:: zephyr,sim-ec-host-cmd-periph
+.. dtcompatible:: cypress,psoc6-flash-controller
+.. dtcompatible:: st,stm32-nv-flash
+.. dtcompatible:: renesas,rcar-scif
+.. dtcompatible:: zephyr,native-posix-rng
+.. dtcompatible:: microchip,xec-ecia
+.. dtcompatible:: microchip,mcp4725
+.. dtcompatible:: nordic,nrf-dppic
+.. dtcompatible:: st,stm32-ethernet
+.. dtcompatible:: st,stm32-lpuart
+.. dtcompatible:: nuclei,eclic
+.. dtcompatible:: st,stm32-qspi-nor
+.. dtcompatible:: voltage-divider
+.. dtcompatible:: bosch,bma280
+.. dtcompatible:: st,stm32f1-pinctrl
+.. dtcompatible:: nxp,imx-uart
+.. dtcompatible:: snps,designware-pwm
+.. dtcompatible:: litex,spi
+.. dtcompatible:: intel,dmic
+.. dtcompatible:: ite,peci-it8xxx2
+.. dtcompatible:: microbit,edge-connector
+.. dtcompatible:: nuvoton,npcx-soc-id
+.. dtcompatible:: nuvoton,npcx-host-uart
+.. dtcompatible:: nuvoton,npcx-i2c-port
+.. dtcompatible:: nxp,kinetis-pit
+.. dtcompatible:: ilitek,ili9341
+.. dtcompatible:: nxp,imx-epit
+.. dtcompatible:: microchip,xec-ps2
+.. dtcompatible:: intel,vt-d
+.. dtcompatible:: ite,it8xxx2-pinctrl-conf
+.. dtcompatible:: microchip,xec-gpio
+.. dtcompatible:: microchip,xec-gpio-v2
+.. dtcompatible:: nxp,imx-flexspi-hyperram
+.. dtcompatible:: adi,adxl345
+.. dtcompatible:: wnc,m14a2a
+.. dtcompatible:: riscv,cpu-intc
+.. dtcompatible:: sensirion,sht3xd
+.. dtcompatible:: arm,itcm
+.. dtcompatible:: microchip,xec-tach
+.. dtcompatible:: gpio-leds
+.. dtcompatible:: ti,stellaris-gpio
+.. dtcompatible:: st,i3g4250d
+.. dtcompatible:: holtek,ht16k33
+.. dtcompatible:: atmel,sam0-tc32
+.. dtcompatible:: fixed-partitions
+.. dtcompatible:: zephyr,counter-watchdog
+.. dtcompatible:: ti,hdc2021
+.. dtcompatible:: semtech,sx1276
+.. dtcompatible:: raspberrypi,pico-gpio
+.. dtcompatible:: gpio-i2c
+.. dtcompatible:: microchip,mcp2515
+.. dtcompatible:: nxp,imx-flexspi-nor
+.. dtcompatible:: arm,v6m-nvic
+.. dtcompatible:: st,stm32wb-flash-controller
+.. dtcompatible:: st,stm32-dma-v2
+.. dtcompatible:: nuvoton,npcx-uart
+.. dtcompatible:: st,stm32-cryp
+.. dtcompatible:: nxp,mcr20a
+.. dtcompatible:: nordic,nrf-usbd
+.. dtcompatible:: semtech,sx1262
+.. dtcompatible:: usb-nop-xceiv
+.. dtcompatible:: st,stts751
+.. dtcompatible:: zephyr,adc-emul
+.. dtcompatible:: altr,nios2-i2c
+.. dtcompatible:: nxp,lpc-ctimer
+.. dtcompatible:: st,stm32g0-flash-controller
+.. dtcompatible:: renesas,rcar-i2c
+.. dtcompatible:: nxp,lpc11u6x-i2c
+.. dtcompatible:: sensirion,sgp40
+.. dtcompatible:: espressif,esp32-systimer
+.. dtcompatible:: winsen,mhz19b
+.. dtcompatible:: ite,it8xxx2-tach
+.. dtcompatible:: inventek,eswifi
+.. dtcompatible:: st,stm32-rtc
+.. dtcompatible:: st,stm32-msi-clock
+.. dtcompatible:: st,stm32wl-rcc
+.. dtcompatible:: st,lps22hh
+.. dtcompatible:: st,lis2ds12
+.. dtcompatible:: ite,it8xxx2-watchdog
+.. dtcompatible:: st,stm32f105-pll2-clock
+.. dtcompatible:: arm,cortex-m4f
+.. dtcompatible:: litex,i2c
+.. dtcompatible:: arm,gic-v3-its
+.. dtcompatible:: ti,ina237
+.. dtcompatible:: nxp,fxas21002
+.. dtcompatible:: ti,opt3001
+.. dtcompatible:: atmel,sam0-dmac
+.. dtcompatible:: st,iis2mdc
+.. dtcompatible:: zephyr,ipc-openamp-static-vrings
+.. dtcompatible:: maxim,max30101
+.. dtcompatible:: nordic,nrf-egu
+.. dtcompatible:: ti,hdc2010
+.. dtcompatible:: inventek,eswifi-uart
+.. dtcompatible:: nordic,mbox-nrf-ipc
+.. dtcompatible:: neorv32-trng
+.. dtcompatible:: hynitron,cst816s
+.. dtcompatible:: segger,rtt-uart
+.. dtcompatible:: ti,dac43608
+.. dtcompatible:: arm,cortex-m33f
+.. dtcompatible:: nxp,kinetis-temperature
+.. dtcompatible:: st,stm32-fmc
+.. dtcompatible:: arm,armv8m-mpu
+.. dtcompatible:: ti,cc13xx-cc26xx-uart
+.. dtcompatible:: atmel,sam0-pinmux
+.. dtcompatible:: st,stm32-backup-sram
+.. dtcompatible:: intel,ibecc
+.. dtcompatible:: st,stm32f100-pll-clock
+.. dtcompatible:: honeywell,sm351lt
+.. dtcompatible:: intel,ioapic
+.. dtcompatible:: nxp,mcux-edma
+.. dtcompatible:: nxp,kinetis-trng
+.. dtcompatible:: atmel,sam0-watchdog
+.. dtcompatible:: arm,v8.1m-nvic
+.. dtcompatible:: st,stm32-eeprom
+.. dtcompatible:: snps,designware-intc
+.. dtcompatible:: st,stm32-dac
+.. dtcompatible:: worldsemi,ws2812-spi
+.. dtcompatible:: nordic,nrf-sw-pwm
+.. dtcompatible:: generic-fem-two-ctrl-pins
+.. dtcompatible:: gd,gd32-dac
+.. dtcompatible:: st,stm32-sdmmc
+.. dtcompatible:: nordic,nrf-cc310
+.. dtcompatible:: microchip,xec-adc
+.. dtcompatible:: st,stm32-temp
+.. dtcompatible:: arc,iccm
+.. dtcompatible:: nxp,imx-gpt
+.. dtcompatible:: st,stm32f0-pll-clock
+.. dtcompatible:: nxp,lpc11u6x-uart
+.. dtcompatible:: nuvoton,npcx-pcc
+.. dtcompatible:: atmel,sam-trng
+.. dtcompatible:: nordic,nrf-led-matrix
+.. dtcompatible:: gaisler,leon3
+.. dtcompatible:: nordic,nrf-vmc
+.. dtcompatible:: invensense,mpu9150
+.. dtcompatible:: arm,armv6m-mpu
+.. dtcompatible:: ti,hdc2080
+.. dtcompatible:: ti,tlc59108
+.. dtcompatible:: nxp,kinetis-lpsci
+.. dtcompatible:: maxim,max31875
+.. dtcompatible:: intel,atom
+.. dtcompatible:: atmel,sam0-dac
+.. dtcompatible:: nxp,imx-ccm
+.. dtcompatible:: telink,b91
+.. dtcompatible:: intel,s1000-pinmux
+.. dtcompatible:: ti,cc13xx-cc26xx-rtc
+.. dtcompatible:: zephyr,bbram-emul
+.. dtcompatible:: intel,gna
+.. dtcompatible:: nordic,nrf-ecb
+.. dtcompatible:: ilitek,ili9340
+.. dtcompatible:: ti,ads1115
+.. dtcompatible:: nuvoton,npcx-booter-variant
+.. dtcompatible:: st,stm32wb-pll-clock
+.. dtcompatible:: invensense,mpu9250
+.. dtcompatible:: nordic,nrf-pinctrl
+.. dtcompatible:: sifive,dtim0
+.. dtcompatible:: intel,adsp-tlb
+.. dtcompatible:: nordic,qspi-nor
+.. dtcompatible:: atmel,sam0-id
+.. dtcompatible:: nuvoton,npcx-miwu
+.. dtcompatible:: syscon
+.. dtcompatible:: ams,ens210
+.. dtcompatible:: intel,cavs-gpdma
+.. dtcompatible:: zephyr,can-loopback
+.. dtcompatible:: st,stm32-ipcc-mailbox
+.. dtcompatible:: cypress,psoc6-uid
+.. dtcompatible:: st,stm32-qspi
+.. dtcompatible:: arm,cmsdk-gpio
+.. dtcompatible:: nordic,nrf-adc
+.. dtcompatible:: nuvoton,nct38xx-gpio
+.. dtcompatible:: nordic,nrf-temp
+.. dtcompatible:: nuvoton,npcx-ps2-ctrl
+.. dtcompatible:: zephyr,native-posix-uart
+.. dtcompatible:: ti,cc2520
+.. dtcompatible:: silabs,si7210
+.. dtcompatible:: microchip,xec-espi-vw-routing
+.. dtcompatible:: microchip,xec-watchdog
+.. dtcompatible:: atmel,samd2x-gclk
+.. dtcompatible:: altr,nios2f
+.. dtcompatible:: st,stm32u5-pll-clock
+.. dtcompatible:: arm,cortex-m1
+.. dtcompatible:: cdns,xtensa-core-intc
+.. dtcompatible:: espressif,esp32-ledc
+.. dtcompatible:: st,mpxxdtyy
+.. dtcompatible:: u-blox,sara-r4
+.. dtcompatible:: nxp,kinetis-ftm
+.. dtcompatible:: zephyr,mmc-spi-slot
+.. dtcompatible:: riscv,machine-timer
+.. dtcompatible:: silabs,gecko-timer
+.. dtcompatible:: silabs,gecko-uart
+.. dtcompatible:: microchip,mcp3208
+.. dtcompatible:: nxp,sctimer-pwm
+.. dtcompatible:: st,stm32-aes
+.. dtcompatible:: st,stm32-ccm
+.. dtcompatible:: litex,clk
+.. dtcompatible:: nxp,kinetis-dspi
+.. dtcompatible:: atmel,sam-pwm
+.. dtcompatible:: brcm,iproc-pcie-ep
+.. dtcompatible:: nordic,nrf-spi
+.. dtcompatible:: arm,cortex-r4f
+.. dtcompatible:: snps,designware-spi
+.. dtcompatible:: usb-audio
+.. dtcompatible:: nordic,nrf91-flash-controller
+.. dtcompatible:: xlnx,xps-timer-1.00.a
+.. dtcompatible:: nuvoton,npcx-scfg
+.. dtcompatible:: ti,dac53608
+.. dtcompatible:: st,stm32f7-flash-controller
+.. dtcompatible:: ite,it8xxx2-pinmux
+.. dtcompatible:: nordic,nrf-saadc
+.. dtcompatible:: atmel,sam-tc
+.. dtcompatible:: nordic,nrf53-flash-controller
+.. dtcompatible:: power-domain-gpio
+.. dtcompatible:: meas,ms5837
+.. dtcompatible:: rocktech,rk043fn02h-ct
+.. dtcompatible:: ti,dac80508
+.. dtcompatible:: st,stm32-i2c-v2
+.. dtcompatible:: ti,stellaris-ethernet
+.. dtcompatible:: zephyr,fstab
+.. dtcompatible:: nordic,nrf-spu
+.. dtcompatible:: gd,gd32-exti
+.. dtcompatible:: st,stm32u5-msi-clock
+.. dtcompatible:: atmel,sam0-uart
+.. dtcompatible:: arm,mhu
+.. dtcompatible:: nuvoton,npcx-ps2-channel
+.. dtcompatible:: nuvoton,nct38xx-gpio-port
+.. dtcompatible:: ti,lmp90xxx-gpio
+.. dtcompatible:: ti,bq274xx
+.. dtcompatible:: semtech,sx1272
+.. dtcompatible:: litex,dna0
+.. dtcompatible:: jedec,spi-nor
+.. dtcompatible:: nxp,lpc-lpadc
+.. dtcompatible:: st,stm32-window-watchdog
+.. dtcompatible:: gaisler,irqmp
+.. dtcompatible:: openisa,rv32m1-gpio
+.. dtcompatible:: renesas,rcar-cpg-mssr
+.. dtcompatible:: st,stm32-watchdog
+.. dtcompatible:: ite,it8xxx2-flash-controller
+.. dtcompatible:: arm,cortex-r5
+.. dtcompatible:: nordic,nrf-cc312
+.. dtcompatible:: st,hts221
+.. dtcompatible:: arm,gic
+.. dtcompatible:: nxp,lpc-mcan
+.. dtcompatible:: xlnx,xps-gpio-1.00.a-gpio2
+.. dtcompatible:: atmel,sam0-usb
+.. dtcompatible:: invensense,mpu6050
+.. dtcompatible:: snps,arcv2-intc
+.. dtcompatible:: st,stm32l1-flash-controller
+.. dtcompatible:: riscv,sifive-e24
+.. dtcompatible:: honeywell,hmc5883l
+.. dtcompatible:: nordic,nrf-i2s
+.. dtcompatible:: st,stm32h7-fdcan
+.. dtcompatible:: ti,cc32xx-uart
+.. dtcompatible:: nxp,imx-wdog
+.. dtcompatible:: ti,ads1113
+.. dtcompatible:: nxp,kinetis-ftfe
+.. dtcompatible:: aosong,dht
+.. dtcompatible:: nuvoton,npcx-pslctrl-def
+.. dtcompatible:: st,stm32-counter
+.. dtcompatible:: focaltech,ft5336
+.. dtcompatible:: nxp,kinetis-dac
+.. dtcompatible:: nxp,kinetis-adc16
+.. dtcompatible:: nordic,nrf-watchdog
+.. dtcompatible:: xlnx,xps-timer-1.00.a-pwm
+.. dtcompatible:: atmel,sam-gpio
+.. dtcompatible:: arm,sbsa-uart
+.. dtcompatible:: hoperf,hp206c
+.. dtcompatible:: zephyr,spi-emul-controller
+.. dtcompatible:: fcs,fxl6408
+.. dtcompatible:: microchip,xec-rtos-timer
+.. dtcompatible:: atmel,sam0-tcc-pwm
+.. dtcompatible:: nxp,kinetis-pinmux
+.. dtcompatible:: bosch,bmp388
+.. dtcompatible:: st,stm32g0-pll-clock
+.. dtcompatible:: silabs,si7060
+.. dtcompatible:: nxp,kinetis-ptp
+.. dtcompatible:: espressif,esp32-spi
+.. dtcompatible:: atmel,sam0-gmac
+.. dtcompatible:: ite,it8xxx2-uart
+.. dtcompatible:: swerv,pic
+.. dtcompatible:: atmel,sam-i2c-twim
+.. dtcompatible:: sifive,spi0
+.. dtcompatible:: nxp,imx-ccm-rev2
+.. dtcompatible:: silabs,gecko-spi-usart
+.. dtcompatible:: nxp,kinetis-ke1xf-sim
+.. dtcompatible:: telink,b91-spi
+.. dtcompatible:: st,stmpe1600
+.. dtcompatible:: st,stm32f0-flash-controller
+.. dtcompatible:: microchip,xec-qmspi-ldma
+.. dtcompatible:: intel,cavs-i2s
+.. dtcompatible:: bosch,m-can
+.. dtcompatible:: solomon,ssd1306fb
+.. dtcompatible:: zephyr,modbus-serial
+.. dtcompatible:: microchip,xec-pwm
+.. dtcompatible:: nordic,nrf-ficr
+.. dtcompatible:: vexriscv-intc0
+.. dtcompatible:: zephyr,sim-flash
+.. dtcompatible:: arduino,uno-adc
+.. dtcompatible:: sensirion,sht4x
+.. dtcompatible:: quicklogic,eos-s3-gpio
+.. dtcompatible:: ti,cc1200
+.. dtcompatible:: espressif,esp32-pinmux
+.. dtcompatible:: nxp,imx-usdhc
+.. dtcompatible:: nxp,pca95xx
+.. dtcompatible:: ti,lmp90080
+.. dtcompatible:: st,lps22hb-press
+.. dtcompatible:: ethernet-phy
+.. dtcompatible:: st,stm32-dmamux
+.. dtcompatible:: bosch,bme280
+.. dtcompatible:: zephyr,gsm-ppp
+.. dtcompatible:: gd,gd32-afio
+.. dtcompatible:: arm,armv8-timer
+.. dtcompatible:: qemu,nios2-zephyr
+.. dtcompatible:: ite,it8xxx2-bbram
+.. dtcompatible:: nordic,nrf-spis
+.. dtcompatible:: atmel,sam0-i2c
+.. dtcompatible:: nuvoton,npcx-watchdog
+.. dtcompatible:: arm,cortex-m4
+.. dtcompatible:: litex,pwm
+.. dtcompatible:: intel,cavs-intc
+.. dtcompatible:: snps,arcem
+.. dtcompatible:: nxp,imx-flexspi
+.. dtcompatible:: ti,cc32xx-i2c
+.. dtcompatible:: arm,pl011
+.. dtcompatible:: ti,fdc2x1x
+.. dtcompatible:: hoperf,th02
+.. dtcompatible:: microchip,xec-adc-v2
+.. dtcompatible:: ti,stellaris-flash-controller
+.. dtcompatible:: atmel,at25
+.. dtcompatible:: microchip,xec-espi-saf
+.. dtcompatible:: arm,cortex-a53
+.. dtcompatible:: st,lsm6dsl
+.. dtcompatible:: intel,adsp-mailbox
+.. dtcompatible:: infineon,dps310
+.. dtcompatible:: nxp,lpc-dma
+.. dtcompatible:: ns16550
+.. dtcompatible:: gd,gd32-i2c
+.. dtcompatible:: st,stm32-dma
+.. dtcompatible:: atmel,sam-flash-controller
+.. dtcompatible:: sbs,sbs-gauge
+.. dtcompatible:: arm,mps2-fpgaio-gpio
+.. dtcompatible:: arm,cortex-a72
+.. dtcompatible:: microchip,xec-espi-host-dev
+.. dtcompatible:: ovti,ov2640
+.. dtcompatible:: nuvoton,npcx-lvolctrl-def
+.. dtcompatible:: microchip,enc424j600
+.. dtcompatible:: bosch,bmi160
+.. dtcompatible:: bosch,bmm150
+.. dtcompatible:: st,stm32f2-flash-controller
+.. dtcompatible:: adi,adt7420
+.. dtcompatible:: litex,clkout
+.. dtcompatible:: silabs,gecko-wdog
+.. dtcompatible:: nxp,kinetis-ftfl
+.. dtcompatible:: nordic,nrf-rtc
+.. dtcompatible:: ftdi,ft800
+.. dtcompatible:: microsemi,coreuart
+.. dtcompatible:: telink,b91-flash-controller
+.. dtcompatible:: espressif,esp32-flash-controller
+.. dtcompatible:: ite,it8xxx2-sspi
+.. dtcompatible:: fixed-clock
+.. dtcompatible:: ti,hdc
+.. dtcompatible:: cypress,cy8c95xx-gpio
+.. dtcompatible:: nxp,lpc-flexcomm
+.. dtcompatible:: st,stm32wb-rcc
+.. dtcompatible:: nuvoton,npcx-espi
+.. dtcompatible:: microchip,ksz8863
+.. dtcompatible:: st,lis2dh12
+.. dtcompatible:: sharp,ls0xx
+.. dtcompatible:: raspberrypi,pico-uart
+.. dtcompatible:: nxp,kinetis-lpuart
+.. dtcompatible:: st,lsm9ds0-gyro
+.. dtcompatible:: gd,gd32-gpio
+.. dtcompatible:: ti,hdc2022
+.. dtcompatible:: ams,ccs811
+.. dtcompatible:: arm,cortex-m0
+.. dtcompatible:: st,stm32wl-hse-clock
+.. dtcompatible:: ti,ads1014
+.. dtcompatible:: ite,it8xxx2-intc

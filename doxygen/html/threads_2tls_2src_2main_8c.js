@@ -18,7 +18,7 @@ var threads_2tls_2src_2main_8c =
     ] ],
     [ "K_APP_BMEM", "threads_2tls_2src_2main_8c.html#a7a1968d4832a53406449a3ace7019fa2", null ],
     [ "K_APPMEM_PARTITION_DEFINE", "threads_2tls_2src_2main_8c.html#adfb70b63891fa0c9db62a1af5d499482", null ],
-    [ "K_THREAD_STACK_ARRAY_DEFINE", "threads_2tls_2src_2main_8c.html#a435bb6cb7228189bc7068a4c37bf804e", null ],
+    [ "K_THREAD_STACK_ARRAY_DEFINE", "threads_2tls_2src_2main_8c.html#a4c4be6326cf3e112fe915adc33f60d1f", null ],
     [ "start_tls_test", "threads_2tls_2src_2main_8c.html#a91b344431fef2b55a146a227c14a020d", null ],
     [ "test_main", "threads_2tls_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],
     [ "test_tls", "threads_2tls_2src_2main_8c.html#ad2b826bde978fb65612e581386427bf2", null ],

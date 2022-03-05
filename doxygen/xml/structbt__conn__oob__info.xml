@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1065" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1065" bodyend="1071"/>
+        <location file="include/bluetooth/conn.h" line="1068" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1068" bodyend="1074"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-attrib">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1071" column="6"/>
+        <location file="include/bluetooth/conn.h" line="1074" column="6"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__oob__info_1afb9c2510095255dbebd4903914c70d52" prot="public" static="no" mutable="no">
         <type>enum bt_conn_oob_info::@55::@57::@58</type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1089" column="12"/>
+        <location file="include/bluetooth/conn.h" line="1092" column="12"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__oob__info_1abe563750e8ff4ce83cdf69cf03d821d7" prot="public" static="no" mutable="no">
         <type>struct bt_conn_oob_info::@55::@57</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1090" column="6"/>
+        <location file="include/bluetooth/conn.h" line="1093" column="6"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__oob__info_1a0abfb1f09a852f3fd7adf4f84d44ad49" prot="public" static="no" mutable="no">
         <type>union bt_conn_oob_info::@55</type>
@@ -87,7 +87,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1091" column="1"/>
+        <location file="include/bluetooth/conn.h" line="1094" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -95,7 +95,7 @@
     <detaileddescription>
 <para>Info Structure for OOB pairing </para>
     </detaileddescription>
-    <location file="include/bluetooth/conn.h" line="1063" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1063" bodyend="1092"/>
+    <location file="include/bluetooth/conn.h" line="1066" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1066" bodyend="1095"/>
     <listofallmembers>
       <member refid="structbt__conn__oob__info_1a99685ad84ac991e0540855cab5546ff8" prot="public" virt="non-virtual"><scope>bt_conn_oob_info</scope><name>BT_CONN_OOB_BOTH_PEERS</name></member>
       <member refid="structbt__conn__oob__info_1a64074323758600fb22557eba3656f873a4c33ea839306256a198c29ea783c659b" prot="public" virt="non-virtual"><scope>bt_conn_oob_info</scope><name>BT_CONN_OOB_LE_LEGACY</name></member>

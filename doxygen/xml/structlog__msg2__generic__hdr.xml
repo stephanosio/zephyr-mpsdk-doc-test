@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="91" column="2" bodyfile="include/logging/log_msg2.h" bodystart="91" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="92" column="2" bodyfile="include/logging/log_msg2.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__msg2__generic__hdr_1a494250bcd9b6210885b3e44f3da6a441" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_msg2.h" line="91" column="26" bodyfile="include/logging/log_msg2.h" bodystart="91" bodyend="-1"/>
+        <location file="include/logging/log_msg2.h" line="92" column="26" bodyfile="include/logging/log_msg2.h" bodystart="92" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/logging/log_msg2.h" line="90" column="1" bodyfile="include/logging/log_msg2.h" bodystart="90" bodyend="92"/>
+    <location file="include/logging/log_msg2.h" line="91" column="1" bodyfile="include/logging/log_msg2.h" bodystart="91" bodyend="93"/>
     <listofallmembers>
       <member refid="structlog__msg2__generic__hdr_1aff362c4cf871ac1bd573b4a666ae0dd0" prot="public" virt="non-virtual"><scope>log_msg2_generic_hdr</scope><name>MPSC_PBUF_HDR</name></member>
       <member refid="structlog__msg2__generic__hdr_1a494250bcd9b6210885b3e44f3da6a441" prot="public" virt="non-virtual"><scope>log_msg2_generic_hdr</scope><name>type</name></member>

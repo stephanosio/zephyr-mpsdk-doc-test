@@ -3,7 +3,7 @@ var test__stack__fail_8c =
     [ "STACK_LEN", "test__stack__fail_8c.html#a82c9bc91d6207f493c814b2c33dfdba4", null ],
     [ "STACK_SIZE", "test__stack__fail_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "TIMEOUT", "test__stack__fail_8c.html#a45ba202b05caf39795aeca91b0ae547e", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__stack__fail_8c.html#a4e076a37dd170ff46635150cb321e7e5", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__stack__fail_8c.html#a976bd76e0d65fac8327d878814d37afa", null ],
     [ "stack_pop_fail", "test__stack__fail_8c.html#ad2e5814d9dda00f9b9f7ef9971f4dabc", null ],
     [ "test_stack_cleanup_error", "group__kernel__stack__tests.html#gae5e87cb1b3de61f6124574a09729db38", null ],
     [ "test_stack_pop_fail", "group__kernel__stack__tests.html#ga10c0d7a266192050fde52f8d92b0a902", null ],

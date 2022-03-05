@@ -774,7 +774,7 @@
       </memberdef>
       <memberdef kind="define" id="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -813,10 +813,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="atomic_8c_1a32e866e7378df221318e16894c0145c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="atomic_8c_1a704875c50db3f469f4a18dbc94de9231" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(stack, 2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack, 2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type><ref refid="test__stack__fail_8c_1a6856ea318b5a9498715e4444b13a1de1" kindref="member">stack</ref></type>
@@ -825,7 +825,7 @@
           <type>2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -984,9 +984,9 @@
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREADS_NUM<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8c_1a32e866e7378df221318e16894c0145c7" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="smp__boot__delay_2src_2main_8c_1a96786824adbf96016a9dbf6eded02b94" kindref="member">stack</ref>,<sp/><ref refid="atomic_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>,<sp/><ref refid="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8c_1a704875c50db3f469f4a18dbc94de9231" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="smp__boot__delay_2src_2main_8c_1a96786824adbf96016a9dbf6eded02b94" kindref="member">stack</ref>,<sp/><ref refid="atomic_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>,<sp/><ref refid="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="atomic_8c_1ae3e7b70821cb2fc4b41ff1189e70bc92" kindref="member">thread</ref>[<ref refid="atomic_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>];</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>

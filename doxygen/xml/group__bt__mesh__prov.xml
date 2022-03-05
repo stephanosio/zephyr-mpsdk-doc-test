@@ -285,7 +285,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="279" column="5" declfile="include/bluetooth/mesh/main.h" declline="279" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="290" column="5" declfile="include/bluetooth/mesh/main.h" declline="290" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1gace8cbf2a6e9144d3118054f234de02ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -316,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="290" column="5" declfile="include/bluetooth/mesh/main.h" declline="290" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="301" column="5" declfile="include/bluetooth/mesh/main.h" declline="301" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1gae33b5b6e9650b49d46494b4a81b18674" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -347,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="298" column="5" declfile="include/bluetooth/mesh/main.h" declline="298" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="309" column="5" declfile="include/bluetooth/mesh/main.h" declline="309" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1ga80be35bf7287e62cb47d8fba99d648a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -392,7 +392,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="319" column="5" declfile="include/bluetooth/mesh/main.h" declline="319" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="330" column="5" declfile="include/bluetooth/mesh/main.h" declline="330" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1gad66ccc725a1cfdf2b79076f22f853f84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -438,7 +438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="343" column="5" declfile="include/bluetooth/mesh/main.h" declline="343" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="354" column="5" declfile="include/bluetooth/mesh/main.h" declline="354" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1ga7b6024dc32f6ec7f26cbf91545911084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -482,7 +482,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="357" column="5" declfile="include/bluetooth/mesh/main.h" declline="357" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="368" column="5" declfile="include/bluetooth/mesh/main.h" declline="368" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1gabab41ebdcae2eaa109e03cb2d8fa78c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -506,7 +506,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="373" column="5" declfile="include/bluetooth/mesh/main.h" declline="373" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="384" column="5" declfile="include/bluetooth/mesh/main.h" declline="384" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1ga6c8dc1b09d4cde8738be83c992b860a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -537,7 +537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="383" column="5" declfile="include/bluetooth/mesh/main.h" declline="383" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="394" column="5" declfile="include/bluetooth/mesh/main.h" declline="394" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1gac7e084e7d12a93377d49b1c3d6313399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -568,7 +568,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="393" column="5" declfile="include/bluetooth/mesh/main.h" declline="393" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="404" column="5" declfile="include/bluetooth/mesh/main.h" declline="404" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1ga4ed6e078c1c0f197758c8dbb23db30f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -661,7 +661,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="410" column="5" declfile="include/bluetooth/mesh/main.h" declline="410" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="421" column="5" declfile="include/bluetooth/mesh/main.h" declline="421" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1ga0bfae4ebda53052cfa027c3a7ae51ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -728,7 +728,74 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="424" column="5" declfile="include/bluetooth/mesh/main.h" declline="424" declcolumn="5"/>
+        <location file="include/bluetooth/mesh/main.h" line="435" column="5" declfile="include/bluetooth/mesh/main.h" declline="435" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__bt__mesh__prov_1ga60666e0d7629caf36026974621bae664" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bt_mesh_provision_gatt</definition>
+        <argsstring>(const uint8_t uuid[16], uint16_t net_idx, uint16_t addr, uint8_t attention_duration)</argsstring>
+        <name>bt_mesh_provision_gatt</name>
+        <param>
+          <type>const <ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
+          <declname>uuid</declname>
+          <array>[16]</array>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
+          <declname>net_idx</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
+          <declname>attention_duration</declname>
+        </param>
+        <briefdescription>
+<para>Provision a Mesh Node using PB-GATT. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UUID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>net_idx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Network Key Index </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address to assign to remote device. If addr is 0, the lowest available address will be chosen. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attention_duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attention duration to be send to remote device</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Zero on success or (negative) error code otherwise. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/main.h" line="448" column="5" declfile="include/bluetooth/mesh/main.h" declline="448" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__mesh__prov_1ga0307e62001ba7fa303ed311ebc47f116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -749,7 +816,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="436" column="6" declfile="include/bluetooth/mesh/main.h" declline="436" declcolumn="6"/>
+        <location file="include/bluetooth/mesh/main.h" line="460" column="6" declfile="include/bluetooth/mesh/main.h" declline="460" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

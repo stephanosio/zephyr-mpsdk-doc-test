@@ -744,7 +744,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="smp_2src_2main_8c_1ab5dfd814ed332800adaf63eaf3714f85" prot="public" static="no">
         <name>T2_STACK_SIZE</name>
-        <initializer>(2048 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(2048 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -755,7 +755,7 @@
       </memberdef>
       <memberdef kind="define" id="smp_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(384 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1112,16 +1112,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="smp_2src_2main_8c_1a706694fc2805aa6380b89344aecd8324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="smp_2src_2main_8c_1a81e4d450f990f80f88b59ed97ef6639c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(t2_stack,(2048+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(t2_stack,(2048+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>t2_stack</type>
         </param>
         <param>
-          <type>(2048+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(2048+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1175,10 +1175,10 @@
         </inbodydescription>
         <location file="tests/kernel/smp/src/main.c" line="38" column="1" declfile="tests/kernel/smp/src/main.c" declline="38" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="smp_2src_2main_8c_1a897974f7b30be316e1e19125fe86ac76" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="smp_2src_2main_8c_1a212d15dcea3bea87d5a9e6e7dfe2d11b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(tstack, CONFIG_MP_NUM_CPUS,(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack, CONFIG_MP_NUM_CPUS,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
@@ -1187,7 +1187,7 @@
           <type><ref refid="ztest_8h_1a3377b833b4a581e2ccf3a48ac31d18fe" kindref="member">CONFIG_MP_NUM_CPUS</ref></type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2212,8 +2212,8 @@
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>SMP<sp/>test<sp/>requires<sp/>at<sp/>least<sp/>two<sp/>CPUs!</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>T2_STACK_SIZE<sp/>(2048<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>T2_STACK_SIZE<sp/>(2048<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DELAY_US<sp/>50000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/>1000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EQUAL_PRIORITY<sp/>1</highlight><highlight class="normal"></highlight></codeline>
@@ -2222,7 +2222,7 @@
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SLEEP_MS_LONG<sp/>15000</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="smp_2src_2main_8c_1a8cc42352e1fcd18fbeca6388426f572b" kindref="member">t2</ref>;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(t2_stack,<sp/><ref refid="smp_2src_2main_8c_1ab5dfd814ed332800adaf63eaf3714f85" kindref="member">T2_STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(t2_stack,<sp/><ref refid="smp_2src_2main_8c_1ab5dfd814ed332800adaf63eaf3714f85" kindref="member">T2_STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="smp_2src_2main_8c_1abd861c0f9b0793cee4492b2a9b319188" kindref="member">t2_count</ref>;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="smp_2src_2main_8c_1a75d1dc538e2efcf1c5b5e1e9941f030a" kindref="member">sync_count</ref><sp/>=<sp/>-1;</highlight></codeline>
@@ -2246,7 +2246,7 @@
 <codeline lineno="49"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structthread__info" kindref="compound">thread_info</ref><sp/><ref refid="smp_2src_2main_8c_1a27c38a55d575e62bfb0f9ac96a8cec33" kindref="member">tinfo</ref>[<ref refid="smp_2src_2main_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>];</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="smp_2src_2main_8c_1afc639d50e7a38ffe2314fc59b56cca11" kindref="member">tthread</ref>[<ref refid="smp_2src_2main_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>];</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="smp_2src_2main_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>,<sp/><ref refid="smp_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="smp_2src_2main_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref>,<sp/><ref refid="smp_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="smp_2src_2main_8c_1a663612301d9ca0abb5d929164f2629e8" kindref="member">thread_started</ref>[<ref refid="smp_2src_2main_8c_1a51e2e876217651c49f5dda708e3c54f3" kindref="member">THREADS_NUM</ref><sp/>-<sp/>1];</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>

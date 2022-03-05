@@ -23,9 +23,9 @@ var mbox_2mbox__usage_2src_2main_8c =
       [ "PUT_GET_NULL", "mbox_2mbox__usage_2src_2main_8c.html#a3fe8618a0a30754117dd9ec69297e277abe8c673db580a13d871aad96f3e33336", null ],
       [ "TARGET_SOURCE", "mbox_2mbox__usage_2src_2main_8c.html#a3fe8618a0a30754117dd9ec69297e277a5d98eed4ffb29104f0c53ae8e9c1848d", null ]
     ] ],
-    [ "K_THREAD_STACK_DEFINE", "mbox_2mbox__usage_2src_2main_8c.html#aa55682d2d3e2dff5e0b68c250fbdeb95", null ],
-    [ "K_THREAD_STACK_DEFINE", "mbox_2mbox__usage_2src_2main_8c.html#a4039bf257a40f1dc3b73c968c83f03ea", null ],
-    [ "K_THREAD_STACK_DEFINE", "mbox_2mbox__usage_2src_2main_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "mbox_2mbox__usage_2src_2main_8c.html#afc0617c2ddfb1a62e1a82b43f2500cd3", null ],
+    [ "K_THREAD_STACK_DEFINE", "mbox_2mbox__usage_2src_2main_8c.html#adbc7089de7661e48e3e53e95a0cc3177", null ],
+    [ "K_THREAD_STACK_DEFINE", "mbox_2mbox__usage_2src_2main_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "msg_receiver", "mbox_2mbox__usage_2src_2main_8c.html#a5c0598139c8b949263cba1de1ada9e9b", null ],
     [ "msg_sender", "mbox_2mbox__usage_2src_2main_8c.html#accaa74293b2b9f3f028b00f004a1bf4f", null ],
     [ "test_main", "mbox_2mbox__usage_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

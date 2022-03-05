@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -187,7 +189,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -283,10 +285,10 @@ Zephyr subsystems.</p></li>
 <li><p>Is namespaced by default, to avoid name conflicts with well-known
 names like <code class="docutils literal notranslate"><span class="pre">close()</span></code>, which may be part of libc or other POSIX
 compatibility libraries.
-If enabled by <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a>, it will also
+If enabled by <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a>, it will also
 expose native POSIX names.</p></li>
 </ul>
-<p>BSD Sockets compatible API is enabled using <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS</span></code></a>
+<p>BSD Sockets compatible API is enabled using <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS" title="CONFIG_NET_SOCKETS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS</span></code></a>
 config option and implements the following operations: <code class="docutils literal notranslate"><span class="pre">socket()</span></code>, <code class="docutils literal notranslate"><span class="pre">close()</span></code>,
 <code class="docutils literal notranslate"><span class="pre">recv()</span></code>, <code class="docutils literal notranslate"><span class="pre">recvfrom()</span></code>, <code class="docutils literal notranslate"><span class="pre">send()</span></code>, <code class="docutils literal notranslate"><span class="pre">sendto()</span></code>, <code class="docutils literal notranslate"><span class="pre">connect()</span></code>, <code class="docutils literal notranslate"><span class="pre">bind()</span></code>,
 <code class="docutils literal notranslate"><span class="pre">listen()</span></code>, <code class="docutils literal notranslate"><span class="pre">accept()</span></code>, <code class="docutils literal notranslate"><span class="pre">fcntl()</span></code> (to set non-blocking mode),
@@ -295,7 +297,7 @@ config option and implements the following operations: <code class="docutils lit
 <p>Based on the namespacing requirements above, these operations are by
 default exposed as functions with <code class="docutils literal notranslate"><span class="pre">zsock_</span></code> prefix, e.g.
 <a class="reference internal" href="#c.zsock_socket" title="zsock_socket"><code class="xref c c-func docutils literal notranslate"><span class="pre">zsock_socket()</span></code></a> and <a class="reference internal" href="#c.zsock_close" title="zsock_close"><code class="xref c c-func docutils literal notranslate"><span class="pre">zsock_close()</span></code></a>. If the config option
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined, all the functions
+<a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined, all the functions
 will be also exposed as aliases without the prefix. This includes the
 functions like <code class="docutils literal notranslate"><span class="pre">close()</span></code> and <code class="docutils literal notranslate"><span class="pre">fcntl()</span></code> (which may conflict with
 functions in libc or other libraries, for example, with the filesystem
@@ -323,8 +325,8 @@ communication. Secure functions for the implementation are provided by
 mbedTLS library. Secure sockets implementation allows use of both TLS and DTLS
 protocols with standard socket calls. See <a class="reference internal" href="ip_4_6.html#c.net_ip_protocol_secure" title="net_ip_protocol_secure"><code class="xref c c-enum docutils literal notranslate"><span class="pre">net_ip_protocol_secure</span></code></a> type
 for supported secure protocol versions.</p>
-<p>To enable secure sockets, set the <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_SOCKOPT_TLS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_SOCKOPT_TLS</span></code></a>
-option. To enable DTLS support, use <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_ENABLE_DTLS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_ENABLE_DTLS</span></code></a>
+<p>To enable secure sockets, set the <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_SOCKOPT_TLS" title="CONFIG_NET_SOCKETS_SOCKOPT_TLS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_SOCKOPT_TLS</span></code></a>
+option. To enable DTLS support, use <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_ENABLE_DTLS" title="CONFIG_NET_SOCKETS_ENABLE_DTLS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_ENABLE_DTLS</span></code></a>
 option.</p>
 <div class="section" id="tls-credentials-subsystem">
 <h3><a class="toc-backref" href="#id4">TLS credentials subsystem</a><a class="headerlink" href="#tls-credentials-subsystem" title="Permalink to this headline">¶</a></h3>
@@ -872,7 +874,7 @@ see e.g. <a class="reference internal" href="../../samples/net/sockets/echo_serv
 <p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/socket.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">socket()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
 <p>If CONFIG_USERSPACE is enabled, the caller will be granted access to the context object associated with the returned file descriptor. <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference internal" href="#group__bsd__sockets_1ga21a871d1fa6b6beeed88408761877873"><span class="std std-ref">zsock_get_context_object()</span></a> </p>
@@ -887,7 +889,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="https://pubs.opengroup.org/onlinepubs/009695399/functions/socketpair.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">socketpair()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -897,7 +899,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <dd><p>Close a network socket. </p>
 <p><p>Close a network socket.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">close()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case it
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case it
 may conflict with generic POSIX <code class="docutils literal notranslate"><span class="pre">close()</span></code> function).</p>
  </p>
 </dd></dl>
@@ -910,7 +912,7 @@ may conflict with generic POSIX <code class="docutils literal notranslate"><span
 for normative description, but currently this function has no effect in
 Zephyr and provided solely for compatibility with existing code.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">shutdown()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -921,7 +923,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/bind.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">bind()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -932,7 +934,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/connect.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">connect()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -943,7 +945,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/listen.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">listen()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -954,7 +956,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/accept.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">accept()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -965,7 +967,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/sendto.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">sendto()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -976,7 +978,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/send.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">send()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -987,7 +989,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/sendmsg.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">sendmsg()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -998,7 +1000,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/recvfrom.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">recvfrom()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1009,7 +1011,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/recv.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">recv()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1020,7 +1022,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>This functions allow to (only) configure a socket for blocking or
 non-blocking operation (O_NONBLOCK).
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">fcntl()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case
 it may conflict with generic POSIX <code class="docutils literal notranslate"><span class="pre">fcntl()</span></code> function).</p>
  </p>
 </dd></dl>
@@ -1033,7 +1035,7 @@ it may conflict with generic POSIX <code class="docutils literal notranslate"><s
 for normative description. (In Zephyr this function works only with
 sockets, not arbitrary file descriptors.)
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">poll()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case
 it may conflict with generic POSIX <code class="docutils literal notranslate"><span class="pre">poll()</span></code> function).</p>
  </p>
 </dd></dl>
@@ -1048,7 +1050,7 @@ socket options described by POSIX, but also some additional options
 available in Linux (some options are dummy and provided to ease porting
 of existing code).
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">getsockopt()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1062,7 +1064,7 @@ socket options described by POSIX, but also some additional options
 available in Linux (some options are dummy and provided to ease porting
 of existing code).
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">setsockopt()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1073,7 +1075,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/getsockname.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">getsockname()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1084,7 +1086,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/gethostname.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">gethostname()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1095,7 +1097,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/inet_ntop.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">inet_ntop()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1106,7 +1108,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/inet_pton.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">inet_pton()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1117,7 +1119,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/getaddrinfo.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">getaddrinfo()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1128,7 +1130,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/freeaddrinfo.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">freeaddrinfo()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1139,7 +1141,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/gai_strerror.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">gai_strerror()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1150,7 +1152,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/getnameinfo.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">getnameinfo()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1164,7 +1166,7 @@ existing code and not recommended for usage due to its inefficiency,
 use <a class="reference internal" href="#c.zsock_poll" title="zsock_poll"><code class="xref c c-func docutils literal notranslate"><span class="pre">zsock_poll()</span></code></a> instead. In Zephyr this function works only with
 sockets, not arbitrary file descriptors.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">select()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined (in which case
 it may conflict with generic POSIX <code class="docutils literal notranslate"><span class="pre">select()</span></code> function).</p>
  </p>
 </dd></dl>
@@ -1176,7 +1178,7 @@ it may conflict with generic POSIX <code class="docutils literal notranslate"><s
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">FD_ZERO()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1187,7 +1189,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">FD_ISSET()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1198,7 +1200,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">FD_CLR()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1209,7 +1211,7 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
 <p><p>See <a class="reference external" href="http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html">POSIX.1-2017 article</a>
 for normative description.
 This function is also exposed as <code class="docutils literal notranslate"><span class="pre">FD_SET()</span></code>
-if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
+if <a class="reference internal" href="../../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> is defined.</p>
  </p>
 </dd></dl>
 
@@ -1406,8 +1408,8 @@ if <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CO
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

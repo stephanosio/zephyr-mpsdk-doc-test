@@ -215,7 +215,7 @@
 * use :c:func:`zsock_poll()` instead. In Zephyr this function works only with
 * sockets, not arbitrary file descriptors.
 * This function is also exposed as ``select()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
 * it may conflict with generic POSIX ``select()`` function).
 * </verbatim> </para>
         </detaileddescription>
@@ -241,7 +241,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_ZERO()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -270,7 +270,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_ISSET()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -299,7 +299,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_CLR()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -328,7 +328,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_SET()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>

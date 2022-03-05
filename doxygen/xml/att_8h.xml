@@ -3,12 +3,89 @@
   <compounddef id="att_8h" kind="file" language="C++">
     <compoundname>att.h</compoundname>
     <includes refid="slist_8h" local="no">sys/slist.h</includes>
+    <includes refid="conn_8h" local="no">bluetooth/conn.h</includes>
     <includedby refid="gatt_8h" local="no">include/bluetooth/gatt.h</includedby>
     <incdepgraph>
+      <node id="19">
+        <label>bluetooth/addr.h</label>
+        <link refid="addr_8h"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>include/bluetooth/att.h</label>
         <link refid="att_8h"/>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>bluetooth/bluetooth.h</label>
+        <link refid="bluetooth_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>bluetooth/conn.h</label>
+        <link refid="conn_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>bluetooth/crypto.h</label>
+        <link refid="bluetooth_2crypto_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>bluetooth/direction.h</label>
+        <link refid="direction_8h"/>
+      </node>
+      <node id="18">
+        <label>bluetooth/gap.h</label>
+        <link refid="gap_8h"/>
+      </node>
+      <node id="24">
+        <label>bluetooth/hci_err.h</label>
+        <link refid="hci__err_8h"/>
+      </node>
+      <node id="16">
+        <label>net/buf.h</label>
+        <link refid="net_2buf_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="5">
@@ -19,6 +96,18 @@
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>sys/printk.h</label>
+        <link refid="printk_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -59,11 +148,21 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
+      <node id="15">
+        <label>toolchain.h</label>
+        <link refid="toolchain_8h"/>
+      </node>
       <node id="10">
         <label>zephyr/types.h</label>
         <link refid="include_2zephyr_2types_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>inttypes.h</label>
+        <link refid="inttypes_8h"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
@@ -75,8 +174,22 @@
         <label>stdint.h</label>
         <link refid="stdint_8h"/>
       </node>
+      <node id="14">
+        <label>string.h</label>
+        <link refid="string_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>stdarg.h</label>
+      </node>
       <node id="3">
         <label>stddef.h</label>
+      </node>
+      <node id="17">
+        <label>zephyr.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -113,7 +226,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="20" column="9" bodyfile="include/bluetooth/att.h" bodystart="20" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="21" column="9" bodyfile="include/bluetooth/att.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1ab8d9a6870360f0e5dd7290895202879f" prot="public" static="no">
         <name>BT_ATT_ERR_INVALID_HANDLE</name>
@@ -124,7 +237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="21" column="9" bodyfile="include/bluetooth/att.h" bodystart="21" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="22" column="9" bodyfile="include/bluetooth/att.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1ac26ed224b7f8fb7717b40fe3a545be7e" prot="public" static="no">
         <name>BT_ATT_ERR_READ_NOT_PERMITTED</name>
@@ -135,7 +248,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="22" column="9" bodyfile="include/bluetooth/att.h" bodystart="22" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="23" column="9" bodyfile="include/bluetooth/att.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a2378ff92f5afaff1e4392b1dc2e7326c" prot="public" static="no">
         <name>BT_ATT_ERR_WRITE_NOT_PERMITTED</name>
@@ -146,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="23" column="9" bodyfile="include/bluetooth/att.h" bodystart="23" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="24" column="9" bodyfile="include/bluetooth/att.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a7f1cbe6eb3ed0999bafab729c7b0a6a6" prot="public" static="no">
         <name>BT_ATT_ERR_INVALID_PDU</name>
@@ -157,7 +270,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="24" column="9" bodyfile="include/bluetooth/att.h" bodystart="24" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="25" column="9" bodyfile="include/bluetooth/att.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a269e711af78a7a30a770b3d7db210c8a" prot="public" static="no">
         <name>BT_ATT_ERR_AUTHENTICATION</name>
@@ -168,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="25" column="9" bodyfile="include/bluetooth/att.h" bodystart="25" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="26" column="9" bodyfile="include/bluetooth/att.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1afcfa214f6f5b600647886f27cebecb49" prot="public" static="no">
         <name>BT_ATT_ERR_NOT_SUPPORTED</name>
@@ -179,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="26" column="9" bodyfile="include/bluetooth/att.h" bodystart="26" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="27" column="9" bodyfile="include/bluetooth/att.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a997d113b71af6b4019c26ca3893f3dbb" prot="public" static="no">
         <name>BT_ATT_ERR_INVALID_OFFSET</name>
@@ -190,7 +303,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="27" column="9" bodyfile="include/bluetooth/att.h" bodystart="27" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="28" column="9" bodyfile="include/bluetooth/att.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a30b28071d7057c2c68b10da34ba32faf" prot="public" static="no">
         <name>BT_ATT_ERR_AUTHORIZATION</name>
@@ -201,7 +314,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="28" column="9" bodyfile="include/bluetooth/att.h" bodystart="28" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="29" column="9" bodyfile="include/bluetooth/att.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1aa135b2315173e7852afe4e1624169ce2" prot="public" static="no">
         <name>BT_ATT_ERR_PREPARE_QUEUE_FULL</name>
@@ -212,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="29" column="9" bodyfile="include/bluetooth/att.h" bodystart="29" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="30" column="9" bodyfile="include/bluetooth/att.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a5dfcd07918dc665bf600a25608b0736d" prot="public" static="no">
         <name>BT_ATT_ERR_ATTRIBUTE_NOT_FOUND</name>
@@ -223,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="30" column="9" bodyfile="include/bluetooth/att.h" bodystart="30" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="31" column="9" bodyfile="include/bluetooth/att.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a240561711499f11b267d2e5ed8fc99f5" prot="public" static="no">
         <name>BT_ATT_ERR_ATTRIBUTE_NOT_LONG</name>
@@ -234,7 +347,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="31" column="9" bodyfile="include/bluetooth/att.h" bodystart="31" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="32" column="9" bodyfile="include/bluetooth/att.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a2ed58d79dfbd701a97377b171f1b0793" prot="public" static="no">
         <name>BT_ATT_ERR_ENCRYPTION_KEY_SIZE</name>
@@ -245,7 +358,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="32" column="9" bodyfile="include/bluetooth/att.h" bodystart="32" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="33" column="9" bodyfile="include/bluetooth/att.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a21207d5beb27fe50856f001bd18e1efa" prot="public" static="no">
         <name>BT_ATT_ERR_INVALID_ATTRIBUTE_LEN</name>
@@ -256,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="33" column="9" bodyfile="include/bluetooth/att.h" bodystart="33" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="34" column="9" bodyfile="include/bluetooth/att.h" bodystart="34" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a992baa1f0d763a00f314bdcf59965bdd" prot="public" static="no">
         <name>BT_ATT_ERR_UNLIKELY</name>
@@ -267,7 +380,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="34" column="9" bodyfile="include/bluetooth/att.h" bodystart="34" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="35" column="9" bodyfile="include/bluetooth/att.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a8a5235e39b05fa85b5b4f4bfb449683b" prot="public" static="no">
         <name>BT_ATT_ERR_INSUFFICIENT_ENCRYPTION</name>
@@ -278,7 +391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="35" column="9" bodyfile="include/bluetooth/att.h" bodystart="35" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="36" column="9" bodyfile="include/bluetooth/att.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a0611fc39d9d09ea4f0e556b4910f09ed" prot="public" static="no">
         <name>BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE</name>
@@ -289,7 +402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="36" column="9" bodyfile="include/bluetooth/att.h" bodystart="36" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="37" column="9" bodyfile="include/bluetooth/att.h" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1af4a81bc81cad14bf91463d4376a3a868" prot="public" static="no">
         <name>BT_ATT_ERR_INSUFFICIENT_RESOURCES</name>
@@ -300,7 +413,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="37" column="9" bodyfile="include/bluetooth/att.h" bodystart="37" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="38" column="9" bodyfile="include/bluetooth/att.h" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a2b9a58bf48f1b76e743cb7fef3aed3a8" prot="public" static="no">
         <name>BT_ATT_ERR_DB_OUT_OF_SYNC</name>
@@ -311,7 +424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="38" column="9" bodyfile="include/bluetooth/att.h" bodystart="38" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="39" column="9" bodyfile="include/bluetooth/att.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a52ffe5ff2eb092bcdc2ebb05684030d7" prot="public" static="no">
         <name>BT_ATT_ERR_VALUE_NOT_ALLOWED</name>
@@ -322,7 +435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="39" column="9" bodyfile="include/bluetooth/att.h" bodystart="39" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="40" column="9" bodyfile="include/bluetooth/att.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a8363770d0832f3df8fb1d0a22bc3551e" prot="public" static="no">
         <name>BT_ATT_ERR_WRITE_REQ_REJECTED</name>
@@ -333,7 +446,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="42" column="9" bodyfile="include/bluetooth/att.h" bodystart="42" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="43" column="9" bodyfile="include/bluetooth/att.h" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a8f623146d7fda4b71514277cfbcd4b21" prot="public" static="no">
         <name>BT_ATT_ERR_CCC_IMPROPER_CONF</name>
@@ -344,7 +457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="43" column="9" bodyfile="include/bluetooth/att.h" bodystart="43" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="44" column="9" bodyfile="include/bluetooth/att.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1af9e46c363487c61dbff50790993107f7" prot="public" static="no">
         <name>BT_ATT_ERR_PROCEDURE_IN_PROGRESS</name>
@@ -355,7 +468,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="44" column="9" bodyfile="include/bluetooth/att.h" bodystart="44" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="45" column="9" bodyfile="include/bluetooth/att.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1ad49773d5e7a39f49c5a06bbaa4f8c365" prot="public" static="no">
         <name>BT_ATT_ERR_OUT_OF_RANGE</name>
@@ -366,7 +479,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="45" column="9" bodyfile="include/bluetooth/att.h" bodystart="45" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="46" column="9" bodyfile="include/bluetooth/att.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a3c4df4336916e082115d43f9716acb36" prot="public" static="no">
         <name>BT_ATT_MAX_ATTRIBUTE_LEN</name>
@@ -377,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="48" column="9" bodyfile="include/bluetooth/att.h" bodystart="48" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="49" column="9" bodyfile="include/bluetooth/att.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1ad0aa088f621b8965013c3ced27480df7" prot="public" static="no">
         <name>BT_ATT_FIRST_ATTRIBUTE_HANDLE</name>
@@ -388,7 +501,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="51" column="9" bodyfile="include/bluetooth/att.h" bodystart="51" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="52" column="9" bodyfile="include/bluetooth/att.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a80adaa6950e3b4934ba5187fbc49142b" prot="public" static="no">
         <name>BT_ATT_FIRST_ATTTRIBUTE_HANDLE</name>
@@ -399,7 +512,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="52" column="9" bodyfile="include/bluetooth/att.h" bodystart="52" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="53" column="9" bodyfile="include/bluetooth/att.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a1b3dc5fedec8d8632d3650405d1ff988" prot="public" static="no">
         <name>BT_ATT_LAST_ATTRIBUTE_HANDLE</name>
@@ -410,7 +523,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="54" column="9" bodyfile="include/bluetooth/att.h" bodystart="54" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="55" column="9" bodyfile="include/bluetooth/att.h" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="att_8h_1a254218269804dfaf7f5cf0d2ef70d3b2" prot="public" static="no">
         <name>BT_ATT_LAST_ATTTRIBUTE_HANDLE</name>
@@ -421,7 +534,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/att.h" line="55" column="9" bodyfile="include/bluetooth/att.h" bodystart="55" bodyend="-1"/>
+        <location file="include/bluetooth/att.h" line="56" column="9" bodyfile="include/bluetooth/att.h" bodystart="56" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -440,58 +553,65 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZEPHYR_INCLUDE_BLUETOOTH_ATT_H_</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="slist_8h" kindref="compound">sys/slist.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Error<sp/>codes<sp/>for<sp/>Error<sp/>response<sp/>PDU<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20" refid="att_8h_1a0032756d54c08d37c101769be8ef2070" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="att_8h_1ab8d9a6870360f0e5dd7290895202879f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22" refid="att_8h_1ac26ed224b7f8fb7717b40fe3a545be7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_READ_NOT_PERMITTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23" refid="att_8h_1a2378ff92f5afaff1e4392b1dc2e7326c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_WRITE_NOT_PERMITTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24" refid="att_8h_1a7f1cbe6eb3ed0999bafab729c7b0a6a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_PDU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="att_8h_1a269e711af78a7a30a770b3d7db210c8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_AUTHENTICATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="att_8h_1afcfa214f6f5b600647886f27cebecb49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_NOT_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="att_8h_1a997d113b71af6b4019c26ca3893f3dbb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28" refid="att_8h_1a30b28071d7057c2c68b10da34ba32faf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_AUTHORIZATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29" refid="att_8h_1aa135b2315173e7852afe4e1624169ce2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_PREPARE_QUEUE_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="att_8h_1a5dfcd07918dc665bf600a25608b0736d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_ATTRIBUTE_NOT_FOUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0a</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31" refid="att_8h_1a240561711499f11b267d2e5ed8fc99f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_ATTRIBUTE_NOT_LONG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0b</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="att_8h_1a2ed58d79dfbd701a97377b171f1b0793" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_ENCRYPTION_KEY_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0c</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="att_8h_1a21207d5beb27fe50856f001bd18e1efa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_ATTRIBUTE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0d</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34" refid="att_8h_1a992baa1f0d763a00f314bdcf59965bdd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_UNLIKELY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0e</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35" refid="att_8h_1a8a5235e39b05fa85b5b4f4bfb449683b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INSUFFICIENT_ENCRYPTION<sp/><sp/><sp/><sp/><sp/><sp/>0x0f</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36" refid="att_8h_1a0611fc39d9d09ea4f0e556b4910f09ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37" refid="att_8h_1af4a81bc81cad14bf91463d4376a3a868" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INSUFFICIENT_RESOURCES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x11</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="att_8h_1a2b9a58bf48f1b76e743cb7fef3aed3a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_DB_OUT_OF_SYNC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x12</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39" refid="att_8h_1a52ffe5ff2eb092bcdc2ebb05684030d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_VALUE_NOT_ALLOWED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x13</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Common<sp/>Profile<sp/>Error<sp/>Codes<sp/>(from<sp/>CSS)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="42" refid="att_8h_1a8363770d0832f3df8fb1d0a22bc3551e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_WRITE_REQ_REJECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfc</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="att_8h_1a8f623146d7fda4b71514277cfbcd4b21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_CCC_IMPROPER_CONF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfd</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="att_8h_1af9e46c363487c61dbff50790993107f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_PROCEDURE_IN_PROGRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfe</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="att_8h_1ad49773d5e7a39f49c5a06bbaa4f8c365" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_OUT_OF_RANGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Version<sp/>5.2,<sp/>Vol<sp/>3,<sp/>Part<sp/>F,<sp/>3.2.9<sp/>defines<sp/>maximum<sp/>attribute<sp/>length<sp/>to<sp/>512<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="att_8h_1a3c4df4336916e082115d43f9716acb36" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_MAX_ATTRIBUTE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Handle<sp/>0x0000<sp/>is<sp/>reserved<sp/>for<sp/>future<sp/>use<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51" refid="att_8h_1ad0aa088f621b8965013c3ced27480df7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_FIRST_ATTRIBUTE_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="att_8h_1a80adaa6950e3b4934ba5187fbc49142b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_FIRST_ATTTRIBUTE_HANDLE<sp/>__DEPRECATED_MACRO<sp/>BT_ATT_FIRST_ATTRIBUTE_HANDLE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>0xffff<sp/>is<sp/>defined<sp/>as<sp/>the<sp/>maximum,<sp/>and<sp/>thus<sp/>last,<sp/>valid<sp/>attribute<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54" refid="att_8h_1a1b3dc5fedec8d8632d3650405d1ff988" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_LAST_ATTRIBUTE_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xffff</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55" refid="att_8h_1a254218269804dfaf7f5cf0d2ef70d3b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_LAST_ATTTRIBUTE_HANDLE<sp/>__DEPRECATED_MACRO<sp/>BT_ATT_LAST_ATTRIBUTE_HANDLE</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_BT_TESTING)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bt_eatt_disconnect_one(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_BT_TESTING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="conn_8h" kindref="compound">bluetooth/conn.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Error<sp/>codes<sp/>for<sp/>Error<sp/>response<sp/>PDU<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="att_8h_1a0032756d54c08d37c101769be8ef2070" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_SUCCESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="att_8h_1ab8d9a6870360f0e5dd7290895202879f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="att_8h_1ac26ed224b7f8fb7717b40fe3a545be7e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_READ_NOT_PERMITTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="att_8h_1a2378ff92f5afaff1e4392b1dc2e7326c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_WRITE_NOT_PERMITTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="att_8h_1a7f1cbe6eb3ed0999bafab729c7b0a6a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_PDU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="att_8h_1a269e711af78a7a30a770b3d7db210c8a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_AUTHENTICATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="att_8h_1afcfa214f6f5b600647886f27cebecb49" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_NOT_SUPPORTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="att_8h_1a997d113b71af6b4019c26ca3893f3dbb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_OFFSET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="att_8h_1a30b28071d7057c2c68b10da34ba32faf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_AUTHORIZATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="att_8h_1aa135b2315173e7852afe4e1624169ce2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_PREPARE_QUEUE_FULL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="att_8h_1a5dfcd07918dc665bf600a25608b0736d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_ATTRIBUTE_NOT_FOUND<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="att_8h_1a240561711499f11b267d2e5ed8fc99f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_ATTRIBUTE_NOT_LONG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0b</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="att_8h_1a2ed58d79dfbd701a97377b171f1b0793" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_ENCRYPTION_KEY_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="att_8h_1a21207d5beb27fe50856f001bd18e1efa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INVALID_ATTRIBUTE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0d</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="att_8h_1a992baa1f0d763a00f314bdcf59965bdd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_UNLIKELY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="att_8h_1a8a5235e39b05fa85b5b4f4bfb449683b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INSUFFICIENT_ENCRYPTION<sp/><sp/><sp/><sp/><sp/><sp/>0x0f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="att_8h_1a0611fc39d9d09ea4f0e556b4910f09ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_UNSUPPORTED_GROUP_TYPE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="att_8h_1af4a81bc81cad14bf91463d4376a3a868" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_INSUFFICIENT_RESOURCES<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="att_8h_1a2b9a58bf48f1b76e743cb7fef3aed3a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_DB_OUT_OF_SYNC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="att_8h_1a52ffe5ff2eb092bcdc2ebb05684030d7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_VALUE_NOT_ALLOWED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Common<sp/>Profile<sp/>Error<sp/>Codes<sp/>(from<sp/>CSS)<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="att_8h_1a8363770d0832f3df8fb1d0a22bc3551e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_WRITE_REQ_REJECTED<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="att_8h_1a8f623146d7fda4b71514277cfbcd4b21" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_CCC_IMPROPER_CONF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfd</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="att_8h_1af9e46c363487c61dbff50790993107f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_PROCEDURE_IN_PROGRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xfe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="att_8h_1ad49773d5e7a39f49c5a06bbaa4f8c365" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_ERR_OUT_OF_RANGE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Version<sp/>5.2,<sp/>Vol<sp/>3,<sp/>Part<sp/>F,<sp/>3.2.9<sp/>defines<sp/>maximum<sp/>attribute<sp/>length<sp/>to<sp/>512<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="att_8h_1a3c4df4336916e082115d43f9716acb36" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_MAX_ATTRIBUTE_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Handle<sp/>0x0000<sp/>is<sp/>reserved<sp/>for<sp/>future<sp/>use<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="att_8h_1ad0aa088f621b8965013c3ced27480df7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_FIRST_ATTRIBUTE_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0001</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="att_8h_1a80adaa6950e3b4934ba5187fbc49142b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_FIRST_ATTTRIBUTE_HANDLE<sp/>__DEPRECATED_MACRO<sp/>BT_ATT_FIRST_ATTRIBUTE_HANDLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>0xffff<sp/>is<sp/>defined<sp/>as<sp/>the<sp/>maximum,<sp/>and<sp/>thus<sp/>last,<sp/>valid<sp/>attribute<sp/>handle<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="att_8h_1a1b3dc5fedec8d8632d3650405d1ff988" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_LAST_ATTRIBUTE_HANDLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="att_8h_1a254218269804dfaf7f5cf0d2ef70d3b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BT_ATT_LAST_ATTTRIBUTE_HANDLE<sp/>__DEPRECATED_MACRO<sp/>BT_ATT_LAST_ATTRIBUTE_HANDLE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_BT_EATT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_BT_TESTING)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bt_eatt_disconnect_one(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bt_eatt_connect(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn,<sp/><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref><sp/>num_channels);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bt_eatt_count(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>bt_conn<sp/>*conn);</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_BLUETOOTH_ATT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_BT_TESTING<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_BT_EATT<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_BLUETOOTH_ATT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/bluetooth/att.h"/>
   </compounddef>

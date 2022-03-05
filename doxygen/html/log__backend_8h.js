@@ -5,6 +5,7 @@ var log__backend_8h =
     [ "log_backend_count_get", "group__log__backend.html#gad055c1dc8e0236b604cb553df3e16a52", null ],
     [ "log_backend_deactivate", "group__log__backend.html#ga1534fdfabce1e97c829aa79d57739589", null ],
     [ "log_backend_dropped", "group__log__backend.html#gab300348c43168de1e7eaae8c770b6950", null ],
+    [ "log_backend_format_set", "group__log__backend.html#gac0a4dc476c3b641ab570ca2dd4f2096f", null ],
     [ "log_backend_get", "group__log__backend.html#gaf419f3590f42893b7091beed57763c7c", null ],
     [ "log_backend_id_get", "group__log__backend.html#gae3e1d6eaf21dcc1d0961e85271d5e5f3", null ],
     [ "log_backend_id_set", "group__log__backend.html#ga8f263b24140229e5cf8e98b322501bca", null ],

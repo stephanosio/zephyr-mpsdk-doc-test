@@ -235,8 +235,8 @@ Follow these steps to install the Zephyr SDK:
 
    .. code-block:: bash
 
-      wget https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/zephyr-sdk-0.90.22_linux-x86_64.tar.gz
-      wget -O - https://github.com/zephyrproject-rtos/sdk-ng-testing/releases/download/v0.90.22/sha256.sum | shasum --check --ignore-missing
+      wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
+      wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.14.0-beta1/sha256.sum | shasum --check --ignore-missing
 
    You can change ``0.99.22`` to another version if needed; the `Zephyr SDK
    Releases`_ page contains all available SDK releases.
@@ -249,13 +249,13 @@ Follow these steps to install the Zephyr SDK:
    .. code-block:: bash
 
       cd <sdk download directory>
-      tar xvf zephyr-sdk-0.90.22_linux-x86_64.tar.gz
+      tar xvf zephyr-sdk-0.14.0-beta1_linux-x86_64.tar.gz
 
 #. Run the Zephyr SDK bundle setup script:
 
    .. code-block:: bash
 
-      cd zephyr-sdk-0.90.22
+      cd zephyr-sdk-0.14.0-beta1
       ./setup.sh
 
    If this fails, make sure Zephyr's dependencies were installed as described
@@ -273,9 +273,9 @@ script.
    * ``/opt``
    * ``/usr/local``
 
-   The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.90.22`` directory and, when
+   The Zephyr SDK bundle archive contains the ``zephyr-sdk-0.14.0-beta1`` directory and, when
    extracted under ``$HOME``, the resulting installation path will be
-   ``$HOME/zephyr-sdk-0.90.22``.
+   ``$HOME/zephyr-sdk-0.14.0-beta1``.
 
    If you install the Zephyr SDK outside any of these locations, then it is
    required to register the Zephyr SDK in the CMake package registry by running

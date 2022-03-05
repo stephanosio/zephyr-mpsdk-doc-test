@@ -782,7 +782,7 @@
       </memberdef>
       <memberdef kind="define" id="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -860,16 +860,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="thread__competition_8c_1aa02f6fe43beb0d38ee687859464dd689" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="thread__competition_8c_1a5ad857418d234590e0fda04024b6f9a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_low_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_low_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_low_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -879,16 +879,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/thread_competition.c" line="16" column="8" declfile="tests/kernel/mutex/sys_mutex/src/thread_competition.c" declline="16" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="thread__competition_8c_1a71c05ef130e06678e69c3c598a1d5cc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="thread__competition_8c_1ab8cdad42c2ba3742199bd313fedad0c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_high_stack1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_high_stack1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_high_stack1</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -898,16 +898,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/thread_competition.c" line="18" column="8" declfile="tests/kernel/mutex/sys_mutex/src/thread_competition.c" declline="18" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="thread__competition_8c_1a73960e0806e0e6edd13147951771ad6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="thread__competition_8c_1ac26414fb5acef700f8f736e4f4b8c76b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_high_stack2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_high_stack2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_high_stack2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1049,13 +1049,13 @@
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH_T2<sp/><sp/>0xbbb</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOW_PRO<sp/><sp/>0xccc</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="thread__competition_8c_1aa02f6fe43beb0d38ee687859464dd689" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_low_stack,<sp/><ref refid="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="thread__competition_8c_1a5ad857418d234590e0fda04024b6f9a7" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_low_stack,<sp/><ref refid="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="thread__competition_8c_1a85c8d74843ddce8612544c5ac7f33852" kindref="member">thread_low_data</ref>;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="thread__competition_8c_1aa02f6fe43beb0d38ee687859464dd689" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_high_stack1,<sp/><ref refid="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="thread__competition_8c_1a5ad857418d234590e0fda04024b6f9a7" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_high_stack1,<sp/><ref refid="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="thread__competition_8c_1ae8b9984fdd325ef620dcb9eb9009f6b8" kindref="member">thread_high_data1</ref>;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="thread__competition_8c_1aa02f6fe43beb0d38ee687859464dd689" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_high_stack2,<sp/><ref refid="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="thread__competition_8c_1a5ad857418d234590e0fda04024b6f9a7" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_high_stack2,<sp/><ref refid="thread__competition_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="thread__competition_8c_1ae5716ccbd825e377036a810a34da4e8b" kindref="member">thread_high_data2</ref>;</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><ref refid="thread__competition_8c_1a165252ce07636ea0a77ac99c4990fe81" kindref="member">SYS_MUTEX_DEFINE</ref>(<ref refid="kobject_8c_1a43c9c7088b4ad31d8e2f02cbaa428c93" kindref="member">mutex</ref>);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/><ref refid="thread__competition_8c_1a9f266685e63dd18f7693940ba5660e9f" kindref="member">flag</ref>[3];</highlight></codeline>

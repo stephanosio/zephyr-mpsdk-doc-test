@@ -43,7 +43,7 @@
             <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -170,7 +172,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -336,7 +338,7 @@ directory.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When using UpdateHub Cloud server it is necessary update your own
-<code class="docutils literal notranslate"><span class="pre">overlay-prj.conf</span></code> with option <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UPDATEHUB_CE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_CE</span></code></a> equal <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">overlay-prj.conf</span></code> with option <a class="reference internal" href="../../../../kconfig.html#CONFIG_UPDATEHUB_CE" title="CONFIG_UPDATEHUB_CE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_CE</span></code></a> equal <code class="docutils literal notranslate"><span class="pre">n</span></code>.</p>
 </div>
 </div>
 </div>
@@ -344,15 +346,15 @@ directory.</p>
 <h3>Step 3: Configure UpdateHub Sample<a class="headerlink" href="#step-3-configure-updatehub-sample" title="Permalink to this headline">¶</a></h3>
 <p>The updatehub have several Kconfig options that are necessary configure to
 make it work or tune communication.</p>
-<p>Set <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UPDATEHUB_CE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_CE</span></code></a> select between UpdateHub edition.  The <code class="docutils literal notranslate"><span class="pre">y</span></code>
+<p>Set <a class="reference internal" href="../../../../kconfig.html#CONFIG_UPDATEHUB_CE" title="CONFIG_UPDATEHUB_CE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_CE</span></code></a> select between UpdateHub edition.  The <code class="docutils literal notranslate"><span class="pre">y</span></code>
 value will select UpdateHub-CE otherwise <code class="docutils literal notranslate"><span class="pre">n</span></code> selects UpdateHub Cloud.</p>
-<p>Set <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UPDATEHUB_SERVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_SERVER</span></code></a> with your local IP address that runs the
+<p>Set <a class="reference internal" href="../../../../kconfig.html#CONFIG_UPDATEHUB_SERVER" title="CONFIG_UPDATEHUB_SERVER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_SERVER</span></code></a> with your local IP address that runs the
 UpdateHub-CE server edition.  If your are using a service provider a DNS name
 is a valid option too.  This option is only valid when using UpdateHub-CE.</p>
-<p>Set <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UPDATEHUB_POLL_INTERVAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_POLL_INTERVAL</span></code></a> with the polling period of your
+<p>Set <a class="reference internal" href="../../../../kconfig.html#CONFIG_UPDATEHUB_POLL_INTERVAL" title="CONFIG_UPDATEHUB_POLL_INTERVAL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_POLL_INTERVAL</span></code></a> with the polling period of your
 preference, remembering that the limit is between 0 and 43200 minutes
 (30 days).  The default value is 1440 minutes (24h).</p>
-<p>Set <a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UPDATEHUB_PRODUCT_UID"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_PRODUCT_UID</span></code></a> with your product ID.  When using
+<p>Set <a class="reference internal" href="../../../../kconfig.html#CONFIG_UPDATEHUB_PRODUCT_UID" title="CONFIG_UPDATEHUB_PRODUCT_UID"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_PRODUCT_UID</span></code></a> with your product ID.  When using
 UpdateHub-CE the valid is available at <code class="docutils literal notranslate"><span class="pre">overlay-prj.conf.example</span></code> file.</p>
 </div>
 <div class="section" id="step-4-build-updatehub-app">
@@ -537,7 +539,7 @@ following command:</p>
 </div>
 <p>If everything is alright, it will print on the screen <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">update</span> <span class="pre">available</span></code>.</p>
 <p>For <code class="docutils literal notranslate"><span class="pre">Polling</span></code> mode, the system will automatically register your device after
-<a class="reference internal" href="../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_UPDATEHUB_POLL_INTERVAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_POLL_INTERVAL</span></code></a> minutes.  The <code class="docutils literal notranslate"><span class="pre">updatehub</span> <span class="pre">run</span></code> can
+<a class="reference internal" href="../../../../kconfig.html#CONFIG_UPDATEHUB_POLL_INTERVAL" title="CONFIG_UPDATEHUB_POLL_INTERVAL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_UPDATEHUB_POLL_INTERVAL</span></code></a> minutes.  The <code class="docutils literal notranslate"><span class="pre">updatehub</span> <span class="pre">run</span></code> can
 be used to speed-up.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -664,8 +666,8 @@ using the following command:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

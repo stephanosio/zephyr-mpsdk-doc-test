@@ -40,7 +40,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1122" column="9" bodyfile="include/bluetooth/conn.h" bodystart="1156" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1125" column="9" bodyfile="include/bluetooth/conn.h" bodystart="1159" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1a14074ca97fad6af4c58c43a00c503104" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1178" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1178" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1181" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1181" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1a10f9d22c89c95a6f3ffe0016f92445c0" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -101,7 +101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1198" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1198" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1201" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1201" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1a2bb6c10666d111f675fd6de5ff51410a" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -136,7 +136,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1221" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1221" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1224" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1aec9f6256607ea2cd1ce1b4cdb3052b42" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1239" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1239" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1242" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1242" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1af6eb01c252ba3e32ff8bf583aa6ca0a4" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1254" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1254" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1257" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1af4f7d3ee570b3472ee79b014be01f76e" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -224,7 +224,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1274" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1274" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1277" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1277" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1ab6df1b1505dc22dd8dae0e946546c8bb" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -259,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1295" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1295" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1298" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1298" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1a685d2cd7ea8c9e533a78b8a70bc69223" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -292,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1307" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1307" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1310" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1310" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1a791a676b9f8499af6ac7bf2486959085" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -324,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1314" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1314" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1317" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__auth__cb_1a907c622b436c40cf68fc30e7c0060c87" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -357,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1325" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1325" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1328" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1328" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -365,7 +365,7 @@
     <detaileddescription>
 <para>Authenticated pairing callback structure </para>
     </detaileddescription>
-    <location file="include/bluetooth/conn.h" line="1127" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1127" bodyend="1326"/>
+    <location file="include/bluetooth/conn.h" line="1130" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1130" bodyend="1329"/>
     <listofallmembers>
       <member refid="structbt__conn__auth__cb_1a907c622b436c40cf68fc30e7c0060c87" prot="public" virt="non-virtual"><scope>bt_conn_auth_cb</scope><name>bond_deleted</name></member>
       <member refid="structbt__conn__auth__cb_1af6eb01c252ba3e32ff8bf583aa6ca0a4" prot="public" virt="non-virtual"><scope>bt_conn_auth_cb</scope><name>cancel</name></member>

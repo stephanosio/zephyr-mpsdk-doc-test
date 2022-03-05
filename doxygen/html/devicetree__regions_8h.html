@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -105,9 +105,9 @@ Macros</h2></td></tr>
 <tr class="memitem:a3244e16032cc575ab5c7275caca14801"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devicetree__regions_8h.html#a3244e16032cc575ab5c7275caca14801">LINKER_DT_NODE_REGION_NAME</a>(node_id)&#160;&#160;&#160;	<a class="el" href="group__devicetree-generic-prop.html#ga5e5bfc9b1a6627b3f73014329e96340f">DT_PROP_OR</a>(node_id, zephyr_memory_region, <a class="el" href="group__devicetree-generic-id.html#gacd79818b99724d834e3bb7ae74ee02cf">DT_NODE_PATH</a>(node_id))</td></tr>
 <tr class="memdesc:a3244e16032cc575ab5c7275caca14801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the linker memory-region name.  <a href="devicetree__regions_8h.html#a3244e16032cc575ab5c7275caca14801">More...</a><br /></td></tr>
 <tr class="separator:a3244e16032cc575ab5c7275caca14801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a249e6f72a0632d749d9c6a258d6d9b92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devicetree__regions_8h.html#a249e6f72a0632d749d9c6a258d6d9b92">LINKER_DT_REGION_FROM_NODE</a>(node_id,  attr)</td></tr>
-<tr class="memdesc:a249e6f72a0632d749d9c6a258d6d9b92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a linker memory region from a devicetree node.  <a href="devicetree__regions_8h.html#a249e6f72a0632d749d9c6a258d6d9b92">More...</a><br /></td></tr>
-<tr class="separator:a249e6f72a0632d749d9c6a258d6d9b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b743e1c6c735c87d4fbd2094819c573"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="devicetree__regions_8h.html#a1b743e1c6c735c87d4fbd2094819c573">LINKER_DT_REGIONS</a>()&#160;&#160;&#160;	<a class="el" href="group__devicetree-generic-foreach.html#ga52b34316d269cc8d8ef2244d3ca460b8">DT_FOREACH_STATUS_OKAY</a>(_DT_COMPATIBLE, _REGION_DECLARE)</td></tr>
+<tr class="memdesc:a1b743e1c6c735c87d4fbd2094819c573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate linker memory regions from the device tree nodes with compatible 'zephyr,memory-region'.  <a href="devicetree__regions_8h.html#a1b743e1c6c735c87d4fbd2094819c573">More...</a><br /></td></tr>
+<tr class="separator:a1b743e1c6c735c87d4fbd2094819c573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a3244e16032cc575ab5c7275caca14801" name="a3244e16032cc575ab5c7275caca14801"></a>
@@ -148,45 +148,23 @@ Macros</h2></td></tr>
 
 </div>
 </div>
-<a id="a249e6f72a0632d749d9c6a258d6d9b92" name="a249e6f72a0632d749d9c6a258d6d9b92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a249e6f72a0632d749d9c6a258d6d9b92">&#9670;&nbsp;</a></span>LINKER_DT_REGION_FROM_NODE</h2>
+<a id="a1b743e1c6c735c87d4fbd2094819c573" name="a1b743e1c6c735c87d4fbd2094819c573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b743e1c6c735c87d4fbd2094819c573">&#9670;&nbsp;</a></span>LINKER_DT_REGIONS</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LINKER_DT_REGION_FROM_NODE</td>
+          <td class="memname">#define LINKER_DT_REGIONS</td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">node_id, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">attr&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramname"></td><td>)</td>
+          <td>&#160;&#160;&#160;	<a class="el" href="group__devicetree-generic-foreach.html#ga52b34316d269cc8d8ef2244d3ca460b8">DT_FOREACH_STATUS_OKAY</a>(_DT_COMPATIBLE, _REGION_DECLARE)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        <a class="code hl_define" href="group__sys-util.html#ga358bc3e7669c860a98839a51cd526b20">COND_CODE_1</a>(<a class="code hl_define" href="group__devicetree-generic-exist.html#ga3b769d8105c7679e1d0575a1e7f1f653">DT_NODE_HAS_STATUS</a>(node_id, okay), \</div>
-<div class="line">                    (_REGION_DECLARE(node_id, attr)),  \</div>
-<div class="line">                    ())</div>
-<div class="ttc" id="agroup__devicetree-generic-exist_html_ga3b769d8105c7679e1d0575a1e7f1f653"><div class="ttname"><a href="group__devicetree-generic-exist.html#ga3b769d8105c7679e1d0575a1e7f1f653">DT_NODE_HAS_STATUS</a></div><div class="ttdeci">#define DT_NODE_HAS_STATUS(node_id, status)</div><div class="ttdoc">Does a node identifier refer to a node with a status?</div><div class="ttdef"><b>Definition:</b> devicetree.h:2097</div></div>
-<div class="ttc" id="agroup__sys-util_html_ga358bc3e7669c860a98839a51cd526b20"><div class="ttname"><a href="group__sys-util.html#ga358bc3e7669c860a98839a51cd526b20">COND_CODE_1</a></div><div class="ttdeci">#define COND_CODE_1(_flag, _if_1_code, _else_code)</div><div class="ttdoc">Insert code depending on whether _flag expands to 1 or not.</div><div class="ttdef"><b>Definition:</b> util_macro.h:156</div></div>
-</div><!-- fragment -->
-<p>Generate a linker memory region from a devicetree node. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">node_id</td><td>devicetree node identifier with a &lt;reg&gt; property defining region location and size </td></tr>
-    <tr><td class="paramname">attr</td><td>region attributes to use (rx, rw, ...) </td></tr>
-  </table>
-  </dd>
-</dl>
+
+<p>Generate linker memory regions from the device tree nodes with compatible 'zephyr,memory-region'. </p>
+<p >Note: for now we do not deal with MEMORY attributes since those are optional, not actually used by Zephyr and they will likely conflict with the MPU configuration. </p>
 
 </div>
 </div>
@@ -197,7 +175,7 @@ Macros</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_0227c4e1a7f6a71e41499a97712e4ef4.html">linker</a></li><li class="navelem"><a class="el" href="devicetree__regions_8h.html">devicetree_regions.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

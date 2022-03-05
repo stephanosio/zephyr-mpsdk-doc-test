@@ -960,6 +960,7 @@ var hci_8h =
     [ "BT_OP", "hci_8h.html#a7e006e0f69c498601f2c64a4ce3d8101", null ],
     [ "BT_OP_NOP", "hci_8h.html#a1bf4881fa3237f4a5b22e5fdb417762b", null ],
     [ "BT_OVERFLOW_LINK_ACL", "hci_8h.html#a35831810e3a7e2c5446780b14ef7d9c1", null ],
+    [ "BT_OVERFLOW_LINK_ISO", "hci_8h.html#ad32010743baef10c635d8b08f21c8641", null ],
     [ "BT_OVERFLOW_LINK_SYNCH", "hci_8h.html#a44233b934e33c65af90d03ad301e6b9d", null ],
     [ "BT_TX_POWER_LEVEL_CURRENT", "hci_8h.html#ac1ebc6168b2823aea2af2e2f89ffb6cd", null ],
     [ "BT_TX_POWER_LEVEL_MAX", "hci_8h.html#ad835bc44abee2e174f86cd55ac0338e3", null ],

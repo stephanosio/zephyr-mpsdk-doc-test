@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -101,42 +101,45 @@ $(document).ready(function(){initNavTree('group__ring__buffer__apis.html',''); i
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gaca98f407b222dff12e2bbfcf3746a9e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gaca98f407b222dff12e2bbfcf3746a9e3">RING_BUF_ITEM_DECLARE_POW2</a>(name,  pow)</td></tr>
-<tr class="memdesc:gaca98f407b222dff12e2bbfcf3746a9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define and initialize a high performance ring buffer.  <a href="group__ring__buffer__apis.html#gaca98f407b222dff12e2bbfcf3746a9e3">More...</a><br /></td></tr>
-<tr class="separator:gaca98f407b222dff12e2bbfcf3746a9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga205e93b5431112da0d191526906c7e01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga205e93b5431112da0d191526906c7e01">RING_BUF_ITEM_DECLARE_SIZE</a>(name,  size32)</td></tr>
-<tr class="memdesc:ga205e93b5431112da0d191526906c7e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define and initialize a standard ring buffer.  <a href="group__ring__buffer__apis.html#ga205e93b5431112da0d191526906c7e01">More...</a><br /></td></tr>
-<tr class="separator:ga205e93b5431112da0d191526906c7e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga803e45abf48ee207fc0ab4028726a82b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga803e45abf48ee207fc0ab4028726a82b">RING_BUF_DECLARE</a>(name,  size8)</td></tr>
 <tr class="memdesc:ga803e45abf48ee207fc0ab4028726a82b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define and initialize a ring buffer for byte data.  <a href="group__ring__buffer__apis.html#ga803e45abf48ee207fc0ab4028726a82b">More...</a><br /></td></tr>
 <tr class="separator:ga803e45abf48ee207fc0ab4028726a82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2fc2f4515121ac6bbf6aebf3e029bb5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a>(name,  size32)</td></tr>
+<tr class="memdesc:ga2fc2f4515121ac6bbf6aebf3e029bb5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define and initialize an "item based" ring buffer.  <a href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">More...</a><br /></td></tr>
+<tr class="separator:ga2fc2f4515121ac6bbf6aebf3e029bb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga205e93b5431112da0d191526906c7e01"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga205e93b5431112da0d191526906c7e01">RING_BUF_ITEM_DECLARE_SIZE</a>(name,  size32)&#160;&#160;&#160;	<a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a>(name, size32)</td></tr>
+<tr class="memdesc:ga205e93b5431112da0d191526906c7e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define and initialize an "item based" ring buffer.  <a href="group__ring__buffer__apis.html#ga205e93b5431112da0d191526906c7e01">More...</a><br /></td></tr>
+<tr class="separator:ga205e93b5431112da0d191526906c7e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaca98f407b222dff12e2bbfcf3746a9e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gaca98f407b222dff12e2bbfcf3746a9e3">RING_BUF_ITEM_DECLARE_POW2</a>(name,  pow)&#160;&#160;&#160;	<a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a>(name, <a class="el" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(pow))</td></tr>
+<tr class="memdesc:gaca98f407b222dff12e2bbfcf3746a9e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define and initialize a power-of-2 sized "item based" ring buffer.  <a href="group__ring__buffer__apis.html#gaca98f407b222dff12e2bbfcf3746a9e3">More...</a><br /></td></tr>
+<tr class="separator:gaca98f407b222dff12e2bbfcf3746a9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae621d076beb93dd6a53ad8924c34e3db"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gae621d076beb93dd6a53ad8924c34e3db">ring_buf_init</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size, void *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>)</td></tr>
-<tr class="memdesc:gae621d076beb93dd6a53ad8924c34e3db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a ring buffer.  <a href="group__ring__buffer__apis.html#gae621d076beb93dd6a53ad8924c34e3db">More...</a><br /></td></tr>
-<tr class="separator:gae621d076beb93dd6a53ad8924c34e3db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadcc6bbeedaa8621f0f48b9a8d336b3b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gadcc6bbeedaa8621f0f48b9a8d336b3b3">ring_buf_is_empty</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
-<tr class="memdesc:gadcc6bbeedaa8621f0f48b9a8d336b3b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a ring buffer is empty.  <a href="group__ring__buffer__apis.html#gadcc6bbeedaa8621f0f48b9a8d336b3b3">More...</a><br /></td></tr>
-<tr class="separator:gadcc6bbeedaa8621f0f48b9a8d336b3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac06bc272bf99843c65bf28d851bffd55"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gac06bc272bf99843c65bf28d851bffd55">ring_buf_init</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>)</td></tr>
+<tr class="memdesc:gac06bc272bf99843c65bf28d851bffd55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a ring buffer for byte data.  <a href="group__ring__buffer__apis.html#gac06bc272bf99843c65bf28d851bffd55">More...</a><br /></td></tr>
+<tr class="separator:gac06bc272bf99843c65bf28d851bffd55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9d10210160544af25c9a67680aff578d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga9d10210160544af25c9a67680aff578d">ring_buf_item_init</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>)</td></tr>
+<tr class="memdesc:ga9d10210160544af25c9a67680aff578d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize an "item based" ring buffer.  <a href="group__ring__buffer__apis.html#ga9d10210160544af25c9a67680aff578d">More...</a><br /></td></tr>
+<tr class="separator:ga9d10210160544af25c9a67680aff578d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabb7006d786b1ddc640b5fd2338d1d01c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gabb7006d786b1ddc640b5fd2338d1d01c">ring_buf_is_empty</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
+<tr class="memdesc:gabb7006d786b1ddc640b5fd2338d1d01c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a ring buffer is empty.  <a href="group__ring__buffer__apis.html#gabb7006d786b1ddc640b5fd2338d1d01c">More...</a><br /></td></tr>
+<tr class="separator:gabb7006d786b1ddc640b5fd2338d1d01c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9cc0cd445eeeeba7183c3ac0778c7e18"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga9cc0cd445eeeeba7183c3ac0778c7e18">ring_buf_reset</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
 <tr class="memdesc:ga9cc0cd445eeeeba7183c3ac0778c7e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset ring buffer state.  <a href="group__ring__buffer__apis.html#ga9cc0cd445eeeeba7183c3ac0778c7e18">More...</a><br /></td></tr>
 <tr class="separator:ga9cc0cd445eeeeba7183c3ac0778c7e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c2ff3b520e8e4c03566cbd15af52348"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga6c2ff3b520e8e4c03566cbd15af52348">ring_buf_space_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
-<tr class="memdesc:ga6c2ff3b520e8e4c03566cbd15af52348"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine free space in a ring buffer.  <a href="group__ring__buffer__apis.html#ga6c2ff3b520e8e4c03566cbd15af52348">More...</a><br /></td></tr>
-<tr class="separator:ga6c2ff3b520e8e4c03566cbd15af52348"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0db0b939d2be3d3fb0688f55780379bb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga0db0b939d2be3d3fb0688f55780379bb">ring_buf_space_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
+<tr class="memdesc:ga0db0b939d2be3d3fb0688f55780379bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine free space in a ring buffer.  <a href="group__ring__buffer__apis.html#ga0db0b939d2be3d3fb0688f55780379bb">More...</a><br /></td></tr>
+<tr class="separator:ga0db0b939d2be3d3fb0688f55780379bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab58be76e8d3fc5542fb7b03717b89544"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gab58be76e8d3fc5542fb7b03717b89544">ring_buf_item_space_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
+<tr class="memdesc:gab58be76e8d3fc5542fb7b03717b89544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine free space in an "item based" ring buffer.  <a href="group__ring__buffer__apis.html#gab58be76e8d3fc5542fb7b03717b89544">More...</a><br /></td></tr>
+<tr class="separator:gab58be76e8d3fc5542fb7b03717b89544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c06a3c6f77584ce8317a236cc2de35c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga9c06a3c6f77584ce8317a236cc2de35c">ring_buf_capacity_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
 <tr class="memdesc:ga9c06a3c6f77584ce8317a236cc2de35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return ring buffer capacity.  <a href="group__ring__buffer__apis.html#ga9c06a3c6f77584ce8317a236cc2de35c">More...</a><br /></td></tr>
 <tr class="separator:ga9c06a3c6f77584ce8317a236cc2de35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga85111fbe0755a1fb737f1a7563ea27dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga85111fbe0755a1fb737f1a7563ea27dc">ring_buf_size_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
-<tr class="memdesc:ga85111fbe0755a1fb737f1a7563ea27dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine used space in a ring buffer.  <a href="group__ring__buffer__apis.html#ga85111fbe0755a1fb737f1a7563ea27dc">More...</a><br /></td></tr>
-<tr class="separator:ga85111fbe0755a1fb737f1a7563ea27dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6cb71d7c1a36b6e142b251f08ed40599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga6cb71d7c1a36b6e142b251f08ed40599">ring_buf_item_put</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a> type, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> value, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> size32)</td></tr>
-<tr class="memdesc:ga6cb71d7c1a36b6e142b251f08ed40599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a data item to a ring buffer.  <a href="group__ring__buffer__apis.html#ga6cb71d7c1a36b6e142b251f08ed40599">More...</a><br /></td></tr>
-<tr class="separator:ga6cb71d7c1a36b6e142b251f08ed40599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae0c62af11cab8a661638e50b312b58f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gae0c62af11cab8a661638e50b312b58f8">ring_buf_item_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a> *type, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *value, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *size32)</td></tr>
-<tr class="memdesc:gae0c62af11cab8a661638e50b312b58f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a data item from a ring buffer.  <a href="group__ring__buffer__apis.html#gae0c62af11cab8a661638e50b312b58f8">More...</a><br /></td></tr>
-<tr class="separator:gae0c62af11cab8a661638e50b312b58f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade647873dd72c04a54f51b8d9d335107"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gade647873dd72c04a54f51b8d9d335107">ring_buf_size_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf)</td></tr>
+<tr class="memdesc:gade647873dd72c04a54f51b8d9d335107"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine used space in a ring buffer.  <a href="group__ring__buffer__apis.html#gade647873dd72c04a54f51b8d9d335107">More...</a><br /></td></tr>
+<tr class="separator:gade647873dd72c04a54f51b8d9d335107"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae15934b40fd208a63eba98b2382e8ad1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gae15934b40fd208a63eba98b2382e8ad1">ring_buf_put_claim</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> **<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size)</td></tr>
 <tr class="memdesc:gae15934b40fd208a63eba98b2382e8ad1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate buffer for writing data to a ring buffer.  <a href="group__ring__buffer__apis.html#gae15934b40fd208a63eba98b2382e8ad1">More...</a><br /></td></tr>
 <tr class="separator:gae15934b40fd208a63eba98b2382e8ad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,6 +161,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8ba75a313b2ad7d55e390fa3f1fcadc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga8ba75a313b2ad7d55e390fa3f1fcadc1">ring_buf_peek</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> size)</td></tr>
 <tr class="memdesc:ga8ba75a313b2ad7d55e390fa3f1fcadc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Peek at data from a ring buffer.  <a href="group__ring__buffer__apis.html#ga8ba75a313b2ad7d55e390fa3f1fcadc1">More...</a><br /></td></tr>
 <tr class="separator:ga8ba75a313b2ad7d55e390fa3f1fcadc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6cb71d7c1a36b6e142b251f08ed40599"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#ga6cb71d7c1a36b6e142b251f08ed40599">ring_buf_item_put</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a> type, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> value, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> size32)</td></tr>
+<tr class="memdesc:ga6cb71d7c1a36b6e142b251f08ed40599"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a data item to a ring buffer.  <a href="group__ring__buffer__apis.html#ga6cb71d7c1a36b6e142b251f08ed40599">More...</a><br /></td></tr>
+<tr class="separator:ga6cb71d7c1a36b6e142b251f08ed40599"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0c62af11cab8a661638e50b312b58f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ring__buffer__apis.html#gae0c62af11cab8a661638e50b312b58f8">ring_buf_item_get</a> (struct <a class="el" href="structring__buf.html">ring_buf</a> *buf, <a class="el" href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a> *type, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *value, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *<a class="el" href="test__stack__fail_8c.html#a4bb6fa6c719fd9021449009ab8befc04">data</a>, <a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *size32)</td></tr>
+<tr class="memdesc:gae0c62af11cab8a661638e50b312b58f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a data item from a ring buffer.  <a href="group__ring__buffer__apis.html#gae0c62af11cab8a661638e50b312b58f8">More...</a><br /></td></tr>
+<tr class="separator:gae0c62af11cab8a661638e50b312b58f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -193,22 +202,73 @@ Functions</h2></td></tr>
 <div class="line">        static <a class="code hl_typedef" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> __noinit _ring_buffer_data_##name[size8]; \</div>
 <div class="line">        struct <a class="code hl_struct" href="structring__buf.html">ring_buf</a> name = { \</div>
 <div class="line">                .<a class="code hl_variable" href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">size</a> = size8, \</div>
-<div class="line">                .buf = { .buf8 = _ring_buffer_data_##name} \</div>
+<div class="line">                .buffer = _ring_buffer_data_##name \</div>
 <div class="line">        }</div>
-<div class="ttc" id="aring__buffer_8h_html_a07c03ef7f72236dcbe6136fb4960180a"><div class="ttname"><a href="ring__buffer_8h.html#a07c03ef7f72236dcbe6136fb4960180a">RING_BUFFER_SIZE_ASSERT_MSG</a></div><div class="ttdeci">#define RING_BUFFER_SIZE_ASSERT_MSG</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:29</div></div>
-<div class="ttc" id="aring__buffer_8h_html_a2f583f9c16e4ca7ac3aad993dc628dc7"><div class="ttname"><a href="ring__buffer_8h.html#a2f583f9c16e4ca7ac3aad993dc628dc7">RING_BUFFER_MAX_SIZE</a></div><div class="ttdeci">#define RING_BUFFER_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:27</div></div>
+<div class="ttc" id="aring__buffer_8h_html_a07c03ef7f72236dcbe6136fb4960180a"><div class="ttname"><a href="ring__buffer_8h.html#a07c03ef7f72236dcbe6136fb4960180a">RING_BUFFER_SIZE_ASSERT_MSG</a></div><div class="ttdeci">#define RING_BUFFER_SIZE_ASSERT_MSG</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:28</div></div>
+<div class="ttc" id="aring__buffer_8h_html_a2f583f9c16e4ca7ac3aad993dc628dc7"><div class="ttname"><a href="ring__buffer_8h.html#a2f583f9c16e4ca7ac3aad993dc628dc7">RING_BUFFER_MAX_SIZE</a></div><div class="ttdeci">#define RING_BUFFER_MAX_SIZE</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:26</div></div>
 <div class="ttc" id="astdint_8h_html_a3cb4a16b0e8d6af0af86d4fd6ba5fd9d"><div class="ttname"><a href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a></div><div class="ttdeci">__UINT8_TYPE__ uint8_t</div><div class="ttdef"><b>Definition:</b> stdint.h:58</div></div>
 <div class="ttc" id="astructring__buf_html"><div class="ttname"><a href="structring__buf.html">ring_buf</a></div><div class="ttdoc">A structure to represent a ring buffer.</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:34</div></div>
-<div class="ttc" id="astructring__buf_html_ac91888f5755afb00e99a9a1076e9d380"><div class="ttname"><a href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">ring_buf::size</a></div><div class="ttdeci">uint32_t size</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:49</div></div>
+<div class="ttc" id="astructring__buf_html_ac91888f5755afb00e99a9a1076e9d380"><div class="ttname"><a href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">ring_buf::size</a></div><div class="ttdeci">uint32_t size</div><div class="ttdef"><b>Definition:</b> ring_buffer.h:42</div></div>
 </div><!-- fragment -->
 <p>Define and initialize a ring buffer for byte data. </p>
-<p >This macro establishes a ring buffer of an arbitrary size.</p>
+<p >This macro establishes a ring buffer of an arbitrary size. The basic storage unit is a byte.</p>
 <p >The ring buffer can be accessed outside the module where it is defined using:</p>
 <div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="structring__buf.html">ring_buf</a> &lt;name&gt;; </div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name of the ring buffer. </td></tr>
     <tr><td class="paramname">size8</td><td>Size of ring buffer (in bytes). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga2fc2f4515121ac6bbf6aebf3e029bb5d" name="ga2fc2f4515121ac6bbf6aebf3e029bb5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2fc2f4515121ac6bbf6aebf3e029bb5d">&#9670;&nbsp;</a></span>RING_BUF_ITEM_DECLARE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RING_BUF_ITEM_DECLARE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">size32&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
+<b>Value:</b><div class="fragment"><div class="line">        BUILD_ASSERT((size32) &lt; <a class="code hl_define" href="ring__buffer_8h.html#a2f583f9c16e4ca7ac3aad993dc628dc7">RING_BUFFER_MAX_SIZE</a> / 4,\</div>
+<div class="line">                <a class="code hl_define" href="ring__buffer_8h.html#a07c03ef7f72236dcbe6136fb4960180a">RING_BUFFER_SIZE_ASSERT_MSG</a>); \</div>
+<div class="line">        static <a class="code hl_typedef" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> __noinit _ring_buffer_data_##name[size32]; \</div>
+<div class="line">        struct <a class="code hl_struct" href="structring__buf.html">ring_buf</a> name = { \</div>
+<div class="line">                .<a class="code hl_variable" href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">size</a> = 4 * (size32), \</div>
+<div class="line">                .<a class="code hl_variable" href="group__kernel__mbox__api.html#gab659fc0dee01e6639b8b6108addbd046">buffer</a> = (<a class="code hl_typedef" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *) _ring_buffer_data_##name \</div>
+<div class="line">        }</div>
+<div class="ttc" id="agroup__kernel__mbox__api_html_gab659fc0dee01e6639b8b6108addbd046"><div class="ttname"><a href="group__kernel__mbox__api.html#gab659fc0dee01e6639b8b6108addbd046">buffer</a></div><div class="ttdeci">static ZTEST_BMEM char buffer[8]</div><div class="ttdoc">Test mailbox enhance capabilities.</div><div class="ttdef"><b>Definition:</b> test_mbox_api.c:566</div></div>
+<div class="ttc" id="astdint_8h_html_a0a8582351ac627ee8bde2973c825e47f"><div class="ttname"><a href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a></div><div class="ttdeci">__UINT32_TYPE__ uint32_t</div><div class="ttdef"><b>Definition:</b> stdint.h:60</div></div>
+</div><!-- fragment -->
+<p>Define and initialize an "item based" ring buffer. </p>
+<p >This macro establishes an "item based" ring buffer. Each data item is an array of 32-bit words (from zero to 1020 bytes in length), coupled with a 16-bit type identifier and an 8-bit integer value.</p>
+<p >The ring buffer can be accessed outside the module where it is defined using:</p>
+<div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="structring__buf.html">ring_buf</a> &lt;name&gt;; </div>
+</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name of the ring buffer. </td></tr>
+    <tr><td class="paramname">size32</td><td>Size of ring buffer (in 32-bit words). </td></tr>
   </table>
   </dd>
 </dl>
@@ -236,28 +296,16 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a>(name, <a class="el" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(pow))</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">        BUILD_ASSERT((1 &lt;&lt; pow) &lt; <a class="code hl_define" href="ring__buffer_8h.html#a2f583f9c16e4ca7ac3aad993dc628dc7">RING_BUFFER_MAX_SIZE</a>,\</div>
-<div class="line">                <a class="code hl_define" href="ring__buffer_8h.html#a07c03ef7f72236dcbe6136fb4960180a">RING_BUFFER_SIZE_ASSERT_MSG</a>); \</div>
-<div class="line">        static <a class="code hl_typedef" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> __noinit _ring_buffer_data_##name[<a class="code hl_define" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(pow)]; \</div>
-<div class="line">        struct <a class="code hl_struct" href="structring__buf.html">ring_buf</a> name = { \</div>
-<div class="line">                .<a class="code hl_variable" href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">size</a> = (<a class="code hl_define" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(pow)),       \</div>
-<div class="line">                .mask = (<a class="code hl_define" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(pow)) - 1, \</div>
-<div class="line">                .buf = { .buf32 = _ring_buffer_data_##name } \</div>
-<div class="line">        }</div>
-<div class="ttc" id="agroup__sys-util_html_ga3a8ea58898cb58fc96013383d39f482c"><div class="ttname"><a href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a></div><div class="ttdeci">#define BIT(n)</div><div class="ttdoc">Unsigned integer with bit position n set (signed in assembly language).</div><div class="ttdef"><b>Definition:</b> util_macro.h:44</div></div>
-<div class="ttc" id="astdint_8h_html_a0a8582351ac627ee8bde2973c825e47f"><div class="ttname"><a href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a></div><div class="ttdeci">__UINT32_TYPE__ uint32_t</div><div class="ttdef"><b>Definition:</b> stdint.h:60</div></div>
-</div><!-- fragment -->
-<p>Define and initialize a high performance ring buffer. </p>
-<p >This macro establishes a ring buffer whose size must be a power of 2; that is, the ring buffer contains 2^pow 32-bit words, where <em>pow</em> is the specified ring buffer size exponent. A high performance ring buffer doesn't require the use of modulo arithmetic operations to maintain itself.</p>
-<p >The ring buffer can be accessed outside the module where it is defined using:</p>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="structring__buf.html">ring_buf</a> &lt;name&gt;; </div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Define and initialize a power-of-2 sized "item based" ring buffer. </p>
+<p >This macro establishes an "item based" ring buffer by specifying its size using a power of 2. This exists mainly for backward compatibility reasons. <a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a> should be used instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name of the ring buffer. </td></tr>
     <tr><td class="paramname">pow</td><td>Ring buffer size exponent. </td></tr>
@@ -288,25 +336,16 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td>&#160;&#160;&#160;	<a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a>(name, size32)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
-<b>Value:</b><div class="fragment"><div class="line">        BUILD_ASSERT(size32 &lt; <a class="code hl_define" href="ring__buffer_8h.html#a2f583f9c16e4ca7ac3aad993dc628dc7">RING_BUFFER_MAX_SIZE</a>,\</div>
-<div class="line">                <a class="code hl_define" href="ring__buffer_8h.html#a07c03ef7f72236dcbe6136fb4960180a">RING_BUFFER_SIZE_ASSERT_MSG</a>); \</div>
-<div class="line">        static <a class="code hl_typedef" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> __noinit _ring_buffer_data_##name[size32]; \</div>
-<div class="line">        struct <a class="code hl_struct" href="structring__buf.html">ring_buf</a> name = { \</div>
-<div class="line">                .<a class="code hl_variable" href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">size</a> = size32, \</div>
-<div class="line">                .buf = { .buf32 = _ring_buffer_data_##name} \</div>
-<div class="line">        }</div>
-</div><!-- fragment -->
-<p>Define and initialize a standard ring buffer. </p>
-<p >This macro establishes a ring buffer of an arbitrary size. A standard ring buffer uses modulo arithmetic operations to maintain itself.</p>
-<p >The ring buffer can be accessed outside the module where it is defined using:</p>
-<div class="fragment"><div class="line"><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="structring__buf.html">ring_buf</a> &lt;name&gt;; </div>
-</div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+
+<p>Define and initialize an "item based" ring buffer. </p>
+<p >This exists for backward compatibility reasons. <a class="el" href="group__ring__buffer__apis.html#ga2fc2f4515121ac6bbf6aebf3e029bb5d">RING_BUF_ITEM_DECLARE</a> should be used instead.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>Name of the ring buffer. </td></tr>
     <tr><td class="paramname">size32</td><td>Size of ring buffer (in 32-bit words). </td></tr>
@@ -350,7 +389,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ring buffer capacity (in 32-bit words or bytes). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Ring buffer capacity (in bytes). </dd></dl>
 
 </div>
 </div>
@@ -445,7 +484,7 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
 
 <p>Get address of a valid data in a ring buffer. </p>
-<p >With this routine, memory copying can be reduced since internal ring buffer can be used directly by the user. Once data is processed it can be freed using <a class="el" href="group__ring__buffer__apis.html#ga36177459f4e352b52a6f2046a33c3aa1">ring_buf_get_finish</a>.</p>
+<p >With this routine, memory copying can be reduced since internal ring buffer can be used directly by the user. Once data is processed it must be freed using <a class="el" href="group__ring__buffer__apis.html#ga36177459f4e352b52a6f2046a33c3aa1">ring_buf_get_finish</a>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Use cases involving multiple reads of the ring buffer must prevent concurrent read operations, either by preventing all readers from being preempted or by using a mutex to govern reads to the ring buffer.</dd>
 <dd>
 Ring buffer instance should not mix byte access and item access (calls prefixed with ring_buf_item_).</dd></dl>
@@ -490,6 +529,7 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
 
 <p>Indicate number of bytes read from claimed buffer. </p>
+<p >The number of bytes must be equal or lower than the sum corresponding to all preceding <a class="el" href="group__ring__buffer__apis.html#ga7ab4fea7b19b1ffa58a7d3a581396b1c">ring_buf_get_claim</a> invocations (or even 0). Surplus bytes will remain available in the buffer.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Use cases involving multiple reads of the ring buffer must prevent concurrent read operations, either by preventing all readers from being preempted or by using a mutex to govern reads to the ring buffer.</dd>
 <dd>
 Ring buffer instance should not mix byte access and item mode (calls prefixed with ring_buf_item_).</dd></dl>
@@ -510,8 +550,8 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
 
 </div>
 </div>
-<a id="gae621d076beb93dd6a53ad8924c34e3db" name="gae621d076beb93dd6a53ad8924c34e3db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae621d076beb93dd6a53ad8924c34e3db">&#9670;&nbsp;</a></span>ring_buf_init()</h2>
+<a id="gac06bc272bf99843c65bf28d851bffd55" name="gac06bc272bf99843c65bf28d851bffd55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac06bc272bf99843c65bf28d851bffd55">&#9670;&nbsp;</a></span>ring_buf_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -534,7 +574,7 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *&#160;</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -552,34 +592,41 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
 
-<p>Initialize a ring buffer. </p>
-<p >This routine initializes a ring buffer, prior to its first use. It is only used for ring buffers not defined using RING_BUF_DECLARE, RING_BUF_ITEM_DECLARE_POW2 or RING_BUF_ITEM_DECLARE_SIZE.</p>
-<p >Setting <em>size</em> to a power of 2 establishes a high performance ring buffer that doesn't require the use of modulo arithmetic operations to maintain itself.</p>
+<p>Initialize a ring buffer for byte data. </p>
+<p >This routine initializes a ring buffer, prior to its first use. It is only used for ring buffers not defined using RING_BUF_DECLARE.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buf</td><td>Address of ring buffer. </td></tr>
-    <tr><td class="paramname">size</td><td>Ring buffer size (in 32-bit words or bytes). </td></tr>
-    <tr><td class="paramname">data</td><td>Ring buffer data area (uint32_t data[size] or uint8_t data[size] for bytes mode). </td></tr>
+    <tr><td class="paramname">size</td><td>Ring buffer size (in bytes). </td></tr>
+    <tr><td class="paramname">data</td><td>Ring buffer data area (uint8_t data[size]). </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="gadcc6bbeedaa8621f0f48b9a8d336b3b3" name="gadcc6bbeedaa8621f0f48b9a8d336b3b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gadcc6bbeedaa8621f0f48b9a8d336b3b3">&#9670;&nbsp;</a></span>ring_buf_is_empty()</h2>
+<a id="gabb7006d786b1ddc640b5fd2338d1d01c" name="gabb7006d786b1ddc640b5fd2338d1d01c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabb7006d786b1ddc640b5fd2338d1d01c">&#9670;&nbsp;</a></span>ring_buf_is_empty()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int ring_buf_is_empty </td>
+          <td class="memname">static <a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a> ring_buf_is_empty </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structring__buf.html">ring_buf</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
@@ -591,7 +638,7 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>1 if the ring buffer is empty, or 0 if not. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the ring buffer is empty, or false if not. </dd></dl>
 
 </div>
 </div>
@@ -665,6 +712,63 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
 
 </div>
 </div>
+<a id="ga9d10210160544af25c9a67680aff578d" name="ga9d10210160544af25c9a67680aff578d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9d10210160544af25c9a67680aff578d">&#9670;&nbsp;</a></span>ring_buf_item_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void ring_buf_item_init </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structring__buf.html">ring_buf</a> *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
+
+<p>Initialize an "item based" ring buffer. </p>
+<p >This routine initializes a ring buffer, prior to its first use. It is only used for ring buffers not defined using RING_BUF_ITEM_DECLARE.</p>
+<p >Each data item is an array of 32-bit words (from zero to 1020 bytes in length), coupled with a 16-bit type identifier and an 8-bit integer value.</p>
+<p >Each data item is an array of 32-bit words (from zero to 1020 bytes in length), coupled with a 16-bit type identifier and an 8-bit integer value.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Address of ring buffer. </td></tr>
+    <tr><td class="paramname">size</td><td>Ring buffer size (in 32-bit words) </td></tr>
+    <tr><td class="paramname">data</td><td>Ring buffer data area (uint32_t data[size]). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga6cb71d7c1a36b6e142b251f08ed40599" name="ga6cb71d7c1a36b6e142b251f08ed40599"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga6cb71d7c1a36b6e142b251f08ed40599">&#9670;&nbsp;</a></span>ring_buf_item_put()</h2>
 
@@ -731,6 +835,43 @@ Ring buffer instance should not mix byte access and item mode (calls prefixed wi
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gab58be76e8d3fc5542fb7b03717b89544" name="gab58be76e8d3fc5542fb7b03717b89544"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab58be76e8d3fc5542fb7b03717b89544">&#9670;&nbsp;</a></span>ring_buf_item_space_get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf_item_space_get </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structring__buf.html">ring_buf</a> *&#160;</td>
+          <td class="paramname"><em>buf</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
+
+<p>Determine free space in an "item based" ring buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buf</td><td>Address of ring buffer.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Ring buffer free space (in 32-bit words). </dd></dl>
 
 </div>
 </div>
@@ -883,7 +1024,7 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
 
 <p>Allocate buffer for writing data to a ring buffer. </p>
-<p >With this routine, memory copying can be reduced since internal ring buffer can be used directly by the user. Once data is written to allocated area number of bytes written can be confirmed (see <a class="el" href="group__ring__buffer__apis.html#ga465feaf6cf5312e75060ecf65db963ad">ring_buf_put_finish</a>).</p>
+<p >With this routine, memory copying can be reduced since internal ring buffer can be used directly by the user. Once data is written to allocated area number of bytes written must be confirmed (see <a class="el" href="group__ring__buffer__apis.html#ga465feaf6cf5312e75060ecf65db963ad">ring_buf_put_finish</a>).</p>
 <dl class="section warning"><dt>Warning</dt><dd>Use cases involving multiple writers to the ring buffer must prevent concurrent write operations, either by preventing all writers from being preempted or by using a mutex to govern writes to the ring buffer.</dd>
 <dd>
 Ring buffer instance should not mix byte access and item access (calls prefixed with ring_buf_item_).</dd></dl>
@@ -928,6 +1069,7 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
 
 <p>Indicate number of bytes written to allocated buffers. </p>
+<p >The number of bytes must be equal to or lower than the sum corresponding to all preceding <a class="el" href="group__ring__buffer__apis.html#gae15934b40fd208a63eba98b2382e8ad1">ring_buf_put_claim</a> invocations (or even 0). Surplus bytes will be returned to the available free buffer space.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Use cases involving multiple writers to the ring buffer must prevent concurrent write operations, either by preventing all writers from being preempted or by using a mutex to govern writes to the ring buffer.</dd>
 <dd>
 Ring buffer instance should not mix byte access and item access (calls prefixed with ring_buf_item_).</dd></dl>
@@ -984,20 +1126,28 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
 
 </div>
 </div>
-<a id="ga85111fbe0755a1fb737f1a7563ea27dc" name="ga85111fbe0755a1fb737f1a7563ea27dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga85111fbe0755a1fb737f1a7563ea27dc">&#9670;&nbsp;</a></span>ring_buf_size_get()</h2>
+<a id="gade647873dd72c04a54f51b8d9d335107" name="gade647873dd72c04a54f51b8d9d335107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade647873dd72c04a54f51b8d9d335107">&#9670;&nbsp;</a></span>ring_buf_size_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf_size_get </td>
+          <td class="memname">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf_size_get </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structring__buf.html">ring_buf</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
@@ -1009,24 +1159,32 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ring buffer space used (in 32-bit words or bytes). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Ring buffer space used (in bytes). </dd></dl>
 
 </div>
 </div>
-<a id="ga6c2ff3b520e8e4c03566cbd15af52348" name="ga6c2ff3b520e8e4c03566cbd15af52348"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c2ff3b520e8e4c03566cbd15af52348">&#9670;&nbsp;</a></span>ring_buf_space_get()</h2>
+<a id="ga0db0b939d2be3d3fb0688f55780379bb" name="ga0db0b939d2be3d3fb0688f55780379bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0db0b939d2be3d3fb0688f55780379bb">&#9670;&nbsp;</a></span>ring_buf_space_get()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf_space_get </td>
+          <td class="memname">static <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf_space_get </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structring__buf.html">ring_buf</a> *&#160;</td>
           <td class="paramname"><em>buf</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h.html">include/sys/ring_buffer.h</a>&gt;</code></p>
@@ -1038,7 +1196,7 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Ring buffer free space (in 32-bit words or bytes). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Ring buffer free space (in bytes). </dd></dl>
 
 </div>
 </div>
@@ -1048,7 +1206,7 @@ Ring buffer instance should not mix byte access and item access (calls prefixed 
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

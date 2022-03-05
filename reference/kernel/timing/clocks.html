@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -174,7 +176,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -265,7 +267,7 @@ CONFIG_SYS_CLOCK_HW_CYCLES_PER_SEC).</p>
 uptime and timeout bookkeeping.  Interrupts are expected to be
 delivered on tick boundaries to the extent practical, and no
 fractional ticks are tracked.  The choice of tick rate is configurable
-via <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a>.  Defaults on most
+via <a class="reference internal" href="../../../kconfig.html#CONFIG_SYS_CLOCK_TICKS_PER_SEC" title="CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a>.  Defaults on most
 hardware platforms (ones that support setting arbitrary interrupt
 timeouts) are expected to be in the range of 10 kHz, with software
 emulation platforms and legacy drivers using a more traditional 100 Hz
@@ -798,7 +800,7 @@ value, and should never be called iteratively in a loop.</p>
 <dt class="sig sig-object c" id="c.k_uptime_ticks">
 <span class="target" id="group__clock__apis_1ga8f143af2ee4ad42d9f7817ef161cbd13"></span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">k_uptime_ticks</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.k_uptime_ticks" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get system uptime, in system ticks. </p>
-<p>This routine returns the elapsed time since the system booted, in ticks (c.f. <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span>), which is the fundamental unit of resolution of kernel timekeeping.</p>
+<p>This routine returns the elapsed time since the system booted, in ticks (c.f. <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SYS_CLOCK_TICKS_PER_SEC" title="CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span>), which is the fundamental unit of resolution of kernel timekeeping.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Current uptime in ticks. </p>
@@ -813,7 +815,7 @@ value, and should never be called iteratively in a loop.</p>
 <p>This routine returns the elapsed time since the system booted, in milliseconds.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span> config option.</p>
+<p>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SYS_CLOCK_TICKS_PER_SEC" title="CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span> config option.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -830,7 +832,7 @@ value, and should never be called iteratively in a loop.</p>
 <p>Because correct conversion requires full precision of the system clock there is no benefit to using this over <a class="reference internal" href="#group__clock__apis_1gae3e992cd3257c23d5b26d765fcbb2b69"><span class="std std-ref">k_uptime_get()</span></a> unless you know the application will never run long enough for the system clock to approach 2^32 ticks. Calls to this function may involve interrupt blocking and 64-bit math.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <span> <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span> config option</p>
+<p>While this function returns time in milliseconds, it does not mean it has millisecond resolution. The actual resolution depends on <span> <a class="reference internal" href="../../../kconfig.html#CONFIG_SYS_CLOCK_TICKS_PER_SEC" title="CONFIG_SYS_CLOCK_TICKS_PER_SEC"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SYS_CLOCK_TICKS_PER_SEC</span></code></a> </span> config option</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -911,8 +913,8 @@ value, and should never be called iteratively in a loop.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

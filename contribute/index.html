@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -112,7 +114,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#copyrights-notices">Copyrights Notices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#developer-certification-of-origin-dco">Developer Certification of Origin (DCO)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#dco-sign-off-methods">DCO Sign-Off Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dco-sign-off">DCO Sign-Off</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notes">Notes</a></li>
 </ul>
 </li>
@@ -169,7 +171,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -312,18 +314,31 @@ By making a contribution to this project, I certify that:
     involved.
 </pre></div>
 </div>
-<div class="section" id="dco-sign-off-methods">
-<h3>DCO Sign-Off Methods<a class="headerlink" href="#dco-sign-off-methods" title="Permalink to this headline">¶</a></h3>
-<p>The DCO requires a sign-off message in the following format appear on each
-commit in the pull request:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Signed</span><span class="o">-</span><span class="n">off</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">Zephyrus</span> <span class="n">Zephyr</span> <span class="o">&lt;</span><span class="n">zephyrus</span><span class="nd">@zephyrproject</span><span class="o">.</span><span class="n">org</span><span class="o">&gt;</span>
+<div class="section" id="dco-sign-off">
+<h3>DCO Sign-Off<a class="headerlink" href="#dco-sign-off" title="Permalink to this headline">¶</a></h3>
+<p>The “sign-off” in the DCO is a “Signed-off-by:” line in each commit’s log
+message. The Signed-off-by: line must be in the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Signed</span><span class="o">-</span><span class="n">off</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">Your</span> <span class="n">Name</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">.</span><span class="n">email</span><span class="nd">@example</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>The DCO text can either be manually added to your commit body, or you can add
-either <code class="docutils literal notranslate"><span class="pre">-s</span></code> or <code class="docutils literal notranslate"><span class="pre">--signoff</span></code> to your usual Git commit commands. If you forget
-to add the sign-off you can also amend a previous commit with the sign-off by
-running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span> <span class="pre">-s</span></code>. If you’ve pushed your changes to GitHub
-already you’ll need to force push your branch after this with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">-f</span></code>.</p>
+<p>For your commits, replace:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">Name</span></code> with your legal name (pseudonyms, hacker handles, and the
+names of groups are not allowed)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">your.email&#64;example.com</span></code> with the same email address you are using to
+author the commit (CI will fail if there is no match)</p></li>
+</ul>
+<p>You can automatically add the Signed-off-by: line to your commit body using
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-s</span></code>. Use other commits in the zephyr git history as examples.</p>
+<p>Additional requirements:</p>
+<ul class="simple">
+<li><p>If you are altering an existing commit created by someone else, you must add
+your Signed-off-by: line without removing the existing one.</p></li>
+<li><p>If you forget to add the Signed-off-by: line, you can add it to your previous
+commit by running <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">--amend</span> <span class="pre">-s</span></code>.</p></li>
+<li><p>If you’ve pushed your changes to GitHub already you’ll need to force push
+your branch after this with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">-f</span></code>.</p></li>
+</ul>
 </div>
 <div class="section" id="notes">
 <h3>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h3>
@@ -854,8 +869,8 @@ submitting changes to <a class="reference internal" href="../guides/modules.html
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

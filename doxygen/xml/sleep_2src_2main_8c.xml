@@ -740,7 +740,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" prot="public" static="no">
         <name>THREAD_STACK</name>
-        <initializer>(384 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -913,16 +913,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="sleep_2src_2main_8c_1ad9c5b7f567db20b5528281663b5e1d3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sleep_2src_2main_8c_1ad80219a41df6cc11f5515677289af1f3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(test_thread_stack,(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(test_thread_stack,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>test_thread_stack</type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -932,16 +932,16 @@
         </inbodydescription>
         <location file="tests/kernel/sleep/src/main.c" line="42" column="8" declfile="tests/kernel/sleep/src/main.c" declline="42" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="sleep_2src_2main_8c_1a5746734c7b688e1dabd23993a7aa3c1a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sleep_2src_2main_8c_1a3bb9eec27480fea028e0e1b2aa7bac98" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(helper_thread_stack,(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(helper_thread_stack,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>helper_thread_stack</type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1181,9 +1181,9 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="stdbool_8h" kindref="compound">stdbool.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(CONFIG_ASSERT)<sp/>&amp;&amp;<sp/>defined(CONFIG_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK<sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK<sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK<sp/><sp/><sp/><sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK<sp/><sp/><sp/><sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_THREAD_PRIORITY<sp/><sp/><sp/><sp/>-4</highlight><highlight class="normal"></highlight></codeline>
@@ -1208,8 +1208,8 @@
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="sleep_2src_2main_8c_1a2183b7c69931118880b722380b0d60cf" kindref="member">helper_thread_sem</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="sleep_2src_2main_8c_1a5f112bcc436cde34d43a581965a51436" kindref="member">task_sem</ref>;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_thread_stack,<sp/><ref refid="sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" kindref="member">THREAD_STACK</ref>);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(helper_thread_stack,<sp/><ref refid="sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" kindref="member">THREAD_STACK</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_thread_stack,<sp/><ref refid="sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" kindref="member">THREAD_STACK</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(helper_thread_stack,<sp/><ref refid="sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" kindref="member">THREAD_STACK</ref>);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="sleep_2src_2main_8c_1a25227403fe5f591199780195c818dc40" kindref="member">test_thread_id</ref>;</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="sleep_2src_2main_8c_1abbb6651c46e3f6264a9245c3e5c48a12" kindref="member">helper_thread_id</ref>;</highlight></codeline>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="66" column="28" bodyfile="include/logging/log_backend.h" bodystart="66" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="69" column="28" bodyfile="include/logging/log_backend.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend_1ab8c377e796af0ef81dcf459eeee56a1d" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structlog__backend__control__block" kindref="compound">log_backend_control_block</ref> *</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="67" column="32" bodyfile="include/logging/log_backend.h" bodystart="67" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="70" column="32" bodyfile="include/logging/log_backend.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend_1a22b343a8fc32b9aa05f5f4649d78f7d4" prot="public" static="no" mutable="no">
         <type>const char *</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="68" column="12" bodyfile="include/logging/log_backend.h" bodystart="68" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="71" column="12" bodyfile="include/logging/log_backend.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structlog__backend_1afe5ce6ac891bef0264dabafe18db88a2" prot="public" static="no" mutable="no">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/logging/log_backend.h" line="69" column="6" bodyfile="include/logging/log_backend.h" bodystart="69" bodyend="-1"/>
+        <location file="include/logging/log_backend.h" line="72" column="6" bodyfile="include/logging/log_backend.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -82,7 +82,7 @@
         <link refid="structlog__backend__control__block"/>
       </node>
     </collaborationgraph>
-    <location file="include/logging/log_backend.h" line="65" column="1" bodyfile="include/logging/log_backend.h" bodystart="65" bodyend="70"/>
+    <location file="include/logging/log_backend.h" line="68" column="1" bodyfile="include/logging/log_backend.h" bodystart="68" bodyend="73"/>
     <listofallmembers>
       <member refid="structlog__backend_1a87067e427a94d3543c7c50b950649b33" prot="public" virt="non-virtual"><scope>log_backend</scope><name>api</name></member>
       <member refid="structlog__backend_1afe5ce6ac891bef0264dabafe18db88a2" prot="public" virt="non-virtual"><scope>log_backend</scope><name>autostart</name></member>

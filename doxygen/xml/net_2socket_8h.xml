@@ -82,6 +82,8 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
         <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
@@ -1548,7 +1550,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/socket.html&gt;`__
 * for normative description.
 * This function is also exposed as ``socket()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim></para>
 <para>If CONFIG_USERSPACE is enabled, the caller will be granted access to the context object associated with the returned file descriptor. <simplesect kind="see"><para><ref refid="group__bsd__sockets_1ga21a871d1fa6b6beeed88408761877873" kindref="member">zsock_get_context_object()</ref> </para>
 </simplesect>
@@ -1588,7 +1590,7 @@
 * &lt;https://pubs.opengroup.org/onlinepubs/009695399/functions/socketpair.html&gt;`__
 * for normative description.
 * This function is also exposed as ``socketpair()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1611,7 +1613,7 @@
 <para><verbatim>embed:rst:leading-asterisk
 * Close a network socket.
 * This function is also exposed as ``close()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case it
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case it
 * may conflict with generic POSIX ``close()`` function).
 * </verbatim> </para>
         </detaileddescription>
@@ -1642,7 +1644,7 @@
 * for normative description, but currently this function has no effect in
 * Zephyr and provided solely for compatibility with existing code.
 * This function is also exposed as ``shutdown()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1675,7 +1677,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/bind.html&gt;`__
 * for normative description.
 * This function is also exposed as ``bind()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1708,7 +1710,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/connect.html&gt;`__
 * for normative description.
 * This function is also exposed as ``connect()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1737,7 +1739,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/listen.html&gt;`__
 * for normative description.
 * This function is also exposed as ``listen()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1770,7 +1772,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/accept.html&gt;`__
 * for normative description.
 * This function is also exposed as ``accept()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1815,7 +1817,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/sendto.html&gt;`__
 * for normative description.
 * This function is also exposed as ``sendto()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1852,7 +1854,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/send.html&gt;`__
 * for normative description.
 * This function is also exposed as ``send()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1885,7 +1887,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/sendmsg.html&gt;`__
 * for normative description.
 * This function is also exposed as ``sendmsg()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1930,7 +1932,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/recvfrom.html&gt;`__
 * for normative description.
 * This function is also exposed as ``recvfrom()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1967,7 +1969,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/recv.html&gt;`__
 * for normative description.
 * This function is also exposed as ``recv()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -1999,7 +2001,7 @@
 * This functions allow to (only) configure a socket for blocking or
 * non-blocking operation (O_NONBLOCK).
 * This function is also exposed as ``fcntl()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
 * it may conflict with generic POSIX ``fcntl()`` function).
 * </verbatim> </para>
         </detaileddescription>
@@ -2034,7 +2036,7 @@
 * for normative description. (In Zephyr this function works only with
 * sockets, not arbitrary file descriptors.)
 * This function is also exposed as ``poll()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
 * it may conflict with generic POSIX ``poll()`` function).
 * </verbatim> </para>
         </detaileddescription>
@@ -2079,7 +2081,7 @@
 * available in Linux (some options are dummy and provided to ease porting
 * of existing code).
 * This function is also exposed as ``getsockopt()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2123,7 +2125,7 @@
 * available in Linux (some options are dummy and provided to ease porting
 * of existing code).
 * This function is also exposed as ``setsockopt()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2156,7 +2158,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/getsockname.html&gt;`__
 * for normative description.
 * This function is also exposed as ``getsockname()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2185,7 +2187,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/gethostname.html&gt;`__
 * for normative description.
 * This function is also exposed as ``gethostname()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2222,7 +2224,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/inet_ntop.html&gt;`__
 * for normative description.
 * This function is also exposed as ``inet_ntop()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2255,7 +2257,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/inet_pton.html&gt;`__
 * for normative description.
 * This function is also exposed as ``inet_pton()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2292,7 +2294,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/getaddrinfo.html&gt;`__
 * for normative description.
 * This function is also exposed as ``getaddrinfo()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2317,7 +2319,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/freeaddrinfo.html&gt;`__
 * for normative description.
 * This function is also exposed as ``freeaddrinfo()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2342,7 +2344,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/gai_strerror.html&gt;`__
 * for normative description.
 * This function is also exposed as ``gai_strerror()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2391,7 +2393,7 @@
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/getnameinfo.html&gt;`__
 * for normative description.
 * This function is also exposed as ``getnameinfo()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </verbatim> </para>
         </detaileddescription>
         <inbodydescription>
@@ -2839,7 +2841,7 @@
 <codeline lineno="918"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_SOCKET_DEFAULT_PRIO<sp/>CONFIG_NET_SOCKETS_PRIORITY_DEFAULT</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="919"><highlight class="normal"></highlight></codeline>
 <codeline lineno="920"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_SOCKET_GET_NAME(socket_name,<sp/>prio)<sp/><sp/>\</highlight></codeline>
-<codeline lineno="921"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(__net_socket_register_##prio##_##socket_name)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="921"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__net_socket_register_##prio##_##socket_name</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="922"><highlight class="normal"></highlight></codeline>
 <codeline lineno="923"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NET_SOCKET_REGISTER(socket_name,<sp/>prio,<sp/>_family,<sp/>_is_supported,<sp/>_handler)<sp/>\</highlight></codeline>
 <codeline lineno="924"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>static<sp/>const<sp/>STRUCT_SECTION_ITERABLE(net_socket_register,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>

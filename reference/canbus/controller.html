@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -176,7 +178,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -680,7 +682,7 @@ which adds some computation and memory overhead.</p>
 <p>Same as <em><a class="reference internal" href="#group__can__interface_1gac27fe64142603f0d32d422594356b2d7"><span class="std std-ref">can_calc_timing()</span></a></em> but with the maximum and minimum values from the data phase.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CAN_FD_MODE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CAN_FD_MODE</span></code></a> </span> must be selected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_CAN_FD_MODE" title="CONFIG_CAN_FD_MODE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CAN_FD_MODE</span></code></a> </span> must be selected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -731,7 +733,7 @@ which adds some computation and memory overhead.</p>
 <p>If the sjw equals CAN_SJW_NO_CHANGE, the sjw parameter is not changed.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The parameter <code class="docutils literal notranslate"><span class="pre">timing_data</span></code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CAN_FD_MODE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CAN_FD_MODE</span></code></a> </span> is not selected, the value of this parameter is ignored.</p>
+<p>The parameter <code class="docutils literal notranslate"><span class="pre">timing_data</span></code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_CAN_FD_MODE" title="CONFIG_CAN_FD_MODE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CAN_FD_MODE</span></code></a> </span> is not selected, the value of this parameter is ignored.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -777,7 +779,7 @@ which adds some computation and memory overhead.</p>
 <p>The sample point is set to the CiA DS 301 recommended value of 87.5%.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The parameter <code class="docutils literal notranslate"><span class="pre">bitrate_data</span></code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CAN_FD_MODE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CAN_FD_MODE</span></code></a> </span> is not selected, the value of this parameter is ignored.</p>
+<p>The parameter <code class="docutils literal notranslate"><span class="pre">bitrate_data</span></code> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_CAN_FD_MODE" title="CONFIG_CAN_FD_MODE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CAN_FD_MODE</span></code></a> </span> is not selected, the value of this parameter is ignored.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -809,9 +811,21 @@ which adds some computation and memory overhead.</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.can_send">
 <span class="target" id="group__can__interface_1ga1bf5353bf15ffc252726e71ace9f5372"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">can_send</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.zcan_frame" title="zcan_frame"><span class="n"><span class="pre">zcan_frame</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">frame</span></span>, <a class="reference internal" href="../kernel/timing/clocks.html#c.k_timeout_t" title="k_timeout_t"><span class="n"><span class="pre">k_timeout_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">timeout</span></span>, <a class="reference internal" href="#c.can_tx_callback_t" title="can_tx_callback_t"><span class="n"><span class="pre">can_tx_callback_t</span></span></a><span class="w"> </span><span class="n"><span class="pre">callback</span></span>, <span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">user_data</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.can_send" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Transmit a CAN frame on the CAN bus. </p>
-<p>Transmit a CAN frame on the CAN bus with optional timeout and completion callback function.</p>
-<p>By default, the CAN controller will automatically retry transmission in case of lost bus arbitration or missing acknowledge. Some CAN controllers support disabling automatic retransmissions (“one-shot” mode) via a devicetree property.</p>
+<dd><p>Queue a CAN frame for transmission on the CAN bus. </p>
+<p>Queue a CAN frame for transmission on the CAN bus with optional timeout and completion callback function.</p>
+<p>Queued CAN frames are transmitted in order according to the their priority:<ul class="simple">
+<li><p>The lower the CAN-ID, the higher the priority.</p></li>
+<li><p>Data frames have higher priority than Remote Transmission Request (RTR) frames with identical CAN-IDs.</p></li>
+<li><p>Frames with standard (11-bit) identifiers have higher priority than frames with extended (29-bit) identifiers with identical base IDs (the higher 11 bits of the extended identifier).</p></li>
+<li><p>Transmission order for queued frames with the same priority is hardware dependent.</p></li>
+</ul>
+</p>
+<p>
+By default, the CAN controller will automatically retry transmission in case of lost bus arbitration or missing acknowledge. Some CAN controllers support disabling automatic retransmissions (“one-shot” mode) via a devicetree property.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If transmitting segmented messages spanning multiple CAN frames with identical CAN-IDs, the sender must ensure to only queue one frame at a time if FIFO order is required.</p>
+</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
@@ -980,7 +994,7 @@ which adds some computation and memory overhead.</p>
 <p>Recover the CAN controller from bus-off state to error-active state.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CAN_AUTO_BUS_OFF_RECOVERY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CAN_AUTO_BUS_OFF_RECOVERY</span></code></a> </span> must be deselected for this function to be available.</p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_CAN_AUTO_BUS_OFF_RECOVERY" title="CONFIG_CAN_AUTO_BUS_OFF_RECOVERY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CAN_AUTO_BUS_OFF_RECOVERY</span></code></a> </span> must be deselected for this function to be available.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1087,6 +1101,128 @@ which adds some computation and memory overhead.</p>
 <dt class="sig sig-object c" id="c.CANFD_MAX_DLC">
 <span class="target" id="group__can__interface_1gad4b7310536c7e3252c2056abe64c0333"></span><span class="sig-name descname"><span class="n"><span class="pre">CANFD_MAX_DLC</span></span></span><a class="headerlink" href="#c.CANFD_MAX_DLC" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Maximum data length code for CAN-FD. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_STATS_BIT0_ERROR_INC">
+<span class="target" id="group__can__interface_1ga120a37d5ae5064dcbf116e488f733764"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_STATS_BIT0_ERROR_INC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dev_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_STATS_BIT0_ERROR_INC" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increment the bit0 error counter for a CAN device. </p>
+<p>The bit0 error counter is incremented when the CAN controller is unable to transmit a dominant bit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dev_</strong> – Pointer to the device structure for the driver instance. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_STATS_BIT1_ERROR_INC">
+<span class="target" id="group__can__interface_1ga678b74039632302efcb5ef80f0e3a90b"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_STATS_BIT1_ERROR_INC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dev_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_STATS_BIT1_ERROR_INC" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increment the bit1 (recessive) error counter for a CAN device. </p>
+<p>The bit1 error counter is incremented when the CAN controller is unable to transmit a recessive bit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dev_</strong> – Pointer to the device structure for the driver instance. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_STATS_STUFF_ERROR_INC">
+<span class="target" id="group__can__interface_1gae4146843944b7ffb1c96636e889282f7"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_STATS_STUFF_ERROR_INC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dev_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_STATS_STUFF_ERROR_INC" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increment the stuffing error counter for a CAN device. </p>
+<p>The stuffing error counter is incremented when the CAN controller detects a bit stuffing error.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dev_</strong> – Pointer to the device structure for the driver instance. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_STATS_CRC_ERROR_INC">
+<span class="target" id="group__can__interface_1ga125ce05d40881476f5f156ad5e28c664"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_STATS_CRC_ERROR_INC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dev_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_STATS_CRC_ERROR_INC" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increment the CRC error counter for a CAN device. </p>
+<p>The CRC error counter is incremented when the CAN controller detects a frame with an invalid CRC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dev_</strong> – Pointer to the device structure for the driver instance. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_STATS_FORM_ERROR_INC">
+<span class="target" id="group__can__interface_1gac5809b3f5e1a463822e76921cddc9909"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_STATS_FORM_ERROR_INC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dev_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_STATS_FORM_ERROR_INC" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increment the form error counter for a CAN device. </p>
+<p>The form error counter is incremented when the CAN controller detects a fixed-form bit field containing illegal bits.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dev_</strong> – Pointer to the device structure for the driver instance. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_STATS_ACK_ERROR_INC">
+<span class="target" id="group__can__interface_1ga15f7ca18badbbe2fe24be68cacce6171"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_STATS_ACK_ERROR_INC</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">dev_</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_STATS_ACK_ERROR_INC" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Increment the acknowledge error counter for a CAN device. </p>
+<p>The acknowledge error counter is incremented when the CAN controller does not monitor a dominant bit in the ACK slot.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dev_</strong> – Pointer to the device structure for the driver instance. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_DEVICE_DT_DEFINE">
+<span class="target" id="group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_DEVICE_DT_DEFINE</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">node_id</span></span>, <span class="n"><span class="pre">init_fn</span></span>, <span class="n"><span class="pre">pm_device</span></span>, <span class="n"><span class="pre">data_ptr</span></span>, <span class="n"><span class="pre">cfg_ptr</span></span>, <span class="n"><span class="pre">level</span></span>, <span class="n"><span class="pre">prio</span></span>, <span class="n"><span class="pre">api_ptr</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_DEVICE_DT_DEFINE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Like <a class="reference internal" href="../drivers/index.html#group__device__model_1gaac590af7705a3223968164406a483548"><span class="std std-ref">DEVICE_DT_DEFINE()</span></a> with CAN device specifics. </p>
+<p>Defines a device which implements the CAN API. May generate a custom <a class="reference internal" href="../drivers/index.html#structdevice__state"><span class="std std-ref">device_state</span></a> container struct and init_fn wrapper when needed depending on <span> <a class="reference internal" href="../../kconfig.html#CONFIG_CAN_STATS" title="CONFIG_CAN_STATS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CAN_STATS</span></code></a> </span>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node_id</strong> – The devicetree node identifier. </p></li>
+<li><p><strong>init_fn</strong> – Name of the init function of the driver. </p></li>
+<li><p><strong>pm_device</strong> – PM device resources reference (NULL if device does not use PM). </p></li>
+<li><p><strong>data_ptr</strong> – Pointer to the device’s private data. </p></li>
+<li><p><strong>cfg_ptr</strong> – The address to the structure containing the configuration information for this instance of the driver. </p></li>
+<li><p><strong>level</strong> – The initialization level. See <a class="reference internal" href="../drivers/index.html#group__device__model_1ga1e50fdff086356a75b0e91179952cc8d"><span class="std std-ref">SYS_INIT()</span></a> for details. </p></li>
+<li><p><strong>prio</strong> – Priority within the selected initialization level. See <a class="reference internal" href="../drivers/index.html#group__device__model_1ga1e50fdff086356a75b0e91179952cc8d"><span class="std std-ref">SYS_INIT()</span></a> for details. </p></li>
+<li><p><strong>api_ptr</strong> – Provides an initial pointer to the API function struct used by the driver. Can be NULL. </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c macro">
+<dt class="sig sig-object c" id="c.CAN_DEVICE_DT_INST_DEFINE">
+<span class="target" id="group__can__interface_1ga20266dc5e962922144e078b85ccb8351"></span><span class="sig-name descname"><span class="n"><span class="pre">CAN_DEVICE_DT_INST_DEFINE</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">inst</span></span>, <span class="p"><span class="pre">...</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.CAN_DEVICE_DT_INST_DEFINE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Like <a class="reference internal" href="#group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b"><span class="std std-ref">CAN_DEVICE_DT_DEFINE()</span></a> for an instance of a DT_DRV_COMPAT compatible. </p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inst</strong> – Instance number. This is replaced by <code class="docutils literal notranslate"><span class="pre">DT_DRV_COMPAT(inst)</span></code> in the call to <a class="reference internal" href="#group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b"><span class="std std-ref">CAN_DEVICE_DT_DEFINE()</span></a>. </p></li>
+<li><p><strong>...</strong> – Other parameters as expected by <a class="reference internal" href="#group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b"><span class="std std-ref">CAN_DEVICE_DT_DEFINE()</span></a>. </p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 
 </div>
@@ -1291,7 +1427,7 @@ which adds some computation and memory overhead.</p>
 <dd><p>Captured value of the free-running timer in the CAN controller when this frame was received. The timer is incremented every bit time and captured at the start of frame bit (SOF).</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CAN_RX_TIMESTAMP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CAN_RX_TIMESTAMP</span></code></a> </span> must be selected for this field to be available. </p>
+<p><span> <a class="reference internal" href="../../kconfig.html#CONFIG_CAN_RX_TIMESTAMP" title="CONFIG_CAN_RX_TIMESTAMP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CAN_RX_TIMESTAMP</span></code></a> </span> must be selected for this field to be available. </p>
 </div>
 </dd></dl>
 
@@ -1423,6 +1559,14 @@ which adds some computation and memory overhead.</p>
 </dd></dl>
 
 <dl class="c struct">
+<dt class="sig sig-object c" id="c.can_device_state">
+<span class="target" id="structcan__device__state"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">can_device_state</span></span></span><a class="headerlink" href="#c.can_device_state" title="Permalink to this definition">¶</a><br /></dt>
+<dd><div class="docutils container">
+<em>#include &lt;can.h&gt;</em></div>
+<p>CAN specific device state which allows for CAN device class specific additions. </p>
+</dd></dl>
+
+<dl class="c struct">
 <dt class="sig sig-object c" id="c.can_frame">
 <span class="target" id="structcan__frame"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">can_frame</span></span></span><a class="headerlink" href="#c.can_frame" title="Permalink to this definition">¶</a><br /></dt>
 <dd><div class="docutils container">
@@ -1489,8 +1633,8 @@ which adds some computation and memory overhead.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

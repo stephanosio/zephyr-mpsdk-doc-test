@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -191,7 +193,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -258,7 +260,7 @@
 <span id="bt-mesh-proxy"></span><h1>Proxy<a class="headerlink" href="#proxy" title="Permalink to this headline">¶</a></h1>
 <p>The Proxy feature allows legacy devices like phones to access the Bluetooth
 mesh network through GATT. The Proxy feature is only compiled in if the
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_MESH_GATT_PROXY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_GATT_PROXY</span></code></a> option is set. The Proxy feature state is
+<a class="reference internal" href="../../../kconfig.html#CONFIG_BT_MESH_GATT_PROXY" title="CONFIG_BT_MESH_GATT_PROXY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_MESH_GATT_PROXY</span></code></a> option is set. The Proxy feature state is
 controlled by the <a class="reference internal" href="cfg_srv.html#bluetooth-mesh-models-cfg-srv"><span class="std std-ref">Configuration Server</span></a>, and the initial value
 can be set with <code class="xref c c-member docutils literal notranslate"><span class="pre">bt_mesh_cfg_srv.gatt_proxy</span></code>.</p>
 <div class="section" id="api-reference">
@@ -294,6 +296,40 @@ can be set with <code class="xref c c-member docutils literal notranslate"><span
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>0 on success, or (negative) error code on failure. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.bt_mesh_proxy_connect">
+<span class="target" id="group__bt__mesh__proxy_1ga07d4edf80bdbc39f626f66720035c98b"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_mesh_proxy_connect</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">net_idx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_mesh_proxy_connect" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Allow Proxy Client to auto connect to a network. </p>
+<p>This API allows a proxy client to auto-connect a given network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>net_idx</strong> – Network Key Index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>0 on success, or (negative) error code on failure. </p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="c function">
+<dt class="sig sig-object c" id="c.bt_mesh_proxy_disconnect">
+<span class="target" id="group__bt__mesh__proxy_1gaa9978d460b31412c96c6c1685729ec4f"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">bt_mesh_proxy_disconnect</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint16_t</span></span><span class="w"> </span><span class="n"><span class="pre">net_idx</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.bt_mesh_proxy_disconnect" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Disallow Proxy Client to auto connect to a network. </p>
+<p>This API disallows a proxy client to connect a given network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>net_idx</strong> – Network Key Index</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>0 on success, or (negative) error code on failure. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -347,8 +383,8 @@ can be set with <code class="xref c c-member docutils literal notranslate"><span
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

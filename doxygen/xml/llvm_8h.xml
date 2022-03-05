@@ -28,6 +28,31 @@
         </childnode>
       </node>
     </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="llvm_8h_1a4e6966b83377f8ea001f6bc19b551b24" prot="public" static="no">
+        <name>CLANG_VERSION</name>
+        <initializer>	((__clang_major__ * 10000) + (__clang_minor__ * 100) + \
+	  __clang_patchlevel__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain/llvm.h" line="17" column="9" bodyfile="include/toolchain/llvm.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="llvm_8h_1a763b60a74b3b8917b8a91614f1d443e4" prot="public" static="no">
+        <name>TOOLCHAIN_HAS_PRAGMA_DIAG</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/toolchain/llvm.h" line="21" column="9" bodyfile="include/toolchain/llvm.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -44,10 +69,26 @@
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__no_optimization<sp/>__attribute__((optnone))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gcc_8h" kindref="compound">toolchain/gcc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_TOOLCHAIN_LLVM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>__clang_major__<sp/>&gt;=<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__fallthrough<sp/>__attribute__((fallthrough))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="llvm_8h_1a4e6966b83377f8ea001f6bc19b551b24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CLANG_VERSION<sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>((__clang_major__<sp/>*<sp/>10000)<sp/>+<sp/>(__clang_minor__<sp/>*<sp/>100)<sp/>+<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__clang_patchlevel__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="llvm_8h_1a763b60a74b3b8917b8a91614f1d443e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLCHAIN_HAS_PRAGMA_DIAG<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>CLANG_VERSION<sp/>&gt;=<sp/>30800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLCHAIN_HAS_C_GENERIC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOOLCHAIN_HAS_C_AUTO_TYPE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gcc_8h" kindref="compound">toolchain/gcc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ZEPHYR_INCLUDE_TOOLCHAIN_LLVM_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/toolchain/llvm.h"/>
   </compounddef>

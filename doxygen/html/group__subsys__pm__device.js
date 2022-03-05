@@ -19,10 +19,6 @@ var group__subsys__pm__device =
       [ "PM_DEVICE_STATE_SUSPENDING", "group__subsys__pm__device.html#gga561c0789071e3c3963f21f4c4a1bb2c6a51a5904aff980deff73d29568b6f7deb", null ],
       [ "PM_DEVICE_STATE_OFF", "group__subsys__pm__device.html#gga561c0789071e3c3963f21f4c4a1bb2c6a2456389354b744d4e96847e38f8b61c2", null ]
     ] ],
-    [ "device_any_busy_check", "group__subsys__pm__device.html#ga9ee3ee2f5dac79c85fc901c179fbadf9", null ],
-    [ "device_busy_check", "group__subsys__pm__device.html#ga24bd4cb295002584c4f8183e937badc1", null ],
-    [ "device_busy_clear", "group__subsys__pm__device.html#gadff113f34359db32c8739294143a1c8f", null ],
-    [ "device_busy_set", "group__subsys__pm__device.html#gabfaec92a92766154b8b9ac9dd29f2c1e", null ],
     [ "pm_device_action_run", "group__subsys__pm__device.html#ga3840d6e7832a00b93763247a5951bfde", null ],
     [ "pm_device_busy_clear", "group__subsys__pm__device.html#ga8b527314f0c61b85602876b4f5a52275", null ],
     [ "pm_device_busy_set", "group__subsys__pm__device.html#ga7ea002352f3d1c90aecff1d54c255a06", null ],
@@ -33,7 +29,6 @@ var group__subsys__pm__device =
     [ "pm_device_state_get", "group__subsys__pm__device.html#gaffcf0aea5df10657235d4ed1f8c74d5a", null ],
     [ "pm_device_state_is_locked", "group__subsys__pm__device.html#gaf577cada579b6f871bc55e4a282ef8a6", null ],
     [ "pm_device_state_lock", "group__subsys__pm__device.html#gaab27e932950e1063b2f1f4c4e19dbf01", null ],
-    [ "pm_device_state_set", "group__subsys__pm__device.html#ga37fb93d42a507abc7aa51c4a08e5353c", null ],
     [ "pm_device_state_str", "group__subsys__pm__device.html#gad109511e4314fa6145ee97dd655ec7bb", null ],
     [ "pm_device_state_unlock", "group__subsys__pm__device.html#gaa5d2387a01a4ca4d765b1ea2361155bb", null ],
     [ "pm_device_wakeup_enable", "group__subsys__pm__device.html#ga8837ac66f849821757b3638bbb65d3ac", null ],

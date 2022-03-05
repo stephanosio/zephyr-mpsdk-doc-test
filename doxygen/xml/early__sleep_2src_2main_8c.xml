@@ -743,7 +743,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="early__sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" prot="public" static="no">
         <name>THREAD_STACK</name>
-        <initializer>(384 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -846,16 +846,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="early__sleep_2src_2main_8c_1a9b0828430bdc0a990e498b19b7883ef9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="early__sleep_2src_2main_8c_1a839b75df7ac28a7f4d96cd451323c081" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(helper_tstack,(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(helper_tstack,(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>helper_tstack</type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1060,12 +1060,12 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;tc_util.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEST_TICKS_TO_SLEEP<sp/><sp/><sp/><sp/><sp/>(CONFIG_SYS_CLOCK_TICKS_PER_SEC<sp/>/<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Helper<sp/>thread<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(helper_tstack,<sp/><ref refid="early__sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" kindref="member">THREAD_STACK</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(helper_tstack,<sp/><ref refid="early__sleep_2src_2main_8c_1af9a5d6addf893be0502ae41f52e794b2" kindref="member">THREAD_STACK</ref>);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="early__sleep_2src_2main_8c_1a2e0190ea60ed3575663df100d7e7b98d" kindref="member">helper_tdata</ref>;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><sp/><ref refid="early__sleep_2src_2main_8c_1aa40978d8c387be39062d23f6fa94ce11" kindref="member">helper_ttid</ref>;</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>

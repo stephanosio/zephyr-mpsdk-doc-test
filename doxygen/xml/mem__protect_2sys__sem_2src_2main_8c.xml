@@ -996,7 +996,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1120,16 +1120,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/sys_sem/src/main.c" line="24" column="12" declfile="tests/kernel/mem_protect/sys_sem/src/main.c" declline="24" declcolumn="12"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack_1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack_1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe_2src_2main_8c_1ab821b9daa1751ea809f22254c23956f7" kindref="member">stack_1</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1139,16 +1139,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/sys_sem/src/main.c" line="26" column="1" declfile="tests/kernel/mem_protect/sys_sem/src/main.c" declline="26" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1a6e0a3040923a786d0f4b029184aad5b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1a28fb6c78270f0c6333087bf956eb0ead" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack_2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack_2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>stack_2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1158,16 +1158,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/sys_sem/src/main.c" line="27" column="1" declfile="tests/kernel/mem_protect/sys_sem/src/main.c" declline="27" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1a4b92389859362bc3df3831cdbcecb7b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1a31902e552502c8f42e1520ca071ae3bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(stack_3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(stack_3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>stack_3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1177,10 +1177,10 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/sys_sem/src/main.c" line="28" column="1" declfile="tests/kernel/mem_protect/sys_sem/src/main.c" declline="28" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2sys__sem_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(multiple_stack,(3),(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(multiple_stack,(3),(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>multiple_stack</type>
@@ -1189,7 +1189,7 @@
           <type>(3)</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1479,7 +1479,7 @@
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEM_INIT_VAL<sp/>(0U)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEM_MAX_VAL<sp/><sp/>(10U)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SEM_TIMEOUT<sp/>(K_MSEC(100))</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TOTAL_THREADS_WAITING<sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
@@ -1490,10 +1490,10 @@
 <codeline lineno="23"><highlight class="normal"><ref refid="group__ztest__test__deprecated_1ga2c7d0aa85e7f320d582395c5ded90133" kindref="member">ZTEST_DMEM</ref><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structsys__sem" kindref="compound">sys_sem</ref><sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a5d9087bd3e283fcbadb6f03b67131ad4" kindref="member">high_prio_sem</ref>;</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><ref refid="group__ztest__test__deprecated_1ga2c7d0aa85e7f320d582395c5ded90133" kindref="member">ZTEST_DMEM</ref><sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1aa188cce8d4d8eede6478bdbec30c94a1" kindref="member">SYS_SEM_DEFINE</ref>(multiple_thread_sem,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a1921ee8629c4482331e5a78d5dfc21d3" kindref="member">SEM_INIT_VAL</ref>,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a40245d4b511683879535bdf5d95e855e" kindref="member">SEM_MAX_VAL</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe_2src_2main_8c_1ab821b9daa1751ea809f22254c23956f7" kindref="member">stack_1</ref>,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_2,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_3,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multiple_stack,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a31eec2f427136bb85cbe7a93e81c6fca" kindref="member">TOTAL_THREADS_WAITING</ref>,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe_2src_2main_8c_1ab821b9daa1751ea809f22254c23956f7" kindref="member">stack_1</ref>,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_2,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(stack_3,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(multiple_stack,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a31eec2f427136bb85cbe7a93e81c6fca" kindref="member">TOTAL_THREADS_WAITING</ref>,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/>sem_tid,<sp/>sem_tid_1,<sp/><ref refid="mem__protect_2sys__sem_2src_2main_8c_1adbba1dc3054ec90bd75f0794fce7005a" kindref="member">sem_tid_2</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1afbc137eb1a51f5df48f5fe7ec567c38e" kindref="member">multiple_tid</ref>[<ref refid="mem__protect_2sys__sem_2src_2main_8c_1a31eec2f427136bb85cbe7a93e81c6fca" kindref="member">TOTAL_THREADS_WAITING</ref>];</highlight></codeline>

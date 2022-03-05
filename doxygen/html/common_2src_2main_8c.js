@@ -19,6 +19,7 @@ var common_2src_2main_8c =
     [ "test_main", "common_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],
     [ "test_ms_time_duration", "group__kernel__common__tests.html#ga6588a750425fc87489bb3006385b5f13", null ],
     [ "test_multilib", "group__kernel__common__tests.html#ga4d9014d724f801e6d7ca497bf332f65a", null ],
+    [ "test_nested_irq_offload", "common_2src_2main_8c.html#ae0a5e505ce22abb0f10ebd1877f4f0e8", null ],
     [ "test_nop", "group__kernel__common__tests.html#ga0f504167b62d85064806318554a9d1ef", null ],
     [ "test_printk", "common_2src_2main_8c.html#a7a57ee919f3a90b9ddacabb970ecd2b2", null ],
     [ "test_sys_get_be16", "group__kernel__common__tests.html#gaec5a0de48899f101d02ce678b9c45c90", null ],

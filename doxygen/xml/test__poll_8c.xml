@@ -784,7 +784,7 @@
       </memberdef>
       <memberdef kind="define" id="test__poll_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1078,16 +1078,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="test__poll_8c_1a12823837c447fbfb351e58800f69e6cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__poll_8c_1a2d6c487fda84b56c14312f1daf53ac16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(test_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(test_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>test_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1097,16 +1097,16 @@
         </inbodydescription>
         <location file="tests/kernel/poll/src/test_poll.c" line="34" column="1" declfile="tests/kernel/poll/src/test_poll.c" declline="34" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__poll_8c_1a0cfc3a87eb18246846f793b7acea834b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__poll_8c_1a47d70b25e444bdda6407629af561a275" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(test_loprio_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(test_loprio_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>test_loprio_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1659,7 +1659,7 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSGQ_MSG_SIZE<sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSGQ_MAX_MSGS<sp/>16</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSGQ_MSG_VALUE<sp/>{&apos;a&apos;,<sp/>&apos;b&apos;,<sp/>&apos;c&apos;,<sp/>&apos;d&apos;}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>verify<sp/>k_poll()<sp/>without<sp/>waiting<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__poll_8c_1af208f7a69c889740d0dee0316126c9f9" kindref="member">no_wait_sem</ref>;</highlight></codeline>
@@ -1672,8 +1672,8 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__poll_8c_1ae3cc683d2a8901cebcdb71d2109c62de" kindref="member">zero_events_sem</ref>;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__poll_8c_1aaf99baf6b57ceed1a2949db9e149af47" kindref="member">test_thread</ref>;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__poll_8c_1ac539ccb3716bf1fe16ce4087fc3267d8" kindref="member">test_loprio_thread</ref>;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="test__poll_8c_1a12823837c447fbfb351e58800f69e6cb" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_stack,<sp/><ref refid="test__poll_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><ref refid="test__poll_8c_1a12823837c447fbfb351e58800f69e6cb" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_loprio_stack,<sp/><ref refid="test__poll_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="test__poll_8c_1a2d6c487fda84b56c14312f1daf53ac16" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_stack,<sp/><ref refid="test__poll_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="test__poll_8c_1a2d6c487fda84b56c14312f1daf53ac16" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_loprio_stack,<sp/><ref refid="test__poll_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__kernel__poll__tests_1ga87369fd2be512baee38bae7810089817" kindref="member">test_poll_no_wait</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="57"><highlight class="normal">{</highlight></codeline>

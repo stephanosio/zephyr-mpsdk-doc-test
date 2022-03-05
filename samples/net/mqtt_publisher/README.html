@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -200,7 +202,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -352,7 +354,7 @@ try this sample with TLS enabled, by following these steps:</p>
 <a class="reference external" href="https://test.mosquitto.org">https://test.mosquitto.org</a></p></li>
 <li><p>In <code class="file docutils literal notranslate"><span class="pre">src/test_certs.h</span></code>, set <code class="docutils literal notranslate"><span class="pre">ca_certificate[]</span></code> using the certificate
 contents (or set it to its filename if the socket offloading feature is
-enabled on your platform and <a class="reference internal" href="../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TLS_CREDENTIAL_FILENAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TLS_CREDENTIAL_FILENAMES</span></code></a> is
+enabled on your platform and <a class="reference internal" href="../../../kconfig.html#CONFIG_TLS_CREDENTIAL_FILENAMES" title="CONFIG_TLS_CREDENTIAL_FILENAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TLS_CREDENTIAL_FILENAMES</span></code></a> is
 set to <code class="docutils literal notranslate"><span class="pre">y</span></code>).</p></li>
 <li><p>In <code class="file docutils literal notranslate"><span class="pre">src/config.h</span></code>, set SERVER_ADDR to the IP address to connect to,
 i.e., the IP address of test.mosquitto.org <code class="docutils literal notranslate"><span class="pre">&quot;37.187.106.16&quot;</span></code></p></li>
@@ -557,8 +559,8 @@ executed.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

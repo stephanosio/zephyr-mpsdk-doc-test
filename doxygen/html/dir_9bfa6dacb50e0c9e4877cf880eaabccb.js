@@ -16,7 +16,7 @@ var dir_9bfa6dacb50e0c9e4877cf880eaabccb =
     [ "buf.h", "bluetooth_2buf_8h.html", "bluetooth_2buf_8h" ],
     [ "conn.h", "conn_8h.html", "conn_8h" ],
     [ "controller.h", "bluetooth_2controller_8h.html", "bluetooth_2controller_8h" ],
-    [ "crypto.h", "crypto_8h.html", "crypto_8h" ],
+    [ "crypto.h", "bluetooth_2crypto_8h.html", "bluetooth_2crypto_8h" ],
     [ "direction.h", "direction_8h.html", "direction_8h" ],
     [ "gap.h", "gap_8h.html", "gap_8h" ],
     [ "gatt.h", "gatt_8h.html", "gatt_8h" ],

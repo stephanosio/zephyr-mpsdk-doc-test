@@ -740,7 +740,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="lifo_2lifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -784,7 +784,7 @@
       </memberdef>
       <memberdef kind="define" id="lifo_2lifo__usage_2src_2main_8c_1aa820b6b1cef8d50aa349ffeb5224c550" prot="public" static="no">
         <name>TSTACK_SIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -982,16 +982,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="lifo_2lifo__usage_2src_2main_8c_1a12cc64ae3e012d7dc5df490386732679" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="lifo_2lifo__usage_2src_2main_8c_1a2afd38b239841508c0f9e4be7ff14323" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1001,16 +1001,16 @@
         </inbodydescription>
         <location file="tests/kernel/lifo/lifo_usage/src/main.c" line="19" column="8" declfile="tests/kernel/lifo/lifo_usage/src/main.c" declline="19" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="lifo_2lifo__usage_2src_2main_8c_1a005f3ff2e4c6db0fdbf8e2982e9a3284" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="lifo_2lifo__usage_2src_2main_8c_1af0f49ba5e51d1ded5cf2806254e13e15" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack1,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack1,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>tstack1</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1049,10 +1049,10 @@
         </inbodydescription>
         <location file="tests/kernel/lifo/lifo_usage/src/main.c" line="391" column="6" bodyfile="tests/kernel/lifo/lifo_usage/src/main.c" bodystart="391" bodyend="403" declfile="tests/kernel/lifo/lifo_usage/src/main.c" declline="23" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="lifo_2lifo__usage_2src_2main_8c_1a00026105bda0a6d3e8fdd696087856b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="lifo_2lifo__usage_2src_2main_8c_1af16db179213852b840acaf969716cc5c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(ttstack, ARRAY_SIZE(timeout_order_data_mult_lifo),(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(ttstack, ARRAY_SIZE(timeout_order_data_mult_lifo),(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>ttstack</type>
@@ -1061,7 +1061,7 @@
           <type><ref refid="group__sys-util_1ga70c57aae3eb654e205459b4362c8089a" kindref="member">ARRAY_SIZE</ref>(<ref refid="lifo_2lifo__usage_2src_2main_8c_1a1fd033c55f39a8224571bd9d517d2d80" kindref="member">timeout_order_data_mult_lifo</ref>)</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1455,7 +1455,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lifo__usage_8h" kindref="compound">lifo_usage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;kernel.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIST_LEN<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__lifo" kindref="compound">k_lifo</ref><sp/><ref refid="test__lifo__contexts_8c_1a5f1a84796be0de3921a88115c3d4246c" kindref="member">lifo</ref>,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1ad49209c9d9de7c0b14a9653658dccd00" kindref="member">plifo</ref>;</highlight></codeline>
@@ -1463,8 +1463,8 @@
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__lifo" kindref="compound">k_lifo</ref><sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1ae58471171813ad6c0fe5633f48217485" kindref="member">timeout_order_lifo</ref>;</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="msgq_2msgq__api_2src_2main_8c_1aa15baae19d44279cac3d8bf47c9e707f" kindref="member">tdata</ref>,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a87820080b2c8123666581d2bb091ad83" kindref="member">tdata1</ref>;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack1,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(tstack1,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/>start_sema,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a5d0cc5d713735fa89850b86640297c19" kindref="member">wait_sema</ref>;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__kernel__lifo__tests_1ga5a6643de102a704a4d8c58ad60d728f0" kindref="member">test_thread_pend_and_timeout</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3);</highlight></codeline>
@@ -1511,7 +1511,7 @@
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_SCRATCH_LIFO_PACKETS<sp/>20</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT_ORDER_NUM_THREADS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARRAY_SIZE(timeout_order_data_mult_lifo)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSTACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSTACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIFO_THREAD_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-5</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structscratch__lifo__packet" kindref="compound">scratch_lifo_packet</ref><sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a8384448ce15fd16daa5f2752dc75a52a" kindref="member">scratch_lifo_packets</ref>[<ref refid="lifo_2lifo__usage_2src_2main_8c_1ad6120f3f18243f7a5963c5770b5cc84f" kindref="member">NUM_SCRATCH_LIFO_PACKETS</ref>];</highlight></codeline>
@@ -1519,7 +1519,7 @@
 <codeline lineno="72"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__lifo" kindref="compound">k_lifo</ref><sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a15ee89a8e567980c3f80c0c6bc476762" kindref="member">scratch_lifo_packets_lifo</ref>;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1ab22fd109a2d19f95c52654da17f67755" kindref="member">tid</ref>[<ref refid="lifo_2lifo__usage_2src_2main_8c_1a5ff0b278e1b36f06411942ceddabcbb1" kindref="member">TIMEOUT_ORDER_NUM_THREADS</ref>];</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(ttstack,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(ttstack,</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a5ff0b278e1b36f06411942ceddabcbb1" kindref="member">TIMEOUT_ORDER_NUM_THREADS</ref>,<sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1aa820b6b1cef8d50aa349ffeb5224c550" kindref="member">TSTACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="lifo_2lifo__usage_2src_2main_8c_1a6da61431f99934de705421b49049f0f8" kindref="member">ttdata</ref>[<ref refid="lifo_2lifo__usage_2src_2main_8c_1a5ff0b278e1b36f06411942ceddabcbb1" kindref="member">TIMEOUT_ORDER_NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>

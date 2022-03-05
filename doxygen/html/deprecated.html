@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -96,18 +96,10 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt>Global <a class="el" href="group__subsys__pm__device.html#ga9ee3ee2f5dac79c85fc901c179fbadf9">device_any_busy_check</a>  (void)</dt>
-<dd><a class="anchor" id="_deprecated000007"></a>Use <a class="el" href="group__subsys__pm__device.html#gae59a1fbcd2399717076fbfcee1e5e411" title="Check if any device is busy.">pm_device_is_any_busy()</a> instead </dd>
-<dt>Global <a class="el" href="group__subsys__pm__device.html#ga24bd4cb295002584c4f8183e937badc1">device_busy_check</a>  (const struct device *dev)</dt>
-<dd><a class="anchor" id="_deprecated000008"></a>Use <a class="el" href="group__subsys__pm__device.html#ga8ff7c3197d5ded860878302d00ac709c" title="Check if a device is busy.">pm_device_is_busy()</a> instead </dd>
-<dt>Global <a class="el" href="group__subsys__pm__device.html#gadff113f34359db32c8739294143a1c8f">device_busy_clear</a>  (const struct device *dev)</dt>
-<dd><a class="anchor" id="_deprecated000006"></a>Use <a class="el" href="group__subsys__pm__device.html#ga8b527314f0c61b85602876b4f5a52275" title="Clear a device busy status.">pm_device_busy_clear()</a> instead </dd>
-<dt>Global <a class="el" href="group__subsys__pm__device.html#gabfaec92a92766154b8b9ac9dd29f2c1e">device_busy_set</a>  (const struct device *dev)</dt>
-<dd><a class="anchor" id="_deprecated000005"></a>Use <a class="el" href="group__subsys__pm__device.html#ga7ea002352f3d1c90aecff1d54c255a06" title="Mark a device as busy.">pm_device_busy_set()</a> instead </dd>
 <dt>Global <a class="el" href="group__device__model.html#ga233b32dc38630069c1aee973fa52416e">device_usable_check</a>  (const struct device *dev)</dt>
 <dd><a class="anchor" id="_deprecated000003"></a>Use <a class="el" href="group__device__model.html#gaa4944bd850e90cbd52b0489f9b12edfb" title="Verify that a device is ready for use.">device_is_ready()</a> instead. </dd>
-<dt>Global <a class="el" href="group__subsys__pm__device.html#ga37fb93d42a507abc7aa51c4a08e5353c">pm_device_state_set</a>  (const struct device *dev, enum pm_device_state state)</dt>
-<dd><a class="anchor" id="_deprecated000004"></a>Use <a class="el" href="group__subsys__pm__device.html#ga3840d6e7832a00b93763247a5951bfde" title="Run a pm action on a device.">pm_device_action_run()</a> instead. </dd>
+<dt>Global <a class="el" href="group__nvs__high__level__api.html#ga7f17dc517f55d39ba1ef07d38cf4879b">nvs_init</a>  (struct <a class="el" href="structnvs__fs.html" title="Non-volatile Storage File system structure.">nvs_fs</a> *fs, const char *dev_name)</dt>
+<dd><a class="anchor" id="_deprecated000004"></a>Use <a class="el" href="group__nvs__high__level__api.html#gab932ea2d6e933825c2378bef8c30b065" title="nvs_mount">nvs_mount()</a> instead. </dd>
 <dt>Global <a class="el" href="group__device__model.html#ga42092d245664c3d59c30ceb4776bd642">SYS_DEVICE_DEFINE</a>  (drv_name, init_fn, level, prio)</dt>
 <dd><a class="anchor" id="_deprecated000001"></a>Use <a class="el" href="group__device__model.html#ga1e50fdff086356a75b0e91179952cc8d" title="Run an initialization function at boot at specified priority.">SYS_INIT()</a> instead.</dd>
 </dl>
@@ -118,7 +110,7 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

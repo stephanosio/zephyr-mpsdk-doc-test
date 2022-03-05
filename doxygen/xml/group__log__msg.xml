@@ -919,6 +919,26 @@
         </inbodydescription>
         <location file="include/logging/log_msg.h" line="483" column="10" declfile="include/logging/log_msg.h" declline="483" declcolumn="10"/>
       </memberdef>
+      <memberdef kind="function" id="group__log__msg_1ga9169257736149471c6b0692102a9330c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t log_msg_get_slab_size</definition>
+        <argsstring>(void)</argsstring>
+        <name>log_msg_get_slab_size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get slab size. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Size of a slab used in slab pool for log messages. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/logging/log_msg.h" line="490" column="8" declfile="include/logging/log_msg.h" declline="490" declcolumn="8"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="define">
       <memberdef kind="define" id="group__log__msg_1ga5900a85c32582b5a4ce3f46ee52b7e9e" prot="public" static="no">

@@ -120,10 +120,12 @@ var hl7800_8h =
       [ "MDM_RAT_CAT_M1", "hl7800_8h.html#a2d26759e8ea3aca2e8e4a6cccac2361aac95a4a3318b0683972336c1036f0548e", null ],
       [ "MDM_RAT_CAT_NB1", "hl7800_8h.html#a2d26759e8ea3aca2e8e4a6cccac2361aa30bba3902918ea11995cd3db20319d61", null ]
     ] ],
-    [ "mdm_hl7800_sleep_state", "hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707", [
-      [ "HL7800_SLEEP_STATE_UNINITIALIZED", "hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707a062b63b9b21f48348a190c1558012c72", null ],
-      [ "HL7800_SLEEP_STATE_ASLEEP", "hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707ab25eaa7f59ebe4495a01ebd76f6be8ff", null ],
-      [ "HL7800_SLEEP_STATE_AWAKE", "hl7800_8h.html#aa5bb68d2f392f6358f833f8c163a4707ab00559336013a5e4f1830fa464075f89", null ]
+    [ "mdm_hl7800_sleep", "hl7800_8h.html#a3396149e553c32a597739096efe2aff7", [
+      [ "HL7800_SLEEP_UNINITIALIZED", "hl7800_8h.html#a3396149e553c32a597739096efe2aff7af81cd0793c7faded881246c6a44b099a", null ],
+      [ "HL7800_SLEEP_HIBERNATE", "hl7800_8h.html#a3396149e553c32a597739096efe2aff7af1253aa2135a3c1fb0f3a47a1f0265a4", null ],
+      [ "HL7800_SLEEP_AWAKE", "hl7800_8h.html#a3396149e553c32a597739096efe2aff7ac7bf9c4685d31858b98d4188747387ba", null ],
+      [ "HL7800_SLEEP_LITE_HIBERNATE", "hl7800_8h.html#a3396149e553c32a597739096efe2aff7a58c8b0b7a63a3f85b14d0cd0eea4b452", null ],
+      [ "HL7800_SLEEP_SLEEP", "hl7800_8h.html#a3396149e553c32a597739096efe2aff7a37e4283b77e32e890f7cc3eca3985289", null ]
     ] ],
     [ "mdm_hl7800_startup_state", "hl7800_8h.html#aefcf9c39983d8f3f58bcd1a24ca04e99", [
       [ "HL7800_STARTUP_STATE_READY", "hl7800_8h.html#aefcf9c39983d8f3f58bcd1a24ca04e99aac2ef169e3273dd11331acae3abb9c6e", null ],
@@ -149,9 +151,13 @@ var hl7800_8h =
     [ "mdm_hl7800_polte_locate", "hl7800_8h.html#a1708f077ddb438f93b246b223e52a80d", null ],
     [ "mdm_hl7800_polte_register", "hl7800_8h.html#a8501f6d4883ee8577b5cda0f76d2a3dc", null ],
     [ "mdm_hl7800_power_off", "hl7800_8h.html#ae270849872a22823512cc87b0bbf877e", null ],
+    [ "mdm_hl7800_register_cts_callback", "hl7800_8h.html#aead5a1419d87676f13fdea12f705b125", null ],
     [ "mdm_hl7800_register_event_callback", "hl7800_8h.html#a4640c9f9e42e6f5b73c4344be5546796", null ],
+    [ "mdm_hl7800_register_gpio6_callback", "hl7800_8h.html#a0e5213411b27b4c5eeffd746464332a8", null ],
+    [ "mdm_hl7800_register_wake_test_point_callback", "hl7800_8h.html#a16ac0447c88a9f025fc13009e63f46ef", null ],
     [ "mdm_hl7800_reset", "hl7800_8h.html#a956932a3c7d45f5ab0c3c99aa1decfb4", null ],
     [ "mdm_hl7800_send_at_cmd", "hl7800_8h.html#a82805bc8e86e4a7dcffee5f604194f30", null ],
+    [ "mdm_hl7800_set_desired_sleep_level", "hl7800_8h.html#a2388ecc33d15263091c63185ccda3ea3", null ],
     [ "mdm_hl7800_set_functionality", "hl7800_8h.html#a1ca397e9e9db680dc6083ba2b4c08a70", null ],
     [ "mdm_hl7800_set_gps_rate", "hl7800_8h.html#a2946b1d49c63084188f5f6c5dcebaaf2", null ],
     [ "mdm_hl7800_update_apn", "hl7800_8h.html#a3bf4e149e475d8a7c1f462c7de2dda80", null ],

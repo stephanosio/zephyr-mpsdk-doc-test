@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="87" column="1" bodyfile="include/net/lwm2m.h" bodystart="87" bodyend="92"/>
+        <location file="include/net/lwm2m.h" line="88" column="1" bodyfile="include/net/lwm2m.h" bodystart="88" bodyend="93"/>
       </memberdef>
       <memberdef kind="enum" id="group__lwm2m__api_1gaca90ab8960a4ff01d44735dbc0405862" prot="public" static="no" strong="no">
         <type></type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1097" column="1" bodyfile="include/net/lwm2m.h" bodystart="1097" bodyend="1110"/>
+        <location file="include/net/lwm2m.h" line="1111" column="1" bodyfile="include/net/lwm2m.h" bodystart="1111" bodyend="1124"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="74" column="9" bodyfile="include/net/lwm2m.h" bodystart="74" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="75" column="9" bodyfile="include/net/lwm2m.h" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__lwm2m__api_1gad7bea67e16e1e831e0f949dbf83d5afe" prot="public" static="no">
         <type>void(*</type>
@@ -197,7 +197,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="104" column="9" bodyfile="include/net/lwm2m.h" bodystart="104" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="105" column="9" bodyfile="include/net/lwm2m.h" bodystart="105" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__lwm2m__api_1ga5e531aade0537eb5e3f5756e9287e384" prot="public" static="no">
         <type>void *(*</type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="204" column="9" bodyfile="include/net/lwm2m.h" bodystart="204" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="205" column="9" bodyfile="include/net/lwm2m.h" bodystart="205" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__lwm2m__api_1ga02d8748f5b75e1f4344dd05def597ba9" prot="public" static="no">
         <type>int(*</type>
@@ -325,7 +325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="235" column="9" bodyfile="include/net/lwm2m.h" bodystart="235" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="236" column="9" bodyfile="include/net/lwm2m.h" bodystart="236" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__lwm2m__api_1gabcbca483b310e0c4cd68aef2d9cda0bf" prot="public" static="no">
         <type>int(*</type>
@@ -353,7 +353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="256" column="9" bodyfile="include/net/lwm2m.h" bodystart="256" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="257" column="9" bodyfile="include/net/lwm2m.h" bodystart="257" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__lwm2m__api_1gaeb32bcd4981b4c7bd891f99668ebc0fe" prot="public" static="no">
         <type>int(*</type>
@@ -397,7 +397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="274" column="9" bodyfile="include/net/lwm2m.h" bodystart="274" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="275" column="9" bodyfile="include/net/lwm2m.h" bodystart="275" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__lwm2m__api_1ga38dbaf038426efc75d889c4a0666dac9" prot="public" static="no">
         <type>void(*</type>
@@ -429,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1127" column="9" bodyfile="include/net/lwm2m.h" bodystart="1127" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="1141" column="9" bodyfile="include/net/lwm2m.h" bodystart="1141" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -461,7 +461,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="327" column="5" declfile="include/net/lwm2m.h" declline="327" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="328" column="5" declfile="include/net/lwm2m.h" declline="328" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga1fad6f6c3282679391266bdcb1471927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -504,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="555" column="5" declfile="include/net/lwm2m.h" declline="555" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="556" column="5" declfile="include/net/lwm2m.h" declline="556" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga1bca884b976046adf194831014577583" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -547,7 +547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="570" column="5" declfile="include/net/lwm2m.h" declline="570" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="571" column="5" declfile="include/net/lwm2m.h" declline="571" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga32f393a9e302f1f60839fd2147ebd7e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -578,7 +578,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="583" column="5" declfile="include/net/lwm2m.h" declline="583" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="584" column="5" declfile="include/net/lwm2m.h" declline="584" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga3849e960b54bcb089ac00476da8fb430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -609,7 +609,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="594" column="5" declfile="include/net/lwm2m.h" declline="594" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="595" column="5" declfile="include/net/lwm2m.h" declline="595" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga2ff02c8738567f3cb7bc265f53235a0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -663,7 +663,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="605" column="5" declfile="include/net/lwm2m.h" declline="605" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="606" column="5" declfile="include/net/lwm2m.h" declline="606" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gad1cbe96cd70958610f1285362e6e0a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -705,7 +705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="615" column="5" declfile="include/net/lwm2m.h" declline="615" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="616" column="5" declfile="include/net/lwm2m.h" declline="616" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga00a61b227bae53a70b0092bb94801ea8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -747,7 +747,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="625" column="5" declfile="include/net/lwm2m.h" declline="625" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="626" column="5" declfile="include/net/lwm2m.h" declline="626" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga4fcea78d9506822ee76df465cf71ffdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -789,7 +789,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="635" column="5" declfile="include/net/lwm2m.h" declline="635" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="636" column="5" declfile="include/net/lwm2m.h" declline="636" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga326c722de4ecdcbc09adb52c83cf6400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -831,7 +831,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="645" column="5" declfile="include/net/lwm2m.h" declline="645" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="646" column="5" declfile="include/net/lwm2m.h" declline="646" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga7d04c579284369233156a0597f09ab83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -873,7 +873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="655" column="5" declfile="include/net/lwm2m.h" declline="655" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="656" column="5" declfile="include/net/lwm2m.h" declline="656" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gae665c8bb81c0aef3b960b087ff0f97f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -915,7 +915,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="665" column="5" declfile="include/net/lwm2m.h" declline="665" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="666" column="5" declfile="include/net/lwm2m.h" declline="666" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga1dd4952af0029c94a71f74734ae3a16c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -957,7 +957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="675" column="5" declfile="include/net/lwm2m.h" declline="675" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="676" column="5" declfile="include/net/lwm2m.h" declline="676" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga4f45dc38b5e6a55633474ff5d5447ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -999,7 +999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="685" column="5" declfile="include/net/lwm2m.h" declline="685" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="686" column="5" declfile="include/net/lwm2m.h" declline="686" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga11619cc0907010018217b8d67e9e9f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1041,7 +1041,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="695" column="5" declfile="include/net/lwm2m.h" declline="695" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="696" column="5" declfile="include/net/lwm2m.h" declline="696" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga8c82346313a9bf1234f72d71a5db34f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1083,7 +1083,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="705" column="5" declfile="include/net/lwm2m.h" declline="705" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="706" column="5" declfile="include/net/lwm2m.h" declline="706" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gaa2ab787a41cc647058bcdce3be8ba96b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1125,7 +1125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="715" column="5" declfile="include/net/lwm2m.h" declline="715" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="716" column="5" declfile="include/net/lwm2m.h" declline="716" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga9b327039d3bb82579b586ade4b271d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1167,7 +1167,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="725" column="5" declfile="include/net/lwm2m.h" declline="725" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="726" column="5" declfile="include/net/lwm2m.h" declline="726" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga3439a579648c15bfe8883337c4618095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1221,7 +1221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="736" column="5" declfile="include/net/lwm2m.h" declline="736" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="737" column="5" declfile="include/net/lwm2m.h" declline="737" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gad206114e4521e7aa4286b167d0454365" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1275,7 +1275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="747" column="5" declfile="include/net/lwm2m.h" declline="747" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="748" column="5" declfile="include/net/lwm2m.h" declline="748" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga50ee578c777c7b8a1b0fbe028c8342ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1317,7 +1317,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="757" column="5" declfile="include/net/lwm2m.h" declline="757" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="758" column="5" declfile="include/net/lwm2m.h" declline="758" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga68986109d78b60f83f9cd85742ed80fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1359,7 +1359,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="767" column="5" declfile="include/net/lwm2m.h" declline="767" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="768" column="5" declfile="include/net/lwm2m.h" declline="768" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gafddb717b3f43619e03a240660f65eb03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1401,7 +1401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="777" column="5" declfile="include/net/lwm2m.h" declline="777" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="778" column="5" declfile="include/net/lwm2m.h" declline="778" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga8d9068217afe09b0930996e5796b8aac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1443,7 +1443,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="787" column="5" declfile="include/net/lwm2m.h" declline="787" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="788" column="5" declfile="include/net/lwm2m.h" declline="788" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga701d36c7b7a63c8214bfa30c0c19c946" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1485,7 +1485,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="797" column="5" declfile="include/net/lwm2m.h" declline="797" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="798" column="5" declfile="include/net/lwm2m.h" declline="798" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga96f29e6d897b96fedc7f3e19bd906f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1527,7 +1527,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="807" column="5" declfile="include/net/lwm2m.h" declline="807" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="808" column="5" declfile="include/net/lwm2m.h" declline="808" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga40895289c1c8b778b6bf30d444dda63a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1569,7 +1569,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="817" column="5" declfile="include/net/lwm2m.h" declline="817" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="818" column="5" declfile="include/net/lwm2m.h" declline="818" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga7ad1a482074d033ad1def72882efd245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1611,7 +1611,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="827" column="5" declfile="include/net/lwm2m.h" declline="827" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="828" column="5" declfile="include/net/lwm2m.h" declline="828" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga606e281a1146f930d7c0675d5881c7d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1653,7 +1653,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="837" column="5" declfile="include/net/lwm2m.h" declline="837" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="838" column="5" declfile="include/net/lwm2m.h" declline="838" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga0a272643082347fe6044bddbd7e5cebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1695,7 +1695,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="847" column="5" declfile="include/net/lwm2m.h" declline="847" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="848" column="5" declfile="include/net/lwm2m.h" declline="848" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gaf4b23e412fcff5f2838f3e232a3cd224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1737,7 +1737,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="857" column="5" declfile="include/net/lwm2m.h" declline="857" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="858" column="5" declfile="include/net/lwm2m.h" declline="858" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga21d15060cce1c039a11106d71d681f4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1780,7 +1780,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="870" column="5" declfile="include/net/lwm2m.h" declline="870" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="871" column="5" declfile="include/net/lwm2m.h" declline="871" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga1354bc59163db5b3435e8e86c8feafd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1823,7 +1823,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="885" column="5" declfile="include/net/lwm2m.h" declline="885" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="886" column="5" declfile="include/net/lwm2m.h" declline="886" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gac1c92e1ee3a804b325aacfe116bad096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1869,7 +1869,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="908" column="5" declfile="include/net/lwm2m.h" declline="908" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="909" column="5" declfile="include/net/lwm2m.h" declline="909" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga5c43bcdb0575f8c56354d6b4e30641a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1913,7 +1913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="925" column="5" declfile="include/net/lwm2m.h" declline="925" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="926" column="5" declfile="include/net/lwm2m.h" declline="926" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gad213063b7e68bd7b4f3ce3de3736a237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1956,7 +1956,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="938" column="5" declfile="include/net/lwm2m.h" declline="938" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="939" column="5" declfile="include/net/lwm2m.h" declline="939" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gaa198bfb55f98183cbd33169468ae0bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1999,7 +1999,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="951" column="5" declfile="include/net/lwm2m.h" declline="951" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="952" column="5" declfile="include/net/lwm2m.h" declline="952" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga6a5dfdd29055bed245bf16ecc5829f95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2042,7 +2042,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="964" column="5" declfile="include/net/lwm2m.h" declline="964" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="965" column="5" declfile="include/net/lwm2m.h" declline="965" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gabf56a29aec75675099df2d45ca802718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2109,7 +2109,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="995" column="5" declfile="include/net/lwm2m.h" declline="995" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="996" column="5" declfile="include/net/lwm2m.h" declline="996" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga630079a8d2f2acae1c313297cfdbada9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2176,7 +2176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1011" column="5" declfile="include/net/lwm2m.h" declline="1011" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="1012" column="5" declfile="include/net/lwm2m.h" declline="1012" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga64b0427f36b6d2d2f8af8cc2e35cdb89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2207,7 +2207,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1025" column="5" declfile="include/net/lwm2m.h" declline="1025" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="1026" column="5" declfile="include/net/lwm2m.h" declline="1026" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gac188cd5fdd226dd105d73a4e391c601b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2238,7 +2238,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1036" column="5" declfile="include/net/lwm2m.h" declline="1036" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="1037" column="5" declfile="include/net/lwm2m.h" declline="1037" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga147f2abc69dfc9189a44f047840a049d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2281,7 +2281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1051" column="5" declfile="include/net/lwm2m.h" declline="1051" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="1052" column="5" declfile="include/net/lwm2m.h" declline="1052" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gab45cebf6f0b6b70974367ca453d16aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2312,7 +2312,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1063" column="5" declfile="include/net/lwm2m.h" declline="1063" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="1064" column="5" declfile="include/net/lwm2m.h" declline="1064" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lwm2m__api_1ga07149d4b624a7294f4508df8c1681b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
+        <definition>bool lwm2m_engine_path_is_observed</definition>
+        <argsstring>(const char *pathstr)</argsstring>
+        <name>lwm2m_engine_path_is_observed</name>
+        <param>
+          <type>const char *</type>
+          <declname>pathstr</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a path is observed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pathstr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LwM2M path string to check, e.g. &quot;3/0/1&quot;</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true when there exists an observation of the same level or lower as the given path, false if it doesn&apos;t or path is not a valid LwM2M-path. E.g. true if path refers to a resource and the parent object has an observation, false for the inverse. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/lwm2m.h" line="1077" column="6" declfile="include/net/lwm2m.h" declline="1077" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga9f72fbd0163b15c48ea09cf7d511e444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2343,7 +2373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1076" column="5" declfile="include/net/lwm2m.h" declline="1076" declcolumn="5"/>
+        <location file="include/net/lwm2m.h" line="1090" column="5" declfile="include/net/lwm2m.h" declline="1090" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga919c7d6f418cda99c77fdaf54ae1a7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2372,7 +2402,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1089" column="6" declfile="include/net/lwm2m.h" declline="1089" declcolumn="6"/>
+        <location file="include/net/lwm2m.h" line="1103" column="6" declfile="include/net/lwm2m.h" declline="1103" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga48d4fcf0409e85d4d35d717b26bdaf2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2450,7 +2480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1148" column="6" declfile="include/net/lwm2m.h" declline="1148" declcolumn="6"/>
+        <location file="include/net/lwm2m.h" line="1162" column="6" declfile="include/net/lwm2m.h" declline="1162" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga77f9c2d95fa3ab530811f09088fbc2e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2503,7 +2533,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1165" column="6" declfile="include/net/lwm2m.h" declline="1165" declcolumn="6"/>
+        <location file="include/net/lwm2m.h" line="1179" column="6" declfile="include/net/lwm2m.h" declline="1179" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1gab4ec7a22d01259b6ba9d3a7b6681e6f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2520,7 +2550,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1171" column="6" declfile="include/net/lwm2m.h" declline="1171" declcolumn="6"/>
+        <location file="include/net/lwm2m.h" line="1185" column="6" declfile="include/net/lwm2m.h" declline="1185" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__lwm2m__api_1ga29b99da5a120ad1073710c3b2e78f14d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>char *</type>
@@ -2562,7 +2592,75 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1186" column="6" declfile="include/net/lwm2m.h" declline="1186" declcolumn="6"/>
+        <location file="include/net/lwm2m.h" line="1200" column="6" declfile="include/net/lwm2m.h" declline="1200" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__lwm2m__api_1ga5a0eed7bf3593f698194e5e047b07fa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int lwm2m_engine_send</definition>
+        <argsstring>(struct lwm2m_ctx *ctx, char const *path_list[], uint8_t path_list_size, bool confirmation_request)</argsstring>
+        <name>lwm2m_engine_send</name>
+        <param>
+          <type>struct <ref refid="structlwm2m__ctx" kindref="compound">lwm2m_ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>char const *</type>
+          <declname>path_list</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
+          <declname>path_list_size</declname>
+        </param>
+        <param>
+          <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref></type>
+          <declname>confirmation_request</declname>
+        </param>
+        <briefdescription>
+<para> LwM2M SEND operation to given path list </para>
+        </briefdescription>
+        <detaileddescription>
+<para> </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ctx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LwM2M context </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LwM2M Path string list </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>path_list_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Length of path list. Max size is CONFIG_LWM2M_COMPOSITE_PATH_LIST_SIZE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>confirmation_request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True request confirmation for operation.    </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success or negative in case of error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/lwm2m.h" line="1213" column="5" declfile="include/net/lwm2m.h" declline="1213" declcolumn="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -2666,6 +2764,17 @@
         </inbodydescription>
         <location file="include/net/lwm2m.h" line="47" column="9" bodyfile="include/net/lwm2m.h" bodystart="47" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="group__lwm2m__api_1ga4b4ce912a4554923974461ea3c76007e" prot="public" static="no">
+        <name>LWM2M_OBJECT_PORTFOLIO_ID</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/net/lwm2m.h" line="48" column="9" bodyfile="include/net/lwm2m.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga3505e9ddcd54afe86e8bd5fbc03fb565" prot="public" static="no">
         <name>LWM2M_OBJECT_GATEWAY_ID</name>
         <initializer>25</initializer>
@@ -2675,7 +2784,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="48" column="9" bodyfile="include/net/lwm2m.h" bodystart="48" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="49" column="9" bodyfile="include/net/lwm2m.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaeef485c23d306c93fc0f45dd58766ad9" prot="public" static="no">
         <name>IPSO_OBJECT_GENERIC_SENSOR_ID</name>
@@ -2687,7 +2796,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="59" column="9" bodyfile="include/net/lwm2m.h" bodystart="59" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="60" column="9" bodyfile="include/net/lwm2m.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga3b0c046d93c7bcee9d4da121dd574ff0" prot="public" static="no">
         <name>IPSO_OBJECT_TEMP_SENSOR_ID</name>
@@ -2698,7 +2807,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="60" column="9" bodyfile="include/net/lwm2m.h" bodystart="60" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="61" column="9" bodyfile="include/net/lwm2m.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga8075d8b7eb3b4c98f621efef673bb11f" prot="public" static="no">
         <name>IPSO_OBJECT_HUMIDITY_SENSOR_ID</name>
@@ -2709,7 +2818,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="61" column="9" bodyfile="include/net/lwm2m.h" bodystart="61" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="62" column="9" bodyfile="include/net/lwm2m.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga56ebac5260ee467b3763abe49ff3b8ff" prot="public" static="no">
         <name>IPSO_OBJECT_LIGHT_CONTROL_ID</name>
@@ -2720,7 +2829,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="62" column="9" bodyfile="include/net/lwm2m.h" bodystart="62" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="63" column="9" bodyfile="include/net/lwm2m.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga0b3b9db806e5fe47cc08de34b5fb35fe" prot="public" static="no">
         <name>IPSO_OBJECT_ACCELEROMETER_ID</name>
@@ -2731,7 +2840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="63" column="9" bodyfile="include/net/lwm2m.h" bodystart="63" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="64" column="9" bodyfile="include/net/lwm2m.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gae511fd54112829e63c691776750893c2" prot="public" static="no">
         <name>IPSO_OBJECT_CURRENT_SENSOR_ID</name>
@@ -2742,7 +2851,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="64" column="9" bodyfile="include/net/lwm2m.h" bodystart="64" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="65" column="9" bodyfile="include/net/lwm2m.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga752f81e91d0965a50ecfb0679bdea6ba" prot="public" static="no">
         <name>IPSO_OBJECT_PRESSURE_ID</name>
@@ -2753,7 +2862,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="65" column="9" bodyfile="include/net/lwm2m.h" bodystart="65" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="66" column="9" bodyfile="include/net/lwm2m.h" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga15d664ddbfbf4d5b25dde34a5c650e6b" prot="public" static="no">
         <name>IPSO_OBJECT_BUZZER_ID</name>
@@ -2764,7 +2873,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="66" column="9" bodyfile="include/net/lwm2m.h" bodystart="66" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="67" column="9" bodyfile="include/net/lwm2m.h" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga6c7bd5880fa22050748c2cb01981cbcb" prot="public" static="no">
         <name>IPSO_OBJECT_TIMER_ID</name>
@@ -2775,7 +2884,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="67" column="9" bodyfile="include/net/lwm2m.h" bodystart="67" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="68" column="9" bodyfile="include/net/lwm2m.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga776a6a5e1eab3a8de0a39382f94b663a" prot="public" static="no">
         <name>IPSO_OBJECT_ONOFF_SWITCH_ID</name>
@@ -2786,7 +2895,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="68" column="9" bodyfile="include/net/lwm2m.h" bodystart="68" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="69" column="9" bodyfile="include/net/lwm2m.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga6e3119bc8f0b9143ab384e82a5bccf7c" prot="public" static="no">
         <name>IPSO_OBJECT_PUSH_BUTTON_ID</name>
@@ -2797,7 +2906,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="69" column="9" bodyfile="include/net/lwm2m.h" bodystart="69" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="70" column="9" bodyfile="include/net/lwm2m.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gacdd09a26ce52f36c644a89a8b89f7d32" prot="public" static="no">
         <name>UCIFI_OBJECT_BATTERY_ID</name>
@@ -2808,7 +2917,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="70" column="9" bodyfile="include/net/lwm2m.h" bodystart="70" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="71" column="9" bodyfile="include/net/lwm2m.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga21f6bc6255f5f5ed28881fa797d026ca" prot="public" static="no">
         <name>IPSO_OBJECT_FILLING_LEVEL_SENSOR_ID</name>
@@ -2819,7 +2928,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="71" column="9" bodyfile="include/net/lwm2m.h" bodystart="71" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="72" column="9" bodyfile="include/net/lwm2m.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gae154ca2e54ec7759dd43f2a7a275077e" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_DC_POWER</name>
@@ -2831,7 +2940,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="281" column="9" bodyfile="include/net/lwm2m.h" bodystart="281" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="282" column="9" bodyfile="include/net/lwm2m.h" bodystart="282" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga04ca8ac536eed7d411c1b1ea2b2a59ac" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_BAT_INT</name>
@@ -2842,7 +2951,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="282" column="9" bodyfile="include/net/lwm2m.h" bodystart="282" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="283" column="9" bodyfile="include/net/lwm2m.h" bodystart="283" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaf12052f903a688712928d036b782f621" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_BAT_EXT</name>
@@ -2853,7 +2962,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="283" column="9" bodyfile="include/net/lwm2m.h" bodystart="283" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="284" column="9" bodyfile="include/net/lwm2m.h" bodystart="284" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga19c783f9d43a20ff17d18a86c9f83613" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_UNUSED</name>
@@ -2864,7 +2973,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="284" column="9" bodyfile="include/net/lwm2m.h" bodystart="284" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="285" column="9" bodyfile="include/net/lwm2m.h" bodystart="285" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga72352523996e61ea93caff0bb80c42ba" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_PWR_OVER_ETH</name>
@@ -2875,7 +2984,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="285" column="9" bodyfile="include/net/lwm2m.h" bodystart="285" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="286" column="9" bodyfile="include/net/lwm2m.h" bodystart="286" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga4877877be75d3dd3c8f600b438b7ea8e" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_USB</name>
@@ -2886,7 +2995,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="286" column="9" bodyfile="include/net/lwm2m.h" bodystart="286" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="287" column="9" bodyfile="include/net/lwm2m.h" bodystart="287" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga97b9d38ec402478f10642f1f83a4f88a" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_AC_POWER</name>
@@ -2897,7 +3006,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="287" column="9" bodyfile="include/net/lwm2m.h" bodystart="287" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="288" column="9" bodyfile="include/net/lwm2m.h" bodystart="288" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaa41ec1d2ca43e1385cfb11204aff729d" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_SOLAR</name>
@@ -2908,7 +3017,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="288" column="9" bodyfile="include/net/lwm2m.h" bodystart="288" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="289" column="9" bodyfile="include/net/lwm2m.h" bodystart="289" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gae7a580aac1804abbcf3feb57a5a30a02" prot="public" static="no">
         <name>LWM2M_DEVICE_PWR_SRC_TYPE_MAX</name>
@@ -2919,7 +3028,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="289" column="9" bodyfile="include/net/lwm2m.h" bodystart="289" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="290" column="9" bodyfile="include/net/lwm2m.h" bodystart="290" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gad54ec75eb2843d5eed199ddedca6ef4f" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_NONE</name>
@@ -2931,7 +3040,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="296" column="9" bodyfile="include/net/lwm2m.h" bodystart="296" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="297" column="9" bodyfile="include/net/lwm2m.h" bodystart="297" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga53a9ee1ae09dd32a8dc2df6018798f9f" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_LOW_POWER</name>
@@ -2942,7 +3051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="297" column="9" bodyfile="include/net/lwm2m.h" bodystart="297" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="298" column="9" bodyfile="include/net/lwm2m.h" bodystart="298" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga33152ea4ef497b02a12d1218d470a5a6" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_EXT_POWER_SUPPLY_OFF</name>
@@ -2953,7 +3062,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="298" column="9" bodyfile="include/net/lwm2m.h" bodystart="298" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="299" column="9" bodyfile="include/net/lwm2m.h" bodystart="299" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga3c1b7693167ff517c5cbd7bbdbfd1ea0" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_GPS_FAILURE</name>
@@ -2964,7 +3073,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="299" column="9" bodyfile="include/net/lwm2m.h" bodystart="299" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="300" column="9" bodyfile="include/net/lwm2m.h" bodystart="300" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga78048382d8bc85bbabbff58f0a9860f2" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_LOW_SIGNAL_STRENGTH</name>
@@ -2975,7 +3084,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="300" column="9" bodyfile="include/net/lwm2m.h" bodystart="300" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="301" column="9" bodyfile="include/net/lwm2m.h" bodystart="301" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga94ce0177c066dd43ef660b85afc83485" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_OUT_OF_MEMORY</name>
@@ -2986,7 +3095,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="301" column="9" bodyfile="include/net/lwm2m.h" bodystart="301" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="302" column="9" bodyfile="include/net/lwm2m.h" bodystart="302" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gabcb39cd3757ea60859984f6ad0df9e31" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_SMS_FAILURE</name>
@@ -2997,7 +3106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="302" column="9" bodyfile="include/net/lwm2m.h" bodystart="302" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="303" column="9" bodyfile="include/net/lwm2m.h" bodystart="303" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga2110d71a0c58087ff877e66b7500ba66" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_NETWORK_FAILURE</name>
@@ -3008,7 +3117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="303" column="9" bodyfile="include/net/lwm2m.h" bodystart="303" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="304" column="9" bodyfile="include/net/lwm2m.h" bodystart="304" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga77e6352eace8116576c880bf7e416ba3" prot="public" static="no">
         <name>LWM2M_DEVICE_ERROR_PERIPHERAL_FAILURE</name>
@@ -3019,7 +3128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="304" column="9" bodyfile="include/net/lwm2m.h" bodystart="304" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="305" column="9" bodyfile="include/net/lwm2m.h" bodystart="305" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga4329c971f95f1c345381d1c864a9f334" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_NORMAL</name>
@@ -3031,7 +3140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="312" column="9" bodyfile="include/net/lwm2m.h" bodystart="312" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="313" column="9" bodyfile="include/net/lwm2m.h" bodystart="313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaf19da3a566782aeebebfb6ff110a9152" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_CHARGING</name>
@@ -3042,7 +3151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="313" column="9" bodyfile="include/net/lwm2m.h" bodystart="313" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="314" column="9" bodyfile="include/net/lwm2m.h" bodystart="314" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga5f7e88b52d8e6029467a2ed10585e6d4" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_CHARGE_COMP</name>
@@ -3053,7 +3162,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="314" column="9" bodyfile="include/net/lwm2m.h" bodystart="314" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="315" column="9" bodyfile="include/net/lwm2m.h" bodystart="315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaa3f81df5e4d45838922eb20a15ee3153" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_DAMAGED</name>
@@ -3064,7 +3173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="315" column="9" bodyfile="include/net/lwm2m.h" bodystart="315" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="316" column="9" bodyfile="include/net/lwm2m.h" bodystart="316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga578f6446ec1b70d2a32917abf1f5aad7" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_LOW</name>
@@ -3075,7 +3184,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="316" column="9" bodyfile="include/net/lwm2m.h" bodystart="316" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="317" column="9" bodyfile="include/net/lwm2m.h" bodystart="317" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gacc3dfc99fc2cd9ef7048b1a0a0fd55c8" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_NOT_INST</name>
@@ -3086,7 +3195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="317" column="9" bodyfile="include/net/lwm2m.h" bodystart="317" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="318" column="9" bodyfile="include/net/lwm2m.h" bodystart="318" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga174e118b07982b87c6c083236b79c3b7" prot="public" static="no">
         <name>LWM2M_DEVICE_BATTERY_STATUS_UNKNOWN</name>
@@ -3097,7 +3206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="318" column="9" bodyfile="include/net/lwm2m.h" bodystart="318" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="319" column="9" bodyfile="include/net/lwm2m.h" bodystart="319" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaafff27c7165f059a969fe60fee51f683" prot="public" static="no">
         <name>STATE_IDLE</name>
@@ -3110,7 +3219,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="336" column="9" bodyfile="include/net/lwm2m.h" bodystart="336" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="337" column="9" bodyfile="include/net/lwm2m.h" bodystart="337" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaeb34e88a0da4ac1274ae6b2cef010086" prot="public" static="no">
         <name>STATE_DOWNLOADING</name>
@@ -3121,7 +3230,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="337" column="9" bodyfile="include/net/lwm2m.h" bodystart="337" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="338" column="9" bodyfile="include/net/lwm2m.h" bodystart="338" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga009085120be71a28c1f6ebdaf7503365" prot="public" static="no">
         <name>STATE_DOWNLOADED</name>
@@ -3132,7 +3241,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="338" column="9" bodyfile="include/net/lwm2m.h" bodystart="338" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="339" column="9" bodyfile="include/net/lwm2m.h" bodystart="339" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gaac1dab8d1ac28bf13faeee39d1df47c5" prot="public" static="no">
         <name>STATE_UPDATING</name>
@@ -3143,7 +3252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="339" column="9" bodyfile="include/net/lwm2m.h" bodystart="339" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="340" column="9" bodyfile="include/net/lwm2m.h" bodystart="340" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga391b47507468bbc1005903a56f80b1ea" prot="public" static="no">
         <name>RESULT_DEFAULT</name>
@@ -3156,7 +3265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="347" column="9" bodyfile="include/net/lwm2m.h" bodystart="347" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="348" column="9" bodyfile="include/net/lwm2m.h" bodystart="348" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga7cc1753a05a0821f6c70dd2bccfbab5c" prot="public" static="no">
         <name>RESULT_SUCCESS</name>
@@ -3167,7 +3276,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="348" column="9" bodyfile="include/net/lwm2m.h" bodystart="348" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="349" column="9" bodyfile="include/net/lwm2m.h" bodystart="349" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga829f7bc83b67dcf16ea4775addd87343" prot="public" static="no">
         <name>RESULT_NO_STORAGE</name>
@@ -3178,7 +3287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="349" column="9" bodyfile="include/net/lwm2m.h" bodystart="349" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="350" column="9" bodyfile="include/net/lwm2m.h" bodystart="350" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gab5446111a8969aa2c66dae49f04c93cf" prot="public" static="no">
         <name>RESULT_OUT_OF_MEM</name>
@@ -3189,7 +3298,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="350" column="9" bodyfile="include/net/lwm2m.h" bodystart="350" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="351" column="9" bodyfile="include/net/lwm2m.h" bodystart="351" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga0655ba8c402d8b6c8bbd84fb36447bd4" prot="public" static="no">
         <name>RESULT_CONNECTION_LOST</name>
@@ -3200,7 +3309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="351" column="9" bodyfile="include/net/lwm2m.h" bodystart="351" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="352" column="9" bodyfile="include/net/lwm2m.h" bodystart="352" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gadfd0ac7b6a3fededa2b4471dfe52d3d2" prot="public" static="no">
         <name>RESULT_INTEGRITY_FAILED</name>
@@ -3211,7 +3320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="352" column="9" bodyfile="include/net/lwm2m.h" bodystart="352" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="353" column="9" bodyfile="include/net/lwm2m.h" bodystart="353" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gab06dbfdac0c95f8100908a1177f3a62a" prot="public" static="no">
         <name>RESULT_UNSUP_FW</name>
@@ -3222,7 +3331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="353" column="9" bodyfile="include/net/lwm2m.h" bodystart="353" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="354" column="9" bodyfile="include/net/lwm2m.h" bodystart="354" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga268204053d7e23737283523224699979" prot="public" static="no">
         <name>RESULT_INVALID_URI</name>
@@ -3233,7 +3342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="354" column="9" bodyfile="include/net/lwm2m.h" bodystart="354" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="355" column="9" bodyfile="include/net/lwm2m.h" bodystart="355" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga2dfdd95c2c03ccca25d855b6d6f96ed3" prot="public" static="no">
         <name>RESULT_UPDATE_FAILED</name>
@@ -3244,7 +3353,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="355" column="9" bodyfile="include/net/lwm2m.h" bodystart="355" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="356" column="9" bodyfile="include/net/lwm2m.h" bodystart="356" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1gade3da37a44ee40292ec6344403db8d8d" prot="public" static="no">
         <name>RESULT_UNSUP_PROTO</name>
@@ -3255,7 +3364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="356" column="9" bodyfile="include/net/lwm2m.h" bodystart="356" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="357" column="9" bodyfile="include/net/lwm2m.h" bodystart="357" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga34febb0c6fb1c68b0963a6e4dd721763" prot="public" static="no">
         <name>LWM2M_OBJLNK_MAX_ID</name>
@@ -3267,7 +3376,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="532" column="9" bodyfile="include/net/lwm2m.h" bodystart="532" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="533" column="9" bodyfile="include/net/lwm2m.h" bodystart="533" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga12c2e0af3d3fc6dd5785e08c0d831a67" prot="public" static="no">
         <name>LWM2M_RES_DATA_READ_ONLY</name>
@@ -3279,7 +3388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="970" column="9" bodyfile="include/net/lwm2m.h" bodystart="970" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="971" column="9" bodyfile="include/net/lwm2m.h" bodystart="971" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga1bfa5b7d83e3560828a1fb61a4d07355" prot="public" static="no">
         <name>LWM2M_RES_DATA_FLAG_RO</name>
@@ -3291,7 +3400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="975" column="9" bodyfile="include/net/lwm2m.h" bodystart="975" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="976" column="9" bodyfile="include/net/lwm2m.h" bodystart="976" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga49f4117dfec8cd1abe9f827e235f55b0" prot="public" static="no">
         <name>LWM2M_HAS_RES_FLAG</name>
@@ -3305,7 +3414,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="980" column="9" bodyfile="include/net/lwm2m.h" bodystart="980" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="981" column="9" bodyfile="include/net/lwm2m.h" bodystart="981" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga3a3669237762fa8c23686e5e00b7809f" prot="public" static="no">
         <name>LWM2M_RD_CLIENT_FLAG_BOOTSTRAP</name>
@@ -3317,7 +3426,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1119" column="9" bodyfile="include/net/lwm2m.h" bodystart="1119" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="1133" column="9" bodyfile="include/net/lwm2m.h" bodystart="1133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__lwm2m__api_1ga3dbd6db45f3db418087d5ee94568c88f" prot="public" static="no">
         <name>LWM2M_MAX_PATH_STR_LEN</name>
@@ -3329,7 +3438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/net/lwm2m.h" line="1176" column="9" bodyfile="include/net/lwm2m.h" bodystart="1176" bodyend="-1"/>
+        <location file="include/net/lwm2m.h" line="1190" column="9" bodyfile="include/net/lwm2m.h" bodystart="1190" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

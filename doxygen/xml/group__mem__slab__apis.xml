@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="4980" column="12" declfile="include/kernel.h" declline="4980" declcolumn="12"/>
+        <location file="include/kernel.h" line="4976" column="12" declfile="include/kernel.h" declline="4976" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="group__mem__slab__apis_1gab16a46d8394aca18de740ad044a8734a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -177,7 +177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5005" column="12" declfile="include/kernel.h" declline="5005" declcolumn="12"/>
+        <location file="include/kernel.h" line="5001" column="12" declfile="include/kernel.h" declline="5001" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="group__mem__slab__apis_1ga97915aee5a59e19f8b28185eed93aac7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -218,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5017" column="13" declfile="include/kernel.h" declline="5017" declcolumn="13"/>
+        <location file="include/kernel.h" line="5013" column="13" declfile="include/kernel.h" declline="5013" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__mem__slab__apis_1gac76b96d7055e4ad94765c93530dd0720" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5029" column="24" bodyfile="include/kernel.h" bodystart="5029" bodyend="5032"/>
+        <location file="include/kernel.h" line="5025" column="24" bodyfile="include/kernel.h" bodystart="5025" bodyend="5028"/>
       </memberdef>
       <memberdef kind="function" id="group__mem__slab__apis_1gae0e949c1c3476dd57bc0c0ed627d2346" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5044" column="24" bodyfile="include/kernel.h" bodystart="5044" bodyend="5052"/>
+        <location file="include/kernel.h" line="5040" column="24" bodyfile="include/kernel.h" bodystart="5040" bodyend="5048"/>
       </memberdef>
       <memberdef kind="function" id="group__mem__slab__apis_1gae87577e2873cf746db69216a82f94aea" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -311,7 +311,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5064" column="24" bodyfile="include/kernel.h" bodystart="5064" bodyend="5067"/>
+        <location file="include/kernel.h" line="5060" column="24" bodyfile="include/kernel.h" bodystart="5060" bodyend="5063"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -374,7 +374,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="4929" column="9" bodyfile="include/kernel.h" bodystart="4929" bodyend="-1"/>
+        <location file="include/kernel.h" line="4925" column="9" bodyfile="include/kernel.h" bodystart="4925" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__mem__slab__apis_1ga90bdbb15f410991f54ba16025c24bc3c" prot="public" static="no">
         <name>K_MEM_SLAB_DEFINE_STATIC</name>
@@ -430,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="4951" column="9" bodyfile="include/kernel.h" bodystart="4951" bodyend="-1"/>
+        <location file="include/kernel.h" line="4947" column="9" bodyfile="include/kernel.h" bodystart="4947" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

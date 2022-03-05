@@ -22,8 +22,8 @@
 <para>Channel disconnected </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bafbfbf546092319d30e49e959a3d35b41" prot="public">
-          <name>BT_L2CAP_CONNECT</name>
+        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bac2a46c646c8739e8b129b89698eae7cd" prot="public">
+          <name>BT_L2CAP_CONNECTING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
@@ -46,8 +46,8 @@
 <para>Channel ready for upper layer traffic on it </para>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba322bc7ce76a5f0d9a3330283612f2b24" prot="public">
-          <name>BT_L2CAP_DISCONNECT</name>
+        <enumvalue id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba7a24502cfb06df715f58ad2e088cb7e8" prot="public">
+          <name>BT_L2CAP_DISCONNECTING</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>

@@ -425,7 +425,7 @@
 </simplesect>
 <simplesect kind="note"><para>Default protocol revision used for connection request is 3.1.1. Please set client.protocol_version = MQTT_VERSION_3_1_0 to use protocol 3.1.0. </para>
 </simplesect>
-<simplesect kind="note"><para>Please modify <verbatim>embed:rst:inline :kconfig:`CONFIG_MQTT_KEEPALIVE` </verbatim> time to override default of 1 minute. </para>
+<simplesect kind="note"><para>Please modify <verbatim>embed:rst:inline :kconfig:option:`CONFIG_MQTT_KEEPALIVE` </verbatim> time to override default of 1 minute. </para>
 </simplesect>
 </para>
         </detaileddescription>

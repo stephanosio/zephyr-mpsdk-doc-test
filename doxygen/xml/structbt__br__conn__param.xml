@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="1397" column="6" bodyfile="include/bluetooth/conn.h" bodystart="1397" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="1400" column="6" bodyfile="include/bluetooth/conn.h" bodystart="1400" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -23,7 +23,7 @@
     <detaileddescription>
 <para>Connection parameters for BR/EDR connections </para>
     </detaileddescription>
-    <location file="include/bluetooth/conn.h" line="1396" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1396" bodyend="1398"/>
+    <location file="include/bluetooth/conn.h" line="1399" column="1" bodyfile="include/bluetooth/conn.h" bodystart="1399" bodyend="1401"/>
     <listofallmembers>
       <member refid="structbt__br__conn__param_1a95454a74932a14b4137c3fe82821be49" prot="public" virt="non-virtual"><scope>bt_br_conn_param</scope><name>allow_role_switch</name></member>
     </listofallmembers>

@@ -2383,7 +2383,7 @@ it to me&quot; transaction pair through a combined write-then-read bus transacti
 <para>Like <ref refid="group__device__model_1gaac590af7705a3223968164406a483548" kindref="member">DEVICE_DT_DEFINE()</ref> with I2C specifics. </para>
         </briefdescription>
         <detaileddescription>
-<para>Defines a device which implements the I2C API. May generate a custom <ref refid="structdevice__state" kindref="compound">device_state</ref> container struct and init_fn wrapper when needed depending on I2C <verbatim>embed:rst:inline :kconfig:`CONFIG_I2C_STATS` </verbatim>.</para>
+<para>Defines a device which implements the I2C API. May generate a custom <ref refid="structdevice__state" kindref="compound">device_state</ref> container struct and init_fn wrapper when needed depending on I2C <verbatim>embed:rst:inline :kconfig:option:`CONFIG_I2C_STATS` </verbatim>.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>node_id</parametername>

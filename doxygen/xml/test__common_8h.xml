@@ -43,7 +43,7 @@
       </memberdef>
       <memberdef kind="define" id="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" prot="public" static="no">
         <name>THREAD_STACK_SIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -102,7 +102,7 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
 <codeline lineno="10"><highlight class="comment"><sp/>*<sp/>Test<sp/>Thread<sp/>Parameters</highlight></codeline>
 <codeline lineno="11"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="test__common_8h_1a90b7a8cb7bc3fdbd98014a3e15ee6e9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14" refid="test__common_8h_1a0ef2f7e9b8d0aa30d9f7066f679d00db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_HIGH_PRIORITY<sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15" refid="test__common_8h_1af1f5400d65f4b45e9729464ac00c251c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_LOW_PRIORITY<sp/><sp/><sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>

@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="copyright" title="Copyright" href="../../copyright.html" />
-    <link rel="next" title="Devicetree Guide" href="../dts/index.html" />
+    <link rel="next" title="Over-the-Air Update" href="ota.html" />
     <link rel="prev" title="Fixing and backporting fixes to Zephyr v2.7 MCUmgr" href="mcumgr_backporting.html" />
   <meta name="color-scheme" content="dark light">
   
@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -126,6 +128,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#bootloaders">Bootloaders</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="ota.html">Over-the-Air Update</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../dts/index.html">Devicetree Guide</a></li>
@@ -162,7 +165,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -263,7 +266,7 @@ is the boot loader used with Zephyr. The source code itself is hosted in the
 </div>
 <ol class="arabic simple" start="3">
 <li><p>Your application’s <code class="file docutils literal notranslate"><span class="pre">.conf</span></code> file needs to enable the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_MCUBOOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_MCUBOOT</span></code></a> Kconfig option in order for Zephyr to
+<a class="reference internal" href="../../kconfig.html#CONFIG_BOOTLOADER_MCUBOOT" title="CONFIG_BOOTLOADER_MCUBOOT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_MCUBOOT</span></code></a> Kconfig option in order for Zephyr to
 be built in an MCUboot-compatible manner</p></li>
 <li><p>You need to build and flash MCUboot itself on your device</p></li>
 <li><p>You might need to take precautions to avoid mass erasing the flash and also
@@ -285,8 +288,8 @@ in the <a class="reference external" href="https://mcuboot.com/documentation/rea
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

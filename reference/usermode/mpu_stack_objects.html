@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -176,7 +178,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -274,7 +276,7 @@ MPU design may require specific constraints on the region definition.  These
 can include alignment of beginning and end addresses, sizes of allocations,
 or even interactions between overlapping regions.</p>
 <p>Some MPUs require that each region be aligned to a power of two.  These SoCs
-will have <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a> defined.
+will have <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT" title="CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a> defined.
 This means that a 1500 byte stack should be aligned to a 2kB boundary and the
 stack size should also be adjusted to 2kB to ensure that nothing else is
 placed in the remainder of the region.  SoCs which include the unmodified ARM
@@ -300,8 +302,8 @@ some added complexity when implementing stack guards.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

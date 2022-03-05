@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -168,7 +170,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -242,7 +244,7 @@ dt-schema tools used by the Linux kernel).</p>
 found, and explains their data format.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>See the <a class="reference internal" href="../../reference/devicetree/bindings.html#devicetree-binding-index"><span class="std std-ref">Bindings index</span></a> for reference information on
+<p>See the <a class="reference internal" href="../../reference/devicetree/bindings.html#devicetree-binding-index"><span class="std std-ref">Dummy bindings index</span></a> for reference information on
 bindings built in to Zephyr.</p>
 </div>
 <div class="contents local topic" id="contents">
@@ -473,7 +475,7 @@ refine the search.</p>
 prefixes. The <code class="docutils literal notranslate"><span class="pre">device</span></code> part is usually from the datasheet.</p>
 <p>Some bindings apply to a generic class of devices which do not have a specific
 vendor. In these cases, there is no vendor prefix. One example is the
-<a class="reference internal" href="../../reference/devicetree/bindings/gpio/gpio-leds.html#std-dtcompatible-gpio-leds"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">gpio-leds</span></code></a> compatible which is commonly used to describe board
+<a class="reference internal" href="../../reference/devicetree/bindings.html#std-dtcompatible-gpio-leds"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">gpio-leds</span></code></a> compatible which is commonly used to describe board
 LEDs connected to GPIOs.</p>
 <p>If more than one binding for a compatible is found, an error is raised.</p>
 </div>
@@ -1091,7 +1093,7 @@ style:</p>
 </div>
 <p>This <code class="docutils literal notranslate"><span class="pre">|</span></code> style prevents YAML parsers from removing the newlines in
 multi-line descriptions. This in turn makes these long strings
-display propertly in the <a class="reference internal" href="../../reference/devicetree/bindings.html#devicetree-binding-index"><span class="std std-ref">Bindings index</span></a>.</p>
+display propertly in the <a class="reference internal" href="../../reference/devicetree/bindings.html#devicetree-binding-index"><span class="std std-ref">Dummy bindings index</span></a>.</p>
 <p>Do not use any other style for long or multi-line strings.</p>
 </li>
 </ul>
@@ -1125,7 +1127,7 @@ own bindings or devicetrees.</p>
 kernel’s equivalent file; this process is exempt from the previous rule.</p></li>
 <li><p>If your binding is describing an abstract class of hardware with Zephyr
 specific drivers handling the nodes, it’s usually best to use <code class="docutils literal notranslate"><span class="pre">zephyr</span></code> as
-the vendor prefix. See <a class="reference internal" href="../../reference/devicetree/bindings.html#dt-vendor-zephyr"><span class="std std-ref">Zephyr-specific binding (zephyr)</span></a> for examples.</p></li>
+the vendor prefix. See <a class="reference internal" href="../../reference/devicetree/bindings.html#dt-vendor-zephyr"><span class="std std-ref">Dummy bindings index</span></a> for examples.</p></li>
 </ul>
 </div>
 </div>
@@ -1225,8 +1227,8 @@ device pointers like this:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

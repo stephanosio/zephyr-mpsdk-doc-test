@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5097" column="6" declfile="include/kernel.h" declline="5097" declcolumn="6"/>
+        <location file="include/kernel.h" line="5093" column="6" declfile="include/kernel.h" declline="5093" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1gaf77211a72441de389857bc13e10be4e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -129,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5118" column="6" declfile="include/kernel.h" declline="5118" declcolumn="6"/>
+        <location file="include/kernel.h" line="5114" column="6" declfile="include/kernel.h" declline="5114" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1ga22b83564e50ae6177388dfe63e32a512" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -190,7 +190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5141" column="6" declfile="include/kernel.h" declline="5141" declcolumn="6"/>
+        <location file="include/kernel.h" line="5137" column="6" declfile="include/kernel.h" declline="5137" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1ga6cf917a0b3d91a0101192bd4808ada9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -231,7 +231,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5154" column="6" declfile="include/kernel.h" declline="5154" declcolumn="6"/>
+        <location file="include/kernel.h" line="5150" column="6" declfile="include/kernel.h" declline="5150" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1gae16d486aa250f9c07fa6a57342bcd3b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -275,7 +275,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5251" column="13" declfile="include/kernel.h" declline="5251" declcolumn="13"/>
+        <location file="include/kernel.h" line="5247" column="13" declfile="include/kernel.h" declline="5247" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1gaa8edf1e63e5d5dd78d7adcfd787394ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5263" column="13" declfile="include/kernel.h" declline="5263" declcolumn="13"/>
+        <location file="include/kernel.h" line="5259" column="13" declfile="include/kernel.h" declline="5259" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1ga79b63cc93b3358cf82d74f40e73b69d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -336,7 +336,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5276" column="13" declfile="include/kernel.h" declline="5276" declcolumn="13"/>
+        <location file="include/kernel.h" line="5272" column="13" declfile="include/kernel.h" declline="5272" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="group__heap__apis_1gad031d50ed62d08202a5dcf992c20246c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void *</type>
@@ -379,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5289" column="13" declfile="include/kernel.h" declline="5289" declcolumn="13"/>
+        <location file="include/kernel.h" line="5285" column="13" declfile="include/kernel.h" declline="5285" declcolumn="13"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -416,7 +416,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5202" column="9" bodyfile="include/kernel.h" bodystart="5202" bodyend="-1"/>
+        <location file="include/kernel.h" line="5198" column="9" bodyfile="include/kernel.h" bodystart="5198" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__heap__apis_1ga968f4c6a201fdf6862d62dd5d9f8d032" prot="public" static="no">
         <name>K_HEAP_DEFINE_NOCACHE</name>
@@ -450,7 +450,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5220" column="9" bodyfile="include/kernel.h" bodystart="5220" bodyend="-1"/>
+        <location file="include/kernel.h" line="5216" column="9" bodyfile="include/kernel.h" bodystart="5216" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

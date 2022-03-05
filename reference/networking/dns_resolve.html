@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -187,7 +189,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -266,13 +268,13 @@ to <a class="reference external" href="https://tools.ietf.org/html/rfc1035">IETF
 Supported DNS answers are IPv4/IPv6 addresses and CNAME.</p>
 <p>If a CNAME is received, the DNS resolver will create another DNS query.
 The number of additional queries is controlled by the
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_DNS_RESOLVER_ADDITIONAL_QUERIES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DNS_RESOLVER_ADDITIONAL_QUERIES</span></code></a> Kconfig variable.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_DNS_RESOLVER_ADDITIONAL_QUERIES" title="CONFIG_DNS_RESOLVER_ADDITIONAL_QUERIES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DNS_RESOLVER_ADDITIONAL_QUERIES</span></code></a> Kconfig variable.</p>
 <p>The multicast DNS (mDNS) client resolver support can be enabled by setting
-<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_MDNS_RESOLVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MDNS_RESOLVER</span></code></a> Kconfig option.
+<a class="reference internal" href="../../kconfig.html#CONFIG_MDNS_RESOLVER" title="CONFIG_MDNS_RESOLVER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MDNS_RESOLVER</span></code></a> Kconfig option.
 See <a class="reference external" href="https://tools.ietf.org/html/rfc6762">IETF RFC6762</a> for more details
 about mDNS.</p>
 <p>The link-local multicast name resolution (LLMNR) client resolver support can be
-enabled by setting the <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_LLMNR_RESOLVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LLMNR_RESOLVER</span></code></a> Kconfig variable.
+enabled by setting the <a class="reference internal" href="../../kconfig.html#CONFIG_LLMNR_RESOLVER" title="CONFIG_LLMNR_RESOLVER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LLMNR_RESOLVER</span></code></a> Kconfig variable.
 See <a class="reference external" href="https://tools.ietf.org/html/rfc4795">IETF RFC4795</a> for more details
 about LLMNR.</p>
 <p>For more information about DNS configuration variables, see:
@@ -785,8 +787,8 @@ about LLMNR.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

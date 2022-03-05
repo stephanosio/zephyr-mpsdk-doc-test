@@ -43,7 +43,7 @@
             <img src="../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -194,6 +196,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../frdm_k82f/doc/index.html">NXP FRDM-K82F</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../frdm_kl25z/doc/index.html">NXP FRDM-KL25Z</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../frdm_kw41z/doc/index.html">NXP FRDM-KW41Z</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../gd32e103v_eval/doc/index.html">GigaDevice GD32E103V-EVAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gd32f350r_eval/doc/index.html">GigaDevice GD32F350R-EVAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gd32f403z_eval/doc/index.html">GigaDevice GD32F403Z-EVAL</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../gd32f450i_eval/doc/index.html">GigaDevice GD32F450I-EVAL</a></li>
@@ -248,6 +251,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52833dk_nrf52833/doc/index.html">nRF52833 DK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840_blip/doc/index.html">Electronut Labs Blip</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840_mdk/doc/index.html">nRF52840-mdk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../nrf52840_mdk_usb_dongle/doc/index.html">nRF52840 MDK USB Dongle</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840_papyr/doc/nrf52840_papyr.html">Electronut Labs Papyr</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840dk_nrf52811/doc/index.html">nRF52811 emulation on nRF52840 DK</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../nrf52840dk_nrf52840/doc/index.html">nRF52840 DK</a></li>
@@ -379,6 +383,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../../stm32g081b_eval/doc/index.html">ST STM32G081B Evaluation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32h735g_disco/doc/index.html">ST STM32H735G Discovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32h747i_disco/doc/index.html">ST STM32H747I Discovery</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../stm32h7b3i_dk/doc/index.html">ST STM32H7B3I Discovery Kit</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32l1_disco/doc/index.html">ST STM32L1 Discovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32l476g_disco/doc/index.html">ST STM32L476G Discovery</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../stm32l496g_disco/doc/index.html">ST STM32L496G Discovery</a></li>
@@ -434,7 +439,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -536,11 +541,11 @@ All sensors are connected to the I2C bus and one GPIO pin each,
 which can be used as an interrupt source.</p>
 <div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="../../../../_images/reel_board.png"><img alt="reel board front" src="../../../../_images/reel_board.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 144 </span><span class="caption-text">reel board front (Credit: PHYTEC)</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 145 </span><span class="caption-text">reel board front (Credit: PHYTEC)</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 <div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="../../../../_images/reel_board_descr_back.png"><img alt="reel board back" src="../../../../_images/reel_board_descr_back.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 145 </span><span class="caption-text">reel board back (Credit: PHYTEC)</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 146 </span><span class="caption-text">reel board back (Credit: PHYTEC)</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <p>Since PCB version 1507.2, the nRF52840 SoC is not soldered directly to
 the board but integrated as a module on a NOTM.2 adapter.
@@ -910,7 +915,7 @@ These can be used to connect a logic analyzer to check the behavior of a
 driver or to measure the voltage of a signal.</p>
 <div class="figure align-center" id="id5">
 <a class="reference internal image-reference" href="../../../../_images/reel_board_tp.png"><img alt="reel board Jumper and Testpoints" src="../../../../_images/reel_board_tp.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 146 </span><span class="caption-text">reel board testpoints (Credit: PHYTEC)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 147 </span><span class="caption-text">reel board testpoints (Credit: PHYTEC)</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="i2c-bus-and-sensors-testpoints">
 <h4>I2C bus and sensors testpoints<a class="headerlink" href="#i2c-bus-and-sensors-testpoints" title="Permalink to this headline">¶</a></h4>
@@ -1041,7 +1046,7 @@ If the Adapter is powered via USB, the Adapter circuit heats the board
 slightly and the temperature sensor can output values up to 1.5 degrees higher.</p>
 <div class="figure align-center" id="id6">
 <a class="reference internal image-reference" href="../../../../_images/reel_board_debug.png"><img alt="reel board Debug Adapter" src="../../../../_images/reel_board_debug.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 147 </span><span class="caption-text">reel board Debug Adapter overview (Credit: PHYTEC)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 148 </span><span class="caption-text">reel board Debug Adapter overview (Credit: PHYTEC)</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="debug-adapter-firmware">
 <h4>Debug Adapter Firmware<a class="headerlink" href="#debug-adapter-firmware" title="Permalink to this headline">¶</a></h4>
@@ -1120,7 +1125,7 @@ as the BBC MicroBit edge connector. The expansion components that are
 designed especially for the reel board are called link boards.</p>
 <div class="figure align-center" id="id7">
 <a class="reference internal image-reference" href="../../../../_images/reel_board_excon.png"><img alt="reel board Expansion Connector" src="../../../../_images/reel_board_excon.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 148 </span><span class="caption-text">reel board Expansion Connector (Credit: PHYTEC)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 149 </span><span class="caption-text">reel board Expansion Connector (Credit: PHYTEC)</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </div>
 <div class="section" id="link-board-base">
 <h3>link board BASE<a class="headerlink" href="#link-board-base" title="Permalink to this headline">¶</a></h3>
@@ -1130,7 +1135,7 @@ In addition, it includes a NOTM.2 connector and more powerful DCDC converter
 then reel board.</p>
 <div class="figure align-center" id="id8">
 <a class="reference internal image-reference" href="../../../../_images/rb_lb_shield.png"><img alt="reel board and link board BASE" src="../../../../_images/rb_lb_shield.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 149 </span><span class="caption-text">reel board and link board BASE (Credit: PHYTEC)</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 150 </span><span class="caption-text">reel board and link board BASE (Credit: PHYTEC)</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 </div>
 <p>link board BASE can be used in combination with other link boards or
 third party shields in two ways:</p>
@@ -1155,7 +1160,7 @@ or for prototypes in the field.</p>
 </div></blockquote>
 <div class="figure align-center" id="id9">
 <a class="reference internal image-reference" href="../../../../_images/link_board_base.png"><img alt="link board BASE" src="../../../../_images/link_board_base.png" style="width: 442px;" /></a>
-<p class="caption"><span class="caption-number">Fig. 150 </span><span class="caption-text">link board BASE (Credit: PHYTEC)</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 151 </span><span class="caption-text">link board BASE (Credit: PHYTEC)</span><a class="headerlink" href="#id9" title="Permalink to this image">¶</a></p>
 </div>
 <p>Components on the link board BASE:</p>
 <blockquote>
@@ -1284,8 +1289,8 @@ your board.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -165,7 +167,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -1086,9 +1088,9 @@ Aborted at unit test function
 <h3>Mocking<a class="headerlink" href="#mocking" title="Permalink to this headline">¶</a></h3>
 <p>These functions allow abstracting callbacks and related functions and
 controlling them from specific tests. You can enable the mocking framework by
-setting <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ZTEST_MOCKING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ZTEST_MOCKING</span></code></a> to “y” in the configuration file of the
+setting <a class="reference internal" href="../../kconfig.html#CONFIG_ZTEST_MOCKING" title="CONFIG_ZTEST_MOCKING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ZTEST_MOCKING</span></code></a> to “y” in the configuration file of the
 test.  The amount of concurrent return values and expected parameters is
-limited by <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ZTEST_PARAMETER_COUNT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ZTEST_PARAMETER_COUNT</span></code></a>.</p>
+limited by <a class="reference internal" href="../../kconfig.html#CONFIG_ZTEST_PARAMETER_COUNT" title="CONFIG_ZTEST_PARAMETER_COUNT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ZTEST_PARAMETER_COUNT</span></code></a>.</p>
 <p>Here is an example for configuring the function <code class="docutils literal notranslate"><span class="pre">expect_two_parameters</span></code> to
 expect the values <code class="docutils literal notranslate"><span class="pre">a=2</span></code> and <code class="docutils literal notranslate"><span class="pre">b=3</span></code>, and telling <code class="docutils literal notranslate"><span class="pre">returns_int</span></code> to return
 <code class="docutils literal notranslate"><span class="pre">5</span></code>:</p>
@@ -1274,7 +1276,7 @@ expect the values <code class="docutils literal notranslate"><span class="pre">a
 <h2>Customizing Test Output<a class="headerlink" href="#customizing-test-output" title="Permalink to this headline">¶</a></h2>
 <p>The way output is presented when running tests can be customized.
 An example can be found in <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/tests/ztest/custom_output">tests/ztest/custom_output</a>.</p>
-<p>Customization is enabled by setting <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ZTEST_TC_UTIL_USER_OVERRIDE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ZTEST_TC_UTIL_USER_OVERRIDE</span></code></a> to “y”
+<p>Customization is enabled by setting <a class="reference internal" href="../../kconfig.html#CONFIG_ZTEST_TC_UTIL_USER_OVERRIDE" title="CONFIG_ZTEST_TC_UTIL_USER_OVERRIDE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ZTEST_TC_UTIL_USER_OVERRIDE</span></code></a> to “y”
 and adding a file <code class="file docutils literal notranslate"><span class="pre">tc_util_user_override.h</span></code> with your overrides.</p>
 <p>Add the line <code class="docutils literal notranslate"><span class="pre">zephyr_include_directories(my_folder)</span></code> to
 your project’s <code class="file docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> to let Zephyr find your header file during builds.</p>
@@ -1297,8 +1299,8 @@ These will be surrounded by blocks such as:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

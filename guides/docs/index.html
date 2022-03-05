@@ -44,7 +44,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -66,6 +66,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -163,7 +165,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -423,13 +425,11 @@ declarations. This warning may be caused by different Sphinx/Breathe issues:</p>
 </div>
 <div class="section" id="developer-mode-document-building">
 <h2>Developer-mode Document Building<a class="headerlink" href="#developer-mode-document-building" title="Permalink to this headline">¶</a></h2>
-<p>Building the documentation for all the Kconfig options significantly
-adds to the total doc build time.  When making and testing major changes
-to the documentation, we provide an option to temporarily stub-out
-the auto-generated configuration documentation so the doc build process
-runs much faster.</p>
+<p>When making and testing major changes to the documentation, we provide an option
+to temporarily stub-out the auto-generated Devicetree bindings documentation so
+the doc build process runs faster.</p>
 <p>To enable this mode, set the following option when invoking cmake:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">DKCONFIG_TURBO_MODE</span><span class="o">=</span><span class="mi">1</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span><span class="n">DDT_TURBO_MODE</span><span class="o">=</span><span class="mi">1</span>
 </pre></div>
 </div>
 <p>or invoke make with the following target:</p>
@@ -462,8 +462,8 @@ tag file exported at <a class="reference external" href="/doxygen/html/zephyr.ta
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -790,7 +790,7 @@
       </memberdef>
       <memberdef kind="define" id="test__msgq_8h_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -876,7 +876,7 @@
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15" refid="test__msgq_8h_1a53bb6ce0dbc843daa4ad914d78713ac2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT_MS<sp/>100</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16" refid="test__msgq_8h_1a45ba202b05caf39795aeca91b0ae547e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/>K_MSEC(TIMEOUT_MS)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="test__msgq_8h_1a6423a880df59733d2d9b509c7718d3a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="test__msgq_8h_1a6423a880df59733d2d9b509c7718d3a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="test__msgq_8h_1ad4d025ecf1bdbf8b244ca688df8e478d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG_SIZE<sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19" refid="test__msgq_8h_1ae4dd93c45469813e45b1f56d5f6c15ba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSGQ_LEN<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20" refid="test__msgq_8h_1adaa94b0db18ca6e3f9b9353a5783b6a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG0<sp/>0xABCD</highlight><highlight class="normal"></highlight></codeline>

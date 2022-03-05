@@ -3,7 +3,7 @@ var test__sched_8h =
     [ "thread_data", "structthread__data.html", "structthread__data" ],
     [ "MAX_NUM_THREAD", "test__sched_8h.html#a009eccc38d82ae14211b7cbe51a879a5", null ],
     [ "STACK_SIZE", "test__sched_8h.html#a6423a880df59733d2d9b509c7718d3a9", null ],
-    [ "K_THREAD_STACK_ARRAY_EXTERN", "test__sched_8h.html#a6ead519f314b9fb3b12ef7e3bff44ec6", null ],
+    [ "K_THREAD_STACK_ARRAY_EXTERN", "test__sched_8h.html#aef14882aedeeea6b2e51ede0c0876e39", null ],
     [ "K_THREAD_STACK_EXTERN", "test__sched_8h.html#a054df7538d0e837a101abf426065940a", null ],
     [ "spin_for_ms", "test__sched_8h.html#ad21e6386a1ffc76ea1379e2233c6bb71", null ],
     [ "test_bad_priorities", "group__kernel__sched__tests.html#ga06468ec560826bb502b6d94712278cbe", null ],

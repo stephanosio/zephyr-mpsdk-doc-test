@@ -731,7 +731,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1046,16 +1046,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="workq_2work_2src_2main_8c_1aa4f1ee1ec0d86d6548b112daf2bc6ea1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="workq_2work_2src_2main_8c_1a0b35142922e28918a75bc6e58dfa098b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(coophi_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(coophi_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>coophi_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1081,16 +1081,16 @@
         </inbodydescription>
         <location file="tests/kernel/workq/work/src/main.c" line="89" column="19" bodyfile="tests/kernel/workq/work/src/main.c" bodystart="89" bodyend="92"/>
       </memberdef>
-      <memberdef kind="function" id="workq_2work_2src_2main_8c_1ac294a56618e8b6518b7e3cf04c2c54f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="workq_2work_2src_2main_8c_1abd3dd0f68d78f97486074955d614fa35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(cooplo_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(cooplo_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>cooplo_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1133,16 +1133,16 @@
         </inbodydescription>
         <location file="tests/kernel/workq/work/src/main.c" line="102" column="19" bodyfile="tests/kernel/workq/work/src/main.c" bodystart="102" bodyend="107"/>
       </memberdef>
-      <memberdef kind="function" id="workq_2work_2src_2main_8c_1aecfa664924e879e3db5e312071814f8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="workq_2work_2src_2main_8c_1ab7ac60852003d7e7f76f7b73957fb2c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(preempt_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(preempt_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>preempt_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1168,16 +1168,16 @@
         </inbodydescription>
         <location file="tests/kernel/workq/work/src/main.c" line="112" column="19" bodyfile="tests/kernel/workq/work/src/main.c" bodystart="112" bodyend="115"/>
       </memberdef>
-      <memberdef kind="function" id="workq_2work_2src_2main_8c_1a8b44fe3ccba5d4bbc89a36d96fcf1d89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="workq_2work_2src_2main_8c_1a903fe364a78c015b076a438580b4a9bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(invalid_test_stack,(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(invalid_test_stack,(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>invalid_test_stack</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -2041,7 +2041,7 @@
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COOPHI_PRIORITY<sp/>K_PRIO_COOP(0)<sp/></highlight><highlight class="comment">/*<sp/>=<sp/>-4<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SYSTEM_WORKQUEUE_PRIORITY<sp/>=<sp/>-3<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>ZTEST_THREAD_PRIORITY<sp/>=<sp/>-2<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
@@ -2109,7 +2109,7 @@
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>k_uptime_get32()<sp/>on<sp/>the<sp/>last<sp/>invocation<sp/>of<sp/>the<sp/>core<sp/>handler.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="workq_2work_2src_2main_8c_1af11484df95b098ad95a91c341ef6663b" kindref="member">last_handle_ms</ref>;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(coophi_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(coophi_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__work__q" kindref="compound">k_work_q</ref><sp/><ref refid="workq_2work_2src_2main_8c_1a1ad20c512b07f64b9e5d7dec554eaa7f" kindref="member">coophi_queue</ref>;</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8h_1a124f07c3a788e53c3a40e4e1c06d8af8" kindref="member">atomic_t</ref><sp/><ref refid="workq_2work_2src_2main_8c_1a90b552985916399a879a0de7f4e25645" kindref="member">coophi_ctr</ref>;</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="workq_2work_2src_2main_8c_1afb3c1911053c965a5c0e7a09b4cc12c2" kindref="member">coophi_counter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
@@ -2117,7 +2117,7 @@
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="atomic__xtensa_8h_1a70641cc94157f8d7be8f7fc2ebb72e02" kindref="member">atomic_get</ref>(&amp;<ref refid="workq_2work_2src_2main_8c_1a90b552985916399a879a0de7f4e25645" kindref="member">coophi_ctr</ref>);</highlight></codeline>
 <codeline lineno="92"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(cooplo_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(cooplo_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__work__q" kindref="compound">k_work_q</ref><sp/><ref refid="workq_2work_2src_2main_8c_1ac50614b04ba0bc3bba8cf507b7845229" kindref="member">cooplo_queue</ref>;</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8h_1a124f07c3a788e53c3a40e4e1c06d8af8" kindref="member">atomic_t</ref><sp/><ref refid="workq_2work_2src_2main_8c_1a71daaccf2d64f80069287faf54e2268b" kindref="member">cooplo_ctr</ref>;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="workq_2work_2src_2main_8c_1ab4f117ff15cc6cbaed33489e85a4a537" kindref="member">cooplo_counter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
@@ -2132,7 +2132,7 @@
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>-1;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(preempt_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(preempt_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__work__q" kindref="compound">k_work_q</ref><sp/><ref refid="workq_2work_2src_2main_8c_1a449e714b2c823aee4dc5ecbcfaacbb1f" kindref="member">preempt_queue</ref>;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8h_1a124f07c3a788e53c3a40e4e1c06d8af8" kindref="member">atomic_t</ref><sp/><ref refid="workq_2work_2src_2main_8c_1a61aab4d02be169cc42649e7afad56184" kindref="member">preempt_ctr</ref>;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="workq_2work_2src_2main_8c_1a96afb496e5966a3553f338d33d062a69" kindref="member">preempt_counter</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
@@ -2140,7 +2140,7 @@
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="atomic__xtensa_8h_1a70641cc94157f8d7be8f7fc2ebb72e02" kindref="member">atomic_get</ref>(&amp;<ref refid="workq_2work_2src_2main_8c_1a61aab4d02be169cc42649e7afad56184" kindref="member">preempt_ctr</ref>);</highlight></codeline>
 <codeline lineno="115"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(invalid_test_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(invalid_test_stack,<sp/><ref refid="workq_2work_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__work__q" kindref="compound">k_work_q</ref><sp/><ref refid="workq_2work_2src_2main_8c_1af38eb5e38a5924af7e2c8ac826abcf2e" kindref="member">invalid_test_queue</ref>;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight></codeline>
 <codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="atomic_8h_1a124f07c3a788e53c3a40e4e1c06d8af8" kindref="member">atomic_t</ref><sp/><ref refid="workq_2work_2src_2main_8c_1a67f3ac2c4999ebf5c4f938aad24315b5" kindref="member">system_ctr</ref>;</highlight></codeline>

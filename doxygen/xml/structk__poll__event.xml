@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5422" column="15" bodyfile="include/kernel.h" bodystart="5422" bodyend="-1"/>
+        <location file="include/kernel.h" line="5418" column="15" bodyfile="include/kernel.h" bodystart="5418" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a37c5f45deaa046b356d95af569220c70" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5425" column="10" bodyfile="include/kernel.h" bodystart="5425" bodyend="-1"/>
+        <location file="include/kernel.h" line="5421" column="10" bodyfile="include/kernel.h" bodystart="5421" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a8f9e251aa8722eb4716f622e85be34ae" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5428" column="10" bodyfile="include/kernel.h" bodystart="5428" bodyend="-1"/>
+        <location file="include/kernel.h" line="5424" column="10" bodyfile="include/kernel.h" bodystart="5424" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1aaf4f32852d799a406bfeea4e57891129" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5431" column="10" bodyfile="include/kernel.h" bodystart="5431" bodyend="-1"/>
+        <location file="include/kernel.h" line="5427" column="10" bodyfile="include/kernel.h" bodystart="5427" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1acca81763486ef5ebcc911cb1cbd6c899" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5434" column="10" bodyfile="include/kernel.h" bodystart="5434" bodyend="-1"/>
+        <location file="include/kernel.h" line="5430" column="10" bodyfile="include/kernel.h" bodystart="5430" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a750ac48e7aa3c8fb70814b24e951fc85" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5437" column="10" bodyfile="include/kernel.h" bodystart="5437" bodyend="-1"/>
+        <location file="include/kernel.h" line="5433" column="10" bodyfile="include/kernel.h" bodystart="5433" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1aeaf67f9bc91d59fb2939e1469a088f2d" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -104,7 +104,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5441" column="6" bodyfile="include/kernel.h" bodystart="5441" bodyend="-1"/>
+        <location file="include/kernel.h" line="5437" column="6" bodyfile="include/kernel.h" bodystart="5437" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a130aaff7a8908993ed6be737a94a52ab" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structk__poll__signal" kindref="compound">k_poll_signal</ref> *</type>
@@ -117,7 +117,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5442" column="20" bodyfile="include/kernel.h" bodystart="5442" bodyend="-1"/>
+        <location file="include/kernel.h" line="5438" column="20" bodyfile="include/kernel.h" bodystart="5438" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a9ed342b8a45884f985245f55b0e1c8cc" prot="public" static="no" mutable="no">
         <type>struct k_sem *</type>
@@ -130,7 +130,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5443" column="12" bodyfile="include/kernel.h" bodystart="5443" bodyend="-1"/>
+        <location file="include/kernel.h" line="5439" column="12" bodyfile="include/kernel.h" bodystart="5439" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a4ba07f42f4af03f30478ebf48a1653f7" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structk__fifo" kindref="compound">k_fifo</ref> *</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5444" column="13" bodyfile="include/kernel.h" bodystart="5444" bodyend="-1"/>
+        <location file="include/kernel.h" line="5440" column="13" bodyfile="include/kernel.h" bodystart="5440" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a6e30a6ce30702817895e66f22f0abedf" prot="public" static="no" mutable="no">
         <type>struct k_queue *</type>
@@ -156,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5445" column="14" bodyfile="include/kernel.h" bodystart="5445" bodyend="-1"/>
+        <location file="include/kernel.h" line="5441" column="14" bodyfile="include/kernel.h" bodystart="5441" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a5bbe94482a70ec13c2106f89afd2d59c" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structk__msgq" kindref="compound">k_msgq</ref> *</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5446" column="13" bodyfile="include/kernel.h" bodystart="5446" bodyend="-1"/>
+        <location file="include/kernel.h" line="5442" column="13" bodyfile="include/kernel.h" bodystart="5442" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structk__poll__event_1a6f0a089e9d60be77eb1fdbf69d3828a6" prot="public" static="no" mutable="no">
         <type>union k_poll_event::@123</type>
@@ -183,7 +183,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/kernel.h" line="5447" column="1"/>
+        <location file="include/kernel.h" line="5443" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -243,7 +243,7 @@
         <label>z_poller</label>
       </node>
     </collaborationgraph>
-    <location file="include/kernel.h" line="5417" column="1" bodyfile="include/kernel.h" bodystart="5417" bodyend="5448"/>
+    <location file="include/kernel.h" line="5413" column="1" bodyfile="include/kernel.h" bodystart="5413" bodyend="5444"/>
     <listofallmembers>
       <member refid="structk__poll__event_1a4ba07f42f4af03f30478ebf48a1653f7" prot="public" virt="non-virtual"><scope>k_poll_event</scope><name>fifo</name></member>
       <member refid="structk__poll__event_1acca81763486ef5ebcc911cb1cbd6c899" prot="public" virt="non-virtual"><scope>k_poll_event</scope><name>mode</name></member>

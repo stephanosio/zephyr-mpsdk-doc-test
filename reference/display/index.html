@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -172,7 +174,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -690,11 +692,6 @@
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-defines">Defines</p>
 <dl class="c macro">
-<dt class="sig sig-object c" id="c.GROVE_LCD_NAME">
-<span class="target" id="group__grove__display_1ga99c15a838cd9f4a2c30a01084c04934c"></span><span class="sig-name descname"><span class="n"><span class="pre">GROVE_LCD_NAME</span></span></span><a class="headerlink" href="#c.GROVE_LCD_NAME" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="c macro">
 <dt class="sig sig-object c" id="c.GLCD_DS_DISPLAY_ON">
 <span class="target" id="group__grove__display_1ga4fe4ad1bc603fa658247ea2f7dbf7f31"></span><span class="sig-name descname"><span class="n"><span class="pre">GLCD_DS_DISPLAY_ON</span></span></span><a class="headerlink" href="#c.GLCD_DS_DISPLAY_ON" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
@@ -794,12 +791,12 @@
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_print">
-<span class="target" id="group__grove__display_1ga7f8b4cf3f7c685811d750d5adbc4de50"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_print</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_print" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1gaecd7b73186d110fa4bd2c47bbb7d63a2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_print</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="kt"><span class="pre">char</span></span><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">data</span></span>, <span class="n"><span class="pre">uint32_t</span></span><span class="w"> </span><span class="n"><span class="pre">size</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_print" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Send text to the screen. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>data</strong> – the ASCII text to display </p></li>
 <li><p><strong>size</strong> – the length of the text in bytes </p></li>
 </ul>
@@ -809,12 +806,12 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_cursor_pos_set">
-<span class="target" id="group__grove__display_1gaacf2fcb77fed7b0c946cf263fdd8ff40"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_cursor_pos_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">col</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">row</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_cursor_pos_set" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1ga8272c8c1ff41835306908a0f6932feae"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_cursor_pos_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">col</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">row</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_cursor_pos_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set text cursor position for next additions. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>col</strong> – the column for the cursor to be moved to (0-15) </p></li>
 <li><p><strong>row</strong> – the row it should be moved to (0 or 1) </p></li>
 </ul>
@@ -824,12 +821,12 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_clear">
-<span class="target" id="group__grove__display_1gac314fbf0a6c9f63cbe1caf41704a5c1f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_clear</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_clear" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1ga10929139f1632247968ccdd4fdd79dcd"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_clear</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_clear" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Clear the current display. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 </ul>
 </dd>
 </dl>
@@ -837,13 +834,13 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_display_state_set">
-<span class="target" id="group__grove__display_1ga9ea278bf350bceaa3fef2750c28a22ca"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_display_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_display_state_set" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1ga103c6edb0b5ed37f34c12694338acc70"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_display_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_display_state_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Function to change the display state. </p>
 <p>This function provides the user the ability to change the state of the display as per needed. Controlling things like powering on or off the screen, the option to display the cursor or not, and the ability to blink the cursor.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>opt</strong> – An 8bit bitmask of GLCD_DS_* options. </p></li>
 </ul>
 </dd>
@@ -852,12 +849,12 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_display_state_get">
-<span class="target" id="group__grove__display_1ga999519eba431d5ceb6c2cd7ee98da04a"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_display_state_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_display_state_get" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1gac3139bf68d1acbb27905a2346da13b17"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_display_state_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_display_state_get" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>return the display feature set associated with the device </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – the Grove LCD to get the display features set</p></li>
+<li><p><strong>dev</strong> – the Grove LCD to get the display features set</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -868,13 +865,13 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_input_state_set">
-<span class="target" id="group__grove__display_1ga118e7d7fa97af32d7d21f6ee7b8393c0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_input_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_input_state_set" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1gae73554047414529e5e7957a5d394e4a2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_input_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_input_state_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Function to change the input state. </p>
 <p>This function provides the user the ability to change the state of the text input. Controlling things like text entry from the left or right side, and how far to increment on new text</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>opt</strong> – A bitmask of GLCD_IS_* options </p></li>
 </ul>
 </dd>
@@ -883,12 +880,12 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_input_state_get">
-<span class="target" id="group__grove__display_1gaa1b626fe58845ac9654695f73efd0708"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_input_state_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_input_state_get" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1ga3c590c83b2f1c8ea0fe301daa7a40198"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_input_state_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_input_state_get" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>return the input set associated with the device </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – the Grove LCD to get the input features set</p></li>
+<li><p><strong>dev</strong> – the Grove LCD to get the input features set</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -899,14 +896,14 @@
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_function_set">
-<span class="target" id="group__grove__display_1gad8957246688288a56961a2fadc0b5798"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_function_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_function_set" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1ga5e9fb362faf9c040eaa16addbfad2b6d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_function_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">opt</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_function_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Function to set the functional state of the display. </p>
 <p>
 This function provides the user the ability to change the state of the display as per needed. Controlling things like the number of rows, dot size, and text display quality. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>opt</strong> – A bitmask of GLCD_FS_* options</p></li>
 </ul>
 </dd>
@@ -915,12 +912,12 @@ This function provides the user the ability to change the state of the display a
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_function_get">
-<span class="target" id="group__grove__display_1gacdc6c6143a89e5491b36d31d4f15dd44"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_function_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_function_get" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1gad660824e481428b811c914d6bf4634f5"></span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_function_get</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_function_get" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>return the function set associated with the device </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – the Grove LCD to get the functions set</p></li>
+<li><p><strong>dev</strong> – the Grove LCD to get the functions set</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -931,12 +928,12 @@ This function provides the user the ability to change the state of the display a
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_color_select">
-<span class="target" id="group__grove__display_1gad1f5159cc923f0f7e4e6b1078a3fc694"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_color_select</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_color_select" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1gabd119208e05f9f878b7f24a62da08db2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_color_select</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">color</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_color_select" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set LCD background to a predefined color. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>color</strong> – One of the predefined color options </p></li>
 </ul>
 </dd>
@@ -945,32 +942,16 @@ This function provides the user the ability to change the state of the display a
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.glcd_color_set">
-<span class="target" id="group__grove__display_1gaf8ca3666f1f35df94d7e8907846aca77"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_color_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">r</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">g</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">b</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_color_set" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__grove__display_1gaf99aa37f71396baaf523348a3ea9cbbe"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_color_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">r</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">g</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">b</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_color_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Set LCD background to custom RGB color value. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance. </p></li>
+<li><p><strong>dev</strong> – Pointer to device structure for driver instance. </p></li>
 <li><p><strong>r</strong> – A numeric value for the red color (max is 255) </p></li>
 <li><p><strong>g</strong> – A numeric value for the green color (max is 255) </p></li>
 <li><p><strong>b</strong> – A numeric value for the blue color (max is 255) </p></li>
 </ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.glcd_initialize">
-<span class="target" id="group__grove__display_1ga9aa7faeafdf1bb683ded10f2d52db062"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">glcd_initialize</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">port</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.glcd_initialize" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Initialize the Grove LCD panel. </p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>port</strong> – Pointer to device structure for driver instance.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Returns 0 if all passes </p>
 </dd>
 </dl>
 </dd></dl>
@@ -1378,8 +1359,8 @@ This function provides the user the ability to change the state of the display a
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

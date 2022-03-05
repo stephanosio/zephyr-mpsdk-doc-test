@@ -752,7 +752,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1044,16 +1044,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="215" column="6" bodyfile="tests/kernel/mutex/sys_mutex/src/main.c" bodystart="215" bodyend="227"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a8561f16f99817ccaa604610ad43f6a47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a13942e7a0563fc213e950bdd1b6c5dae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_12_stack_area,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_12_stack_area,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_12_stack_area</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1130,16 +1130,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="380" column="6" bodyfile="tests/kernel/mutex/sys_mutex/src/main.c" bodystart="380" bodyend="392"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1ab45e9b45ced6237841d6b120ad82c6c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a289a1dee1384466ffef3390542e86066" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(THREAD_05,(512+CONFIG_TEST_EXTRA_STACKSIZE), thread_05, NULL, NULL, NULL, 5, K_USER, 0)</argsstring>
+        <argsstring>(THREAD_05,(512+CONFIG_TEST_EXTRA_STACK_SIZE), thread_05, NULL, NULL, NULL, 5, K_USER, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>THREAD_05</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="mutex_2sys__mutex_2src_2main_8c_1a87698ce6a3e5db56d1b8f71b98e6fd7a" kindref="member">thread_05</ref></type>
@@ -1170,16 +1170,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="394" column="1" declfile="tests/kernel/mutex/sys_mutex/src/main.c" declline="394" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a8057bd7a5f00849bef44f1c24eed5d6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a0c781fcad3fb7ba47a49edd7b47c35ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(THREAD_06,(512+CONFIG_TEST_EXTRA_STACKSIZE), thread_06, NULL, NULL, NULL, 6, K_USER, 0)</argsstring>
+        <argsstring>(THREAD_06,(512+CONFIG_TEST_EXTRA_STACK_SIZE), thread_06, NULL, NULL, NULL, 6, K_USER, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>THREAD_06</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="mutex_2sys__mutex_2src_2main_8c_1adeee6b18bffbcf02b93daddc9654185b" kindref="member">thread_06</ref></type>
@@ -1210,16 +1210,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="397" column="1" declfile="tests/kernel/mutex/sys_mutex/src/main.c" declline="397" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1abf5ade0b3e4c539b9c47852c389201be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a2b1091ae623c7779d53ef2273faaa8a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(THREAD_07,(512+CONFIG_TEST_EXTRA_STACKSIZE), thread_07, NULL, NULL, NULL, 7, K_USER, 0)</argsstring>
+        <argsstring>(THREAD_07,(512+CONFIG_TEST_EXTRA_STACK_SIZE), thread_07, NULL, NULL, NULL, 7, K_USER, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>THREAD_07</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="mutex_2sys__mutex_2src_2main_8c_1a8f7b0811beb738a392d9fa85bd269d0d" kindref="member">thread_07</ref></type>
@@ -1250,16 +1250,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="400" column="1" declfile="tests/kernel/mutex/sys_mutex/src/main.c" declline="400" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a816aa7e7f99b581a37ddb54dbb39ddd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1afe82da832036de2ec3370b40bb9c02d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(THREAD_08,(512+CONFIG_TEST_EXTRA_STACKSIZE), thread_08, NULL, NULL, NULL, 8, K_USER, 0)</argsstring>
+        <argsstring>(THREAD_08,(512+CONFIG_TEST_EXTRA_STACK_SIZE), thread_08, NULL, NULL, NULL, 8, K_USER, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>THREAD_08</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="mutex_2sys__mutex_2src_2main_8c_1ac23209b0ddcef5ebb99636c073afd5ee" kindref="member">thread_08</ref></type>
@@ -1290,16 +1290,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="403" column="1" declfile="tests/kernel/mutex/sys_mutex/src/main.c" declline="403" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a2811bb9bf8c7dadf4e9456a5f4b4ee30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a0ed8c97301b4c13ee56128ceca93e7f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(THREAD_09,(512+CONFIG_TEST_EXTRA_STACKSIZE), thread_09, NULL, NULL, NULL, 9, K_USER, 0)</argsstring>
+        <argsstring>(THREAD_09,(512+CONFIG_TEST_EXTRA_STACK_SIZE), thread_09, NULL, NULL, NULL, 9, K_USER, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>THREAD_09</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="mutex_2sys__mutex_2src_2main_8c_1a67dfa195812db6d802f618a0d5d060e0" kindref="member">thread_09</ref></type>
@@ -1330,16 +1330,16 @@
         </inbodydescription>
         <location file="tests/kernel/mutex/sys_mutex/src/main.c" line="406" column="1" declfile="tests/kernel/mutex/sys_mutex/src/main.c" declline="406" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a537cb5fe012d985846874a9749123829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mutex_2sys__mutex_2src_2main_8c_1a861bb94a882f44cb57b7c080f7d9db98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(THREAD_11,(512+CONFIG_TEST_EXTRA_STACKSIZE), thread_11, NULL, NULL, NULL, 11, K_USER, 0)</argsstring>
+        <argsstring>(THREAD_11,(512+CONFIG_TEST_EXTRA_STACK_SIZE), thread_11, NULL, NULL, NULL, 11, K_USER, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>THREAD_11</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="mutex_2sys__mutex_2src_2main_8c_1ab18ee2909e39713e9c99ec0c7e051f2c" kindref="member">thread_11</ref></type>
@@ -1428,7 +1428,7 @@
 <codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="mutex_8h" kindref="compound">sys/mutex.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ztest__test__deprecated_1ga2c7d0aa85e7f320d582395c5ded90133" kindref="member">ZTEST_DMEM</ref><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a8be18b456984c5b1aa4cdd2a7e5d7a62" kindref="member">tc_rc</ref><sp/>=<sp/>TC_PASS;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>test<sp/>case<sp/>return<sp/>code<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
@@ -1568,7 +1568,7 @@
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__user__mutex__apis_1ga7d4babcd161600dab5f1842c58be2a1f" kindref="member">sys_mutex_unlock</ref>(&amp;mutex_3);</highlight></codeline>
 <codeline lineno="227"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal"></highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_12_stack_area,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_12_stack_area,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="230"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1aaf4cccbda2a2bd2c17a21e69091fcfd8" kindref="member">thread_12_thread_data</ref>;</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1aab27549e12ba70fbd0b16cf3e8d4cd03" kindref="member">thread_12</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight></codeline>
@@ -1724,22 +1724,22 @@
 <codeline lineno="391"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>CONFIG_USERSPACE<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="392"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="393"><highlight class="normal"></highlight></codeline>
-<codeline lineno="394"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(THREAD_05,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a87698ce6a3e5db56d1b8f71b98e6fd7a" kindref="member">thread_05</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(THREAD_05,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a87698ce6a3e5db56d1b8f71b98e6fd7a" kindref="member">thread_05</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>5,<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="396"><highlight class="normal"></highlight></codeline>
-<codeline lineno="397"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(THREAD_06,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1adeee6b18bffbcf02b93daddc9654185b" kindref="member">thread_06</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(THREAD_06,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1adeee6b18bffbcf02b93daddc9654185b" kindref="member">thread_06</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>6,<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="399"><highlight class="normal"></highlight></codeline>
-<codeline lineno="400"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(THREAD_07,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a8f7b0811beb738a392d9fa85bd269d0d" kindref="member">thread_07</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(THREAD_07,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a8f7b0811beb738a392d9fa85bd269d0d" kindref="member">thread_07</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7,<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="402"><highlight class="normal"></highlight></codeline>
-<codeline lineno="403"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(THREAD_08,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1ac23209b0ddcef5ebb99636c073afd5ee" kindref="member">thread_08</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(THREAD_08,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1ac23209b0ddcef5ebb99636c073afd5ee" kindref="member">thread_08</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8,<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="405"><highlight class="normal"></highlight></codeline>
-<codeline lineno="406"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(THREAD_09,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a67dfa195812db6d802f618a0d5d060e0" kindref="member">thread_09</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(THREAD_09,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a67dfa195812db6d802f618a0d5d060e0" kindref="member">thread_09</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>9,<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="408"><highlight class="normal"></highlight></codeline>
-<codeline lineno="409"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(THREAD_11,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1ab18ee2909e39713e9c99ec0c7e051f2c" kindref="member">thread_11</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(THREAD_11,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mutex_2sys__mutex_2src_2main_8c_1ab18ee2909e39713e9c99ec0c7e051f2c" kindref="member">thread_11</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>11,<sp/><ref refid="group__thread__apis_1gacb5340339892f22301e02697c6039ccc" kindref="member">K_USER</ref>,<sp/>0);</highlight></codeline>
 <codeline lineno="411"><highlight class="normal"></highlight></codeline>
 <codeline lineno="412"><highlight class="normal"></highlight><highlight class="comment">/*test<sp/>case<sp/>main<sp/>entry*/</highlight><highlight class="normal"></highlight></codeline>

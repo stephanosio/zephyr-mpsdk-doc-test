@@ -3,7 +3,7 @@ var test__queue__loop_8c =
     [ "LIST_LEN", "test__queue__loop_8c.html#aa0db7e0f64676a51b9d71faafae093cd", null ],
     [ "LOOPS", "test__queue__loop_8c.html#ae19e6a1d58535ea21627dc23272ed3cf", null ],
     [ "STACK_SIZE", "test__queue__loop_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__queue__loop_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__queue__loop_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "test_queue_loop", "group__kernel__queue__tests.html#gadbd9ee6195052890fd1b61f4a016a8e8", null ],
     [ "tIsr_entry", "test__queue__loop_8c.html#a4446fcf30336d35b3c851b60a908c3c6", null ],
     [ "tqueue_append", "test__queue__loop_8c.html#a44dfa584c56b3424b86a85804c539f7a", null ],

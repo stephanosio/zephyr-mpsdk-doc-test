@@ -118,6 +118,7 @@ var group__bt__conn =
     [ "BT_BR_CONN_PARAM_DEFAULT", "group__bt__conn.html#ga5ccdbff63a430a37a8a8077d8792f706", null ],
     [ "BT_BR_CONN_PARAM_INIT", "group__bt__conn.html#ga986f563bfb741c70fbee39b3948d9d8d", null ],
     [ "BT_CONN_CB_DEFINE", "group__bt__conn.html#ga9227880a1ae5fc373d334171e1450f00", null ],
+    [ "BT_CONN_INTERVAL_TO_MS", "group__bt__conn.html#ga707cc62b12c89478aebd0488a464a776", null ],
     [ "BT_CONN_LE_CREATE_CONN", "group__bt__conn.html#gab4203c55c20d83256ca036148c14a00d", null ],
     [ "BT_CONN_LE_CREATE_CONN_AUTO", "group__bt__conn.html#gaaba7c37a5c6e98e7b62ac12bde814d5d", null ],
     [ "BT_CONN_LE_CREATE_PARAM", "group__bt__conn.html#gae86425d432078e2ddca260eebc2802f1", null ],

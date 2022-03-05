@@ -402,6 +402,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="102" relation="include">
@@ -985,7 +987,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_2userspace_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(256 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(256 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -2078,7 +2080,7 @@
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INFO(fmt,<sp/>...)<sp/>printk(fmt,<sp/>##__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIPE_LEN<sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BYTES_TO_READ_WRITE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(256<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(256<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><ref refid="mem__protect_2obj__validation_2src_2main_8c_1acccdee2c9edbab556b941bd865918c2a" kindref="member">K_SEM_DEFINE</ref>(test_revoke_sem,<sp/>0,<sp/>1);</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
@@ -2098,7 +2100,7 @@
 <codeline lineno="53"><highlight class="normal"><ref refid="mem__protect_2userspace_2src_2main_8c_1ac35513960183b828e74e0cede36a9409" kindref="member">K_APP_BMEM</ref>(alt_part)<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alt_bool;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="threads_2thread__stack_2src_2main_8c_1aaf99baf6b57ceed1a2949db9e149af47" kindref="member">test_thread</ref>;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_stack,<sp/><ref refid="mem__protect_2userspace_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(test_stack,<sp/><ref refid="mem__protect_2userspace_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear_fault(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="59"><highlight class="normal">{</highlight></codeline>

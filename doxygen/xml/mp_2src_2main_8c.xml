@@ -913,7 +913,7 @@
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPU1_STACK_SIZE<sp/>1024</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(cpu1_stack,<sp/><ref refid="mp_2src_2main_8c_1ad04bf2bd5bcca6bce6b562e3733d593c" kindref="member">CPU1_STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(cpu1_stack,<sp/><ref refid="mp_2src_2main_8c_1ad04bf2bd5bcca6bce6b562e3733d593c" kindref="member">CPU1_STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="mp_2src_2main_8c_1af70ab61525c086d31605147426d37636" kindref="member">cpu_arg</ref>;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>

@@ -113,6 +113,6 @@ var sensor_8h =
     [ "sensor_sample_fetch", "group__sensor__interface.html#gaa75e25d93ee7cac0bf38399f3c006dff", null ],
     [ "sensor_sample_fetch_chan", "group__sensor__interface.html#gac16192826432438a15274cf28d66e8a6", null ],
     [ "sensor_trigger_set", "group__sensor__interface.html#ga7c72aca732e0641612d2f9437c2e41b7", null ],
-    [ "sensor_value_from_double", "group__sensor__interface.html#ga1b900b0afde216d2874fdf3be9e4dff6", null ],
+    [ "sensor_value_from_double", "group__sensor__interface.html#gaf01bbb251ad0c7f6c55c5b702e8a4048", null ],
     [ "sensor_value_to_double", "group__sensor__interface.html#ga29223b754dc436ab1e97ce6209a3ea06", null ]
 ];

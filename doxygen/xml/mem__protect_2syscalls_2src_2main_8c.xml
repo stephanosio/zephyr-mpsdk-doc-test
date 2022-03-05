@@ -396,6 +396,8 @@
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="77" relation="include">
@@ -1010,7 +1012,7 @@
       </memberdef>
       <memberdef kind="define" id="mem__protect_2syscalls_2src_2main_8c_1abd673b136ce2917bd0ae3b06d266e09c" prot="public" static="no">
         <name>STACK_SZ</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1188,10 +1190,10 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/syscalls/src/main.c" line="314" column="6" bodyfile="tests/kernel/mem_protect/syscalls/src/main.c" bodystart="314" bodyend="319"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2syscalls_2src_2main_8c_1a20326b406f6fd8b2e5821d2c4c5298a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2syscalls_2src_2main_8c_1abb54ccce813cce63884e3d756a36cb1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(torture_stacks,(CONFIG_MP_NUM_CPUS *4),(1024+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(torture_stacks,(CONFIG_MP_NUM_CPUS *4),(1024+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>torture_stacks</type>
@@ -1200,7 +1202,7 @@
           <type>(<ref refid="ztest_8h_1a3377b833b4a581e2ccf3a48ac31d18fe" kindref="member">CONFIG_MP_NUM_CPUS</ref> *4)</type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1625,10 +1627,10 @@
 <codeline lineno="319"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="320"><highlight class="normal"></highlight></codeline>
 <codeline lineno="321"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NR_THREADS<sp/><sp/><sp/><sp/><sp/><sp/>(CONFIG_MP_NUM_CPUS<sp/>*<sp/>4)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="323"><highlight class="normal"></highlight></codeline>
 <codeline lineno="324"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="mem__protect_2syscalls_2src_2main_8c_1a29436a8a5580800ae9acd7042a87a129" kindref="member">torture_threads</ref>[<ref refid="mem__protect_2syscalls_2src_2main_8c_1ac9cbaeca48bf86ded4273aee88280afd" kindref="member">NR_THREADS</ref>];</highlight></codeline>
-<codeline lineno="325"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(torture_stacks,<sp/><ref refid="mem__protect_2syscalls_2src_2main_8c_1ac9cbaeca48bf86ded4273aee88280afd" kindref="member">NR_THREADS</ref>,<sp/><ref refid="mem__protect_2syscalls_2src_2main_8c_1abd673b136ce2917bd0ae3b06d266e09c" kindref="member">STACK_SZ</ref>);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(torture_stacks,<sp/><ref refid="mem__protect_2syscalls_2src_2main_8c_1ac9cbaeca48bf86ded4273aee88280afd" kindref="member">NR_THREADS</ref>,<sp/><ref refid="mem__protect_2syscalls_2src_2main_8c_1abd673b136ce2917bd0ae3b06d266e09c" kindref="member">STACK_SZ</ref>);</highlight></codeline>
 <codeline lineno="326"><highlight class="normal"></highlight></codeline>
 <codeline lineno="327"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mem__protect_2syscalls_2src_2main_8c_1accef3520d7d935e3a1ba2be27c34bb1b" kindref="member">syscall_torture</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg3)</highlight></codeline>
 <codeline lineno="328"><highlight class="normal">{</highlight></codeline>

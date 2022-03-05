@@ -385,6 +385,8 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="54" relation="include">
         </childnode>
         <childnode refid="106" relation="include">
@@ -1073,16 +1075,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/mem_protect/src/inherit.c" line="21" column="1" declfile="tests/kernel/mem_protect/mem_protect/src/inherit.c" declline="21" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="inherit_8c_1ab9f2de653197bf5cf11d7c8b690d4265" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="inherit_8c_1a5d3111196f282824250f0209072bb4ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(parent_thr_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(parent_thr_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>parent_thr_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1092,16 +1094,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/mem_protect/src/inherit.c" line="22" column="1" declfile="tests/kernel/mem_protect/mem_protect/src/inherit.c" declline="22" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="inherit_8c_1a19b88ad957646d102c8b00f9f9350a96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="inherit_8c_1a3b9779dec4f1dfd7d8a865720b13ffee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(child_thr_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(child_thr_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>child_thr_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>

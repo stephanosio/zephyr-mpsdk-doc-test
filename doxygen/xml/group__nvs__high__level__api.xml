@@ -4,38 +4,26 @@
     <compoundname>nvs_high_level_api</compoundname>
     <title>Non-volatile Storage APIs</title>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__nvs__high__level__api_1ga1867563e4a7932f25f3c961114d746d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
-        <definition>int nvs_init</definition>
-        <argsstring>(struct nvs_fs *fs, const char *dev_name)</argsstring>
-        <name>nvs_init</name>
+        <definition>int nvs_mount</definition>
+        <argsstring>(struct nvs_fs *fs)</argsstring>
+        <name>nvs_mount</name>
         <param>
           <type>struct <ref refid="structnvs__fs" kindref="compound">nvs_fs</ref> *</type>
           <declname>fs</declname>
         </param>
-        <param>
-          <type>const char *</type>
-          <declname>dev_name</declname>
-        </param>
         <briefdescription>
-<para>nvs_init </para>
+<para>nvs_mount </para>
         </briefdescription>
         <detaileddescription>
-<para>Initializes a NVS file system in flash.</para>
+<para>Mount a NVS file system onto the flash device specified in <computeroutput>fs</computeroutput>.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>fs</parametername>
 </parameternamelist>
 <parameterdescription>
 <para>Pointer to file system </para>
-</parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>dev_name</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to flash device name </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -408,6 +396,66 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/fs/nvs.h" line="166" column="9" declfile="include/fs/nvs.h" declline="166" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="group__nvs__high__level__api_1ga7f17dc517f55d39ba1ef07d38cf4879b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int nvs_init</definition>
+        <argsstring>(struct nvs_fs *fs, const char *dev_name)</argsstring>
+        <name>nvs_init</name>
+        <param>
+          <type>struct <ref refid="structnvs__fs" kindref="compound">nvs_fs</ref> *</type>
+          <declname>fs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>dev_name</declname>
+        </param>
+        <briefdescription>
+<para>nvs_init </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializes a NVS file system in flash.</para>
+<para><xrefsect id="deprecated_1_deprecated000004"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__nvs__high__level__api_1gab932ea2d6e933825c2378bef8c30b065" kindref="member">nvs_mount()</ref> instead.</para>
+</xrefdescription></xrefsect></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to file system </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dev_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to flash device name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="retval"><parameteritem>
+<parameternamelist>
+<parametername>0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Success </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>-ERRNO</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>errno code if error </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/fs/nvs.h" line="180" column="20" bodyfile="include/fs/nvs.h" bodystart="180" bodyend="188"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

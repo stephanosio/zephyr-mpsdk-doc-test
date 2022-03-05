@@ -728,7 +728,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -903,16 +903,16 @@
         </inbodydescription>
         <location file="tests/kernel/stack/stack/src/test_stack_contexts.c" line="17" column="1" declfile="tests/kernel/stack/stack/src/test_stack_contexts.c" declline="17" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__stack__contexts_8c_1a749d9286e8ce9df59735273788c529e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__stack__contexts_8c_1a088fa67efa0d6a42934d333bf6d99777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(threadstack1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(threadstack1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="stack_2stack_2src_2main_8c_1a3808bea60358be7dddc26ee430bd64cd" kindref="member">threadstack1</ref></type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -922,16 +922,16 @@
         </inbodydescription>
         <location file="tests/kernel/stack/stack/src/test_stack_contexts.c" line="20" column="1" declfile="tests/kernel/stack/stack/src/test_stack_contexts.c" declline="20" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__stack__contexts_8c_1a4f01fa63907e5b3f18cf6f1059fbeb5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__stack__contexts_8c_1afa438e156028f40c5ceaf5c2fc59e662" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(threadstack_t1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(threadstack_t1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>threadstack_t1</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -941,16 +941,16 @@
         </inbodydescription>
         <location file="tests/kernel/stack/stack/src/test_stack_contexts.c" line="22" column="1" declfile="tests/kernel/stack/stack/src/test_stack_contexts.c" declline="22" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="test__stack__contexts_8c_1ac3f317f5ab7b8608352c46c72498ec2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="test__stack__contexts_8c_1a04e9ed8080eb411376a1b5430be059e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(threadstack_t2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(threadstack_t2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>threadstack_t2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1306,7 +1306,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="irq__offload_8h" kindref="compound">irq_offload.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_LEN<sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH_T1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xaaa</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HIGH_T2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xbbb</highlight><highlight class="normal"></highlight></codeline>
@@ -1316,11 +1316,11 @@
 <codeline lineno="17"><highlight class="normal"><ref refid="test__stack__contexts_8c_1ab70e2b825f805f34e21e3ce905d8404d" kindref="member">K_STACK_DEFINE</ref>(kstack_test_alloc,<sp/><ref refid="test__stack__contexts_8c_1a82c9bc91d6207f493c814b2c33dfdba4" kindref="member">STACK_LEN</ref>);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_stack<sp/><ref refid="test__stack__contexts_8c_1a6856ea318b5a9498715e4444b13a1de1" kindref="member">stack</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="test__stack__contexts_8c_1a749d9286e8ce9df59735273788c529e5" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="stack_2stack_2src_2main_8c_1a3808bea60358be7dddc26ee430bd64cd" kindref="member">threadstack1</ref>,<sp/><ref refid="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="test__stack__contexts_8c_1a088fa67efa0d6a42934d333bf6d99777" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="stack_2stack_2src_2main_8c_1a3808bea60358be7dddc26ee430bd64cd" kindref="member">threadstack1</ref>,<sp/><ref refid="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__stack__contexts_8c_1a142b35a972e1d49b2f774510d10c8a74" kindref="member">thread_data1</ref>;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><ref refid="test__stack__contexts_8c_1a749d9286e8ce9df59735273788c529e5" kindref="member">K_THREAD_STACK_DEFINE</ref>(threadstack_t1,<sp/><ref refid="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="test__stack__contexts_8c_1a088fa67efa0d6a42934d333bf6d99777" kindref="member">K_THREAD_STACK_DEFINE</ref>(threadstack_t1,<sp/><ref refid="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__stack__contexts_8c_1a51e826f3264fc3f396c06163ef48ea5d" kindref="member">high_pro_thread_t1</ref>;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><ref refid="test__stack__contexts_8c_1a749d9286e8ce9df59735273788c529e5" kindref="member">K_THREAD_STACK_DEFINE</ref>(threadstack_t2,<sp/><ref refid="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="test__stack__contexts_8c_1a088fa67efa0d6a42934d333bf6d99777" kindref="member">K_THREAD_STACK_DEFINE</ref>(threadstack_t2,<sp/><ref refid="test__stack__contexts_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="test__stack__contexts_8c_1a988171b95bb5ba539270106d14b002bc" kindref="member">high_pro_thread_t2</ref>;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="group__ztest__test__deprecated_1ga2c7d0aa85e7f320d582395c5ded90133" kindref="member">ZTEST_DMEM</ref><sp/>stack_data_t<sp/><ref refid="test__stack__contexts_8c_1a79b904d25e56ee3842fba10e33cda702" kindref="member">data</ref>[<ref refid="test__stack__contexts_8c_1a82c9bc91d6207f493c814b2c33dfdba4" kindref="member">STACK_LEN</ref>]<sp/>=<sp/>{<sp/>0xABCD,<sp/>0x1234<sp/>};</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">k_sem<sp/><ref refid="test__stack__contexts_8c_1ac9d283d96985728282a611f383fd3e74" kindref="member">end_sema1</ref>;</highlight></codeline>

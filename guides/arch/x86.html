@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -163,7 +165,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -237,12 +239,12 @@ x86-based platforms.</p>
 is executing in virtual address space. By default, physical and virtual
 memory are identity mapped and thus giving the appearance of execution
 taking place in physical address space. The physical address space is
-marked by kconfig <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SRAM_BASE_ADDRESS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_BASE_ADDRESS</span></code></a> and
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SRAM_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_SIZE</span></code></a> while the virtual address space is marked by
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_KERNEL_VM_BASE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_BASE</span></code></a> and <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_KERNEL_VM_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_SIZE</span></code></a>.
-Note that <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SRAM_OFFSET"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SRAM_OFFSET</span></code></a> controls where the Zephyr kernel
+marked by kconfig <a class="reference internal" href="../../kconfig.html#CONFIG_SRAM_BASE_ADDRESS" title="CONFIG_SRAM_BASE_ADDRESS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SRAM_BASE_ADDRESS</span></code></a> and
+<a class="reference internal" href="../../kconfig.html#CONFIG_SRAM_SIZE" title="CONFIG_SRAM_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SRAM_SIZE</span></code></a> while the virtual address space is marked by
+<a class="reference internal" href="../../kconfig.html#CONFIG_KERNEL_VM_BASE" title="CONFIG_KERNEL_VM_BASE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_BASE</span></code></a> and <a class="reference internal" href="../../kconfig.html#CONFIG_KERNEL_VM_SIZE" title="CONFIG_KERNEL_VM_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_SIZE</span></code></a>.
+Note that <a class="reference internal" href="../../kconfig.html#CONFIG_SRAM_OFFSET" title="CONFIG_SRAM_OFFSET"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SRAM_OFFSET</span></code></a> controls where the Zephyr kernel
 is being placed in the memory, and its counterpart
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_KERNEL_VM_OFFSET"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_OFFSET</span></code></a>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_KERNEL_VM_OFFSET" title="CONFIG_KERNEL_VM_OFFSET"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_OFFSET</span></code></a>.</p>
 <div class="section" id="separate-virtual-address-space-from-physical-address-space">
 <h3>Separate Virtual Address Space from Physical Address Space<a class="headerlink" href="#separate-virtual-address-space-from-physical-address-space" title="Permalink to this headline">¶</a></h3>
 <p>On 32-bit x86, it is possible to have separate phyiscal and virtual
@@ -271,7 +273,7 @@ required as the entries in page directory table will be cleared.
 If they are not disjoint, it would clear the entries needed for
 virtual addresses.</p>
 <ul>
-<li><p>If <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_X86_PAE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_PAE</span></code></a> is enabled (<code class="docutils literal notranslate"><span class="pre">=y</span></code>), each address space
+<li><p>If <a class="reference internal" href="../../kconfig.html#CONFIG_X86_PAE" title="CONFIG_X86_PAE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_X86_PAE</span></code></a> is enabled (<code class="docutils literal notranslate"><span class="pre">=y</span></code>), each address space
 must reside in their own 1GB region, due to each entry of PDP
 (Page Directory Pointer) covers 1GB of memory. For example:</p>
 <ul>
@@ -283,7 +285,7 @@ are both <code class="docutils literal notranslate"><span class="pre">0x0</span>
 <code class="docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_BASE</span> <span class="pre">=</span> <span class="pre">0x20000000</span></code> is not.</p></li>
 </ul>
 </li>
-<li><p>If <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_X86_PAE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_PAE</span></code></a> is disabled (<code class="docutils literal notranslate"><span class="pre">=n</span></code>), each address space
+<li><p>If <a class="reference internal" href="../../kconfig.html#CONFIG_X86_PAE" title="CONFIG_X86_PAE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_X86_PAE</span></code></a> is disabled (<code class="docutils literal notranslate"><span class="pre">=n</span></code>), each address space
 must reside in their own 4MB region, due to each entry of PD
 (Page Directory) covers 4MB of memory.</p></li>
 <li><p>Both <code class="docutils literal notranslate"><span class="pre">CONFIG_SRAM_BASE_ADDRESS</span></code> and <code class="docutils literal notranslate"><span class="pre">CONFIG_KERNEL_VM_BASE</span></code>
@@ -331,7 +333,7 @@ execution disabled.</p></li>
 </ul>
 <p>Note that specifying additional memory mappings requires larger storage
 space for the pre-allocated page tables (both kernel and per-domain
-tables). <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_X86_EXTRA_PAGE_TABLE_PAGES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_EXTRA_PAGE_TABLE_PAGES</span></code></a> is needed to
+tables). <a class="reference internal" href="../../kconfig.html#CONFIG_X86_EXTRA_PAGE_TABLE_PAGES" title="CONFIG_X86_EXTRA_PAGE_TABLE_PAGES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_X86_EXTRA_PAGE_TABLE_PAGES</span></code></a> is needed to
 specify how many more memory pages to be reserved for the page tables.
 If the needed space is not exactly the same as required space,
 the <code class="docutils literal notranslate"><span class="pre">gen_mmu.py</span></code> script will print out a message indicating what
@@ -348,8 +350,8 @@ needs to be the value for the kconfig.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

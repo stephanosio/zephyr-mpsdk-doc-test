@@ -31,6 +31,7 @@ var group__bt__mesh__prov =
       [ "static_val", "structbt__mesh__prov.html#a97cf41cf857479c8eefee640f7b66788", null ],
       [ "static_val_len", "structbt__mesh__prov.html#a97394dded5fd55b553364a566a2441e8", null ],
       [ "unprovisioned_beacon", "structbt__mesh__prov.html#a8142a3b8120b1686f68513caeac09497", null ],
+      [ "unprovisioned_beacon_gatt", "structbt__mesh__prov.html#a7eddf1f088264f8b6e3fb86dce4c108e", null ],
       [ "uri", "structbt__mesh__prov.html#a6a11cc0d36ca2f4c5aee67a023c295a2", null ],
       [ "uuid", "structbt__mesh__prov.html#a1152d77c4c4d9271bbd72514d94052f2", null ]
     ] ],
@@ -78,5 +79,6 @@ var group__bt__mesh__prov =
     [ "bt_mesh_prov_enable", "group__bt__mesh__prov.html#ga6c8dc1b09d4cde8738be83c992b860a9", null ],
     [ "bt_mesh_prov_remote_pub_key_set", "group__bt__mesh__prov.html#gae33b5b6e9650b49d46494b4a81b18674", null ],
     [ "bt_mesh_provision", "group__bt__mesh__prov.html#ga4ed6e078c1c0f197758c8dbb23db30f6", null ],
-    [ "bt_mesh_provision_adv", "group__bt__mesh__prov.html#ga0bfae4ebda53052cfa027c3a7ae51ec8", null ]
+    [ "bt_mesh_provision_adv", "group__bt__mesh__prov.html#ga0bfae4ebda53052cfa027c3a7ae51ec8", null ],
+    [ "bt_mesh_provision_gatt", "group__bt__mesh__prov.html#ga60666e0d7629caf36026974621bae664", null ]
 ];

@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -142,6 +142,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a8142a3b8120b1686f68513caeac09497"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbt__mesh__prov.html#a8142a3b8120b1686f68513caeac09497">unprovisioned_beacon</a> )(<a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> <a class="el" href="structbt__mesh__prov.html#a1152d77c4c4d9271bbd72514d94052f2">uuid</a>[16], <a class="el" href="group__bt__mesh__prov.html#gaf93f7b49dada5c3f7accc54663648e48">bt_mesh_prov_oob_info_t</a> <a class="el" href="structbt__mesh__prov.html#a6ed61556291f7f9d9a32062d588b8f2a">oob_info</a>, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *uri_hash)</td></tr>
 <tr class="memdesc:a8142a3b8120b1686f68513caeac09497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unprovisioned beacon has been received.  <a href="structbt__mesh__prov.html#a8142a3b8120b1686f68513caeac09497">More...</a><br /></td></tr>
 <tr class="separator:a8142a3b8120b1686f68513caeac09497"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eddf1f088264f8b6e3fb86dce4c108e"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbt__mesh__prov.html#a7eddf1f088264f8b6e3fb86dce4c108e">unprovisioned_beacon_gatt</a> )(<a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> <a class="el" href="structbt__mesh__prov.html#a1152d77c4c4d9271bbd72514d94052f2">uuid</a>[16], <a class="el" href="group__bt__mesh__prov.html#gaf93f7b49dada5c3f7accc54663648e48">bt_mesh_prov_oob_info_t</a> <a class="el" href="structbt__mesh__prov.html#a6ed61556291f7f9d9a32062d588b8f2a">oob_info</a>)</td></tr>
+<tr class="memdesc:a7eddf1f088264f8b6e3fb86dce4c108e"><td class="mdescLeft">&#160;</td><td class="mdescRight">PB-GATT Unprovisioned Advertising has been received.  <a href="structbt__mesh__prov.html#a7eddf1f088264f8b6e3fb86dce4c108e">More...</a><br /></td></tr>
+<tr class="separator:a7eddf1f088264f8b6e3fb86dce4c108e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44efea3e9221c182cbcacce8219ef6b7"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structbt__mesh__prov.html#a44efea3e9221c182cbcacce8219ef6b7">link_open</a> )(<a class="el" href="group__bt__mesh__prov.html#gaa157eb0fee30c28092a11993872b8fdd">bt_mesh_prov_bearer_t</a> bearer)</td></tr>
 <tr class="memdesc:a44efea3e9221c182cbcacce8219ef6b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provisioning link has been opened.  <a href="structbt__mesh__prov.html#a44efea3e9221c182cbcacce8219ef6b7">More...</a><br /></td></tr>
 <tr class="separator:a44efea3e9221c182cbcacce8219ef6b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,7 +463,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Pointer to Private Key in big-endian for OOB public key type support.</p>
-<p >Remember to enable </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </pre><p> when initializing this parameter.</p>
+<p >Remember to enable </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </pre><p> when initializing this parameter.</p>
 <p >Must be used together with <a class="el" href="structbt__mesh__prov.html#a1261ba69e785f005d5834ac49da00778">bt_mesh_prov::public_key_be</a>. </p>
 
 </div>
@@ -477,7 +480,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p >Pointer to Public Key in big-endian for OOB public key type support.</p>
-<p >Remember to enable </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </pre><p> when initializing this parameter.</p>
+<p >Remember to enable </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </pre><p> when initializing this parameter.</p>
 <p >Must be used together with <a class="el" href="structbt__mesh__prov.html#a1ab714e9be35242e02099884c3af45f5">bt_mesh_prov::private_key_be</a>. </p>
 
 </div>
@@ -554,6 +557,30 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a id="a7eddf1f088264f8b6e3fb86dce4c108e" name="a7eddf1f088264f8b6e3fb86dce4c108e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eddf1f088264f8b6e3fb86dce4c108e">&#9670;&nbsp;</a></span>unprovisioned_beacon_gatt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* bt_mesh_prov::unprovisioned_beacon_gatt) (<a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> <a class="el" href="structbt__mesh__prov.html#a1152d77c4c4d9271bbd72514d94052f2">uuid</a>[16], <a class="el" href="group__bt__mesh__prov.html#gaf93f7b49dada5c3f7accc54663648e48">bt_mesh_prov_oob_info_t</a> <a class="el" href="structbt__mesh__prov.html#a6ed61556291f7f9d9a32062d588b8f2a">oob_info</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>PB-GATT Unprovisioned Advertising has been received. </p>
+<p >This callback notifies the application that an PB-GATT unprovisioned Advertising has been received.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">uuid</td><td>UUID </td></tr>
+    <tr><td class="paramname">oob_info</td><td>OOB Information </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a6a11cc0d36ca2f4c5aee67a023c295a2" name="a6a11cc0d36ca2f4c5aee67a023c295a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6a11cc0d36ca2f4c5aee67a023c295a2">&#9670;&nbsp;</a></span>uri</h2>
 
@@ -594,7 +621,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structbt__mesh__prov.html">bt_mesh_prov</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:48 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

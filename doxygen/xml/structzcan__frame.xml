@@ -102,7 +102,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Captured value of the free-running timer in the CAN controller when this frame was received. The timer is incremented every bit time and captured at the start of frame bit (SOF).</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_CAN_RX_TIMESTAMP` </verbatim> must be selected for this field to be available. </para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_CAN_RX_TIMESTAMP` </verbatim> must be selected for this field to be available. </para>
 </simplesect>
 </para>
         </detaileddescription>

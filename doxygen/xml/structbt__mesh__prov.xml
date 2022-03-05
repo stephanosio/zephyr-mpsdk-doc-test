@@ -55,7 +55,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Pointer to Public Key in big-endian for OOB public key type support.</para>
-<para>Remember to enable <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </verbatim> when initializing this parameter.</para>
+<para>Remember to enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </verbatim> when initializing this parameter.</para>
 <para>Must be used together with <ref refid="structbt__mesh__prov_1a1ab714e9be35242e02099884c3af45f5" kindref="member">bt_mesh_prov::private_key_be</ref>. </para>
         </detaileddescription>
         <inbodydescription>
@@ -71,7 +71,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Pointer to Private Key in big-endian for OOB public key type support.</para>
-<para>Remember to enable <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </verbatim> when initializing this parameter.</para>
+<para>Remember to enable <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_MESH_PROV_OOB_PUBLIC_KEY` </verbatim> when initializing this parameter.</para>
 <para>Must be used together with <ref refid="structbt__mesh__prov_1a1261ba69e785f005d5834ac49da00778" kindref="member">bt_mesh_prov::public_key_be</ref>. </para>
         </detaileddescription>
         <inbodydescription>
@@ -342,6 +342,39 @@
         </inbodydescription>
         <location file="include/bluetooth/mesh/main.h" line="212" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="212" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structbt__mesh__prov_1a7eddf1f088264f8b6e3fb86dce4c108e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* bt_mesh_prov::unprovisioned_beacon_gatt) (uint8_t uuid[16], bt_mesh_prov_oob_info_t oob_info)</definition>
+        <argsstring>)(uint8_t uuid[16], bt_mesh_prov_oob_info_t oob_info)</argsstring>
+        <name>unprovisioned_beacon_gatt</name>
+        <briefdescription>
+<para>PB-GATT Unprovisioned Advertising has been received. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This callback notifies the application that an PB-GATT unprovisioned Advertising has been received.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uuid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UUID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>oob_info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>OOB Information </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/bluetooth/mesh/main.h" line="224" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structbt__mesh__prov_1a44efea3e9221c182cbcacce8219ef6b7" prot="public" static="no" mutable="no">
         <type>void(*</type>
         <definition>void(* bt_mesh_prov::link_open) (bt_mesh_prov_bearer_t bearer)</definition>
@@ -365,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="223" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="223" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="234" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__prov_1a0183cef77dda3978ef8a40ce7aad043a" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -390,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="232" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="232" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="243" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="243" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__prov_1ad55abc2b1632455bb23fbd8b03df85ea" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -423,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="243" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="243" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="254" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="254" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__prov_1aaa49675e358ea4cba7552b3e855befba" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -472,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="256" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="256" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="267" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="267" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__mesh__prov_1ae87570de25c89e74bece2516ff957779" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -487,7 +520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/mesh/main.h" line="267" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="267" bodyend="-1"/>
+        <location file="include/bluetooth/mesh/main.h" line="278" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="278" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -495,7 +528,7 @@
     <detaileddescription>
 <para>Provisioning properties &amp; capabilities. </para>
     </detaileddescription>
-    <location file="include/bluetooth/mesh/main.h" line="94" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="94" bodyend="268"/>
+    <location file="include/bluetooth/mesh/main.h" line="94" column="1" bodyfile="include/bluetooth/mesh/main.h" bodystart="94" bodyend="279"/>
     <listofallmembers>
       <member refid="structbt__mesh__prov_1afbc65bb8be99f7dc37ecc911f4ac2151" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>capabilities</name></member>
       <member refid="structbt__mesh__prov_1ad55abc2b1632455bb23fbd8b03df85ea" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>complete</name></member>
@@ -517,6 +550,7 @@
       <member refid="structbt__mesh__prov_1a97cf41cf857479c8eefee640f7b66788" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>static_val</name></member>
       <member refid="structbt__mesh__prov_1a97394dded5fd55b553364a566a2441e8" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>static_val_len</name></member>
       <member refid="structbt__mesh__prov_1a8142a3b8120b1686f68513caeac09497" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>unprovisioned_beacon</name></member>
+      <member refid="structbt__mesh__prov_1a7eddf1f088264f8b6e3fb86dce4c108e" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>unprovisioned_beacon_gatt</name></member>
       <member refid="structbt__mesh__prov_1a6a11cc0d36ca2f4c5aee67a023c295a2" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>uri</name></member>
       <member refid="structbt__mesh__prov_1a1152d77c4c4d9271bbd72514d94052f2" prot="public" virt="non-virtual"><scope>bt_mesh_prov</scope><name>uuid</name></member>
     </listofallmembers>

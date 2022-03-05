@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -94,6 +94,7 @@ $(document).ready(function(){initNavTree('drivers_2can_8h.html',''); initResizab
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a>  </div>
   <div class="headertitle"><div class="title">can.h File Reference</div></div>
@@ -103,6 +104,7 @@ $(document).ready(function(){initNavTree('drivers_2can_8h.html',''); initResizab
 <code>#include &lt;device.h&gt;</code><br />
 <code>#include &lt;<a class="el" href="string_8h_source.html">string.h</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="util_8h_source.html">sys/util.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="stats_2stats_8h_source.html">stats/stats.h</a>&gt;</code><br />
 <code>#include &lt;syscalls/can.h&gt;</code><br />
 </div>
 <p><a href="drivers_2can_8h_source.html">Go to the source code of this file.</a></p>
@@ -121,6 +123,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__timing.html">can_timing</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN bus timing structure.  <a href="structcan__timing.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__device__state.html">can_device_state</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN specific device state which allows for CAN device class specific additions.  <a href="structcan__device__state.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structcan__frame.html">can_frame</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">CAN frame for Linux SocketCAN compatibility.  <a href="structcan__frame.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,6 +135,30 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga120a37d5ae5064dcbf116e488f733764"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga120a37d5ae5064dcbf116e488f733764">CAN_STATS_BIT0_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), bit0_error)</td></tr>
+<tr class="memdesc:ga120a37d5ae5064dcbf116e488f733764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the bit0 error counter for a CAN device.  <a href="group__can__interface.html#ga120a37d5ae5064dcbf116e488f733764">More...</a><br /></td></tr>
+<tr class="separator:ga120a37d5ae5064dcbf116e488f733764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga678b74039632302efcb5ef80f0e3a90b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga678b74039632302efcb5ef80f0e3a90b">CAN_STATS_BIT1_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), bit1_error)</td></tr>
+<tr class="memdesc:ga678b74039632302efcb5ef80f0e3a90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the bit1 (recessive) error counter for a CAN device.  <a href="group__can__interface.html#ga678b74039632302efcb5ef80f0e3a90b">More...</a><br /></td></tr>
+<tr class="separator:ga678b74039632302efcb5ef80f0e3a90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae4146843944b7ffb1c96636e889282f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#gae4146843944b7ffb1c96636e889282f7">CAN_STATS_STUFF_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), stuff_error)</td></tr>
+<tr class="memdesc:gae4146843944b7ffb1c96636e889282f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the stuffing error counter for a CAN device.  <a href="group__can__interface.html#gae4146843944b7ffb1c96636e889282f7">More...</a><br /></td></tr>
+<tr class="separator:gae4146843944b7ffb1c96636e889282f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga125ce05d40881476f5f156ad5e28c664"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga125ce05d40881476f5f156ad5e28c664">CAN_STATS_CRC_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), crc_error)</td></tr>
+<tr class="memdesc:ga125ce05d40881476f5f156ad5e28c664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the CRC error counter for a CAN device.  <a href="group__can__interface.html#ga125ce05d40881476f5f156ad5e28c664">More...</a><br /></td></tr>
+<tr class="separator:ga125ce05d40881476f5f156ad5e28c664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac5809b3f5e1a463822e76921cddc9909"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#gac5809b3f5e1a463822e76921cddc9909">CAN_STATS_FORM_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), form_error)</td></tr>
+<tr class="memdesc:gac5809b3f5e1a463822e76921cddc9909"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the form error counter for a CAN device.  <a href="group__can__interface.html#gac5809b3f5e1a463822e76921cddc9909">More...</a><br /></td></tr>
+<tr class="separator:gac5809b3f5e1a463822e76921cddc9909"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga15f7ca18badbbe2fe24be68cacce6171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga15f7ca18badbbe2fe24be68cacce6171">CAN_STATS_ACK_ERROR_INC</a>(dev_)&#160;&#160;&#160;	<a class="el" href="stats_2stats_8h.html#a725e1bf6b2c486de9603954974d6315a">STATS_INC</a>(Z_CAN_GET_STATS(dev_), ack_error)</td></tr>
+<tr class="memdesc:ga15f7ca18badbbe2fe24be68cacce6171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increment the acknowledge error counter for a CAN device.  <a href="group__can__interface.html#ga15f7ca18badbbe2fe24be68cacce6171">More...</a><br /></td></tr>
+<tr class="separator:ga15f7ca18badbbe2fe24be68cacce6171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6c93ae9a5c48ec78045a6a64cfc0f81b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">CAN_DEVICE_DT_DEFINE</a>(node_id,  init_fn,  pm_device,  data_ptr,  cfg_ptr,  level,  prio,  api_ptr, ...)</td></tr>
+<tr class="memdesc:ga6c93ae9a5c48ec78045a6a64cfc0f81b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="group__device__model.html#gaac590af7705a3223968164406a483548" title="Create a device object from a devicetree node identifier and set it up for boot time initialization.">DEVICE_DT_DEFINE()</a> with CAN device specifics.  <a href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">More...</a><br /></td></tr>
+<tr class="separator:ga6c93ae9a5c48ec78045a6a64cfc0f81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20266dc5e962922144e078b85ccb8351"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga20266dc5e962922144e078b85ccb8351">CAN_DEVICE_DT_INST_DEFINE</a>(inst, ...)&#160;&#160;&#160;	<a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b">CAN_DEVICE_DT_DEFINE</a>(<a class="el" href="group__devicetree-inst.html#ga219f413efba2f4c0151468b9a25a8dc1">DT_DRV_INST</a>(inst), __VA_ARGS__)</td></tr>
+<tr class="memdesc:ga20266dc5e962922144e078b85ccb8351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Like <a class="el" href="group__can__interface.html#ga6c93ae9a5c48ec78045a6a64cfc0f81b" title="Like DEVICE_DT_DEFINE() with CAN device specifics.">CAN_DEVICE_DT_DEFINE()</a> for an instance of a DT_DRV_COMPAT compatible.  <a href="group__can__interface.html#ga20266dc5e962922144e078b85ccb8351">More...</a><br /></td></tr>
+<tr class="separator:ga20266dc5e962922144e078b85ccb8351"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">CAN frame definitions</div></td></tr>
 <tr class="memitem:ga4cd8ce34887b90baeeaa6a4aa048b398"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga4cd8ce34887b90baeeaa6a4aa048b398">CAN_STD_ID_MASK</a>&#160;&#160;&#160;0x7FFU</td></tr>
 <tr class="memdesc:ga4cd8ce34887b90baeeaa6a4aa048b398"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask for a standard (11-bit) CAN identifier.  <a href="group__can__interface.html#ga4cd8ce34887b90baeeaa6a4aa048b398">More...</a><br /></td></tr>
@@ -193,7 +222,7 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr><td colspan="2"><div class="groupHeader">Transmitting CAN frames</div></td></tr>
 <tr class="memitem:ga1bf5353bf15ffc252726e71ace9f5372"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372">can_send</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, const struct <a class="el" href="structzcan__frame.html">zcan_frame</a> *frame, <a class="el" href="structk__timeout__t.html">k_timeout_t</a> <a class="el" href="timer_2cycle64_2src_2main_8c.html#a8f4b69a82b00d7baf3f1f7d480bb7fa0">timeout</a>, <a class="el" href="group__can__interface.html#ga3973b4d5f1c8078eba566c8f0e2c01f1">can_tx_callback_t</a> callback, void *<a class="el" href="timer_2timer__api_2src_2main_8c.html#a862de962130decf51321624c10294338">user_data</a>)</td></tr>
-<tr class="memdesc:ga1bf5353bf15ffc252726e71ace9f5372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transmit a CAN frame on the CAN bus.  <a href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372">More...</a><br /></td></tr>
+<tr class="memdesc:ga1bf5353bf15ffc252726e71ace9f5372"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a CAN frame for transmission on the CAN bus.  <a href="group__can__interface.html#ga1bf5353bf15ffc252726e71ace9f5372">More...</a><br /></td></tr>
 <tr class="separator:ga1bf5353bf15ffc252726e71ace9f5372"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">CAN bus error reporting and handling</div></td></tr>
 <tr class="memitem:gab98c121578c8349d9dfb41d60f356857"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__can__interface.html#gab98c121578c8349d9dfb41d60f356857">can_get_state</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, enum <a class="el" href="group__can__interface.html#gac7ec472c26c564dd7067c49f67c8d2f7">can_state</a> *<a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>, struct <a class="el" href="structcan__bus__err__cnt.html">can_bus_err_cnt</a> *err_cnt)</td></tr>
@@ -280,7 +309,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_4fe5cf12322eb0f9892753dc20f1484c.html">drivers</a></li><li class="navelem"><a class="el" href="drivers_2can_8h.html">can.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

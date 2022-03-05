@@ -108,7 +108,7 @@
         <detaileddescription>
 <para><simplesect kind="note"><para>The callback handler will be called in interrupt context.</para>
 </simplesect>
-<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected to enable PWM capture support.</para>
+<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected to enable PWM capture support.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -354,7 +354,7 @@ Passing 0 as <computeroutput>pulse</computeroutput> will cause the pin to be dri
 <para>After configuring PWM capture using this function, the capture can be enabled/disabled using <emphasis><ref refid="group__pwm__interface_1gab4e0e3555692d1c8d9b3389685b398da" kindref="member">pwm_pin_enable_capture()</ref></emphasis> and <emphasis><ref refid="group__pwm__interface_1gad9f1705c343a6c915ceffa79aef7c809" kindref="member">pwm_pin_disable_capture()</ref></emphasis>.</para>
 <para><simplesect kind="note"><para>This API function cannot be invoked from user space due to the use of a function callback. In user space, one of the simpler API functions (<emphasis><ref refid="group__pwm__interface_1ga1c87879e7cc0cdce1158ffb6f08f73a8" kindref="member">pwm_pin_capture_cycles()</ref></emphasis>, <emphasis><ref refid="group__pwm__interface_1gabe808fdbb4e315194eb08f9bf35f121b" kindref="member">pwm_pin_capture_usec()</ref></emphasis>, or <emphasis><ref refid="group__pwm__interface_1ga2a3699e1841d977621519d502aba73ae" kindref="member">pwm_pin_capture_nsec()</ref></emphasis>) can be used instead.</para>
 </simplesect>
-<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
+<simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -454,7 +454,7 @@ Passing 0 as <computeroutput>pulse</computeroutput> will cause the pin to be dri
         </briefdescription>
         <detaileddescription>
 <para>The PWM pin must be configured using <emphasis><ref refid="group__pwm__interface_1ga720cffa0a0e985d0dd78c3df6ff1d32a" kindref="member">pwm_pin_configure_capture()</ref></emphasis> prior to calling this function.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -537,7 +537,7 @@ Passing 0 as <computeroutput>pulse</computeroutput> will cause the pin to be dri
 <para>Disable PWM period/pulse width capture for a single PWM input. </para>
         </briefdescription>
         <detaileddescription>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -629,7 +629,7 @@ Passing 0 as <computeroutput>pulse</computeroutput> will cause the pin to be dri
         </briefdescription>
         <detaileddescription>
 <para>This API function wraps calls to <emphasis><ref refid="group__pwm__interface_1ga720cffa0a0e985d0dd78c3df6ff1d32a" kindref="member">pwm_pin_configure_capture()</ref></emphasis>, <emphasis><ref refid="group__pwm__interface_1gab4e0e3555692d1c8d9b3389685b398da" kindref="member">pwm_pin_enable_capture()</ref></emphasis>, and <emphasis><ref refid="group__pwm__interface_1gad9f1705c343a6c915ceffa79aef7c809" kindref="member">pwm_pin_disable_capture()</ref></emphasis> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1194,7 +1194,7 @@ Passing 0 as <computeroutput>pulse</computeroutput> will cause the pin to be dri
         </briefdescription>
         <detaileddescription>
 <para>This API function wraps calls to <emphasis><ref refid="group__pwm__interface_1ga1c87879e7cc0cdce1158ffb6f08f73a8" kindref="member">pwm_pin_capture_cycles()</ref></emphasis> and <emphasis><ref refid="group__pwm__interface_1gace629ef3f488b247c1223c00f024f606" kindref="member">pwm_pin_cycles_to_usec()</ref></emphasis> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1326,7 +1326,7 @@ Passing 0 as <computeroutput>pulse</computeroutput> will cause the pin to be dri
         </briefdescription>
         <detaileddescription>
 <para>This API function wraps calls to <emphasis><ref refid="group__pwm__interface_1ga1c87879e7cc0cdce1158ffb6f08f73a8" kindref="member">pwm_pin_capture_cycles()</ref></emphasis> and <emphasis><ref refid="group__pwm__interface_1ga309dc05dcda01648052eabcb3b550a0b" kindref="member">pwm_pin_cycles_to_nsec()</ref></emphasis> and passes the capture result to the caller. The function is blocking until either the PWM capture is completed or a timeout occurs.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_PWM_CAPTURE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>

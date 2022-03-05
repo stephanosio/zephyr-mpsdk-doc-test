@@ -34,14 +34,14 @@
 </parameteritem>
 </parameterlist>
 <computeroutput>err</computeroutput> can mean either of the following:<itemizedlist>
-<listitem><para><ref refid="hci__err_8h_1afd68afeb0296e3af363d7d60eaf4e9a1" kindref="member">BT_HCI_ERR_UNKNOWN_CONN_ID</ref> Creating the connection started by <ref refid="group__bt__conn_1ga8d66f3e0262a51279e9fa8b3139252e6" kindref="member">bt_conn_le_create</ref> was canceled either by the user through <ref refid="group__bt__conn_1ga14e7c852b0271781594e742ae509c5d3" kindref="member">bt_conn_disconnect</ref> or by the timeout in the host through <ref refid="structbt__conn__le__create__param" kindref="compound">bt_conn_le_create_param</ref> timeout parameter, which defaults to <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_CREATE_CONN_TIMEOUT` </verbatim> seconds.</para>
+<listitem><para><ref refid="hci__err_8h_1afd68afeb0296e3af363d7d60eaf4e9a1" kindref="member">BT_HCI_ERR_UNKNOWN_CONN_ID</ref> Creating the connection started by <ref refid="group__bt__conn_1ga8d66f3e0262a51279e9fa8b3139252e6" kindref="member">bt_conn_le_create</ref> was canceled either by the user through <ref refid="group__bt__conn_1ga14e7c852b0271781594e742ae509c5d3" kindref="member">bt_conn_disconnect</ref> or by the timeout in the host through <ref refid="structbt__conn__le__create__param" kindref="compound">bt_conn_le_create_param</ref> timeout parameter, which defaults to <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_CREATE_CONN_TIMEOUT` </verbatim> seconds.</para>
 </listitem><listitem><para><computeroutput>BT_HCI_ERR_ADV_TIMEOUT</computeroutput> High duty cycle directed connectable advertiser started by <ref refid="group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02" kindref="member">bt_le_adv_start</ref> failed to be connected within the timeout. </para>
 </listitem></itemizedlist>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="797" column="1" bodyfile="include/bluetooth/conn.h" bodystart="797" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="800" column="1" bodyfile="include/bluetooth/conn.h" bodystart="800" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1a8b8983b5b5b05c9e2dae242485b6c914" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -53,7 +53,7 @@
         </briefdescription>
         <detaileddescription>
 <para>This callback notifies the application that a connection has been disconnected.</para>
-<para>When this callback is called the stack still has one reference to the connection object. If the application in this callback tries to start either a connectable advertiser or create a new connection this might fail because there are no free connection objects available. To avoid this issue it is recommended to either start connectable advertise or create a new connection using <ref refid="group__workqueue__apis_1gace61b59575093d7442f39ccb7be686d7" kindref="member">k_work_submit</ref> or increase <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_MAX_CONN` </verbatim>.</para>
+<para>When this callback is called the stack still has one reference to the connection object. If the application in this callback tries to start either a connectable advertiser or create a new connection this might fail because there are no free connection objects available. To avoid this issue it is recommended to either start connectable advertise or create a new connection using <ref refid="group__workqueue__apis_1gace61b59575093d7442f39ccb7be686d7" kindref="member">k_work_submit</ref> or increase <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_MAX_CONN` </verbatim>.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>conn</parametername>
@@ -75,7 +75,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="816" column="1" bodyfile="include/bluetooth/conn.h" bodystart="816" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="819" column="1" bodyfile="include/bluetooth/conn.h" bodystart="819" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1a2c52c2e2798062708c373fae9610fadd" prot="public" static="no" mutable="no">
         <type><ref refid="stdbool_8h_1abb452686968e48b67397da5f97445f5b" kindref="member">bool</ref>(*</type>
@@ -112,7 +112,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="842" column="1" bodyfile="include/bluetooth/conn.h" bodystart="842" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="845" column="1" bodyfile="include/bluetooth/conn.h" bodystart="845" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1a01582ed3e3801e10c665534eaa991454" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -161,7 +161,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="855" column="1" bodyfile="include/bluetooth/conn.h" bodystart="855" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="858" column="1" bodyfile="include/bluetooth/conn.h" bodystart="858" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1aea9b62ab1a1469be97a207a8e07d2f14" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -202,7 +202,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="867" column="1" bodyfile="include/bluetooth/conn.h" bodystart="867" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="870" column="1" bodyfile="include/bluetooth/conn.h" bodystart="870" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1ae454d5bc2664e90ba2b1e0c867db374e" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -244,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="888" column="1" bodyfile="include/bluetooth/conn.h" bodystart="888" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="891" column="1" bodyfile="include/bluetooth/conn.h" bodystart="891" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1af726f004c06b86f770ece263ed6c9ca4" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -277,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="901" column="1" bodyfile="include/bluetooth/conn.h" bodystart="901" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="904" column="1" bodyfile="include/bluetooth/conn.h" bodystart="904" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1ae02a23d823954a747f8f474fb19276d7" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -310,7 +310,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="914" column="1" bodyfile="include/bluetooth/conn.h" bodystart="914" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="917" column="1" bodyfile="include/bluetooth/conn.h" bodystart="917" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__conn__cb_1a1142d1861cc0b0058f68ecf537d0cec3" prot="public" static="no" mutable="no">
         <type>void(*</type>
@@ -343,7 +343,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/conn.h" line="927" column="1" bodyfile="include/bluetooth/conn.h" bodystart="927" bodyend="-1"/>
+        <location file="include/bluetooth/conn.h" line="930" column="1" bodyfile="include/bluetooth/conn.h" bodystart="930" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -352,7 +352,7 @@
     <detaileddescription>
 <para>This structure is used for tracking the state of a connection. It is registered with the help of the <ref refid="group__bt__conn_1ga33b35e6457af183e059078aead4562b4" kindref="member">bt_conn_cb_register()</ref> API. It&apos;s permissible to register multiple instances of this <ref refid="structbt__conn__cb" kindref="compound">bt_conn_cb</ref> type, in case different modules of an application are interested in tracking the connection state. If a callback is not of interest for an instance, it may be set to NULL and will as a consequence not be used for that instance. </para>
     </detaileddescription>
-    <location file="include/bluetooth/conn.h" line="772" column="1" bodyfile="include/bluetooth/conn.h" bodystart="772" bodyend="943"/>
+    <location file="include/bluetooth/conn.h" line="775" column="1" bodyfile="include/bluetooth/conn.h" bodystart="775" bodyend="946"/>
     <listofallmembers>
       <member refid="structbt__conn__cb_1ab3618150bfeea9492095ba27ce978c69" prot="public" virt="non-virtual"><scope>bt_conn_cb</scope><name>connected</name></member>
       <member refid="structbt__conn__cb_1a8b8983b5b5b05c9e2dae242485b6c914" prot="public" virt="non-virtual"><scope>bt_conn_cb</scope><name>disconnected</name></member>

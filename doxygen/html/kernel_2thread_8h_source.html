@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -369,7 +369,11 @@ $(document).ready(function(){initNavTree('kernel_2thread_8h_source.html',''); in
 <div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structk__thread.html">k_thread</a> <a class="code hl_struct" href="structk__thread.html">_thread_t</a>;</div>
 <div class="line"><a id="l00313" name="l00313"></a><span class="lineno"><a class="line" href="kernel_2thread_8h.html#a6379f5a1f19ffbc262a6877c4f6e3647">  313</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structk__thread.html">k_thread</a> *<a class="code hl_typedef" href="kernel_2thread_8h.html#a6379f5a1f19ffbc262a6877c4f6e3647">k_tid_t</a>;</div>
 <div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span><span class="keywordtype">void</span> z_init_cpu(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span><span class="keywordtype">void</span> z_sched_ipi(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span><span class="keywordtype">void</span> z_smp_start_cpu(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aarch__interface_8h_html_a3e4bde3075edb41069b258d999333b0e"><div class="ttname"><a href="arch__interface_8h.html#a3e4bde3075edb41069b258d999333b0e">k_thread_stack_t</a></div><div class="ttdeci">struct z_thread_stack_element k_thread_stack_t</div><div class="ttdoc">Typedef of struct z_thread_stack_element.</div><div class="ttdef"><b>Definition:</b> arch_interface.h:44</div></div>
 <div class="ttc" id="aarch__interface_8h_html_af1bd193a26c6e6a8658140185cae42e1"><div class="ttname"><a href="arch__interface_8h.html#af1bd193a26c6e6a8658140185cae42e1">k_thread_entry_t</a></div><div class="ttdeci">void(* k_thread_entry_t)(void *p1, void *p2, void *p3)</div><div class="ttdoc">Thread entry point function type.</div><div class="ttdef"><b>Definition:</b> arch_interface.h:46</div></div>
 <div class="ttc" id="acondvar_2condvar__api_2src_2main_8c_html_a4c6a88cdddeff1bdde597c2658c9e7d2"><div class="ttname"><a href="condvar_2condvar__api_2src_2main_8c.html#a4c6a88cdddeff1bdde597c2658c9e7d2">timeout</a></div><div class="ttdeci">ZTEST_BMEM int timeout</div><div class="ttdef"><b>Definition:</b> main.c:31</div></div>
@@ -385,7 +389,7 @@ $(document).ready(function(){initNavTree('kernel_2thread_8h_source.html',''); in
 <div class="ttc" id="astdint_8h_html_a5debae8b2a1ec20a6694c0c443ee399e"><div class="ttname"><a href="stdint_8h.html#a5debae8b2a1ec20a6694c0c443ee399e">uint16_t</a></div><div class="ttdeci">__UINT16_TYPE__ uint16_t</div><div class="ttdef"><b>Definition:</b> stdint.h:59</div></div>
 <div class="ttc" id="astdint_8h_html_accbd6432732c88ad6adc5365800433b6"><div class="ttname"><a href="stdint_8h.html#accbd6432732c88ad6adc5365800433b6">int8_t</a></div><div class="ttdeci">__INT8_TYPE__ int8_t</div><div class="ttdef"><b>Definition:</b> stdint.h:42</div></div>
 <div class="ttc" id="astructk__cycle__stats_html"><div class="ttname"><a href="structk__cycle__stats.html">k_cycle_stats</a></div><div class="ttdef"><b>Definition:</b> stats.h:17</div></div>
-<div class="ttc" id="astructk__heap_html"><div class="ttname"><a href="structk__heap.html">k_heap</a></div><div class="ttdef"><b>Definition:</b> kernel.h:5078</div></div>
+<div class="ttc" id="astructk__heap_html"><div class="ttname"><a href="structk__heap.html">k_heap</a></div><div class="ttdef"><b>Definition:</b> kernel.h:5074</div></div>
 <div class="ttc" id="astructk__mem__domain_html"><div class="ttname"><a href="structk__mem__domain.html">k_mem_domain</a></div><div class="ttdoc">Memory Domain.</div><div class="ttdef"><b>Definition:</b> mem_domain.h:80</div></div>
 <div class="ttc" id="astructk__mem__paging__stats__t_html"><div class="ttname"><a href="structk__mem__paging__stats__t.html">k_mem_paging_stats_t</a></div><div class="ttdef"><b>Definition:</b> mem_manage.h:83</div></div>
 <div class="ttc" id="astructk__thread__runtime__stats_html"><div class="ttname"><a href="structk__thread__runtime__stats.html">k_thread_runtime_stats</a></div><div class="ttdef"><b>Definition:</b> thread.h:172</div></div>
@@ -413,7 +417,7 @@ $(document).ready(function(){initNavTree('kernel_2thread_8h_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_2ae24886e77657f82343b4b0154efdc1.html">kernel</a></li><li class="navelem"><a class="el" href="kernel_2thread_8h.html">thread.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:39 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:44 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

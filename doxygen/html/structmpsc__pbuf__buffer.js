@@ -4,6 +4,7 @@ var structmpsc__pbuf__buffer =
     [ "flags", "structmpsc__pbuf__buffer.html#a10e9152b8c85be62eac0a3828e3b1e2a", null ],
     [ "get_wlen", "structmpsc__pbuf__buffer.html#ad87f240d978605258cb03d7d1e5e006f", null ],
     [ "lock", "structmpsc__pbuf__buffer.html#a1a986b86547aa644747b9a79a982b780", null ],
+    [ "max_usage", "structmpsc__pbuf__buffer.html#adad43580b7a632877cf7b577585a495a", null ],
     [ "notify_drop", "structmpsc__pbuf__buffer.html#acdebdb6e7175ea3f39f484885ff6bec2", null ],
     [ "rd_idx", "structmpsc__pbuf__buffer.html#af9340dd31ea8e37b4d609898b126497a", null ],
     [ "sem", "structmpsc__pbuf__buffer.html#ae860724c0784ae560e7d03b1b6389fa0", null ],

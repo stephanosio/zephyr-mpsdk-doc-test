@@ -1335,6 +1335,7 @@
         </briefdescription>
         <detaileddescription>
 <para>This function synchronously runs the provided function in interrupt context, passing in the supplied device. Useful for test code which needs to show that kernel objects work correctly in interrupt context.</para>
+<para>Additionally, when CONFIG_IRQ_OFFLOAD_NESTED is set by the architecture, this routine works to synchronously invoke a nested interrupt when called from an ISR context (i.e. when <ref refid="group__isr__apis_1ga8482b0dd2283d12677a9ebe321667d16" kindref="member">k_is_in_isr()</ref> is true). Note that not all platforms will have hardware support for this capability, and even on those some interrupts may be running at unpreemptible priorities.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>routine</parametername>
@@ -1356,7 +1357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/irq_offload.h" line="32" column="6" declfile="include/irq_offload.h" declline="32" declcolumn="6"/>
+        <location file="include/irq_offload.h" line="39" column="6" declfile="include/irq_offload.h" declline="39" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1380,13 +1381,13 @@
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18" refid="irq__offload_8h_1a5bcf9956ddbf5ea75619f0cef91e1214" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="irq__offload_8h_1a5bcf9956ddbf5ea75619f0cef91e1214" kindref="member">irq_offload_routine_t</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*parameter);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="irq__offload_8h_1a429859dd7ac3d88a4b7ae858835847ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="irq__offload_8h_1a429859dd7ac3d88a4b7ae858835847ce" kindref="member">irq_offload</ref>(<ref refid="irq__offload_8h_1a5bcf9956ddbf5ea75619f0cef91e1214" kindref="member">irq_offload_routine_t</ref><sp/>routine,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*parameter);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_SW_IRQ_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="39" refid="irq__offload_8h_1a429859dd7ac3d88a4b7ae858835847ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="irq__offload_8h_1a429859dd7ac3d88a4b7ae858835847ce" kindref="member">irq_offload</ref>(<ref refid="irq__offload_8h_1a5bcf9956ddbf5ea75619f0cef91e1214" kindref="member">irq_offload_routine_t</ref><sp/>routine,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*parameter);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>_SW_IRQ_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="include/irq_offload.h"/>
   </compounddef>

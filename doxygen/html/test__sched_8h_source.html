@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -108,10 +108,10 @@ $(document).ready(function(){initNavTree('test__sched_8h_source.html',''); initR
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;<a class="code" href="ztest_8h.html">ztest.h</a>&gt;</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="test__sched_8h.html#a009eccc38d82ae14211b7cbe51a879a5">   13</a></span><span class="preprocessor">#define MAX_NUM_THREAD 10</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="test__sched_8h.html#a6423a880df59733d2d9b509c7718d3a9">   14</a></span><span class="preprocessor">#define STACK_SIZE (640 + CONFIG_TEST_EXTRA_STACKSIZE)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="test__sched_8h.html#a6423a880df59733d2d9b509c7718d3a9">   14</a></span><span class="preprocessor">#define STACK_SIZE (640 + CONFIG_TEST_EXTRA_STACK_SIZE)</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="test__sched_8h.html#a054df7538d0e837a101abf426065940a">   16</a></span><a class="code hl_function" href="test__sched_8h.html#a054df7538d0e837a101abf426065940a">K_THREAD_STACK_EXTERN</a>(<a class="code hl_variable" href="pipe_2pipe__api_2src_2main_8c.html#a8b6a52348bfbfba409bf38688d31b8a8">tstack</a>);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="test__sched_8h.html#a6ead519f314b9fb3b12ef7e3bff44ec6">   17</a></span><a class="code hl_function" href="test__sched_8h.html#a6ead519f314b9fb3b12ef7e3bff44ec6">K_THREAD_STACK_ARRAY_EXTERN</a>(tstacks, <a class="code hl_define" href="test__sched_8h.html#a009eccc38d82ae14211b7cbe51a879a5">MAX_NUM_THREAD</a>, <a class="code hl_define" href="test__sched_8h.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="test__sched_8h.html#aef14882aedeeea6b2e51ede0c0876e39">   17</a></span><a class="code hl_function" href="test__sched_8h.html#aef14882aedeeea6b2e51ede0c0876e39">K_THREAD_STACK_ARRAY_EXTERN</a>(tstacks, <a class="code hl_define" href="test__sched_8h.html#a009eccc38d82ae14211b7cbe51a879a5">MAX_NUM_THREAD</a>, <a class="code hl_define" href="test__sched_8h.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a>);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">extern</span> <span class="keyword">struct </span><a class="code hl_struct" href="structk__thread.html">k_thread</a> <a class="code hl_variable" href="test__sched_8h.html#ad930fce335daadb13978925297e53bbf">user_thread</a>;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">extern</span> <span class="keyword">struct </span>k_sem <a class="code hl_variable" href="test__sched_8h.html#a7cac2b600bbcd5d0c27deae1199d16ba">user_sem</a>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
@@ -188,12 +188,12 @@ $(document).ready(function(){initNavTree('test__sched_8h_source.html',''); initR
 <div class="ttc" id="atest__sched_8h_html_a44baee856381f7b386368889abad43b2"><div class="ttname"><a href="test__sched_8h.html#a44baee856381f7b386368889abad43b2">test_busy_wait_cooperative</a></div><div class="ttdeci">void test_busy_wait_cooperative(void)</div><div class="ttdef"><b>Definition:</b> test_sched_timeslice_and_lock.c:143</div></div>
 <div class="ttc" id="atest__sched_8h_html_a529fbc28fa9343fa89fbd102c7a137f4"><div class="ttname"><a href="test__sched_8h.html#a529fbc28fa9343fa89fbd102c7a137f4">test_user_k_wakeup</a></div><div class="ttdeci">void test_user_k_wakeup(void)</div><div class="ttdef"><b>Definition:</b> user_api.c:32</div></div>
 <div class="ttc" id="atest__sched_8h_html_a6423a880df59733d2d9b509c7718d3a9"><div class="ttname"><a href="test__sched_8h.html#a6423a880df59733d2d9b509c7718d3a9">STACK_SIZE</a></div><div class="ttdeci">#define STACK_SIZE</div><div class="ttdef"><b>Definition:</b> test_sched.h:14</div></div>
-<div class="ttc" id="atest__sched_8h_html_a6ead519f314b9fb3b12ef7e3bff44ec6"><div class="ttname"><a href="test__sched_8h.html#a6ead519f314b9fb3b12ef7e3bff44ec6">K_THREAD_STACK_ARRAY_EXTERN</a></div><div class="ttdeci">K_THREAD_STACK_ARRAY_EXTERN(tstacks, 10,(640+CONFIG_TEST_EXTRA_STACKSIZE))</div></div>
 <div class="ttc" id="atest__sched_8h_html_a7cac2b600bbcd5d0c27deae1199d16ba"><div class="ttname"><a href="test__sched_8h.html#a7cac2b600bbcd5d0c27deae1199d16ba">user_sem</a></div><div class="ttdeci">struct k_sem user_sem</div></div>
 <div class="ttc" id="atest__sched_8h_html_a84eda7a4613d01c9172c17beaa0204de"><div class="ttname"><a href="test__sched_8h.html#a84eda7a4613d01c9172c17beaa0204de">test_slice_scheduling</a></div><div class="ttdeci">void test_slice_scheduling(void)</div><div class="ttdef"><b>Definition:</b> test_slice_scheduling.c:140</div></div>
 <div class="ttc" id="atest__sched_8h_html_ad21e6386a1ffc76ea1379e2233c6bb71"><div class="ttname"><a href="test__sched_8h.html#ad21e6386a1ffc76ea1379e2233c6bb71">spin_for_ms</a></div><div class="ttdeci">void spin_for_ms(int ticks)</div><div class="ttdef"><b>Definition:</b> main.c:16</div></div>
 <div class="ttc" id="atest__sched_8h_html_ad930fce335daadb13978925297e53bbf"><div class="ttname"><a href="test__sched_8h.html#ad930fce335daadb13978925297e53bbf">user_thread</a></div><div class="ttdeci">struct k_thread user_thread</div><div class="ttdef"><b>Definition:</b> user_api.c:13</div></div>
 <div class="ttc" id="atest__sched_8h_html_ae7916513acd5ff9613b2daefb0afddfc"><div class="ttname"><a href="test__sched_8h.html#ae7916513acd5ff9613b2daefb0afddfc">test_slice_reset</a></div><div class="ttdeci">void test_slice_reset(void)</div><div class="ttdef"><b>Definition:</b> test_sched_timeslice_reset.c:197</div></div>
+<div class="ttc" id="atest__sched_8h_html_aef14882aedeeea6b2e51ede0c0876e39"><div class="ttname"><a href="test__sched_8h.html#aef14882aedeeea6b2e51ede0c0876e39">K_THREAD_STACK_ARRAY_EXTERN</a></div><div class="ttdeci">K_THREAD_STACK_ARRAY_EXTERN(tstacks, 10,(640+CONFIG_TEST_EXTRA_STACK_SIZE))</div></div>
 <div class="ttc" id="aztest_8h_html"><div class="ttname"><a href="ztest_8h.html">ztest.h</a></div><div class="ttdoc">Zephyr Testsuite.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -202,7 +202,7 @@ $(document).ready(function(){initNavTree('test__sched_8h_source.html',''); initR
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_59425e443f801f1f2fd8bbe4959a3ccf.html">tests</a></li><li class="navelem"><a class="el" href="dir_2b7a4b5856a4d2068800cbeeeef5e1d8.html">kernel</a></li><li class="navelem"><a class="el" href="dir_da196d9712a1859ee67ddff681c42c8c.html">sched</a></li><li class="navelem"><a class="el" href="dir_af849e309437dec674e40f7e232d3a1d.html">schedule_api</a></li><li class="navelem"><a class="el" href="dir_14fe69b996b2a68a7b43deb1d29bf0ff.html">src</a></li><li class="navelem"><a class="el" href="test__sched_8h.html">test_sched.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:39 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

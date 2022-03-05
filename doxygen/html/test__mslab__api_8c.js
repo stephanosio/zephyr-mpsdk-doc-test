@@ -4,7 +4,7 @@ var test__mslab__api_8c =
     [ "K_MEM_SLAB_DEFINE", "test__mslab__api_8c.html#a67df826563fb3212d38113e56131b289", null ],
     [ "K_SEM_DEFINE", "test__mslab__api_8c.html#ac8b7a808c92db02e566c1bbb3c30ee81", null ],
     [ "K_SEM_DEFINE", "test__mslab__api_8c.html#a3be0501ad6d1b490f8dd2fe4f5722da1", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__mslab__api_8c.html#ae99a6a49392cc26a2005fd25cfd82841", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__mslab__api_8c.html#afeb96637c76f6fdb0ff6c90a22adcce7", null ],
     [ "test_mslab_alloc_align", "group__kernel__memory__slab__tests.html#gac03a1baa471add66003ca7cd4258cf3f", null ],
     [ "test_mslab_alloc_free_thread", "group__kernel__memory__slab__tests.html#gad286e91e6183fcf4f33d5dd291c5c384", null ],
     [ "test_mslab_alloc_timeout", "group__kernel__memory__slab__tests.html#ga25d58f739a95d0ae6fa95d03eba0b3f5", null ],

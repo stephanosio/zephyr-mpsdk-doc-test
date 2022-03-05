@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -183,7 +185,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -247,7 +249,7 @@
   <div class="section" id="logical-link-control-and-adaptation-protocol-l2cap">
 <span id="bt-l2cap"></span><h1>Logical Link Control and Adaptation Protocol (L2CAP)<a class="headerlink" href="#logical-link-control-and-adaptation-protocol-l2cap" title="Permalink to this headline">¶</a></h1>
 <p>L2CAP layer enables connection-oriented channels which can be enable with the
-configuration option: <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_L2CAP_DYNAMIC_CHANNEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_DYNAMIC_CHANNEL</span></code></a>. This channels
+configuration option: <a class="reference internal" href="../../kconfig.html#CONFIG_BT_L2CAP_DYNAMIC_CHANNEL" title="CONFIG_BT_L2CAP_DYNAMIC_CHANNEL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_L2CAP_DYNAMIC_CHANNEL</span></code></a>. This channels
 support segmentation and reassembly transparently, they also support credit
 based flow control making it suitable for data streams.</p>
 <p>Channels instances are represented by the <a class="reference internal" href="#c.bt_l2cap_chan" title="bt_l2cap_chan"><code class="xref c c-struct docutils literal notranslate"><span class="pre">bt_l2cap_chan</span></code></a> struct which
@@ -425,8 +427,8 @@ Note that the later can also disconnect channel instances created by servers.</p
 </dd></dl>
 
 <dl class="c enumerator">
-<dt class="sig sig-object c" id="c.bt_l2cap_chan_state.BT_L2CAP_CONNECT">
-<span class="target" id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bafbfbf546092319d30e49e959a3d35b41"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_L2CAP_CONNECT</span></span></span><a class="headerlink" href="#c.bt_l2cap_chan_state.BT_L2CAP_CONNECT" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.bt_l2cap_chan_state.BT_L2CAP_CONNECTING">
+<span class="target" id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25bac2a46c646c8739e8b129b89698eae7cd"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_L2CAP_CONNECTING</span></span></span><a class="headerlink" href="#c.bt_l2cap_chan_state.BT_L2CAP_CONNECTING" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Channel in connecting state </p>
 </dd></dl>
 
@@ -443,8 +445,8 @@ Note that the later can also disconnect channel instances created by servers.</p
 </dd></dl>
 
 <dl class="c enumerator">
-<dt class="sig sig-object c" id="c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECT">
-<span class="target" id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba322bc7ce76a5f0d9a3330283612f2b24"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_L2CAP_DISCONNECT</span></span></span><a class="headerlink" href="#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECT" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECTING">
+<span class="target" id="group__bt__l2cap_1gga642436bdf29f79495763b10231c6b25ba7a24502cfb06df715f58ad2e088cb7e8"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">BT_L2CAP_DISCONNECTING</span></span></span><a class="headerlink" href="#c.bt_l2cap_chan_state.BT_L2CAP_DISCONNECTING" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Channel in disconnecting state </p>
 </dd></dl>
 
@@ -994,8 +996,8 @@ Note that the later can also disconnect channel instances created by servers.</p
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

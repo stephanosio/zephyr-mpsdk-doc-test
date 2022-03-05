@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -167,7 +169,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -251,7 +253,7 @@ maintain the cryptographic security of the PRNG.</p>
 <span id="random-kconfig"></span><h2>Kconfig Options<a class="headerlink" href="#kconfig-options" title="Permalink to this headline">¶</a></h2>
 <p>These options can be found in the following path <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/subsys/random/Kconfig">subsys/random/Kconfig</a>.</p>
 <dl class="simple">
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_TEST_RANDOM_GENERATOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TEST_RANDOM_GENERATOR</span></code></a></dt><dd><p>For testing, this option permits random number APIs to return values
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_TEST_RANDOM_GENERATOR" title="CONFIG_TEST_RANDOM_GENERATOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TEST_RANDOM_GENERATOR</span></code></a></dt><dd><p>For testing, this option permits random number APIs to return values
 that are not truly random.</p>
 </dd>
 </dl>
@@ -266,13 +268,13 @@ endchoice
 </div>
 <p>The random number generators available include:</p>
 <dl class="simple">
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_TIMER_RANDOM_GENERATOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TIMER_RANDOM_GENERATOR</span></code></a></dt><dd><p>enables number generator based on system timer clock. This number
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_TIMER_RANDOM_GENERATOR" title="CONFIG_TIMER_RANDOM_GENERATOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TIMER_RANDOM_GENERATOR</span></code></a></dt><dd><p>enables number generator based on system timer clock. This number
 generator is not random and used for testing only.</p>
 </dd>
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_ENTROPY_DEVICE_RANDOM_GENERATOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ENTROPY_DEVICE_RANDOM_GENERATOR</span></code></a></dt><dd><p>enables a random number generator that uses the enabled hardware
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_ENTROPY_DEVICE_RANDOM_GENERATOR" title="CONFIG_ENTROPY_DEVICE_RANDOM_GENERATOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ENTROPY_DEVICE_RANDOM_GENERATOR</span></code></a></dt><dd><p>enables a random number generator that uses the enabled hardware
 entropy gathering driver to generate random numbers.</p>
 </dd>
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_XOSHIRO_RANDOM_GENERATOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_XOSHIRO_RANDOM_GENERATOR</span></code></a></dt><dd><p>enables the Xoshiro128++ pseudo-random number generator, that uses the
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_XOSHIRO_RANDOM_GENERATOR" title="CONFIG_XOSHIRO_RANDOM_GENERATOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_XOSHIRO_RANDOM_GENERATOR</span></code></a></dt><dd><p>enables the Xoshiro128++ pseudo-random number generator, that uses the
 entropy driver as a seed source.</p>
 </dd>
 </dl>
@@ -287,17 +289,17 @@ endchoice
 </div>
 <p>The cryptographically secure random number generators available include:</p>
 <dl class="simple">
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_HARDWARE_DEVICE_CS_GENERATOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HARDWARE_DEVICE_CS_GENERATOR</span></code></a></dt><dd><p>enables a cryptographically secure random number generator using the
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_HARDWARE_DEVICE_CS_GENERATOR" title="CONFIG_HARDWARE_DEVICE_CS_GENERATOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HARDWARE_DEVICE_CS_GENERATOR</span></code></a></dt><dd><p>enables a cryptographically secure random number generator using the
 hardware random generator driver</p>
 </dd>
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CTR_DRBG_CSPRNG_GENERATOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CTR_DRBG_CSPRNG_GENERATOR</span></code></a></dt><dd><p>enables the CTR-DRBG pseudo-random number generator. The CTR-DRBG is
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_CTR_DRBG_CSPRNG_GENERATOR" title="CONFIG_CTR_DRBG_CSPRNG_GENERATOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CTR_DRBG_CSPRNG_GENERATOR</span></code></a></dt><dd><p>enables the CTR-DRBG pseudo-random number generator. The CTR-DRBG is
 a FIPS140-2 recommended cryptographically secure random number generator.</p>
 </dd>
 </dl>
 <p>Personalization data can be provided in addition to the entropy source
 to make the initialization of the CTR-DRBG as unique as possible.</p>
 <dl class="simple">
-<dt><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_CS_CTR_DRBG_PERSONALIZATION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CS_CTR_DRBG_PERSONALIZATION</span></code></a></dt><dd><p>CTR-DRBG Initialization Personalization string</p>
+<dt><a class="reference internal" href="../../kconfig.html#CONFIG_CS_CTR_DRBG_PERSONALIZATION" title="CONFIG_CS_CTR_DRBG_PERSONALIZATION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CS_CTR_DRBG_PERSONALIZATION</span></code></a></dt><dd><p>CTR-DRBG Initialization Personalization string</p>
 </dd>
 </dl>
 </div>
@@ -378,8 +380,8 @@ to make the initialization of the CTR-DRBG as unique as possible.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

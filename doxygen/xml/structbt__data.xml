@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="294" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="294" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="297" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="297" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__data_1abda19091a1b8f99d385f11772ef34d5f" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="295" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="295" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="298" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="298" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__data_1ac80ec10101ad69a86f703a4e652c7826" prot="public" static="no" mutable="no">
         <type>const <ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="296" column="15" bodyfile="include/bluetooth/bluetooth.h" bodystart="296" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="299" column="15" bodyfile="include/bluetooth/bluetooth.h" bodystart="299" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -50,7 +50,7 @@
     <detaileddescription>
 <para>Description of different data types that can be encoded into advertising data. Used to form arrays that are passed to the <ref refid="group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02" kindref="member">bt_le_adv_start()</ref> function. </para>
     </detaileddescription>
-    <location file="include/bluetooth/bluetooth.h" line="293" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="293" bodyend="297"/>
+    <location file="include/bluetooth/bluetooth.h" line="296" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="296" bodyend="300"/>
     <listofallmembers>
       <member refid="structbt__data_1ac80ec10101ad69a86f703a4e652c7826" prot="public" virt="non-virtual"><scope>bt_data</scope><name>data</name></member>
       <member refid="structbt__data_1abda19091a1b8f99d385f11772ef34d5f" prot="public" virt="non-virtual"><scope>bt_data</scope><name>data_len</name></member>

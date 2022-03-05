@@ -16,10 +16,10 @@ var l2cap_8h =
     [ "bt_l2cap_chan_status_t", "group__bt__l2cap.html#ga3a1a88a8e87aefe9bea1dd01aa193b42", null ],
     [ "bt_l2cap_chan_state", "group__bt__l2cap.html#ga642436bdf29f79495763b10231c6b25b", [
       [ "BT_L2CAP_DISCONNECTED", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25ba1dc4c69537acf13a8c00dfca5acfb83c", null ],
-      [ "BT_L2CAP_CONNECT", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25bafbfbf546092319d30e49e959a3d35b41", null ],
+      [ "BT_L2CAP_CONNECTING", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25bac2a46c646c8739e8b129b89698eae7cd", null ],
       [ "BT_L2CAP_CONFIG", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25ba3167a1b491cb9b97ebe51f66c209f064", null ],
       [ "BT_L2CAP_CONNECTED", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25ba3adc86576ca2db5a7f74030d11699b68", null ],
-      [ "BT_L2CAP_DISCONNECT", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25ba322bc7ce76a5f0d9a3330283612f2b24", null ]
+      [ "BT_L2CAP_DISCONNECTING", "group__bt__l2cap.html#gga642436bdf29f79495763b10231c6b25ba7a24502cfb06df715f58ad2e088cb7e8", null ]
     ] ],
     [ "bt_l2cap_chan_status", "group__bt__l2cap.html#ga371a747c8939a1156111dc03c774015c", [
       [ "BT_L2CAP_STATUS_OUT", "group__bt__l2cap.html#gga371a747c8939a1156111dc03c774015ca89aea3cf3d9a004ffd53eae602666fd5", null ],

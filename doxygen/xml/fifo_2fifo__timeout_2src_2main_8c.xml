@@ -759,7 +759,7 @@
       </memberdef>
       <memberdef kind="define" id="fifo_2fifo__timeout_2src_2main_8c_1aa820b6b1cef8d50aa349ffeb5224c550" prot="public" static="no">
         <name>TSTACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -905,10 +905,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="fifo_2fifo__timeout_2src_2main_8c_1a44da5e2bdce1b42bf817464a2dd19408" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="fifo_2fifo__timeout_2src_2main_8c_1a9860b7fcfd40588ef617e449c46ad61e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(ttstack, ARRAY_SIZE(timeout_order_data_mult_fifo),(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(ttstack, ARRAY_SIZE(timeout_order_data_mult_fifo),(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>ttstack</type>
@@ -917,7 +917,7 @@
           <type><ref refid="group__sys-util_1ga70c57aae3eb654e205459b4362c8089a" kindref="member">ARRAY_SIZE</ref>(<ref refid="fifo_2fifo__timeout_2src_2main_8c_1a417036abcb368bc01d1e20a24066a903" kindref="member">timeout_order_data_mult_fifo</ref>)</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1387,10 +1387,10 @@
 <codeline lineno="75"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT_ORDER_NUM_THREADS<sp/><sp/><sp/><sp/><sp/><sp/><sp/>ARRAY_SIZE(timeout_order_data_mult_fifo)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSTACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSTACK_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIFO_THREAD_PRIO<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-5</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(ttstack,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(ttstack,</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1a5ff0b278e1b36f06411942ceddabcbb1" kindref="member">TIMEOUT_ORDER_NUM_THREADS</ref>,<sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1aa820b6b1cef8d50aa349ffeb5224c550" kindref="member">TSTACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1a9b8b0a42c1425d9d2fbe0c5515439e18" kindref="member">ttdata</ref>[<ref refid="fifo_2fifo__timeout_2src_2main_8c_1a5ff0b278e1b36f06411942ceddabcbb1" kindref="member">TIMEOUT_ORDER_NUM_THREADS</ref>];</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structk__thread" kindref="compound">k_tid_t</ref><sp/><ref refid="fifo_2fifo__timeout_2src_2main_8c_1af9be7b6fdbca696acdfc0d1cd2cf14e3" kindref="member">tid</ref>[<ref refid="fifo_2fifo__timeout_2src_2main_8c_1a5ff0b278e1b36f06411942ceddabcbb1" kindref="member">TIMEOUT_ORDER_NUM_THREADS</ref>];</highlight></codeline>

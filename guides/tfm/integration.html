@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -163,7 +165,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -233,13 +235,13 @@ use of its secure run-time services in Zephyr applications.</p>
 <div class="section" id="board-definitions">
 <h2>Board Definitions<a class="headerlink" href="#board-definitions" title="Permalink to this headline">¶</a></h2>
 <p>TF-M will be built for the secure processing environment along with Zephyr if
-the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BUILD_WITH_TFM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BUILD_WITH_TFM</span></code></a> flag is set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+the <a class="reference internal" href="../../kconfig.html#CONFIG_BUILD_WITH_TFM" title="CONFIG_BUILD_WITH_TFM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BUILD_WITH_TFM</span></code></a> flag is set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
 <p>Generally, this value should never be set at the application level, however,
 and all config flags required for TF-M should be set in a board variant with
 the <code class="docutils literal notranslate"><span class="pre">_ns</span></code> suffix.</p>
 <p>This board variant must define an appropriate flash, SRAM and peripheral
 configuration that takes into account the initialisation process in the secure
-processing environment. <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_BOARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_BOARD</span></code></a> must also be set via
+processing environment. <a class="reference internal" href="../../kconfig.html#CONFIG_TFM_BOARD" title="CONFIG_TFM_BOARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_BOARD</span></code></a> must also be set via
 <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr/blob/main/modules/trusted-firmware-m/Kconfig.tfm">modules/trusted-firmware-m/Kconfig.tfm</a>
 to the board name that TF-M expects for this target, so that it knows which
 target to build for the secure processing environment.</p>
@@ -252,8 +254,8 @@ kconfig flags that indicate that Zephyr should be built as a
 non-secure image, linked with TF-M as an external project, and optionally the
 secure bootloader:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRUSTED_EXECUTION_NONSECURE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRUSTED_EXECUTION_NONSECURE</span></code></a> <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARM_TRUSTZONE_M"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_TRUSTZONE_M</span></code></a> <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_TRUSTED_EXECUTION_NONSECURE" title="CONFIG_TRUSTED_EXECUTION_NONSECURE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRUSTED_EXECUTION_NONSECURE</span></code></a> <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_ARM_TRUSTZONE_M" title="CONFIG_ARM_TRUSTZONE_M"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARM_TRUSTZONE_M</span></code></a> <code class="docutils literal notranslate"><span class="pre">y</span></code></p></li>
 </ul>
 <p>Comparing the <code class="docutils literal notranslate"><span class="pre">mps2_an521.dts</span></code> and <code class="docutils literal notranslate"><span class="pre">mps2_an521_ns.dts</span></code> files, we can see
 that the <code class="docutils literal notranslate"><span class="pre">_ns</span></code> version defines offsets in flash and SRAM memory, which leave
@@ -297,7 +299,7 @@ along with 1 MB of RAM.</p>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">mps2/an521</span></code> will be passed in to Tf-M as the board target, specified via
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TFM_BOARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TFM_BOARD</span></code></a>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_TFM_BOARD" title="CONFIG_TFM_BOARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TFM_BOARD</span></code></a>.</p>
 </div>
 </div>
 </div>
@@ -311,8 +313,8 @@ along with 1 MB of RAM.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

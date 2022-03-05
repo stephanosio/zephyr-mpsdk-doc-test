@@ -13,6 +13,7 @@ var ite_intc_8h =
     [ "IT8XXX2_IRQ_KBC_OBE", "ite-intc_8h.html#a164c6994b9ec0e6caeb2d22f26bb3193", null ],
     [ "IT8XXX2_IRQ_PCH_P80", "ite-intc_8h.html#a77a329b843c2709461188b236e7e9f5a", null ],
     [ "IT8XXX2_IRQ_PMC1_IBF", "ite-intc_8h.html#ace6032a2b393b2e9f82e17bc4f682507", null ],
+    [ "IT8XXX2_IRQ_PMC2_IBF", "ite-intc_8h.html#af54f7abd8fd110352dbd932665169797", null ],
     [ "IT8XXX2_IRQ_TIMER1", "ite-intc_8h.html#a9353a04daccd2da837b226e098045e65", null ],
     [ "IT8XXX2_IRQ_TIMER2", "ite-intc_8h.html#a44a71af10fc4eebb3a9e6fd14fa03fa4", null ],
     [ "IT8XXX2_IRQ_TIMER3", "ite-intc_8h.html#a90092bccc13f1a9523ade25d2fa49c1f", null ],

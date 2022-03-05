@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -167,6 +167,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf5d428f18b00138fd2ccca190981191d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#gaf5d428f18b00138fd2ccca190981191d">log_backend_disable</a> (struct <a class="el" href="structlog__backend.html">log_backend</a> const *const backend)</td></tr>
 <tr class="memdesc:gaf5d428f18b00138fd2ccca190981191d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable backend.  <a href="group__log__ctrl.html#gaf5d428f18b00138fd2ccca190981191d">More...</a><br /></td></tr>
 <tr class="separator:gaf5d428f18b00138fd2ccca190981191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c374e83492b221eeaf2c2b0f38e3b42"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structlog__backend.html">log_backend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga8c374e83492b221eeaf2c2b0f38e3b42">log_backend_get_by_name</a> (const char *backend_name)</td></tr>
+<tr class="memdesc:ga8c374e83492b221eeaf2c2b0f38e3b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get backend by name.  <a href="group__log__ctrl.html#ga8c374e83492b221eeaf2c2b0f38e3b42">More...</a><br /></td></tr>
+<tr class="separator:ga8c374e83492b221eeaf2c2b0f38e3b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaaaa2e68877837a4af20fa172fc2f06"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structlog__backend.html">log_backend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#gaeaaaa2e68877837a4af20fa172fc2f06">log_format_set_all_active_backends</a> (size_t log_type)</td></tr>
+<tr class="memdesc:gaeaaaa2e68877837a4af20fa172fc2f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets logging format for all active backends.  <a href="group__log__ctrl.html#gaeaaaa2e68877837a4af20fa172fc2f06">More...</a><br /></td></tr>
+<tr class="separator:gaeaaaa2e68877837a4af20fa172fc2f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58c62e37b9fe470e0b0fc22967fa164d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga58c62e37b9fe470e0b0fc22967fa164d">log_get_strdup_pool_current_utilization</a> (void)</td></tr>
 <tr class="memdesc:ga58c62e37b9fe470e0b0fc22967fa164d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current number of allocated buffers for string duplicates.  <a href="group__log__ctrl.html#ga58c62e37b9fe470e0b0fc22967fa164d">More...</a><br /></td></tr>
 <tr class="separator:ga58c62e37b9fe470e0b0fc22967fa164d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -182,6 +188,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga58499087f61cc377615311498eedf1ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga58499087f61cc377615311498eedf1ae">log_set_tag</a> (const char *<a class="el" href="timer_2starve_2src_2main_8c.html#aa7eccd3911dd697c8b39d08273f3e64e">tag</a>)</td></tr>
 <tr class="memdesc:ga58499087f61cc377615311498eedf1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure tag used to prefix each message.  <a href="group__log__ctrl.html#ga58499087f61cc377615311498eedf1ae">More...</a><br /></td></tr>
 <tr class="separator:ga58499087f61cc377615311498eedf1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f3487ab08e421ae7ce8a8b80310a338"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga5f3487ab08e421ae7ce8a8b80310a338">log_mem_get_usage</a> (<a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *buf_size, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *usage)</td></tr>
+<tr class="memdesc:ga5f3487ab08e421ae7ce8a8b80310a338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current memory usage.  <a href="group__log__ctrl.html#ga5f3487ab08e421ae7ce8a8b80310a338">More...</a><br /></td></tr>
+<tr class="separator:ga5f3487ab08e421ae7ce8a8b80310a338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d3f29bf2783e70242c8608a20a934ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga2d3f29bf2783e70242c8608a20a934ee">log_mem_get_max_usage</a> (<a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *max)</td></tr>
+<tr class="memdesc:ga2d3f29bf2783e70242c8608a20a934ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum memory usage.  <a href="group__log__ctrl.html#ga2d3f29bf2783e70242c8608a20a934ee">More...</a><br /></td></tr>
+<tr class="separator:ga2d3f29bf2783e70242c8608a20a934ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -190,7 +202,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_7188461832bb92671066220d237ea5f7.html">logging</a></li><li class="navelem"><a class="el" href="include_2logging_2log__ctrl_8h.html">log_ctrl.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:45 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="91" column="12" bodyfile="include/drivers/ipm.h" bodystart="91" bodyend="-1"/>
+        <location file="include/drivers/ipm.h" line="99" column="12" bodyfile="include/drivers/ipm.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structipm__driver__api_1a073f9928135a6e9ed022edf877c2181d" prot="public" static="no" mutable="no">
         <type><ref refid="group__ipm__interface_1ga186a1c5232ad1d06908cfee1bcb9dcab" kindref="member">ipm_register_callback_t</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="92" column="25" bodyfile="include/drivers/ipm.h" bodystart="92" bodyend="-1"/>
+        <location file="include/drivers/ipm.h" line="100" column="25" bodyfile="include/drivers/ipm.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structipm__driver__api_1a33d936ed9e0606a653a88563268c9543" prot="public" static="no" mutable="no">
         <type><ref refid="group__ipm__interface_1ga67611ee678c0c265ba07589f1b8aea68" kindref="member">ipm_max_data_size_get_t</ref></type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="93" column="25" bodyfile="include/drivers/ipm.h" bodystart="93" bodyend="-1"/>
+        <location file="include/drivers/ipm.h" line="101" column="25" bodyfile="include/drivers/ipm.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structipm__driver__api_1a69f7264ac909a0c9aec3676766e807af" prot="public" static="no" mutable="no">
         <type><ref refid="group__ipm__interface_1gaa11bc35736af40ea49b7be621b09f70d" kindref="member">ipm_max_id_val_get_t</ref></type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="94" column="22" bodyfile="include/drivers/ipm.h" bodystart="94" bodyend="-1"/>
+        <location file="include/drivers/ipm.h" line="102" column="22" bodyfile="include/drivers/ipm.h" bodystart="102" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structipm__driver__api_1ac17dd018dcf02538c6f2d97005d5494b" prot="public" static="no" mutable="no">
         <type><ref refid="group__ipm__interface_1ga1db507f3e01af8258669f18b058913ad" kindref="member">ipm_set_enabled_t</ref></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/ipm.h" line="95" column="19" bodyfile="include/drivers/ipm.h" bodystart="95" bodyend="-1"/>
+        <location file="include/drivers/ipm.h" line="103" column="19" bodyfile="include/drivers/ipm.h" bodystart="103" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -98,7 +98,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/drivers/ipm.h" line="90" column="12" bodyfile="include/drivers/ipm.h" bodystart="90" bodyend="96"/>
+    <location file="include/drivers/ipm.h" line="98" column="12" bodyfile="include/drivers/ipm.h" bodystart="98" bodyend="107"/>
     <listofallmembers>
       <member refid="structipm__driver__api_1a33d936ed9e0606a653a88563268c9543" prot="public" virt="non-virtual"><scope>ipm_driver_api</scope><name>max_data_size_get</name></member>
       <member refid="structipm__driver__api_1a69f7264ac909a0c9aec3676766e807af" prot="public" virt="non-virtual"><scope>ipm_driver_api</scope><name>max_id_val_get</name></member>

@@ -58,6 +58,7 @@ var arm__mpu__v8m_8h =
     [ "REGION_FLASH_ATTR", "arm__mpu__v8m_8h.html#a0293a2955ef2b9772d2ef4e1aaf9b24c", null ],
     [ "REGION_LIMIT_ADDR", "arm__mpu__v8m_8h.html#adc21e54d67b5ad7688c15784e8b0459c", null ],
     [ "REGION_RAM_ATTR", "arm__mpu__v8m_8h.html#a6017a9ca9983921e946771ea57dc4201", null ],
+    [ "REGION_RAM_NOCACHE_ATTR", "arm__mpu__v8m_8h.html#a8b4189f8ce0221dc34b199f3961aaf66", null ],
     [ "RO", "arm__mpu__v8m_8h.html#a628642b04c07236ae1e986c248a79ae5", null ],
     [ "RO_Msk", "arm__mpu__v8m_8h.html#a35e3f724856c6947c52885def2e3c0d6", null ],
     [ "arm_mpu_region_attr_t", "arm__mpu__v8m_8h.html#a1bf1c09c9012aa693f7ce40b7af2dae6", null ]

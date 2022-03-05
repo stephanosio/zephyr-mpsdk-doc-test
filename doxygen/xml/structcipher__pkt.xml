@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
   <compounddef id="structcipher__pkt" kind="struct" language="C++" prot="public">
     <compoundname>cipher_pkt</compoundname>
-    <includes refid="cipher__structs_8h" local="no">cipher_structs.h</includes>
+    <includes refid="cipher_8h" local="no">cipher.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structcipher__pkt_1a56d2de56d9efc153032eb7f6503748ba" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="214" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="214" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="183" column="9" bodyfile="include/crypto/cipher.h" bodystart="183" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__pkt_1ac5c98e7edafb4b61e01f707c785afbea" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="217" column="6" bodyfile="include/crypto/cipher_structs.h" bodystart="217" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="186" column="6" bodyfile="include/crypto/cipher.h" bodystart="186" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__pkt_1ab95bae428d3d3c80b1b8ee6ea03a05d0" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="223" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="223" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="192" column="9" bodyfile="include/crypto/cipher.h" bodystart="192" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__pkt_1a6e51f941334e87cc966f5a37e783d1fc" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="228" column="5" bodyfile="include/crypto/cipher_structs.h" bodystart="228" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="197" column="5" bodyfile="include/crypto/cipher.h" bodystart="197" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__pkt_1abc9588a5f84f9daa13ce4aec965f0a91" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="233" column="5" bodyfile="include/crypto/cipher_structs.h" bodystart="233" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="202" column="5" bodyfile="include/crypto/cipher.h" bodystart="202" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__pkt_1a26fb877d705580648da03ce95264d100" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structcipher__ctx" kindref="compound">cipher_ctx</ref> *</type>
@@ -86,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="239" column="17" bodyfile="include/crypto/cipher_structs.h" bodystart="239" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="208" column="17" bodyfile="include/crypto/cipher.h" bodystart="208" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -157,7 +157,7 @@
         <link refid="structgcm__params"/>
       </node>
     </collaborationgraph>
-    <location file="include/crypto/cipher_structs.h" line="211" column="1" bodyfile="include/crypto/cipher_structs.h" bodystart="211" bodyend="240"/>
+    <location file="include/crypto/cipher.h" line="180" column="1" bodyfile="include/crypto/cipher.h" bodystart="180" bodyend="209"/>
     <listofallmembers>
       <member refid="structcipher__pkt_1a26fb877d705580648da03ce95264d100" prot="public" virt="non-virtual"><scope>cipher_pkt</scope><name>ctx</name></member>
       <member refid="structcipher__pkt_1a56d2de56d9efc153032eb7f6503748ba" prot="public" virt="non-virtual"><scope>cipher_pkt</scope><name>in_buf</name></member>

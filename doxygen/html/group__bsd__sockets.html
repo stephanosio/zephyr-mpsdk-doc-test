@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -1443,7 +1443,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/accept.html&gt;`__
 * for normative description.
 * This function is also exposed as ``accept()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1487,7 +1487,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/bind.html&gt;`__
 * for normative description.
 * This function is also exposed as ``bind()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1513,7 +1513,7 @@ Functions</h2></td></tr>
 <pre class="fragment">embed:rst:leading-asterisk
 * Close a network socket.
 * This function is also exposed as ``close()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case it
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case it
 * may conflict with generic POSIX ``close()`` function).
 * </pre> 
 </div>
@@ -1558,7 +1558,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/connect.html&gt;`__
 * for normative description.
 * This function is also exposed as ``connect()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1601,7 +1601,7 @@ Functions</h2></td></tr>
 * This functions allow to (only) configure a socket for blocking or
 * non-blocking operation (O_NONBLOCK).
 * This function is also exposed as ``fcntl()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
 * it may conflict with generic POSIX ``fcntl()`` function).
 * </pre> 
 </div>
@@ -1640,7 +1640,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_CLR()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1678,7 +1678,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_ISSET()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1716,7 +1716,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_SET()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1744,7 +1744,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/select.html&gt;`__
 * for normative description.
 * This function is also exposed as ``FD_ZERO()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1772,7 +1772,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/freeaddrinfo.html&gt;`__
 * for normative description.
 * This function is also exposed as ``freeaddrinfo()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1800,7 +1800,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/gai_strerror.html&gt;`__
 * for normative description.
 * This function is also exposed as ``gai_strerror()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1885,7 +1885,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/getaddrinfo.html&gt;`__
 * for normative description.
 * This function is also exposed as ``getaddrinfo()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1923,7 +1923,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/gethostname.html&gt;`__
 * for normative description.
 * This function is also exposed as ``gethostname()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -1991,7 +1991,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/getnameinfo.html&gt;`__
 * for normative description.
 * This function is also exposed as ``getnameinfo()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2035,7 +2035,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/getsockname.html&gt;`__
 * for normative description.
 * This function is also exposed as ``getsockname()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2094,7 +2094,7 @@ Functions</h2></td></tr>
 * available in Linux (some options are dummy and provided to ease porting
 * of existing code).
 * This function is also exposed as ``getsockopt()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2152,7 +2152,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/inet_ntop.html&gt;`__
 * for normative description.
 * This function is also exposed as ``inet_ntop()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2196,7 +2196,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/inet_pton.html&gt;`__
 * for normative description.
 * This function is also exposed as ``inet_pton()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2234,7 +2234,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/listen.html&gt;`__
 * for normative description.
 * This function is also exposed as ``listen()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2279,7 +2279,7 @@ Functions</h2></td></tr>
 * for normative description. (In Zephyr this function works only with
 * sockets, not arbitrary file descriptors.)
 * This function is also exposed as ``poll()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
 * it may conflict with generic POSIX ``poll()`` function).
 * </pre> 
 </div>
@@ -2338,7 +2338,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/recv.html&gt;`__
 * for normative description.
 * This function is also exposed as ``recv()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2400,7 +2400,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/recvfrom.html&gt;`__
 * for normative description.
 * This function is also exposed as ``recvfrom()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2459,7 +2459,7 @@ Functions</h2></td></tr>
 * use :c:func:`zsock_poll()` instead. In Zephyr this function works only with
 * sockets, not arbitrary file descriptors.
 * This function is also exposed as ``select()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined (in which case
 * it may conflict with generic POSIX ``select()`` function).
 * </pre> 
 </div>
@@ -2518,7 +2518,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/send.html&gt;`__
 * for normative description.
 * This function is also exposed as ``send()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2562,7 +2562,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/sendmsg.html&gt;`__
 * for normative description.
 * This function is also exposed as ``sendmsg()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2624,7 +2624,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/sendto.html&gt;`__
 * for normative description.
 * This function is also exposed as ``sendto()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2683,7 +2683,7 @@ Functions</h2></td></tr>
 * available in Linux (some options are dummy and provided to ease porting
 * of existing code).
 * This function is also exposed as ``setsockopt()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2722,7 +2722,7 @@ Functions</h2></td></tr>
 * for normative description, but currently this function has no effect in
 * Zephyr and provided solely for compatibility with existing code.
 * This function is also exposed as ``shutdown()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2766,7 +2766,7 @@ Functions</h2></td></tr>
 * &lt;http://pubs.opengroup.org/onlinepubs/9699919799/functions/socket.html&gt;`__
 * for normative description.
 * This function is also exposed as ``socket()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre><p >If CONFIG_USERSPACE is enabled, the caller will be granted access to the context object associated with the returned file descriptor. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="group__bsd__sockets.html#ga21a871d1fa6b6beeed88408761877873" title="Obtain a file descriptor&#39;s associated net context.">zsock_get_context_object()</a> </dd></dl>
 
 </div>
@@ -2817,7 +2817,7 @@ Functions</h2></td></tr>
 * &lt;https://pubs.opengroup.org/onlinepubs/009695399/functions/socketpair.html&gt;`__
 * for normative description.
 * This function is also exposed as ``socketpair()``
-* if :kconfig:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
+* if :kconfig:option:`CONFIG_NET_SOCKETS_POSIX_NAMES` is defined.
 * </pre> 
 </div>
 </div>
@@ -2827,7 +2827,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

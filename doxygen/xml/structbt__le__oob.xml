@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1968" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="1968" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1973" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="1973" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__oob_1a80ccd4ab120a880adfff9aba3b19b4fd" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structbt__le__oob__sc__data" kindref="compound">bt_le_oob_sc_data</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1971" column="24" bodyfile="include/bluetooth/bluetooth.h" bodystart="1971" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1976" column="24" bodyfile="include/bluetooth/bluetooth.h" bodystart="1976" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -65,7 +65,7 @@
         <link refid="structbt__le__oob__sc__data"/>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/bluetooth.h" line="1964" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1964" bodyend="1972"/>
+    <location file="include/bluetooth/bluetooth.h" line="1969" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1969" bodyend="1977"/>
     <listofallmembers>
       <member refid="structbt__le__oob_1a17cfed7683efbf5b5954847d655d7424" prot="public" virt="non-virtual"><scope>bt_le_oob</scope><name>addr</name></member>
       <member refid="structbt__le__oob_1a80ccd4ab120a880adfff9aba3b19b4fd" prot="public" virt="non-virtual"><scope>bt_le_oob</scope><name>le_sc_data</name></member>

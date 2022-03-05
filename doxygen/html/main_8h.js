@@ -59,6 +59,7 @@ var main_8h =
     [ "bt_mesh_prov_remote_pub_key_set", "group__bt__mesh__prov.html#gae33b5b6e9650b49d46494b4a81b18674", null ],
     [ "bt_mesh_provision", "group__bt__mesh__prov.html#ga4ed6e078c1c0f197758c8dbb23db30f6", null ],
     [ "bt_mesh_provision_adv", "group__bt__mesh__prov.html#ga0bfae4ebda53052cfa027c3a7ae51ec8", null ],
+    [ "bt_mesh_provision_gatt", "group__bt__mesh__prov.html#ga60666e0d7629caf36026974621bae664", null ],
     [ "bt_mesh_reset", "group__bt__mesh.html#ga69fc65f4e07e6007388473f139e5d8d8", null ],
     [ "bt_mesh_resume", "group__bt__mesh.html#gaa9114ce8941e641dbb23828d7c0451fd", null ],
     [ "bt_mesh_rpl_pending_store", "group__bt__mesh.html#ga62f9a72c4e9dc5e4f3f42bd4df4fe452", null ],

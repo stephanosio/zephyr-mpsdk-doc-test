@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1642" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1642" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1647" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1647" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__scan__param_1ac702ecbd938b9a73156a0c6fcf603812" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1645" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1645" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1650" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1650" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__scan__param_1a2f4e053d97c62b6fdf42a245908607f8" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1648" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1648" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1653" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1653" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__scan__param_1a37a7ee82e86a91cf7a9c2adf60bb526a" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1651" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1651" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1656" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1656" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__scan__param_1a3e71ce551dcc7762c29e2316996e2912" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1659" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1659" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1664" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1664" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__scan__param_1a67a20bc94a3d98fa10af7b5b42dde328" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -88,7 +88,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1666" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1666" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1671" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1671" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__scan__param_1a93166af55dca71393c60cb3f7ac6d809" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -103,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1673" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1673" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1678" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1678" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -111,7 +111,7 @@
     <detaileddescription>
 <para>LE scan parameters </para>
     </detaileddescription>
-    <location file="include/bluetooth/bluetooth.h" line="1640" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1640" bodyend="1674"/>
+    <location file="include/bluetooth/bluetooth.h" line="1645" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1645" bodyend="1679"/>
     <listofallmembers>
       <member refid="structbt__le__scan__param_1a2f4e053d97c62b6fdf42a245908607f8" prot="public" virt="non-virtual"><scope>bt_le_scan_param</scope><name>interval</name></member>
       <member refid="structbt__le__scan__param_1a67a20bc94a3d98fa10af7b5b42dde328" prot="public" virt="non-virtual"><scope>bt_le_scan_param</scope><name>interval_coded</name></member>

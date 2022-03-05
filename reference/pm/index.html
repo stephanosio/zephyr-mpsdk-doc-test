@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -173,7 +175,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -243,8 +245,8 @@
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
-<dt class="sig sig-object c" id="c.pm_power_state_force">
-<span class="target" id="group__subsys__pm__sys_1ga5c22778e2981505a833e8fc9067e1667"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_power_state_force</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">cpu</span></span>, <span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state_info" title="pm_state_info"><span class="n"><span class="pre">pm_state_info</span></span></a><span class="w"> </span><span class="n"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_power_state_force" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.pm_state_force">
+<span class="target" id="group__subsys__pm__sys_1ga075be307983f4efdcc93252a31a4258a"></span><span class="kt"><span class="pre">bool</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_state_force</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">cpu</span></span>, <span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state_info" title="pm_state_info"><span class="n"><span class="pre">pm_state_info</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_state_force" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Force usage of given power state. </p>
 <p>This function overrides decision made by PM policy forcing usage of given power state upon next entry of the idle thread.</p>
 <div class="admonition note">
@@ -293,8 +295,8 @@
 </dd></dl>
 
 <dl class="c function">
-<dt class="sig sig-object c" id="c.pm_power_state_next_get">
-<span class="target" id="group__subsys__pm__sys_1ga9d244527bfaa67a9fbae4a5bbe1ab6bd"></span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state_info" title="pm_state_info"><span class="n"><span class="pre">pm_state_info</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_power_state_next_get</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">cpu</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_power_state_next_get" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.pm_state_next_get">
+<span class="target" id="group__subsys__pm__sys_1ga3861a1a0009b96d15de00059257848dd"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state_info" title="pm_state_info"><span class="n"><span class="pre">pm_state_info</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="sig-name descname"><span class="n"><span class="pre">pm_state_next_get</span></span></span><span class="sig-paren">(</span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">cpu</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_state_next_get" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Gets the next power state that will be used. </p>
 <p>This function returns the next power state that will be used by the SoC.</p>
 <dl class="field-list simple">
@@ -734,28 +736,30 @@
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
 <dl class="c function">
-<dt class="sig sig-object c" id="c.pm_power_state_set">
-<span class="target" id="group__subsys__pm__sys__hooks_1ga02e5f5fa75011aee48c84ed479cd3d3c"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_power_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state_info" title="pm_state_info"><span class="n"><span class="pre">pm_state_info</span></span></a><span class="w"> </span><span class="n"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_power_state_set" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.pm_state_set">
+<span class="target" id="group__subsys__pm__sys__hooks_1gaa5c707f5c9c14494a388c6c2144e8f61"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state" title="pm_state"><span class="n"><span class="pre">pm_state</span></span></a><span class="w"> </span><span class="n"><span class="pre">state</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">substate_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_state_set" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Put processor into a power state. </p>
 <p>This function implements the SoC specific details necessary to put the processor into available power states.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>info</strong> – Power state which should be used in the ongoing suspend operation. </p></li>
+<li><p><strong>state</strong> – Power state. </p></li>
+<li><p><strong>substate_id</strong> – Power substate id. </p></li>
 </ul>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="c function">
-<dt class="sig sig-object c" id="c.pm_power_state_exit_post_ops">
-<span class="target" id="group__subsys__pm__sys__hooks_1ga2704992892d76514696d2f9e1b96f4e0"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_power_state_exit_post_ops</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state_info" title="pm_state_info"><span class="n"><span class="pre">pm_state_info</span></span></a><span class="w"> </span><span class="n"><span class="pre">info</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_power_state_exit_post_ops" title="Permalink to this definition">¶</a><br /></dt>
+<dt class="sig sig-object c" id="c.pm_state_exit_post_ops">
+<span class="target" id="group__subsys__pm__sys__hooks_1ga7594e7e9b41c180ac760b7b0c47673b2"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_state_exit_post_ops</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_state" title="pm_state"><span class="n"><span class="pre">pm_state</span></span></a><span class="w"> </span><span class="n"><span class="pre">state</span></span>, <span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="n"><span class="pre">substate_id</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_state_exit_post_ops" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Do any SoC or architecture specific post ops after sleep state exits. </p>
 <p>This function is a place holder to do any operations that may be needed to be done after sleep state exits. Currently it enables interrupts after resuming from sleep state. In future, the enabling of interrupts may be moved into the kernel.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>info</strong> – Power state that the given cpu is leaving. </p></li>
+<li><p><strong>state</strong> – Power state. </p></li>
+<li><p><strong>substate_id</strong> – Power substate id. </p></li>
 </ul>
 </dd>
 </dl>
@@ -785,7 +789,7 @@
 </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This macro is a no-op if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is not enabled.</p>
+<p>This macro is a no-op if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is not enabled.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -808,7 +812,7 @@
 </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This macro is a no-op if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is not enabled.</p>
+<p>This macro is a no-op if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is not enabled.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -831,7 +835,7 @@
 </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This macro is a no-op if <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is not enabled.</p>
+<p>This macro is a no-op if <span> <a class="reference internal" href="../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is not enabled.</p>
 </div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -854,7 +858,7 @@
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Reference to the device PM resources (NULL if device <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is disabled). </p>
+<dd class="field-even"><p>Reference to the device PM resources (NULL if device <span> <a class="reference internal" href="../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is disabled). </p>
 </dd>
 </dl>
 </dd></dl>
@@ -870,7 +874,7 @@
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Reference to the device PM resources (NULL if device <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is disabled). </p>
+<dd class="field-even"><p>Reference to the device PM resources (NULL if device <span> <a class="reference internal" href="../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is disabled). </p>
 </dd>
 </dl>
 </dd></dl>
@@ -886,7 +890,7 @@
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Reference to the device PM resources (NULL if device <span> <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is disabled). </p>
+<dd class="field-even"><p>Reference to the device PM resources (NULL if device <span> <a class="reference internal" href="../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> </span> is disabled). </p>
 </dd>
 </dl>
 </dd></dl>
@@ -989,43 +993,6 @@
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>state</strong> – State id which name should be returned </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.pm_device_state_set">
-<span class="target" id="group__subsys__pm__device_1ga37fb93d42a507abc7aa51c4a08e5353c"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">pm_device_state_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span>, <span class="k"><span class="pre">enum</span></span><span class="w"> </span><a class="reference internal" href="#c.pm_device_state" title="pm_device_state"><span class="n"><span class="pre">pm_device_state</span></span></a><span class="w"> </span><span class="n"><span class="pre">state</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.pm_device_state_set" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Set the power state of a device. </p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Deprecated:</span></em></dt>
-<dd><p>Use <a class="reference internal" href="#group__subsys__pm__device_1ga3840d6e7832a00b93763247a5951bfde"><span class="std std-ref">pm_device_action_run()</span></a> instead.</p>
-</dd></dl>
-
-</p>
-<p>This function calls the device PM control callback so that the device does the necessary operations to put the device into the given state.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Some devices may not support all device power states.</p>
-</div>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dev</strong> – Device instance. </p></li>
-<li><p><strong>state</strong> – Device power state to be set.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return values</dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>0</strong> – If successful. </p></li>
-<li><p><strong>-ENOTSUP</strong> – If requested state is not supported. </p></li>
-<li><p><strong>-EALREADY</strong> – If device is already at the requested state. </p></li>
-<li><p><strong>-EBUSY</strong> – If device is changing its state. </p></li>
-<li><p><strong>-ENOSYS</strong> – If device does not support PM. </p></li>
-<li><p><strong>-EPERM</strong> – If device has power state locked. </p></li>
-<li><p><strong>Errno</strong> – Other negative errno on failure. </p></li>
 </ul>
 </dd>
 </dl>
@@ -1302,93 +1269,6 @@
 </dl>
 </dd></dl>
 
-<dl class="c function">
-<dt class="sig sig-object c" id="c.device_busy_set">
-<span class="target" id="group__subsys__pm__device_1gabfaec92a92766154b8b9ac9dd29f2c1e"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">device_busy_set</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.device_busy_set" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Mark a device as busy.</p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Deprecated:</span></em></dt>
-<dd><p>Use <a class="reference internal" href="#group__subsys__pm__device_1ga7ea002352f3d1c90aecff1d54c255a06"><span class="std std-ref">pm_device_busy_set()</span></a> instead</p>
-</dd></dl>
-
-</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dev</strong> – Device instance. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.device_busy_clear">
-<span class="target" id="group__subsys__pm__device_1gadff113f34359db32c8739294143a1c8f"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">device_busy_clear</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.device_busy_clear" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Clear busy status of a device. </p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Deprecated:</span></em></dt>
-<dd><p>Use <a class="reference internal" href="#group__subsys__pm__device_1ga8b527314f0c61b85602876b4f5a52275"><span class="std std-ref">pm_device_busy_clear()</span></a> instead</p>
-</dd></dl>
-
-</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dev</strong> – Device instance. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.device_any_busy_check">
-<span class="target" id="group__subsys__pm__device_1ga9ee3ee2f5dac79c85fc901c179fbadf9"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">device_any_busy_check</span></span></span><span class="sig-paren">(</span><span class="kt"><span class="pre">void</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.device_any_busy_check" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Check if any device is busy. </p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Deprecated:</span></em></dt>
-<dd><p>Use <a class="reference internal" href="#group__subsys__pm__device_1gae59a1fbcd2399717076fbfcee1e5e411"><span class="std std-ref">pm_device_is_any_busy()</span></a> instead</p>
-</dd></dl>
-
-</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return values</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>0</strong> – No devices are busy. </p></li>
-<li><p><strong>-EBUSY</strong> – One or more devices are busy. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="c function">
-<dt class="sig sig-object c" id="c.device_busy_check">
-<span class="target" id="group__subsys__pm__device_1ga24bd4cb295002584c4f8183e937badc1"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">device_busy_check</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="../drivers/index.html#c.device" title="device"><span class="n"><span class="pre">device</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">dev</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.device_busy_check" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Check if a device is busy. </p>
-<p><dl>
-<dt class="sig sig-object cpp">
-<em><span class="pre">Deprecated:</span></em></dt>
-<dd><p>Use <a class="reference internal" href="#group__subsys__pm__device_1ga8ff7c3197d5ded860878302d00ac709c"><span class="std std-ref">pm_device_is_busy()</span></a> instead</p>
-</dd></dl>
-
-</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>dev</strong> – Device instance.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Return values</dt>
-<dd class="field-even"><ul class="simple">
-<li><p><strong>0</strong> – Device is not busy. </p></li>
-<li><p><strong>-EBUSY</strong> – Device is busy. </p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
 </div>
 </dd></dl>
 
@@ -1618,8 +1498,8 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

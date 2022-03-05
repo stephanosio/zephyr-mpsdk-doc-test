@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
   <compounddef id="structcipher__aead__pkt" kind="struct" language="C++" prot="public">
     <compoundname>cipher_aead_pkt</compoundname>
-    <includes refid="cipher__structs_8h" local="no">cipher_structs.h</includes>
+    <includes refid="cipher_8h" local="no">cipher.h</includes>
       <sectiondef kind="public-attrib">
       <memberdef kind="variable" id="structcipher__aead__pkt_1a4953711ca04b1c1d17980fff03561d03" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structcipher__pkt" kindref="compound">cipher_pkt</ref> *</type>
@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="250" column="17" bodyfile="include/crypto/cipher_structs.h" bodystart="250" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="219" column="17" bodyfile="include/crypto/cipher.h" bodystart="219" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__aead__pkt_1a1b00939c8409041b8202ae90ee01a41c" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="255" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="255" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="224" column="9" bodyfile="include/crypto/cipher.h" bodystart="224" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__aead__pkt_1a2964d6ffbe02b7088be9a2d5c21a2f9c" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="258" column="10" bodyfile="include/crypto/cipher_structs.h" bodystart="258" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="227" column="10" bodyfile="include/crypto/cipher.h" bodystart="227" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structcipher__aead__pkt_1a3c7a3e72c7d21ec574dd777ac0bdf3c4" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref> *</type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="264" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="264" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="233" column="9" bodyfile="include/crypto/cipher.h" bodystart="233" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -135,7 +135,7 @@
         <link refid="structgcm__params"/>
       </node>
     </collaborationgraph>
-    <location file="include/crypto/cipher_structs.h" line="248" column="1" bodyfile="include/crypto/cipher_structs.h" bodystart="248" bodyend="265"/>
+    <location file="include/crypto/cipher.h" line="217" column="1" bodyfile="include/crypto/cipher.h" bodystart="217" bodyend="234"/>
     <listofallmembers>
       <member refid="structcipher__aead__pkt_1a1b00939c8409041b8202ae90ee01a41c" prot="public" virt="non-virtual"><scope>cipher_aead_pkt</scope><name>ad</name></member>
       <member refid="structcipher__aead__pkt_1a2964d6ffbe02b7088be9a2d5c21a2f9c" prot="public" virt="non-virtual"><scope>cipher_aead_pkt</scope><name>ad_len</name></member>

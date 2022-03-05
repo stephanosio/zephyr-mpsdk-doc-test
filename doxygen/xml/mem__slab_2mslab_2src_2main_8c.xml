@@ -734,7 +734,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="mem__slab_2mslab_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(1024 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(1024 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -926,16 +926,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_slab/mslab/src/main.c" line="210" column="6" bodyfile="tests/kernel/mem_slab/mslab/src/main.c" bodystart="210" bodyend="274"/>
       </memberdef>
-      <memberdef kind="function" id="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_DEFINE</definition>
-        <argsstring>(HELPER,(1024+CONFIG_TEST_EXTRA_STACKSIZE), helper_thread, NULL, NULL, NULL, 7, 0, 0)</argsstring>
+        <argsstring>(HELPER,(1024+CONFIG_TEST_EXTRA_STACK_SIZE), helper_thread, NULL, NULL, NULL, 7, 0, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type><ref refid="test__mslab__api_8c_1a6abbe1011826df667b2e6ca9e09447bf" kindref="member">HELPER</ref></type>
         </param>
         <param>
-          <type>(1024+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(1024+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <param>
           <type><ref refid="sleep_2src_2main_8c_1a3683149ce2ac2b24a9010b4004c02d19" kindref="member">helper_thread</ref></type>
@@ -1001,7 +1001,7 @@
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>size<sp/>of<sp/>stack<sp/>area<sp/>used<sp/>by<sp/>each<sp/>thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/>(1024<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Number<sp/>of<sp/>memory<sp/>blocks.<sp/>The<sp/>minimum<sp/>number<sp/>of<sp/>blocks<sp/>needed<sp/>to<sp/>run<sp/>the</highlight></codeline>
 <codeline lineno="35"><highlight class="comment"><sp/>*<sp/>test<sp/>is<sp/>2</highlight></codeline>
@@ -1188,7 +1188,7 @@
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>__func__,<sp/><sp/><ref refid="group__mem__slab__apis_1gac76b96d7055e4ad94765c93530dd0720" kindref="member">k_mem_slab_num_used_get</ref>(&amp;map_lgblks));</highlight></codeline>
 <codeline lineno="274"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a88ebdba5e6bdb6d97fde633079a6827e" kindref="member">K_THREAD_DEFINE</ref>(<ref refid="test__mslab__api_8c_1a6abbe1011826df667b2e6ca9e09447bf" kindref="member">HELPER</ref>,<sp/><ref refid="mem__slab_2mslab_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mem__slab_2mslab_2src_2main_8c_1a229bdd9e2e8857fd301a95e527eff418" kindref="member">helper_thread</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><ref refid="mem__slab_2mslab_2src_2main_8c_1a8007ef681bb821f5e6400569aaacbabb" kindref="member">K_THREAD_DEFINE</ref>(<ref refid="test__mslab__api_8c_1a6abbe1011826df667b2e6ca9e09447bf" kindref="member">HELPER</ref>,<sp/><ref refid="mem__slab_2mslab_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>,<sp/><ref refid="mem__slab_2mslab_2src_2main_8c_1a229bdd9e2e8857fd301a95e527eff418" kindref="member">helper_thread</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,</highlight></codeline>
 <codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>7,<sp/>0,<sp/>0);</highlight></codeline>
 <codeline lineno="278"><highlight class="normal"></highlight></codeline>
 <codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">/*test<sp/>case<sp/>main<sp/>entry*/</highlight><highlight class="normal"></highlight></codeline>

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -179,7 +181,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -331,7 +333,7 @@ the definition of macros <code class="xref c c-macro docutils literal notranslat
 <code class="xref c c-macro docutils literal notranslate"><span class="pre">__ZEPHYR_USER__</span></code>, typically these will be added to the compiler
 flags in the build system for the related files.</p>
 <ul class="simple">
-<li><p>If <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is not enabled, all APIs just directly call
+<li><p>If <a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is not enabled, all APIs just directly call
 the implementation function.</p></li>
 <li><p>Otherwise, the default case is to make a runtime check to see if the
 processor is currently running in user mode, and either make the system call
@@ -732,7 +734,7 @@ caller.</p></li>
 in most cases using <code class="docutils literal notranslate"><span class="pre">CHECKIF()</span></code>.</p>
 <ul class="simple">
 <li><p>The behavior of <code class="docutils literal notranslate"><span class="pre">CHECKIF()</span></code> depends on the kernel configuration, but if
-user mode is enabled, <a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_RUNTIME_ERROR_CHECKS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_RUNTIME_ERROR_CHECKS</span></code></a> is enforced,
+user mode is enabled, <a class="reference internal" href="../../kconfig.html#CONFIG_RUNTIME_ERROR_CHECKS" title="CONFIG_RUNTIME_ERROR_CHECKS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_RUNTIME_ERROR_CHECKS</span></code></a> is enforced,
 which guarantees that these checks will be made and a return value
 propagated.</p></li>
 </ul>
@@ -767,7 +769,7 @@ when bad parameters are passed in as they do not propagate errors.</p></li>
 <h2>Configuration Options<a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h2>
 <p>Related configuration options:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a></p></li>
 </ul>
 </div>
 <div class="section" id="apis">
@@ -809,8 +811,8 @@ when bad parameters are passed in as they do not propagate errors.</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

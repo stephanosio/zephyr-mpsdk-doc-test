@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -149,9 +149,6 @@ Functions</h2></td></tr>
 <tr class="memitem:gad109511e4314fa6145ee97dd655ec7bb"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#gad109511e4314fa6145ee97dd655ec7bb">pm_device_state_str</a> (enum <a class="el" href="group__subsys__pm__device.html#ga561c0789071e3c3963f21f4c4a1bb2c6">pm_device_state</a> <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</td></tr>
 <tr class="memdesc:gad109511e4314fa6145ee97dd655ec7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get name of device PM state.  <a href="group__subsys__pm__device.html#gad109511e4314fa6145ee97dd655ec7bb">More...</a><br /></td></tr>
 <tr class="separator:gad109511e4314fa6145ee97dd655ec7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga37fb93d42a507abc7aa51c4a08e5353c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#ga37fb93d42a507abc7aa51c4a08e5353c">pm_device_state_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, enum <a class="el" href="group__subsys__pm__device.html#ga561c0789071e3c3963f21f4c4a1bb2c6">pm_device_state</a> <a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</td></tr>
-<tr class="memdesc:ga37fb93d42a507abc7aa51c4a08e5353c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the power state of a device.  <a href="group__subsys__pm__device.html#ga37fb93d42a507abc7aa51c4a08e5353c">More...</a><br /></td></tr>
-<tr class="separator:ga37fb93d42a507abc7aa51c4a08e5353c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffcf0aea5df10657235d4ed1f8c74d5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#gaffcf0aea5df10657235d4ed1f8c74d5a">pm_device_state_get</a> (const struct <a class="el" href="structdevice.html">device</a> *dev, enum <a class="el" href="group__subsys__pm__device.html#ga561c0789071e3c3963f21f4c4a1bb2c6">pm_device_state</a> *<a class="el" href="http__parser__state_8h.html#adc6e5733fc3c22f0a7b2914188c49c90">state</a>)</td></tr>
 <tr class="memdesc:gaffcf0aea5df10657235d4ed1f8c74d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the power state of a device.  <a href="group__subsys__pm__device.html#gaffcf0aea5df10657235d4ed1f8c74d5a">More...</a><br /></td></tr>
 <tr class="separator:gaffcf0aea5df10657235d4ed1f8c74d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,17 +191,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga32eb5e210d2f0ba533b0185a94c8744e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdbool_8h.html#abb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#ga32eb5e210d2f0ba533b0185a94c8744e">pm_device_on_power_domain</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
 <tr class="memdesc:ga32eb5e210d2f0ba533b0185a94c8744e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the device is on a switchable power domain.  <a href="group__subsys__pm__device.html#ga32eb5e210d2f0ba533b0185a94c8744e">More...</a><br /></td></tr>
 <tr class="separator:ga32eb5e210d2f0ba533b0185a94c8744e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabfaec92a92766154b8b9ac9dd29f2c1e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#gabfaec92a92766154b8b9ac9dd29f2c1e">device_busy_set</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
-<tr class="separator:gabfaec92a92766154b8b9ac9dd29f2c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gadff113f34359db32c8739294143a1c8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#gadff113f34359db32c8739294143a1c8f">device_busy_clear</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
-<tr class="memdesc:gadff113f34359db32c8739294143a1c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear busy status of a device.  <a href="group__subsys__pm__device.html#gadff113f34359db32c8739294143a1c8f">More...</a><br /></td></tr>
-<tr class="separator:gadff113f34359db32c8739294143a1c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9ee3ee2f5dac79c85fc901c179fbadf9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#ga9ee3ee2f5dac79c85fc901c179fbadf9">device_any_busy_check</a> (void)</td></tr>
-<tr class="memdesc:ga9ee3ee2f5dac79c85fc901c179fbadf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if any device is busy.  <a href="group__subsys__pm__device.html#ga9ee3ee2f5dac79c85fc901c179fbadf9">More...</a><br /></td></tr>
-<tr class="separator:ga9ee3ee2f5dac79c85fc901c179fbadf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga24bd4cb295002584c4f8183e937badc1"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__subsys__pm__device.html#ga24bd4cb295002584c4f8183e937badc1">device_busy_check</a> (const struct <a class="el" href="structdevice.html">device</a> *dev)</td></tr>
-<tr class="memdesc:ga24bd4cb295002584c4f8183e937badc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a device is busy.  <a href="group__subsys__pm__device.html#ga24bd4cb295002584c4f8183e937badc1">More...</a><br /></td></tr>
-<tr class="separator:ga24bd4cb295002584c4f8183e937badc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -213,7 +199,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_10b2e554da1fffbbce7bce351fa23d42.html">pm</a></li><li class="navelem"><a class="el" href="pm_2device_8h.html">device.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

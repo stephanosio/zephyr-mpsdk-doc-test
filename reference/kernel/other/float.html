@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -179,7 +181,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -463,11 +465,11 @@ the switched-out thread. Floating point registers are saved on the thread’s
 stack. Floating point registers are restored when a thread context is restored
 iff they were saved at the context save. Saving and restoring of the floating
 point registers is synchronous and thus not lazy. The FPU is always disabled
-when an ISR is called (independent of <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a>).</p>
+when an ISR is called (independent of <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a>).</p>
 <p>Floating point disabling with <code class="xref c c-func docutils literal notranslate"><span class="pre">k_float_disable()</span></code> is not implemented.</p>
-<p>When <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> is used, then 136 bytes of stack space
+<p>When <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> is used, then 136 bytes of stack space
 is required for each FPU user thread to load and store floating point
-registers. No extra stack is required if <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> is
+registers. No extra stack is required if <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> is
 not used.</p>
 </div>
 <div class="section" id="x86-architecture">
@@ -573,15 +575,15 @@ perform floating point operations.</p>
 </div>
 <div class="section" id="configuration-options">
 <h2><a class="toc-backref" href="#id8">Configuration Options</a><a class="headerlink" href="#configuration-options" title="Permalink to this headline">¶</a></h2>
-<p>To configure unshared FP registers mode, enable the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a>
-configuration option and leave the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> configuration
+<p>To configure unshared FP registers mode, enable the <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU" title="CONFIG_FPU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a>
+configuration option and leave the <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> configuration
 option disabled.</p>
-<p>To configure shared FP registers mode, enable both the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a>
-configuration option and the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> configuration option.
+<p>To configure shared FP registers mode, enable both the <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU" title="CONFIG_FPU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a>
+configuration option and the <a class="reference internal" href="../../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a> configuration option.
 Also, ensure that any thread that uses the floating point registers has
 sufficient added stack space for saving floating point register values
 during context switches, as described above.</p>
-<p>For x86, use the <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_X86_SSE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_X86_SSE</span></code></a> configuration option to enable
+<p>For x86, use the <a class="reference internal" href="../../../kconfig.html#CONFIG_X86_SSE" title="CONFIG_X86_SSE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_X86_SSE</span></code></a> configuration option to enable
 support for SSEx instructions.</p>
 </div>
 <div class="section" id="api-reference">
@@ -603,8 +605,8 @@ support for SSEx instructions.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

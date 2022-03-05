@@ -56,7 +56,7 @@
         <param><defname>name</defname></param>
         <param><defname>n_threads</defname></param>
         <param><defname>stack_sz</defname></param>
-        <initializer>	static <ref refid="tickless_2tickless__concept_2src_2main_8c_1a8b49fec2a8d9b46c26588f772665bafa" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(_p4stacks_##name,		\
+        <initializer>	static <ref refid="tickless_2tickless__concept_2src_2main_8c_1ae45f2df95725c87f43c7e16a8c6a6c60" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(_p4stacks_##name,		\
 					   n_threads, stack_sz);	\
 	static struct <ref refid="structk__thread" kindref="compound">k_thread</ref> _p4threads_##name[n_threads];		\
 	static struct <ref refid="structk__p4wq" kindref="compound">k_p4wq</ref> name;					\
@@ -111,7 +111,7 @@
         <param><defname>n_threads</defname></param>
         <param><defname>stack_sz</defname></param>
         <param><defname>flg</defname></param>
-        <initializer>	static <ref refid="tickless_2tickless__concept_2src_2main_8c_1a8b49fec2a8d9b46c26588f772665bafa" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(_p4stacks_##name,		\
+        <initializer>	static <ref refid="tickless_2tickless__concept_2src_2main_8c_1ae45f2df95725c87f43c7e16a8c6a6c60" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(_p4stacks_##name,		\
 					   n_threads, stack_sz);	\
 	static struct <ref refid="structk__thread" kindref="compound">k_thread</ref> _p4threads_##name[n_threads];		\
 	static struct <ref refid="structk__p4wq" kindref="compound">k_p4wq</ref> name[n_threads];				\

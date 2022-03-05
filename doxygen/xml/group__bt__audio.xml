@@ -140,7 +140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1266" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1266" bodyend="1269"/>
+        <location file="include/bluetooth/audio/audio.h" line="1250" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1250" bodyend="1253"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -175,17 +175,15 @@
 <parametername>ops</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Stream operations structure.</para>
+<para>Stream operations structure. </para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>0 in case of success or negative value in case of error. </para>
-</simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1280" column="6" declfile="include/bluetooth/audio/audio.h" declline="1280" declcolumn="6"/>
+        <location file="include/bluetooth/audio/audio.h" line="1262" column="6" declfile="include/bluetooth/audio/audio.h" declline="1262" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio_1ga744bc7ae2dab426e2178185d639ba26c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -216,7 +214,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1292" column="5" declfile="include/bluetooth/audio/audio.h" declline="1292" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1274" column="5" declfile="include/bluetooth/audio/audio.h" declline="1274" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__audio_1gacc0ce9b476b94901a959cd01f292df2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -247,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1303" column="5" declfile="include/bluetooth/audio/audio.h" declline="1303" declcolumn="5"/>
+        <location file="include/bluetooth/audio/audio.h" line="1285" column="5" declfile="include/bluetooth/audio/audio.h" declline="1285" declcolumn="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">

@@ -49,7 +49,7 @@
 <para>Advertise as connectable. </para>
           </briefdescription>
           <detaileddescription>
-<para>Advertise as connectable. If not connectable then the type of advertising is determined by providing scan response data. The advertiser address is determined by the type of advertising and/or enabling privacy <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </verbatim>. </para>
+<para>Advertise as connectable. If not connectable then the type of advertising is determined by providing scan response data. The advertiser address is determined by the type of advertising and/or enabling privacy <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </verbatim>. </para>
           </detaileddescription>
         </enumvalue>
         <enumvalue id="group__bt__gap_1gga2970898e8a43ce21e1cc510d49f1b89da7d12782a02afefcf4b5c04442a99f8a2" prot="public">
@@ -272,7 +272,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="330" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="330" bodyend="520"/>
+        <location file="include/bluetooth/bluetooth.h" line="333" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="333" bodyend="523"/>
       </memberdef>
       <memberdef kind="enum" id="group__bt__gap_1gafa231099d07583c3ed0981e0bb665f55" prot="public" static="no" strong="no">
         <type></type>
@@ -305,7 +305,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="592" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="592" bodyend="602"/>
+        <location file="include/bluetooth/bluetooth.h" line="595" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="595" bodyend="605"/>
       </memberdef>
       <memberdef kind="enum" id="group__bt__gap_1ga394b3903fbf00ba2b6243f60689a5a5f" prot="public" static="no" strong="no">
         <type></type>
@@ -391,7 +391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1263" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1263" bodyend="1296"/>
+        <location file="include/bluetooth/bluetooth.h" line="1266" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1266" bodyend="1299"/>
       </memberdef>
       <memberdef kind="enum" id="group__bt__gap_1gac205be2172292384dd687b5471a87edd" prot="public" static="no" strong="no">
         <type></type>
@@ -451,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1453" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1453" bodyend="1482"/>
+        <location file="include/bluetooth/bluetooth.h" line="1458" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1458" bodyend="1487"/>
       </memberdef>
       <memberdef kind="enum" id="group__bt__gap_1ga157d5577a5b2f5986037d0d09c7dc77d" prot="public" static="no" strong="no">
         <type></type>
@@ -510,7 +510,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1608" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1608" bodyend="1627"/>
+        <location file="include/bluetooth/bluetooth.h" line="1613" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1613" bodyend="1632"/>
       </memberdef>
       <memberdef kind="enum" id="group__bt__gap_1ga1fb9092bcdeada2d206bdc74afbbe122" prot="public" static="no" strong="no">
         <type></type>
@@ -539,7 +539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1631" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1631" bodyend="1637"/>
+        <location file="include/bluetooth/bluetooth.h" line="1636" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1636" bodyend="1642"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -614,7 +614,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1052" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="1052" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1055" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="1055" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__bt__gap_1ga4af91613898d0e0b0afd0f559d1375e1" prot="public" static="no">
         <type>void</type>
@@ -647,7 +647,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2061" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="2061" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="2066" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="2066" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -665,7 +665,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Enable Bluetooth. Must be the called before any calls that require communication with the local Bluetooth hardware.</para>
-<para>When <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_SETTINGS` </verbatim> has been enabled and the application is not managing identities of the stack itself then the application must call <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load()</ref> before the stack is fully enabled. See <ref refid="group__bt__gap_1gae11eb8ad254418c38a0e8689df25a159" kindref="member">bt_id_create()</ref> for more information.</para>
+<para>When <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_SETTINGS` </verbatim> is enabled, the application must load the Bluetooth settings after this API call successfully completes before Bluetooth APIs can be used. Loading the settings before calling this function is insufficient. Bluetooth settings can be loaded with <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load()</ref> or <ref refid="group__settings_1gab80e8a21c80243359b652386f7ce2424" kindref="member">settings_load_subtree()</ref> with argument &quot;bt&quot;. The latter selectively loads only Bluetooth settings and is recommended if <ref refid="group__settings_1ga89c6d618df81f197cc5c1a2018b00648" kindref="member">settings_load()</ref> has been called earlier.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>cb</parametername>
@@ -681,7 +681,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="143" column="5" declfile="include/bluetooth/bluetooth.h" declline="143" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="146" column="5" declfile="include/bluetooth/bluetooth.h" declline="146" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gac8bb3609a3d6da69ff736809e45f5c8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -713,7 +713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="158" column="5" declfile="include/bluetooth/bluetooth.h" declline="158" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="161" column="5" declfile="include/bluetooth/bluetooth.h" declline="161" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gad922d894b25e86de3f81ce77200a13fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const char *</type>
@@ -734,7 +734,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="167" column="12" declfile="include/bluetooth/bluetooth.h" declline="167" declcolumn="12"/>
+        <location file="include/bluetooth/bluetooth.h" line="170" column="12" declfile="include/bluetooth/bluetooth.h" declline="170" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga06d0ae35cbf4382679cc3cfe612cee4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -778,7 +778,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="189" column="6" declfile="include/bluetooth/bluetooth.h" declline="189" declcolumn="6"/>
+        <location file="include/bluetooth/bluetooth.h" line="192" column="6" declfile="include/bluetooth/bluetooth.h" declline="192" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gae11eb8ad254418c38a0e8689df25a159" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -813,7 +813,7 @@
 <parametername>irk</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </verbatim> is not enabled this parameter must be NULL.</para>
+<para>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </verbatim> is not enabled this parameter must be NULL.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -823,7 +823,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="232" column="5" declfile="include/bluetooth/bluetooth.h" declline="232" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="235" column="5" declfile="include/bluetooth/bluetooth.h" declline="235" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gabb3353edc8a3a8d29a0370049b20cbe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -870,7 +870,7 @@
 <parametername>irk</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </verbatim> is not enabled this parameter must be NULL.</para>
+<para>Identity Resolving Key (16 bytes) to be used with this identity. If set to all zeroes or NULL, the stack will generate a random IRK for the identity and copy it back to the parameter upon return from this function (in case the parameter was non-NULL). If privacy <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </verbatim> is not enabled this parameter must be NULL.</para>
 </parameterdescription>
 </parameteritem>
 </parameterlist>
@@ -880,7 +880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="266" column="5" declfile="include/bluetooth/bluetooth.h" declline="266" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="269" column="5" declfile="include/bluetooth/bluetooth.h" declline="269" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaf6cd906690a51ebed04bea4f4ef716ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -913,7 +913,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="284" column="5" declfile="include/bluetooth/bluetooth.h" declline="284" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="287" column="5" declfile="include/bluetooth/bluetooth.h" declline="287" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -997,7 +997,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="842" column="5" declfile="include/bluetooth/bluetooth.h" declline="842" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="845" column="5" declfile="include/bluetooth/bluetooth.h" declline="845" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga9a406ebfefac3dd09935a4ae0e317817" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1064,7 +1064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="858" column="5" declfile="include/bluetooth/bluetooth.h" declline="858" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="861" column="5" declfile="include/bluetooth/bluetooth.h" declline="861" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga1776e310b9d80898e6b32d50c4fe0b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1085,7 +1085,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="868" column="5" declfile="include/bluetooth/bluetooth.h" declline="868" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="871" column="5" declfile="include/bluetooth/bluetooth.h" declline="871" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gad02b855dd7a26e3910b247fa73f19297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1140,7 +1140,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="884" column="5" declfile="include/bluetooth/bluetooth.h" declline="884" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="887" column="5" declfile="include/bluetooth/bluetooth.h" declline="887" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaddc6da5166cd8415d2b367380447eac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1181,7 +1181,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="925" column="5" declfile="include/bluetooth/bluetooth.h" declline="925" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="928" column="5" declfile="include/bluetooth/bluetooth.h" declline="928" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga1c864c4b183f9a86c9f70a11471c5b15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1212,7 +1212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="938" column="5" declfile="include/bluetooth/bluetooth.h" declline="938" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="941" column="5" declfile="include/bluetooth/bluetooth.h" declline="941" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gad731f829b3566be3e56485b2a64f80b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1297,7 +1297,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="974" column="5" declfile="include/bluetooth/bluetooth.h" declline="974" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="977" column="5" declfile="include/bluetooth/bluetooth.h" declline="977" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga1aabdb81cb1a1841ff0fb91d849123fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1342,7 +1342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="994" column="5" declfile="include/bluetooth/bluetooth.h" declline="994" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="997" column="5" declfile="include/bluetooth/bluetooth.h" declline="997" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga62310a27f7fea925dfcf3abd7c454787" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1364,7 +1364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1005" column="5" declfile="include/bluetooth/bluetooth.h" declline="1005" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1008" column="5" declfile="include/bluetooth/bluetooth.h" declline="1008" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaeb37d6cdd94a04b4cce8bc1e7aae70b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -1395,7 +1395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1018" column="9" declfile="include/bluetooth/bluetooth.h" declline="1018" declcolumn="9"/>
+        <location file="include/bluetooth/bluetooth.h" line="1021" column="9" declfile="include/bluetooth/bluetooth.h" declline="1021" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gac06c9f55cf1da46e0d64b4d9af984ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1437,7 +1437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1037" column="5" declfile="include/bluetooth/bluetooth.h" declline="1037" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1040" column="5" declfile="include/bluetooth/bluetooth.h" declline="1040" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaa72029a2759123ec776061d2e80bf3a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1480,7 +1480,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1067" column="5" declfile="include/bluetooth/bluetooth.h" declline="1067" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1070" column="5" declfile="include/bluetooth/bluetooth.h" declline="1070" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gafd0e7ccca93a8347a4ca6cca88e77899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1535,7 +1535,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1083" column="5" declfile="include/bluetooth/bluetooth.h" declline="1083" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1086" column="5" declfile="include/bluetooth/bluetooth.h" declline="1086" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga0f23f4ed48e8679646f247ea0d687094" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1567,7 +1567,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1103" column="5" declfile="include/bluetooth/bluetooth.h" declline="1103" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1106" column="5" declfile="include/bluetooth/bluetooth.h" declline="1106" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga1b15206fc552d597c12af369d48ff7d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1598,7 +1598,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1116" column="5" declfile="include/bluetooth/bluetooth.h" declline="1116" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1119" column="5" declfile="include/bluetooth/bluetooth.h" declline="1119" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga8d05bd864d98b5b43595eb256e464024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -1629,7 +1629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1345" column="9" declfile="include/bluetooth/bluetooth.h" declline="1345" declcolumn="9"/>
+        <location file="include/bluetooth/bluetooth.h" line="1350" column="9" declfile="include/bluetooth/bluetooth.h" declline="1350" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gabfaf265a48dd09ea02d114e2023c14a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1671,7 +1671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1370" column="5" declfile="include/bluetooth/bluetooth.h" declline="1370" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1375" column="5" declfile="include/bluetooth/bluetooth.h" declline="1375" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga83126917373c0bcaa24964dd1d8bde46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>struct bt_le_per_adv_sync *</type>
@@ -1713,7 +1713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1381" column="25" declfile="include/bluetooth/bluetooth.h" declline="1381" declcolumn="25"/>
+        <location file="include/bluetooth/bluetooth.h" line="1386" column="25" declfile="include/bluetooth/bluetooth.h" declline="1386" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga061bf84b989b2c96ab51d2ca0debb017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1756,7 +1756,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1396" column="5" declfile="include/bluetooth/bluetooth.h" declline="1396" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1401" column="5" declfile="include/bluetooth/bluetooth.h" declline="1401" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaa0c218ff3c78b26dcfaa726ee30267a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1788,7 +1788,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1415" column="5" declfile="include/bluetooth/bluetooth.h" declline="1415" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1420" column="5" declfile="include/bluetooth/bluetooth.h" declline="1420" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga0df428314deaa84c7f5680a90c38729a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1818,7 +1818,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1428" column="6" declfile="include/bluetooth/bluetooth.h" declline="1428" declcolumn="6"/>
+        <location file="include/bluetooth/bluetooth.h" line="1433" column="6" declfile="include/bluetooth/bluetooth.h" declline="1433" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga07e4510de7e72c6ed6196b3da9fb40be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1849,7 +1849,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1439" column="5" declfile="include/bluetooth/bluetooth.h" declline="1439" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1444" column="5" declfile="include/bluetooth/bluetooth.h" declline="1444" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga3dc0c6a0c6a77f4db63ee2ff8329a4c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1880,7 +1880,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1450" column="5" declfile="include/bluetooth/bluetooth.h" declline="1450" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1455" column="5" declfile="include/bluetooth/bluetooth.h" declline="1455" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaf81a1dd7a628d1a2f25c6b53b0679809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1935,7 +1935,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1517" column="5" declfile="include/bluetooth/bluetooth.h" declline="1517" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1522" column="5" declfile="include/bluetooth/bluetooth.h" declline="1522" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gac96199a4e5e6cfb789c1bd1c0e67d6fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1990,7 +1990,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1534" column="5" declfile="include/bluetooth/bluetooth.h" declline="1534" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1539" column="5" declfile="include/bluetooth/bluetooth.h" declline="1539" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaa0658bd53df1d5e8e89e13330e4fd0ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2033,7 +2033,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1551" column="5" declfile="include/bluetooth/bluetooth.h" declline="1551" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1556" column="5" declfile="include/bluetooth/bluetooth.h" declline="1556" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga08f872078045bbef4aca19761f25eeb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2064,7 +2064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1568" column="5" declfile="include/bluetooth/bluetooth.h" declline="1568" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1573" column="5" declfile="include/bluetooth/bluetooth.h" declline="1573" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga27c4961f3c7270a7f1caeadb4107854b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2107,7 +2107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1583" column="5" declfile="include/bluetooth/bluetooth.h" declline="1583" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1588" column="5" declfile="include/bluetooth/bluetooth.h" declline="1588" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga100efac4a49984e06202c63c4e5955cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2150,7 +2150,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1596" column="5" declfile="include/bluetooth/bluetooth.h" declline="1596" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1601" column="5" declfile="include/bluetooth/bluetooth.h" declline="1601" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga5909bd768c23a19a42a660e3b814c981" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2171,7 +2171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1605" column="5" declfile="include/bluetooth/bluetooth.h" declline="1605" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1610" column="5" declfile="include/bluetooth/bluetooth.h" declline="1610" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gac5e19c26b53a08dadb8efa7ecc692ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2191,7 +2191,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Start LE scanning with given parameters and provide results through the specified callback.</para>
-<para><simplesect kind="note"><para>The LE scanner by default does not use the Identity Address of the local device when <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </verbatim> is disabled. This is to prevent the active scanner from disclosing the identity information when requesting additional information from advertisers. In order to enable directed advertiser reports then <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_SCAN_WITH_IDENTITY` </verbatim> must be enabled.</para>
+<para><simplesect kind="note"><para>The LE scanner by default does not use the Identity Address of the local device when <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </verbatim> is disabled. This is to prevent the active scanner from disclosing the identity information when requesting additional information from advertisers. In order to enable directed advertiser reports then <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_SCAN_WITH_IDENTITY` </verbatim> must be enabled.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -2216,7 +2216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1831" column="5" declfile="include/bluetooth/bluetooth.h" declline="1831" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1836" column="5" declfile="include/bluetooth/bluetooth.h" declline="1836" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaa2de1a1ab523606b36a4c445fb0c3b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2237,7 +2237,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1841" column="5" declfile="include/bluetooth/bluetooth.h" declline="1841" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1846" column="5" declfile="include/bluetooth/bluetooth.h" declline="1846" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gad7c2f18de7f67b73ccc0e7813f48f096" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2267,7 +2267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1854" column="6" declfile="include/bluetooth/bluetooth.h" declline="1854" declcolumn="6"/>
+        <location file="include/bluetooth/bluetooth.h" line="1859" column="6" declfile="include/bluetooth/bluetooth.h" declline="1859" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gac2718f2128b3f8c79b12d760771c8378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2296,7 +2296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1863" column="6" declfile="include/bluetooth/bluetooth.h" declline="1863" declcolumn="6"/>
+        <location file="include/bluetooth/bluetooth.h" line="1868" column="6" declfile="include/bluetooth/bluetooth.h" declline="1868" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga40f2f7fdb09aba3c5137f680e67792f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2329,7 +2329,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1879" column="5" declfile="include/bluetooth/bluetooth.h" declline="1879" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1884" column="5" declfile="include/bluetooth/bluetooth.h" declline="1884" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga1423cb91b0e9e7633bf9a3e7aa73d730" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -2346,7 +2346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1881" column="19" bodyfile="include/bluetooth/bluetooth.h" bodystart="1881" bodyend="1884"/>
+        <location file="include/bluetooth/bluetooth.h" line="1886" column="19" bodyfile="include/bluetooth/bluetooth.h" bodystart="1886" bodyend="1889"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga0532ed768ab4f9d69c202066d2f87e66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2379,7 +2379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1900" column="5" declfile="include/bluetooth/bluetooth.h" declline="1900" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1905" column="5" declfile="include/bluetooth/bluetooth.h" declline="1905" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga0f3bbbfca7dc10003258d9b0a051e653" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -2396,7 +2396,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1902" column="19" bodyfile="include/bluetooth/bluetooth.h" bodystart="1902" bodyend="1905"/>
+        <location file="include/bluetooth/bluetooth.h" line="1907" column="19" bodyfile="include/bluetooth/bluetooth.h" bodystart="1907" bodyend="1910"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gac87df899d1e363c63162988157ee6d00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2419,7 +2419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1919" column="5" declfile="include/bluetooth/bluetooth.h" declline="1919" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1924" column="5" declfile="include/bluetooth/bluetooth.h" declline="1924" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga1e80196fbf29a539cdf5c21fbc96cfef" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -2435,7 +2435,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1921" column="19" bodyfile="include/bluetooth/bluetooth.h" bodystart="1921" bodyend="1924"/>
+        <location file="include/bluetooth/bluetooth.h" line="1926" column="19" bodyfile="include/bluetooth/bluetooth.h" bodystart="1926" bodyend="1929"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gabc115fd3fff6d00ae878a31613bf70aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2466,7 +2466,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1934" column="5" declfile="include/bluetooth/bluetooth.h" declline="1934" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="1939" column="5" declfile="include/bluetooth/bluetooth.h" declline="1939" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga652eef01e5256e0d820cd1f4db877429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2519,7 +2519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1950" column="6" declfile="include/bluetooth/bluetooth.h" declline="1950" declcolumn="6"/>
+        <location file="include/bluetooth/bluetooth.h" line="1955" column="6" declfile="include/bluetooth/bluetooth.h" declline="1955" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga296d1adf3c9ed2f2c65bb75b887d59ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2539,9 +2539,9 @@
         </briefdescription>
         <detaileddescription>
 <para>This function allows to get local information that are useful for Out of Band pairing or connection creation.</para>
-<para>If privacy <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </verbatim> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_RPA_TIMEOUT` </verbatim> seconds. This address will be used for advertising started by <ref refid="group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02" kindref="member">bt_le_adv_start</ref>, active scanning and connection creation.</para>
+<para>If privacy <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </verbatim> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_RPA_TIMEOUT` </verbatim> seconds. This address will be used for advertising started by <ref refid="group__bt__gap_1gad2e3caef88d52d720e8e4d21df767b02" kindref="member">bt_le_adv_start</ref>, active scanning and connection creation.</para>
 <para><simplesect kind="note"><para>If privacy is enabled the RPA cannot be refreshed in the following cases:<itemizedlist>
-<listitem><para>Creating a connection in progress, wait for the connected callback. In addition when extended advertising <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_EXT_ADV` </verbatim> is not enabled or not supported by the controller:</para>
+<listitem><para>Creating a connection in progress, wait for the connected callback. In addition when extended advertising <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_EXT_ADV` </verbatim> is not enabled or not supported by the controller:</para>
 </listitem><listitem><para>Advertiser is enabled using a Random Static Identity Address for a different local identity.</para>
 </listitem><listitem><para>The local identity conflicts with the local identity used by other roles.</para>
 </listitem></itemizedlist>
@@ -2570,7 +2570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2002" column="5" declfile="include/bluetooth/bluetooth.h" declline="2002" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2007" column="5" declfile="include/bluetooth/bluetooth.h" declline="2007" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga7486aab863ca497a50dacf81657f48d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2590,7 +2590,7 @@
         </briefdescription>
         <detaileddescription>
 <para>This function allows to get local information that are useful for Out of Band pairing or connection creation.</para>
-<para>If privacy <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_PRIVACY` </verbatim> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <verbatim>embed:rst:inline :kconfig:`CONFIG_BT_RPA_TIMEOUT` </verbatim> seconds. This address will be used by the advertising set.</para>
+<para>If privacy <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_PRIVACY` </verbatim> is enabled this will result in generating new Resolvable Private Address (RPA) that is valid for <verbatim>embed:rst:inline :kconfig:option:`CONFIG_BT_RPA_TIMEOUT` </verbatim> seconds. This address will be used by the advertising set.</para>
 <para><simplesect kind="note"><para>When generating OOB information for multiple advertising set all OOB information needs to be generated at the same time.</para>
 </simplesect>
 <simplesect kind="note"><para>If privacy is enabled the RPA cannot be refreshed in the following cases:<itemizedlist>
@@ -2621,7 +2621,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2028" column="5" declfile="include/bluetooth/bluetooth.h" declline="2028" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2033" column="5" declfile="include/bluetooth/bluetooth.h" declline="2033" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaf7efa6302cde58a10efaf0b68f5cb3c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2688,7 +2688,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2092" column="5" declfile="include/bluetooth/bluetooth.h" declline="2092" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2097" column="5" declfile="include/bluetooth/bluetooth.h" declline="2097" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga567c71b49399fe7e1a5593edbf005e3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2709,7 +2709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2105" column="5" declfile="include/bluetooth/bluetooth.h" declline="2105" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2110" column="5" declfile="include/bluetooth/bluetooth.h" declline="2110" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga2ec860d06c45098624b106b59fbab634" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2738,7 +2738,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2120" column="5" declfile="include/bluetooth/bluetooth.h" declline="2120" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2125" column="5" declfile="include/bluetooth/bluetooth.h" declline="2125" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gad3b9075cc9bab5c1ae37514a6dfe555c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2769,7 +2769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2135" column="5" declfile="include/bluetooth/bluetooth.h" declline="2135" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2140" column="5" declfile="include/bluetooth/bluetooth.h" declline="2140" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga80aed18a099948bef8f3649ad537e541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2800,7 +2800,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2149" column="5" declfile="include/bluetooth/bluetooth.h" declline="2149" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2154" column="5" declfile="include/bluetooth/bluetooth.h" declline="2154" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaceabbbe6e844650f791010e53c9df6a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2842,7 +2842,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2160" column="5" declfile="include/bluetooth/bluetooth.h" declline="2160" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2165" column="5" declfile="include/bluetooth/bluetooth.h" declline="2165" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1gaad380b7f8984f8522c1b79f9bdc04905" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -2894,7 +2894,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2175" column="6" declfile="include/bluetooth/bluetooth.h" declline="2175" declcolumn="6"/>
+        <location file="include/bluetooth/bluetooth.h" line="2180" column="6" declfile="include/bluetooth/bluetooth.h" declline="2180" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__bt__gap_1ga8046c2b06d3dad0d6c8184de492517d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -2961,7 +2961,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2193" column="5" declfile="include/bluetooth/bluetooth.h" declline="2193" declcolumn="5"/>
+        <location file="include/bluetooth/bluetooth.h" line="2198" column="5" declfile="include/bluetooth/bluetooth.h" declline="2198" declcolumn="5"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="define">
@@ -3021,7 +3021,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="309" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="309" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="312" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="312" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga4c51f9b7a3a4e84abb4df3f1f714c6e2" prot="public" static="no">
         <name>BT_DATA_BYTES</name>
@@ -3055,7 +3055,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="325" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="325" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="328" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="328" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga71555b857cf8c2a47c36e4dafa7accf4" prot="public" static="no">
         <name>BT_LE_ADV_PARAM_INIT</name>
@@ -3113,7 +3113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="634" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="634" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="637" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="637" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga9557269dd36b624b49e76c511c3a0cc1" prot="public" static="no">
         <name>BT_LE_ADV_PARAM</name>
@@ -3165,7 +3165,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="654" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="654" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="657" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="657" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga1f5edc3c4cbead62e32cef8cc7b83725" prot="public" static="no">
         <name>BT_LE_ADV_CONN_DIR</name>
@@ -3179,7 +3179,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="659" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="659" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="662" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="662" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gad490487b9e196526a13fe249a4c25448" prot="public" static="no">
         <name>BT_LE_ADV_CONN</name>
@@ -3192,7 +3192,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="664" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="664" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="667" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="667" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga7b29dba3d892186897c5b4ca5adfd2e3" prot="public" static="no">
         <name>BT_LE_ADV_CONN_NAME</name>
@@ -3206,7 +3206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="668" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="668" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="671" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="671" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga213307090f1debdc783c54faf4a36740" prot="public" static="no">
         <name>BT_LE_ADV_CONN_NAME_AD</name>
@@ -3221,7 +3221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="673" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="673" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="676" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="676" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gab89e033ed3fd116c94120d177dfdc839" prot="public" static="no">
         <name>BT_LE_ADV_CONN_DIR_LOW_DUTY</name>
@@ -3236,7 +3236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="679" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="679" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="682" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="682" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga1610555bf59f1d691d640f245957fdce" prot="public" static="no">
         <name>BT_LE_ADV_NCONN</name>
@@ -3249,7 +3249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="686" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="686" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="689" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="689" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gac1c3c47e3136ce813bb50b00a9387cb4" prot="public" static="no">
         <name>BT_LE_ADV_NCONN_NAME</name>
@@ -3263,7 +3263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="690" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="690" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="693" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="693" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga6ef9fb7a469b03265c7adc99ea19a11b" prot="public" static="no">
         <name>BT_LE_ADV_NCONN_IDENTITY</name>
@@ -3278,7 +3278,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="695" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="695" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="698" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="698" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gac4880197cbe21aad78c4edf10cde95da" prot="public" static="no">
         <name>BT_LE_EXT_ADV_CONN_NAME</name>
@@ -3295,7 +3295,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="701" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="701" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="704" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="704" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga3e4abd3691e2c6d95acd21b9ca566edd" prot="public" static="no">
         <name>BT_LE_EXT_ADV_SCAN_NAME</name>
@@ -3312,7 +3312,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="709" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="709" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="712" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="712" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gaabc0385f6a5307b48ec43af6aae7dea6" prot="public" static="no">
         <name>BT_LE_EXT_ADV_NCONN</name>
@@ -3326,7 +3326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="717" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="717" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="720" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="720" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga5c79af6787ccda890f485a45c931cdc8" prot="public" static="no">
         <name>BT_LE_EXT_ADV_NCONN_NAME</name>
@@ -3342,7 +3342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="722" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="722" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="725" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="725" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga7e46a64af0036c433c2e940ce7db0a05" prot="public" static="no">
         <name>BT_LE_EXT_ADV_NCONN_IDENTITY</name>
@@ -3357,7 +3357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="729" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="729" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="732" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="732" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga0e911d3aafdd0c926590b3272a3da564" prot="public" static="no">
         <name>BT_LE_EXT_ADV_CODED_NCONN</name>
@@ -3373,7 +3373,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="736" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="736" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="739" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="739" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga8c6027f7c0888c577f9b61a65104be05" prot="public" static="no">
         <name>BT_LE_EXT_ADV_CODED_NCONN_NAME</name>
@@ -3388,7 +3388,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="745" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="745" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="748" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="748" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gac67c52693154ebbeedbb31e100513812" prot="public" static="no">
         <name>BT_LE_EXT_ADV_CODED_NCONN_IDENTITY</name>
@@ -3403,7 +3403,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="754" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="754" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="757" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="757" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gaf0d4c5b05deb5466a0e29c153263b489" prot="public" static="no">
         <name>BT_LE_EXT_ADV_START_PARAM_INIT</name>
@@ -3438,7 +3438,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="766" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="766" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="769" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="769" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga9b2cefbcb0a85116cadb68f6d80c6429" prot="public" static="no">
         <name>BT_LE_EXT_ADV_START_PARAM</name>
@@ -3472,7 +3472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="778" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="778" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="781" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="781" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga8c83a6f322a479bc24a576a7f091312e" prot="public" static="no">
         <name>BT_LE_EXT_ADV_START_DEFAULT</name>
@@ -3483,7 +3483,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="783" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="783" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="786" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="786" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga880567278a81098ae55f52f624c61041" prot="public" static="no">
         <name>BT_LE_PER_ADV_PARAM_INIT</name>
@@ -3528,7 +3528,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="792" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="792" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="795" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="795" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gaf46e54f8fcda7b65b659685bb225d243" prot="public" static="no">
         <name>BT_LE_PER_ADV_PARAM</name>
@@ -3571,7 +3571,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="806" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="806" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="809" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="809" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga8f6a00faaaab2a91ac943c71ed041ac1" prot="public" static="no">
         <name>BT_LE_PER_ADV_DEFAULT</name>
@@ -3584,7 +3584,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="811" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="811" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="814" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="814" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga33e84f4ccbf4d0aa2527e9fe1086e252" prot="public" static="no">
         <name>BT_LE_SCAN_OPT_FILTER_WHITELIST</name>
@@ -3595,7 +3595,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1629" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1629" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1634" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1634" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gac9f372ca16afb1c2f0e100c5b1b94cd5" prot="public" static="no">
         <name>BT_LE_SCAN_PARAM_INIT</name>
@@ -3653,7 +3653,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1742" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1742" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1747" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1747" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga57ace75133343ba8de7fa965f452ee3d" prot="public" static="no">
         <name>BT_LE_SCAN_PARAM</name>
@@ -3705,7 +3705,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1762" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1762" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1767" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1767" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1gac137ea4ce32697582a337116ffa41da5" prot="public" static="no">
         <name>BT_LE_SCAN_ACTIVE</name>
@@ -3720,7 +3720,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1770" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1770" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1775" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1775" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga8ceaef6f0fbf4fe2d76d47e8f59aeb11" prot="public" static="no">
         <name>BT_LE_SCAN_PASSIVE</name>
@@ -3736,7 +3736,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1781" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1781" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1786" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1786" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga06380c4ae6289c704a143b9d192bc35f" prot="public" static="no">
         <name>BT_LE_SCAN_CODED_ACTIVE</name>
@@ -3752,7 +3752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1790" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1790" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1795" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1795" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="group__bt__gap_1ga1e5a4589304babc6b0d49019ebcff6b0" prot="public" static="no">
         <name>BT_LE_SCAN_CODED_PASSIVE</name>
@@ -3769,7 +3769,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1804" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1804" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1809" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1809" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

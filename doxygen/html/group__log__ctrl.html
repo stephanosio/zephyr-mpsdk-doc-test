@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -163,6 +163,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf5d428f18b00138fd2ccca190981191d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#gaf5d428f18b00138fd2ccca190981191d">log_backend_disable</a> (struct <a class="el" href="structlog__backend.html">log_backend</a> const *const backend)</td></tr>
 <tr class="memdesc:gaf5d428f18b00138fd2ccca190981191d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable backend.  <a href="group__log__ctrl.html#gaf5d428f18b00138fd2ccca190981191d">More...</a><br /></td></tr>
 <tr class="separator:gaf5d428f18b00138fd2ccca190981191d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8c374e83492b221eeaf2c2b0f38e3b42"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structlog__backend.html">log_backend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga8c374e83492b221eeaf2c2b0f38e3b42">log_backend_get_by_name</a> (const char *backend_name)</td></tr>
+<tr class="memdesc:ga8c374e83492b221eeaf2c2b0f38e3b42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get backend by name.  <a href="group__log__ctrl.html#ga8c374e83492b221eeaf2c2b0f38e3b42">More...</a><br /></td></tr>
+<tr class="separator:ga8c374e83492b221eeaf2c2b0f38e3b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaeaaaa2e68877837a4af20fa172fc2f06"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="structlog__backend.html">log_backend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#gaeaaaa2e68877837a4af20fa172fc2f06">log_format_set_all_active_backends</a> (size_t log_type)</td></tr>
+<tr class="memdesc:gaeaaaa2e68877837a4af20fa172fc2f06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets logging format for all active backends.  <a href="group__log__ctrl.html#gaeaaaa2e68877837a4af20fa172fc2f06">More...</a><br /></td></tr>
+<tr class="separator:gaeaaaa2e68877837a4af20fa172fc2f06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga58c62e37b9fe470e0b0fc22967fa164d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga58c62e37b9fe470e0b0fc22967fa164d">log_get_strdup_pool_current_utilization</a> (void)</td></tr>
 <tr class="memdesc:ga58c62e37b9fe470e0b0fc22967fa164d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current number of allocated buffers for string duplicates.  <a href="group__log__ctrl.html#ga58c62e37b9fe470e0b0fc22967fa164d">More...</a><br /></td></tr>
 <tr class="separator:ga58c62e37b9fe470e0b0fc22967fa164d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,6 +184,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga58499087f61cc377615311498eedf1ae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga58499087f61cc377615311498eedf1ae">log_set_tag</a> (const char *<a class="el" href="timer_2starve_2src_2main_8c.html#aa7eccd3911dd697c8b39d08273f3e64e">tag</a>)</td></tr>
 <tr class="memdesc:ga58499087f61cc377615311498eedf1ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure tag used to prefix each message.  <a href="group__log__ctrl.html#ga58499087f61cc377615311498eedf1ae">More...</a><br /></td></tr>
 <tr class="separator:ga58499087f61cc377615311498eedf1ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5f3487ab08e421ae7ce8a8b80310a338"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga5f3487ab08e421ae7ce8a8b80310a338">log_mem_get_usage</a> (<a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *buf_size, <a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *usage)</td></tr>
+<tr class="memdesc:ga5f3487ab08e421ae7ce8a8b80310a338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current memory usage.  <a href="group__log__ctrl.html#ga5f3487ab08e421ae7ce8a8b80310a338">More...</a><br /></td></tr>
+<tr class="separator:ga5f3487ab08e421ae7ce8a8b80310a338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d3f29bf2783e70242c8608a20a934ee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__log__ctrl.html#ga2d3f29bf2783e70242c8608a20a934ee">log_mem_get_max_usage</a> (<a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *max)</td></tr>
+<tr class="memdesc:ga2d3f29bf2783e70242c8608a20a934ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get maximum memory usage.  <a href="group__log__ctrl.html#ga2d3f29bf2783e70242c8608a20a934ee">More...</a><br /></td></tr>
+<tr class="separator:ga2d3f29bf2783e70242c8608a20a934ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Logger control API. </p>
@@ -344,6 +356,40 @@ Functions</h2></td></tr>
     <tr><td class="paramname">backend</td><td>Backend instance. </td></tr>
     <tr><td class="paramname">ctx</td><td>User context. </td></tr>
     <tr><td class="paramname">level</td><td>Severity level. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga8c374e83492b221eeaf2c2b0f38e3b42" name="ga8c374e83492b221eeaf2c2b0f38e3b42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8c374e83492b221eeaf2c2b0f38e3b42">&#9670;&nbsp;</a></span>log_backend_get_by_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structlog__backend.html">log_backend</a> * log_backend_get_by_name </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>backend_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="include_2logging_2log__ctrl_8h.html">include/logging/log_ctrl.h</a>&gt;</code></p>
+
+<p>Get backend by name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">backend_name</td><td>Name of the backend as defined by the LOG_BACKEND_DEFINE.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Pointer</td><td>to the backend instance if found, NULL if backend is not found. </td></tr>
   </table>
   </dd>
 </dl>
@@ -571,6 +617,40 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="gaeaaaa2e68877837a4af20fa172fc2f06" name="gaeaaaa2e68877837a4af20fa172fc2f06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaeaaaa2e68877837a4af20fa172fc2f06">&#9670;&nbsp;</a></span>log_format_set_all_active_backends()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const struct <a class="el" href="structlog__backend.html">log_backend</a> * log_format_set_all_active_backends </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>log_type</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="include_2logging_2log__ctrl_8h.html">include/logging/log_ctrl.h</a>&gt;</code></p>
+
+<p>Sets logging format for all active backends. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">log_type</td><td>Log format.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Pointer</td><td>to the last backend that failed, NULL for success. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ga098c342ec5c975a6c2dd2fbada365f6e" name="ga098c342ec5c975a6c2dd2fbada365f6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga098c342ec5c975a6c2dd2fbada365f6e">&#9670;&nbsp;</a></span>log_get_strdup_longest_string()</h2>
 
@@ -658,6 +738,89 @@ Functions</h2></td></tr>
 <p><code>#include &lt;<a class="el" href="include_2logging_2log__ctrl_8h.html">include/logging/log_ctrl.h</a>&gt;</code></p>
 
 <p>Function for user initialization of the logger. </p>
+
+</div>
+</div>
+<a id="ga2d3f29bf2783e70242c8608a20a934ee" name="ga2d3f29bf2783e70242c8608a20a934ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2d3f29bf2783e70242c8608a20a934ee">&#9670;&nbsp;</a></span>log_mem_get_max_usage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int log_mem_get_max_usage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>max</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="include_2logging_2log__ctrl_8h.html">include/logging/log_ctrl.h</a>&gt;</code></p>
+
+<p>Get maximum memory usage. </p>
+<p >Requires CONFIG_LOG_MEM_UTILIZATION option.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">max</td><td>Maximum number of bytes used for pending log messages.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-EINVAL</td><td>if logging mode does not use the buffer. </td></tr>
+    <tr><td class="paramname">-ENOTSUP</td><td>if instrumentation is not enabled. not been enabled.</td></tr>
+    <tr><td class="paramname">0</td><td>successfully collected usage data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga5f3487ab08e421ae7ce8a8b80310a338" name="ga5f3487ab08e421ae7ce8a8b80310a338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga5f3487ab08e421ae7ce8a8b80310a338">&#9670;&nbsp;</a></span>log_mem_get_usage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int log_mem_get_usage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>buf_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> *&#160;</td>
+          <td class="paramname"><em>usage</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="include_2logging_2log__ctrl_8h.html">include/logging/log_ctrl.h</a>&gt;</code></p>
+
+<p>Get current memory usage. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf_size</td><td>Capacity of the buffer used for storing log messages. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">usage</td><td>Number of bytes currently containing pending log messages.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">-EINVAL</td><td>if logging mode does not use the buffer. </td></tr>
+    <tr><td class="paramname">0</td><td>successfully collected usage data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -901,7 +1064,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

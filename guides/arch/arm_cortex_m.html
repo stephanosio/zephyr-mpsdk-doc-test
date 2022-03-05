@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -169,7 +171,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -569,11 +571,11 @@ dereference detection</p></td>
 <div class="section" id="thread-stack-alignment">
 <h4>Thread stack alignment<a class="headerlink" href="#thread-stack-alignment" title="Permalink to this headline">¶</a></h4>
 <p>Each Zephyr thread is defined with its own stack memory. By default, Cortex-M enforces a double word thread stack alignment, see
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_STACK_ALIGN_DOUBLE_WORD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STACK_ALIGN_DOUBLE_WORD</span></code></a>. If MPU-based HW-assisted stack overflow detection (<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a>)
-is enabled, thread stacks need to be aligned with a larger value, reflected by <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE</span></code></a>.
+<a class="reference internal" href="../../kconfig.html#CONFIG_STACK_ALIGN_DOUBLE_WORD" title="CONFIG_STACK_ALIGN_DOUBLE_WORD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_STACK_ALIGN_DOUBLE_WORD</span></code></a>. If MPU-based HW-assisted stack overflow detection (<a class="reference internal" href="../../kconfig.html#CONFIG_MPU_STACK_GUARD" title="CONFIG_MPU_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a>)
+is enabled, thread stacks need to be aligned with a larger value, reflected by <a class="reference internal" href="../../kconfig.html#CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE" title="CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU_REGION_MIN_ALIGN_AND_SIZE</span></code></a>.
 In Arm v6-M and Arm v7-M architecture variants, thread stacks are additionally required to be align with a value equal to their size,
-in applications that need to support user mode (<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a>). The thread stack sizes in that case need to be a power
-of two. This is all reflected by <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a>, that is enforced in Arm v6-M and Arm v7-M
+in applications that need to support user mode (<a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a>). The thread stack sizes in that case need to be a power
+of two. This is all reflected by <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT" title="CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_REQUIRES_POWER_OF_TWO_ALIGNMENT</span></code></a>, that is enforced in Arm v6-M and Arm v7-M
 builds with user mode support.</p>
 </div>
 <div class="section" id="stack-pointers">
@@ -584,7 +586,7 @@ stack pointer manipulation</em> during thread context switching, without affecti
 handler mode.</p>
 <p>In Arm Cortex-M builds a single interrupt stack memory is shared among exceptions and interrupts. The size of the interrupt stack needs
 to be selected taking into consideration nested interrupts, each pushing an additional stack frame. Deverlopers can modify the interrupt
-stack size using <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ISR_STACK_SIZE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ISR_STACK_SIZE</span></code></a>.</p>
+stack size using <a class="reference internal" href="../../kconfig.html#CONFIG_ISR_STACK_SIZE" title="CONFIG_ISR_STACK_SIZE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ISR_STACK_SIZE</span></code></a>.</p>
 <p>The interrupt stack is also used during early boot so the kernel can initialize the main thread’s stack before switching to the main thread.</p>
 </div>
 </div>
@@ -636,9 +638,9 @@ an active FP context before being switched-out</p></li>
 memories, and/or programs a stack-overflow MPU guard at the bottom of the thread’s
 privileged stack</p></li>
 <li><p>restores the PSP for the incoming thread and re-programs the stack pointer limit
-register (if applicable, see <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BUILTIN_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a>)</p></li>
+register (if applicable, see <a class="reference internal" href="../../kconfig.html#CONFIG_BUILTIN_STACK_GUARD" title="CONFIG_BUILTIN_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a>)</p></li>
 <li><p>optionally does a stack limit checking for the switched-in thread, if
-sentinel-based stack limit checking is enabled (see <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_STACK_SENTINEL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_STACK_SENTINEL</span></code></a>).</p></li>
+sentinel-based stack limit checking is enabled (see <a class="reference internal" href="../../kconfig.html#CONFIG_STACK_SENTINEL" title="CONFIG_STACK_SENTINEL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_STACK_SENTINEL</span></code></a>).</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -650,7 +652,7 @@ return address, as part of unstacking the exception stack frame.</p>
 <div class="section" id="stack-limit-checking-arm-v8-m">
 <h4>Stack limit checking (Arm v8-M)<a class="headerlink" href="#stack-limit-checking-arm-v8-m" title="Permalink to this headline">¶</a></h4>
 <p>Armv8-M and Armv8.1-M variants support stack limit checking using the MSPLIM and PSPLIM
-core registers. The feature is enabled when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BUILTIN_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a> is set.
+core registers. The feature is enabled when <a class="reference internal" href="../../kconfig.html#CONFIG_BUILTIN_STACK_GUARD" title="CONFIG_BUILTIN_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a> is set.
 When stack limit checking is enabled, both the thread’s privileged or user stack, as well
 as the interrupt stack are guarded by PSPLIM and MSPLIM registers, respectively. MSPLIM is
 configured <em>once</em> during kernel boot, while PSLIM is re-programmed during every thread
@@ -692,7 +694,7 @@ is the only available processor fault exception, and its priority is
 higher than any configurable exception priority.</p>
 <p>In <em>Mainline</em> Cortex-M, the available fault exceptions (e.g. MemManageFault,
 UsageFault, etc.) are assigned the highest <em>configurable</em> priority level.
-(<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS</span></code></a> signifies explicitly
+(<a class="reference internal" href="../../kconfig.html#CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS" title="CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_PROGRAMMABLE_FAULT_PRIOS</span></code></a> signifies explicitly
 that the Cortex-M implementation supports configurable fault priorities.)</p>
 <p>This priority level is never shared with HW interrupts (an exception to
 this rule is described below). As a result, processor faults occurring in regular
@@ -716,7 +718,7 @@ occur in ISR context).</p>
 <p>One exception to the above rules is when Zephyr applications support Zero Latency Interrupts
 (ZLIs). Such interrupts are designed to have a priority level higher than any HW or system
 interrupt. If the ZLI feature is enabled in Mainline Cortex-M builds (see
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ZERO_LATENCY_IRQS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ZERO_LATENCY_IRQS</span></code></a>), then</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_ZERO_LATENCY_IRQS" title="CONFIG_ZERO_LATENCY_IRQS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ZERO_LATENCY_IRQS</span></code></a>), then</p>
 <ul class="simple">
 <li><p>ZLIs are assigned the highest configurable priority level</p></li>
 <li><p>SVCs are assigned the second highest configurable priority level</p></li>
@@ -735,7 +737,7 @@ interrupt. If the ZLI feature is enabled in Mainline Cortex-M builds (see
 priority. While this fulfils the OS requirement of locking interrupts, the consequence
 is that kernel runtime errors (triggering SVCs) will escalate to HardFault.</p>
 <p>In Mainline Cortex-M locking interrupts is implemented using the BASEPRI register (Mainline
-Cortex-M builds select <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_BASEPRI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_BASEPRI</span></code></a> to signify that BASEPRI register is
+Cortex-M builds select <a class="reference internal" href="../../kconfig.html#CONFIG_CPU_CORTEX_M_HAS_BASEPRI" title="CONFIG_CPU_CORTEX_M_HAS_BASEPRI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_BASEPRI</span></code></a> to signify that BASEPRI register is
 implemented.). By modifying BASEPRI (or BASEPRI_MAX) arch_irq_lock() masks all system and HW
 interrupts with the exception of</p>
 <ul class="simple">
@@ -764,9 +766,9 @@ runtime. Direct interrupts are designed for performance-critical interrupt
 handling and do not go through all of the common Zephyr interrupt handling
 code.</p>
 <p>Direct dynamic interrupts are enabled via switching on
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_DYNAMIC_DIRECT_INTERRUPTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_DIRECT_INTERRUPTS</span></code></a>.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_DYNAMIC_DIRECT_INTERRUPTS" title="CONFIG_DYNAMIC_DIRECT_INTERRUPTS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_DIRECT_INTERRUPTS</span></code></a>.</p>
 <p>Note that enabling direct dynamic interrupts requires enabling support for
-dynamic interrupts in the kernel, as well (see <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_DYNAMIC_INTERRUPTS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_INTERRUPTS</span></code></a>).</p>
+dynamic interrupts in the kernel, as well (see <a class="reference internal" href="../../kconfig.html#CONFIG_DYNAMIC_INTERRUPTS" title="CONFIG_DYNAMIC_INTERRUPTS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_DYNAMIC_INTERRUPTS</span></code></a>).</p>
 </div>
 <div class="section" id="zero-latency-interrupts">
 <h4>Zero Latency interrupts<a class="headerlink" href="#zero-latency-interrupts" title="Permalink to this headline">¶</a></h4>
@@ -774,7 +776,7 @@ dynamic interrupts in the kernel, as well (see <a class="reference internal" hre
 the highest configurable interrupt priority level for its own use (SVC). SVCs will
 not be masked by interrupt locking. Zero-latency interrupt can be used to set up
 an interrupt at the highest interrupt priority which will not be blocked by interrupt
-locking. To use the ZLI feature <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ZERO_LATENCY_IRQS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ZERO_LATENCY_IRQS</span></code></a> needs to be enabled.</p>
+locking. To use the ZLI feature <a class="reference internal" href="../../kconfig.html#CONFIG_ZERO_LATENCY_IRQS" title="CONFIG_ZERO_LATENCY_IRQS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ZERO_LATENCY_IRQS</span></code></a> needs to be enabled.</p>
 <p>Zero latency IRQs have minimal interrupt latency, as they will always preempt regular HW
 or system interrupts.</p>
 <p>Note, however, that since ZLI ISRs will run at a priority level higher than the kernel
@@ -815,7 +817,7 @@ in Arm Cortex-M applications.</p>
 <p>User mode is supported in Cortex-M platforms that implement the standard (Arm) MPU
 or a similar core peripheral logic for memory access policy configuration and
 control, such as the NXP MPU for Kinetis platforms. (Currently,
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_USERSPACE</span></code></a> is selected if <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARM_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU</span></code></a> is enabled
+<code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_USERSPACE</span></code> is selected if <a class="reference internal" href="../../kconfig.html#CONFIG_ARM_MPU" title="CONFIG_ARM_MPU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU</span></code></a> is enabled
 by the user in the board default Kconfig settings).</p>
 <p>A thread performs a system call by triggering a (synchronous) SVC exception, where</p>
 <ul class="simple">
@@ -843,25 +845,25 @@ latency if they occur during a system call preparation.</p>
 </div>
 <div class="section" id="mpu-assisted-stack-overflow-detection">
 <h4>MPU-assisted stack overflow detection<a class="headerlink" href="#mpu-assisted-stack-overflow-detection" title="Permalink to this headline">¶</a></h4>
-<p>Cortex-M platforms with MPU may enable <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a> to enable the MPU-based
+<p>Cortex-M platforms with MPU may enable <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_STACK_GUARD" title="CONFIG_MPU_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a> to enable the MPU-based
 stack overflow detection mechanism. The following points need to be considered when enabling the
 MPU stack guards</p>
 <ul class="simple">
 <li><p>stack overflows are triggering processor faults as soon as they occur</p></li>
 <li><p>the mechanism is essential for detecting stack overflows in supervisor threads, or
 user threads in privileged mode; stack overflows in threads in user mode will always be
-detected regardless of <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a> being set.</p></li>
+detected regardless of <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_STACK_GUARD" title="CONFIG_MPU_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a> being set.</p></li>
 <li><p>stack overflows are always detected, however, the mechanism does not guarantee that
 no memory corruption occurs when supervisor threads overflow their stack memory</p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a> will normally reserve one MPU region for programming
-the stack guard (in certain Arm v8-M configurations with <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_GAP_FILLING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_MPU_STACK_GUARD" title="CONFIG_MPU_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a> will normally reserve one MPU region for programming
+the stack guard (in certain Arm v8-M configurations with <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_GAP_FILLING" title="CONFIG_MPU_GAP_FILLING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a>
 enabled 2 MPU regions are required to implement the guard feature)</p></li>
 <li><p>MPU guards are re-programmed at every context-switch, adding a small overhead to the
-thread swap routine. Compared, however, to the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BUILTIN_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a> feature,
+thread swap routine. Compared, however, to the <a class="reference internal" href="../../kconfig.html#CONFIG_BUILTIN_STACK_GUARD" title="CONFIG_BUILTIN_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BUILTIN_STACK_GUARD</span></code></a> feature,
 no re-programming occurs during system calls.</p></li>
-<li><p>When <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_HW_STACK_PROTECTION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> is enabled on Arm v8-M platforms the native
+<li><p>When <a class="reference internal" href="../../kconfig.html#CONFIG_HW_STACK_PROTECTION" title="CONFIG_HW_STACK_PROTECTION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HW_STACK_PROTECTION</span></code></a> is enabled on Arm v8-M platforms the native
 stack limit checking mechanism is used by default instead of the MPU-based stack overflow
-detection mechanism; users may override this setting by manually enabling <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_STACK_GUARD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a>
+detection mechanism; users may override this setting by manually enabling <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_STACK_GUARD" title="CONFIG_MPU_STACK_GUARD"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_STACK_GUARD</span></code></a>
 in these scenarios.</p></li>
 </ul>
 </div>
@@ -870,21 +872,21 @@ in these scenarios.</p></li>
 <h3>Memory map and MPU considerations<a class="headerlink" href="#memory-map-and-mpu-considerations" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="fixed-mpu-regions">
 <h4>Fixed MPU regions<a class="headerlink" href="#fixed-mpu-regions" title="Permalink to this headline">¶</a></h4>
-<p>By default, when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARM_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU</span></code></a> is enabled a set of <em>fixed</em> MPU regions
+<p>By default, when <a class="reference internal" href="../../kconfig.html#CONFIG_ARM_MPU" title="CONFIG_ARM_MPU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARM_MPU</span></code></a> is enabled a set of <em>fixed</em> MPU regions
 are programmed during system boot.</p>
 <ul class="simple">
 <li><p>One MPU region programs the entire flash area as read-execute.
-User can override this setting by enabling <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_ALLOW_FLASH_WRITE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_ALLOW_FLASH_WRITE</span></code></a>,
-which programs the flash with RWX permissions. If <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USERSPACE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is
+User can override this setting by enabling <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_ALLOW_FLASH_WRITE" title="CONFIG_MPU_ALLOW_FLASH_WRITE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_ALLOW_FLASH_WRITE</span></code></a>,
+which programs the flash with RWX permissions. If <a class="reference internal" href="../../kconfig.html#CONFIG_USERSPACE" title="CONFIG_USERSPACE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USERSPACE</span></code></a> is
 enabled unprivileged access on the entire flash area is allowed.</p></li>
 <li><p>One MPU region programs the entire SRAM area with privileged-only
 RW permissions. That is, an  MPU region is utilized to disallow execute permissions on
-SRAM. (An exception to this setting is when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_GAP_FILLING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> is disabled (Arm v8-M only);
+SRAM. (An exception to this setting is when <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_GAP_FILLING" title="CONFIG_MPU_GAP_FILLING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> is disabled (Arm v8-M only);
 in that case no SRAM MPU programming is done so the access is determined by the default
 Arm memory map policies, allowing for privileged-only RWX permissions on SRAM).</p></li>
 </ul>
 <p>The above MPU regions are defined in <code class="file docutils literal notranslate"><span class="pre">soc/arm/common/arm_mpu_regions.c</span></code>.
-Alternative MPU configurations are allowed by enabling <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS</span></code></a>.
+Alternative MPU configurations are allowed by enabling <a class="reference internal" href="../../kconfig.html#CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS" title="CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CPU_HAS_CUSTOM_FIXED_SOC_MPU_REGIONS</span></code></a>.
 When enabled, this option signifies that the Cortex-M SoC will define and
 configure its own fixed MPU regions in the SoC definition.</p>
 </div>
@@ -893,12 +895,12 @@ configure its own fixed MPU regions in the SoC definition.</p>
 <p>Additional <em>static</em> MPU regions may be programmed once during system boot. These regions
 are required to enable certain features</p>
 <ul class="simple">
-<li><p>a RX region to allow execution from SRAM, when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_RAMFUNC_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_RAMFUNC_SUPPORT</span></code></a> is
+<li><p>a RX region to allow execution from SRAM, when <code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_RAMFUNC_SUPPORT</span></code> is
 enabled and users have defined functions to execute from SRAM.</p></li>
-<li><p>a RX region for relocating text sections to SRAM, when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CODE_DATA_RELOCATION_SRAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION_SRAM</span></code></a> is enabled</p></li>
-<li><p>a no-cache region to allow for a none-cacheable SRAM area, when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_NOCACHE_MEMORY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NOCACHE_MEMORY</span></code></a> is enabled</p></li>
-<li><p>a possibly unprivileged RW region for GCOV code coverage accounting area, when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_COVERAGE_GCOV"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_COVERAGE_GCOV</span></code></a> is enabled</p></li>
-<li><p>a no-access region to implement null pointer dereference detection, when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU</span></code></a> is enabled</p></li>
+<li><p>a RX region for relocating text sections to SRAM, when <a class="reference internal" href="../../kconfig.html#CONFIG_CODE_DATA_RELOCATION_SRAM" title="CONFIG_CODE_DATA_RELOCATION_SRAM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION_SRAM</span></code></a> is enabled</p></li>
+<li><p>a no-cache region to allow for a none-cacheable SRAM area, when <a class="reference internal" href="../../kconfig.html#CONFIG_NOCACHE_MEMORY" title="CONFIG_NOCACHE_MEMORY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NOCACHE_MEMORY</span></code></a> is enabled</p></li>
+<li><p>a possibly unprivileged RW region for GCOV code coverage accounting area, when <a class="reference internal" href="../../kconfig.html#CONFIG_COVERAGE_GCOV" title="CONFIG_COVERAGE_GCOV"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_COVERAGE_GCOV</span></code></a> is enabled</p></li>
+<li><p>a no-access region to implement null pointer dereference detection, when <a class="reference internal" href="../../kconfig.html#CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU" title="CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NULL_POINTER_EXCEPTION_DETECTION_MPU</span></code></a> is enabled</p></li>
 </ul>
 <p>The boundaries of these static MPU regions are derived from symbols exposed by the linker, in
 <code class="file docutils literal notranslate"><span class="pre">include/linker/linker-defs.h</span></code>.</p>
@@ -923,15 +925,15 @@ with 8 available MPU regions it might not be possible to enable all the aforemen
 features that require MPU region programming. In most practical applications, however,
 only a certain set of features is required and 8 MPU regions are, in many cases, sufficient.</p>
 <p>In Arm v8-M processors the MPU architecture does not allow programmed MPU regions to
-overlap. <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_GAP_FILLING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> controls whether the fixed MPU region
+overlap. <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_GAP_FILLING" title="CONFIG_MPU_GAP_FILLING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> controls whether the fixed MPU region
 covering the entire SRAM is programmed. When it does, a full SRAM area partitioning
 is required, in order to program the  static and the dynamic MPU regions. This increases
-the total number of required MPU regions. When <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_GAP_FILLING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> is not
+the total number of required MPU regions. When <a class="reference internal" href="../../kconfig.html#CONFIG_MPU_GAP_FILLING" title="CONFIG_MPU_GAP_FILLING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> is not
 enabled the fixed MPU region convering the entire SRAM is not programmed, thus, the static
 and dynamic regions are simply programmed on top of the always-existing background region
 (full-SRAM partitioning is not required).
 Note, however, that the background SRAM region allows execution from SRAM, so when
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_MPU_GAP_FILLING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> is not set Zephyr is not protected against attacks
+<a class="reference internal" href="../../kconfig.html#CONFIG_MPU_GAP_FILLING" title="CONFIG_MPU_GAP_FILLING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_MPU_GAP_FILLING</span></code></a> is not set Zephyr is not protected against attacks
 that attempt to execute malicious code from SRAM.</p>
 </div>
 </div>
@@ -940,8 +942,8 @@ that attempt to execute malicious code from SRAM.</p>
 <p>Both unshared and shared FP registers mode are supported in Cortex-M (see
 <a class="reference internal" href="../../reference/kernel/other/float.html#float-v2"><span class="std std-ref">Floating Point Services</span></a> for more details).</p>
 <p>When FPU support is enabled in the build
-(<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a> is enabled), the
-sharing FP registers mode (<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_FPU_SHARING"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a>)
+(<a class="reference internal" href="../../kconfig.html#CONFIG_FPU" title="CONFIG_FPU"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU</span></code></a> is enabled), the
+sharing FP registers mode (<a class="reference internal" href="../../kconfig.html#CONFIG_FPU_SHARING" title="CONFIG_FPU_SHARING"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_FPU_SHARING</span></code></a>)
 is enabled by default. This is done as some compiler configurations
 may activate a floating point context by generating FP instructions
 for any thread, regardless of whether floating point calculations are
@@ -974,29 +976,29 @@ swap routine in PendSV interrupt).</p></li>
 <p>Cortex-M applications may either be standalone images or chain-loadable, for instance,
 by a bootloader. Application images chain-loadable by bootloaders (or other applications)
 normally occupy a specific area in the flash denoted as their <em>code partition</em>.
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USE_DT_CODE_PARTITION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USE_DT_CODE_PARTITION</span></code></a> will ensure that a Zephyr chain-loadable image
+<a class="reference internal" href="../../kconfig.html#CONFIG_USE_DT_CODE_PARTITION" title="CONFIG_USE_DT_CODE_PARTITION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USE_DT_CODE_PARTITION</span></code></a> will ensure that a Zephyr chain-loadable image
 will be linked into its code partition, specified in DeviceTree.</p>
 <div class="section" id="hw-initialization-at-boot">
 <h4>HW initialization at boot<a class="headerlink" href="#hw-initialization-at-boot" title="Permalink to this headline">¶</a></h4>
 <p>In order to boot properly, chain-loaded applications may require that the core Arm
 hardware registers and peripherals are initialized in their reset values. Enabling
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_INIT_ARCH_HW_AT_BOOT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_INIT_ARCH_HW_AT_BOOT</span></code></a> Zephyr to force the initialization of the
+<a class="reference internal" href="../../kconfig.html#CONFIG_INIT_ARCH_HW_AT_BOOT" title="CONFIG_INIT_ARCH_HW_AT_BOOT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_INIT_ARCH_HW_AT_BOOT</span></code></a> Zephyr to force the initialization of the
 internal Cortex-M architectural state during boot to the reset values as specified
 by the corresponding Arm architecture manual.</p>
 </div>
 <div class="section" id="software-vector-relaying">
 <h4>Software vector relaying<a class="headerlink" href="#software-vector-relaying" title="Permalink to this headline">¶</a></h4>
-<p>In Cortex-M platforms that implement the VTOR register (see <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M_HAS_VTOR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_VTOR</span></code></a>),
+<p>In Cortex-M platforms that implement the VTOR register (see <a class="reference internal" href="../../kconfig.html#CONFIG_CPU_CORTEX_M_HAS_VTOR" title="CONFIG_CPU_CORTEX_M_HAS_VTOR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M_HAS_VTOR</span></code></a>),
 chain-loadable images relocate the Cortex-M vector table by updating the VTOR register with the offset
 of the image vector table.</p>
 <p>Baseline Cortex-M platforms without VTOR register might not be able to relocate their
 vector table which remains at a fixed location. Therefore, a chain-loadable image will
 require an alternative way to route HW interrupts and system exeptions to its own vector
 table; this is achieved with software vector relaying.</p>
-<p>When a bootloader image enables <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SW_VECTOR_RELAY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SW_VECTOR_RELAY</span></code></a>
+<p>When a bootloader image enables <a class="reference internal" href="../../kconfig.html#CONFIG_SW_VECTOR_RELAY" title="CONFIG_SW_VECTOR_RELAY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SW_VECTOR_RELAY</span></code></a>
 it is able to relay exceptions and interrupts based on a vector table
 pointer that is set by the chain-loadable application. The latter sets
-the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SW_VECTOR_RELAY_CLIENT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SW_VECTOR_RELAY_CLIENT</span></code></a> option to instruct the boot
+the <a class="reference internal" href="../../kconfig.html#CONFIG_SW_VECTOR_RELAY_CLIENT" title="CONFIG_SW_VECTOR_RELAY_CLIENT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SW_VECTOR_RELAY_CLIENT</span></code></a> option to instruct the boot
 sequence to set the vector table pointer in SRAM so that the bootloader can
 forward the exceptions and interrupts to the chain-loadable image’s software
 vector table.</p>
@@ -1007,7 +1009,7 @@ may also be used in Mainline Cortex-M platforms.</p>
 <div class="section" id="code-relocation">
 <h3>Code relocation<a class="headerlink" href="#code-relocation" title="Permalink to this headline">¶</a></h3>
 <p>Cortex-M support the code relocation feature. When
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CODE_DATA_RELOCATION_SRAM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION_SRAM</span></code></a> is selected,
+<a class="reference internal" href="../../kconfig.html#CONFIG_CODE_DATA_RELOCATION_SRAM" title="CONFIG_CODE_DATA_RELOCATION_SRAM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION_SRAM</span></code></a> is selected,
 Zephyr will relocate .text, data and .bss sections
 from the specified files and place it in SRAM. It is
 possible to relocate only parts of the code sections
@@ -1027,7 +1029,7 @@ script as well.</p>
 <h2>CMSIS<a class="headerlink" href="#cmsis" title="Permalink to this headline">¶</a></h2>
 <p>Cortex-M CMSIS headers are hosted in a standalone module repository:
 <a class="reference external" href="https://github.com/zephyrproject-rtos/cmsis">zephyrproject-rtos/cmsis</a>.</p>
-<p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CPU_CORTEX_M"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M</span></code></a> selects <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_HAS_CMSIS_CORE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_HAS_CMSIS_CORE</span></code></a> to signify that
+<p><a class="reference internal" href="../../kconfig.html#CONFIG_CPU_CORTEX_M" title="CONFIG_CPU_CORTEX_M"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CPU_CORTEX_M</span></code></a> selects <code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_HAS_CMSIS_CORE</span></code> to signify that
 CMSIS headers are available for all supported Cortex-M variants.</p>
 </div>
 <div class="section" id="testing">
@@ -1143,8 +1145,8 @@ in <code class="file docutils literal notranslate"><span class="pre">MAINTAINERS
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

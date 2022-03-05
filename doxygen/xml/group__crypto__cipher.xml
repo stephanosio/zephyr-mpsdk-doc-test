@@ -3,7 +3,6 @@
   <compounddef id="group__crypto__cipher" kind="group">
     <compoundname>crypto_cipher</compoundname>
     <title>Cipher</title>
-    <innerclass refid="structcrypto__driver__api" prot="public">crypto_driver_api</innerclass>
     <innerclass refid="structcipher__ops" prot="public">cipher_ops</innerclass>
     <innerclass refid="structccm__params" prot="public">ccm_params</innerclass>
     <innerclass refid="structctr__params" prot="public">ctr_params</innerclass>
@@ -30,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="29" column="1" bodyfile="include/crypto/cipher_structs.h" bodystart="29" bodyend="31"/>
+        <location file="include/crypto/cipher.h" line="29" column="1" bodyfile="include/crypto/cipher.h" bodystart="29" bodyend="31"/>
       </memberdef>
       <memberdef kind="enum" id="group__crypto__cipher_1ga1db3a5604bff0669672af4457aaaee21" prot="public" static="no" strong="no">
         <type></type>
@@ -58,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="34" column="1" bodyfile="include/crypto/cipher_structs.h" bodystart="34" bodyend="37"/>
+        <location file="include/crypto/cipher.h" line="34" column="1" bodyfile="include/crypto/cipher.h" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="enum" id="group__crypto__cipher_1gaeedaf8017f8d6518f7dedef365bbae43" prot="public" static="no" strong="no">
         <type></type>
@@ -111,7 +110,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="44" column="1" bodyfile="include/crypto/cipher_structs.h" bodystart="44" bodyend="50"/>
+        <location file="include/crypto/cipher.h" line="44" column="1" bodyfile="include/crypto/cipher.h" bodystart="44" bodyend="50"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -126,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="57" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="57" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="57" column="9" bodyfile="include/crypto/cipher.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__crypto__cipher_1gaa74d09d409b42b29c4c7045dc77552d2" prot="public" static="no">
         <type>int(*</type>
@@ -139,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="62" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="62" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="62" column="9" bodyfile="include/crypto/cipher.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__crypto__cipher_1gad1ed48328ca31f8ce2dd7e0a166cacba" prot="public" static="no">
         <type>int(*</type>
@@ -152,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="65" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="65" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="65" column="9" bodyfile="include/crypto/cipher.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__crypto__cipher_1ga55e4d15dde1a5134c695ce0c31dabaf7" prot="public" static="no">
         <type>int(*</type>
@@ -165,7 +164,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="68" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="68" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="68" column="9" bodyfile="include/crypto/cipher.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="group__crypto__cipher_1gad27577142dd49308b2470253a41bd09d" prot="public" static="no">
         <type>int(*</type>
@@ -178,54 +177,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="71" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="71" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="71" column="9" bodyfile="include/crypto/cipher.h" bodystart="71" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="typedef" id="group__crypto__cipher_1ga5bca6057c7fe56b3c6de4399e78e5389" prot="public" static="no">
+      <memberdef kind="typedef" id="group__crypto__cipher_1ga062b07459bcc2990535465a7b9044ecd" prot="public" static="no">
         <type>void(*</type>
-        <definition>typedef void(* crypto_completion_cb) (struct cipher_pkt *completed, int status)</definition>
+        <definition>typedef void(* cipher_completion_cb) (struct cipher_pkt *completed, int status)</definition>
         <argsstring>)(struct cipher_pkt *completed, int status)</argsstring>
-        <name>crypto_completion_cb</name>
+        <name>cipher_completion_cb</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="273" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="273" bodyend="-1"/>
+        <location file="include/crypto/cipher.h" line="242" column="9" bodyfile="include/crypto/cipher.h" bodystart="242" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="group__crypto__cipher_1ga76fed4c6f39182b5d8b77775b1c7f4e0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>int</type>
-        <definition>static int cipher_query_hwcaps</definition>
-        <argsstring>(const struct device *dev)</argsstring>
-        <name>cipher_query_hwcaps</name>
-        <param>
-          <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
-          <declname>dev</declname>
-        </param>
-        <briefdescription>
-<para>Query the crypto hardware capabilities. </para>
-        </briefdescription>
-        <detaileddescription>
-<para>This API is used by the app to query the capabilities supported by the crypto device. Based on this the app can specify a subset of the supported options to be honored for a session during <ref refid="group__crypto__cipher_1ga0720700438ba5819aa826aa37f0c4227" kindref="member">cipher_begin_session()</ref>.</para>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>dev</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Pointer to the device structure for the driver instance.</para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>bitmask of supported options. </para>
-</simplesect>
-</para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher.h" line="76" column="19" bodyfile="include/crypto/cipher.h" bodystart="76" bodyend="95"/>
-      </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1ga0720700438ba5819aa826aa37f0c4227" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
         <definition>static int cipher_begin_session</definition>
@@ -303,7 +271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="116" column="19" bodyfile="include/crypto/cipher.h" bodystart="116" bodyend="145"/>
+        <location file="include/crypto/crypto.h" line="159" column="19" bodyfile="include/crypto/crypto.h" bodystart="159" bodyend="188"/>
       </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1gaa818a3de1f2d6319cd21bf6b7caf7cbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -346,26 +314,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="158" column="19" bodyfile="include/crypto/cipher.h" bodystart="158" bodyend="166"/>
+        <location file="include/crypto/crypto.h" line="201" column="19" bodyfile="include/crypto/crypto.h" bodystart="201" bodyend="209"/>
       </memberdef>
-      <memberdef kind="function" id="group__crypto__cipher_1ga27804359f0457d98ea506d5088464622" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="group__crypto__cipher_1gaaf0add27d9116f584e7bbc2d8f1eb39b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
         <definition>static int cipher_callback_set</definition>
-        <argsstring>(const struct device *dev, crypto_completion_cb cb)</argsstring>
+        <argsstring>(const struct device *dev, cipher_completion_cb cb)</argsstring>
         <name>cipher_callback_set</name>
         <param>
           <type>const struct <ref refid="structdevice" kindref="compound">device</ref> *</type>
           <declname>dev</declname>
         </param>
         <param>
-          <type><ref refid="group__crypto__cipher_1ga5bca6057c7fe56b3c6de4399e78e5389" kindref="member">crypto_completion_cb</ref></type>
+          <type><ref refid="group__crypto__cipher_1ga062b07459bcc2990535465a7b9044ecd" kindref="member">cipher_completion_cb</ref></type>
           <declname>cb</declname>
         </param>
         <briefdescription>
 <para>Registers an async crypto op completion callback with the driver. </para>
         </briefdescription>
         <detaileddescription>
-<para>The application can register an async crypto op completion callback handler to be invoked by the driver, on completion of a prior request submitted via crypto_do_op(). Based on crypto device hardware semantics, this is likely to be invoked from an ISR context.</para>
+<para>The application can register an async crypto op completion callback handler to be invoked by the driver, on completion of a prior request submitted via cipher_do_op(). Based on crypto device hardware semantics, this is likely to be invoked from an ISR context.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>dev</parametername>
@@ -389,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="182" column="19" bodyfile="include/crypto/cipher.h" bodystart="182" bodyend="195"/>
+        <location file="include/crypto/crypto.h" line="225" column="19" bodyfile="include/crypto/crypto.h" bodystart="225" bodyend="238"/>
       </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1ga05a2569f8d404593e053ce69817a457e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -431,7 +399,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="206" column="19" bodyfile="include/crypto/cipher.h" bodystart="206" bodyend="214"/>
+        <location file="include/crypto/crypto.h" line="249" column="19" bodyfile="include/crypto/crypto.h" bodystart="249" bodyend="257"/>
       </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1ga2c4ac483eb4e11110be939e669040700" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -485,7 +453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="227" column="19" bodyfile="include/crypto/cipher.h" bodystart="227" bodyend="235"/>
+        <location file="include/crypto/crypto.h" line="270" column="19" bodyfile="include/crypto/crypto.h" bodystart="270" bodyend="278"/>
       </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1gaeffb9d5dd85bf135eb2cca6d47cb373c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -539,7 +507,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="254" column="19" bodyfile="include/crypto/cipher.h" bodystart="254" bodyend="262"/>
+        <location file="include/crypto/crypto.h" line="297" column="19" bodyfile="include/crypto/crypto.h" bodystart="297" bodyend="305"/>
       </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1ga4886e7e1cc2fcff411066875b35b8b45" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -593,7 +561,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="276" column="19" bodyfile="include/crypto/cipher.h" bodystart="276" bodyend="284"/>
+        <location file="include/crypto/crypto.h" line="319" column="19" bodyfile="include/crypto/crypto.h" bodystart="319" bodyend="327"/>
       </memberdef>
       <memberdef kind="function" id="group__crypto__cipher_1ga3706b034252e40b818a782c28ba5e485" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -647,112 +615,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/crypto/cipher.h" line="298" column="19" bodyfile="include/crypto/cipher.h" bodystart="298" bodyend="306"/>
-      </memberdef>
-      </sectiondef>
-      <sectiondef kind="define">
-      <memberdef kind="define" id="group__crypto__cipher_1ga821c2629510aad5d591a565767d8abbd" prot="public" static="no">
-        <name>CAP_OPAQUE_KEY_HNDL</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(0)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="177" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="177" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga95fd2a144207a575b2e0d24d5d6bf85a" prot="public" static="no">
-        <name>CAP_RAW_KEY</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(1)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="178" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="178" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga18aeace031f8b9bb4241b44f8b36f056" prot="public" static="no">
-        <name>CAP_KEY_LOADING_API</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(2)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="181" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="181" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga4c00d0513306fbc511fb4828108d37c8" prot="public" static="no">
-        <name>CAP_INPLACE_OPS</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(3)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Whether the output is placed in separate buffer or not </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="184" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="184" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga858150378de8f024e96614a6c2f138a2" prot="public" static="no">
-        <name>CAP_SEPARATE_IO_BUFS</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(4)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="185" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="185" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga469bae7c354d17ba9b22c7ce4d8e076a" prot="public" static="no">
-        <name>CAP_SYNC_OPS</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(5)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>These denotes if the output (completion of a cipher_xxx_op) is conveyed by the op function returning, or it is conveyed by an async notification </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="191" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="191" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga62492a4ce9c9274c78f3a7a915a66983" prot="public" static="no">
-        <name>CAP_ASYNC_OPS</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(6)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="192" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="192" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga6574dce552f5ba3b6f347e260a57d2f5" prot="public" static="no">
-        <name>CAP_AUTONONCE</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(7)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Whether the hardware/driver supports autononce feature </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="195" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="195" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="group__crypto__cipher_1ga8fa14517853a8a1c4f134b5772f7d308" prot="public" static="no">
-        <name>CAP_NO_IV_PREFIX</name>
-        <initializer><ref refid="group__sys-util_1ga3a8ea58898cb58fc96013383d39f482c" kindref="member">BIT</ref>(8)</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>Don&apos;t prefix IV to cipher blocks </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/crypto/cipher_structs.h" line="198" column="9" bodyfile="include/crypto/cipher_structs.h" bodystart="198" bodyend="-1"/>
+        <location file="include/crypto/crypto.h" line="341" column="19" bodyfile="include/crypto/crypto.h" bodystart="341" bodyend="349"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

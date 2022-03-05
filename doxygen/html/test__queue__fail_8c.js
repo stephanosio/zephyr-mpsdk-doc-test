@@ -4,7 +4,7 @@ var test__queue__fail_8c =
     [ "STACK_SIZE", "test__queue__fail_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "TIMEOUT", "test__queue__fail_8c.html#a45ba202b05caf39795aeca91b0ae547e", null ],
     [ "K_SEM_DEFINE", "test__queue__fail_8c.html#a5a22c220c907974d062f9ead06610b38", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__queue__fail_8c.html#a5fdc5fb7330e19795cc524bb2650a6f3", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__queue__fail_8c.html#ac9f7dc87180ded5f1ffe1cdab64aed90", null ],
     [ "test_queue_alloc_append_null", "group__kernel__queue__tests.html#gaacbdb2a8ad3d0df49424dd45472c0ff2", null ],
     [ "test_queue_alloc_prepend_null", "group__kernel__queue__tests.html#gaec1ce0a17ea48f08b35dd458a85d8cce", null ],
     [ "test_queue_append_list_error", "group__kernel__queue__tests.html#ga1b66e52c74e2329141e2ba65b0d82e7c", null ],

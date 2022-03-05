@@ -7,7 +7,7 @@ var searchData=
   ['bbram_5fapi_5fget_5fsize_4',['bbram_api_get_size',['../bbram_8h.html#a0663875faa4ea3d457485ace5206c7c7',1,'bbram.h']]],
   ['bbram_5fapi_5fread_5',['bbram_api_read',['../bbram_8h.html#a1730035d69dc8b2f6c717566d96fb8d2',1,'bbram.h']]],
   ['bbram_5fapi_5fwrite_6',['bbram_api_write',['../bbram_8h.html#a4efd3101a47a81a7d8fc537826a46918',1,'bbram.h']]],
-  ['block_5fop_5ft_7',['block_op_t',['../group__crypto__cipher.html#ga584073236a507f736442dedab87b1e17',1,'cipher_structs.h']]],
+  ['block_5fop_5ft_7',['block_op_t',['../group__crypto__cipher.html#ga584073236a507f736442dedab87b1e17',1,'cipher.h']]],
   ['bt_5faics_5fdescription_5fcb_8',['bt_aics_description_cb',['../group__bt__gatt__aics.html#ga98b142ea7a66de5577c44aa90d507930',1,'aics.h']]],
   ['bt_5faics_5fdiscover_5fcb_9',['bt_aics_discover_cb',['../group__bt__gatt__aics.html#ga9fda39f8410308e05eb928eeb7267e83',1,'aics.h']]],
   ['bt_5faics_5fgain_5fsetting_5fcb_10',['bt_aics_gain_setting_cb',['../group__bt__gatt__aics.html#ga11da08c010f4aa849c2e3725dc5cbaeb',1,'aics.h']]],

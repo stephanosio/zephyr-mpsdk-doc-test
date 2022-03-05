@@ -815,16 +815,16 @@
         </inbodydescription>
         <location file="tests/kernel/sched/schedule_api/src/user_api.c" line="14" column="1" declfile="tests/kernel/sched/schedule_api/src/user_api.c" declline="14" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="user__api_8c_1a67cb99942997d62519a6b6716ba25f8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="user__api_8c_1aa4844a71855245264fb45a6c4c33ddb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(ustack,(640+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(ustack,(640+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>ustack</type>
         </param>
         <param>
-          <type>(640+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(640+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1264,7 +1264,7 @@
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_TEST_PRIORITY<sp/>0</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="user__api_8c_1a67cb99942997d62519a6b6716ba25f8c" kindref="member">K_THREAD_STACK_DEFINE</ref>(ustack,<sp/><ref refid="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="user__api_8c_1aa4844a71855245264fb45a6c4c33ddb4" kindref="member">K_THREAD_STACK_DEFINE</ref>(ustack,<sp/><ref refid="atomic_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="user__api_8c_1a83eb9e06e92cee756464b2aeb352f496" kindref="member">sleepy_thread</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p1,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p2,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*p3)</highlight></codeline>
 <codeline lineno="23"><highlight class="normal">{</highlight></codeline>

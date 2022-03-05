@@ -1051,7 +1051,7 @@
 <parametername direction="in">shell</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Pointer to the shell instance. It can be NULL when the <verbatim>embed:rst:inline :kconfig:`CONFIG_SHELL_BACKEND_DUMMY` </verbatim> option is enabled. </para>
+<para>Pointer to the shell instance. It can be NULL when the <verbatim>embed:rst:inline :kconfig:option:`CONFIG_SHELL_BACKEND_DUMMY` </verbatim> option is enabled. </para>
 </parameterdescription>
 </parameteritem>
 <parameteritem>
@@ -2327,7 +2327,7 @@ Example usage: static int my_handler(const struct shell *shell, size_t argc, cha
 			     <ref refid="stdbool_8h_1a41f9c5fb8b08eb5dc3edce4dcb37fee7" kindref="member">true</ref>, z_shell_print_stream);		      \
 	<ref refid="log__instance_8h_1ad18f1e8ffbef38f285f70d8005fa144f" kindref="member">LOG_INSTANCE_REGISTER</ref>(<ref refid="structshell" kindref="compound">shell</ref>, _name, CONFIG_SHELL_LOG_LEVEL);	      \
 	Z_SHELL_STATS_DEFINE(_name);					      \
-	static <ref refid="threads_2thread__stack_2src_2main_8c_1abf20d8da7b5829da0eb6ccb4dae81b37" kindref="member">K_KERNEL_STACK_DEFINE</ref>(_name##_stack, CONFIG_SHELL_STACK_SIZE); \
+	static <ref refid="threads_2thread__stack_2src_2main_8c_1a72c0793eec55b1d100382b62b7d3c06d" kindref="member">K_KERNEL_STACK_DEFINE</ref>(_name##_stack, CONFIG_SHELL_STACK_SIZE); \
 	static struct <ref refid="structk__thread" kindref="compound">k_thread</ref> _name##_thread;				      \
 	static const <ref refid="group__iterable__section__apis_1gabed6642b8cc06863ce97dd536698004d" kindref="member">STRUCT_SECTION_ITERABLE</ref>(<ref refid="structshell" kindref="compound">shell</ref>, _name) = {		      \
 		.default_prompt = _prompt,				      \

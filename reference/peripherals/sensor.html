@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -202,7 +204,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -1375,7 +1377,7 @@ by the driver’s configuration.</p>
 
 <dl class="c function">
 <dt class="sig sig-object c" id="c.sensor_value_from_double">
-<span class="target" id="group__sensor__interface_1ga1b900b0afde216d2874fdf3be9e4dff6"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sensor_value_from_double</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.sensor_value" title="sensor_value"><span class="n"><span class="pre">sensor_value</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">val</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n"><span class="pre">inp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.sensor_value_from_double" title="Permalink to this definition">¶</a><br /></dt>
+<span class="target" id="group__sensor__interface_1gaf01bbb251ad0c7f6c55c5b702e8a4048"></span><span class="k"><span class="pre">static</span></span><span class="w"> </span><span class="k"><span class="pre">inline</span></span><span class="w"> </span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">sensor_value_from_double</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><a class="reference internal" href="#c.sensor_value" title="sensor_value"><span class="n"><span class="pre">sensor_value</span></span></a><span class="w"> </span><span class="p"><span class="pre">*</span></span><span class="n"><span class="pre">val</span></span>, <span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="n"><span class="pre">inp</span></span><span class="sig-paren">)</span><a class="headerlink" href="#c.sensor_value_from_double" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Helper function for converting double to struct <a class="reference internal" href="#structsensor__value"><span class="std std-ref">sensor_value</span></a>. </p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -1383,6 +1385,9 @@ by the driver’s configuration.</p>
 <li><p><strong>val</strong> – A pointer to a <a class="reference internal" href="#structsensor__value"><span class="std std-ref">sensor_value</span></a> struct. </p></li>
 <li><p><strong>inp</strong> – The converted value. </p></li>
 </ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>0 if successful, negative errno code if failure. </p>
 </dd>
 </dl>
 </dd></dl>
@@ -1462,8 +1467,8 @@ by the driver’s configuration.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

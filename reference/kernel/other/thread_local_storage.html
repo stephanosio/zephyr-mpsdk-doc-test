@@ -43,7 +43,7 @@
             <img src="../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -179,7 +181,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -248,14 +250,14 @@ thread has its own copy of these variables.</p>
 <p>Zephyr currently requires toolchain support for TLS.</p>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>To enable thread local storage in Zephyr, <a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_THREAD_LOCAL_STORAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_THREAD_LOCAL_STORAGE</span></code></a>
+<p>To enable thread local storage in Zephyr, <a class="reference internal" href="../../../kconfig.html#CONFIG_THREAD_LOCAL_STORAGE" title="CONFIG_THREAD_LOCAL_STORAGE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_THREAD_LOCAL_STORAGE</span></code></a>
 needs to be enabled. Note that this option may not be available if
 the architecture or the SoC does not have the hidden option
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE</span></code></a> enabled, which means
+<code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ARCH_HAS_THREAD_LOCAL_STORAGE</span></code> enabled, which means
 the architecture or the SoC does not have the necessary code to support
 thread local storage and/or the toolchain does not support TLS.</p>
-<p><a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_ERRNO_IN_TLS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ERRNO_IN_TLS</span></code></a> can be enabled together with
-<a class="reference internal" href="../../kconfig/dummy-syms.html#std-kconfig-CONFIG_ERRNO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_ERRNO</span></code></a> to let the variable <code class="docutils literal notranslate"><span class="pre">errno</span></code> be a thread local
+<p><a class="reference internal" href="../../../kconfig.html#CONFIG_ERRNO_IN_TLS" title="CONFIG_ERRNO_IN_TLS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ERRNO_IN_TLS</span></code></a> can be enabled together with
+<a class="reference internal" href="../../../kconfig.html#CONFIG_ERRNO" title="CONFIG_ERRNO"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_ERRNO</span></code></a> to let the variable <code class="docutils literal notranslate"><span class="pre">errno</span></code> be a thread local
 variable. This allows user threads to access the value of <code class="docutils literal notranslate"><span class="pre">errno</span></code> without
 making a system call.</p>
 </div>
@@ -292,8 +294,8 @@ making a system call.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

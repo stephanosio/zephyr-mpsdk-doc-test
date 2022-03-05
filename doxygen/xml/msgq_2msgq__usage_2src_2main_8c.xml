@@ -745,7 +745,7 @@
       </memberdef>
       <memberdef kind="define" id="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" prot="public" static="no">
         <name>STACK_SIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1103,16 +1103,16 @@
         </inbodydescription>
         <location file="tests/kernel/msgq/msgq_usage/src/main.c" line="17" column="1" declfile="tests/kernel/msgq/msgq_usage/src/main.c" declline="17" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1a2a36c238b4dc09fe12b3ae4b4d1d575c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1a3a6b833304f609f05dadfc69c77337d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(service_manager_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(service_manager_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>service_manager_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1122,16 +1122,16 @@
         </inbodydescription>
         <location file="tests/kernel/msgq/msgq_usage/src/main.c" line="21" column="1" declfile="tests/kernel/msgq/msgq_usage/src/main.c" declline="21" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1a51f5720cb8352c53c555dc2f00626eb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1a97fee9e4702361c116dc9e374f241abb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(service1_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(service1_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>service1_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1141,16 +1141,16 @@
         </inbodydescription>
         <location file="tests/kernel/msgq/msgq_usage/src/main.c" line="22" column="1" declfile="tests/kernel/msgq/msgq_usage/src/main.c" declline="22" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1ac172591e5200d6238017c85275765e0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1af995aab505f817a74b73fd5b43e17c18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(service2_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(service2_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>service2_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1160,16 +1160,16 @@
         </inbodydescription>
         <location file="tests/kernel/msgq/msgq_usage/src/main.c" line="23" column="1" declfile="tests/kernel/msgq/msgq_usage/src/main.c" declline="23" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1a8e0307620feb4186eb46690e1ee4b3a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="msgq_2msgq__usage_2src_2main_8c_1aeb5841733c4b1d55b32ff346a174071d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(client_stack,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(client_stack,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>client_stack</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1444,7 +1444,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="limits_8h" kindref="compound">limits.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSGQ_LEN<sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACK_SIZE<sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_SERVICES<sp/>2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TIMEOUT<sp/>K_MSEC(100)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
@@ -1452,10 +1452,10 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__msgq" kindref="compound">k_msgq</ref><sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1ad2c7c5ab2f1c38a766e3edfd998a597a" kindref="member">service1_msgq</ref>;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__msgq" kindref="compound">k_msgq</ref><sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a10caf31e1057f2fdc5c506bb5851cdf2" kindref="member">service2_msgq</ref>;</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__msgq" kindref="compound">k_msgq</ref><sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a226e7e5cc3f14bcf0fc71eb5a31e147e" kindref="member">client_msgq</ref>;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(service_manager_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(service1_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(service2_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(client_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(service_manager_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(service1_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(service2_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(client_stack,<sp/><ref refid="msgq_2msgq__usage_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="25"><highlight class="normal"><ref refid="mem__protect_2obj__validation_2src_2main_8c_1acccdee2c9edbab556b941bd865918c2a" kindref="member">K_SEM_DEFINE</ref>(service_sema,<sp/>2,<sp/>2);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"><ref refid="mem__protect_2obj__validation_2src_2main_8c_1acccdee2c9edbab556b941bd865918c2a" kindref="member">K_SEM_DEFINE</ref>(service_started,<sp/>0,<sp/>2);</highlight></codeline>
 <codeline lineno="27"><highlight class="normal"><ref refid="mem__protect_2obj__validation_2src_2main_8c_1acccdee2c9edbab556b941bd865918c2a" kindref="member">K_SEM_DEFINE</ref>(test_continue,<sp/>0,<sp/>1);</highlight></codeline>

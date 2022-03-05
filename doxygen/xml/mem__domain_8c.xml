@@ -968,17 +968,17 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="mem__domain_8c_1ab0f88d1f02b18cf58a1366b57d176bd5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__domain_8c_1a90a51611c78af7b95fc144c7e676698e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(child_stack, 512+CONFIG_TEST_EXTRA_STACKSIZE)</argsstring>
+        <argsstring>(child_stack, 512+CONFIG_TEST_EXTRA_STACK_SIZE)</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>child_stack</type>
         </param>
         <param>
           <type>512+</type>
-          <declname>CONFIG_TEST_EXTRA_STACKSIZE</declname>
+          <declname>CONFIG_TEST_EXTRA_STACK_SIZE</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1063,17 +1063,17 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/mem_protect/src/mem_domain.c" line="37" column="13" bodyfile="tests/kernel/mem_protect/mem_protect/src/mem_domain.c" bodystart="37" bodyend="40"/>
       </memberdef>
-      <memberdef kind="function" id="mem__domain_8c_1ae16bdc540346b278eb277d0a881eef44" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__domain_8c_1aa6a0b0fa95c4eaf6450b6a3bc84b5e12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_DEFINE</definition>
-        <argsstring>(zzz_thread, 256+CONFIG_TEST_EXTRA_STACKSIZE, zzz_entry, NULL, NULL, NULL, 0, 0, 0)</argsstring>
+        <argsstring>(zzz_thread, 256+CONFIG_TEST_EXTRA_STACK_SIZE, zzz_entry, NULL, NULL, NULL, 0, 0, 0)</argsstring>
         <name>K_THREAD_DEFINE</name>
         <param>
           <type>zzz_thread</type>
         </param>
         <param>
           <type>256+</type>
-          <declname>CONFIG_TEST_EXTRA_STACKSIZE</declname>
+          <declname>CONFIG_TEST_EXTRA_STACK_SIZE</declname>
         </param>
         <param>
           <type><ref refid="mem__domain_8c_1a55d5bea1c8b48c052fee104eb3b29f66" kindref="member">zzz_entry</ref></type>
@@ -1787,7 +1787,7 @@
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;kernel_internal.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">/*<sp/>For<sp/>z_main_thread<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="mem__domain_8c_1a15a127467b6a19f4cb0d47df2c636b82" kindref="member">child_thread</ref>;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="mem__domain_8c_1ab0f88d1f02b18cf58a1366b57d176bd5" kindref="member">K_THREAD_STACK_DEFINE</ref>(child_stack,<sp/>512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="mem__domain_8c_1a90a51611c78af7b95fc144c7e676698e" kindref="member">K_THREAD_STACK_DEFINE</ref>(child_stack,<sp/>512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE);</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Special<sp/>memory<sp/>domain<sp/>for<sp/>test<sp/>case<sp/>purposes<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__mem__domain" kindref="compound">k_mem_domain</ref><sp/><ref refid="mem__domain_8c_1ad08cfcece8b7eafa06e89d92e095a6d0" kindref="member">test_domain</ref>;</highlight></codeline>
@@ -1818,7 +1818,7 @@
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__thread__apis_1ga48d4b041790454da4d68ac8711f29657" kindref="member">k_sleep</ref>(<ref refid="group__clock__apis_1ga0bb4b83f0222193b21a8910311bab0ca" kindref="member">K_FOREVER</ref>);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="mem__domain_8c_1ae16bdc540346b278eb277d0a881eef44" kindref="member">K_THREAD_DEFINE</ref>(zzz_thread,<sp/>256<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="mem__domain_8c_1aa6a0b0fa95c4eaf6450b6a3bc84b5e12" kindref="member">K_THREAD_DEFINE</ref>(zzz_thread,<sp/>256<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE,</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="mem__domain_8c_1a55d5bea1c8b48c052fee104eb3b29f66" kindref="member">zzz_entry</ref>,<sp/>NULL,<sp/>NULL,<sp/>NULL,<sp/>0,<sp/>0,<sp/>0);</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mem__domain_8c_1a8b8b2ddc3a475613ecd0c5aced042058" kindref="member">test_mem_domain_setup</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>

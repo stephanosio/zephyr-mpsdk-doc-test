@@ -1,11 +1,5 @@
 var group__crypto__cipher =
 [
-    [ "crypto_driver_api", "structcrypto__driver__api.html", [
-      [ "begin_session", "structcrypto__driver__api.html#a97d1349cbce7a6736054c2f53f8e1833", null ],
-      [ "crypto_async_callback_set", "structcrypto__driver__api.html#abe59aca855659c2881ce54bb8ad4696d", null ],
-      [ "free_session", "structcrypto__driver__api.html#a178e5232a0b20a67c028ac41c3d8655f", null ],
-      [ "query_hw_caps", "structcrypto__driver__api.html#a19859cdd9185f5d333fe6893efc27967", null ]
-    ] ],
     [ "cipher_ops", "structcipher__ops.html", [
       [ "block_crypt_hndlr", "structcipher__ops.html#a2675dd312be240c24d7d2c0e81bcde2b", null ],
       [ "cbc_crypt_hndlr", "structcipher__ops.html#abc7cf6306467c5aff24ae3faa37902e6", null ],
@@ -54,19 +48,10 @@ var group__crypto__cipher =
       [ "pkt", "structcipher__aead__pkt.html#a4953711ca04b1c1d17980fff03561d03", null ],
       [ "tag", "structcipher__aead__pkt.html#a3c7a3e72c7d21ec574dd777ac0bdf3c4", null ]
     ] ],
-    [ "CAP_ASYNC_OPS", "group__crypto__cipher.html#ga62492a4ce9c9274c78f3a7a915a66983", null ],
-    [ "CAP_AUTONONCE", "group__crypto__cipher.html#ga6574dce552f5ba3b6f347e260a57d2f5", null ],
-    [ "CAP_INPLACE_OPS", "group__crypto__cipher.html#ga4c00d0513306fbc511fb4828108d37c8", null ],
-    [ "CAP_KEY_LOADING_API", "group__crypto__cipher.html#ga18aeace031f8b9bb4241b44f8b36f056", null ],
-    [ "CAP_NO_IV_PREFIX", "group__crypto__cipher.html#ga8fa14517853a8a1c4f134b5772f7d308", null ],
-    [ "CAP_OPAQUE_KEY_HNDL", "group__crypto__cipher.html#ga821c2629510aad5d591a565767d8abbd", null ],
-    [ "CAP_RAW_KEY", "group__crypto__cipher.html#ga95fd2a144207a575b2e0d24d5d6bf85a", null ],
-    [ "CAP_SEPARATE_IO_BUFS", "group__crypto__cipher.html#ga858150378de8f024e96614a6c2f138a2", null ],
-    [ "CAP_SYNC_OPS", "group__crypto__cipher.html#ga469bae7c354d17ba9b22c7ce4d8e076a", null ],
     [ "block_op_t", "group__crypto__cipher.html#ga584073236a507f736442dedab87b1e17", null ],
     [ "cbc_op_t", "group__crypto__cipher.html#gaa74d09d409b42b29c4c7045dc77552d2", null ],
     [ "ccm_op_t", "group__crypto__cipher.html#ga55e4d15dde1a5134c695ce0c31dabaf7", null ],
-    [ "crypto_completion_cb", "group__crypto__cipher.html#ga5bca6057c7fe56b3c6de4399e78e5389", null ],
+    [ "cipher_completion_cb", "group__crypto__cipher.html#ga062b07459bcc2990535465a7b9044ecd", null ],
     [ "ctr_op_t", "group__crypto__cipher.html#gad1ed48328ca31f8ce2dd7e0a166cacba", null ],
     [ "gcm_op_t", "group__crypto__cipher.html#gad27577142dd49308b2470253a41bd09d", null ],
     [ "cipher_algo", "group__crypto__cipher.html#gaa43d9907b508cb28c649aaa524d84424", [
@@ -85,11 +70,10 @@ var group__crypto__cipher =
     ] ],
     [ "cipher_begin_session", "group__crypto__cipher.html#ga0720700438ba5819aa826aa37f0c4227", null ],
     [ "cipher_block_op", "group__crypto__cipher.html#ga05a2569f8d404593e053ce69817a457e", null ],
-    [ "cipher_callback_set", "group__crypto__cipher.html#ga27804359f0457d98ea506d5088464622", null ],
+    [ "cipher_callback_set", "group__crypto__cipher.html#gaaf0add27d9116f584e7bbc2d8f1eb39b", null ],
     [ "cipher_cbc_op", "group__crypto__cipher.html#ga2c4ac483eb4e11110be939e669040700", null ],
     [ "cipher_ccm_op", "group__crypto__cipher.html#ga4886e7e1cc2fcff411066875b35b8b45", null ],
     [ "cipher_ctr_op", "group__crypto__cipher.html#gaeffb9d5dd85bf135eb2cca6d47cb373c", null ],
     [ "cipher_free_session", "group__crypto__cipher.html#gaa818a3de1f2d6319cd21bf6b7caf7cbb", null ],
-    [ "cipher_gcm_op", "group__crypto__cipher.html#ga3706b034252e40b818a782c28ba5e485", null ],
-    [ "cipher_query_hwcaps", "group__crypto__cipher.html#ga76fed4c6f39182b5d8b77775b1c7f4e0", null ]
+    [ "cipher_gcm_op", "group__crypto__cipher.html#ga3706b034252e40b818a782c28ba5e485", null ]
 ];

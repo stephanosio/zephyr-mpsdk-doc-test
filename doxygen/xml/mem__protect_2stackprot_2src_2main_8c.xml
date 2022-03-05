@@ -728,7 +728,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="mem__protect_2stackprot_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" prot="public" static="no">
         <name>STACKSIZE</name>
-        <initializer>(2048 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(2048 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -901,16 +901,16 @@
         </inbodydescription>
         <location file="tests/kernel/mem_protect/stackprot/src/main.c" line="80" column="6" bodyfile="tests/kernel/mem_protect/stackprot/src/main.c" bodystart="80" bodyend="92"/>
       </memberdef>
-      <memberdef kind="function" id="mem__protect_2stackprot_2src_2main_8c_1ab97dd758b2c94968e65f175438e03415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="mem__protect_2stackprot_2src_2main_8c_1a9638c59d0e6604336890b049b493238d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(alt_thread_stack_area,(2048+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(alt_thread_stack_area,(2048+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>alt_thread_stack_area</type>
         </param>
         <param>
-          <type>(2048+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(2048+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -991,7 +991,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ztest_8h" kindref="compound">ztest.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2048<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STACKSIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(2048<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a612635fe60af527de1e4d54f66e27b94" kindref="member">count</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"><ref refid="group__ztest__test__deprecated_1gac3de5965061b1164a8033712c9094e23" kindref="member">ZTEST_BMEM</ref><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="mem__protect_2stackprot_2src_2main_8c_1a32d6d77f170c7ee130ad8d8c32f928e1" kindref="member">ret</ref><sp/>=<sp/>TC_PASS;</highlight></codeline>
@@ -1040,7 +1040,7 @@
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(alt_thread_stack_area,<sp/><ref refid="mem__protect_2stackprot_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(alt_thread_stack_area,<sp/><ref refid="mem__protect_2stackprot_2src_2main_8c_1a21d9543c516fffee84a7963224271f95" kindref="member">STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="mem__protect_2stackprot_2src_2main_8c_1a2fffbb34d34f36aef37f72d63de83fcb" kindref="member">alt_thread_data</ref>;</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight></codeline>
 <codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mem__protect_2stackprot_2src_2main_8c_1af11418d2b5490ee6bac457f0873ffcd1" kindref="member">test_stackprot</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>

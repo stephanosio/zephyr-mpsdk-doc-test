@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1325" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1325" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1307" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1307" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__discover__params_1adfb69bb674815e20181603486d083837" prot="public" static="no" mutable="no">
         <type><ref refid="group__bt__audio__client_1ga58f72c4683521e08ecb2493d510563e7" kindref="member">bt_audio_discover_func_t</ref></type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1327" column="26" bodyfile="include/bluetooth/audio/audio.h" bodystart="1327" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1309" column="26" bodyfile="include/bluetooth/audio/audio.h" bodystart="1309" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__discover__params_1a12666f1701c3e46cbfe5d62ee3257ce8" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -44,7 +44,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1329" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1329" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1311" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1311" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__discover__params_1aadcf45a8bba229eebaf7646859116047" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -58,7 +58,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1331" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1331" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1313" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1313" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__discover__params_1a42ee9b44935f835a2dcadde8e0e4f12c" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1333" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1333" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1315" column="10" bodyfile="include/bluetooth/audio/audio.h" bodystart="1315" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__discover__params_1ad5811c5f0eb1072a8ceefa6c7ea7d21b" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structbt__gatt__read__params" kindref="compound">bt_gatt_read_params</ref></type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1334" column="26" bodyfile="include/bluetooth/audio/audio.h" bodystart="1334" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1316" column="26" bodyfile="include/bluetooth/audio/audio.h" bodystart="1316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__audio__discover__params_1ad85d397205b0a5db5c38f8b244b8e7ea" prot="public" static="no" mutable="no">
         <type>struct <ref refid="structbt__gatt__discover__params" kindref="compound">bt_gatt_discover_params</ref></type>
@@ -98,7 +98,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/audio/audio.h" line="1335" column="30" bodyfile="include/bluetooth/audio/audio.h" bodystart="1335" bodyend="-1"/>
+        <location file="include/bluetooth/audio/audio.h" line="1317" column="30" bodyfile="include/bluetooth/audio/audio.h" bodystart="1317" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -170,7 +170,7 @@
         <link refid="structbt__uuid"/>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/audio/audio.h" line="1323" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1323" bodyend="1336"/>
+    <location file="include/bluetooth/audio/audio.h" line="1305" column="1" bodyfile="include/bluetooth/audio/audio.h" bodystart="1305" bodyend="1318"/>
     <listofallmembers>
       <member refid="structbt__audio__discover__params_1ad85d397205b0a5db5c38f8b244b8e7ea" prot="public" virt="non-virtual"><scope>bt_audio_discover_params</scope><name>discover</name></member>
       <member refid="structbt__audio__discover__params_1a42ee9b44935f835a2dcadde8e0e4f12c" prot="public" virt="non-virtual"><scope>bt_audio_discover_params</scope><name>err</name></member>

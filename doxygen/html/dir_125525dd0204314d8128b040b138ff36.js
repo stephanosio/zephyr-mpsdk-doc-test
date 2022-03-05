@@ -5,6 +5,7 @@ var dir_125525dd0204314d8128b040b138ff36 =
     [ "acpi.h", "acpi_8h.html", "acpi_8h" ],
     [ "arch.h", "x86_2arch_8h.html", "x86_2arch_8h" ],
     [ "arch_inlines.h", "x86_2arch__inlines_8h.html", null ],
+    [ "cpuid.h", "cpuid_8h.html", "cpuid_8h" ],
     [ "intel_vtd.h", "arch_2x86_2intel__vtd_8h.html", "arch_2x86_2intel__vtd_8h" ],
     [ "memmap.h", "memmap_8h.html", "memmap_8h" ],
     [ "mmustructs.h", "mmustructs_8h.html", "mmustructs_8h" ],

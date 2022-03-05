@@ -731,16 +731,16 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
-      <memberdef kind="function" id="sched_2schedule__api_2src_2main_8c_1a81e3b9ed07b3537e574722780ed649bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sched_2schedule__api_2src_2main_8c_1ad8929d650a44b30319e50580ece5372d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(tstack,(640+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstack,(640+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type><ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref></type>
         </param>
         <param>
-          <type>(640+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(640+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -750,10 +750,10 @@
         </inbodydescription>
         <location file="tests/kernel/sched/schedule_api/src/main.c" line="10" column="1" declfile="tests/kernel/sched/schedule_api/src/main.c" declline="10" declcolumn="1"/>
       </memberdef>
-      <memberdef kind="function" id="sched_2schedule__api_2src_2main_8c_1a0ad75eaf827d269cf3a2ba34a1eba4ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="sched_2schedule__api_2src_2main_8c_1a7c03ed8317ff3c0c4af4a6aadc45c729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(tstacks, 10,(640+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(tstacks, 10,(640+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>tstacks</type>
@@ -762,7 +762,7 @@
           <type>10</type>
         </param>
         <param>
-          <type>(640+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(640+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -837,8 +837,8 @@
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="test__sched_8h" kindref="compound">test_sched.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Shared<sp/>threads<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(tstacks,<sp/><ref refid="test__sched_8h_1a009eccc38d82ae14211b7cbe51a879a5" kindref="member">MAX_NUM_THREAD</ref>,<sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(<ref refid="pipe_2pipe__api_2src_2main_8c_1a8b6a52348bfbfba409bf38688d31b8a8" kindref="member">tstack</ref>,<sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(tstacks,<sp/><ref refid="test__sched_8h_1a009eccc38d82ae14211b7cbe51a879a5" kindref="member">MAX_NUM_THREAD</ref>,<sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a6423a880df59733d2d9b509c7718d3a9" kindref="member">STACK_SIZE</ref>);</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Not<sp/>in<sp/>header<sp/>file<sp/>intentionally,<sp/>see<sp/>#16760<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><ref refid="msgq_2msgq__api_2src_2main_8c_1a054df7538d0e837a101abf426065940a" kindref="member">K_THREAD_STACK_EXTERN</ref>(ustack);</highlight></codeline>

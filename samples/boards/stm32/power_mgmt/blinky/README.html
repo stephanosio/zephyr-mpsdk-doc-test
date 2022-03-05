@@ -43,7 +43,7 @@
             <img src="../../../../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -189,7 +191,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -262,7 +264,7 @@ low power context.</p>
 <span id="stm32-pm-blinky-sample-requirements"></span><h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
 <p>The board should support enabling PM. For a STM32 based target, it means that
 it should support a clock source alternative to Cortex Systick that can be used
-in core sleep states, as LPTIM (<a class="reference internal" href="../../../../../reference/devicetree/bindings/timer/st%2Cstm32-lptim.html#dtbinding-st-stm32-lptim"><span class="std std-ref">st,stm32-lptim</span></a>).</p>
+in core sleep states, as LPTIM (<a class="reference internal" href="../../../../../reference/devicetree/bindings.html#std-dtcompatible-st-stm32-lptim"><code class="xref std std-dtcompatible docutils literal notranslate"><span class="pre">st,stm32-lptim</span></code></a>).</p>
 </div>
 <div class="section" id="building-and-running">
 <h2>Building and Running<a class="headerlink" href="#building-and-running" title="Permalink to this headline">¶</a></h2>
@@ -275,7 +277,7 @@ in core sleep states, as LPTIM (<a class="reference internal" href="../../../../
 </div>
 <div class="section" id="pm-configurations">
 <h2>PM configurations<a class="headerlink" href="#pm-configurations" title="Permalink to this headline">¶</a></h2>
-<p>By default, <a class="reference internal" href="../../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> and <a class="reference internal" href="../../../../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_PM_DEVICE_RUNTIME"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE_RUNTIME</span></code></a> are
+<p>By default, <a class="reference internal" href="../../../../../kconfig.html#CONFIG_PM_DEVICE" title="CONFIG_PM_DEVICE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE</span></code></a> and <a class="reference internal" href="../../../../../kconfig.html#CONFIG_PM_DEVICE_RUNTIME" title="CONFIG_PM_DEVICE_RUNTIME"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_PM_DEVICE_RUNTIME</span></code></a> are
 enabled, but user can also deactivate one or the other to see each configuration
 in play.</p>
 </div>
@@ -290,8 +292,8 @@ in play.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../../../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../../../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

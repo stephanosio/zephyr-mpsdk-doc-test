@@ -2,7 +2,7 @@ var sched_2deadline_2src_2main_8c =
 [
     [ "NUM_THREADS", "sched_2deadline_2src_2main_8c.html#a7735206bdfad487588bba2126b806ab7", null ],
     [ "STACK_SIZE", "sched_2deadline_2src_2main_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
-    [ "K_THREAD_STACK_ARRAY_DEFINE", "sched_2deadline_2src_2main_8c.html#a18d270e9eb52a168b6c15f0c953aeca1", null ],
+    [ "K_THREAD_STACK_ARRAY_DEFINE", "sched_2deadline_2src_2main_8c.html#a135897e71b879959c0e3061bd4c4ba33", null ],
     [ "test_deadline", "sched_2deadline_2src_2main_8c.html#aec9539a3134d41127f3fd0e300e2447b", null ],
     [ "test_main", "sched_2deadline_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],
     [ "test_unqueued", "group__kernel__sched__tests.html#ga26d08fc3b91cee16a29de99045d9db67", null ],

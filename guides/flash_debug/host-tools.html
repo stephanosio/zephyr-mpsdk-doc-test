@@ -44,7 +44,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -66,6 +66,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -164,7 +166,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -255,7 +257,7 @@ application, just run <code class="docutils literal notranslate"><span class="pr
 <li><p>Define flash partitions required to accommodate the bootloader and
 application image; see <a class="reference internal" href="../../reference/storage/flash_map/flash_map.html#flash-map-api"><span class="std std-ref">Flash map</span></a> for details.</p></li>
 <li><p>Have board <code class="file docutils literal notranslate"><span class="pre">.defconfig</span></code> file with the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USE_DT_CODE_PARTITION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USE_DT_CODE_PARTITION</span></code></a> Kconfig option set to <code class="docutils literal notranslate"><span class="pre">y</span></code> to
+<a class="reference internal" href="../../kconfig.html#CONFIG_USE_DT_CODE_PARTITION" title="CONFIG_USE_DT_CODE_PARTITION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USE_DT_CODE_PARTITION</span></code></a> Kconfig option set to <code class="docutils literal notranslate"><span class="pre">y</span></code> to
 instruct the build system to use these partitions for code relocation.
 This option can also be set in <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> or any other Kconfig fragment.</p></li>
 <li><p>Build and flash the SAM-BA bootloader on the device.</p></li>
@@ -265,13 +267,13 @@ This option can also be set in <code class="docutils literal notranslate"><span 
 <li><p>Define flash partitions required to accommodate the bootloader and
 application image; see <a class="reference internal" href="../../reference/storage/flash_map/flash_map.html#flash-map-api"><span class="std std-ref">Flash map</span></a> for details.</p></li>
 <li><p>Have board <code class="file docutils literal notranslate"><span class="pre">.defconfig</span></code> file with the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_BOSSA"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA</span></code></a> Kconfig option set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.  This will
-automatically select the <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USE_DT_CODE_PARTITION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USE_DT_CODE_PARTITION</span></code></a> Kconfig
+<a class="reference internal" href="../../kconfig.html#CONFIG_BOOTLOADER_BOSSA" title="CONFIG_BOOTLOADER_BOSSA"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA</span></code></a> Kconfig option set to <code class="docutils literal notranslate"><span class="pre">y</span></code>.  This will
+automatically select the <a class="reference internal" href="../../kconfig.html#CONFIG_USE_DT_CODE_PARTITION" title="CONFIG_USE_DT_CODE_PARTITION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USE_DT_CODE_PARTITION</span></code></a> Kconfig
 option which instruct the build system to use these partitions for code
 relocation.  The board <code class="file docutils literal notranslate"><span class="pre">.defconfig</span></code> file should have
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_BOSSA_ARDUINO"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_ARDUINO</span></code></a> ,
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_BOSSA_ADAFRUIT_UF2"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_ADAFRUIT_UF2</span></code></a> or the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_BOSSA_LEGACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_LEGACY</span></code></a> Kconfig option set to <code class="docutils literal notranslate"><span class="pre">y</span></code>
+<a class="reference internal" href="../../kconfig.html#CONFIG_BOOTLOADER_BOSSA_ARDUINO" title="CONFIG_BOOTLOADER_BOSSA_ARDUINO"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_ARDUINO</span></code></a> ,
+<a class="reference internal" href="../../kconfig.html#CONFIG_BOOTLOADER_BOSSA_ADAFRUIT_UF2" title="CONFIG_BOOTLOADER_BOSSA_ADAFRUIT_UF2"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_ADAFRUIT_UF2</span></code></a> or the
+<a class="reference internal" href="../../kconfig.html#CONFIG_BOOTLOADER_BOSSA_LEGACY" title="CONFIG_BOOTLOADER_BOSSA_LEGACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_LEGACY</span></code></a> Kconfig option set to <code class="docutils literal notranslate"><span class="pre">y</span></code>
 to select the right compatible SAM-BA bootloader mode.
 These options can also be set in <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> or any other Kconfig fragment.</p></li>
 <li><p>Build and flash the SAM-BA bootloader on the device.</p></li>
@@ -279,7 +281,7 @@ These options can also be set in <code class="docutils literal notranslate"><spa
 </div></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BOOTLOADER_BOSSA_LEGACY"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_LEGACY</span></code></a> Kconfig option should be used
+<p>The <a class="reference internal" href="../../kconfig.html#CONFIG_BOOTLOADER_BOSSA_LEGACY" title="CONFIG_BOOTLOADER_BOSSA_LEGACY"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BOOTLOADER_BOSSA_LEGACY</span></code></a> Kconfig option should be used
 as last resource.  Try configure first with Devices without ROM bootloader.</p>
 </div>
 <div class="section" id="typical-flash-layout-and-configuration">
@@ -456,8 +458,8 @@ Started Guide. pyOCD includes support for Zephyr RTOS-awareness.</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -168,7 +170,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -323,11 +325,11 @@ the Controller subsystem, listening for HCI commands, sending application data
 and responding with events and received data.  A build of this type sets the
 following Kconfig option values:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_HCI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_HCI</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_HCI_RAW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_HCI_RAW</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CTLR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_LL_SW_SPLIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_LL_SW_SPLIT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code> (if using the open source Link Layer)</p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT" title="CONFIG_BT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_HCI" title="CONFIG_BT_HCI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_HCI</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_HCI_RAW" title="CONFIG_BT_HCI_RAW"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_HCI_RAW</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_CTLR" title="CONFIG_BT_CTLR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_LL_SW_SPLIT" title="CONFIG_BT_LL_SW_SPLIT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_LL_SW_SPLIT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code> (if using the open source Link Layer)</p></li>
 </ul>
 </li>
 <li><p><strong>Host-only build</strong>: A Zephyr OS Host build will contain the Application and
@@ -335,9 +337,9 @@ the BLE Host, along with an HCI driver (UART or SPI) to interface with an
 external Controller chip.
 A build of this type sets the following Kconfig option values:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_HCI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_HCI</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CTLR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR</span></code></a> <code class="docutils literal notranslate"><span class="pre">=n</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT" title="CONFIG_BT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_HCI" title="CONFIG_BT_HCI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_HCI</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_CTLR" title="CONFIG_BT_CTLR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR</span></code></a> <code class="docutils literal notranslate"><span class="pre">=n</span></code></p></li>
 </ul>
 <p>All of the samples located in <code class="docutils literal notranslate"><span class="pre">samples/bluetooth</span></code> except for the ones
 used for Controller-only builds can be built as Host-only</p>
@@ -346,10 +348,10 @@ used for Controller-only builds can be built as Host-only</p>
 Controller, and it is used exclusively for single-chip (SoC) configurations.
 A build of this type sets the following Kconfig option values:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_HCI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_HCI</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CTLR"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
-<li><p><a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_LL_SW_SPLIT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_LL_SW_SPLIT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code> (if using the open source Link Layer)</p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT" title="CONFIG_BT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_HCI" title="CONFIG_BT_HCI"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_HCI</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_CTLR" title="CONFIG_BT_CTLR"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code></p></li>
+<li><p><a class="reference internal" href="../../kconfig.html#CONFIG_BT_LL_SW_SPLIT" title="CONFIG_BT_LL_SW_SPLIT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_LL_SW_SPLIT</span></code></a> <code class="docutils literal notranslate"><span class="pre">=y</span></code> (if using the open source Link Layer)</p></li>
 </ul>
 <p>All of the samples located in <code class="docutils literal notranslate"><span class="pre">samples/bluetooth</span></code> except for the ones
 used for Controller-only builds can be built as Combined</p>
@@ -446,8 +448,8 @@ four distinct roles of BLE usage:</p>
 </li>
 </ul>
 <p>Each role comes with its own build-time configuration option:
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_PERIPHERAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_PERIPHERAL</span></code></a>, <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CENTRAL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CENTRAL</span></code></a>,
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_BROADCASTER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_BROADCASTER</span></code></a> &amp; <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_OBSERVER"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_OBSERVER</span></code></a>. Of the
+<a class="reference internal" href="../../kconfig.html#CONFIG_BT_PERIPHERAL" title="CONFIG_BT_PERIPHERAL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_PERIPHERAL</span></code></a>, <a class="reference internal" href="../../kconfig.html#CONFIG_BT_CENTRAL" title="CONFIG_BT_CENTRAL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CENTRAL</span></code></a>,
+<a class="reference internal" href="../../kconfig.html#CONFIG_BT_BROADCASTER" title="CONFIG_BT_BROADCASTER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_BROADCASTER</span></code></a> &amp; <a class="reference internal" href="../../kconfig.html#CONFIG_BT_OBSERVER" title="CONFIG_BT_OBSERVER"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_OBSERVER</span></code></a>. Of the
 connection-oriented roles central implicitly enables observer role, and
 peripheral implicitly enables broadcaster role. Usually the first step
 when creating an application is to decide which roles are needed and go
@@ -715,8 +717,8 @@ encryption (CCM)</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

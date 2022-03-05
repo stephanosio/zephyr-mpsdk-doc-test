@@ -21,7 +21,7 @@ var searchData=
   ['lifo_5ftest_5fstart_18',['LIFO_TEST_START',['../pending_2src_2main_8c.html#aaf8a4ab6aa792471c7090b4b2a7c700c',1,'main.c']]],
   ['lifo_5fthread_5fprio_19',['LIFO_THREAD_PRIO',['../lifo_2lifo__usage_2src_2main_8c.html#a8c552d30ec22161cd22292899d5148af',1,'main.c']]],
   ['linker_5fdt_5fnode_5fregion_5fname_20',['LINKER_DT_NODE_REGION_NAME',['../devicetree__regions_8h.html#a3244e16032cc575ab5c7275caca14801',1,'devicetree_regions.h']]],
-  ['linker_5fdt_5fregion_5ffrom_5fnode_21',['LINKER_DT_REGION_FROM_NODE',['../devicetree__regions_8h.html#a249e6f72a0632d749d9c6a258d6d9b92',1,'devicetree_regions.h']]],
+  ['linker_5fdt_5fregions_21',['LINKER_DT_REGIONS',['../devicetree__regions_8h.html#a1b743e1c6c735c87d4fbd2094819c573',1,'devicetree_regions.h']]],
   ['linker_5fdt_5freserved_5fmem_5fget_5fptr_22',['LINKER_DT_RESERVED_MEM_GET_PTR',['../devicetree__reserved_8h.html#a4fd6de4cb9293212e939bb1e23bb26d9',1,'devicetree_reserved.h']]],
   ['linker_5fdt_5freserved_5fmem_5fget_5fptr_5fby_5fphandle_23',['LINKER_DT_RESERVED_MEM_GET_PTR_BY_PHANDLE',['../devicetree__reserved_8h.html#ab493b86b6cdc720fbe7d4933fb0941c9',1,'devicetree_reserved.h']]],
   ['linker_5fdt_5freserved_5fmem_5fget_5fsize_24',['LINKER_DT_RESERVED_MEM_GET_SIZE',['../devicetree__reserved_8h.html#a19335572cf156f66588c7ae36df2fc6d',1,'devicetree_reserved.h']]],

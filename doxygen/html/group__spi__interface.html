@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -245,8 +245,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga44076fa14703997f7e3aefb2bfccd801"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi__interface.html#ga44076fa14703997f7e3aefb2bfccd801">SPI_CS_ACTIVE_HIGH</a>&#160;&#160;&#160;<a class="el" href="group__sys-util.html#ga3a8ea58898cb58fc96013383d39f482c">BIT</a>(14)</td></tr>
 <tr class="separator:ga44076fa14703997f7e3aefb2bfccd801"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader">SPI MISO lines (if \verbatim embed:rst:inline :kconfig:`CONFIG_SPI_EXTENDED_MODES` \endverbatim is enabled)</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p ><a class="anchor" id="amgrp26a12f72910c8e2ab592071d929ef11b"></a>Some controllers support dual, quad or octal MISO lines connected to slaves. Default is single, which is the case most of the time. Without </p><pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SPI_EXTENDED_MODES` </pre><p> being enabled, single is the only supported one. </p>
+<tr class="heading"><td colspan="2"><h2 class="groupheader">SPI MISO lines (if \verbatim embed:rst:inline :kconfig:option:`CONFIG_SPI_EXTENDED_MODES` \endverbatim is enabled)</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p ><a class="anchor" id="amgrp06970c9668dae4653080fb6470cdc0ed"></a>Some controllers support dual, quad or octal MISO lines connected to slaves. Default is single, which is the case most of the time. Without </p><pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SPI_EXTENDED_MODES` </pre><p> being enabled, single is the only supported one. </p>
 </td></tr>
 <tr class="memitem:ga7a183f157e8cb8b437857a0babbd923b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__spi__interface.html#ga7a183f157e8cb8b437857a0babbd923b">SPI_LINES_SINGLE</a>&#160;&#160;&#160;(0U &lt;&lt; 16)</td></tr>
 <tr class="separator:ga7a183f157e8cb8b437857a0babbd923b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1321,7 +1321,7 @@ This function is an helper function calling spi_transceive.</dd></dl>
 <dd>
 This function is an helper function calling spi_transceive_async.</dd>
 <dd>
-This function is available only if <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SPI_ASYNC` </pre> is selected.</dd></dl>
+This function is available only if <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SPI_ASYNC` </pre> is selected.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance </td></tr>
@@ -1594,7 +1594,7 @@ This function is available only if <pre class="fragment">embed:rst:inline :kconf
 <p>Read/write the specified amount of data from the SPI driver. </p>
 <dl class="section note"><dt>Note</dt><dd>This function is asynchronous.</dd>
 <dd>
-This function is available only if <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SPI_ASYNC` </pre> is selected.</dd></dl>
+This function is available only if <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SPI_ASYNC` </pre> is selected.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance </td></tr>
@@ -1789,7 +1789,7 @@ This function is an helper function calling spi_transceive.</dd></dl>
 <dd>
 This function is an helper function calling spi_transceive_async.</dd>
 <dd>
-This function is available only if <pre class="fragment">embed:rst:inline :kconfig:`CONFIG_SPI_ASYNC` </pre> is selected.</dd></dl>
+This function is available only if <pre class="fragment">embed:rst:inline :kconfig:option:`CONFIG_SPI_ASYNC` </pre> is selected.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">dev</td><td>Pointer to the device structure for the driver instance </td></tr>
@@ -1864,7 +1864,7 @@ This function is available only if <pre class="fragment">embed:rst:inline :kconf
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

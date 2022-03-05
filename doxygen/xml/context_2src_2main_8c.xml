@@ -748,7 +748,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" prot="public" static="no">
         <name>THREAD_STACKSIZE</name>
-        <initializer>(512 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(512 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -759,7 +759,7 @@
       </memberdef>
       <memberdef kind="define" id="context_2src_2main_8c_1ad21512696d32f82c37a9753f8e27767f" prot="public" static="no">
         <name>THREAD_STACKSIZE2</name>
-        <initializer>(384 + CONFIG_TEST_EXTRA_STACKSIZE)</initializer>
+        <initializer>(384 + CONFIG_TEST_EXTRA_STACK_SIZE)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -1017,16 +1017,16 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="context_2src_2main_8c_1adaeeb684dfef1a9e3ad4798903928cd5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="context_2src_2main_8c_1aabd8086a01941bd75e872636af44d03c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_stack1,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_stack1,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_stack1</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1036,16 +1036,16 @@
         </inbodydescription>
         <location file="tests/kernel/context/src/main.c" line="131" column="8" declfile="tests/kernel/context/src/main.c" declline="131" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="context_2src_2main_8c_1aaa9cfc776f134a683b0e9a77c22b5d33" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="context_2src_2main_8c_1a6d96fef62b257c5496b49159116b9499" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_stack2,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_stack2,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_stack2</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1055,16 +1055,16 @@
         </inbodydescription>
         <location file="tests/kernel/context/src/main.c" line="132" column="8" declfile="tests/kernel/context/src/main.c" declline="132" declcolumn="8"/>
       </memberdef>
-      <memberdef kind="function" id="context_2src_2main_8c_1a2a02ef37432227a98b6012cd434851fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="context_2src_2main_8c_1ad5d46446a3ba517ee5987b3c0436c8e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_DEFINE</definition>
-        <argsstring>(thread_stack3,(512+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(thread_stack3,(512+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_DEFINE</name>
         <param>
           <type>thread_stack3</type>
         </param>
         <param>
-          <type>(512+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(512+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1611,10 +1611,10 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
         </inbodydescription>
         <location file="tests/kernel/context/src/main.c" line="849" column="13" bodyfile="tests/kernel/context/src/main.c" bodystart="849" bodyend="859"/>
       </memberdef>
-      <memberdef kind="function" id="context_2src_2main_8c_1a25ec07790cf5f2709eeacec2d96de048" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="context_2src_2main_8c_1a9a349084758771c6f7c2d04a6b092792" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>static</type>
         <definition>static K_THREAD_STACK_ARRAY_DEFINE</definition>
-        <argsstring>(timeout_stacks, ARRAY_SIZE(timeouts),(384+CONFIG_TEST_EXTRA_STACKSIZE))</argsstring>
+        <argsstring>(timeout_stacks, ARRAY_SIZE(timeouts),(384+CONFIG_TEST_EXTRA_STACK_SIZE))</argsstring>
         <name>K_THREAD_STACK_ARRAY_DEFINE</name>
         <param>
           <type>timeout_stacks</type>
@@ -1623,7 +1623,7 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
           <type><ref refid="group__sys-util_1ga70c57aae3eb654e205459b4362c8089a" kindref="member">ARRAY_SIZE</ref>(<ref refid="context_2src_2main_8c_1a8610a02a502b04dbf6e1342f578a8cdb" kindref="member">timeouts</ref>)</type>
         </param>
         <param>
-          <type>(384+CONFIG_TEST_EXTRA_STACKSIZE)</type>
+          <type>(384+CONFIG_TEST_EXTRA_STACK_SIZE)</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -1847,8 +1847,8 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;soc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACKSIZE<sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACKSIZE2<sp/><sp/><sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACKSIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACKSIZE<sp/><sp/><sp/><sp/>(512<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_STACKSIZE2<sp/><sp/><sp/>(384<sp/>+<sp/>CONFIG_TEST_EXTRA_STACK_SIZE)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_PRIORITY<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>THREAD_SELF_CMD<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
@@ -1941,9 +1941,9 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="context_2src_2main_8c_1aab8ee373d66c7335692a3ce45cebddcd" kindref="member">thread_evidence</ref>;</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_stack1,<sp/><ref refid="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" kindref="member">THREAD_STACKSIZE</ref>);</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_stack2,<sp/><ref refid="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" kindref="member">THREAD_STACKSIZE</ref>);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9bda3e00bf96550334eadf74c9af316b" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_stack3,<sp/><ref refid="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" kindref="member">THREAD_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_stack1,<sp/><ref refid="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" kindref="member">THREAD_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_stack2,<sp/><ref refid="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" kindref="member">THREAD_STACKSIZE</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1abb291232121138c783bcbd0addb9a4f3" kindref="member">K_THREAD_STACK_DEFINE</ref>(thread_stack3,<sp/><ref refid="context_2src_2main_8c_1ae23a2e016adb8494df09e0e699d693f8" kindref="member">THREAD_STACKSIZE</ref>);</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="context_2src_2main_8c_1a142b35a972e1d49b2f774510d10c8a74" kindref="member">thread_data1</ref>;</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="context_2src_2main_8c_1ab51c8e218105b70256a91ca680290635" kindref="member">thread_data2</ref>;</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="context_2src_2main_8c_1acfbe30fba051449e26d9a331942ea996" kindref="member">thread_data3</ref>;</highlight></codeline>
@@ -2207,7 +2207,7 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
 <codeline lineno="557"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>IRQ<sp/>locks<sp/>don&apos;t<sp/>prevent<sp/>ticks<sp/>from<sp/>advancing<sp/>in<sp/>tickless<sp/>mode<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="group__sys-util_1ga111fe4e9d63758262fc6810a782cb32a" kindref="member">IS_ENABLED</ref>(CONFIG_TICKLESS_KERNEL))<sp/>{</highlight></codeline>
-<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__ztest__test__deprecated_1gada3b1fcfa71db1bf7787c03ff45256d5" kindref="member">ztest_test_skip</ref>();</highlight></codeline>
 <codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="562"><highlight class="normal"></highlight></codeline>
 <codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_test_kernel_interrupts(<ref refid="context_2src_2main_8c_1ac2c221c11ab2f3bcdcbe396933476e73" kindref="member">irq_lock_wrapper</ref>,<sp/><ref refid="context_2src_2main_8c_1a4853f16e8b9af6f45993e26eb99ec604" kindref="member">irq_unlock_wrapper</ref>,<sp/>-1);</highlight></codeline>
@@ -2215,7 +2215,7 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
 <codeline lineno="565"><highlight class="normal"></highlight></codeline>
 <codeline lineno="621"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="context_2src_2main_8c_1a5bb447b5f5b19e446b78d6b186802a6c" kindref="member">test_kernel_timer_interrupts</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="622"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TICK_IRQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="623"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(TICK_IRQ)<sp/>&amp;&amp;<sp/>defined(CONFIG_TICKLESS_KERNEL))</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Disable<sp/>interrupts<sp/>coming<sp/>from<sp/>the<sp/>timer.<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_test_kernel_interrupts(<ref refid="context_2src_2main_8c_1a8daa3c5a7737cfa3420e7dd76ea8b7d9" kindref="member">irq_disable_wrapper</ref>,<sp/><ref refid="context_2src_2main_8c_1a4d9b21c8ec7b7ff5e0406425c158bbd9" kindref="member">irq_enable_wrapper</ref>,<sp/>TICK_IRQ);</highlight></codeline>
 <codeline lineno="626"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
@@ -2409,7 +2409,7 @@ This tests the <ref refid="group__cpu__idle__apis_1ga7b25e1bed511a813b32fbd0f91b
 <codeline lineno="881"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="882"><highlight class="normal"></highlight></codeline>
 <codeline lineno="883"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NUM_TIMEOUT_THREADS<sp/>ARRAY_SIZE(timeouts)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="884"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1aab1dff2223c027ea2507228e7e040641" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(timeout_stacks,<sp/><ref refid="context_2src_2main_8c_1a89eb04e18fb0d18932bde14763f3c956" kindref="member">NUM_TIMEOUT_THREADS</ref>,</highlight></codeline>
+<codeline lineno="884"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="condvar_2condvar__api_2src_2main_8c_1a9c0a8a7f0624c343c7966c84f94c95b8" kindref="member">K_THREAD_STACK_ARRAY_DEFINE</ref>(timeout_stacks,<sp/><ref refid="context_2src_2main_8c_1a89eb04e18fb0d18932bde14763f3c956" kindref="member">NUM_TIMEOUT_THREADS</ref>,</highlight></codeline>
 <codeline lineno="885"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="context_2src_2main_8c_1ad21512696d32f82c37a9753f8e27767f" kindref="member">THREAD_STACKSIZE2</ref>);</highlight></codeline>
 <codeline lineno="886"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structk__thread" kindref="compound">k_thread</ref><sp/><ref refid="context_2src_2main_8c_1a606734fde5ebce45006d5d030016d2b6" kindref="member">timeout_threads</ref>[<ref refid="context_2src_2main_8c_1a89eb04e18fb0d18932bde14763f3c956" kindref="member">NUM_TIMEOUT_THREADS</ref>];</highlight></codeline>
 <codeline lineno="887"><highlight class="normal"></highlight></codeline>

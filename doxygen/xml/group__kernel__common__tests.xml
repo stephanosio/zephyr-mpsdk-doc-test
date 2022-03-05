@@ -1061,7 +1061,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/common/src/irq_offload.c" line="95" column="24" bodyfile="tests/kernel/common/src/irq_offload.c" bodystart="95" bodyend="201"/>
+        <location file="tests/kernel/common/src/irq_offload.c" line="95" column="24" bodyfile="tests/kernel/common/src/irq_offload.c" bodystart="95" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="group__kernel__common__tests_1gaa0b61563ef767d8d2276e7ffe0b14f5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1081,7 +1081,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="tests/kernel/common/src/main.c" line="86" column="13" bodyfile="tests/kernel/common/src/main.c" bodystart="86" bodyend="97"/>
+        <location file="tests/kernel/common/src/main.c" line="87" column="13" bodyfile="tests/kernel/common/src/main.c" bodystart="87" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="group__kernel__common__tests_1ga4d9014d724f801e6d7ca497bf332f65a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>

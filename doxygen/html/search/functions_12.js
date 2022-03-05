@@ -48,7 +48,7 @@ var searchData=
   ['sensor_5fsample_5ffetch_45',['sensor_sample_fetch',['../group__sensor__interface.html#gaa75e25d93ee7cac0bf38399f3c006dff',1,'sensor.h']]],
   ['sensor_5fsample_5ffetch_5fchan_46',['sensor_sample_fetch_chan',['../group__sensor__interface.html#gac16192826432438a15274cf28d66e8a6',1,'sensor.h']]],
   ['sensor_5ftrigger_5fset_47',['sensor_trigger_set',['../group__sensor__interface.html#ga7c72aca732e0641612d2f9437c2e41b7',1,'sensor.h']]],
-  ['sensor_5fvalue_5ffrom_5fdouble_48',['sensor_value_from_double',['../group__sensor__interface.html#ga1b900b0afde216d2874fdf3be9e4dff6',1,'sensor.h']]],
+  ['sensor_5fvalue_5ffrom_5fdouble_48',['sensor_value_from_double',['../group__sensor__interface.html#gaf01bbb251ad0c7f6c55c5b702e8a4048',1,'sensor.h']]],
   ['sensor_5fvalue_5fto_5fdouble_49',['sensor_value_to_double',['../group__sensor__interface.html#ga29223b754dc436ab1e97ce6209a3ea06',1,'sensor.h']]],
   ['service1_5fentry_50',['service1_entry',['../msgq_2msgq__usage_2src_2main_8c.html#a60806a515a08c7bc0ea1ada3112b18e3',1,'main.c']]],
   ['service2_5fentry_51',['service2_entry',['../msgq_2msgq__usage_2src_2main_8c.html#a896f17e320c668a984d96607c82c83ec',1,'main.c']]],

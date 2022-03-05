@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -213,7 +213,7 @@ return_value", an underflow occurred and bytes were dropped).</p>
   <table class="params">
     <tr><td class="paramname">ws</td><td>A <a class="el" href="structsys__winstream.html" title="Lockless shared memory byte stream IPC.">sys_winstream</a> from which to read </td></tr>
     <tr><td class="paramname">seq</td><td>A pointer to an integer containing the last sequence number read from the stream, or zero to indicate "start
-           of stream". The current state of the stream will be returned in the pointer for use in future calls. </td></tr>
+           of stream". It is updated in place and returned for future calls and for detecting underflows. </td></tr>
     <tr><td class="paramname">buf</td><td>A buffer into which to store the data read </td></tr>
     <tr><td class="paramname">buflen</td><td>The length of buf in bytes </td></tr>
   </table>
@@ -275,7 +275,7 @@ return_value", an underflow occurred and bytes were dropped).</p>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_317ea3797c15f4a1d9c156bc812661ca.html">sys</a></li><li class="navelem"><a class="el" href="winstream_8h.html">winstream.h</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:40 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:46 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

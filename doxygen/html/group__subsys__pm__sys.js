@@ -8,6 +8,6 @@ var group__subsys__pm__sys =
     ] ],
     [ "pm_notifier_register", "group__subsys__pm__sys.html#ga066945118b8f287ee56aacf41b677a78", null ],
     [ "pm_notifier_unregister", "group__subsys__pm__sys.html#gab0856d662e50a3847a1b70cb8370849a", null ],
-    [ "pm_power_state_force", "group__subsys__pm__sys.html#ga5c22778e2981505a833e8fc9067e1667", null ],
-    [ "pm_power_state_next_get", "group__subsys__pm__sys.html#ga9d244527bfaa67a9fbae4a5bbe1ab6bd", null ]
+    [ "pm_state_force", "group__subsys__pm__sys.html#ga075be307983f4efdcc93252a31a4258a", null ],
+    [ "pm_state_next_get", "group__subsys__pm__sys.html#ga3861a1a0009b96d15de00059257848dd", null ]
 ];

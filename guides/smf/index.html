@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -162,7 +164,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -228,7 +230,7 @@
 <p>The State Machine Framework (SMF) is an application agnostic framework that
 provides an easy way for developers to integrate state machines into their
 application. The framework can be added to any project by enabling the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SMF"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMF</span></code></a> option.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_SMF" title="CONFIG_SMF"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SMF</span></code></a> option.</p>
 </div>
 <div class="section" id="state-creation">
 <h2>State Creation<a class="headerlink" href="#state-creation" title="Permalink to this headline">¶</a></h2>
@@ -251,13 +253,13 @@ type with the following macro: <code class="docutils literal notranslate"><span 
 use <code class="docutils literal notranslate"><span class="pre">SMF_CTX(&amp;user_obj)</span></code>.</p>
 <p>By default, a state can have no anscestor states, resulting in a flat state
 machine. But to enable the creation of a hierarchical state machine, the
-<a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SMF_ANCESTOR_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMF_ANCESTOR_SUPPORT</span></code></a> option must be enabled.</p>
+<a class="reference internal" href="../../kconfig.html#CONFIG_SMF_ANCESTOR_SUPPORT" title="CONFIG_SMF_ANCESTOR_SUPPORT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SMF_ANCESTOR_SUPPORT</span></code></a> option must be enabled.</p>
 <p>The following macro can be used for easy state creation:</p>
 <ul class="simple">
 <li><p><code class="xref c c-macro docutils literal notranslate"><span class="pre">SMF_CREATE_STATE</span></code> Create a state</p></li>
 </ul>
 <p><strong>NOTE:</strong> The <code class="xref c c-macro docutils literal notranslate"><span class="pre">SMF_CREATE_STATE</span></code> macro takes an additional parameter
-when <a class="reference internal" href="../../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SMF_ANCESTOR_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SMF_ANCESTOR_SUPPORT</span></code></a> is enabled.</p>
+when <a class="reference internal" href="../../kconfig.html#CONFIG_SMF_ANCESTOR_SUPPORT" title="CONFIG_SMF_ANCESTOR_SUPPORT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SMF_ANCESTOR_SUPPORT</span></code></a> is enabled.</p>
 </div>
 <div class="section" id="state-machine-creation">
 <h2>State Machine Creation<a class="headerlink" href="#state-machine-creation" title="Permalink to this headline">¶</a></h2>
@@ -537,8 +539,8 @@ whithout transitioning to another state, ie. calling smf_set_state.</p></li>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

@@ -13,11 +13,11 @@
 <para>Periodic Advertiser Address. </para>
         </briefdescription>
         <detaileddescription>
-<para>Only valid if not using the periodic advertising list </para>
+<para>Only valid if not using the periodic advertising list (BT_LE_PER_ADV_SYNC_OPT_USE_PER_ADV_LIST) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1304" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="1304" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1308" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="1308" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__per__adv__sync__param_1a70795642ee94dd9e87f0cf251c095e7f" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -28,11 +28,11 @@
 <para>Advertiser SID. </para>
         </briefdescription>
         <detaileddescription>
-<para>Only valid if not using the periodic advertising list </para>
+<para>Only valid if not using the periodic advertising list (BT_LE_PER_ADV_SYNC_OPT_USE_PER_ADV_LIST) </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1311" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1311" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1316" column="9" bodyfile="include/bluetooth/bluetooth.h" bodystart="1316" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__per__adv__sync__param_1a4252f2b3b453c2f9c8fbf8c35a618ff2" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a0a8582351ac627ee8bde2973c825e47f" kindref="member">uint32_t</ref></type>
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1314" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1314" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1319" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1319" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__per__adv__sync__param_1af9abb65547fb5bfea65f4c22963c7da0" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1323" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1323" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1328" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1328" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structbt__le__per__adv__sync__param_1a301cfd3d6e5620d29c021ababe104754" prot="public" static="no" mutable="no">
         <type><ref refid="stdint_8h_1a5debae8b2a1ec20a6694c0c443ee399e" kindref="member">uint16_t</ref></type>
@@ -76,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="1331" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1331" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="1336" column="10" bodyfile="include/bluetooth/bluetooth.h" bodystart="1336" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -103,7 +103,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/bluetooth.h" line="1298" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1298" bodyend="1332"/>
+    <location file="include/bluetooth/bluetooth.h" line="1301" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="1301" bodyend="1337"/>
     <listofallmembers>
       <member refid="structbt__le__per__adv__sync__param_1ac93adedad747f61a771ac5445e486b74" prot="public" virt="non-virtual"><scope>bt_le_per_adv_sync_param</scope><name>addr</name></member>
       <member refid="structbt__le__per__adv__sync__param_1a4252f2b3b453c2f9c8fbf8c35a618ff2" prot="public" virt="non-virtual"><scope>bt_le_per_adv_sync_param</scope><name>options</name></member>

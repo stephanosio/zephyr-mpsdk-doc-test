@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/bluetooth/bluetooth.h" line="2165" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="2165" bodyend="-1"/>
+        <location file="include/bluetooth/bluetooth.h" line="2170" column="14" bodyfile="include/bluetooth/bluetooth.h" bodystart="2170" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -44,7 +44,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="include/bluetooth/bluetooth.h" line="2163" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="2163" bodyend="2166"/>
+    <location file="include/bluetooth/bluetooth.h" line="2168" column="1" bodyfile="include/bluetooth/bluetooth.h" bodystart="2168" bodyend="2171"/>
     <listofallmembers>
       <member refid="structbt__bond__info_1a6b328ce30fd53bb73ecd8e033bb91d1f" prot="public" virt="non-virtual"><scope>bt_bond_info</scope><name>addr</name></member>
     </listofallmembers>

@@ -7,6 +7,7 @@
     <innerclass refid="structzcan__filter" prot="public">zcan_filter</innerclass>
     <innerclass refid="structcan__bus__err__cnt" prot="public">can_bus_err_cnt</innerclass>
     <innerclass refid="structcan__timing" prot="public">can_timing</innerclass>
+    <innerclass refid="structcan__device__state" prot="public">can_device_state</innerclass>
     <innerclass refid="structcan__frame" prot="public">can_frame</innerclass>
     <innerclass refid="structcan__filter" prot="public">can_filter</innerclass>
       <sectiondef kind="user-defined">
@@ -38,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="917" column="18" bodyfile="include/drivers/can.h" bodystart="917" bodyend="-1"/>
+        <location file="include/drivers/can.h" line="1132" column="18" bodyfile="include/drivers/can.h" bodystart="1132" bodyend="-1"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gaf561048ea56449c778ede63b30fe5c6e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -78,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="957" column="20" bodyfile="include/drivers/can.h" bodystart="957" bodyend="965"/>
+        <location file="include/drivers/can.h" line="1172" column="20" bodyfile="include/drivers/can.h" bodystart="1172" bodyend="1180"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gad458a27a19ac09bf23444615b2c8c407" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -118,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="973" column="20" bodyfile="include/drivers/can.h" bodystart="973" bodyend="979"/>
+        <location file="include/drivers/can.h" line="1188" column="20" bodyfile="include/drivers/can.h" bodystart="1188" bodyend="1194"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gaf9a168f41ae3bef27e61e99ee8fcde27" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -158,7 +159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="987" column="20" bodyfile="include/drivers/can.h" bodystart="987" bodyend="995"/>
+        <location file="include/drivers/can.h" line="1202" column="20" bodyfile="include/drivers/can.h" bodystart="1202" bodyend="1210"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gae89c9ae16f965d838595866f2ffea2e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -198,7 +199,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="1003" column="20" bodyfile="include/drivers/can.h" bodystart="1003" bodyend="1010"/>
+        <location file="include/drivers/can.h" line="1218" column="20" bodyfile="include/drivers/can.h" bodystart="1218" bodyend="1225"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -244,7 +245,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="417" column="6" declfile="include/drivers/can.h" declline="417" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="618" column="6" declfile="include/drivers/can.h" declline="618" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gac27fe64142603f0d32d422594356b2d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -336,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="446" column="5" declfile="include/drivers/can.h" declline="446" declcolumn="5"/>
+        <location file="include/drivers/can.h" line="647" column="5" declfile="include/drivers/can.h" declline="647" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1ga358cd73ed59c2099f4b2c6ceb397ca11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -364,7 +365,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Same as <emphasis><ref refid="group__can__interface_1gac27fe64142603f0d32d422594356b2d7" kindref="member">can_calc_timing()</ref></emphasis> but with the maximum and minimum values from the data phase.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_CAN_FD_MODE` </verbatim> must be selected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_CAN_FD_MODE` </verbatim> must be selected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -428,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="468" column="5" declfile="include/drivers/can.h" declline="468" declcolumn="5"/>
+        <location file="include/drivers/can.h" line="669" column="5" declfile="include/drivers/can.h" declline="669" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1ga7ee7a3296995c09c7f35f54029ed26cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -499,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="488" column="5" declfile="include/drivers/can.h" declline="488" declcolumn="5"/>
+        <location file="include/drivers/can.h" line="689" column="5" declfile="include/drivers/can.h" declline="689" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gae8d117c765b9e0cd1d08e7d63e6ce47b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -523,7 +524,7 @@
         </briefdescription>
         <detaileddescription>
 <para>If the sjw equals CAN_SJW_NO_CHANGE, the sjw parameter is not changed.</para>
-<para><simplesect kind="note"><para>The parameter <computeroutput>timing_data</computeroutput> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <verbatim>embed:rst:inline :kconfig:`CONFIG_CAN_FD_MODE` </verbatim> is not selected, the value of this parameter is ignored.</para>
+<para><simplesect kind="note"><para>The parameter <computeroutput>timing_data</computeroutput> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_CAN_FD_MODE` </verbatim> is not selected, the value of this parameter is ignored.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -571,7 +572,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="512" column="6" declfile="include/drivers/can.h" declline="512" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="713" column="6" declfile="include/drivers/can.h" declline="713" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1ga10ed56841a7d2c53ef20bdfa732f9043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -628,7 +629,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="534" column="6" declfile="include/drivers/can.h" declline="534" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="735" column="6" declfile="include/drivers/can.h" declline="735" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gae0c862e57610ad80727c767fab690d93" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -652,7 +653,7 @@
         </briefdescription>
         <detaileddescription>
 <para>The sample point is set to the CiA DS 301 recommended value of 87.5%.</para>
-<para><simplesect kind="note"><para>The parameter <computeroutput>bitrate_data</computeroutput> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <verbatim>embed:rst:inline :kconfig:`CONFIG_CAN_FD_MODE` </verbatim> is not selected, the value of this parameter is ignored.</para>
+<para><simplesect kind="note"><para>The parameter <computeroutput>bitrate_data</computeroutput> is only relevant for CAN-FD. If the controller does not support CAN-FD or if <verbatim>embed:rst:inline :kconfig:option:`CONFIG_CAN_FD_MODE` </verbatim> is not selected, the value of this parameter is ignored.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -708,7 +709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="560" column="19" bodyfile="include/drivers/can.h" bodystart="560" bodyend="589"/>
+        <location file="include/drivers/can.h" line="761" column="19" bodyfile="include/drivers/can.h" bodystart="761" bodyend="790"/>
       </memberdef>
       <memberdef kind="define" id="group__can__interface_1ga3f7eefd33eb0cb074e5d742c5097554a" prot="public" static="no">
         <name>CAN_SJW_NO_CHANGE</name>
@@ -720,7 +721,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="494" column="9" bodyfile="include/drivers/can.h" bodystart="494" bodyend="-1"/>
+        <location file="include/drivers/can.h" line="695" column="9" bodyfile="include/drivers/can.h" bodystart="695" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -751,11 +752,20 @@
           <declname>user_data</declname>
         </param>
         <briefdescription>
-<para>Transmit a CAN frame on the CAN bus. </para>
+<para>Queue a CAN frame for transmission on the CAN bus. </para>
         </briefdescription>
         <detaileddescription>
-<para>Transmit a CAN frame on the CAN bus with optional timeout and completion callback function.</para>
-<para>By default, the CAN controller will automatically retry transmission in case of lost bus arbitration or missing acknowledge. Some CAN controllers support disabling automatic retransmissions (&quot;one-shot&quot; mode) via a devicetree property.</para>
+<para>Queue a CAN frame for transmission on the CAN bus with optional timeout and completion callback function.</para>
+<para>Queued CAN frames are transmitted in order according to the their priority:<itemizedlist>
+<listitem><para>The lower the CAN-ID, the higher the priority.</para>
+</listitem><listitem><para>Data frames have higher priority than Remote Transmission Request (RTR) frames with identical CAN-IDs.</para>
+</listitem><listitem><para>Frames with standard (11-bit) identifiers have higher priority than frames with extended (29-bit) identifiers with identical base IDs (the higher 11 bits of the extended identifier).</para>
+</listitem><listitem><para>Transmission order for queued frames with the same priority is hardware dependent.</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="note"><para>If transmitting segmented messages spanning multiple CAN frames with identical CAN-IDs, the sender must ensure to only queue one frame at a time if FIFO order is required.</para>
+</simplesect>
+By default, the CAN controller will automatically retry transmission in case of lost bus arbitration or missing acknowledge. Some CAN controllers support disabling automatic retransmissions (&quot;one-shot&quot; mode) via a devicetree property.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>dev</parametername>
@@ -850,7 +860,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="628" column="6" declfile="include/drivers/can.h" declline="628" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="843" column="6" declfile="include/drivers/can.h" declline="843" declcolumn="6"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -937,7 +947,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="670" column="19" bodyfile="include/drivers/can.h" bodystart="670" bodyend="676"/>
+        <location file="include/drivers/can.h" line="885" column="19" bodyfile="include/drivers/can.h" bodystart="885" bodyend="891"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1ga2feb41b89c8c172f02fd48fb3f6276de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1011,7 +1021,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="712" column="6" declfile="include/drivers/can.h" declline="712" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="927" column="6" declfile="include/drivers/can.h" declline="927" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1ga822aa3142ea01582d5cfb8b478fb2847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1052,7 +1062,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="724" column="7" declfile="include/drivers/can.h" declline="724" declcolumn="7"/>
+        <location file="include/drivers/can.h" line="939" column="7" declfile="include/drivers/can.h" declline="939" declcolumn="7"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gaace06471f995959bb2e91f04bb9c4d68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1118,7 +1128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="745" column="6" declfile="include/drivers/can.h" declline="745" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="960" column="6" declfile="include/drivers/can.h" declline="960" declcolumn="6"/>
       </memberdef>
       <memberdef kind="define" id="group__can__interface_1ga7af0acdfbdad07fc3eba4cbd29bc090b" prot="public" static="no">
         <name>CAN_MSGQ_DEFINE</name>
@@ -1153,7 +1163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="688" column="9" bodyfile="include/drivers/can.h" bodystart="688" bodyend="-1"/>
+        <location file="include/drivers/can.h" line="903" column="9" bodyfile="include/drivers/can.h" bodystart="903" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1226,7 +1236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="779" column="6" declfile="include/drivers/can.h" declline="779" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="994" column="6" declfile="include/drivers/can.h" declline="994" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gac474e56a50685736a1c25dca277aab5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -1246,7 +1256,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Recover the CAN controller from bus-off state to error-active state.</para>
-<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:`CONFIG_CAN_AUTO_BUS_OFF_RECOVERY` </verbatim> must be deselected for this function to be available.</para>
+<para><simplesect kind="note"><para><verbatim>embed:rst:inline :kconfig:option:`CONFIG_CAN_AUTO_BUS_OFF_RECOVERY` </verbatim> must be deselected for this function to be available.</para>
 </simplesect>
 <parameterlist kind="param"><parameteritem>
 <parameternamelist>
@@ -1286,7 +1296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="805" column="6" declfile="include/drivers/can.h" declline="805" declcolumn="6"/>
+        <location file="include/drivers/can.h" line="1020" column="6" declfile="include/drivers/can.h" declline="1020" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1gad322da0dad328abb50de23bef6882d8e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1340,7 +1350,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="834" column="20" bodyfile="include/drivers/can.h" bodystart="834" bodyend="841"/>
+        <location file="include/drivers/can.h" line="1049" column="20" bodyfile="include/drivers/can.h" bodystart="1049" bodyend="1056"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1380,7 +1390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="858" column="23" bodyfile="include/drivers/can.h" bodystart="858" bodyend="864"/>
+        <location file="include/drivers/can.h" line="1073" column="23" bodyfile="include/drivers/can.h" bodystart="1073" bodyend="1079"/>
       </memberdef>
       <memberdef kind="function" id="group__can__interface_1ga8314716fe2b66d567b3fd377b8ee9dc3" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="stdint_8h_1a3cb4a16b0e8d6af0af86d4fd6ba5fd9d" kindref="member">uint8_t</ref></type>
@@ -1417,7 +1427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/drivers/can.h" line="873" column="23" bodyfile="include/drivers/can.h" bodystart="873" bodyend="883"/>
+        <location file="include/drivers/can.h" line="1088" column="23" bodyfile="include/drivers/can.h" bodystart="1088" bodyend="1098"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1745,6 +1755,281 @@
         <inbodydescription>
         </inbodydescription>
         <location file="include/drivers/can.h" line="283" column="9" bodyfile="include/drivers/can.h" bodystart="283" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__can__interface_1ga120a37d5ae5064dcbf116e488f733764" prot="public" static="no">
+        <name>CAN_STATS_BIT0_ERROR_INC</name>
+        <param><defname>dev_</defname></param>
+        <initializer>	<ref refid="stats_2stats_8h_1a725e1bf6b2c486de9603954974d6315a" kindref="member">STATS_INC</ref>(Z_CAN_GET_STATS(dev_), bit0_error)</initializer>
+        <briefdescription>
+<para>Increment the bit0 error counter for a CAN device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bit0 error counter is incremented when the CAN controller is unable to transmit a dominant bit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device structure for the driver instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="454" column="9" bodyfile="include/drivers/can.h" bodystart="454" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1ga678b74039632302efcb5ef80f0e3a90b" prot="public" static="no">
+        <name>CAN_STATS_BIT1_ERROR_INC</name>
+        <param><defname>dev_</defname></param>
+        <initializer>	<ref refid="stats_2stats_8h_1a725e1bf6b2c486de9603954974d6315a" kindref="member">STATS_INC</ref>(Z_CAN_GET_STATS(dev_), bit1_error)</initializer>
+        <briefdescription>
+<para>Increment the bit1 (recessive) error counter for a CAN device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The bit1 error counter is incremented when the CAN controller is unable to transmit a recessive bit.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device structure for the driver instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="465" column="9" bodyfile="include/drivers/can.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1gae4146843944b7ffb1c96636e889282f7" prot="public" static="no">
+        <name>CAN_STATS_STUFF_ERROR_INC</name>
+        <param><defname>dev_</defname></param>
+        <initializer>	<ref refid="stats_2stats_8h_1a725e1bf6b2c486de9603954974d6315a" kindref="member">STATS_INC</ref>(Z_CAN_GET_STATS(dev_), stuff_error)</initializer>
+        <briefdescription>
+<para>Increment the stuffing error counter for a CAN device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The stuffing error counter is incremented when the CAN controller detects a bit stuffing error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device structure for the driver instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="476" column="9" bodyfile="include/drivers/can.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1ga125ce05d40881476f5f156ad5e28c664" prot="public" static="no">
+        <name>CAN_STATS_CRC_ERROR_INC</name>
+        <param><defname>dev_</defname></param>
+        <initializer>	<ref refid="stats_2stats_8h_1a725e1bf6b2c486de9603954974d6315a" kindref="member">STATS_INC</ref>(Z_CAN_GET_STATS(dev_), crc_error)</initializer>
+        <briefdescription>
+<para>Increment the CRC error counter for a CAN device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The CRC error counter is incremented when the CAN controller detects a frame with an invalid CRC.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device structure for the driver instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="487" column="9" bodyfile="include/drivers/can.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1gac5809b3f5e1a463822e76921cddc9909" prot="public" static="no">
+        <name>CAN_STATS_FORM_ERROR_INC</name>
+        <param><defname>dev_</defname></param>
+        <initializer>	<ref refid="stats_2stats_8h_1a725e1bf6b2c486de9603954974d6315a" kindref="member">STATS_INC</ref>(Z_CAN_GET_STATS(dev_), form_error)</initializer>
+        <briefdescription>
+<para>Increment the form error counter for a CAN device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The form error counter is incremented when the CAN controller detects a fixed-form bit field containing illegal bits.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device structure for the driver instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="498" column="9" bodyfile="include/drivers/can.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1ga15f7ca18badbbe2fe24be68cacce6171" prot="public" static="no">
+        <name>CAN_STATS_ACK_ERROR_INC</name>
+        <param><defname>dev_</defname></param>
+        <initializer>	<ref refid="stats_2stats_8h_1a725e1bf6b2c486de9603954974d6315a" kindref="member">STATS_INC</ref>(Z_CAN_GET_STATS(dev_), ack_error)</initializer>
+        <briefdescription>
+<para>Increment the acknowledge error counter for a CAN device. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The acknowledge error counter is incremented when the CAN controller does not monitor a dominant bit in the ACK slot.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dev_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device structure for the driver instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="509" column="9" bodyfile="include/drivers/can.h" bodystart="509" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b" prot="public" static="no">
+        <name>CAN_DEVICE_DT_DEFINE</name>
+        <param><defname>node_id</defname></param>
+        <param><defname>init_fn</defname></param>
+        <param><defname>pm_device</defname></param>
+        <param><defname>data_ptr</defname></param>
+        <param><defname>cfg_ptr</defname></param>
+        <param><defname>level</defname></param>
+        <param><defname>prio</defname></param>
+        <param><defname>api_ptr</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>	Z_CAN_DEVICE_STATE_DEFINE(node_id, Z_DEVICE_DT_DEV_NAME(node_id)); \
+	Z_CAN_INIT_FN(Z_DEVICE_DT_DEV_NAME(node_id), init_fn)		\
+	Z_DEVICE_DEFINE(node_id, Z_DEVICE_DT_DEV_NAME(node_id),		\
+			<ref refid="group__device__model_1gad864d7a50ee45285dacd68be1e5a49ce" kindref="member">DEVICE_DT_NAME</ref>(node_id),			\
+			&amp;<ref refid="util__internal_8h_1a7e7766e792d1638bfbbc9d0f328d3d0d" kindref="member">UTIL_CAT</ref>(Z_DEVICE_DT_DEV_NAME(node_id), _init), \
+			pm_device,					\
+			data_ptr, cfg_ptr, level, prio,			\
+			api_ptr,					\
+			&amp;(Z_DEVICE_STATE_NAME(Z_DEVICE_DT_DEV_NAME(node_id)).devstate), \
+			__VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Like <ref refid="group__device__model_1gaac590af7705a3223968164406a483548" kindref="member">DEVICE_DT_DEFINE()</ref> with CAN device specifics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines a device which implements the CAN API. May generate a custom <ref refid="structdevice__state" kindref="compound">device_state</ref> container struct and init_fn wrapper when needed depending on <verbatim>embed:rst:inline :kconfig:option:`CONFIG_CAN_STATS` </verbatim>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The devicetree node identifier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>init_fn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of the init function of the driver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pm_device</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PM device resources reference (NULL if device does not use PM). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>data_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the device&apos;s private data. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cfg_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address to the structure containing the configuration information for this instance of the driver. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The initialization level. See <ref refid="group__device__model_1ga1e50fdff086356a75b0e91179952cc8d" kindref="member">SYS_INIT()</ref> for details. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>prio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Priority within the selected initialization level. See <ref refid="group__device__model_1ga1e50fdff086356a75b0e91179952cc8d" kindref="member">SYS_INIT()</ref> for details. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>api_ptr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Provides an initial pointer to the API function struct used by the driver. Can be NULL. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="562" column="9" bodyfile="include/drivers/can.h" bodystart="560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__can__interface_1ga20266dc5e962922144e078b85ccb8351" prot="public" static="no">
+        <name>CAN_DEVICE_DT_INST_DEFINE</name>
+        <param><defname>inst</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>	<ref refid="group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b" kindref="member">CAN_DEVICE_DT_DEFINE</ref>(<ref refid="group__devicetree-inst_1ga219f413efba2f4c0151468b9a25a8dc1" kindref="member">DT_DRV_INST</ref>(inst), __VA_ARGS__)</initializer>
+        <briefdescription>
+<para>Like <ref refid="group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b" kindref="member">CAN_DEVICE_DT_DEFINE()</ref> for an instance of a DT_DRV_COMPAT compatible. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Instance number. This is replaced by <computeroutput><ref refid="mmio_8c_1a5d94980d4c538356e9abcf30eb73d1d4" kindref="member">DT_DRV_COMPAT(inst)</ref></computeroutput> in the call to <ref refid="group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b" kindref="member">CAN_DEVICE_DT_DEFINE()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Other parameters as expected by <ref refid="group__can__interface_1ga6c93ae9a5c48ec78045a6a64cfc0f81b" kindref="member">CAN_DEVICE_DT_DEFINE()</ref>. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/drivers/can.h" line="599" column="9" bodyfile="include/drivers/can.h" bodystart="599" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

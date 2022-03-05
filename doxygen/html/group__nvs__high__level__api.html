@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('group__nvs__high__level__api.html','')
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga1867563e4a7932f25f3c961114d746d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nvs__high__level__api.html#ga1867563e4a7932f25f3c961114d746d5">nvs_init</a> (struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *fs, const char *dev_name)</td></tr>
-<tr class="memdesc:ga1867563e4a7932f25f3c961114d746d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">nvs_init  <a href="group__nvs__high__level__api.html#ga1867563e4a7932f25f3c961114d746d5">More...</a><br /></td></tr>
-<tr class="separator:ga1867563e4a7932f25f3c961114d746d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab932ea2d6e933825c2378bef8c30b065"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nvs__high__level__api.html#gab932ea2d6e933825c2378bef8c30b065">nvs_mount</a> (struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *fs)</td></tr>
+<tr class="memdesc:gab932ea2d6e933825c2378bef8c30b065"><td class="mdescLeft">&#160;</td><td class="mdescRight">nvs_mount  <a href="group__nvs__high__level__api.html#gab932ea2d6e933825c2378bef8c30b065">More...</a><br /></td></tr>
+<tr class="separator:gab932ea2d6e933825c2378bef8c30b065"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga42ee9fd0d98f89dcabc5888f8b4600f0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nvs__high__level__api.html#ga42ee9fd0d98f89dcabc5888f8b4600f0">nvs_clear</a> (struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *fs)</td></tr>
 <tr class="memdesc:ga42ee9fd0d98f89dcabc5888f8b4600f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">nvs_clear  <a href="group__nvs__high__level__api.html#ga42ee9fd0d98f89dcabc5888f8b4600f0">More...</a><br /></td></tr>
 <tr class="separator:ga42ee9fd0d98f89dcabc5888f8b4600f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -124,6 +124,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga37e5a55f0b9209c7c0c95db9e1e84715"><td class="memItemLeft" align="right" valign="top"><a class="el" href="lib_2libc_2minimal_2include_2sys_2types_8h.html#a5c5d83d87790efd59ea916c2b99f9118">ssize_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nvs__high__level__api.html#ga37e5a55f0b9209c7c0c95db9e1e84715">nvs_calc_free_space</a> (struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *fs)</td></tr>
 <tr class="memdesc:ga37e5a55f0b9209c7c0c95db9e1e84715"><td class="mdescLeft">&#160;</td><td class="mdescRight">nvs_calc_free_space  <a href="group__nvs__high__level__api.html#ga37e5a55f0b9209c7c0c95db9e1e84715">More...</a><br /></td></tr>
 <tr class="separator:ga37e5a55f0b9209c7c0c95db9e1e84715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f17dc517f55d39ba1ef07d38cf4879b"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__nvs__high__level__api.html#ga7f17dc517f55d39ba1ef07d38cf4879b">nvs_init</a> (struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *fs, const char *dev_name)</td></tr>
+<tr class="memdesc:ga7f17dc517f55d39ba1ef07d38cf4879b"><td class="mdescLeft">&#160;</td><td class="mdescRight">nvs_init  <a href="group__nvs__high__level__api.html#ga7f17dc517f55d39ba1ef07d38cf4879b">More...</a><br /></td></tr>
+<tr class="separator:ga7f17dc517f55d39ba1ef07d38cf4879b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >Non-volatile Storage APIs. </p>
@@ -240,14 +243,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ga1867563e4a7932f25f3c961114d746d5" name="ga1867563e4a7932f25f3c961114d746d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1867563e4a7932f25f3c961114d746d5">&#9670;&nbsp;</a></span>nvs_init()</h2>
+<a id="ga7f17dc517f55d39ba1ef07d38cf4879b" name="ga7f17dc517f55d39ba1ef07d38cf4879b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7f17dc517f55d39ba1ef07d38cf4879b">&#9670;&nbsp;</a></span>nvs_init()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int nvs_init </td>
+          <td class="memname">static int nvs_init </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *&#160;</td>
           <td class="paramname"><em>fs</em>, </td>
@@ -264,16 +270,58 @@ Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p><code>#include &lt;<a class="el" href="nvs_8h.html">include/fs/nvs.h</a>&gt;</code></p>
 
 <p>nvs_init </p>
 <p >Initializes a NVS file system in flash.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use <a class="el" href="group__nvs__high__level__api.html#gab932ea2d6e933825c2378bef8c30b065" title="nvs_mount">nvs_mount()</a> instead.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fs</td><td>Pointer to file system </td></tr>
     <tr><td class="paramname">dev_name</td><td>Pointer to flash device name </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="retval"><dt>Return values</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">0</td><td>Success </td></tr>
+    <tr><td class="paramname">-ERRNO</td><td>errno code if error </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="gab932ea2d6e933825c2378bef8c30b065" name="gab932ea2d6e933825c2378bef8c30b065"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab932ea2d6e933825c2378bef8c30b065">&#9670;&nbsp;</a></span>nvs_mount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nvs_mount </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structnvs__fs.html">nvs_fs</a> *&#160;</td>
+          <td class="paramname"><em>fs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><code>#include &lt;<a class="el" href="nvs_8h.html">include/fs/nvs.h</a>&gt;</code></p>
+
+<p>nvs_mount </p>
+<p >Mount a NVS file system onto the flash device specified in <code>fs</code>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fs</td><td>Pointer to file system </td></tr>
   </table>
   </dd>
 </dl>
@@ -465,7 +513,7 @@ Functions</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:41 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:47 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

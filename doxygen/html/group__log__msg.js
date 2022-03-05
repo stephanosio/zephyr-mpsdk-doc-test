@@ -89,6 +89,7 @@ var group__log__msg =
     [ "log_msg_create_n", "group__log__msg.html#gaddd73c484ec86849c176934c6f983a34", null ],
     [ "log_msg_domain_id_get", "group__log__msg.html#ga5a3dfb0fe49d8ba541dd1fc9dcf71d0a", null ],
     [ "log_msg_get", "group__log__msg.html#gad34f068325f8d3818005ce3bf5ed8d2c", null ],
+    [ "log_msg_get_slab_size", "group__log__msg.html#ga9169257736149471c6b0692102a9330c", null ],
     [ "log_msg_hexdump_create", "group__log__msg.html#ga97764c3d3bb243515f5c95bfa44297fb", null ],
     [ "log_msg_hexdump_data_get", "group__log__msg.html#ga908fe60dc33e29bac2eb42c2a54b15ea", null ],
     [ "log_msg_hexdump_data_put", "group__log__msg.html#ga5bf3664a1e88859af545e64232f628e0", null ],

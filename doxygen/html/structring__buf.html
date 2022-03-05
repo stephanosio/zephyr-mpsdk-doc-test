@@ -34,7 +34,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.svg"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Zephyr API Documentation
-   &#160;<span id="projectnumber">3.0.0-rc3</span>
+   &#160;<span id="projectnumber">3.0.99</span>
    </div>
    <div id="projectbrief">A Scalable Open Source RTOS</div>
   </td>
@@ -93,7 +93,6 @@ $(document).ready(function(){initNavTree('structring__buf.html',''); initResizab
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle"><div class="title">ring_buf Struct Reference</div></div>
 </div><!--header-->
@@ -104,99 +103,120 @@ $(document).ready(function(){initNavTree('structring__buf.html',''); initResizab
 
 <p><code>#include &lt;<a class="el" href="ring__buffer_8h_source.html">ring_buffer.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionring__buf_1_1ring__buf__buffer.html">ring_buf_buffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionring__buf_1_1ring__buf__misc.html">ring_buf_misc</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:acb7c02391643a33236de986049355b3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#acb7c02391643a33236de986049355b3e">head</a></td></tr>
-<tr class="separator:acb7c02391643a33236de986049355b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11cfc27636622cdb5d90c4f0ce501556"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a11cfc27636622cdb5d90c4f0ce501556">tail</a></td></tr>
-<tr class="separator:a11cfc27636622cdb5d90c4f0ce501556"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac34603f840482dfde814b21affb31bb3"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionring__buf_1_1ring__buf__misc.html">ring_buf::ring_buf_misc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#ac34603f840482dfde814b21affb31bb3">misc</a></td></tr>
-<tr class="separator:ac34603f840482dfde814b21affb31bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbeb80082f10edfc492e485e0b42935d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#abbeb80082f10edfc492e485e0b42935d">buffer</a></td></tr>
+<tr class="separator:abbeb80082f10edfc492e485e0b42935d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf3d05eb94695003983277a2e91c89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a0ddf3d05eb94695003983277a2e91c89">put_head</a></td></tr>
+<tr class="separator:a0ddf3d05eb94695003983277a2e91c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9930bc9afa4bec17553bf8ae632e0d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#ac9930bc9afa4bec17553bf8ae632e0d6">put_tail</a></td></tr>
+<tr class="separator:ac9930bc9afa4bec17553bf8ae632e0d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e44dd14ea76abf1fca542b361ba499"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#ae4e44dd14ea76abf1fca542b361ba499">put_base</a></td></tr>
+<tr class="separator:ae4e44dd14ea76abf1fca542b361ba499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043985dbae03d2e38b84528f188f0607"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a043985dbae03d2e38b84528f188f0607">get_head</a></td></tr>
+<tr class="separator:a043985dbae03d2e38b84528f188f0607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae790bf8d42407c500c4655a6a143ed9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#ae790bf8d42407c500c4655a6a143ed9f">get_tail</a></td></tr>
+<tr class="separator:ae790bf8d42407c500c4655a6a143ed9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01496c2b481cc438884ad5ce26e099f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a01496c2b481cc438884ad5ce26e099f3">get_base</a></td></tr>
+<tr class="separator:a01496c2b481cc438884ad5ce26e099f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac91888f5755afb00e99a9a1076e9d380"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#ac91888f5755afb00e99a9a1076e9d380">size</a></td></tr>
 <tr class="separator:ac91888f5755afb00e99a9a1076e9d380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54b5b67251a8067db1a2b44f2c6202a1"><td class="memItemLeft" align="right" valign="top">union <a class="el" href="unionring__buf_1_1ring__buf__buffer.html">ring_buf::ring_buf_buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a54b5b67251a8067db1a2b44f2c6202a1">buf</a></td></tr>
-<tr class="separator:a54b5b67251a8067db1a2b44f2c6202a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6a5e1cb368aafb1010f11e9ac602c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a1a6a5e1cb368aafb1010f11e9ac602c0">mask</a></td></tr>
-<tr class="separator:a1a6a5e1cb368aafb1010f11e9ac602c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4271f139ce4b142d665789a8e57b1433"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structk__spinlock.html">k_spinlock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structring__buf.html#a4271f139ce4b142d665789a8e57b1433">lock</a></td></tr>
-<tr class="separator:a4271f139ce4b142d665789a8e57b1433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >A structure to represent a ring buffer. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a54b5b67251a8067db1a2b44f2c6202a1" name="a54b5b67251a8067db1a2b44f2c6202a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54b5b67251a8067db1a2b44f2c6202a1">&#9670;&nbsp;</a></span>buf</h2>
+<a id="abbeb80082f10edfc492e485e0b42935d" name="abbeb80082f10edfc492e485e0b42935d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbeb80082f10edfc492e485e0b42935d">&#9670;&nbsp;</a></span>buffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union <a class="el" href="unionring__buf_1_1ring__buf__buffer.html">ring_buf::ring_buf_buffer</a> ring_buf::buf</td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a3cb4a16b0e8d6af0af86d4fd6ba5fd9d">uint8_t</a>* ring_buf::buffer</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="acb7c02391643a33236de986049355b3e" name="acb7c02391643a33236de986049355b3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb7c02391643a33236de986049355b3e">&#9670;&nbsp;</a></span>head</h2>
+<a id="a01496c2b481cc438884ad5ce26e099f3" name="a01496c2b481cc438884ad5ce26e099f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01496c2b481cc438884ad5ce26e099f3">&#9670;&nbsp;</a></span>get_base</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf::head</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Index in buf for the head element </p>
-
-</div>
-</div>
-<a id="a4271f139ce4b142d665789a8e57b1433" name="a4271f139ce4b142d665789a8e57b1433"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4271f139ce4b142d665789a8e57b1433">&#9670;&nbsp;</a></span>lock</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct <a class="el" href="structk__spinlock.html">k_spinlock</a> ring_buf::lock</td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> ring_buf::get_base</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1a6a5e1cb368aafb1010f11e9ac602c0" name="a1a6a5e1cb368aafb1010f11e9ac602c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a6a5e1cb368aafb1010f11e9ac602c0">&#9670;&nbsp;</a></span>mask</h2>
+<a id="a043985dbae03d2e38b84528f188f0607" name="a043985dbae03d2e38b84528f188f0607"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a043985dbae03d2e38b84528f188f0607">&#9670;&nbsp;</a></span>get_head</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf::mask</td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> ring_buf::get_head</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Modulo mask if size is a power of 2 </p>
 
 </div>
 </div>
-<a id="ac34603f840482dfde814b21affb31bb3" name="ac34603f840482dfde814b21affb31bb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac34603f840482dfde814b21affb31bb3">&#9670;&nbsp;</a></span>misc</h2>
+<a id="ae790bf8d42407c500c4655a6a143ed9f" name="ae790bf8d42407c500c4655a6a143ed9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae790bf8d42407c500c4655a6a143ed9f">&#9670;&nbsp;</a></span>get_tail</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">union <a class="el" href="unionring__buf_1_1ring__buf__misc.html">ring_buf::ring_buf_misc</a> ring_buf::misc</td>
+          <td class="memname"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> ring_buf::get_tail</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae4e44dd14ea76abf1fca542b361ba499" name="ae4e44dd14ea76abf1fca542b361ba499"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e44dd14ea76abf1fca542b361ba499">&#9670;&nbsp;</a></span>put_base</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> ring_buf::put_base</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ddf3d05eb94695003983277a2e91c89" name="a0ddf3d05eb94695003983277a2e91c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf3d05eb94695003983277a2e91c89">&#9670;&nbsp;</a></span>put_head</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> ring_buf::put_head</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac9930bc9afa4bec17553bf8ae632e0d6" name="ac9930bc9afa4bec17553bf8ae632e0d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9930bc9afa4bec17553bf8ae632e0d6">&#9670;&nbsp;</a></span>put_tail</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="stdint_8h.html#a0c18914b3041c2f583aba76f418399c2">int32_t</a> ring_buf::put_tail</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -214,22 +234,6 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Size of buf in 32-bit chunks </p>
-
-</div>
-</div>
-<a id="a11cfc27636622cdb5d90c4f0ce501556" name="a11cfc27636622cdb5d90c4f0ce501556"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11cfc27636622cdb5d90c4f0ce501556">&#9670;&nbsp;</a></span>tail</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="stdint_8h.html#a0a8582351ac627ee8bde2973c825e47f">uint32_t</a> ring_buf::tail</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Index in buf for the tail element </p>
 
 </div>
 </div>
@@ -243,7 +247,7 @@ Data Fields</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="structring__buf.html">ring_buf</a></li>
-    <li class="footer">Generated on Mon Feb 21 2022 04:59:42 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
+    <li class="footer">Generated on Sat Mar 5 2022 05:00:48 for Zephyr API Documentation by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2 </li>
   </ul>
 </div>
 <script type="text/javascript">

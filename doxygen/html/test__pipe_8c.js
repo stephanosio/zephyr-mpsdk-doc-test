@@ -19,7 +19,7 @@ var test__pipe_8c =
     [ "K_SEM_DEFINE", "test__pipe_8c.html#a7382cd85e657866d902508588fb82a9c", null ],
     [ "K_SEM_DEFINE", "test__pipe_8c.html#afdb50708f021daf1a0657bcfe0c1ffc6", null ],
     [ "k_sys_fatal_error_handler", "group__fatal__apis.html#gab6dfd75572a84729df534fde49ef7d85", null ],
-    [ "K_THREAD_STACK_DEFINE", "test__pipe_8c.html#a9bda3e00bf96550334eadf74c9af316b", null ],
+    [ "K_THREAD_STACK_DEFINE", "test__pipe_8c.html#abb291232121138c783bcbd0addb9a4f3", null ],
     [ "pipe_get_forever_timeout", "test__pipe_8c.html#ac960217c39e68430018c1721d3ea0ddb", null ],
     [ "pipe_get_forever_wait", "test__pipe_8c.html#a235e3d7b9020dc3d68261dd8f84fab51", null ],
     [ "pipe_get_multiple", "test__pipe_8c.html#a1ce72586ac9b4f2594852b14cdaff099", null ],

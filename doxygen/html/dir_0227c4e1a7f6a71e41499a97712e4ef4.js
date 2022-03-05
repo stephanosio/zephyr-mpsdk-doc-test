@@ -7,5 +7,6 @@ var dir_0227c4e1a7f6a71e41499a97712e4ef4 =
     [ "linker-tool-mwdt.h", "linker-tool-mwdt_8h.html", "linker-tool-mwdt_8h" ],
     [ "linker-tool.h", "linker-tool_8h.html", null ],
     [ "section_tags.h", "section__tags_8h.html", null ],
-    [ "sections.h", "sections_8h.html", null ]
+    [ "sections.h", "sections_8h.html", null ],
+    [ "utils.h", "utils_8h.html", "utils_8h" ]
 ];

@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -113,7 +115,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../samples/index.html">Samples and Demos</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../boards/index.html">Supported Boards</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Release Notes</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="release-notes-3.0.html">Zephyr 3.0.0 (Working draft)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-3.1.html">Zephyr 3.1.0 (Working Draft)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release-notes-3.0.html">Zephyr 3.0.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="release-notes-2.7.html">Zephyr 2.7.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="release-notes-2.6.html">Zephyr 2.6.0</a></li>
 <li class="toctree-l2"><a class="reference internal" href="release-notes-2.5.html">Zephyr 2.5.0</a></li>
@@ -174,7 +177,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -699,7 +702,7 @@ through <code class="docutils literal notranslate"><span class="pre">CONFIG_SPI_
 supported driver using the <code class="docutils literal notranslate"><span class="pre">jedec,spi-nor</span></code> compatible.</p></li>
 <li><p>Enhanced nRF QSPI NOR flash driver (nrf_qspi_nor) so it supports unaligned read offset, read length and buffer offset.</p></li>
 <li><p>Added SFDP support in spi_nor driver.</p></li>
-<li><p>Fixed regression in nRF flash driver (soc_flash_nrf) with <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_BT_CTLR_LOW_LAT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_LOW_LAT</span></code></a> option.</p></li>
+<li><p>Fixed regression in nRF flash driver (soc_flash_nrf) with <a class="reference internal" href="../kconfig.html#CONFIG_BT_CTLR_LOW_LAT" title="CONFIG_BT_CTLR_LOW_LAT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_BT_CTLR_LOW_LAT</span></code></a> option.</p></li>
 <li><p>Introduced NRF radio scheduler interface in nRF flash driver (soc_flash_nrf).</p></li>
 <li><p>STM32: Factorized support for F0/F1/F3. Added L0 support. Various fixes.</p></li>
 </ul>
@@ -718,12 +721,12 @@ supported driver using the <code class="docutils literal notranslate"><span clas
 <li><p>I2C</p>
 <ul>
 <li><p>Introduced new driver for NXP LPC11U6x SoCs.  See
-<a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_I2C_LPC11U6X"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_I2C_LPC11U6X</span></code></a>.</p></li>
+<a class="reference internal" href="../kconfig.html#CONFIG_I2C_LPC11U6X" title="CONFIG_I2C_LPC11U6X"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_I2C_LPC11U6X</span></code></a>.</p></li>
 <li><p>Introduced new driver for emulated I2C devices, where I2C operations
 are forwarded to a module that emulates responses from hardware.
 This enables testing without hardware and allows unusual conditions
 to be synthesized to test driver behavior.  See
-<a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_I2C_EMUL"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_I2C_EMUL</span></code></a>.</p></li>
+<a class="reference internal" href="../kconfig.html#CONFIG_I2C_EMUL" title="CONFIG_I2C_EMUL"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_I2C_EMUL</span></code></a>.</p></li>
 <li><p>STM32: V1: Reset i2c device on read/write error.</p></li>
 <li><p>STM32: V2: Added dts configurable Timing option.</p></li>
 <li><p>Fixed MCUX LPI2C driver transfer status after NACK.</p></li>
@@ -739,8 +742,8 @@ to be synthesized to test driver behavior.  See
 <li><p>Allow user to disable auto-start of IEEE 802.15.4 network interface.
 By default the IEEE 802.15.4 network interface is automatically started.</p></li>
 <li><p>Added support for setting TX power in rf2xx driver.</p></li>
-<li><p>Added Nordic 802.15.4 multiprotocol support, see <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_NRF_802154_MULTIPROTOCOL_SUPPORT"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NRF_802154_MULTIPROTOCOL_SUPPORT</span></code></a>.</p></li>
-<li><p>Added Kconfig <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_IEEE802154_VENDOR_OUI_ENABLE"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_IEEE802154_VENDOR_OUI_ENABLE</span></code></a> option for defining OUI.</p></li>
+<li><p>Added Nordic 802.15.4 multiprotocol support, see <a class="reference internal" href="../kconfig.html#CONFIG_NRF_802154_MULTIPROTOCOL_SUPPORT" title="CONFIG_NRF_802154_MULTIPROTOCOL_SUPPORT"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NRF_802154_MULTIPROTOCOL_SUPPORT</span></code></a>.</p></li>
+<li><p>Added Kconfig <a class="reference internal" href="../kconfig.html#CONFIG_IEEE802154_VENDOR_OUI_ENABLE" title="CONFIG_IEEE802154_VENDOR_OUI_ENABLE"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_IEEE802154_VENDOR_OUI_ENABLE</span></code></a> option for defining OUI.</p></li>
 </ul>
 </li>
 <li><p>Interrupt Controller</p>
@@ -854,10 +857,10 @@ by the application in order to enable the USB subsystem. If your
 application relies on any of the following Kconfig options, then
 it shall also enable the USB subsystem:</p>
 <ul>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USB_DEVICE_NETWORK_ECM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USB_DEVICE_NETWORK_ECM</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USB_DEVICE_NETWORK_EEM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USB_DEVICE_NETWORK_EEM</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_USB_DEVICE_NETWORK_RNDIS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_USB_DEVICE_NETWORK_RNDIS</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_TRACING_BACKEND_USB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_TRACING_BACKEND_USB</span></code></a></p></li>
+<li><p><a class="reference internal" href="../kconfig.html#CONFIG_USB_DEVICE_NETWORK_ECM" title="CONFIG_USB_DEVICE_NETWORK_ECM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USB_DEVICE_NETWORK_ECM</span></code></a></p></li>
+<li><p><a class="reference internal" href="../kconfig.html#CONFIG_USB_DEVICE_NETWORK_EEM" title="CONFIG_USB_DEVICE_NETWORK_EEM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USB_DEVICE_NETWORK_EEM</span></code></a></p></li>
+<li><p><a class="reference internal" href="../kconfig.html#CONFIG_USB_DEVICE_NETWORK_RNDIS" title="CONFIG_USB_DEVICE_NETWORK_RNDIS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_USB_DEVICE_NETWORK_RNDIS</span></code></a></p></li>
+<li><p><a class="reference internal" href="../kconfig.html#CONFIG_TRACING_BACKEND_USB" title="CONFIG_TRACING_BACKEND_USB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_TRACING_BACKEND_USB</span></code></a></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CONFIG_USB_UART_CONSOLE</span></code></p></li>
 </ul>
 </li>
@@ -927,7 +930,7 @@ manually.</p></li>
 <li><p>Allow using wildcards in CoAP resource path description.</p></li>
 <li><p>Allow user to specify used network interface in net-shell ping command.</p></li>
 <li><p>Allow user to select a custom mbedtls library in OpenThread.</p></li>
-<li><p>Removed dependency to <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> from offloaded
+<li><p>Removed dependency to <a class="reference internal" href="../kconfig.html#CONFIG_NET_SOCKETS_POSIX_NAMES" title="CONFIG_NET_SOCKETS_POSIX_NAMES"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_NET_SOCKETS_POSIX_NAMES</span></code></a> from offloaded
 WiFi device drivers.</p></li>
 <li><p>Print more gPTP status information in gptp net shell.</p></li>
 <li><p>Fixed the network traffic class statistics collection.</p></li>
@@ -1068,7 +1071,7 @@ is no longer supported.</p>
 <li><p>smp: added missing socket close in error path.</p></li>
 </ul>
 </li>
-<li><p>Added support for Open Supervised Device Protocol (OSDP), see <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_OSDP"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_OSDP</span></code></a>.</p></li>
+<li><p>Added support for Open Supervised Device Protocol (OSDP), see <a class="reference internal" href="../kconfig.html#CONFIG_OSDP" title="CONFIG_OSDP"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_OSDP</span></code></a>.</p></li>
 <li><p>updatehub</p>
 <ul>
 <li><p>Added download block check.</p></li>
@@ -1093,7 +1096,7 @@ is no longer supported.</p>
 <ul>
 <li><p>Fixed immediate logging with multiple backends.</p></li>
 <li><p>Switched logging thread to use kernel stack.</p></li>
-<li><p>Allow users to disable all shell backends at one using <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_SHELL_LOG_BACKEND"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SHELL_LOG_BACKEND</span></code></a>.</p></li>
+<li><p>Allow users to disable all shell backends at one using <a class="reference internal" href="../kconfig.html#CONFIG_SHELL_LOG_BACKEND" title="CONFIG_SHELL_LOG_BACKEND"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SHELL_LOG_BACKEND</span></code></a>.</p></li>
 <li><p>Added Spinel protocol logging backend.</p></li>
 <li><p>Fixed timestamp calculation when using NEWLIB.</p></li>
 </ul>
@@ -1111,14 +1114,14 @@ option named as <code class="docutils literal notranslate"><span class="pre">CON
 If your application relies on any of the following Kconfig defaults consider
 checking if the new values are good or they need to be adjusted:</p>
 <ul>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_HOR_RES_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_HOR_RES_MAX</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_VER_RES_MAX"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_VER_RES_MAX</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_DPI"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DPI</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_DISP_DEF_REFR_PERIOD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISP_DEF_REFR_PERIOD</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_READ_PERIOD"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_READ_PERIOD</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_INDEV_DEF_DRAG_THROW"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_DRAG_THROW</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_TXT_LINE_BREAK_LONG_LEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_LINE_BREAK_LONG_LEN</span></code></a></p></li>
-<li><p><a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_LVGL_CHART_AXIS_TICK_LABEL_MAX_LEN"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_LVGL_CHART_AXIS_TICK_LABEL_MAX_LEN</span></code></a></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_HOR_RES_MAX</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_VER_RES_MAX</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_DPI</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_DISP_DEF_REFR_PERIOD</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_READ_PERIOD</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_INDEV_DEF_DRAG_THROW</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_TXT_LINE_BREAK_LONG_LEN</span></code></p></li>
+<li><p><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_LVGL_CHART_AXIS_TICK_LABEL_MAX_LEN</span></code></p></li>
 </ul>
 </li>
 <li><p>Note that ROM usage is significantly higher on v7 for minimal
@@ -2172,8 +2175,8 @@ release:</p>
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

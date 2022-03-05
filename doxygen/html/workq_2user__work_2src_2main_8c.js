@@ -4,7 +4,7 @@ var workq_2user__work_2src_2main_8c =
     [ "STACK_SIZE", "workq_2user__work_2src_2main_8c.html#a6423a880df59733d2d9b509c7718d3a9", null ],
     [ "SYNC_SEM_INIT_VAL", "workq_2user__work_2src_2main_8c.html#a4f24398212f7378bff4cbdf927f0699b", null ],
     [ "common_work_handler", "workq_2user__work_2src_2main_8c.html#a091f067fc1547b0e9df33e5409869367", null ],
-    [ "K_THREAD_STACK_DEFINE", "workq_2user__work_2src_2main_8c.html#a58e625eefca8dab96e00cc8442c64bf4", null ],
+    [ "K_THREAD_STACK_DEFINE", "workq_2user__work_2src_2main_8c.html#a19b3da2ea30e5d9802ea86e9ed9060fd", null ],
     [ "test_k_work_user_init", "workq_2user__work_2src_2main_8c.html#af1769dddd5e05d847b05117b6ba36cab", null ],
     [ "test_k_work_user_submit_to_queue_fail", "group__kernel__workqueue__tests.html#ga12c39e093c17877157fe36b15e93efd3", null ],
     [ "test_main", "workq_2user__work_2src_2main_8c.html#a8a4533f287d99bb2d7c24c0e29c9a449", null ],

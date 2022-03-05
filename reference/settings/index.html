@@ -43,7 +43,7 @@
             <img src="../../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -184,7 +186,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -314,9 +316,9 @@ backend.</p>
 <div class="section" id="zephyr-storage-backends">
 <h2>Zephyr Storage Backends<a class="headerlink" href="#zephyr-storage-backends" title="Permalink to this headline">¶</a></h2>
 <p>Zephyr has three storage backends: a Flash Circular Buffer
-(<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SETTINGS_FCB"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_FCB</span></code></a>), a file in the filesystem
-(<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SETTINGS_FS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_FS</span></code></a>), or non-volatile storage
-(<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SETTINGS_NVS"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_NVS</span></code></a>).</p>
+(<a class="reference internal" href="../../kconfig.html#CONFIG_SETTINGS_FCB" title="CONFIG_SETTINGS_FCB"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_FCB</span></code></a>), a file in the filesystem
+(<a class="reference internal" href="../../kconfig.html#CONFIG_SETTINGS_FS" title="CONFIG_SETTINGS_FS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_FS</span></code></a>), or non-volatile storage
+(<a class="reference internal" href="../../kconfig.html#CONFIG_SETTINGS_NVS" title="CONFIG_SETTINGS_NVS"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_NVS</span></code></a>).</p>
 <p>You can declare multiple sources for settings; settings from
 all of these are restored when <code class="docutils literal notranslate"><span class="pre">settings_load()</span></code> is called.</p>
 <p>There can be only one target for writing settings; this is where
@@ -489,7 +491,7 @@ up from where it was before restart.</p>
 <div class="section" id="example-custom-backend-implementation">
 <h2>Example: Custom Backend Implementation<a class="headerlink" href="#example-custom-backend-implementation" title="Permalink to this headline">¶</a></h2>
 <p>This is a simple example showing how to register a simple custom backend
-handler (<a class="reference internal" href="../kconfig/dummy-syms.html#std-kconfig-CONFIG_SETTINGS_CUSTOM"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_CUSTOM</span></code></a>).</p>
+handler (<a class="reference internal" href="../../kconfig.html#CONFIG_SETTINGS_CUSTOM" title="CONFIG_SETTINGS_CUSTOM"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_SETTINGS_CUSTOM</span></code></a>).</p>
 <div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">settings_custom_load</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">settings_store</span><span class="w"> </span><span class="o">*</span><span class="n">cs</span><span class="p">)</span><span class="w"></span>
 <span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="c1">//...</span>
@@ -1250,8 +1252,8 @@ Some examples: settings_name_steq(“bt/btmesh/iv”, “b”, &amp;next) return
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 

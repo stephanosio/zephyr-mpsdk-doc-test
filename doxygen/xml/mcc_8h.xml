@@ -83,7 +83,7 @@
       </node>
       <node id="21">
         <label>bluetooth/crypto.h</label>
-        <link refid="crypto_8h"/>
+        <link refid="bluetooth_2crypto_8h"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>

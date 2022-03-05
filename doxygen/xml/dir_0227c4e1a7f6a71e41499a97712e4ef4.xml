@@ -10,6 +10,7 @@
     <innerfile refid="linker-tool_8h">linker-tool.h</innerfile>
     <innerfile refid="section__tags_8h">section_tags.h</innerfile>
     <innerfile refid="sections_8h">sections.h</innerfile>
+    <innerfile refid="utils_8h">utils.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

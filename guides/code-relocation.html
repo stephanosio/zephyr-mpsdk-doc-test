@@ -43,7 +43,7 @@
             <img src="../_static/logo.svg" class="logo" alt="Logo"/>
           </a>
               <div class="version">
-                3.0.0-rc3
+                3.0.99
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -65,6 +65,8 @@
         <dt>Document Release Versions</dt>
         
           <dd><a href="/">latest</a></dd>
+        
+          <dd><a href="/3.0.0/">3.0.0</a></dd>
         
           <dd><a href="/2.7.0/">2.7.0</a></dd>
         
@@ -118,6 +120,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#details">Details</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#additional-configurations">Additional Configurations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#nocopy-flag">NOCOPY flag</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sample">Sample</a></li>
 </ul>
 </li>
@@ -161,7 +164,7 @@
       </li>
       
       <li class="toctree-l1">
-        <a class="reference internal" href="/latest/reference/kconfig/index.html">Kconfig Options</a>
+        <a class="reference internal" href="/latest/kconfig.html">Kconfig Options</a>
       </li>
       
       <li class="toctree-l1">
@@ -239,7 +242,7 @@ of <code class="docutils literal notranslate"><span class="pre">__attribute__((s
 <code class="docutils literal notranslate"><span class="pre">SRAM2:/home/xyz/zephyr/samples/hello_world/src/main.c,SRAM1:/home/xyz/zephyr/samples/hello_world/src/main2.c</span></code></p>
 <p>This script is invoked with the following parameters:
 <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">gen_relocate_app.py</span> <span class="pre">-i</span> <span class="pre">input_string</span> <span class="pre">-o</span> <span class="pre">generated_linker</span> <span class="pre">-c</span> <span class="pre">generated_code</span></code></p>
-<p>Kconfig <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CODE_DATA_RELOCATION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION</span></code></a> option,  when enabled in
+<p>Kconfig <a class="reference internal" href="../kconfig.html#CONFIG_CODE_DATA_RELOCATION" title="CONFIG_CODE_DATA_RELOCATION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION</span></code></a> option,  when enabled in
 <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code>, will invoke the script and do the required relocation.</p>
 <p>This script also trigger the generation of <code class="docutils literal notranslate"><span class="pre">linker_relocate.ld</span></code> and
 <code class="docutils literal notranslate"><span class="pre">code_relocation.c</span></code> files.  The <code class="docutils literal notranslate"><span class="pre">linker_relocate.ld</span></code> file creates
@@ -261,7 +264,7 @@ Also this contains code needed for bss zeroing and
 for  data copy operations from ROM to required memory type.</p>
 <p><strong>The procedure to invoke this feature is:</strong></p>
 <ul>
-<li><p>Enable <a class="reference internal" href="../reference/kconfig/dummy-syms.html#std-kconfig-CONFIG_CODE_DATA_RELOCATION"><code class="xref std std-kconfig docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION</span></code></a> in the <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> file</p></li>
+<li><p>Enable <a class="reference internal" href="../kconfig.html#CONFIG_CODE_DATA_RELOCATION" title="CONFIG_CODE_DATA_RELOCATION"><code class="xref kconfig kconfig-option docutils literal notranslate"><span class="pre">CONFIG_CODE_DATA_RELOCATION</span></code></a> in the <code class="docutils literal notranslate"><span class="pre">prj.conf</span></code> file</p></li>
 <li><p>Inside the <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> file in the project, mention
 all the files that need relocation.</p>
 <p><code class="docutils literal notranslate"><span class="pre">zephyr_code_relocate(src/*.c</span> <span class="pre">SRAM2)</span></code></p>
@@ -299,6 +302,22 @@ zephyr_code_relocate(src/file2.c.c SRAM2_TEXT)
 This will place data and bss inside SRAM2.</p></li>
 </ul>
 </div>
+<div class="section" id="nocopy-flag">
+<h3>NOCOPY flag<a class="headerlink" href="#nocopy-flag" title="Permalink to this headline">¶</a></h3>
+<p>When a <code class="docutils literal notranslate"><span class="pre">NOCOPY</span></code> option is passed to the <code class="docutils literal notranslate"><span class="pre">zephyr_code_relocate()</span></code> function,
+the relocation code is not generated in <code class="docutils literal notranslate"><span class="pre">code_relocation.c</span></code>. This flag can be
+used when we want to move the content of a specific file (or set of files) to a
+XIP area.</p>
+<p>This example will place the .text section of the <code class="docutils literal notranslate"><span class="pre">xip_external_flash.c</span></code> file
+to the <code class="docutils literal notranslate"><span class="pre">EXTFLASH</span></code> memory region where it will be executed from (XIP). The
+.data will be relocated as usual into SRAM.</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>zephyr_code_relocate(src/xip_external_flash.c EXTFLASH_TEXT NOCOPY)
+zephyr_code_relocate(src/xip_external_flash.c SRAM_DATA)
+</pre></div>
+</div>
+</div></blockquote>
+</div>
 <div class="section" id="sample">
 <h3>Sample<a class="headerlink" href="#sample" title="Permalink to this headline">¶</a></h3>
 <p>A sample showcasing this feature is provided at
@@ -306,6 +325,8 @@ This will place data and bss inside SRAM2.</p></li>
 <p>This is an example of using the code relocation feature.</p>
 <p>This example will place .text, .data, .bss from 3 files to various parts in the SRAM
 using a custom linker file derived from <code class="docutils literal notranslate"><span class="pre">include/arch/arm/aarch32/cortex_m/scripts/linker.ld</span></code></p>
+<p>A sample showcasing the NOCOPY flag is provided at
+<code class="docutils literal notranslate"><span class="pre">$ZEPHYR_BASE/samples/application_development/code_relocation_nocopy/</span></code></p>
 </div>
 </div>
 </div>
@@ -319,8 +340,8 @@ using a custom linker file derived from <code class="docutils literal notranslat
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2021 Zephyr Project members and individual contributors.
-      <span class="lastupdated">Last updated on Feb 21, 2022.
+    <p>&#169; <a href="../copyright.html">Copyright</a> 2015-2022 Zephyr Project members and individual contributors.
+      <span class="lastupdated">Last updated on Mar 05, 2022.
       </span></p>
   </div>
 
